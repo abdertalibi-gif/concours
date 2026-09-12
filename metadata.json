@@ -1,0 +1,6 @@
+{
+  "name": "Concours Maroc",
+  "description": "Portail des concours, examens, écoles et ressources de préparation au Maroc.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

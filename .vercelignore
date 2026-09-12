@@ -1,0 +1,15 @@
+# Python files & scripts
+__pycache__/
+*.py
+*.pyc
+
+# Local scripts
+*.ts
+!src/**/*.ts
+!src/**/*.tsx
+!vite.config.ts
+
+# Documentation & logs
+*.log
+.env.local
+.git

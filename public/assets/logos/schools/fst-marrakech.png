@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+<script>(function(){var b="/";var p=location.pathname;if(b==="/"){if(/\/dist(\/|$)/i.test(p))b="/dist/";}b=b.endsWith("/")?b:b+"/";if(b!=="/"&&!b.startsWith("/"))b="/"+b;window.__FST_APP_BASE__=b;var e=document.createElement("base");e.setAttribute("data-fst-app-base","true");e.href=b;document.head.insertBefore(e,document.head.firstChild);})();</script>
+  <meta charset="UTF-8" />
+  <!-- ./ : préfixe des assets (par défaut `/` en production) -->
+  <link rel="icon" type="image/png" href="./images/logo-fst.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FST MARRAKECH</title>
+  <!-- Polices pour l'arabe -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  <script async src="https://umami.moinulmoin.com/script.js"
+    data-website-id="4b33d804-29a8-4325-95bb-fc64ebdcf0ff"></script>
+  <script type="module" crossorigin src="./assets/index-C4sCbUbL.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/vendor-jspdf-DEj38LJ_.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-react-CARRhPjt.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-radix-Dx6tLLfg.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-utils-sm-BpqZfnrR.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-icons-D9QiJA_J.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-redux-CDm5aX4h.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-d3-D07cf8z5.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-recharts-msNIOJLj.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-router-CUi_J3-H.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-ByCslBYU.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- Leaflet JS - Chargé de manière synchrone pour être disponible -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</body>
+
+</html>
