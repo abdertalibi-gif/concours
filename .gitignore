@@ -36,3 +36,6 @@ __pycache__/
 
 .vercel
 .env*
+
+.vercel
+.env*

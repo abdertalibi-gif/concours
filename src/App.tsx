@@ -20,6 +20,8 @@ import AdminConcours from './pages/admin/AdminConcours';
 import { AdminEcoles, AdminMinisteres, AdminUniversites } from './pages/admin/AdminCatalog';
 import { AdminCours, AdminDocuments, AdminExamens } from './pages/admin/AdminContent';
 import { AdminNotifications, AdminSignalements, AdminUsers } from './pages/admin/AdminUsers';
+import AdminRapports from './pages/admin/AdminRapports';
+import AdminParametres from './pages/admin/AdminParametres';
 import { APropos, Conditions, Confidentialite, Contact, FAQ, NotFound } from './pages/Static';
 import type { JSX } from 'react';
 
@@ -84,6 +86,8 @@ export default function App() {
             <Route path="utilisateurs" element={<AdminUsers />} />
             <Route path="notifications" element={<AdminNotifications />} />
             <Route path="signalements" element={<AdminSignalements />} />
+            <Route path="rapports" element={<AdminRapports />} />
+            <Route path="parametres" element={<AdminParametres />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

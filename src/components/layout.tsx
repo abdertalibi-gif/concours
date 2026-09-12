@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import {
-  Bell, BookOpen, Building2, ChevronDown, Contact, FileText,  GraduationCap,
+  Bell, BookOpen, Building2, ChevronDown, Contact, FileText, GraduationCap,
   HelpCircle, Home, Landmark, LayoutDashboard, LogOut, Menu, Search, Settings,
   Star, Trophy, User as UserIcon, Users, X,
 } from 'lucide-react';
@@ -233,13 +233,13 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-[60] border-b border-[#E6ECF3] bg-white/95 backdrop-blur shadow-sm">
-      <Container className="flex h-16 items-center justify-between gap-3 md:gap-4 overflow-hidden">
+      <Container className="flex h-16 items-center justify-between gap-3 md:gap-4">
         {/* Logo */}
         <Logo compact />
 
         {/* Desktop & Tablet Layout (Hidden on Mobile) */}
         <div className="hidden md:flex flex-1 items-center justify-between min-w-0">
-          
+
           {/* Navigation - Scrollable horizontally if tight on tablets */}
           <div className="flex-1 overflow-x-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
             <nav className="flex items-center gap-1 min-w-max px-2" aria-label="Navigation principale">
@@ -274,7 +274,7 @@ export function Header() {
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </Container>
-      
+
       {/* Mobile Menu Dropdown */}
       {mobileOpen && (
         <div className="border-t border-slate-100 bg-white px-4 py-4 md:hidden shadow-lg absolute w-full left-0">
@@ -289,7 +289,7 @@ export function Header() {
               );
             })}
           </nav>
-          
+
           <div className="mt-6 border-t border-slate-100 pt-6 flex flex-col gap-3">
             {!user ? (
               <>
@@ -385,7 +385,7 @@ export function DashboardLayout() {
               <p className="text-sm font-extrabold">{user?.firstName} {user?.lastName}</p>
               <p className="truncate text-xs text-sky-200">{user?.email}</p>
             </div>
-            <DashNav onNav={() => {}} logout={logout} />
+            <DashNav onNav={() => { }} logout={logout} />
           </div>
         </aside>
         <div className="min-w-0 flex-1">
@@ -425,11 +425,11 @@ export function AdminLayout() {
   const loc = useLocation();
   const nav = useNavigate();
   const [open, setOpen] = useState(false);
-  
+
   useEffect(() => { setOpen(false); }, [loc.pathname]);
-  
+
   const init = `${user?.firstName?.[0] ?? ''}${user?.lastName?.[0] ?? ''}`.toUpperCase();
-  
+
   if (!isAdmin) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-[#F4F7FB] p-6 text-center">
@@ -464,7 +464,7 @@ export function AdminLayout() {
 
   return (
     <div className="flex h-screen w-full overflow-hidden bg-[#F4F7FB]">
-      
+
       {/* Sidebar Sombre */}
       <aside className={cn(
         "fixed inset-y-0 left-0 z-50 flex w-64 flex-col bg-[#0B2A4A] text-white transition-transform lg:static lg:translate-x-0",
@@ -530,8 +530,8 @@ export function AdminLayout() {
             </button>
             <div className="relative hidden max-w-md flex-1 sm:block">
               <Search className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-slate-400" />
-              <input 
-                type="text" 
+              <input
+                type="text"
                 placeholder="Rechercher un concours, une école, un ministère..."
                 className="h-10 w-full rounded-xl bg-slate-100/50 pl-10 pr-4 text-sm text-[#0B2A4A] placeholder:text-slate-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0B63CE]"
               />
@@ -540,7 +540,7 @@ export function AdminLayout() {
           <div className="flex items-center gap-4 sm:gap-6">
             <div className="flex items-center gap-2 sm:gap-4">
               <button onClick={handleFullscreen} className="text-slate-400 hover:text-slate-600 hidden sm:block">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" /></svg>
               </button>
               <NotifBell />
             </div>

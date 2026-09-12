@@ -1,0 +1,396 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ------------------------------------------------------
+// ENUMS
+// ------------------------------------------------------
+
+enum Role {
+  USER
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum CompetitionStatus {
+  Ouvert
+  Bientot
+  Ferme
+  Suspendu
+  Archive
+}
+
+enum VerificationStatus {
+  UNVERIFIED
+  PENDING
+  VERIFIED
+  EXPIRED
+}
+
+enum PublishStatus {
+  DRAFT
+  PENDING_REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+enum CompetitionCategory {
+  ECOLE
+  MINISTERE
+  UNIVERSITE
+  INSTITUTION
+  RECRUTEMENT
+  FORMATION
+  AUTRE
+}
+
+enum OrgType {
+  MINISTERE
+  ECOLE
+  INSTITUTION
+}
+
+// ------------------------------------------------------
+// MODELS
+// ------------------------------------------------------
+
+model User {
+  id           String    @id @default(uuid())
+  firstName    String
+  lastName     String
+  email        String    @unique
+  passwordHash String
+  role         Role      @default(USER)
+  status       String    @default("ACTIVE") // 'ACTIVE' | 'SUSPENDED'
+  city         String?
+  level        String?
+  phone        String?
+  bio          String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  lastLoginAt  DateTime?
+
+  // Relations
+  favorites     Favorite[]
+  applications  Application[]
+  notifications Notification[]
+  progress      UserProgress[]
+  reports       Report[]
+}
+
+model School {
+  id              String   @id @default(uuid())
+  name            String
+  shortName       String
+  slug            String   @unique
+  aliases         String[]
+  logoUrl         String?
+  officialLogo    String?
+  customLogo      String?
+  logoColor       String?
+  universityId    String?
+  ministryId      String?
+  isActive        Boolean  @default(true)
+  description     String
+  longDescription String?
+  city            String
+  region          String
+  address         String?
+  website         String?
+  email           String?
+  phone           String?
+  type            String
+  domains         String[]
+  levels          String[]
+  founded         String?
+  students        String?
+  isDemo          Boolean  @default(false)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  // Relations
+  university   University?   @relation(fields: [universityId], references: [id])
+  ministry     Ministry?     @relation(fields: [ministryId], references: [id])
+  competitions Competition[]
+  exams        Exam[]
+}
+
+model University {
+  id           String   @id @default(uuid())
+  name         String
+  shortName    String
+  nameAr       String?
+  slug         String   @unique
+  aliases      String[]
+  logoUrl      String?
+  officialLogo String?
+  customLogo   String?
+  logoColor    String?
+  ministryId   String?
+  description  String
+  city         String
+  region       String
+  website      String?
+  isActive     Boolean  @default(true)
+  isDemo       Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Relations
+  ministry     Ministry?     @relation(fields: [ministryId], references: [id])
+  schools      School[]
+  competitions Competition[]
+}
+
+model Ministry {
+  id           String   @id @default(uuid())
+  name         String
+  shortName    String
+  slug         String   @unique
+  aliases      String[]
+  logoUrl      String?
+  officialLogo String?
+  customLogo   String?
+  logoColor    String?
+  description  String
+  website      String?
+  sourceUrl    String?
+  address      String?
+  status       String   @default("ACTIVE") // 'ACTIVE' | 'INACTIVE'
+  isActive     Boolean  @default(true)
+  isDemo       Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Relations
+  universities University[]
+  schools      School[]
+  competitions Competition[]
+  exams        Exam[]
+}
+
+model Competition {
+  id                   String              @id @default(uuid())
+  slug                 String              @unique
+  title                String
+  organizationName     String
+  organizationType     OrgType
+  schoolId             String?
+  universityId         String?
+  ministryId           String?
+  logoUrl              String?
+  officialLogo         String?
+  customLogo           String?
+  logoColor            String?
+  category             CompetitionCategory
+  year                 Int
+  level                String
+  city                 String
+  region               String
+  domaine              String?
+  places               Int
+  description          String
+  conditions           String[]
+  profil               String?
+  programme            String?
+  matieres             String[]
+  epreuves             String[]
+  documentsDemandes    String[]
+  procedure            String?
+  frais                String?
+  resultats            String?
+  registrationStart    DateTime?
+  registrationDeadline DateTime?
+  competitionDate      DateTime?
+  publishedAt          DateTime?
+  officialWebsite      String?
+  registrationUrl      String?
+  sourceUrl            String?
+  sourceOrganization   String?
+  verificationStatus   VerificationStatus  @default(UNVERIFIED)
+  verifiedAt           DateTime?
+  verifiedBy           String?
+  publishStatus        PublishStatus       @default(DRAFT)
+  manualStatus         CompetitionStatus?
+  views                Int                 @default(0)
+  isDemo               Boolean             @default(false)
+  createdAt            DateTime            @default(now())
+  updatedAt            DateTime            @updatedAt
+
+  // Relations
+  school       School?       @relation(fields: [schoolId], references: [id])
+  university   University?   @relation(fields: [universityId], references: [id])
+  ministry     Ministry?     @relation(fields: [ministryId], references: [id])
+  favorites    Favorite[]
+  applications Application[]
+}
+
+model Exam {
+  id                 String             @id @default(uuid())
+  slug               String             @unique
+  title              String
+  schoolId           String?
+  schoolName         String
+  ministryId         String?
+  organizationName   String
+  subject            String
+  year               Int
+  level              String
+  type               String
+  description        String?
+  pdfUrl             String?
+  pages              Int?
+  duration           String?
+  downloads          Int                @default(0)
+  hasCorrection      Boolean            @default(false)
+  source             String?
+  verificationStatus VerificationStatus @default(UNVERIFIED)
+  publishStatus      PublishStatus      @default(DRAFT)
+  isDemo             Boolean            @default(false)
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+
+  // Relations
+  school   School?   @relation(fields: [schoolId], references: [id])
+  ministry Ministry? @relation(fields: [ministryId], references: [id])
+}
+
+model Document {
+  id               String        @id @default(uuid())
+  slug             String        @unique
+  title            String
+  category         String        // 'Avis de concours', 'Convocation', etc.
+  organizationName String
+  schoolId         String?
+  ministryId       String?
+  competitionId    String?
+  year             Int
+  description      String?
+  fileUrl          String?
+  fileSize         String?
+  sourceUrl        String?
+  downloads        Int           @default(0)
+  publishStatus    PublishStatus @default(DRAFT)
+  isDemo           Boolean       @default(false)
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+}
+
+model Course {
+  id            String        @id @default(uuid())
+  slug          String        @unique
+  title         String
+  subject       String
+  level         String
+  description   String
+  color         String
+  duration      String
+  difficulty    String        // 'Débutant' | 'Intermédiaire' | 'Avancé'
+  publishStatus PublishStatus @default(DRAFT)
+  isDemo        Boolean       @default(false)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  chapters Chapter[]
+}
+
+model Chapter {
+  id       String @id @default(uuid())
+  title    String
+  order    Int
+  courseId String
+
+  course  Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  lessons Lesson[]
+}
+
+model Lesson {
+  id        String  @id @default(uuid())
+  title     String
+  type      String  // 'VIDEO' | 'TEXT' | 'PDF' | 'QUIZ' | 'EXERCISE'
+  duration  String
+  content   String
+  videoUrl  String?
+  pdfUrl    String?
+  order     Int
+  chapterId String
+
+  chapter Chapter @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+}
+
+model Favorite {
+  id            String   @id @default(uuid())
+  userId        String
+  targetType    String   // 'CONCOURS' | 'EXAMEN' | 'DOCUMENT' | 'COURS' | 'ECOLE'
+  targetId      String
+  competitionId String?
+  createdAt     DateTime @default(now())
+
+  user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  competition Competition? @relation(fields: [competitionId], references: [id])
+}
+
+model Application {
+  id            String   @id @default(uuid())
+  userId        String
+  competitionId String
+  status        String   @default("PENDING") // 'PENDING' | 'ACCEPTED' | 'REJECTED'
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  competition Competition @relation(fields: [competitionId], references: [id], onDelete: Cascade)
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String   // 'all' for broadcast, or specific user ID
+  title     String
+  message   String
+  type      String   // 'info' | 'success' | 'warning' | 'deadline' | 'result'
+  link      String?
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserProgress {
+  id               String   @id @default(uuid())
+  userId           String
+  courseId         String
+  completedLessons String[]
+  percent          Float    @default(0)
+  updatedAt        DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Report {
+  id               String   @id @default(uuid())
+  userId           String?
+  userName         String?
+  competitionId    String?
+  competitionTitle String?
+  type             String
+  message          String
+  status           String   @default("OPEN") // 'OPEN' | 'RESOLVED' | 'REJECTED'
+  createdAt        DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
+
+model Settings {
+  id             String  @id @default(uuid())
+  siteName       String  @default("Concours Maroc")
+  contactEmail   String  @default("contact@concoursmaroc.ma")
+  announcement   String?
+}
