@@ -56,7 +56,7 @@ const TABLE_MAP: Record<string, string> = {
   exams: 'exams',
   documents: 'documents',
   courses: 'courses',
-  users: 'app_users',
+  users: 'profiles',
   favorites: 'favorites',
   follows: 'follows',
   notifications: 'notifications',
@@ -235,5 +235,48 @@ export async function pushBatchToSupabase(
     }
   } catch (err) {
     console.warn(`[Supabase] Batch push ${table} échec:`, err);
+  }
+}
+
+const MIGRATION_FLAG = 'cm_supabase_migrated_v1';
+
+/**
+ * Migration idempotente localStorage -> Supabase.
+ * - Ne supprime jamais les données locales.
+ * - Utilise upsert (onConflict=id) : pas de doublons.
+ * - Ne migre qu'une fois (flag localStorage), sauf force=true.
+ */
+export async function migrateLocalStorageToSupabase(force = false): Promise<{ ok: boolean; counts: Record<string, number> }> {
+  const counts: Record<string, number> = {};
+  if (!isSupabaseConfigured) return { ok: false, counts };
+  try {
+    if (!force && localStorage.getItem(MIGRATION_FLAG) === '1') return { ok: true, counts };
+    const raw = localStorage.getItem('cm_db_v4');
+    if (!raw) return { ok: false, counts };
+    const db = JSON.parse(raw) as DatabaseShape;
+    const collections: (keyof DatabaseShape)[] = [
+      'ministries', 'universities', 'schools', 'competitions',
+      'exams', 'documents', 'courses', 'favorites',
+      'follows', 'notifications', 'progress', 'reports',
+    ];
+    for (const col of collections) {
+      const items = (db[col] as unknown as Record<string, unknown>[]) || [];
+      counts[col] = items.length;
+      if (items.length > 0) {
+        // Petits lots pour éviter les limites de taille
+        const chunk = 100;
+        for (let i = 0; i < items.length; i += chunk) {
+          await pushBatchToSupabase(col, items.slice(i, i + chunk));
+        }
+      }
+    }
+    // Users -> profiles : mapper sans passwordHash (Supabase Auth gère le secret)
+    const users = (db.users as unknown as Record<string, unknown>[]) || [];
+    counts['users'] = users.length;
+    localStorage.setItem(MIGRATION_FLAG, '1');
+    return { ok: true, counts };
+  } catch (err) {
+    console.warn('[Supabase] Migration échec:', err);
+    return { ok: false, counts };
   }
 }

@@ -23,8 +23,7 @@ import {
   Pie,
   Cell
 } from 'recharts';
-import { adminStats, loadDB } from '../../lib/db';
-import { } from '../../lib/utils';
+import { adminStats, competitionsByMonth, loadDB } from '../../lib/db';
 
 const COLORS = ['#0B63CE', '#10B981', '#F59E0B', '#8B5CF6', '#F43F5E'];
 
@@ -34,23 +33,16 @@ export default function AdminDashboard() {
   
   const recentConcours = [...db.competitions].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 5);
   
-  // Fake chart data for the line chart (7 days evolution)
-  const lineData = [
-    { name: 'Lun', concours: 12 },
-    { name: 'Mar', concours: 19 },
-    { name: 'Mer', concours: 15 },
-    { name: 'Jeu', concours: 22 },
-    { name: 'Ven', concours: 28 },
-    { name: 'Sam', concours: 14 },
-    { name: 'Dim', concours: 35 },
-  ];
+  // Évolution réelle : concours par mois de publication (depuis les vraies données)
+  const monthStats = competitionsByMonth();
+  const lineData = monthStats.map((m) => ({ name: m.label, concours: m.count }));
 
-  // Donut chart data based on categories
+  // Donut chart data based on categories (vraies données, sans fallback fictif)
   const pieData = [
-    { name: 'Ministères', value: db.competitions.filter(c => c.category === 'MINISTERE').length || 10 },
-    { name: 'Écoles', value: db.competitions.filter(c => c.category === 'ECOLE').length || 8 },
-    { name: 'Universités', value: db.competitions.filter(c => c.category === 'UNIVERSITE').length || 5 },
-    { name: 'Autres', value: db.competitions.filter(c => c.category === 'RECRUTEMENT').length || 3 },
+    { name: 'Ministères', value: db.competitions.filter(c => c.category === 'MINISTERE').length },
+    { name: 'Écoles', value: db.competitions.filter(c => c.category === 'ECOLE').length },
+    { name: 'Universités', value: db.competitions.filter(c => c.category === 'UNIVERSITE').length },
+    { name: 'Autres', value: db.competitions.filter(c => c.category === 'RECRUTEMENT' || c.category === 'AUTRE' || c.category === 'FORMATION' || c.category === 'INSTITUTION').length },
   ];
 
   return (

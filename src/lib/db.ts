@@ -14,6 +14,7 @@ import type {
   AppNotification, Competition, Course, DatabaseShape, DocItem, Exam,
   Favorite, Follow, Ministry, Report, School, University, User, UserProgress,
 } from './types';
+export type { DatabaseShape };
 import {
   SEED_COURSES, SEED_DOCS, SEED_EXAMS, SEED_MINISTRIES,
   SEED_NOTIFICATIONS, SEED_SCHOOLS, SEED_UNIVERSITIES, SEED_USERS, buildCompetitions

@@ -1,3 +1,4 @@
+import { exportGlobalExcel, exportFilteredExcel } from '../../lib/exportExcel';
 import { useState, useEffect } from 'react';
 import { AdminHeader } from './shared';
 import { Card, Button, Input, Select } from '../../components/ui';
@@ -6,7 +7,7 @@ import { loadDB, adminStats } from '../../lib/db';
 import { Download, FileText, Filter, RefreshCw, Clock, FileSpreadsheet } from 'lucide-react';
 import { useToast } from '../../components/ui';
 import { Tooltip as RechartsTooltip, ResponsiveContainer, Cell, PieChart, Pie } from 'recharts';
-import * as XLSX from 'xlsx';
+
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import { useAuth } from '../../lib/auth';
@@ -74,157 +75,18 @@ export default function AdminRapports() {
 
   const filteredCompetitions = getFilteredCompetitions();
 
-  const handleExportGlobalExcel = () => {
+  const handleExportGlobalExcel = async () => {
     setLoading(true);
-    setTimeout(() => {
-      try {
-        const wb = XLSX.utils.book_new();
-
-        // --- SHEET 1: Résumé ---
-        const summaryData = [
-          ['CONCOURS MAROC - RAPPORT GLOBAL'],
-          ['Date de génération', new Date().toLocaleDateString('fr-FR')],
-          ['Généré par', user ? `${user.firstName} ${user.lastName}` : 'Admin'],
-          [],
-          ['STATISTIQUES GLOBALES'],
-          ['Total Concours', db.competitions.length],
-          ['Concours Publiés', db.competitions.filter(c => c.publishStatus === 'PUBLISHED').length],
-          ['Total Écoles', db.schools.length],
-          ['Total Universités', db.universities.length],
-          ['Total Ministères', db.ministries.length],
-        ];
-        const wsSummary = XLSX.utils.aoa_to_sheet(summaryData);
-        XLSX.utils.book_append_sheet(wb, wsSummary, 'Résumé');
-
-        // --- SHEET 2: Concours ---
-        const wsConcoursData = db.competitions.map(c => ({
-          ID: c.id,
-          Titre: c.title,
-          Description: c.description || '',
-          Organisme: c.organizationName,
-          Institution_ID: c.schoolId || c.universityId || '',
-          Ministère_ID: c.ministryId || '',
-          Type: c.organizationType,
-          Catégorie: c.category,
-          Niveau: c.level || '',
-          Places: c.places || 0,
-          Statut: c.publishStatus,
-          Ville: c.city,
-          Région: c.region,
-          'Année': c.year || '',
-          'Date de limite': c.registrationDeadline || '',
-          'Date du concours': c.competitionDate || '',
-          'Date de publication': c.publishedAt ? new Date(c.publishedAt).toLocaleDateString('fr-FR') : '',
-          'Date de création': new Date(c.createdAt).toLocaleDateString('fr-FR'),
-          'Date de mise à jour': new Date(c.updatedAt).toLocaleDateString('fr-FR'),
-          Lien_Officiel: c.officialWebsite || '',
-          Conditions: c.conditions?.join(' ; ') || '',
-          Documents: c.documentsDemandes?.join(' ; ') || '',
-          Épreuves: c.epreuves?.join(' ; ') || ''
-        }));
-        const wsConcours = XLSX.utils.json_to_sheet(wsConcoursData);
-        XLSX.utils.book_append_sheet(wb, wsConcours, 'Concours');
-
-        // --- SHEET 3: Institutions ---
-        const wsInstitutionsData = [
-          ...db.schools.map(s => ({
-            ID: s.id,
-            Nom: s.name,
-            'Nom court': s.shortName,
-            Type: 'École',
-            Ministère_ID: s.ministryId || '',
-            Université_ID: s.universityId || '',
-            Description: s.description || '',
-            Ville: s.city,
-            Région: s.region,
-            Adresse: s.address || '',
-            Site_Web: s.website || '',
-            Email: s.email || '',
-            Téléphone: s.phone || '',
-            Actif: s.isActive !== false ? 'Oui' : 'Non',
-            'Date de création': s.createdAt ? new Date(s.createdAt).toLocaleDateString('fr-FR') : '',
-            'Date de mise à jour': s.updatedAt ? new Date(s.updatedAt).toLocaleDateString('fr-FR') : ''
-          })),
-          ...db.universities.map(u => ({
-            ID: u.id,
-            Nom: u.name,
-            'Nom court': u.shortName,
-            Type: 'Université',
-            Ministère_ID: u.ministryId || '',
-            Université_ID: '',
-            Description: u.description || '',
-            Ville: u.city,
-            Région: u.region,
-            Adresse: '',
-            Site_Web: u.website || '',
-            Email: '',
-            Téléphone: '',
-            Actif: u.isActive !== false ? 'Oui' : 'Non',
-            'Date de création': u.createdAt ? new Date(u.createdAt).toLocaleDateString('fr-FR') : '',
-            'Date de mise à jour': u.updatedAt ? new Date(u.updatedAt).toLocaleDateString('fr-FR') : ''
-          }))
-        ];
-        const wsInstitutions = XLSX.utils.json_to_sheet(wsInstitutionsData);
-        XLSX.utils.book_append_sheet(wb, wsInstitutions, 'Institutions');
-
-        // --- SHEET 4: Ministères ---
-        const wsMinistriesData = db.ministries.map(m => ({
-          ID: m.id,
-          Nom: m.name,
-          'Nom court': m.shortName,
-          Description: m.description || '',
-          Statut: m.status,
-          Site_Web: m.website || '',
-          Téléphone: '',
-          Email: '',
-          Actif: m.isActive !== false ? 'Oui' : 'Non',
-          'Date de création': m.createdAt ? new Date(m.createdAt).toLocaleDateString('fr-FR') : '',
-          'Date de mise à jour': m.updatedAt ? new Date(m.updatedAt).toLocaleDateString('fr-FR') : ''
-        }));
-        const wsMinistries = XLSX.utils.json_to_sheet(wsMinistriesData);
-        XLSX.utils.book_append_sheet(wb, wsMinistries, 'Ministères');
-
-
-        // --- SHEET 5: Statistiques ---
-        const wsStatsData = [
-          ['STATISTIQUES DES CONCOURS'],
-          ['Par Statut'],
-          ['Publiés', db.competitions.filter(c => c.publishStatus === 'PUBLISHED').length],
-          ['Brouillons', db.competitions.filter(c => c.publishStatus === 'DRAFT').length],
-          [],
-          ['Par Type d\'organisation'],
-          ['Écoles', db.competitions.filter(c => c.organizationType === 'ECOLE').length],
-          ['Institutions', db.competitions.filter(c => c.organizationType === 'INSTITUTION').length],
-          ['Ministères', db.competitions.filter(c => c.organizationType === 'MINISTERE').length]
-        ];
-        const wsStats = XLSX.utils.aoa_to_sheet(wsStatsData);
-        XLSX.utils.book_append_sheet(wb, wsStats, 'Statistiques');
-
-        // --- SHEET 6: Liens ---
-        const wsLinksData = db.competitions
-          .filter(c => c.officialWebsite || c.sourceUrl)
-          .map(c => ({
-            ID: c.id,
-            Titre: c.title,
-            Lien_Officiel: c.officialWebsite || '',
-            Lien_Source: c.sourceUrl || ''
-          }));
-        const wsLinks = XLSX.utils.json_to_sheet(wsLinksData);
-        XLSX.utils.book_append_sheet(wb, wsLinks, 'Liens');
-
-        // Export
-        const dateStr = new Date().toISOString().split('T')[0];
-        XLSX.writeFile(wb, `concours-maroc-rapport-global-${dateStr}.xlsx`);
-
-        addLog('Global complet', 'Excel', db.competitions.length + db.schools.length + db.universities.length + db.ministries.length, 'Aucun');
-        toast.toast('Export Excel généré avec succès', 'success');
-      } catch (err) {
-        console.error(err);
-        toast.toast('Erreur lors de la génération de l\'export', 'error');
-      } finally {
-        setLoading(false);
-      }
-    }, 500);
+    try {
+      const rows = await exportGlobalExcel(db, user);
+      addLog('Global complet', 'Excel', rows, 'Aucun');
+      toast.toast('Export Excel généré avec succès', 'success');
+    } catch (err) {
+      console.error(err);
+      toast.toast('Erreur lors de la génération de l\'export', 'error');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleExportFilteredPDF = () => {
@@ -287,37 +149,18 @@ export default function AdminRapports() {
     }, 500);
   };
 
-  const handleExportFilteredExcel = () => {
+  const handleExportFilteredExcel = async () => {
     setLoading(true);
-    setTimeout(() => {
-      try {
-        const wb = XLSX.utils.book_new();
-        const wsData = filteredCompetitions.map(c => ({
-          ID: c.id,
-          Titre: c.title,
-          Organisme: c.organizationName,
-          Type: c.organizationType,
-          Catégorie: c.category,
-          Statut: c.publishStatus,
-          Ville: c.city,
-          Région: c.region,
-          'Date de limite': c.registrationDeadline || '',
-        }));
-        const ws = XLSX.utils.json_to_sheet(wsData);
-        XLSX.utils.book_append_sheet(wb, ws, 'Concours Filtrés');
-
-        const dateStr = new Date().toISOString().split('T')[0];
-        XLSX.writeFile(wb, `concours-filtres-${dateStr}.xlsx`);
-
-        addLog('Concours Filtrés', 'Excel', filteredCompetitions.length, `Type:${typeFilter}, Statut:${statusFilter}`);
-        toast.toast('Export Excel généré avec succès', 'success');
-      } catch (err) {
-        console.error(err);
-        toast.toast('Erreur lors de la génération', 'error');
-      } finally {
-        setLoading(false);
-      }
-    }, 500);
+    try {
+      await exportFilteredExcel(filteredCompetitions);
+      addLog('Concours Filtrés', 'Excel', filteredCompetitions.length, `Type:${typeFilter}, Statut:${statusFilter}`);
+      toast.toast('Export Excel généré avec succès', 'success');
+    } catch (err) {
+      console.error(err);
+      toast.toast('Erreur lors de la génération', 'error');
+    } finally {
+      setLoading(false);
+    }
   };
 
 
