@@ -8,6 +8,7 @@ import { adminCreate, adminDelete, adminUpdate, loadDB, pushNotification } from 
 import type { Competition } from '../../lib/types';
 import { CITIES, DOMAINS, LEVELS, formatDateShort, slugify, statusFromCompetition, uid } from '../../lib/utils';
 import { Button, Field, Input, Modal, OrgAvatar, Select, StatusBadge, Textarea } from '../../components/ui';
+import { AutoOrganismeField } from '../../components/AutoOrganismeField';
 import { AdminHeader, AdminTableShell, AddButton, ConfirmDelete, PublishPill, RowActions, Td, Th, VerifyPill } from './shared';
 
 const COLORS = ['#0D47A1', '#C62828', '#2E7D32', '#4A148C', '#E65100', '#00695C', '#B71C1C', '#01579B', '#5D4037', '#37474F'];
@@ -217,6 +218,21 @@ function ConcoursForm({ initial, isEdit, onClose }: { initial: Partial<Competiti
         </div>
 
         <Group title="Organisme">
+          <div className="mb-4">
+            <AutoOrganismeField
+              title={f.title}
+              description={f.description}
+              sourceUrl={f.sourceUrl}
+              selectedId={f.schoolId || f.ministryId}
+              onChange={(org) => {
+                set('organizationName', org.organizationName);
+                set('organizationType', org.organizationType);
+                set('schoolId', org.schoolId);
+                set('ministryId', org.ministryId);
+                if (org.logoUrl) set('logoUrl', org.logoUrl);
+              }}
+            />
+          </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <Field label="Type d\u2019organisme" required>
               <Select value={f.organizationType} onChange={(e) => set('organizationType', e.target.value)}>
