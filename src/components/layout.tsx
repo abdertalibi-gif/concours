@@ -10,7 +10,7 @@ import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-do
 import {
   Bell, BookOpen, Building2, ChevronDown, Contact, FileText, GraduationCap,
   HelpCircle, Home, Landmark, LayoutDashboard, LogOut, Menu, Search, Settings,
-  Star, Trophy, User as UserIcon, Users, X,
+  Star, Trophy, User as UserIcon, Users, X, Bot
 } from 'lucide-react';
 import { cn } from '../utils/cn';
 import { useAuth } from '../lib/auth';
@@ -19,6 +19,7 @@ import { timeAgo } from '../lib/utils';
 
 export const NAV = [
   { to: '/concours', label: 'Concours' },
+  { to: '/masters', label: 'Masters 2026-2027' },
   { to: '/examens', label: 'Examens' },
   { to: '/ecoles', label: 'Écoles' },
   { to: '/ecoles?section=universites', label: 'Universités' },
@@ -442,6 +443,8 @@ export function AdminLayout() {
   const NEW_ADMIN_NAV = [
     { to: '/admin', label: 'Tableau de bord', icon: LayoutDashboard, end: true },
     { to: '/admin/concours', label: 'Concours', icon: Trophy },
+    { to: '/admin/masters/import', label: 'Import Masters', icon: GraduationCap },
+    { to: '/admin/ai-agent/sources', label: 'AI Agent', icon: Bot },
     { to: '/admin/ecoles', label: 'Écoles', icon: GraduationCap },
     { to: '/admin/universites', label: 'Universités', icon: Building2 },
     { to: '/admin/ministeres', label: 'Ministères', icon: Landmark },

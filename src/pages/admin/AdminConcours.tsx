@@ -2,12 +2,14 @@
 // CONCOURS MAROC — Admin : gestion des concours (CRUD complet)
 // ============================================================
 import { useMemo, useState } from 'react';
-import { BadgeCheck, Copy, Eye, EyeOff } from 'lucide-react';
+import { BadgeCheck, Copy, Eye, EyeOff, UploadCloud } from 'lucide-react';
 import { useAuth } from '../../lib/auth';
 import { adminCreate, adminDelete, adminUpdate, loadDB, pushNotification } from '../../lib/db';
 import type { Competition } from '../../lib/types';
 import { CITIES, DOMAINS, LEVELS, formatDateShort, slugify, statusFromCompetition, uid } from '../../lib/utils';
 import { Button, Field, Input, Modal, OrgAvatar, Select, StatusBadge, Textarea } from '../../components/ui';
+import { AutoOrganismeField } from '../../components/AutoOrganismeField';
+import { resolveOrganisme } from '../../lib/organismeResolver';
 import { AdminHeader, AdminTableShell, AddButton, ConfirmDelete, PublishPill, RowActions, Td, Th, VerifyPill } from './shared';
 
 const COLORS = ['#0D47A1', '#C62828', '#2E7D32', '#4A148C', '#E65100', '#00695C', '#B71C1C', '#01579B', '#5D4037', '#37474F'];
@@ -29,6 +31,7 @@ export default function AdminConcours() {
   const [editing, setEditing] = useState<Competition | null>(null);
   const [creating, setCreating] = useState(false);
   const [deleting, setDeleting] = useState<Competition | null>(null);
+  const [importing, setImporting] = useState(false);
 
   const list = useMemo(() => {
     let arr = [...db.competitions].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
@@ -72,7 +75,12 @@ export default function AdminConcours() {
   return (
     <div>
       <AdminHeader title="Concours" subtitle={`${db.competitions.length} concours au total — ajoutez les nouveaux concours sans toucher au code.`}
-        action={<AddButton label="Ajouter un concours" onClick={() => setCreating(true)} />} />
+        action={
+          <div className="flex items-center gap-2">
+            <Button variant="outline" onClick={() => setImporting(true)} className="bg-white"><UploadCloud className="mr-2 h-4 w-4" /> Importer</Button>
+            <AddButton label="Ajouter un concours" onClick={() => setCreating(true)} />
+          </div>
+        } />
 
       <AdminTableShell search={q} onSearch={setQ} searchPh="Rechercher un concours, un organisme..."
         actions={
@@ -128,6 +136,11 @@ export default function AdminConcours() {
           onClose={() => { setCreating(false); setEditing(null); }}
         />
       )}
+      
+      {importing && (
+        <BulkImportModal onClose={() => setImporting(false)} />
+      )}
+
       <ConfirmDelete open={!!deleting} label={deleting ? `${deleting.title}` : ''} onClose={() => setDeleting(null)}
         onConfirm={() => { if (deleting) adminDelete('competitions', deleting.id); }} />
     </div>
@@ -217,6 +230,21 @@ function ConcoursForm({ initial, isEdit, onClose }: { initial: Partial<Competiti
         </div>
 
         <Group title="Organisme">
+          <div className="mb-4">
+            <AutoOrganismeField
+              title={f.title}
+              description={f.description}
+              sourceUrl={f.sourceUrl}
+              selectedId={f.schoolId || f.ministryId}
+              onChange={(org) => {
+                set('organizationName', org.organizationName);
+                set('organizationType', org.organizationType);
+                set('schoolId', org.schoolId);
+                set('ministryId', org.ministryId);
+                if (org.logoUrl) set('logoUrl', org.logoUrl);
+              }}
+            />
+          </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <Field label="Type d\u2019organisme" required>
               <Select value={f.organizationType} onChange={(e) => set('organizationType', e.target.value)}>
@@ -307,11 +335,13 @@ function ConcoursForm({ initial, isEdit, onClose }: { initial: Partial<Competiti
           </div>
         </Group>
 
-        <Group title="Dates">
+        <Group title="Dates importantes">
           <div className="grid gap-4 sm:grid-cols-3">
             <Field label="Ouverture des inscriptions"><Input type="date" value={toDateInput(f.registrationStart)} onChange={(e) => set('registrationStart', e.target.value ? new Date(e.target.value).toISOString() : undefined)} /></Field>
             <Field label="Clôture des inscriptions" error={errors.registrationDeadline}><Input type="date" value={toDateInput(f.registrationDeadline)} onChange={(e) => set('registrationDeadline', e.target.value ? new Date(e.target.value).toISOString() : undefined)} error={!!errors.registrationDeadline} /></Field>
             <Field label="Date du concours"><Input type="date" value={toDateInput(f.competitionDate)} onChange={(e) => set('competitionDate', e.target.value ? new Date(e.target.value).toISOString() : undefined)} /></Field>
+            <Field label="Date de convocation"><Input type="date" value={toDateInput(f.convocationDate)} onChange={(e) => set('convocationDate', e.target.value ? new Date(e.target.value).toISOString() : undefined)} /></Field>
+            <Field label="Date des résultats"><Input type="date" value={toDateInput(f.resultsDate)} onChange={(e) => set('resultsDate', e.target.value ? new Date(e.target.value).toISOString() : undefined)} /></Field>
           </div>
         </Group>
 
@@ -377,5 +407,126 @@ function Group({ title, children }: { title: string; children: React.ReactNode }
       <legend className="px-2 text-[13px] font-extrabold uppercase tracking-wide text-[#0B2A4A]">{title}</legend>
       {children}
     </fieldset>
+  );
+}
+
+// ==================== IMPORTER EN MASSE ====================
+function BulkImportModal({ onClose }: { onClose: () => void }) {
+  const [jsonText, setJsonText] = useState('');
+  const [status, setStatus] = useState<{ message: string; type: 'info' | 'error' | 'success' } | null>(null);
+  const [loading, setLoading] = useState(false);
+  const db = loadDB();
+
+  const handleImport = async () => {
+    setStatus(null);
+    try {
+      const data = JSON.parse(jsonText);
+      if (!Array.isArray(data)) {
+        setStatus({ message: "Le format JSON doit être un tableau d'objets.", type: 'error' });
+        return;
+      }
+
+      setLoading(true);
+      let inserted = 0;
+      let updated = 0;
+
+      for (const item of data) {
+        if (!item.title) continue;
+
+        // Auto-resolve organisme si manquant
+        let orgName = item.organizationName || '';
+        let orgType = item.organizationType || 'INSTITUTION';
+        let schoolId = item.schoolId;
+        let ministryId = item.ministryId;
+        let category = item.category || 'AUTRE';
+        let confidence = 0;
+
+        const resolution = resolveOrganisme({ organizationName: orgName, title: item.title, description: item.description || '', sourceUrl: item.sourceUrl || item.officialWebsite || '' });
+        if (resolution && resolution.isDetected) {
+          orgName = resolution.organizationName;
+          orgType = resolution.organizationType;
+          schoolId = resolution.schoolId;
+          ministryId = resolution.ministryId;
+          category = resolution.organizationType;
+          confidence = 1;
+        }
+
+        const year = item.year || new Date().getFullYear();
+        const slug = slugify(`${orgName}-${item.title}-${year}`);
+
+        // Détection de doublons (même organisme, même titre, même année) ou même source
+        const existing = db.competitions.find(c => 
+          (c.slug === slug) || 
+          (c.sourceUrl && item.sourceUrl && c.sourceUrl === item.sourceUrl) ||
+          (c.schoolId && c.schoolId === schoolId && c.title.toLowerCase() === item.title.toLowerCase() && c.year === year)
+        );
+
+        const verificationStatus = confidence < 0.8 ? 'A_VERIFIER' : 'UNVERIFIED';
+
+        const cData = {
+          ...emptyForm(),
+          ...item,
+          slug,
+          organizationName: orgName,
+          organizationType: orgType,
+          schoolId,
+          ministryId,
+          category,
+          year,
+          verificationStatus: existing ? existing.verificationStatus : (item.verificationStatus || verificationStatus),
+          updatedAt: new Date().toISOString()
+        };
+
+        if (existing) {
+          await adminUpdate<Competition>('competitions', existing.id, cData);
+          updated++;
+        } else {
+          await adminCreate<Competition>('competitions', {
+            ...cData,
+            id: uid('c'),
+            publishedAt: new Date().toISOString(),
+            createdAt: new Date().toISOString(),
+            views: 0
+          });
+          inserted++;
+        }
+      }
+
+      setStatus({ message: `Import réussi : ${inserted} insérés, ${updated} mis à jour.`, type: 'success' });
+      setJsonText('');
+    } catch (e) {
+      setStatus({ message: `Erreur de parsing JSON : ${(e as Error).message}`, type: 'error' });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <Modal open onClose={onClose} title="Import en masse de concours" wide>
+      <div className="space-y-4">
+        <p className="text-sm text-slate-600">
+          Collez un tableau JSON de concours. Le système analysera chaque concours, détectera automatiquement l'établissement et le ministère associés (grâce à <code>resolveOrganisme</code>), et évitera les doublons (par titre/école/année ou URL source).
+        </p>
+        
+        {status && (
+          <div className={`p-3 rounded-lg text-sm font-semibold ${status.type === 'error' ? 'bg-red-50 text-red-700' : status.type === 'success' ? 'bg-emerald-50 text-emerald-700' : 'bg-blue-50 text-blue-700'}`}>
+            {status.message}
+          </div>
+        )}
+
+        <Textarea 
+          rows={12} 
+          value={jsonText} 
+          onChange={(e) => setJsonText(e.target.value)} 
+          placeholder='[{"title": "Concours ENSA 2026", "organizationName": "ENSA", "places": 50, ...}]'
+          className="font-mono text-xs"
+        />
+
+        <div className="flex justify-end gap-2 border-t border-slate-100 pt-4">
+          <Button variant="outline" onClick={onClose} disabled={loading}>Fermer</Button>
+          <Button onClick={handleImport} loading={loading}>Lancer l'importation</Button>
+        </div>
+      </div>
+    </Modal>
   );
 }

@@ -7,6 +7,7 @@ import { AuthProvider, useAuth } from './lib/auth';
 import { ToastProvider } from './components/ui';
 import { AdminLayout, DashboardLayout, PublicLayout } from './components/layout';
 import Home from './pages/Home';
+import Masters from './pages/Masters';
 import ConcoursList from './pages/ConcoursList';
 import ConcoursDetail from './pages/ConcoursDetail';
 import { EcoleDetail, EcolesList } from './pages/Ecoles';
@@ -19,6 +20,8 @@ import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminConcours from './pages/admin/AdminConcours';
 import AdminRapports from './pages/admin/AdminRapports';
 import AdminParametres from './pages/admin/AdminParametres';
+import AdminAIAgent from './pages/admin/AdminAIAgent';
+import AdminMastersImport from './pages/admin/AdminMastersImport';
 import { AdminEcoles, AdminMinisteres, AdminUniversites } from './pages/admin/AdminCatalog';
 import { AdminCours, AdminDocuments, AdminExamens } from './pages/admin/AdminContent';
 import { AdminNotifications, AdminSignalements, AdminUsers } from './pages/admin/AdminUsers';
@@ -41,6 +44,7 @@ export default function App() {
             {/* ---------- Public ---------- */}
             <Route element={<PublicLayout />}>
               <Route index element={<Home />} />
+              <Route path="masters" element={<Masters />} />
               <Route path="concours" element={<ConcoursList />} />
               <Route path="concours/:slug" element={<ConcoursDetail />} />
               <Route path="ecoles" element={<EcolesList />} />
@@ -77,6 +81,7 @@ export default function App() {
             <Route path="admin" element={<AdminLayout />}>
               <Route index element={<AdminDashboard />} />
               <Route path="concours" element={<AdminConcours />} />
+              <Route path="masters/import" element={<AdminMastersImport />} />
               <Route path="ecoles" element={<AdminEcoles />} />
               <Route path="universites" element={<AdminUniversites />} />
               <Route path="ministeres" element={<AdminMinisteres />} />
@@ -86,6 +91,8 @@ export default function App() {
               <Route path="utilisateurs" element={<AdminUsers />} />
               <Route path="rapports" element={<AdminRapports />} />
               <Route path="parametres" element={<AdminParametres />} />
+              <Route path="ai-agent/sources" element={<AdminAIAgent />} />
+              <Route path="ai-agent" element={<AdminAIAgent />} />
               <Route path="notifications" element={<AdminNotifications />} />
               <Route path="signalements" element={<AdminSignalements />} />
               <Route path="*" element={<NotFound />} />

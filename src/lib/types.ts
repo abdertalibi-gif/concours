@@ -143,6 +143,8 @@ export interface Competition {
   registrationStart?: string;
   registrationDeadline?: string;
   competitionDate?: string;
+  convocationDate?: string;
+  resultsDate?: string;
   publishedAt: string;
   officialWebsite?: string;
   registrationUrl?: string;

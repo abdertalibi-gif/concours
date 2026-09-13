@@ -210,6 +210,8 @@ model Competition {
   registrationStart    DateTime?
   registrationDeadline DateTime?
   competitionDate      DateTime?
+  convocationDate      DateTime?
+  resultsDate          DateTime?
   publishedAt          DateTime?
   officialWebsite      String?
   registrationUrl      String?
@@ -388,9 +390,74 @@ model Report {
   user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
 }
 
-model Settings {
-  id             String  @id @default(uuid())
-  siteName       String  @default("Concours Maroc")
-  contactEmail   String  @default("contact@concoursmaroc.ma")
-  announcement   String?
+model AgentSource {
+  id               String   @id @default(uuid())
+  name             String
+  url              String
+  type             String   // 'MINISTRY', 'UNIVERSITY', 'SCHOOL', 'PORTAL'
+  organizationName String?
+  schoolId         String?
+  ministryId       String?
+  isActive         Boolean  @default(true)
+  lastCheckAt      DateTime?
+  lastUpdateAt     DateTime?
+  status           String   @default("PENDING") // 'PENDING', 'OK', 'ERROR'
+  lastError        String?
+  contentHash      String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  
+  logs             AgentLog[]
 }
+
+model AgentLog {
+  id          String   @id @default(uuid())
+  sourceId    String
+  level       String   @default("INFO") // 'INFO', 'WARN', 'ERROR', 'SUCCESS'
+  action      String   // 'SCAN', 'DETECT', 'EXTRACT', 'UPSERT', 'ERROR'
+  message     String
+  details     String?  // JSON stringified details
+  createdAt   DateTime @default(now())
+  
+  source      AgentSource @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+}
+
+model Master {
+  id                  String    @id @default(uuid())
+  uniqueKey           String    @unique // e.g., "university-establishment-name-year"
+  name                String
+  university          String?
+  establishment       String?
+  city                String?
+  domain              String?
+  level               String?
+  academicYear        String?
+  openingDate         DateTime?
+  deadlineDate        DateTime?
+  examDate            DateTime?
+  publicationDate     DateTime?
+  resultsDate         DateTime?
+  conditions          String?   @db.Text
+  documents           String?   @db.Text
+  seats               Int?
+  officialUrl         String?
+  sourceUrl           String?
+  status              String    @default("INFORMATION")
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+}
+
+model SyncSummary {
+  id              String   @id @default(uuid())
+  createdAt       DateTime @default(now())
+  newCount        Int      @default(0)
+  updatedCount    Int      @default(0)
+  duplicateCount  Int      @default(0)
+  errorCount      Int      @default(0)
+  openCount       Int      @default(0)
+  upcomingCount   Int      @default(0)
+  closedCount     Int      @default(0)
+  resultsCount    Int      @default(0)
+  details         String?  @db.Text
+}
+

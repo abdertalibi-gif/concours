@@ -1,32 +1,61 @@
 import { DatabaseShape } from './db';
+import type { Competition } from './types';
 import * as XLSX from 'xlsx';
 
-export interface Competition {
-  id: string;
-  title: string;
-  organizationName: string;
-  organizationType: string;
-  city: string;
-  publishStatus: string;
-  registrationDeadline?: string;
-  level: string;
-  domaine?: string;
-  year: number;
-}
+const formatDate = (isoStr?: string | null) => {
+  if (!isoStr) return '';
+  try {
+    return new Date(isoStr).toLocaleDateString('fr-MA');
+  } catch {
+    return '';
+  }
+};
+
+const formatArray = (arr?: string[] | null) => {
+  if (!arr || !Array.isArray(arr)) return '';
+  return arr.join(' ; ');
+};
 
 // Export all data from the database to an Excel file with multiple sheets
 export function exportGlobalExcel(db: DatabaseShape, _user: any): number {
+  const getMinistryName = (id?: string) => {
+    if (!id) return '';
+    return db.ministries.find(m => m.id === id)?.name || id;
+  };
+
   const competitions = db.competitions.map((c: Competition) => ({
     'ID': c.id,
-    'Titre': c.title,
+    'Concours': c.title,
     'Organisme': c.organizationName,
-    'Type': c.organizationType,
-    'Ville': c.city,
-    'Statut': c.publishStatus,
-    'Date limite': c.registrationDeadline ? new Date(c.registrationDeadline).toLocaleDateString('fr-MA') : '',
+    'Type organisme': c.organizationType,
+    'Ministère': getMinistryName(c.ministryId),
+    'Catégorie': c.category,
+    'Année': c.year,
+    'Places': c.places,
     'Niveau': c.level,
-    'Domaine': c.domaine,
-    'Annee': c.year,
+    'Domaine': c.domaine || '',
+    'Ville': c.city,
+    'Région': c.region || '',
+    'Date publication': formatDate(c.publishedAt),
+    'Date ouverture': formatDate(c.registrationStart),
+    'Date clôture': formatDate(c.registrationDeadline),
+    'Date concours': formatDate(c.competitionDate),
+    'Date convocation': formatDate(c.convocationDate),
+    'Date résultats': formatDate(c.resultsDate),
+    'Conditions': formatArray(c.conditions),
+    'Épreuves': formatArray(c.epreuves),
+    'Matières': formatArray(c.matieres),
+    'Documents demandés': formatArray(c.documentsDemandes),
+    'Profil': c.profil || '',
+    'Programme': c.programme || '',
+    'Procédure': c.procedure || '',
+    'Frais': c.frais || '',
+    'Site officiel': c.officialWebsite || '',
+    'Lien inscription': c.registrationUrl || '',
+    'URL source': c.sourceUrl || '',
+    'Statut': c.publishStatus,
+    'Vérification': c.verificationStatus,
+    'Dernière mise à jour': formatDate(c.updatedAt),
   }));
 
   const schools = db.schools.map((s: any) => ({
@@ -35,9 +64,8 @@ export function exportGlobalExcel(db: DatabaseShape, _user: any): number {
     'Type': s.type,
     'Ville': s.city,
     'Region': s.region,
-    'Domaine': s.domaine,
-    'Niveau': s.level,
-    'Effectif': s.places,
+    'Ministere': getMinistryName(s.ministryId),
+    'Effectif': s.students || '',
   }));
 
   const universities = db.universities.map((u: any) => ({
@@ -46,17 +74,32 @@ export function exportGlobalExcel(db: DatabaseShape, _user: any): number {
     'Short Name': u.shortName,
     'Region': u.region,
     'Ville': u.city,
-    'Ministere': u.ministryId,
+    'Ministere': getMinistryName(u.ministryId),
   }));
 
   const ministries = db.ministries.map((m: any) => ({
     'ID': m.id,
     'Nom': m.name,
     'Short Name': m.shortName,
-    'Type': m.type,
+    'Website': m.website || '',
   }));
 
-  const sheets = [['Concours', competitions], ['Ecoles', schools], ['Universites', universities], ['Ministeres', ministries]];
+  const statistics = [
+    { 'Métrique': 'Total Concours', 'Valeur': db.competitions.length },
+    { 'Métrique': 'Concours Publiés', 'Valeur': db.competitions.filter(c => c.publishStatus === 'PUBLISHED').length },
+    { 'Métrique': 'Total Écoles', 'Valeur': db.schools.length },
+    { 'Métrique': 'Total Universités', 'Valeur': db.universities.length },
+    { 'Métrique': 'Total Ministères', 'Valeur': db.ministries.length },
+  ];
+
+  const sheets = [
+    ['Concours', competitions], 
+    ['Organismes', schools], 
+    ['Universités', universities], 
+    ['Ministères', ministries],
+    ['Statistiques', statistics]
+  ];
+  
   const workbook = XLSX.utils.book_new();
   sheets.forEach(([name, data]) => {
     const worksheet = XLSX.utils.json_to_sheet(data as any);
@@ -68,12 +111,7 @@ export function exportGlobalExcel(db: DatabaseShape, _user: any): number {
   XLSX.writeFile(workbook as any, fileName);
 
   // Return row count for logging
-  let totalRows = 0;
-  totalRows += competitions.length;
-  totalRows += schools.length;
-  totalRows += universities.length;
-  totalRows += ministries.length;
-  return totalRows;
+  return competitions.length + schools.length + universities.length + ministries.length;
 }
 
 // Export filtered competitions to an Excel file
@@ -85,9 +123,9 @@ export function exportFilteredExcel(filteredCompetitions: Competition[]): number
     'Type': c.organizationType,
     'Ville': c.city,
     'Statut': c.publishStatus,
-    'Date limite': c.registrationDeadline ? new Date(c.registrationDeadline).toLocaleDateString('fr-MA') : '',
+    'Date limite': formatDate(c.registrationDeadline),
     'Niveau': c.level,
-    'Domaine': c.domaine,
+    'Domaine': c.domaine || '',
     'Annee': c.year,
   }));
 

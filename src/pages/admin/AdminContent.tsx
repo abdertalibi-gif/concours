@@ -6,6 +6,7 @@ import { adminCreate, adminDelete, adminUpdate, loadDB, pushNotification } from 
 import type { Chapter, Course, DocItem, Exam, Lesson } from '../../lib/types';
 import { LEVELS, SUBJECTS, slugify, uid } from '../../lib/utils';
 import { Button, Field, Input, Modal, Select, Textarea } from '../../components/ui';
+import { AutoOrganismeField } from '../../components/AutoOrganismeField';
 import { AdminHeader, AdminTableShell, AddButton, ConfirmDelete, PublishPill, RowActions, Td, Th, VerifyPill } from './shared';
 
 // ==================== EXAMENS ====================
@@ -161,9 +162,20 @@ function DocForm({ initial, onClose }: { initial: DocItem | null; onClose: () =>
     <Modal open onClose={onClose} title={initial ? 'Modifier le document' : 'Ajouter un document'} wide>
       <div className="space-y-4">
         {error && <p className="rounded-xl bg-red-50 p-3 text-sm font-semibold text-red-700">{error}</p>}
+        <AutoOrganismeField
+          title={f.title}
+          description={f.description}
+          sourceUrl={f.sourceUrl}
+          selectedId={f.schoolId || f.ministryId}
+          onChange={(org) => {
+            set('organizationName', org.organizationName);
+            set('schoolId', org.schoolId);
+            set('ministryId', org.ministryId);
+          }}
+        />
         <div className="grid gap-4 sm:grid-cols-2">
           <Field label="Titre *"><Input value={f.title ?? ''} onChange={(e) => set('title', e.target.value)} /></Field>
-          <Field label="Organisme *"><Input value={f.organizationName ?? ''} onChange={(e) => set('organizationName', e.target.value)} /></Field>
+          <Field label="Nom de l'organisme *"><Input value={f.organizationName ?? ''} onChange={(e) => set('organizationName', e.target.value)} /></Field>
           <Field label="Catégorie"><Select value={f.category} onChange={(e) => set('category', e.target.value)}>{DOC_CATS.map((c) => <option key={c} value={c}>{c}</option>)}</Select></Field>
           <Field label="Année"><Input type="number" value={f.year ?? ''} onChange={(e) => set('year', parseInt(e.target.value) || new Date().getFullYear())} /></Field>
           <Field label="URL du fichier (stockage)"><Input value={f.fileUrl ?? ''} onChange={(e) => set('fileUrl', e.target.value || undefined)} placeholder="https://…" /></Field>

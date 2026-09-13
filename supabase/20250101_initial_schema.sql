@@ -133,6 +133,8 @@ CREATE TABLE IF NOT EXISTS competitions (
   registration_start TIMESTAMPTZ,
   registration_deadline TIMESTAMPTZ,
   competition_date TIMESTAMPTZ,
+  convocation_date TIMESTAMPTZ,
+  results_date TIMESTAMPTZ,
   published_at TIMESTAMPTZ,
   official_website TEXT,
   registration_url TEXT,
