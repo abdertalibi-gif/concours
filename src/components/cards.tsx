@@ -29,6 +29,7 @@ export function CompetitionCard({ c }: { c: Competition }) {
   const remTone = rem.tone === 'green' ? 'text-emerald-600' : rem.tone === 'orange' ? 'text-orange-600' : rem.tone === 'red' ? 'text-red-600' : 'text-slate-500';
   const dotTone = rem.tone === 'green' ? 'bg-emerald-500' : rem.tone === 'orange' ? 'bg-orange-500' : rem.tone === 'red' ? 'bg-red-500' : 'bg-slate-400';
   const org = resolveOrgLogo(c);
+  const isMaster = c.id?.startsWith('mst-') || c.level?.toLowerCase().includes('master') || (c.category === 'UNIVERSITE' && !c.schoolId);
 
   return (
     <article className={CARD_BASE}>
@@ -47,8 +48,10 @@ export function CompetitionCard({ c }: { c: Competition }) {
 
       <div className="mt-3 flex flex-wrap items-center gap-1.5">
         <Chip>{c.year}</Chip>
-        <Chip tone="blue">{c.level}</Chip>
-        <Chip tone="orange">{c.category === 'MINISTERE' ? 'Concours' : c.category === 'ECOLE' ? 'École' : c.category === 'UNIVERSITE' ? 'Université' : 'Concours'}</Chip>
+        <Chip tone={isMaster ? "purple" : "blue"}>{c.level}</Chip>
+        <Chip tone={isMaster ? "blue" : "orange"}>
+          {isMaster ? 'Master Universitaire' : c.category === 'MINISTERE' ? 'Concours' : c.category === 'ECOLE' ? 'École' : c.category === 'UNIVERSITE' ? 'Université' : 'Concours'}
+        </Chip>
         {c.verificationStatus === 'VERIFIED' && <VerifiedBadge at={c.verifiedAt} compact />}
         {c.isDemo && <DemoBadge />}
       </div>

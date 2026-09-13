@@ -89,12 +89,13 @@ export function DemoBadge({ className }: { className?: string }) {
   );
 }
 
-export function Chip({ children, tone = 'slate', className }: { children: ReactNode; tone?: 'slate' | 'blue' | 'orange' | 'green'; className?: string }) {
+export function Chip({ children, tone = 'slate', className }: { children: ReactNode; tone?: 'slate' | 'blue' | 'orange' | 'green' | 'purple'; className?: string }) {
   const tones: Record<string, string> = {
     slate: 'bg-slate-100 text-slate-700',
     blue: 'bg-blue-50 text-blue-700',
     orange: 'bg-orange-50 text-orange-700',
     green: 'bg-emerald-50 text-emerald-700',
+    purple: 'bg-purple-50 text-purple-700',
   };
   return <span className={cn('inline-flex items-center rounded-md px-2 py-0.5 text-[11px] font-semibold', tones[tone], className)}>{children}</span>;
 }

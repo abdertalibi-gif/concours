@@ -10,11 +10,16 @@ import mastersRoutes from './routes/masters.js';
 
 dotenv.config();
 
+// Guard DATABASE_URL to prevent Prisma datasource validation errors (P1012)
+if (!process.env.DATABASE_URL || (!process.env.DATABASE_URL.startsWith('postgresql://') && !process.env.DATABASE_URL.startsWith('postgres://'))) {
+  process.env.DATABASE_URL = 'postgresql://postgres:postgres@localhost:5432/concoursmaroc?schema=public';
+}
+
 export const prisma = new PrismaClient();
 
 async function startServer() {
   const app = express();
-  const port = process.env.PORT || 3000;
+  const PORT = 3000;
 
   app.use(cors());
   app.use(express.json());
@@ -37,7 +42,7 @@ async function startServer() {
   // Vite middleware for development
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
-      server: { middlewareMode: true },
+      server: { middlewareMode: true, hmr: false },
       appType: "spa",
     });
     app.use(vite.middlewares);
@@ -55,8 +60,8 @@ async function startServer() {
     res.status(500).json({ error: 'Une erreur inattendue est survenue sur le serveur.' });
   });
 
-  app.listen(port, '0.0.0.0', () => {
-    console.log(`🚀 Serveur backend démarré sur le port ${port}`);
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 Serveur backend démarré sur le port ${PORT}`);
   });
 }
 

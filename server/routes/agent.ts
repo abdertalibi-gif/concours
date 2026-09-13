@@ -6,8 +6,32 @@ import { createClient } from '@supabase/supabase-js';
 
 const router = express.Router();
 
-const supabaseUrl = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL || 'https://placeholder.supabase.co';
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY || 'placeholder';
+function getValidSupabaseUrl(): string {
+    const candidates = [process.env.SUPABASE_URL, process.env.VITE_SUPABASE_URL];
+    for (const c of candidates) {
+        if (typeof c === 'string' && (c.startsWith('http://') || c.startsWith('https://'))) {
+            return c;
+        }
+    }
+    return 'https://lixxittkqacsmjntebip.supabase.co';
+}
+
+function getValidSupabaseKey(): string {
+    const candidates = [
+        process.env.SUPABASE_SERVICE_ROLE_KEY,
+        process.env.VITE_SUPABASE_ANON_KEY,
+        process.env.VITE_SUPABASE_URL // in case user placed key in VITE_SUPABASE_URL
+    ];
+    for (const c of candidates) {
+        if (typeof c === 'string' && c.trim().length > 10 && !c.startsWith('http')) {
+            return c.trim();
+        }
+    }
+    return 'placeholder-key';
+}
+
+const supabaseUrl = getValidSupabaseUrl();
+const supabaseKey = getValidSupabaseKey();
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const ai = new GoogleGenAI({ 

@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../lib/auth';
 import { createReport, getCompetitionBySlug, getRelatedCompetitions, incrementViews, isFollowing, loadDB, queryDocuments, queryExams, toggleFollow } from '../lib/db';
+import { fetchAndCacheMasters } from '../lib/mastersAdapter';
 import { CompetitionCard, FavoriteButton } from '../components/cards';
 import { Alert, Button, Chip, DemoBadge, Modal, OrgAvatar, StatusBadge, VerifiedBadge } from '../components/ui';
 import { cn } from '../utils/cn';
@@ -19,6 +20,11 @@ export default function ConcoursDetail() {
   const nav = useNavigate();
   const { user } = useAuth();
   const [reportOpen, setReportOpen] = useState(false);
+  const [, setTick] = useState(0);
+
+  useEffect(() => {
+    fetchAndCacheMasters().then(() => setTick((t) => t + 1));
+  }, []);
 
   const c = slug ? getCompetitionBySlug(slug) : undefined;
 

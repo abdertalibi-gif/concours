@@ -1,0 +1,40 @@
+[
+  {
+    "id": "sync-1789327201542",
+    "createdAt": "2026-09-13T19:20:01.542Z",
+    "totalFound": 10,
+    "newCount": 0,
+    "updatedCount": 10,
+    "duplicateCount": 10,
+    "errorCount": 0,
+    "openCount": 2,
+    "upcomingCount": 1,
+    "closedCount": 1,
+    "examUpcomingCount": 1,
+    "resultsCount": 1,
+    "informationCount": 11,
+    "details": [
+      "Avertissement HTTP 404 sur https://www.almaster-maroc.com/category/master/",
+      "Avertissement HTTP 404 sur https://www.almaster-maroc.com/category/concours-master/"
+    ]
+  },
+  {
+    "id": "sync-1789327096763",
+    "createdAt": "2026-09-13T19:18:16.763Z",
+    "totalFound": 10,
+    "newCount": 10,
+    "updatedCount": 0,
+    "duplicateCount": 0,
+    "errorCount": 0,
+    "openCount": 2,
+    "upcomingCount": 1,
+    "closedCount": 1,
+    "examUpcomingCount": 1,
+    "resultsCount": 1,
+    "informationCount": 11,
+    "details": [
+      "Avertissement HTTP 404 sur https://www.almaster-maroc.com/category/master/",
+      "Avertissement HTTP 404 sur https://www.almaster-maroc.com/category/concours-master/"
+    ]
+  }
+]

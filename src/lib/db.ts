@@ -22,6 +22,7 @@ import {
 import { resolveInstitutionLogo, OFFICIAL_INSTITUTION_LOGOS } from '../data/institutionLogos';
 import { statusFromCompetition, uid } from './utils';
 import { initSupabaseSync, pushToSupabase, deleteFromSupabase } from './supabase-db';
+import { getAllMastersAsCompetitions, getMasterAsCompetitionBySlug } from './mastersAdapter';
 
 const KEY = 'cm_db_v4';
 const SESSION_KEY = 'cm_session_v3';
@@ -305,10 +306,16 @@ function paginate<T>(arr: T[], page: number, perPage: number): PageResult<T> {
 export interface CompetitionFilters {
   q?: string; ministry?: string; school?: string; university?: string; year?: string; level?: string;
   city?: string; domaine?: string; status?: string; category?: string; sort?: string;
+  includeMasters?: boolean;
 }
 
 export function queryCompetitions(f: CompetitionFilters, page = 1, perPage = 12, includeDrafts = false): PageResult<Competition> {
-  let arr = loadDB().competitions.filter((c) => (includeDrafts ? true : c.publishStatus === 'PUBLISHED'));
+  const dbComps = loadDB().competitions.filter((c) => (includeDrafts ? true : c.publishStatus === 'PUBLISHED'));
+  const mastersComps = f.includeMasters !== false ? getAllMastersAsCompetitions() : [];
+  
+  // Fusionner les concours d'État / écoles avec les concours de masters universitaires
+  let arr = [...dbComps, ...mastersComps];
+  
   const q = (f.q ?? '').trim().toLowerCase();
   if (q) arr = arr.filter((c) => [c.title, c.organizationName, c.city, c.level, String(c.year), c.domaine ?? ''].join(' ').toLowerCase().includes(q));
   if (f.ministry) arr = arr.filter((c) => c.ministryId === f.ministry);
@@ -316,13 +323,28 @@ export function queryCompetitions(f: CompetitionFilters, page = 1, perPage = 12,
   if (f.university) {
     const db = loadDB();
     const schoolsInUniv = new Set(db.schools.filter(s => s.universityId === f.university).map(s => s.id));
-    arr = arr.filter((c) => (c.schoolId && schoolsInUniv.has(c.schoolId)));
+    arr = arr.filter((c) => (c.schoolId && schoolsInUniv.has(c.schoolId)) || c.universityId === f.university);
   }
   if (f.year) arr = arr.filter((c) => String(c.year) === f.year);
-  if (f.level) arr = arr.filter((c) => c.level === f.level);
-  if (f.city) arr = arr.filter((c) => c.city === f.city);
-  if (f.domaine) arr = arr.filter((c) => c.domaine === f.domaine);
-  if (f.category) arr = arr.filter((c) => c.category === f.category);
+  if (f.level) {
+    const lvl = f.level.toLowerCase();
+    arr = arr.filter((c) => c.level === f.level || (lvl.includes('master') && c.level.toLowerCase().includes('master')));
+  }
+  if (f.city) {
+    const city = f.city.toLowerCase();
+    arr = arr.filter((c) => c.city.toLowerCase() === city);
+  }
+  if (f.domaine) {
+    const dom = f.domaine.toLowerCase();
+    arr = arr.filter((c) => (c.domaine ?? '').toLowerCase().includes(dom));
+  }
+  if (f.category) {
+    if (f.category === 'MASTER') {
+      arr = arr.filter((c) => c.category === 'UNIVERSITE' || c.id.startsWith('mst-') || c.level.toLowerCase().includes('master'));
+    } else {
+      arr = arr.filter((c) => c.category === f.category);
+    }
+  }
   if (f.status) arr = arr.filter((c) => statusFromCompetition(c) === f.status);
   const sort = f.sort ?? 'deadline';
   arr = [...arr].sort((a, b) => {
@@ -338,7 +360,9 @@ export function queryCompetitions(f: CompetitionFilters, page = 1, perPage = 12,
 }
 
 export function getCompetitionBySlug(slug: string): Competition | undefined {
-  return loadDB().competitions.find((c) => c.slug === slug);
+  const fromDb = loadDB().competitions.find((c) => c.slug === slug || c.id === slug);
+  if (fromDb) return fromDb;
+  return getMasterAsCompetitionBySlug(slug);
 }
 
 export function incrementViews(id: string) {
@@ -348,8 +372,15 @@ export function incrementViews(id: string) {
 }
 
 export function getRelatedCompetitions(c: Competition, n = 3): Competition[] {
-  return loadDB().competitions
-    .filter((x) => x.id !== c.id && x.publishStatus === 'PUBLISHED' && (x.schoolId === c.schoolId || x.ministryId === c.ministryId || x.domaine === c.domaine))
+  const all = [...loadDB().competitions, ...getAllMastersAsCompetitions()];
+  return all
+    .filter((x) => x.id !== c.id && x.publishStatus === 'PUBLISHED' && (
+      x.schoolId === c.schoolId ||
+      x.ministryId === c.ministryId ||
+      x.domaine === c.domaine ||
+      x.category === c.category ||
+      x.city === c.city
+    ))
     .slice(0, n);
 }
 
