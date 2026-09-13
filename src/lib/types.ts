@@ -7,7 +7,14 @@
 
 export type Role = 'USER' | 'ADMIN';
 
-export type CompetitionStatus = 'Ouvert' | 'Bientot' | 'Ferme' | 'Suspendu' | 'Archive';
+export type AutoCompetitionStatus = 'OUVERT' | 'A_VENIR' | 'CLOTURE' | 'DATE_A_VERIFIER';
+export type CompetitionStatus =
+  | AutoCompetitionStatus
+  | 'Ouvert'
+  | 'Bientot'
+  | 'Ferme'
+  | 'Suspendu'
+  | 'Archive';
 export type VerificationStatus = 'UNVERIFIED' | 'PENDING' | 'VERIFIED' | 'EXPIRED';
 export type PublishStatus = 'DRAFT' | 'PENDING_REVIEW' | 'PUBLISHED' | 'ARCHIVED';
 export type CompetitionCategory =

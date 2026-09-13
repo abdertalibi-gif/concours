@@ -4,8 +4,8 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import {
-  ArrowLeft, ArrowRight, BadgeCheck, Bell, CalendarDays, CheckCircle2, ClipboardList,
-  ExternalLink, Eye, FileText, Flag, GraduationCap, Info, MapPin, Users, Wallet, ListChecks, BookOpen, ChevronRight,
+  AlertCircle, ArrowLeft, ArrowRight, BadgeCheck, Bell, CalendarDays, CheckCircle2, ClipboardList, Clock,
+  ExternalLink, Eye, FileText, Flag, GraduationCap, Info, Lock, MapPin, Users, Wallet, ListChecks, BookOpen, ChevronRight,
 } from 'lucide-react';
 import { useAuth } from '../lib/auth';
 import { createReport, getCompetitionBySlug, getRelatedCompetitions, incrementViews, isFollowing, loadDB, queryDocuments, queryExams, toggleFollow } from '../lib/db';
@@ -13,7 +13,7 @@ import { fetchAndCacheMasters } from '../lib/mastersAdapter';
 import { CompetitionCard, FavoriteButton } from '../components/cards';
 import { Alert, Button, Chip, DemoBadge, Modal, OrgAvatar, StatusBadge, VerifiedBadge } from '../components/ui';
 import { cn } from '../utils/cn';
-import { formatDateFR, formatNumber, remainingLabel, statusFromCompetition, timeAgo } from '../lib/utils';
+import { evaluateCompetitionDates, formatDateFR, formatNumber, timeAgo } from '../lib/utils';
 
 export default function ConcoursDetail() {
   const { slug } = useParams();
@@ -50,8 +50,8 @@ export default function ConcoursDetail() {
     );
   }
 
-  const status = statusFromCompetition(c);
-  const rem = remainingLabel(c.registrationDeadline);
+  const dateEval = evaluateCompetitionDates(c);
+  const status = dateEval.status;
   const related = getRelatedCompetitions(c, 3);
   const exams = queryExams({ school: c.schoolId ?? '' }, 1, 3).items;
   const docs = queryDocuments({}, 1, 50).items.filter((d) => d.competitionId === c.id || d.schoolId === c.schoolId || d.ministryId === c.ministryId).slice(0, 4);
@@ -135,15 +135,93 @@ export default function ConcoursDetail() {
           <InfoTile icon={<GraduationCap className="h-4 w-4" />} label="Niveau" value={c.level} />
           <InfoTile icon={<MapPin className="h-4 w-4" />} label="Ville" value={c.city} />
           <InfoTile icon={<CalendarDays className="h-4 w-4" />} label="Date du concours" value={formatDateFR(c.competitionDate)} />
-          <InfoTile icon={<CalendarDays className="h-4 w-4" />} label="Date limite" value={formatDateFR(c.registrationDeadline)} highlight />
+          <InfoTile icon={<CalendarDays className="h-4 w-4" />} label="Date limite" value={formatDateFR(c.registrationDeadline)} highlight={dateEval.status === 'OUVERT'} />
           <InfoTile icon={<Users className="h-4 w-4" />} label="Places" value={formatNumber(c.places)} />
-          <InfoTile icon={<FileText className="h-4 w-4" />} label="Type" value={c.category === 'ECOLE' ? 'École' : c.category === 'MINISTERE' ? 'Ministère' : 'Concours'} />
+          <InfoTile icon={<FileText className="h-4 w-4" />} label="Type" value={c.category === 'ECOLE' ? 'École' : c.category === 'MINISTERE' ? 'Ministère' : c.category === 'UNIVERSITE' ? 'Master Universitaire' : 'Concours'} />
         </div>
 
-        {rem.tone !== 'gray' && (
-          <div className={cn('mt-4 flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-bold ring-1 ring-inset',
-            rem.tone === 'green' ? 'bg-emerald-50 text-emerald-800 ring-emerald-200' : rem.tone === 'orange' ? 'bg-amber-50 text-amber-800 ring-amber-200' : 'bg-red-50 text-red-700 ring-red-200')}>
-            <CalendarDays className="h-4 w-4" />{rem.text} — clôture le {formatDateFR(c.registrationDeadline)}
+        {/* Bandeau d'état automatisé explicatif */}
+        {dateEval.status === 'OUVERT' && (
+          <div className="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 rounded-2xl bg-emerald-50 p-4 ring-1 ring-inset ring-emerald-200 text-emerald-900">
+            <div className="flex items-center gap-3">
+              <span className="flex h-3 w-3 rounded-full bg-emerald-500 animate-pulse" />
+              <div>
+                <p className="text-sm font-extrabold">Ce concours est actuellement ouvert</p>
+                <p className="text-xs text-emerald-700">
+                  {dateEval.daysRemainingToClose !== null
+                    ? dateEval.daysRemainingToClose > 0
+                      ? `Il vous reste ${dateEval.daysRemainingToClose} jour(s) pour déposer votre candidature.`
+                      : "Dernier jour pour postuler !"
+                    : "Les candidatures sont en cours de réception."}
+                </p>
+              </div>
+            </div>
+            {c.registrationDeadline && (
+              <span className="shrink-0 rounded-xl bg-emerald-100/80 px-3 py-1.5 text-xs font-bold text-emerald-800 ring-1 ring-inset ring-emerald-300">
+                Date limite : {formatDateFR(c.registrationDeadline)}
+              </span>
+            )}
+          </div>
+        )}
+
+        {dateEval.status === 'CLOTURE' && (
+          <div className="mt-4 rounded-2xl bg-slate-100 p-4 ring-1 ring-inset ring-slate-200 text-slate-800">
+            <div className="flex items-start sm:items-center justify-between gap-3">
+              <div className="flex items-start sm:items-center gap-3">
+                <Lock className="mt-0.5 sm:mt-0 h-5 w-5 shrink-0 text-slate-500" />
+                <div>
+                  <p className="text-sm font-extrabold text-slate-800">
+                    Ce concours est clôturé {c.registrationDeadline ? `depuis le ${formatDateFR(c.registrationDeadline)}` : ''}
+                  </p>
+                  <p className="mt-0.5 text-xs text-slate-600">
+                    Les inscriptions pour cette session sont terminées. Cette fiche reste archivée et accessible pour la préparation des candidats (annales, conditions, matières et déroulement).
+                  </p>
+                </div>
+              </div>
+              <span className="hidden sm:inline-flex shrink-0 rounded-xl bg-slate-200 px-3 py-1.5 text-xs font-bold text-slate-700">
+                Archives consultables
+              </span>
+            </div>
+          </div>
+        )}
+
+        {dateEval.status === 'A_VENIR' && (
+          <div className="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 rounded-2xl bg-sky-50 p-4 ring-1 ring-inset ring-sky-200 text-sky-900">
+            <div className="flex items-center gap-3">
+              <Clock className="h-5 w-5 shrink-0 text-sky-600" />
+              <div>
+                <p className="text-sm font-extrabold">
+                  {c.registrationStart
+                    ? `Les inscriptions ouvriront le ${formatDateFR(c.registrationStart)}`
+                    : "Concours à venir prochainement"}
+                </p>
+                <p className="text-xs text-sky-700">
+                  {dateEval.daysRemainingToOpen !== null && dateEval.daysRemainingToOpen > 0
+                    ? `Ouverture prévue dans environ ${dateEval.daysRemainingToOpen} jour(s). Préparez dès maintenant vos pièces justificatives.`
+                    : "Les dates officielles ont été annoncées. Vous pouvez suivre ce concours pour être notifié de l'ouverture."}
+                </p>
+              </div>
+            </div>
+            {c.registrationDeadline && (
+              <span className="shrink-0 rounded-xl bg-sky-100 px-3 py-1.5 text-xs font-bold text-sky-800 ring-1 ring-inset ring-sky-300">
+                Clôture prévue : {formatDateFR(c.registrationDeadline)}
+              </span>
+            )}
+          </div>
+        )}
+
+        {dateEval.status === 'DATE_A_VERIFIER' && (
+          <div className="mt-4 rounded-2xl bg-amber-50 p-4 ring-1 ring-inset ring-amber-200 text-amber-950">
+            <div className="flex items-start sm:items-center gap-3">
+              <AlertCircle className="mt-0.5 sm:mt-0 h-5 w-5 shrink-0 text-amber-600" />
+              <div>
+                <p className="text-sm font-extrabold">Les dates de ce concours sont à confirmer</p>
+                <p className="mt-0.5 text-xs text-amber-800">
+                  {dateEval.warning || "Les dates officielles précises d'ouverture ou de clôture n'ont pas encore été définitivement validées ou sont en cours d'actualisation par l'administration."}
+                  {' '}Consultez régulièrement le portail officiel de l'établissement ou activez les alertes.
+                </p>
+              </div>
+            </div>
           </div>
         )}
       </div>
@@ -214,11 +292,44 @@ export default function ConcoursDetail() {
             <h2 className="text-[15px] font-extrabold text-[#0B2A4A]">Source officielle</h2>
             <p className="mt-1 text-xs leading-relaxed text-slate-500">Vérifiez toujours les informations sur les canaux officiels avant de candidater.</p>
             <div className="mt-3 grid gap-2">
-              {c.officialWebsite ? <a href={c.officialWebsite} target="_blank" rel="noreferrer" className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-[#0B2A4A] text-sm font-bold text-white hover:opacity-90"><ExternalLink className="h-4 w-4" /> Site officiel</a>
-                : <span className="rounded-xl bg-slate-100 px-3 py-2.5 text-center text-[13px] font-semibold text-slate-500">Site officiel non renseigné</span>}
-              {c.registrationUrl ? <a href={c.registrationUrl} target="_blank" rel="noreferrer" className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-[#0B63CE] text-sm font-bold text-white hover:bg-[#0956B4]"><ExternalLink className="h-4 w-4" /> Inscription officielle</a>
-                : <span className="rounded-xl bg-slate-100 px-3 py-2.5 text-center text-[13px] font-semibold text-slate-500">Lien d'inscription non renseigné</span>}
-              <Link to="/documents" className="inline-flex h-10 items-center justify-center gap-2 rounded-xl text-sm font-bold text-[#0B2A4A] ring-1 ring-inset ring-slate-200 hover:bg-slate-50"><FileText className="h-4 w-4" /> Voir les documents</Link>
+              {c.officialWebsite ? (
+                <a href={c.officialWebsite} target="_blank" rel="noreferrer" className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-[#0B2A4A] text-sm font-bold text-white hover:opacity-90">
+                  <ExternalLink className="h-4 w-4" /> Portail officiel
+                </a>
+              ) : (
+                <span className="rounded-xl bg-slate-100 px-3 py-2.5 text-center text-[13px] font-semibold text-slate-500">Portail officiel non renseigné</span>
+              )}
+
+              {/* Action d'inscription conditionnée au statut calculé */}
+              {dateEval.status === 'CLOTURE' ? (
+                <div className="flex flex-col gap-1">
+                  <div className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-slate-100 px-4 text-sm font-bold text-slate-500 ring-1 ring-inset ring-slate-200 cursor-not-allowed select-none">
+                    <Lock className="h-4 w-4 text-slate-400" /> Inscriptions closes
+                  </div>
+                  {c.registrationDeadline && (
+                    <p className="text-[11px] text-center text-slate-500">Date limite dépassée ({formatDateFR(c.registrationDeadline)})</p>
+                  )}
+                </div>
+              ) : dateEval.status === 'A_VENIR' ? (
+                <div className="flex flex-col gap-1">
+                  <div className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-sky-50 px-4 text-sm font-bold text-sky-800 ring-1 ring-inset ring-sky-200 select-none">
+                    <Clock className="h-4 w-4 text-sky-600" /> Inscriptions bientôt ouvertes
+                  </div>
+                  {c.registrationStart && (
+                    <p className="text-[11px] text-center text-sky-700">Ouverture le {formatDateFR(c.registrationStart)}</p>
+                  )}
+                </div>
+              ) : c.registrationUrl ? (
+                <a href={c.registrationUrl} target="_blank" rel="noreferrer" className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-[#0B63CE] text-sm font-bold text-white hover:bg-[#0956B4] shadow-sm">
+                  <ExternalLink className="h-4 w-4" /> Inscription officielle
+                </a>
+              ) : (
+                <span className="rounded-xl bg-slate-100 px-3 py-2.5 text-center text-[13px] font-semibold text-slate-500">Lien d'inscription non renseigné</span>
+              )}
+
+              <Link to="/documents" className="inline-flex h-10 items-center justify-center gap-2 rounded-xl text-sm font-bold text-[#0B2A4A] ring-1 ring-inset ring-slate-200 hover:bg-slate-50">
+                <FileText className="h-4 w-4" /> Voir les documents
+              </Link>
             </div>
             {(c.sourceOrganization || c.sourceUrl) && (
               <div className="mt-4 rounded-xl bg-slate-50 p-3 text-xs leading-relaxed text-slate-600 ring-1 ring-inset ring-slate-100">

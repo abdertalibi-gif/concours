@@ -1,12 +1,13 @@
 // ============================================================
 // CONCOURS MAROC — Admin : gestion des concours (CRUD complet)
 // ============================================================
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { BadgeCheck, Copy, Eye, EyeOff, UploadCloud } from 'lucide-react';
 import { useAuth } from '../../lib/auth';
 import { adminCreate, adminDelete, adminUpdate, loadDB, pushNotification } from '../../lib/db';
 import type { Competition } from '../../lib/types';
-import { CITIES, DOMAINS, LEVELS, formatDateShort, slugify, statusFromCompetition, uid } from '../../lib/utils';
+import { CITIES, DOMAINS, LEVELS, evaluateCompetitionDates, formatDateShort, slugify, statusFromCompetition, uid } from '../../lib/utils';
 import { Button, Field, Input, Modal, OrgAvatar, Select, StatusBadge, Textarea } from '../../components/ui';
 import { AutoOrganismeField } from '../../components/AutoOrganismeField';
 import { resolveOrganisme } from '../../lib/organismeResolver';
@@ -26,12 +27,25 @@ function emptyForm(): Partial<Competition> {
 export default function AdminConcours() {
   const { user } = useAuth();
   const db = loadDB();
+  const [searchParams] = useSearchParams();
   const [q, setQ] = useState('');
-  const [statusFilter, setStatusFilter] = useState('');
+  const [statusFilter, setStatusFilter] = useState(searchParams.get('status') || '');
   const [editing, setEditing] = useState<Competition | null>(null);
   const [creating, setCreating] = useState(false);
   const [deleting, setDeleting] = useState<Competition | null>(null);
   const [importing, setImporting] = useState(false);
+
+  useEffect(() => {
+    const editId = searchParams.get('edit');
+    if (editId) {
+      const found = db.competitions.find((c) => c.id === editId);
+      if (found) setEditing(found);
+    }
+    const paramStatus = searchParams.get('status');
+    if (paramStatus) {
+      setStatusFilter(paramStatus);
+    }
+  }, [searchParams, db.competitions]);
 
   const list = useMemo(() => {
     let arr = [...db.competitions].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
@@ -87,9 +101,10 @@ export default function AdminConcours() {
           <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)} aria-label="Filtrer par statut"
             className="h-10 rounded-xl bg-white px-3 text-sm ring-1 ring-inset ring-slate-200">
             <option value="">Tous les statuts</option>
-            <option value="Ouvert">Ouvert</option>
-            <option value="Bientot">Bientôt</option>
-            <option value="Ferme">Fermé</option>
+            <option value="OUVERT">🟢 Ouvert</option>
+            <option value="A_VENIR">🔵 À venir</option>
+            <option value="CLOTURE">⚪ Clôturé</option>
+            <option value="DATE_A_VERIFIER">🟡 Date à vérifier / Incohérente</option>
           </select>
         }>
         <table className="w-full min-w-[1000px]">
@@ -336,6 +351,17 @@ function ConcoursForm({ initial, isEdit, onClose }: { initial: Partial<Competiti
         </Group>
 
         <Group title="Dates importantes">
+          <div className="mb-4 rounded-xl border border-slate-200 bg-slate-50 p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-2.5">
+              <span className="text-xs font-bold text-slate-600">Statut calculé automatiquement :</span>
+              <StatusBadge status={evaluateCompetitionDates({ registrationStart: f.registrationStart, registrationDeadline: f.registrationDeadline, competitionDate: f.competitionDate }).status} />
+            </div>
+            {evaluateCompetitionDates({ registrationStart: f.registrationStart, registrationDeadline: f.registrationDeadline, competitionDate: f.competitionDate }).warning && (
+              <span className="text-xs font-semibold text-amber-800 bg-amber-100/70 px-2.5 py-1 rounded-lg border border-amber-300">
+                {evaluateCompetitionDates({ registrationStart: f.registrationStart, registrationDeadline: f.registrationDeadline, competitionDate: f.competitionDate }).warning}
+              </span>
+            )}
+          </div>
           <div className="grid gap-4 sm:grid-cols-3">
             <Field label="Ouverture des inscriptions"><Input type="date" value={toDateInput(f.registrationStart)} onChange={(e) => set('registrationStart', e.target.value ? new Date(e.target.value).toISOString() : undefined)} /></Field>
             <Field label="Clôture des inscriptions" error={errors.registrationDeadline}><Input type="date" value={toDateInput(f.registrationDeadline)} onChange={(e) => set('registrationDeadline', e.target.value ? new Date(e.target.value).toISOString() : undefined)} error={!!errors.registrationDeadline} /></Field>

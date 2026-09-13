@@ -1,15 +1,16 @@
+import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-   
   FileText, 
   GraduationCap, 
   Landmark, 
-   
   Trophy, 
   Users, 
   Clock, 
   CheckCircle2, 
-  AlertCircle 
+  AlertCircle,
+  Archive,
+  Edit3,
 } from 'lucide-react';
 import { 
   LineChart, 
@@ -24,12 +25,15 @@ import {
   Cell
 } from 'recharts';
 import { adminStats, competitionsByMonth, loadDB } from '../../lib/db';
+import { evaluateCompetitionDates, formatDateShort } from '../../lib/utils';
+import { StatusBadge } from '../../components/ui';
 
 const COLORS = ['#0B63CE', '#10B981', '#F59E0B', '#8B5CF6', '#F43F5E'];
 
 export default function AdminDashboard() {
   const db = loadDB();
   const s = adminStats();
+  const [activeTab, setActiveTab] = useState<'ALL' | 'DATE_A_VERIFIER' | 'CLOTURE' | 'OUVERT' | 'A_VENIR'>('DATE_A_VERIFIER');
   
   const recentConcours = [...db.competitions].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 5);
   
@@ -37,7 +41,7 @@ export default function AdminDashboard() {
   const monthStats = competitionsByMonth();
   const lineData = monthStats.map((m) => ({ name: m.label, concours: m.count }));
 
-  // Donut chart data based on categories (vraies données, sans fallback fictif)
+  // Donut chart data based on categories
   const pieData = [
     { name: 'Ministères', value: db.competitions.filter(c => c.category === 'MINISTERE').length },
     { name: 'Écoles', value: db.competitions.filter(c => c.category === 'ECOLE').length },
@@ -45,8 +49,24 @@ export default function AdminDashboard() {
     { name: 'Autres', value: db.competitions.filter(c => c.category === 'RECRUTEMENT' || c.category === 'AUTRE' || c.category === 'FORMATION' || c.category === 'INSTITUTION').length },
   ];
 
+  // Liste des concours enrichis pour le diagnostic
+  const diagnosticList = useMemo(() => {
+    return db.competitions.map((c) => {
+      const evaluation = evaluateCompetitionDates(c);
+      return {
+        ...c,
+        evaluation,
+      };
+    });
+  }, [db.competitions]);
+
+  const filteredDiagnostic = useMemo(() => {
+    if (activeTab === 'ALL') return diagnosticList;
+    return diagnosticList.filter((c) => c.evaluation.status === activeTab);
+  }, [diagnosticList, activeTab]);
+
   return (
-    <div className="p-6 lg:p-8 space-y-6">
+    <div className="p-6 lg:p-8 space-y-8">
       
       {/* 1. HERO ADMIN & CARTE ROYAUME */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -62,13 +82,13 @@ export default function AdminDashboard() {
           </div>
           <div className="relative z-10 p-8 sm:p-10 flex flex-col h-full justify-center">
             <div className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 mb-4 w-max border border-white/20 backdrop-blur-md">
-              <span className="text-[13px] font-semibold text-white">Bonjour Admin 👋</span>
+              <span className="text-[13px] font-semibold text-white">Administration Centrale Concours Maroc</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-              Bienvenue sur l’administration<br/>de Concours Maroc
+              Tableau de bord et gestion<br/>des concours marocains
             </h1>
             <p className="mt-4 max-w-xl text-[15px] text-sky-100 leading-relaxed">
-              Gérez les concours, écoles, ministères, examens et tous les contenus de la plateforme en toute simplicité. Suivez l'évolution et validez les nouvelles publications.
+              Statuts calculés automatiquement selon les dates. Tous les concours (passés, en cours et futurs) sont intégralement préservés en base de données.
             </p>
           </div>
         </div>
@@ -87,21 +107,217 @@ export default function AdminDashboard() {
           
           <div className="mt-6 pt-6 border-t border-slate-100 relative z-10 w-full">
             <p className="text-[14px] italic text-slate-600 leading-relaxed font-medium">
-              « Les concours sont des passerelles<br/>vers un avenir meilleur »
+              « Tous les concours restent archivés et consultables pour la préparation des candidats »
             </p>
           </div>
         </div>
       </div>
 
-      {/* 2. CARTES STATISTIQUES */}
+      {/* 2. STATISTIQUES AUTOMATISÉES PAR STATUT */}
+      <div>
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h2 className="text-lg font-extrabold text-[#0B2A4A]">Statut des concours (calcul automatique)</h2>
+            <p className="text-xs text-slate-500">Calculé en temps réel selon les dates d'ouverture et de clôture</p>
+          </div>
+          <span className="text-xs font-bold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-xl border border-slate-200">
+            {s.totalConcours} concours au total
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+          <StatusStatCard 
+            title="Total Concours"
+            value={s.totalConcours}
+            subtitle="Base de données complète"
+            icon={<Trophy className="h-5 w-5 text-slate-700" />}
+            bg="bg-white border-slate-200 text-[#0B2A4A]"
+            onClick={() => setActiveTab('ALL')}
+            active={activeTab === 'ALL'}
+          />
+          <StatusStatCard 
+            title="Ouverts"
+            value={s.ouverts}
+            subtitle="Candidatures en cours"
+            icon={<CheckCircle2 className="h-5 w-5 text-emerald-600" />}
+            bg="bg-emerald-50/70 border-emerald-200 text-emerald-950"
+            badge="En cours"
+            onClick={() => setActiveTab('OUVERT')}
+            active={activeTab === 'OUVERT'}
+          />
+          <StatusStatCard 
+            title="À venir"
+            value={s.aVenir}
+            subtitle="Inscriptions prochaines"
+            icon={<Clock className="h-5 w-5 text-sky-600" />}
+            bg="bg-sky-50/70 border-sky-200 text-sky-950"
+            badge="Futurs"
+            onClick={() => setActiveTab('A_VENIR')}
+            active={activeTab === 'A_VENIR'}
+          />
+          <StatusStatCard 
+            title="Clôturés"
+            value={s.clotures}
+            subtitle="Archives consultables"
+            icon={<Archive className="h-5 w-5 text-slate-600" />}
+            bg="bg-slate-50 border-slate-200 text-slate-900"
+            badge="Conservés"
+            onClick={() => setActiveTab('CLOTURE')}
+            active={activeTab === 'CLOTURE'}
+          />
+          <StatusStatCard 
+            title="Date à vérifier"
+            value={s.sansDate}
+            subtitle={s.incoherents > 0 ? `${s.incoherents} incohérence(s)` : "Dates à renseigner"}
+            icon={<AlertCircle className="h-5 w-5 text-amber-600" />}
+            bg="bg-amber-50/80 border-amber-200 text-amber-950"
+            badge="À réviser"
+            onClick={() => setActiveTab('DATE_A_VERIFIER')}
+            active={activeTab === 'DATE_A_VERIFIER'}
+          />
+        </div>
+      </div>
+
+      {/* 3. SECTION DIAGNOSTIC & CONTRÔLE DES DATES */}
+      <div className="rounded-2xl bg-white border border-[#E6ECF3] shadow-sm overflow-hidden">
+        <div className="p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h2 className="text-base font-extrabold text-[#0B2A4A] flex items-center gap-2">
+              <span>Diagnostic & Contrôle des Dates</span>
+              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600">
+                {filteredDiagnostic.length} concours affichés
+              </span>
+            </h2>
+            <p className="text-xs text-slate-500 mt-0.5">
+              Visualisez les concours selon leur statut calculé et ajustez les dates directement.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2">
+            <button 
+              onClick={() => setActiveTab('DATE_A_VERIFIER')} 
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-xl border transition-all ${activeTab === 'DATE_A_VERIFIER' ? 'bg-amber-500 text-white border-amber-500 shadow-sm' : 'bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100'}`}
+            >
+              <AlertCircle className="h-3.5 w-3.5" /> Date à vérifier ({s.sansDate})
+            </button>
+            <button 
+              onClick={() => setActiveTab('CLOTURE')} 
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-xl border transition-all ${activeTab === 'CLOTURE' ? 'bg-slate-700 text-white border-slate-700 shadow-sm' : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'}`}
+            >
+              <Archive className="h-3.5 w-3.5" /> Clôturés ({s.clotures})
+            </button>
+            <button 
+              onClick={() => setActiveTab('OUVERT')} 
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-xl border transition-all ${activeTab === 'OUVERT' ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm' : 'bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100'}`}
+            >
+              <CheckCircle2 className="h-3.5 w-3.5" /> Ouverts ({s.ouverts})
+            </button>
+            <button 
+              onClick={() => setActiveTab('A_VENIR')} 
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-xl border transition-all ${activeTab === 'A_VENIR' ? 'bg-sky-600 text-white border-sky-600 shadow-sm' : 'bg-sky-50 text-sky-800 border-sky-200 hover:bg-sky-100'}`}
+            >
+              <Clock className="h-3.5 w-3.5" /> À venir ({s.aVenir})
+            </button>
+            <button 
+              onClick={() => setActiveTab('ALL')} 
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-xl border transition-all ${activeTab === 'ALL' ? 'bg-[#0B2A4A] text-white border-[#0B2A4A] shadow-sm' : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-slate-100'}`}
+            >
+              Tous ({s.totalConcours})
+            </button>
+          </div>
+        </div>
+
+        <div className="overflow-x-auto max-h-96 overflow-y-auto">
+          <table className="w-full text-left text-sm whitespace-nowrap">
+            <thead className="bg-slate-50 text-[11px] font-bold uppercase tracking-wider text-slate-500 sticky top-0 z-10 border-b border-slate-200">
+              <tr>
+                <th className="px-6 py-3.5">Organisme & Titre</th>
+                <th className="px-6 py-3.5">Date ouverture</th>
+                <th className="px-6 py-3.5">Date clôture</th>
+                <th className="px-6 py-3.5">Statut calculé</th>
+                <th className="px-6 py-3.5">Diagnostic / Observations</th>
+                <th className="px-6 py-3.5 text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-100">
+              {filteredDiagnostic.slice(0, 15).map((c) => (
+                <tr key={c.id} className="hover:bg-slate-50/80 transition-colors">
+                  <td className="px-6 py-3.5 max-w-[280px]">
+                    <p className="text-xs font-bold text-slate-500 truncate">{c.organizationName}</p>
+                    <p className="text-sm font-semibold text-[#0B2A4A] truncate" title={c.title}>{c.title}</p>
+                  </td>
+                  <td className="px-6 py-3.5 text-xs text-slate-600">
+                    {c.registrationStart ? formatDateShort(c.registrationStart) : <span className="text-slate-400 italic">Non renseignée</span>}
+                  </td>
+                  <td className="px-6 py-3.5 text-xs text-slate-600 font-semibold">
+                    {c.registrationDeadline ? formatDateShort(c.registrationDeadline) : <span className="text-amber-600 italic font-bold">Manquante</span>}
+                  </td>
+                  <td className="px-6 py-3.5">
+                    <StatusBadge status={c.evaluation.status} />
+                  </td>
+                  <td className="px-6 py-3.5 text-xs max-w-[260px] truncate">
+                    {c.evaluation.warning ? (
+                      <span className="inline-flex items-center gap-1 font-bold text-amber-700 bg-amber-50 px-2 py-1 rounded-md border border-amber-200">
+                        <AlertCircle className="h-3 w-3 shrink-0" />
+                        {c.evaluation.warning}
+                      </span>
+                    ) : c.evaluation.status === 'OUVERT' ? (
+                      <span className="text-emerald-700 font-medium">
+                        {c.evaluation.daysRemainingToClose !== null ? `${c.evaluation.daysRemainingToClose} jour(s) restants` : 'Candidatures ouvertes'}
+                      </span>
+                    ) : c.evaluation.status === 'CLOTURE' ? (
+                      <span className="text-slate-500 font-medium">
+                        Concours archivé (accessible en consultation)
+                      </span>
+                    ) : c.evaluation.status === 'A_VENIR' ? (
+                      <span className="text-sky-700 font-medium">
+                        {c.evaluation.daysRemainingToOpen !== null ? `Ouvre dans ${c.evaluation.daysRemainingToOpen} jour(s)` : 'Date future'}
+                      </span>
+                    ) : (
+                      <span className="text-slate-400 italic">Dates à confirmer</span>
+                    )}
+                  </td>
+                  <td className="px-6 py-3.5 text-right">
+                    <Link 
+                      to={`/admin/concours?edit=${c.id}`} 
+                      className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-bold text-[#0B63CE] bg-sky-50 rounded-lg hover:bg-[#0B63CE] hover:text-white transition-all border border-sky-200"
+                    >
+                      <Edit3 className="h-3 w-3" /> Modifier dates
+                    </Link>
+                  </td>
+                </tr>
+              ))}
+              {filteredDiagnostic.length === 0 && (
+                <tr>
+                  <td colSpan={6} className="px-6 py-10 text-center text-slate-500">
+                    Aucun concours dans cette catégorie.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+        {filteredDiagnostic.length > 15 && (
+          <div className="p-3 bg-slate-50 border-t border-slate-100 text-center">
+            <Link 
+              to={`/admin/concours?status=${activeTab === 'ALL' ? '' : activeTab}`} 
+              className="text-xs font-bold text-[#0B63CE] hover:underline"
+            >
+              Voir les {filteredDiagnostic.length} concours dans le module complet &rarr;
+            </Link>
+          </div>
+        )}
+      </div>
+
+      {/* 4. CARTES STATISTIQUES GLOBALES */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <StatWidget icon={<Trophy className="text-[#0B63CE]"/>} title="Concours" value={s.totalConcours} trend="+12%" bg="bg-sky-50" />
+        <StatWidget icon={<Trophy className="text-[#0B63CE]"/>} title="Concours publiés" value={s.totalConcours} trend="+12%" bg="bg-sky-50" />
         <StatWidget icon={<GraduationCap className="text-emerald-600"/>} title="Écoles" value={s.ecoles} trend="+8%" bg="bg-emerald-50" />
         <StatWidget icon={<Landmark className="text-violet-600"/>} title="Ministères" value={s.ministeres} trend="+6%" bg="bg-violet-50" />
         <StatWidget icon={<FileText className="text-orange-600"/>} title="Examens" value={s.examens} trend="+15%" bg="bg-orange-50" />
       </div>
 
-      {/* 3. GRAPHIQUES */}
+      {/* 5. GRAPHIQUES */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         {/* LINE CHART */}
@@ -129,8 +345,8 @@ export default function AdminDashboard() {
         {/* DONUT CHART */}
         <div className="rounded-2xl bg-white border border-[#E6ECF3] shadow-sm p-6 flex flex-col">
           <div className="mb-2">
-            <h2 className="text-base font-extrabold text-[#0B2A4A]">Répartition par ministère</h2>
-            <p className="text-sm text-slate-500">Volume de concours par entité</p>
+            <h2 className="text-base font-extrabold text-[#0B2A4A]">Répartition par entité</h2>
+            <p className="text-sm text-slate-500">Volume de concours par catégorie</p>
           </div>
           <div className="flex-1 h-48 w-full relative mt-4">
             <ResponsiveContainer width="100%" height="100%">
@@ -170,14 +386,14 @@ export default function AdminDashboard() {
         </div>
       </div>
 
-      {/* 4. ACTIONS RAPIDES & STATS GLOBALES */}
+      {/* 6. ACTIONS RAPIDES & STATS GLOBALES */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         
         {/* ACTIONS RAPIDES */}
         <div className="lg:col-span-3 rounded-2xl bg-white border border-[#E6ECF3] shadow-sm p-6">
           <h2 className="text-base font-extrabold text-[#0B2A4A] mb-4">Actions rapides</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <QuickAction to="/admin/concours" icon={<Trophy className="h-5 w-5"/>} label="Ajouter un concours" color="bg-sky-50 text-[#0B63CE] hover:bg-[#0B63CE] hover:text-white border-sky-100" />
+            <QuickAction to="/admin/concours" icon={<Trophy className="h-5 w-5"/>} label="Gérer les concours" color="bg-sky-50 text-[#0B63CE] hover:bg-[#0B63CE] hover:text-white border-sky-100" />
             <QuickAction to="/admin/ecoles" icon={<GraduationCap className="h-5 w-5"/>} label="Ajouter une école" color="bg-emerald-50 text-emerald-600 hover:bg-emerald-600 hover:text-white border-emerald-100" />
             <QuickAction to="/admin/ministeres" icon={<Landmark className="h-5 w-5"/>} label="Ajouter un ministère" color="bg-violet-50 text-violet-600 hover:bg-violet-600 hover:text-white border-violet-100" />
             <QuickAction to="/admin/examens" icon={<FileText className="h-5 w-5"/>} label="Ajouter un examen" color="bg-orange-50 text-orange-600 hover:bg-orange-500 hover:text-white border-orange-100" />
@@ -196,7 +412,7 @@ export default function AdminDashboard() {
         </div>
       </div>
 
-      {/* 5. DERNIERS CONCOURS & ACTIVITÉ RÉCENTE */}
+      {/* 7. DERNIERS CONCOURS & ACTIVITÉ RÉCENTE */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         {/* DERNIERS CONCOURS TABLE */}
@@ -214,7 +430,7 @@ export default function AdminDashboard() {
                   <th className="px-6 py-4 rounded-tl-lg">Titre</th>
                   <th className="px-6 py-4">Organisme</th>
                   <th className="px-6 py-4">Date limite</th>
-                  <th className="px-6 py-4 rounded-tr-lg">Statut</th>
+                  <th className="px-6 py-4 rounded-tr-lg">Statut calculé</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -227,18 +443,10 @@ export default function AdminDashboard() {
                       {c.organizationName || 'Non spécifié'}
                     </td>
                     <td className="px-6 py-4 text-slate-600">
-                      {c.registrationDeadline ? new Date(c.registrationDeadline).toLocaleDateString('fr-MA') : 'Aucune'}
+                      {c.registrationDeadline ? formatDateShort(c.registrationDeadline) : 'Aucune'}
                     </td>
                     <td className="px-6 py-4">
-                      {c.publishStatus === 'PUBLISHED' ? (
-                        <span className="inline-flex items-center gap-1.5 rounded-md bg-emerald-50 px-2 py-1 text-[11px] font-bold text-emerald-700 ring-1 ring-inset ring-emerald-600/20">
-                          <CheckCircle2 className="h-3 w-3" /> Publié
-                        </span>
-                      ) : (
-                        <span className="inline-flex items-center gap-1.5 rounded-md bg-amber-50 px-2 py-1 text-[11px] font-bold text-amber-700 ring-1 ring-inset ring-amber-600/20">
-                          <AlertCircle className="h-3 w-3" /> Brouillon
-                        </span>
-                      )}
+                      <StatusBadge status={evaluateCompetitionDates(c).status} />
                     </td>
                   </tr>
                 ))}
@@ -305,6 +513,50 @@ export default function AdminDashboard() {
 }
 
 // Composants de sous-interface
+function StatusStatCard({ 
+  title, 
+  value, 
+  subtitle, 
+  icon, 
+  bg, 
+  badge,
+  onClick,
+  active
+}: { 
+  title: string; 
+  value: number; 
+  subtitle: string; 
+  icon: React.ReactNode; 
+  bg: string; 
+  badge?: string;
+  onClick?: () => void;
+  active?: boolean;
+}) {
+  return (
+    <button 
+      type="button"
+      onClick={onClick}
+      className={`rounded-2xl border p-4 shadow-sm flex flex-col justify-between text-left transition-all cursor-pointer ${bg} ${active ? 'ring-2 ring-[#0B63CE] shadow-md scale-[1.01]' : 'hover:shadow-md'}`}
+    >
+      <div className="flex items-center justify-between w-full">
+        <div className="p-2 rounded-xl bg-white/70 shadow-xs border border-black/5">
+          {icon}
+        </div>
+        {badge && (
+          <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-white/80 border border-black/5">
+            {badge}
+          </span>
+        )}
+      </div>
+      <div className="mt-3">
+        <p className="text-2xl font-black">{value}</p>
+        <p className="text-xs font-extrabold mt-0.5 opacity-90">{title}</p>
+        <p className="text-[11px] opacity-70 truncate mt-0.5">{subtitle}</p>
+      </div>
+    </button>
+  );
+}
+
 function StatWidget({ icon, title, value, trend, bg }: { icon: React.ReactNode, title: string, value: number, trend: string, bg: string }) {
   return (
     <div className="rounded-2xl bg-white border border-[#E6ECF3] p-5 shadow-sm flex flex-col gap-3">
@@ -321,7 +573,7 @@ function StatWidget({ icon, title, value, trend, bg }: { icon: React.ReactNode, 
         <p className="text-3xl font-extrabold text-[#0B2A4A]">{value}</p>
         <div className="flex items-center justify-between mt-1">
           <p className="text-sm font-semibold text-slate-500">{title}</p>
-          <span className="text-[10px] font-bold uppercase text-slate-400">Ce mois</span>
+          <span className="text-[10px] font-bold uppercase text-slate-400">Total</span>
         </div>
       </div>
     </div>
