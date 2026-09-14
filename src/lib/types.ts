@@ -124,6 +124,8 @@ export interface Competition {
   organizationName: string;
   organizationType: OrgType;
   schoolId?: string;
+  schoolSlug?: string;
+  schoolWebsite?: string;
   universityId?: string;
   ministryId?: string;
   logoUrl?: string;

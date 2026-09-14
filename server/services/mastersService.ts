@@ -25,6 +25,10 @@ export interface MasterItem {
   status: 'OUVERT' | 'FERME' | 'A_VENIR' | 'CONCOURS_A_VENIR' | 'RESULTATS' | 'INFORMATION';
   createdAt: string;
   updatedAt: string;
+  schoolId?: string;
+  schoolSlug?: string;
+  schoolWebsite?: string;
+  universityWebsite?: string;
 }
 
 export interface SyncSummaryData {
@@ -76,6 +80,9 @@ const INITIAL_MASTERS: MasterItem[] = [
     seats: 35,
     officialUrl: 'http://preinscription.um5.ac.ma',
     sourceUrl: 'https://www.almaster-maroc.com/master-fsr-rabat-ia-2026/',
+    schoolSlug: 'fs-rabat',
+    schoolWebsite: 'http://www.fsr.ac.ma',
+    universityWebsite: 'https://www.um5.ac.ma',
     status: 'OUVERT',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
@@ -100,6 +107,10 @@ const INITIAL_MASTERS: MasterItem[] = [
     seats: 40,
     officialUrl: 'https://encgcasa.ac.ma/candidatures-master/',
     sourceUrl: 'https://www.almaster-maroc.com/master-encg-casablanca-cca/',
+    schoolId: 'ec-encg-casablanca',
+    schoolSlug: 'encg-casablanca',
+    schoolWebsite: 'https://encgcasa.ac.ma',
+    universityWebsite: 'http://www.univh2c.ma',
     status: 'OUVERT',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
@@ -124,6 +135,9 @@ const INITIAL_MASTERS: MasterItem[] = [
     seats: 30,
     officialUrl: 'https://candidature.uca.ma',
     sourceUrl: 'https://www.almaster-maroc.com/master-fssm-marrakech-cybersecurite/',
+    schoolSlug: 'fssm-marrakech',
+    schoolWebsite: 'https://www.fssm.uca.ma',
+    universityWebsite: 'https://www.uca.ma',
     status: 'A_VENIR',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
@@ -148,6 +162,9 @@ const INITIAL_MASTERS: MasterItem[] = [
     seats: 50,
     officialUrl: 'https://portail.usmba.ac.ma',
     sourceUrl: 'https://www.almaster-maroc.com/master-droit-affaires-fsjes-fes/',
+    schoolSlug: 'fsjes-fes',
+    schoolWebsite: 'http://fsjes.usmba.ac.ma',
+    universityWebsite: 'http://www.usmba.ac.ma',
     status: 'CONCOURS_A_VENIR',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
@@ -172,6 +189,10 @@ const INITIAL_MASTERS: MasterItem[] = [
     seats: 25,
     officialUrl: 'https://ensa-tetouan.ac.ma/masters/',
     sourceUrl: 'https://www.almaster-maroc.com/master-genie-civil-ensa-tetouan/',
+    schoolId: 'ec-ensa-tetouan',
+    schoolSlug: 'ensa-tetouan',
+    schoolWebsite: 'https://ensa-tetouan.ac.ma',
+    universityWebsite: 'https://www.uae.ac.ma',
     status: 'RESULTATS',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
@@ -196,6 +217,9 @@ const INITIAL_MASTERS: MasterItem[] = [
     seats: 30,
     officialUrl: 'https://preinscription.uiz.ac.ma',
     sourceUrl: 'https://www.almaster-maroc.com/master-energies-renouvelables-uiz-agadir/',
+    schoolSlug: 'fsa-agadir',
+    schoolWebsite: 'http://fsa.uiz.ac.ma',
+    universityWebsite: 'https://www.uiz.ac.ma',
     status: 'INFORMATION',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
@@ -220,11 +244,54 @@ const INITIAL_MASTERS: MasterItem[] = [
     seats: 35,
     officialUrl: 'https://ent.uit.ac.ma',
     sourceUrl: 'https://www.almaster-maroc.com/master-communication-flsh-kenitra/',
+    schoolSlug: 'flsh-kenitra',
+    schoolWebsite: 'https://flsh.uit.ac.ma',
+    universityWebsite: 'https://uit.ac.ma',
     status: 'FERME',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
   }
 ];
+
+export function enrichMasterWithSchoolInfo(m: MasterItem): MasterItem {
+  if (m.schoolWebsite && m.schoolSlug) return m;
+  const est = (m.establishment || '').toLowerCase();
+  let schoolWebsite = m.schoolWebsite;
+  let schoolSlug = m.schoolSlug;
+  let schoolId = m.schoolId;
+
+  if (est.includes('encg') && est.includes('casablanca')) {
+    schoolId = 'ec-encg-casablanca';
+    schoolSlug = 'encg-casablanca';
+    schoolWebsite = 'https://encgcasa.ac.ma';
+  } else if (est.includes('ensa') && (est.includes('tétouan') || est.includes('tetouan'))) {
+    schoolId = 'ec-ensa-tetouan';
+    schoolSlug = 'ensa-tetouan';
+    schoolWebsite = 'https://ensa-tetouan.ac.ma';
+  } else if (est.includes('fsr') || (est.includes('faculté des sciences') && est.includes('rabat'))) {
+    schoolSlug = 'fs-rabat';
+    schoolWebsite = 'http://www.fsr.ac.ma';
+  } else if (est.includes('fssm') || est.includes('semlalia')) {
+    schoolSlug = 'fssm-marrakech';
+    schoolWebsite = 'https://www.fssm.uca.ma';
+  } else if (est.includes('fsa') || (est.includes('sciences') && est.includes('agadir'))) {
+    schoolSlug = 'fsa-agadir';
+    schoolWebsite = 'http://fsa.uiz.ac.ma';
+  } else if (est.includes('fsjes') && (est.includes('fès') || est.includes('fes'))) {
+    schoolSlug = 'fsjes-fes';
+    schoolWebsite = 'http://fsjes.usmba.ac.ma';
+  } else if (est.includes('flsh') && (est.includes('kénitra') || est.includes('kenitra'))) {
+    schoolSlug = 'flsh-kenitra';
+    schoolWebsite = 'https://flsh.uit.ac.ma';
+  }
+
+  return {
+    ...m,
+    schoolId: schoolId || m.schoolId,
+    schoolSlug: schoolSlug || m.schoolSlug,
+    schoolWebsite: schoolWebsite || m.schoolWebsite,
+  };
+}
 
 export function getMastersStore(): MasterItem[] {
   ensureDataDir();
@@ -233,7 +300,7 @@ export function getMastersStore(): MasterItem[] {
       const content = fs.readFileSync(MASTERS_FILE, 'utf-8');
       const parsed = JSON.parse(content);
       if (Array.isArray(parsed) && parsed.length > 0) {
-        return parsed;
+        return parsed.map(enrichMasterWithSchoolInfo);
       }
     }
   } catch (err) {

@@ -20,7 +20,7 @@ import {
   SEED_NOTIFICATIONS, SEED_SCHOOLS, SEED_UNIVERSITIES, SEED_USERS, buildCompetitions
 } from './seed';
 import { resolveInstitutionLogo, OFFICIAL_INSTITUTION_LOGOS } from '../data/institutionLogos';
-import { statusFromCompetition, uid } from './utils';
+import { evaluateCompetitionDates, statusFromCompetition, uid } from './utils';
 import { initSupabaseSync, pushToSupabase, deleteFromSupabase } from './supabase-db';
 import { getAllMastersAsCompetitions, getMasterAsCompetitionBySlug } from './mastersAdapter';
 
@@ -687,11 +687,16 @@ export function adminStats() {
   const all = db.competitions;
   const pub = all.filter((c) => c.publishStatus === 'PUBLISHED');
   const byStatus = (s: string) => pub.filter((c) => statusFromCompetition(c) === s).length;
+  const evals = pub.map((c) => evaluateCompetitionDates(c));
   return {
     totalConcours: all.length,
-    ouverts: byStatus('Ouvert'),
-    bientot: byStatus('Bientot'),
-    fermes: byStatus('Ferme'),
+    ouverts: byStatus('OUVERT'),
+    bientot: byStatus('A_VENIR'),
+    fermes: byStatus('CLOTURE'),
+    aVenir: byStatus('A_VENIR'),
+    clotures: byStatus('CLOTURE'),
+    sansDate: evals.filter(e => e.status === 'DATE_A_VERIFIER' || e.hasIncoherentDates).length,
+    incoherents: evals.filter(e => e.hasIncoherentDates).length,
     ecoles: db.schools.length,
     universites: (db.universities || []).length,
     ministeres: db.ministries.length,

@@ -86,9 +86,9 @@ export default function ConcoursList() {
     const all = queryCompetitions({ includeMasters: true }, 1, 1000).items;
     return {
       total: all.length,
-      ouvert: all.filter(c => statusFromCompetition(c) === 'Ouvert').length,
-      bientot: all.filter(c => statusFromCompetition(c) === 'Bientot').length,
-      ferme: all.filter(c => statusFromCompetition(c) === 'Ferme').length,
+      ouvert: all.filter(c => statusFromCompetition(c) === 'OUVERT').length,
+      bientot: all.filter(c => statusFromCompetition(c) === 'A_VENIR').length,
+      ferme: all.filter(c => statusFromCompetition(c) === 'CLOTURE').length,
       masters: all.filter(c => c.id.startsWith('mst-') || c.category === 'UNIVERSITE' || c.level.toLowerCase().includes('master')).length,
       stateComps: all.filter(c => !c.id.startsWith('mst-') && c.category !== 'UNIVERSITE').length,
     };

@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Search,
   MapPin,
@@ -8,9 +9,11 @@ import {
   ExternalLink,
   Clock,
   Sparkles,
-  Users
+  Users,
+  Globe
 } from 'lucide-react';
 import { Button, Chip } from '../components/ui';
+import { resolveSchoolMeta } from '../lib/mastersAdapter';
 
 interface MasterItem {
   id: string;
@@ -32,6 +35,10 @@ interface MasterItem {
   seats: number | null;
   officialUrl: string | null;
   sourceUrl: string;
+  schoolId?: string;
+  schoolSlug?: string;
+  schoolWebsite?: string;
+  universityWebsite?: string;
   status: 'OUVERT' | 'FERME' | 'A_VENIR' | 'CONCOURS_A_VENIR' | 'RESULTATS' | 'INFORMATION';
 }
 
@@ -122,7 +129,7 @@ export default function Masters() {
           <div className="relative z-10 max-w-3xl space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider text-blue-100">
               <GraduationCap className="w-4 h-4 text-amber-300" />
-              Veille Officielle & AlMaster-Maroc
+              Veille Officielle Universitaire
             </div>
             <h1 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
               Masters Universitaires 2026-2027
@@ -318,31 +325,73 @@ export default function Masters() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-lg font-bold text-slate-900 leading-snug group-hover:text-[#0B63CE] transition-colors mb-2">
+                  <Link
+                    to={`/concours/${m.id}`}
+                    className="text-lg font-bold text-slate-900 leading-snug hover:text-[#0B63CE] transition-colors mb-2 block"
+                  >
                     {m.name}
-                  </h3>
+                  </Link>
 
-                  {/* Institution Details */}
-                  <div className="space-y-2 text-xs text-slate-600 mb-4">
-                    <div className="flex items-start gap-2">
-                      <Building2 className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
-                      <span>
-                        <strong className="text-slate-800">{m.establishment}</strong>
-                        {m.university && <span className="block text-slate-500">{m.university}</span>}
-                      </span>
-                    </div>
+                  {/* Institution Details & School Website */}
+                  {(() => {
+                    const schoolMeta = resolveSchoolMeta(m.establishment, m.university);
+                    const schoolWebsite = m.schoolWebsite || schoolMeta.schoolWebsite;
+                    const schoolSlug = m.schoolSlug || schoolMeta.schoolSlug;
 
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-slate-400 shrink-0" />
-                      <span>{m.city}</span>
-                      {m.domain && (
-                        <>
-                          <span className="text-slate-300">•</span>
-                          <span className="text-slate-500">{m.domain}</span>
-                        </>
-                      )}
-                    </div>
-                  </div>
+                    return (
+                      <div className="space-y-2 text-xs text-slate-600 mb-4">
+                        <div className="flex items-start gap-2.5">
+                          <Building2 className="w-4 h-4 text-[#0B63CE] shrink-0 mt-0.5" />
+                          <div className="min-w-0 flex-1">
+                            <div className="flex flex-wrap items-center gap-1.5">
+                              {schoolSlug ? (
+                                <Link
+                                  to={`/ecoles/${schoolSlug}`}
+                                  className="font-bold text-slate-900 hover:text-[#0B63CE] hover:underline"
+                                  title="Consulter la fiche de l'école"
+                                >
+                                  {m.establishment}
+                                </Link>
+                              ) : (
+                                <strong className="text-slate-800">{m.establishment}</strong>
+                              )}
+
+                              {schoolWebsite && (
+                                <a
+                                  href={schoolWebsite}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  title="Site officiel de l'école qui poste le concours"
+                                  className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-50 text-[11px] font-bold text-emerald-700 hover:bg-emerald-100 ring-1 ring-inset ring-emerald-200 transition-colors"
+                                >
+                                  <Globe className="w-3 h-3 text-emerald-600" />
+                                  Site de l'école
+                                  <ExternalLink className="w-2.5 h-2.5" />
+                                </a>
+                              )}
+                            </div>
+
+                            {m.university && (
+                              <span className="block text-slate-500 text-[11px] mt-0.5">
+                                {m.university}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-2">
+                          <MapPin className="w-4 h-4 text-slate-400 shrink-0" />
+                          <span>{m.city}</span>
+                          {m.domain && (
+                            <>
+                              <span className="text-slate-300">•</span>
+                              <span className="text-slate-500">{m.domain}</span>
+                            </>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })()}
 
                   {/* Dates Banner */}
                   <div className="bg-slate-50 rounded-xl p-3 space-y-1.5 text-xs border border-slate-100 mb-4">
@@ -389,42 +438,51 @@ export default function Masters() {
                   )}
                 </div>
 
-                {/* Actions: Official Link prioritized, AlMaster source as fallback */}
-                <div className="pt-4 border-t border-slate-100 flex items-center gap-2">
-                  {m.officialUrl ? (
-                    <a
-                      href={m.officialUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm transition-colors"
-                    >
-                      Candidater (Portail Officiel)
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  ) : (
-                    <a
-                      href={m.sourceUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-[#0B63CE] hover:bg-[#0952ab] shadow-sm transition-colors"
-                    >
-                      Consulter l'annonce
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  )}
+                {/* Actions: School Website, Official Portal & Source */}
+                {(() => {
+                  const schoolMeta = resolveSchoolMeta(m.establishment, m.university);
+                  const schoolWebsite = m.schoolWebsite || schoolMeta.schoolWebsite;
 
-                  {m.officialUrl && m.sourceUrl && (
-                    <a
-                      href={m.sourceUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      title="Voir la source AlMaster-Maroc"
-                      className="px-3 py-2.5 rounded-xl text-xs font-medium text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors"
-                    >
-                      AlMaster
-                    </a>
-                  )}
-                </div>
+                  return (
+                    <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-2">
+                      {schoolWebsite && (
+                        <a
+                          href={schoolWebsite}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl text-xs font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 ring-1 ring-inset ring-emerald-200 transition-colors"
+                          title="Accéder au site officiel de l'école qui poste le concours"
+                        >
+                          <Globe className="w-3.5 h-3.5 text-emerald-600" />
+                          Site École
+                          <ExternalLink className="w-3 h-3 text-emerald-600" />
+                        </a>
+                      )}
+
+                      {m.officialUrl ? (
+                        <a
+                          href={m.officialUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm transition-colors"
+                        >
+                          Candidater
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </a>
+                      ) : (
+                        <a
+                          href={schoolWebsite || m.sourceUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-[#0B63CE] hover:bg-[#0952ab] shadow-sm transition-colors"
+                        >
+                          Consulter l'annonce
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </a>
+                      )}
+                    </div>
+                  );
+                })()}
               </div>
             ))}
           </div>

@@ -4,8 +4,8 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import {
-  AlertCircle, ArrowLeft, ArrowRight, BadgeCheck, Bell, CalendarDays, CheckCircle2, ClipboardList, Clock,
-  ExternalLink, Eye, FileText, Flag, GraduationCap, Info, Lock, MapPin, Users, Wallet, ListChecks, BookOpen, ChevronRight,
+  AlertCircle, ArrowLeft, ArrowRight, BadgeCheck, Bell, Building2, CalendarDays, CheckCircle2, ClipboardList, Clock,
+  ExternalLink, Eye, FileText, Flag, Globe, GraduationCap, Info, Lock, MapPin, Users, Wallet, ListChecks, BookOpen, ChevronRight,
 } from 'lucide-react';
 import { useAuth } from '../lib/auth';
 import { createReport, getCompetitionBySlug, getRelatedCompetitions, incrementViews, isFollowing, loadDB, queryDocuments, queryExams, toggleFollow } from '../lib/db';
@@ -100,29 +100,125 @@ export default function ConcoursDetail() {
           </div>
         </div>
 
-        {/* School + Ministry Logos */}
-        {(c.schoolId || c.ministryId) && (() => {
+        {/* School + University + Ministry Information Banner */}
+        {(() => {
           const db = loadDB();
-          const school = c.schoolId ? db.schools.find(s => s.id === c.schoolId) : null;
-          const ministry = c.ministryId ? db.ministries.find(m => m.id === c.ministryId) : null;
-          if (!school && !ministry) return null;
+          const school = c.schoolId
+            ? db.schools.find((s) => s.id === c.schoolId)
+            : c.schoolSlug
+            ? db.schools.find((s) => s.slug === c.schoolSlug)
+            : null;
+          const university = (c.universityId || school?.universityId)
+            ? db.universities?.find((u) => u.id === (c.universityId || school?.universityId))
+            : null;
+          const ministry = c.ministryId ? db.ministries.find((m) => m.id === c.ministryId) : null;
+          const schoolWebsite = c.schoolWebsite || school?.website;
+          const schoolSlug = school?.slug || c.schoolSlug;
+
+          if (!school && !university && !ministry && !schoolWebsite && !schoolSlug) return null;
+
           return (
-            <div className="mt-4 flex flex-wrap items-center gap-6">
-              {school && (
-                <div className="flex items-center gap-3">
-                  <OrgAvatar name={school.shortName} color={school.logoColor} logoUrl={school.logoUrl} size="md" />
+            <div className="mt-5 flex flex-wrap items-center gap-4 rounded-2xl border border-slate-200/80 bg-slate-50/80 p-4">
+              {/* School / Establishment */}
+              <div className="flex flex-wrap items-center gap-3">
+                <OrgAvatar
+                  name={school?.shortName || c.organizationName}
+                  color={school?.logoColor || c.logoColor}
+                  logoUrl={school?.logoUrl || c.logoUrl}
+                  size="md"
+                />
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                      Établissement organisateur
+                    </span>
+                    {school && (
+                      <span className="rounded-md bg-emerald-50 px-1.5 py-0.5 text-[10px] font-bold text-emerald-700 ring-1 ring-inset ring-emerald-200">
+                        Officiel
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap items-center gap-2 mt-0.5">
+                    {schoolSlug ? (
+                      <Link
+                        to={`/ecoles/${schoolSlug}`}
+                        className="text-sm font-extrabold text-[#0B2A4A] hover:text-[#0B63CE] hover:underline"
+                      >
+                        {school?.name || c.organizationName}
+                      </Link>
+                    ) : (
+                      <p className="text-sm font-extrabold text-[#0B2A4A]">
+                        {school?.name || c.organizationName}
+                      </p>
+                    )}
+                    {schoolSlug && (
+                      <Link
+                        to={`/ecoles/${schoolSlug}`}
+                        className="inline-flex items-center gap-1 rounded-lg bg-sky-50 px-2 py-0.5 text-xs font-bold text-[#0B63CE] ring-1 ring-inset ring-sky-200 hover:bg-sky-100 transition-colors"
+                      >
+                        <Building2 className="h-3 w-3" /> Fiche école
+                      </Link>
+                    )}
+                    {schoolWebsite && (
+                      <a
+                        href={schoolWebsite}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 rounded-lg bg-emerald-50 px-2 py-0.5 text-xs font-bold text-emerald-700 ring-1 ring-inset ring-emerald-200 hover:bg-emerald-100 transition-colors"
+                      >
+                        <Globe className="h-3 w-3" /> Site web de l'école <ExternalLink className="h-2.5 w-2.5" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* University */}
+              {university && (
+                <div className="flex items-center gap-3 sm:border-l sm:border-slate-200 sm:pl-4">
+                  <OrgAvatar
+                    name={university.shortName || university.name}
+                    color={university.logoColor || '#1E40AF'}
+                    logoUrl={university.logoUrl}
+                    size="sm"
+                  />
                   <div>
-                    <p className="text-xs font-bold text-slate-500">École</p>
-                    <p className="text-sm font-semibold text-[#0B2A4A]">{school.shortName}</p>
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                      Université de tutelle
+                    </p>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <span className="text-xs font-bold text-slate-800">
+                        {university.name}
+                      </span>
+                      {university.website && (
+                        <a
+                          href={university.website}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-0.5 text-xs font-semibold text-[#0B63CE] hover:underline"
+                        >
+                          Portail <ExternalLink className="h-2.5 w-2.5" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               )}
+
+              {/* Ministry */}
               {ministry && (
-                <div className="flex items-center gap-3">
-                  <OrgAvatar name={ministry.name} color={ministry.logoColor} logoUrl={ministry.logoUrl} size="md" />
+                <div className="flex items-center gap-3 sm:border-l sm:border-slate-200 sm:pl-4">
+                  <OrgAvatar
+                    name={ministry.name}
+                    color={ministry.logoColor}
+                    logoUrl={ministry.logoUrl}
+                    size="sm"
+                  />
                   <div>
-                    <p className="text-xs font-bold text-slate-500">Ministère</p>
-                    <p className="text-sm font-semibold text-[#0B2A4A]">{ministry.shortName}</p>
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                      Ministère
+                    </p>
+                    <p className="text-xs font-bold text-slate-800 mt-0.5">{ministry.shortName}</p>
                   </div>
                 </div>
               )}
@@ -288,6 +384,77 @@ export default function ConcoursDetail() {
 
         {/* Colonne latérale */}
         <aside className="min-w-0 space-y-4">
+          {/* Bloc Établissement / École qui poste le concours */}
+          {(() => {
+            const db = loadDB();
+            const school = c.schoolId
+              ? db.schools.find((s) => s.id === c.schoolId)
+              : c.schoolSlug
+              ? db.schools.find((s) => s.slug === c.schoolSlug)
+              : null;
+            const university = (c.universityId || school?.universityId)
+              ? db.universities?.find((u) => u.id === (c.universityId || school?.universityId))
+              : null;
+            const schoolWebsite = c.schoolWebsite || school?.website;
+            const schoolSlug = school?.slug || c.schoolSlug;
+
+            if (!schoolWebsite && !schoolSlug && !school) return null;
+
+            return (
+              <div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-[0_1px_3px_rgba(11,42,74,0.06)]">
+                <div className="flex items-center gap-2 text-[#0B2A4A]">
+                  <Building2 className="h-4 w-4 text-[#0B63CE]" />
+                  <h2 className="text-[15px] font-extrabold">Établissement organisateur</h2>
+                </div>
+                <p className="mt-1 text-xs leading-relaxed text-slate-500">
+                  Lien et portail direct de l'école ou faculté qui propose cette formation / concours.
+                </p>
+
+                <div className="mt-4 space-y-2.5">
+                  {schoolWebsite && (
+                    <a
+                      href={schoolWebsite}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex w-full items-center justify-between gap-2 rounded-xl bg-emerald-600 px-4 py-2.5 text-xs font-bold text-white shadow-sm hover:bg-emerald-700 transition-colors"
+                    >
+                      <span className="flex items-center gap-2">
+                        <Globe className="h-4 w-4" />
+                        Site officiel de l'école
+                      </span>
+                      <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  )}
+
+                  {schoolSlug && (
+                    <Link
+                      to={`/ecoles/${schoolSlug}`}
+                      className="flex w-full items-center justify-between gap-2 rounded-xl bg-sky-50 px-4 py-2.5 text-xs font-bold text-[#0B63CE] ring-1 ring-inset ring-sky-200 hover:bg-sky-100 transition-colors"
+                    >
+                      <span className="flex items-center gap-2">
+                        <Building2 className="h-4 w-4" />
+                        Fiche de l'école sur la plateforme
+                      </span>
+                      <ChevronRight className="h-3.5 w-3.5" />
+                    </Link>
+                  )}
+
+                  {university?.website && (
+                    <a
+                      href={university.website}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex w-full items-center justify-between gap-2 rounded-xl bg-slate-50 px-4 py-2 text-xs font-semibold text-slate-700 ring-1 ring-inset ring-slate-200 hover:bg-slate-100 transition-colors"
+                    >
+                      <span className="truncate">Portail {university.shortName || university.name}</span>
+                      <ExternalLink className="h-3 w-3 text-slate-400 shrink-0" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            );
+          })()}
+
           <div className="rounded-2xl border border-slate-200/80 bg-white p-5">
             <h2 className="text-[15px] font-extrabold text-[#0B2A4A]">Source officielle</h2>
             <p className="mt-1 text-xs leading-relaxed text-slate-500">Vérifiez toujours les informations sur les canaux officiels avant de candidater.</p>
@@ -331,11 +498,17 @@ export default function ConcoursDetail() {
                 <FileText className="h-4 w-4" /> Voir les documents
               </Link>
             </div>
-            {(c.sourceOrganization || c.sourceUrl) && (
+            {(c.sourceOrganization || (c.sourceUrl && !c.sourceUrl.includes('almaster-maroc.com'))) && (
               <div className="mt-4 rounded-xl bg-slate-50 p-3 text-xs leading-relaxed text-slate-600 ring-1 ring-inset ring-slate-100">
                 <p className="font-bold text-[#0B2A4A]">Informations Concours Maroc</p>
-                {c.sourceOrganization && <p className="mt-1">Source : {c.sourceOrganization}</p>}
-                {c.sourceUrl && <a href={c.sourceUrl} target="_blank" rel="noreferrer" className="break-all font-semibold text-[#0B63CE] hover:underline">Lien source</a>}
+                {c.sourceOrganization && !c.sourceOrganization.toLowerCase().includes('almaster') && (
+                  <p className="mt-1">Source : {c.sourceOrganization}</p>
+                )}
+                {c.sourceUrl && !c.sourceUrl.includes('almaster-maroc.com') && (
+                  <a href={c.sourceUrl} target="_blank" rel="noreferrer" className="break-all font-semibold text-[#0B63CE] hover:underline">
+                    Lien source
+                  </a>
+                )}
               </div>
             )}
           </div>
