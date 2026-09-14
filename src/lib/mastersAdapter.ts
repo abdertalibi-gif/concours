@@ -4,7 +4,7 @@
 
 import type { Competition, CompetitionCategory, OrgType } from './types';
 import { parseDateSafe } from './utils';
-import { SEED_MASTERS_FALLBACK } from '../../api/_mastersData.js';
+import { SEED_MASTERS_FALLBACK } from './mastersSeed';
 export { SEED_MASTERS_FALLBACK };
 
 export interface MasterItem {

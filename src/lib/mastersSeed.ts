@@ -1,12 +1,11 @@
 // ============================================================
 // Source canonique de vérité des Masters (2026-2027).
 // Fichier GÉNÉRÉ depuis server/data/masters.json — ne pas éditer à la main.
-// Utilisé par la fonction serverless Vercel : api/masters.ts → GET /api/masters
-// REMARQUE : le frontend ne peut PAS importer depuis api/ (exclu par Vercel).
-// Voir src/lib/mastersSeed.ts pour la copie identique réservée au client.
+// Copie réservée au build client (src/) car Vercel n'inclut pas api/
+// dans le frontend. Miroir exact de api/_mastersData.ts (161 masters).
 // ============================================================
 
-import type { MasterItem } from '../src/lib/mastersAdapter';
+import type { MasterItem } from './mastersAdapter';
 
 export const SEED_MASTERS_FALLBACK: MasterItem[] = [
   {
