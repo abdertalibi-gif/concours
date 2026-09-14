@@ -294,6 +294,44 @@ export function enrichMasterWithSchoolInfo(m: MasterItem): MasterItem {
   };
 }
 
+export function parseDateSafe(dateVal: string | Date | null | undefined, isEndOfDay = false): Date | null {
+  if (!dateVal) return null;
+  if (dateVal instanceof Date) return isNaN(dateVal.getTime()) ? null : dateVal;
+  const str = String(dateVal).trim();
+  if (!str) return null;
+
+  // Check if date-only format YYYY-MM-DD
+  if (/^\d{4}-\d{2}-\d{2}$/.test(str)) {
+    const [y, m, d] = str.split('-').map(Number);
+    const date = new Date(y, m - 1, d);
+    if (isEndOfDay) {
+      date.setHours(23, 59, 59, 999);
+    } else {
+      date.setHours(0, 0, 0, 0);
+    }
+    return date;
+  }
+
+  // Check if date-only format DD/MM/YYYY or DD-MM-YYYY
+  const dmyMatch = str.match(/^(\d{1,2})[\/\.-](\d{1,2})[\/\.-](\d{4})$/);
+  if (dmyMatch) {
+    const day = parseInt(dmyMatch[1], 10);
+    const month = parseInt(dmyMatch[2], 10) - 1;
+    const year = parseInt(dmyMatch[3], 10);
+    const date = new Date(year, month, day);
+    if (isEndOfDay) {
+      date.setHours(23, 59, 59, 999);
+    } else {
+      date.setHours(0, 0, 0, 0);
+    }
+    return date;
+  }
+
+  const parsed = new Date(str);
+  if (isNaN(parsed.getTime())) return null;
+  return parsed;
+}
+
 export function getMastersStore(): MasterItem[] {
   ensureDataDir();
   try {
@@ -301,7 +339,17 @@ export function getMastersStore(): MasterItem[] {
       const content = fs.readFileSync(MASTERS_FILE, 'utf-8');
       const parsed = JSON.parse(content);
       if (Array.isArray(parsed) && parsed.length > 0) {
-        return parsed.map(enrichMasterWithSchoolInfo);
+        return parsed.map(enrichMasterWithSchoolInfo).map(m => {
+          // Recompute status in real-time
+          const rtStatus = computeMasterStatus({
+            openingDate: parseDateSafe(m.openingDate, false),
+            deadlineDate: parseDateSafe(m.deadlineDate, true),
+            examDate: parseDateSafe(m.examDate, false),
+            resultsDate: parseDateSafe(m.resultsDate, false),
+            hasResultsPublished: m.status === 'RESULTATS'
+          });
+          return { ...m, status: rtStatus };
+        });
       }
     }
   } catch (err) {
@@ -351,7 +399,7 @@ export function saveSyncLog(log: SyncSummaryData) {
 /**
  * Compute status automatically based on dates and available information:
  * - OUVERT : candidature actuellement ouverte (openingDate <= now <= deadlineDate, or deadline in future)
- * - FERME : date limite dépassée (now > deadlineDate)
+ * - FERME (CLÔTURÉ) : date limite dépassée (now > deadlineDate)
  * - A_VENIR : candidature pas encore ouverte (now < openingDate)
  * - CONCOURS_A_VENIR : candidature terminée mais concours pas encore passé (now > deadlineDate && now < examDate)
  * - RESULTATS : résultats publiés (resultsDate <= now or marked in text)
@@ -363,8 +411,11 @@ export function computeMasterStatus(params: {
   examDate: Date | null;
   resultsDate: Date | null;
   hasResultsPublished?: boolean;
+  referenceDate?: Date;
 }): MasterItem['status'] {
-  const now = new Date();
+  const now = params.referenceDate && !isNaN(params.referenceDate.getTime())
+    ? params.referenceDate
+    : new Date();
 
   if (params.hasResultsPublished || (params.resultsDate && params.resultsDate <= now)) {
     return 'RESULTATS';
@@ -393,6 +444,140 @@ export function computeMasterStatus(params: {
   }
 
   return 'INFORMATION';
+}
+
+export interface StatusUpdateChange {
+  id: string;
+  name: string;
+  establishment: string;
+  university: string;
+  oldStatus: MasterItem['status'];
+  newStatus: MasterItem['status'];
+  deadlineDate: string | null;
+  openingDate: string | null;
+}
+
+export interface StatusUpdateSummary {
+  success: boolean;
+  timestamp: string;
+  total: number;
+  updatedCount: number;
+  stats: {
+    ouvert: number;
+    aVenir: number;
+    cloture: number;
+    concoursAVenir: number;
+    resultats: number;
+    information: number;
+  };
+  changes: StatusUpdateChange[];
+  message: string;
+}
+
+/**
+ * Fonction utilitaire pour mettre à jour automatiquement le statut
+ * (OUVERT, À VENIR, CLÔTURÉ) de tous les masters dans la base de données
+ * en comparant la date limite actuelle avec la date du jour.
+ *
+ * RÈGLES APPLIQUÉES :
+ * - CLÔTURÉ (FERME) : now > deadlineDate (date limite dépassée par rapport à la date du jour)
+ * - À VENIR (A_VENIR) : now < openingDate (date d'ouverture dans le futur)
+ * - OUVERT : candidature active (openingDate <= now <= deadlineDate, ou deadline future)
+ * 
+ * Les statuts modifiés sont immédiatement persistés dans la base de données.
+ */
+export function updateAllMastersStatus(referenceDate: Date = new Date()): StatusUpdateSummary {
+  ensureDataDir();
+  let masters: MasterItem[] = [];
+
+  try {
+    if (fs.existsSync(MASTERS_FILE)) {
+      const content = fs.readFileSync(MASTERS_FILE, 'utf-8');
+      const parsed = JSON.parse(content);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        masters = parsed;
+      }
+    }
+  } catch (err) {
+    console.error('Error reading masters file during status update:', err);
+  }
+
+  if (masters.length === 0) {
+    masters = [...INITIAL_MASTERS];
+  }
+
+  const now = referenceDate instanceof Date && !isNaN(referenceDate.getTime()) ? referenceDate : new Date();
+  const nowIso = now.toISOString();
+
+  let updatedCount = 0;
+  const changes: StatusUpdateChange[] = [];
+  const stats = {
+    ouvert: 0,
+    aVenir: 0,
+    cloture: 0,
+    concoursAVenir: 0,
+    resultats: 0,
+    information: 0,
+  };
+
+  const updatedMasters = masters.map((m) => {
+    const oldStatus = m.status;
+    const newStatus = computeMasterStatus({
+      openingDate: parseDateSafe(m.openingDate, false),
+      deadlineDate: parseDateSafe(m.deadlineDate, true),
+      examDate: parseDateSafe(m.examDate, false),
+      resultsDate: parseDateSafe(m.resultsDate, false),
+      hasResultsPublished: oldStatus === 'RESULTATS',
+      referenceDate: now,
+    });
+
+    if (newStatus === 'OUVERT') stats.ouvert++;
+    else if (newStatus === 'A_VENIR') stats.aVenir++;
+    else if (newStatus === 'FERME') stats.cloture++;
+    else if (newStatus === 'CONCOURS_A_VENIR') stats.concoursAVenir++;
+    else if (newStatus === 'RESULTATS') stats.resultats++;
+    else stats.information++;
+
+    if (oldStatus !== newStatus) {
+      updatedCount++;
+      changes.push({
+        id: m.id,
+        name: m.name,
+        establishment: m.establishment,
+        university: m.university,
+        oldStatus,
+        newStatus,
+        deadlineDate: m.deadlineDate || null,
+        openingDate: m.openingDate || null,
+      });
+      return {
+        ...m,
+        status: newStatus,
+        updatedAt: nowIso,
+      };
+    }
+
+    return m;
+  });
+
+  if (updatedCount > 0) {
+    saveMastersStore(updatedMasters);
+    console.log(`[MastersService] 🔄 ${updatedCount} master(s) mis à jour en base de données selon la date du jour (${now.toLocaleDateString('fr-FR')}).`);
+  }
+
+  const message = updatedCount > 0
+    ? `Mise à jour automatique effectuée : ${updatedCount} master(s) mis à jour (${stats.ouvert} OUVERT, ${stats.aVenir} À VENIR, ${stats.cloture} CLÔTURÉ).`
+    : `Tous les statuts sont déjà synchronisés avec la date du jour (${stats.ouvert} OUVERT, ${stats.aVenir} À VENIR, ${stats.cloture} CLÔTURÉ).`;
+
+  return {
+    success: true,
+    timestamp: nowIso,
+    total: masters.length,
+    updatedCount,
+    stats,
+    changes,
+    message,
+  };
 }
 
 export function generateUniqueKey(university: string, establishment: string, name: string, academicYear: string): string {

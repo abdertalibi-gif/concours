@@ -6,6 +6,7 @@ import {
   createMaster,
   updateMaster,
   deleteMaster,
+  updateAllMastersStatus,
   MasterItem
 } from '../services/mastersService.js';
 
@@ -97,6 +98,32 @@ router.post('/sync', async (req, res) => {
       success: false,
       error: error.message || 'Erreur lors de la synchronisation'
     });
+  }
+});
+
+// POST update-statuses: Exécute la fonction utilitaire de mise à jour automatique des statuts
+router.post('/update-statuses', async (req, res) => {
+  try {
+    const referenceDate = req.body?.referenceDate ? new Date(req.body.referenceDate) : new Date();
+    const result = updateAllMastersStatus(referenceDate);
+    res.json(result);
+  } catch (error: any) {
+    console.error('Error updating masters statuses:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message || 'Erreur lors de la mise à jour des statuts'
+    });
+  }
+});
+
+// GET update-statuses: Permet aussi de déclencher ou tester la mise à jour via un simple GET
+router.get('/update-statuses', async (req, res) => {
+  try {
+    const refDate = req.query?.date ? new Date(String(req.query.date)) : new Date();
+    const result = updateAllMastersStatus(refDate);
+    res.json(result);
+  } catch (error: any) {
+    res.status(500).json({ success: false, error: error.message });
   }
 });
 

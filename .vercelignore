@@ -7,14 +7,9 @@ __pycache__/
 *.ts
 !src/**/*.ts
 !src/**/*.tsx
-!api/**/*.ts
 !vite.config.ts
-
-# Environment files: NEVER upload local secrets/placeholders to Vercel
-.env
-.env.*
-!.env.example
 
 # Documentation & logs
 *.log
+.env.local
 .git

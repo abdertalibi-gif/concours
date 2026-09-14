@@ -7,6 +7,7 @@ import { createServer as createViteServer } from 'vite';
 import apiRoutes from './routes/api.js';
 import agentRoutes from './routes/agent.js';
 import mastersRoutes from './routes/masters.js';
+import { updateAllMastersStatus } from './services/mastersService.js';
 
 dotenv.config();
 
@@ -62,6 +63,23 @@ async function startServer() {
 
   app.listen(PORT, '0.0.0.0', () => {
     console.log(`🚀 Serveur backend démarré sur le port ${PORT}`);
+
+    // Mise à jour automatique initiale des statuts des masters en comparant les dates limites avec la date du jour
+    try {
+      const initialUpdate = updateAllMastersStatus();
+      console.log(`[Masters] ${initialUpdate.message}`);
+    } catch (err) {
+      console.error('[Masters] Erreur lors de la vérification initiale des statuts:', err);
+    }
+
+    // Vérification et mise à jour automatique planifiée toutes les heures
+    setInterval(() => {
+      try {
+        updateAllMastersStatus();
+      } catch (err) {
+        console.error('[Masters] Erreur lors de la mise à jour automatique des statuts:', err);
+      }
+    }, 60 * 60 * 1000);
   });
 }
 

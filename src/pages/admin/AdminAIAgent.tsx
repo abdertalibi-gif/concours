@@ -1,12 +1,47 @@
 import { useState, useEffect } from 'react';
 import { Play, Search, Plus, RefreshCw, StopCircle } from 'lucide-react';
-import { Button, Chip } from '../../components/ui';
+import { Button, Chip, Modal, Input, Field } from '../../components/ui';
 
 export default function AdminAIAgent() {
   const [sources, setSources] = useState<any[]>([]);
   const [logs, setLogs] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [isDryRun, setIsDryRun] = useState(true);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [newSourceName, setNewSourceName] = useState('');
+  const [newSourceUrl, setNewSourceUrl] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleAddSource = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newSourceName || !newSourceUrl) return;
+    setIsSubmitting(true);
+    try {
+      const res = await fetch('/api/agent/sources', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: newSourceName,
+          url: newSourceUrl,
+          type: 'HTML',
+          isActive: true,
+          status: 'OK'
+        })
+      });
+      if (res.ok) {
+        setIsModalOpen(false);
+        setNewSourceName('');
+        setNewSourceUrl('');
+        fetchSources();
+      }
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   
   useEffect(() => {
     fetchSources();
@@ -88,7 +123,7 @@ export default function AdminAIAgent() {
           <Button variant="outline" onClick={scanAll} disabled={loading}>
              <Play className="mr-2 h-4 w-4" /> Lancer tout
           </Button>
-          <Button>
+          <Button onClick={() => setIsModalOpen(true)}>
              <Plus className="mr-2 h-4 w-4" /> Ajouter source
           </Button>
         </div>
@@ -162,6 +197,39 @@ export default function AdminAIAgent() {
           </div>
         </div>
       </div>
-    </div>
+    
+      {/* Modal Ajout Source */}
+      <Modal
+        open={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Ajouter une nouvelle source"
+      >
+        <form onSubmit={handleAddSource} className="space-y-4">
+          <Field label="Nom de la source" required>
+            <Input 
+              value={newSourceName} 
+              onChange={e => setNewSourceName(e.target.value)} 
+              placeholder="ex: FSJES Agdal" 
+              required
+            />
+          </Field>
+          <Field label="URL (Page des annonces/concours)" required>
+            <Input 
+              type="url"
+              value={newSourceUrl} 
+              onChange={e => setNewSourceUrl(e.target.value)} 
+              placeholder="https://..." 
+              required
+            />
+          </Field>
+          <div className="flex justify-end gap-3 mt-6">
+            <Button type="button" variant="ghost" onClick={() => setIsModalOpen(false)}>Annuler</Button>
+            <Button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? 'Ajout...' : 'Enregistrer'}
+            </Button>
+          </div>
+        </form>
+      </Modal>
+</div>
   );
 }

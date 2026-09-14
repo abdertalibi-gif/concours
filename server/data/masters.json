@@ -177,9 +177,9 @@
     "seats": 35,
     "officialUrl": "https://ent.uit.ac.ma",
     "sourceUrl": "https://www.almaster-maroc.com/master-communication-flsh-kenitra/",
-    "status": "FERME",
+    "status": "RESULTATS",
     "createdAt": "2026-09-13T19:18:16.761Z",
-    "updatedAt": "2026-09-13T19:18:16.761Z",
+    "updatedAt": "2026-09-14T18:22:20.065Z",
     "schoolSlug": "flsh-kenitra",
     "schoolWebsite": "https://flsh.uit.ac.ma"
   },
@@ -447,7 +447,7 @@
     "schoolId": "ec-fsjes-agdal",
     "schoolSlug": "fsjes-agdal",
     "createdAt": "2026-09-14T16:42:07.191Z",
-    "updatedAt": "2026-09-14T16:42:07.695Z"
+    "updatedAt": "2026-09-14T17:39:09.836Z"
   },
   {
     "id": "mst-import-1789404127206-s2ame",
@@ -473,7 +473,7 @@
     "schoolId": "ec-fsjes-agdal",
     "schoolSlug": "fsjes-agdal",
     "createdAt": "2026-09-14T16:42:07.206Z",
-    "updatedAt": "2026-09-14T16:42:07.206Z"
+    "updatedAt": "2026-09-14T17:39:09.435Z"
   },
   {
     "id": "mst-import-1789404127218-fxern",
@@ -497,7 +497,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjp-settat-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.218Z",
-    "updatedAt": "2026-09-14T16:42:07.218Z"
+    "updatedAt": "2026-09-14T17:39:09.441Z"
   },
   {
     "id": "mst-import-1789404127226-gaf2q",
@@ -523,7 +523,7 @@
     "schoolId": "ec-fsjes-mohammedia",
     "schoolSlug": "fsjes-mohammedia",
     "createdAt": "2026-09-14T16:42:07.227Z",
-    "updatedAt": "2026-09-14T16:42:07.540Z"
+    "updatedAt": "2026-09-14T17:39:09.671Z"
   },
   {
     "id": "mst-import-1789404127234-73rwb",
@@ -547,7 +547,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/04/resultats-definitifs-master-isss-settat-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.234Z",
-    "updatedAt": "2026-09-14T16:42:07.234Z"
+    "updatedAt": "2026-09-14T17:39:09.445Z"
   },
   {
     "id": "mst-import-1789404127243-0z8cy",
@@ -573,7 +573,7 @@
     "schoolId": "ec-fsjes-ainsebaa",
     "schoolSlug": "fsjes-ainsebaa",
     "createdAt": "2026-09-14T16:42:07.243Z",
-    "updatedAt": "2026-09-14T16:42:07.243Z"
+    "updatedAt": "2026-09-14T17:39:09.451Z"
   },
   {
     "id": "mst-import-1789404127247-klgrc",
@@ -597,7 +597,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-Chariaa-Fes-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.247Z",
-    "updatedAt": "2026-09-14T16:42:07.247Z"
+    "updatedAt": "2026-09-14T17:39:09.453Z"
   },
   {
     "id": "mst-import-1789404127264-45bnd",
@@ -623,7 +623,7 @@
     "schoolId": "ec-fs-benmsik",
     "schoolSlug": "fs-benmsik",
     "createdAt": "2026-09-14T16:42:07.264Z",
-    "updatedAt": "2026-09-14T16:42:07.264Z"
+    "updatedAt": "2026-09-14T17:39:09.455Z"
   },
   {
     "id": "mst-import-1789404127273-v0axs",
@@ -647,7 +647,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-complexe-horticole-agadir-2026.html",
     "status": "OUVERT",
     "createdAt": "2026-09-14T16:42:07.273Z",
-    "updatedAt": "2026-09-14T16:42:07.273Z"
+    "updatedAt": "2026-09-14T17:39:09.458Z"
   },
   {
     "id": "mst-import-1789404127281-babb1",
@@ -673,7 +673,7 @@
     "schoolId": "ec-flsh-rabat",
     "schoolSlug": "flsh-rabat",
     "createdAt": "2026-09-14T16:42:07.281Z",
-    "updatedAt": "2026-09-14T16:42:07.281Z"
+    "updatedAt": "2026-09-14T17:39:09.466Z"
   },
   {
     "id": "mst-import-1789404127287-wy901",
@@ -697,7 +697,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FLLA-Kenitra-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.287Z",
-    "updatedAt": "2026-09-14T16:42:07.287Z"
+    "updatedAt": "2026-09-14T17:39:09.469Z"
   },
   {
     "id": "mst-import-1789404127293-6vyvd",
@@ -723,7 +723,7 @@
     "schoolId": "ec-fst-benimellal",
     "schoolSlug": "fst-benimellal",
     "createdAt": "2026-09-14T16:42:07.293Z",
-    "updatedAt": "2026-09-14T16:42:07.293Z"
+    "updatedAt": "2026-09-14T17:39:09.473Z"
   },
   {
     "id": "mst-import-1789404127300-yxvxp",
@@ -747,7 +747,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-feg-Marrakech-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.300Z",
-    "updatedAt": "2026-09-14T16:42:07.300Z"
+    "updatedAt": "2026-09-14T17:39:09.478Z"
   },
   {
     "id": "mst-import-1789404127306-aaqlf",
@@ -773,7 +773,7 @@
     "schoolId": "ec-flsh-rabat",
     "schoolSlug": "flsh-rabat",
     "createdAt": "2026-09-14T16:42:07.307Z",
-    "updatedAt": "2026-09-14T16:42:07.307Z"
+    "updatedAt": "2026-09-14T17:39:09.485Z"
   },
   {
     "id": "mst-import-1789404127327-5a6wi",
@@ -797,7 +797,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-beni-mellal-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.327Z",
-    "updatedAt": "2026-09-14T16:42:07.327Z"
+    "updatedAt": "2026-09-14T17:39:09.488Z"
   },
   {
     "id": "mst-import-1789404127331-edmm1",
@@ -823,7 +823,7 @@
     "schoolId": "ec-fsjes-oujda",
     "schoolSlug": "fsjes-oujda",
     "createdAt": "2026-09-14T16:42:07.331Z",
-    "updatedAt": "2026-09-14T16:42:07.331Z"
+    "updatedAt": "2026-09-14T17:39:09.490Z"
   },
   {
     "id": "mst-import-1789404127334-sflcx",
@@ -847,7 +847,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-fsa-safi-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.334Z",
-    "updatedAt": "2026-09-14T16:42:07.334Z"
+    "updatedAt": "2026-09-14T17:39:09.492Z"
   },
   {
     "id": "mst-import-1789404127337-wswge",
@@ -871,7 +871,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FEG-Kenitra-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.337Z",
-    "updatedAt": "2026-09-14T16:42:07.337Z"
+    "updatedAt": "2026-09-14T17:39:09.494Z"
   },
   {
     "id": "mst-import-1789404127347-4nu64",
@@ -897,7 +897,7 @@
     "schoolId": "ec-fst-settat",
     "schoolSlug": "fst-settat",
     "createdAt": "2026-09-14T16:42:07.347Z",
-    "updatedAt": "2026-09-14T16:42:07.347Z"
+    "updatedAt": "2026-09-14T17:39:09.500Z"
   },
   {
     "id": "mst-import-1789404127354-912sv",
@@ -923,7 +923,7 @@
     "schoolId": "ec-fst-mohammedia",
     "schoolSlug": "fst-mohammedia",
     "createdAt": "2026-09-14T16:42:07.354Z",
-    "updatedAt": "2026-09-14T16:42:07.701Z"
+    "updatedAt": "2026-09-14T17:39:09.840Z"
   },
   {
     "id": "mst-import-1789404127362-yb5lk",
@@ -947,7 +947,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fsjp-errachidia-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.362Z",
-    "updatedAt": "2026-09-14T16:42:07.362Z"
+    "updatedAt": "2026-09-14T17:39:09.509Z"
   },
   {
     "id": "mst-import-1789404127364-quzmv",
@@ -971,7 +971,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-flla-errachidia-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.364Z",
-    "updatedAt": "2026-09-14T16:42:07.364Z"
+    "updatedAt": "2026-09-14T17:39:09.511Z"
   },
   {
     "id": "mst-import-1789404127366-vgzp1",
@@ -997,7 +997,7 @@
     "schoolId": "ec-fsjes-mohammedia",
     "schoolSlug": "fsjes-mohammedia",
     "createdAt": "2026-09-14T16:42:07.366Z",
-    "updatedAt": "2026-09-14T16:42:07.366Z"
+    "updatedAt": "2026-09-14T17:39:09.513Z"
   },
   {
     "id": "mst-import-1789404127368-vygjk",
@@ -1023,7 +1023,7 @@
     "schoolId": "ec-fsjes-souissi",
     "schoolSlug": "fsjes-souissi",
     "createdAt": "2026-09-14T16:42:07.368Z",
-    "updatedAt": "2026-09-14T16:42:07.597Z"
+    "updatedAt": "2026-09-14T17:39:09.751Z"
   },
   {
     "id": "mst-import-1789404127370-tr3vu",
@@ -1049,7 +1049,7 @@
     "schoolId": "ec-flsh-mohammedia",
     "schoolSlug": "flsh-mohammedia",
     "createdAt": "2026-09-14T16:42:07.370Z",
-    "updatedAt": "2026-09-14T16:42:07.370Z"
+    "updatedAt": "2026-09-14T17:39:09.518Z"
   },
   {
     "id": "mst-import-1789404127371-v4pu6",
@@ -1073,7 +1073,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-fse-rabat-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.371Z",
-    "updatedAt": "2026-09-14T16:42:07.371Z"
+    "updatedAt": "2026-09-14T17:39:09.520Z"
   },
   {
     "id": "mst-import-1789404127373-runsk",
@@ -1097,7 +1097,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-ISMAC-Rabat-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.373Z",
-    "updatedAt": "2026-09-14T16:42:07.373Z"
+    "updatedAt": "2026-09-14T17:39:09.533Z"
   },
   {
     "id": "mst-import-1789404127383-wlu3f",
@@ -1123,7 +1123,7 @@
     "schoolId": "ec-fs-ainchock",
     "schoolSlug": "fs-ainchock",
     "createdAt": "2026-09-14T16:42:07.383Z",
-    "updatedAt": "2026-09-14T16:42:07.383Z"
+    "updatedAt": "2026-09-14T17:39:09.535Z"
   },
   {
     "id": "mst-import-1789404127385-lefwp",
@@ -1149,7 +1149,7 @@
     "schoolId": "ec-fsjes-sale",
     "schoolSlug": "fsjes-sale",
     "createdAt": "2026-09-14T16:42:07.385Z",
-    "updatedAt": "2026-09-14T16:42:07.385Z"
+    "updatedAt": "2026-09-14T17:39:09.537Z"
   },
   {
     "id": "mst-import-1789404127386-ov865",
@@ -1173,7 +1173,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-fes-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.386Z",
-    "updatedAt": "2026-09-14T16:42:07.386Z"
+    "updatedAt": "2026-09-14T17:39:09.538Z"
   },
   {
     "id": "mst-import-1789404127389-mhwle",
@@ -1199,7 +1199,7 @@
     "schoolId": "ec-ens-marrakech",
     "schoolSlug": "ens-marrakech",
     "createdAt": "2026-09-14T16:42:07.389Z",
-    "updatedAt": "2026-09-14T16:42:07.657Z"
+    "updatedAt": "2026-09-14T17:39:09.789Z"
   },
   {
     "id": "mst-import-1789404127391-ezj23",
@@ -1223,7 +1223,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2024/04/Masters-Ouverts-au-Maroc.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.391Z",
-    "updatedAt": "2026-09-14T16:42:07.391Z"
+    "updatedAt": "2026-09-14T17:39:09.543Z"
   },
   {
     "id": "mst-import-1789404127392-u48r3",
@@ -1247,7 +1247,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-fs-fes-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.392Z",
-    "updatedAt": "2026-09-14T16:42:07.392Z"
+    "updatedAt": "2026-09-14T17:39:09.545Z"
   },
   {
     "id": "mst-import-1789404127393-fw4rg",
@@ -1271,7 +1271,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FP-Khouribga-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.393Z",
-    "updatedAt": "2026-09-14T16:42:07.393Z"
+    "updatedAt": "2026-09-14T17:39:09.547Z"
   },
   {
     "id": "mst-import-1789404127395-cewdn",
@@ -1297,7 +1297,7 @@
     "schoolId": "ec-ensam-casablanca",
     "schoolSlug": "ensam-casablanca",
     "createdAt": "2026-09-14T16:42:07.395Z",
-    "updatedAt": "2026-09-14T16:42:07.395Z"
+    "updatedAt": "2026-09-14T17:39:09.550Z"
   },
   {
     "id": "mst-import-1789404127397-35v5a",
@@ -1323,7 +1323,7 @@
     "schoolId": "ec-ensam-casablanca",
     "schoolSlug": "ensam-casablanca",
     "createdAt": "2026-09-14T16:42:07.397Z",
-    "updatedAt": "2026-09-14T16:42:07.628Z"
+    "updatedAt": "2026-09-14T17:39:09.760Z"
   },
   {
     "id": "mst-import-1789404127406-bgg4b",
@@ -1349,7 +1349,7 @@
     "schoolId": "ec-flsh-marrakech",
     "schoolSlug": "flsh-marrakech",
     "createdAt": "2026-09-14T16:42:07.406Z",
-    "updatedAt": "2026-09-14T16:42:07.406Z"
+    "updatedAt": "2026-09-14T17:39:09.561Z"
   },
   {
     "id": "mst-import-1789404127410-jle8g",
@@ -1375,7 +1375,7 @@
     "schoolId": "ec-ens-rabat",
     "schoolSlug": "ens-rabat",
     "createdAt": "2026-09-14T16:42:07.410Z",
-    "updatedAt": "2026-09-14T16:42:07.410Z"
+    "updatedAt": "2026-09-14T17:39:09.565Z"
   },
   {
     "id": "mst-import-1789404127413-afyg9",
@@ -1399,7 +1399,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-chariaa-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.413Z",
-    "updatedAt": "2026-09-14T16:42:07.413Z"
+    "updatedAt": "2026-09-14T17:39:09.568Z"
   },
   {
     "id": "mst-import-1789404127420-l3z0x",
@@ -1425,7 +1425,7 @@
     "schoolId": "ec-flsh-meknes",
     "schoolSlug": "flsh-meknes",
     "createdAt": "2026-09-14T16:42:07.420Z",
-    "updatedAt": "2026-09-14T16:42:07.420Z"
+    "updatedAt": "2026-09-14T17:39:09.575Z"
   },
   {
     "id": "mst-import-1789404127424-y67n2",
@@ -1451,7 +1451,7 @@
     "schoolId": "ec-ens-fes",
     "schoolSlug": "ens-fes",
     "createdAt": "2026-09-14T16:42:07.424Z",
-    "updatedAt": "2026-09-14T16:42:07.424Z"
+    "updatedAt": "2026-09-14T17:39:09.579Z"
   },
   {
     "id": "mst-import-1789404127430-kmefd",
@@ -1475,7 +1475,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-fsjp-Marrakech-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.430Z",
-    "updatedAt": "2026-09-14T16:42:07.430Z"
+    "updatedAt": "2026-09-14T17:39:09.585Z"
   },
   {
     "id": "mst-import-1789404127433-9yt0p",
@@ -1501,7 +1501,7 @@
     "schoolId": "ec-ens-casablanca",
     "schoolSlug": "ens-casablanca",
     "createdAt": "2026-09-14T16:42:07.433Z",
-    "updatedAt": "2026-09-14T16:42:07.433Z"
+    "updatedAt": "2026-09-14T17:39:09.594Z"
   },
   {
     "id": "mst-import-1789404127441-8qywd",
@@ -1527,7 +1527,7 @@
     "schoolId": "ec-ensa-berrechid",
     "schoolSlug": "ensa-berrechid",
     "createdAt": "2026-09-14T16:42:07.441Z",
-    "updatedAt": "2026-09-14T16:42:07.441Z"
+    "updatedAt": "2026-09-14T17:39:09.596Z"
   },
   {
     "id": "mst-import-1789404127442-l7wz8",
@@ -1551,7 +1551,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-inas-tanger-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.442Z",
-    "updatedAt": "2026-09-14T16:42:07.442Z"
+    "updatedAt": "2026-09-14T17:39:09.598Z"
   },
   {
     "id": "mst-import-1789404127444-5mmoo",
@@ -1575,7 +1575,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-beni-mellal-2026-2027.html",
     "status": "OUVERT",
     "createdAt": "2026-09-14T16:42:07.444Z",
-    "updatedAt": "2026-09-14T16:42:07.444Z"
+    "updatedAt": "2026-09-14T17:39:09.600Z"
   },
   {
     "id": "mst-import-1789404127447-95b5d",
@@ -1599,7 +1599,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-flla-kenitra-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.447Z",
-    "updatedAt": "2026-09-14T16:42:07.447Z"
+    "updatedAt": "2026-09-14T17:39:09.601Z"
   },
   {
     "id": "mst-import-1789404127449-9v38o",
@@ -1623,7 +1623,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2023/10/Master-Universite-Ibn-Zohr-Agadir.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.449Z",
-    "updatedAt": "2026-09-14T16:42:07.449Z"
+    "updatedAt": "2026-09-14T17:39:09.605Z"
   },
   {
     "id": "mst-import-1789404127453-4v3mk",
@@ -1647,7 +1647,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FLA-Marrakech-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.453Z",
-    "updatedAt": "2026-09-14T16:42:07.453Z"
+    "updatedAt": "2026-09-14T17:39:09.608Z"
   },
   {
     "id": "mst-import-1789404127455-cndph",
@@ -1671,7 +1671,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-ESEF-Beni-Mellal-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.455Z",
-    "updatedAt": "2026-09-14T16:42:07.455Z"
+    "updatedAt": "2026-09-14T17:39:09.611Z"
   },
   {
     "id": "mst-import-1789404127460-bcsks",
@@ -1697,7 +1697,7 @@
     "schoolId": "ec-ensa-benimellal",
     "schoolSlug": "ensa-benimellal",
     "createdAt": "2026-09-14T16:42:07.460Z",
-    "updatedAt": "2026-09-14T16:42:07.460Z"
+    "updatedAt": "2026-09-14T17:39:09.616Z"
   },
   {
     "id": "mst-import-1789404127465-ukvsj",
@@ -1723,7 +1723,7 @@
     "schoolId": "ec-fst-alhoceima",
     "schoolSlug": "fst-alhoceima",
     "createdAt": "2026-09-14T16:42:07.465Z",
-    "updatedAt": "2026-09-14T16:42:07.465Z"
+    "updatedAt": "2026-09-14T17:39:09.621Z"
   },
   {
     "id": "mst-import-1789404127471-djew8",
@@ -1749,7 +1749,7 @@
     "schoolId": "ec-fst-mohammedia",
     "schoolSlug": "fst-mohammedia",
     "createdAt": "2026-09-14T16:42:07.471Z",
-    "updatedAt": "2026-09-14T16:42:07.471Z"
+    "updatedAt": "2026-09-14T17:39:09.627Z"
   },
   {
     "id": "mst-import-1789404127474-p0ofr",
@@ -1775,7 +1775,7 @@
     "schoolId": "ec-inpt",
     "schoolSlug": "inpt-rabat",
     "createdAt": "2026-09-14T16:42:07.474Z",
-    "updatedAt": "2026-09-14T16:42:07.474Z"
+    "updatedAt": "2026-09-14T17:39:09.629Z"
   },
   {
     "id": "mst-import-1789404127479-halvf",
@@ -1801,7 +1801,7 @@
     "schoolId": "ec-ens-meknes",
     "schoolSlug": "ens-meknes",
     "createdAt": "2026-09-14T16:42:07.479Z",
-    "updatedAt": "2026-09-14T16:42:07.479Z"
+    "updatedAt": "2026-09-14T17:39:09.633Z"
   },
   {
     "id": "mst-import-1789404127482-nxsn6",
@@ -1827,7 +1827,7 @@
     "schoolId": "ec-isic",
     "schoolSlug": "isic-rabat",
     "createdAt": "2026-09-14T16:42:07.482Z",
-    "updatedAt": "2026-09-14T16:42:07.482Z"
+    "updatedAt": "2026-09-14T17:39:09.636Z"
   },
   {
     "id": "mst-import-1789404127486-wsc06",
@@ -1853,7 +1853,7 @@
     "schoolId": "ec-flsh-mohammedia",
     "schoolSlug": "flsh-mohammedia",
     "createdAt": "2026-09-14T16:42:07.486Z",
-    "updatedAt": "2026-09-14T16:42:07.486Z"
+    "updatedAt": "2026-09-14T17:39:09.639Z"
   },
   {
     "id": "mst-import-1789404127489-c4kwv",
@@ -1879,7 +1879,7 @@
     "schoolId": "ec-ensam-rabat",
     "schoolSlug": "ensam-rabat",
     "createdAt": "2026-09-14T16:42:07.489Z",
-    "updatedAt": "2026-09-14T16:42:07.489Z"
+    "updatedAt": "2026-09-14T17:39:09.641Z"
   },
   {
     "id": "mst-import-1789404127493-b56oz",
@@ -1905,7 +1905,7 @@
     "schoolId": "ec-encg-eljadida",
     "schoolSlug": "encg-eljadida",
     "createdAt": "2026-09-14T16:42:07.493Z",
-    "updatedAt": "2026-09-14T16:42:07.493Z"
+    "updatedAt": "2026-09-14T17:39:09.662Z"
   },
   {
     "id": "mst-import-1789404127513-pxj33",
@@ -1931,7 +1931,7 @@
     "schoolId": "ec-fmd-rabat",
     "schoolSlug": "fmd-rabat",
     "createdAt": "2026-09-14T16:42:07.513Z",
-    "updatedAt": "2026-09-14T16:42:07.513Z"
+    "updatedAt": "2026-09-14T17:39:09.664Z"
   },
   {
     "id": "mst-import-1789404127521-i6k4o",
@@ -1957,7 +1957,7 @@
     "schoolId": "ec-fst-marrakech",
     "schoolSlug": "fst-marrakech",
     "createdAt": "2026-09-14T16:42:07.521Z",
-    "updatedAt": "2026-09-14T16:42:07.521Z"
+    "updatedAt": "2026-09-14T17:39:09.665Z"
   },
   {
     "id": "mst-import-1789404127536-778oq",
@@ -1983,7 +1983,7 @@
     "schoolId": "ec-fsjes-souissi",
     "schoolSlug": "fsjes-souissi",
     "createdAt": "2026-09-14T16:42:07.536Z",
-    "updatedAt": "2026-09-14T16:42:07.536Z"
+    "updatedAt": "2026-09-14T17:39:09.668Z"
   },
   {
     "id": "mst-import-1789404127538-r0mwf",
@@ -2007,7 +2007,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-isss-Settat-2026-2027.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.538Z",
-    "updatedAt": "2026-09-14T16:42:07.538Z"
+    "updatedAt": "2026-09-14T17:39:09.669Z"
   },
   {
     "id": "mst-import-1789404127541-nqzzg",
@@ -2031,7 +2031,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/resultats-definitifs-master-institut.html",
     "status": "RESULTATS",
     "createdAt": "2026-09-14T16:42:07.541Z",
-    "updatedAt": "2026-09-14T16:42:07.541Z"
+    "updatedAt": "2026-09-14T17:39:09.672Z"
   },
   {
     "id": "mst-import-1789404127542-ko6i6",
@@ -2057,7 +2057,7 @@
     "schoolId": "ec-flsh-rabat",
     "schoolSlug": "flsh-rabat",
     "createdAt": "2026-09-14T16:42:07.542Z",
-    "updatedAt": "2026-09-14T16:42:07.542Z"
+    "updatedAt": "2026-09-14T17:39:09.673Z"
   },
   {
     "id": "mst-import-1789404127545-dduo0",
@@ -2083,7 +2083,7 @@
     "schoolId": "ec-fsjes-meknes",
     "schoolSlug": "fsjes-meknes",
     "createdAt": "2026-09-14T16:42:07.545Z",
-    "updatedAt": "2026-09-14T16:42:07.545Z"
+    "updatedAt": "2026-09-14T17:39:09.675Z"
   },
   {
     "id": "mst-import-1789404127547-dxbvq",
@@ -2109,7 +2109,7 @@
     "schoolId": "ec-fst-benimellal",
     "schoolSlug": "fst-benimellal",
     "createdAt": "2026-09-14T16:42:07.547Z",
-    "updatedAt": "2026-09-14T16:42:07.547Z"
+    "updatedAt": "2026-09-14T17:39:09.439Z"
   },
   {
     "id": "mst-import-1789404127548-sn1tp",
@@ -2133,7 +2133,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-chouaib-doukkali-el.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.548Z",
-    "updatedAt": "2026-09-14T16:42:07.548Z"
+    "updatedAt": "2026-09-14T17:39:09.677Z"
   },
   {
     "id": "mst-import-1789404127550-glodt",
@@ -2157,7 +2157,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-moulay-ismail-meknes.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.550Z",
-    "updatedAt": "2026-09-14T16:42:07.550Z"
+    "updatedAt": "2026-09-14T17:39:09.678Z"
   },
   {
     "id": "mst-import-1789404127551-b49an",
@@ -2181,7 +2181,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fshs-errachidia-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.551Z",
-    "updatedAt": "2026-09-14T16:42:07.551Z"
+    "updatedAt": "2026-09-14T17:39:09.679Z"
   },
   {
     "id": "mst-import-1789404127553-nl9ep",
@@ -2205,7 +2205,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2022/08/master-universite-abdelmalek-essaadi.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.553Z",
-    "updatedAt": "2026-09-14T16:42:07.553Z"
+    "updatedAt": "2026-09-14T17:39:09.681Z"
   },
   {
     "id": "mst-import-1789404127555-0amk4",
@@ -2229,7 +2229,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-sultan-moulay-slimane.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.555Z",
-    "updatedAt": "2026-09-14T16:42:07.555Z"
+    "updatedAt": "2026-09-14T17:39:09.682Z"
   },
   {
     "id": "mst-import-1789404127556-oss9f",
@@ -2253,7 +2253,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2023/06/master-universite-hassan-ii-casablanca.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.556Z",
-    "updatedAt": "2026-09-14T16:42:07.556Z"
+    "updatedAt": "2026-09-14T17:39:09.683Z"
   },
   {
     "id": "mst-import-1789404127558-d2lov",
@@ -2279,7 +2279,7 @@
     "schoolId": "ec-emi",
     "schoolSlug": "emi-rabat",
     "createdAt": "2026-09-14T16:42:07.558Z",
-    "updatedAt": "2026-09-14T16:42:07.558Z"
+    "updatedAt": "2026-09-14T17:39:09.685Z"
   },
   {
     "id": "mst-import-1789404127559-gites",
@@ -2303,7 +2303,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2024/08/Master-Universite-Ibn-Tofail-Kenitra.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.559Z",
-    "updatedAt": "2026-09-14T16:42:07.559Z"
+    "updatedAt": "2026-09-14T17:39:09.686Z"
   },
   {
     "id": "mst-import-1789404127561-hatn2",
@@ -2327,7 +2327,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-tetouan-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.561Z",
-    "updatedAt": "2026-09-14T16:42:07.561Z"
+    "updatedAt": "2026-09-14T17:39:09.687Z"
   },
   {
     "id": "mst-import-1789404127563-8p2zh",
@@ -2351,7 +2351,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-tetouan-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.563Z",
-    "updatedAt": "2026-09-14T16:42:07.563Z"
+    "updatedAt": "2026-09-14T17:39:09.700Z"
   },
   {
     "id": "mst-import-1789404127564-55jyi",
@@ -2377,7 +2377,7 @@
     "schoolId": "ec-fmp-tanger",
     "schoolSlug": "fmp-tanger",
     "createdAt": "2026-09-14T16:42:07.564Z",
-    "updatedAt": "2026-09-14T16:42:07.564Z"
+    "updatedAt": "2026-09-14T17:39:09.702Z"
   },
   {
     "id": "mst-import-1789404127566-3f61n",
@@ -2401,7 +2401,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/06/master-faculte-ossoul-eddine-tetouan-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.566Z",
-    "updatedAt": "2026-09-14T16:42:07.566Z"
+    "updatedAt": "2026-09-14T17:39:09.704Z"
   },
   {
     "id": "mst-import-1789404127567-hc2zp",
@@ -2425,7 +2425,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-esrft-tanger-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.567Z",
-    "updatedAt": "2026-09-14T16:42:07.567Z"
+    "updatedAt": "2026-09-14T17:39:09.706Z"
   },
   {
     "id": "mst-import-1789404127568-ikktu",
@@ -2451,7 +2451,7 @@
     "schoolId": "ec-encg-tanger",
     "schoolSlug": "encg-tanger",
     "createdAt": "2026-09-14T16:42:07.568Z",
-    "updatedAt": "2026-09-14T16:42:07.568Z"
+    "updatedAt": "2026-09-14T17:39:09.707Z"
   },
   {
     "id": "mst-import-1789404127569-d2uu6",
@@ -2475,7 +2475,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fp-larache-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.569Z",
-    "updatedAt": "2026-09-14T16:42:07.569Z"
+    "updatedAt": "2026-09-14T17:39:09.709Z"
   },
   {
     "id": "mst-import-1789404127570-cvuei",
@@ -2501,7 +2501,7 @@
     "schoolId": "ec-flsh-tetouan",
     "schoolSlug": "flsh-tetouan",
     "createdAt": "2026-09-14T16:42:07.570Z",
-    "updatedAt": "2026-09-14T16:42:07.570Z"
+    "updatedAt": "2026-09-14T17:39:09.711Z"
   },
   {
     "id": "mst-import-1789404127572-ndynu",
@@ -2527,7 +2527,7 @@
     "schoolId": "ec-ens-tetouan",
     "schoolSlug": "ens-tetouan",
     "createdAt": "2026-09-14T16:42:07.572Z",
-    "updatedAt": "2026-09-14T16:42:07.572Z"
+    "updatedAt": "2026-09-14T17:39:09.713Z"
   },
   {
     "id": "mst-import-1789404127573-yaexe",
@@ -2553,7 +2553,7 @@
     "schoolId": "ec-fs-tetouan",
     "schoolSlug": "fs-tetouan",
     "createdAt": "2026-09-14T16:42:07.573Z",
-    "updatedAt": "2026-09-14T16:42:07.573Z"
+    "updatedAt": "2026-09-14T17:39:09.715Z"
   },
   {
     "id": "mst-import-1789404127579-p8rt5",
@@ -2577,7 +2577,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-tanger-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.579Z",
-    "updatedAt": "2026-09-14T16:42:07.579Z"
+    "updatedAt": "2026-09-14T17:39:09.717Z"
   },
   {
     "id": "mst-import-1789404127580-9ruv4",
@@ -2601,7 +2601,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-tanger-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.580Z",
-    "updatedAt": "2026-09-14T16:42:07.580Z"
+    "updatedAt": "2026-09-14T17:39:09.732Z"
   },
   {
     "id": "mst-import-1789404127582-qbalc",
@@ -2627,7 +2627,7 @@
     "schoolId": "ec-fs-semlalia",
     "schoolSlug": "fssm-marrakech",
     "createdAt": "2026-09-14T16:42:07.582Z",
-    "updatedAt": "2026-09-14T16:42:07.582Z",
+    "updatedAt": "2026-09-14T17:39:09.734Z",
     "schoolWebsite": "https://www.fssm.uca.ma"
   },
   {
@@ -2654,7 +2654,7 @@
     "schoolId": "ec-flsh-benmsik",
     "schoolSlug": "flsh-benmsik",
     "createdAt": "2026-09-14T16:42:07.584Z",
-    "updatedAt": "2026-09-14T16:42:07.584Z"
+    "updatedAt": "2026-09-14T17:39:09.736Z"
   },
   {
     "id": "mst-import-1789404127586-24cj4",
@@ -2680,7 +2680,7 @@
     "schoolId": "ec-fst-settat",
     "schoolSlug": "fst-settat",
     "createdAt": "2026-09-14T16:42:07.586Z",
-    "updatedAt": "2026-09-14T16:42:07.586Z"
+    "updatedAt": "2026-09-14T17:39:09.738Z"
   },
   {
     "id": "mst-import-1789404127589-iur12",
@@ -2706,7 +2706,7 @@
     "schoolId": "ec-ens-fes",
     "schoolSlug": "ens-fes",
     "createdAt": "2026-09-14T16:42:07.589Z",
-    "updatedAt": "2026-09-14T16:42:07.589Z"
+    "updatedAt": "2026-09-14T17:39:09.741Z"
   },
   {
     "id": "mst-import-1789404127591-2puaq",
@@ -2730,7 +2730,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-esef-beni-mellal-2026-2027.html",
     "status": "OUVERT",
     "createdAt": "2026-09-14T16:42:07.591Z",
-    "updatedAt": "2026-09-14T16:42:07.591Z"
+    "updatedAt": "2026-09-14T17:39:09.744Z"
   },
   {
     "id": "mst-import-1789404127593-7p32y",
@@ -2754,7 +2754,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjp-kenitra-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.593Z",
-    "updatedAt": "2026-09-14T16:42:07.593Z"
+    "updatedAt": "2026-09-14T17:39:09.746Z"
   },
   {
     "id": "mst-import-1789404127595-7dt4y",
@@ -2780,7 +2780,7 @@
     "schoolId": "ec-flsh-meknes",
     "schoolSlug": "flsh-meknes",
     "createdAt": "2026-09-14T16:42:07.595Z",
-    "updatedAt": "2026-09-14T16:42:07.595Z"
+    "updatedAt": "2026-09-14T17:39:09.749Z"
   },
   {
     "id": "mst-import-1789404127602-smgmm",
@@ -2804,7 +2804,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-isadac-rabat-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.602Z",
-    "updatedAt": "2026-09-14T16:42:07.602Z"
+    "updatedAt": "2026-09-14T17:39:09.753Z"
   },
   {
     "id": "mst-import-1789404127620-d6vuo",
@@ -2828,7 +2828,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ismac-rabat-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.620Z",
-    "updatedAt": "2026-09-14T16:42:07.620Z"
+    "updatedAt": "2026-09-14T17:39:09.754Z"
   },
   {
     "id": "mst-import-1789404127623-ss80c",
@@ -2854,7 +2854,7 @@
     "schoolId": "ec-fsjes-ainchock",
     "schoolSlug": "fsjes-ainchock",
     "createdAt": "2026-09-14T16:42:07.623Z",
-    "updatedAt": "2026-09-14T16:42:07.623Z"
+    "updatedAt": "2026-09-14T17:39:09.756Z"
   },
   {
     "id": "mst-import-1789404127625-w4i7l",
@@ -2880,7 +2880,7 @@
     "schoolId": "ec-flsh-ainchock",
     "schoolSlug": "flsh-ainchock",
     "createdAt": "2026-09-14T16:42:07.625Z",
-    "updatedAt": "2026-09-14T16:42:07.625Z"
+    "updatedAt": "2026-09-14T17:39:09.757Z"
   },
   {
     "id": "mst-import-1789404127627-drtas",
@@ -2906,7 +2906,7 @@
     "schoolId": "ec-ensa-eljadida",
     "schoolSlug": "ensa-eljadida",
     "createdAt": "2026-09-14T16:42:07.627Z",
-    "updatedAt": "2026-09-14T16:42:07.627Z"
+    "updatedAt": "2026-09-14T17:39:09.759Z"
   },
   {
     "id": "mst-import-1789404127630-8ih8x",
@@ -2932,7 +2932,7 @@
     "schoolId": "ec-flsh-benimellal",
     "schoolSlug": "flsh-benimellal",
     "createdAt": "2026-09-14T16:42:07.630Z",
-    "updatedAt": "2026-09-14T16:42:07.630Z"
+    "updatedAt": "2026-09-14T17:39:09.762Z"
   },
   {
     "id": "mst-import-1789404127631-1qh8z",
@@ -2958,7 +2958,7 @@
     "schoolId": "ec-fs-kenitra",
     "schoolSlug": "fs-kenitra",
     "createdAt": "2026-09-14T16:42:07.631Z",
-    "updatedAt": "2026-09-14T16:42:07.631Z"
+    "updatedAt": "2026-09-14T17:39:09.763Z"
   },
   {
     "id": "mst-import-1789404127633-a8zpn",
@@ -2982,7 +2982,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-settat-2026-2027.html",
     "status": "OUVERT",
     "createdAt": "2026-09-14T16:42:07.633Z",
-    "updatedAt": "2026-09-14T16:42:07.633Z"
+    "updatedAt": "2026-09-14T17:39:09.769Z"
   },
   {
     "id": "mst-import-1789404127635-8k9oh",
@@ -3008,7 +3008,7 @@
     "schoolId": "ec-fs-eljadida",
     "schoolSlug": "fs-eljadida",
     "createdAt": "2026-09-14T16:42:07.635Z",
-    "updatedAt": "2026-09-14T16:42:07.635Z"
+    "updatedAt": "2026-09-14T17:39:09.770Z"
   },
   {
     "id": "mst-import-1789404127636-1onxz",
@@ -3034,7 +3034,7 @@
     "schoolId": "ec-flsh-eljadida",
     "schoolSlug": "flsh-eljadida",
     "createdAt": "2026-09-14T16:42:07.636Z",
-    "updatedAt": "2026-09-14T16:42:07.636Z"
+    "updatedAt": "2026-09-14T17:39:09.772Z"
   },
   {
     "id": "mst-import-1789404127638-y849r",
@@ -3060,7 +3060,7 @@
     "schoolId": "ec-ensias",
     "schoolSlug": "ensias-rabat",
     "createdAt": "2026-09-14T16:42:07.638Z",
-    "updatedAt": "2026-09-14T16:42:07.638Z"
+    "updatedAt": "2026-09-14T17:39:09.773Z"
   },
   {
     "id": "mst-import-1789404127639-mvt99",
@@ -3086,7 +3086,7 @@
     "schoolId": "ec-encg-settat",
     "schoolSlug": "encg-settat",
     "createdAt": "2026-09-14T16:42:07.639Z",
-    "updatedAt": "2026-09-14T16:42:07.639Z"
+    "updatedAt": "2026-09-14T17:39:09.775Z"
   },
   {
     "id": "mst-import-1789404127640-wjq8a",
@@ -3110,7 +3110,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjp-el-jadida-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.640Z",
-    "updatedAt": "2026-09-14T16:42:07.640Z"
+    "updatedAt": "2026-09-14T17:39:09.776Z"
   },
   {
     "id": "mst-import-1789404127642-e0qjm",
@@ -3134,7 +3134,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-el-jadida-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.642Z",
-    "updatedAt": "2026-09-14T16:42:07.642Z"
+    "updatedAt": "2026-09-14T17:39:09.777Z"
   },
   {
     "id": "mst-import-1789404127643-sfkd8",
@@ -3160,7 +3160,7 @@
     "schoolId": "ec-fs-agadir",
     "schoolSlug": "fsa-agadir",
     "createdAt": "2026-09-14T16:42:07.643Z",
-    "updatedAt": "2026-09-14T16:42:07.643Z",
+    "updatedAt": "2026-09-14T17:39:09.778Z",
     "schoolWebsite": "http://fsa.uiz.ac.ma"
   },
   {
@@ -3187,7 +3187,7 @@
     "schoolId": "ec-flsh-agadir",
     "schoolSlug": "fsa-agadir",
     "createdAt": "2026-09-14T16:42:07.645Z",
-    "updatedAt": "2026-09-14T16:42:07.645Z",
+    "updatedAt": "2026-09-14T17:39:09.779Z",
     "schoolWebsite": "http://fsa.uiz.ac.ma"
   },
   {
@@ -3212,7 +3212,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjp-agadir-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.646Z",
-    "updatedAt": "2026-09-14T16:42:07.646Z"
+    "updatedAt": "2026-09-14T17:39:09.781Z"
   },
   {
     "id": "mst-import-1789404127647-d4oaj",
@@ -3236,7 +3236,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-agadir-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.647Z",
-    "updatedAt": "2026-09-14T16:42:07.647Z"
+    "updatedAt": "2026-09-14T17:39:09.782Z"
   },
   {
     "id": "mst-import-1789404127652-m4qje",
@@ -3260,7 +3260,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjp-ait-melloul-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.652Z",
-    "updatedAt": "2026-09-14T16:42:07.652Z"
+    "updatedAt": "2026-09-14T17:39:09.784Z"
   },
   {
     "id": "mst-import-1789404127654-7fb44",
@@ -3284,7 +3284,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-ait-melloul-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.654Z",
-    "updatedAt": "2026-09-14T16:42:07.654Z"
+    "updatedAt": "2026-09-14T17:39:09.785Z"
   },
   {
     "id": "mst-import-1789404127655-eexha",
@@ -3308,7 +3308,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-esef-el-jadida-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.655Z",
-    "updatedAt": "2026-09-14T16:42:07.655Z"
+    "updatedAt": "2026-09-14T17:39:09.787Z"
   },
   {
     "id": "mst-import-1789404127658-gtp0l",
@@ -3334,7 +3334,7 @@
     "schoolId": "ec-encg-fes",
     "schoolSlug": "encg-fes",
     "createdAt": "2026-09-14T16:42:07.658Z",
-    "updatedAt": "2026-09-14T16:42:07.658Z"
+    "updatedAt": "2026-09-14T17:39:09.791Z"
   },
   {
     "id": "mst-import-1789404127660-9a16b",
@@ -3358,7 +3358,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-iss-fes-2026-2027.html",
     "status": "OUVERT",
     "createdAt": "2026-09-14T16:42:07.660Z",
-    "updatedAt": "2026-09-14T16:42:07.660Z"
+    "updatedAt": "2026-09-14T17:39:09.792Z"
   },
   {
     "id": "mst-import-1789404127661-ccyc2",
@@ -3382,7 +3382,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-faculte-chariaa-ait-melloul-2026.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.661Z",
-    "updatedAt": "2026-09-14T16:42:07.661Z"
+    "updatedAt": "2026-09-14T17:39:09.799Z"
   },
   {
     "id": "mst-import-1789404127662-rqh0v",
@@ -3406,7 +3406,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-flash-ait-melloul-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.662Z",
-    "updatedAt": "2026-09-14T16:42:07.662Z"
+    "updatedAt": "2026-09-14T17:39:09.801Z"
   },
   {
     "id": "mst-import-1789404127663-u8m8b",
@@ -3430,7 +3430,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsa-ait-melloul-agadir-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.663Z",
-    "updatedAt": "2026-09-14T16:42:07.663Z"
+    "updatedAt": "2026-09-14T17:39:09.803Z"
   },
   {
     "id": "mst-import-1789404127664-p32hr",
@@ -3454,7 +3454,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-esef-agadir-206-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.664Z",
-    "updatedAt": "2026-09-14T16:42:07.664Z"
+    "updatedAt": "2026-09-14T17:39:09.804Z"
   },
   {
     "id": "mst-import-1789404127666-5klo9",
@@ -3478,7 +3478,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsa-taroudant-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.666Z",
-    "updatedAt": "2026-09-14T16:42:07.666Z"
+    "updatedAt": "2026-09-14T17:39:09.806Z"
   },
   {
     "id": "mst-import-1789404127667-xwcki",
@@ -3502,7 +3502,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fshs-smara-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.667Z",
-    "updatedAt": "2026-09-14T16:42:07.667Z"
+    "updatedAt": "2026-09-14T17:39:09.807Z"
   },
   {
     "id": "mst-import-1789404127668-br5ru",
@@ -3526,7 +3526,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fshs-taroudant-2026.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.668Z",
-    "updatedAt": "2026-09-14T16:42:07.668Z"
+    "updatedAt": "2026-09-14T17:39:09.808Z"
   },
   {
     "id": "mst-import-1789404127669-s53jk",
@@ -3552,7 +3552,7 @@
     "schoolId": "ec-fmp-laayoune",
     "schoolSlug": "fmp-laayoune",
     "createdAt": "2026-09-14T16:42:07.669Z",
-    "updatedAt": "2026-09-14T16:42:07.669Z"
+    "updatedAt": "2026-09-14T17:39:09.810Z"
   },
   {
     "id": "mst-import-1789404127670-ticb4",
@@ -3578,7 +3578,7 @@
     "schoolId": "ec-fmp-agadir",
     "schoolSlug": "fmp-agadir",
     "createdAt": "2026-09-14T16:42:07.670Z",
-    "updatedAt": "2026-09-14T16:42:07.670Z"
+    "updatedAt": "2026-09-14T17:39:09.811Z"
   },
   {
     "id": "mst-import-1789404127671-kxrib",
@@ -3602,7 +3602,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsa-ouarzazate-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.671Z",
-    "updatedAt": "2026-09-14T16:42:07.671Z"
+    "updatedAt": "2026-09-14T17:39:09.812Z"
   },
   {
     "id": "mst-import-1789404127672-odz9j",
@@ -3628,7 +3628,7 @@
     "schoolId": "ec-encg-agadir",
     "schoolSlug": "encg-agadir",
     "createdAt": "2026-09-14T16:42:07.672Z",
-    "updatedAt": "2026-09-14T16:42:07.672Z"
+    "updatedAt": "2026-09-14T17:39:09.814Z"
   },
   {
     "id": "mst-import-1789404127674-eu6fv",
@@ -3652,7 +3652,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-taroudant-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.674Z",
-    "updatedAt": "2026-09-14T16:42:07.674Z"
+    "updatedAt": "2026-09-14T17:39:09.816Z"
   },
   {
     "id": "mst-import-1789404127675-bfe1g",
@@ -3676,7 +3676,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-guelmim-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.675Z",
-    "updatedAt": "2026-09-14T16:42:07.675Z"
+    "updatedAt": "2026-09-14T17:39:09.818Z"
   },
   {
     "id": "mst-import-1789404127677-3hheu",
@@ -3702,7 +3702,7 @@
     "schoolId": "ec-ensias",
     "schoolSlug": "ensias-rabat",
     "createdAt": "2026-09-14T16:42:07.677Z",
-    "updatedAt": "2026-09-14T16:42:07.677Z"
+    "updatedAt": "2026-09-14T17:39:09.819Z"
   },
   {
     "id": "mst-import-1789404127684-ghrik",
@@ -3728,7 +3728,7 @@
     "schoolId": "ec-encg-oujda",
     "schoolSlug": "encg-oujda",
     "createdAt": "2026-09-14T16:42:07.684Z",
-    "updatedAt": "2026-09-14T16:42:07.684Z"
+    "updatedAt": "2026-09-14T17:39:09.821Z"
   },
   {
     "id": "mst-import-1789404127686-2z5yx",
@@ -3752,7 +3752,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2024/08/Master-Universite-Mohammed-V-Rabat.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.686Z",
-    "updatedAt": "2026-09-14T16:42:07.686Z"
+    "updatedAt": "2026-09-14T17:39:09.822Z"
   },
   {
     "id": "mst-import-1789404127687-5kdx6",
@@ -3776,7 +3776,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2023/06/master-universite-sidi-mohamed-ben.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.687Z",
-    "updatedAt": "2026-09-14T16:42:07.687Z"
+    "updatedAt": "2026-09-14T17:39:09.824Z"
   },
   {
     "id": "mst-import-1789404127688-lah03",
@@ -3800,7 +3800,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2023/06/master-universite-hassan-1er-settat.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.688Z",
-    "updatedAt": "2026-09-14T16:42:07.688Z"
+    "updatedAt": "2026-09-14T17:39:09.825Z"
   },
   {
     "id": "mst-import-1789404127690-1a6i8",
@@ -3824,7 +3824,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-cadi-ayyad-marrakech.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.690Z",
-    "updatedAt": "2026-09-14T16:42:07.690Z"
+    "updatedAt": "2026-09-14T17:39:09.827Z"
   },
   {
     "id": "mst-import-1789404127691-pilkr",
@@ -3848,7 +3848,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-flash-settat-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.691Z",
-    "updatedAt": "2026-09-14T16:42:07.691Z"
+    "updatedAt": "2026-09-14T17:39:09.828Z"
   },
   {
     "id": "mst-import-1789404127692-dub1k",
@@ -3874,7 +3874,7 @@
     "schoolId": "ec-ensam-meknes",
     "schoolSlug": "ensam-meknes",
     "createdAt": "2026-09-14T16:42:07.692Z",
-    "updatedAt": "2026-09-14T16:42:07.692Z"
+    "updatedAt": "2026-09-14T17:39:09.829Z"
   },
   {
     "id": "mst-import-1789404127694-p83kv",
@@ -3900,7 +3900,7 @@
     "schoolId": "ec-encg-marrakech",
     "schoolSlug": "encg-marrakech",
     "createdAt": "2026-09-14T16:42:07.694Z",
-    "updatedAt": "2026-09-14T16:42:07.694Z"
+    "updatedAt": "2026-09-14T17:39:09.834Z"
   },
   {
     "id": "mst-import-1789404127697-55ggo",
@@ -3924,7 +3924,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fp-sidi-bennour-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.697Z",
-    "updatedAt": "2026-09-14T16:42:07.697Z"
+    "updatedAt": "2026-09-14T17:39:09.837Z"
   },
   {
     "id": "mst-import-1789404127699-6wl9i",
@@ -3948,7 +3948,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-faculte-chariaa-fes-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.699Z",
-    "updatedAt": "2026-09-14T16:42:07.699Z"
+    "updatedAt": "2026-09-14T17:39:09.839Z"
   },
   {
     "id": "mst-import-1789404127703-hyv5f",
@@ -3972,7 +3972,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fp-khouribga-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.703Z",
-    "updatedAt": "2026-09-14T16:42:07.703Z"
+    "updatedAt": "2026-09-14T17:39:09.842Z"
   },
   {
     "id": "mst-import-1789404127704-blvc1",
@@ -3996,7 +3996,7 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ims-kenitra-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.704Z",
-    "updatedAt": "2026-09-14T16:42:07.704Z"
+    "updatedAt": "2026-09-14T17:39:09.843Z"
   },
   {
     "id": "mst-import-1789404127706-mxcgq",
@@ -4020,6 +4020,6 @@
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-esef-kenitra-2026-2027.html",
     "status": "INFORMATION",
     "createdAt": "2026-09-14T16:42:07.706Z",
-    "updatedAt": "2026-09-14T16:42:07.706Z"
+    "updatedAt": "2026-09-14T17:39:09.844Z"
   }
 ]

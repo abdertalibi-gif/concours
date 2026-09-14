@@ -1,0 +1,47 @@
+[
+  {
+    "id": "src-1",
+    "name": "Almaster Maroc",
+    "url": "https://www.almaster-maroc.com/",
+    "type": "HTML",
+    "isActive": true,
+    "status": "OK",
+    "createdAt": "2026-09-14T17:20:30.234Z"
+  },
+  {
+    "id": "src-2",
+    "name": "Supmaroc",
+    "url": "https://www.supmaroc.com/",
+    "type": "HTML",
+    "isActive": true,
+    "status": "OK",
+    "createdAt": "2026-09-14T17:20:30.234Z"
+  },
+  {
+    "id": "src-3",
+    "name": "Master Maroc",
+    "url": "https://master-maroc.com/",
+    "type": "HTML",
+    "isActive": true,
+    "status": "OK",
+    "createdAt": "2026-09-14T17:20:30.234Z"
+  },
+  {
+    "id": "src-4",
+    "name": "9rayti",
+    "url": "https://www.9rayti.com/",
+    "type": "HTML",
+    "isActive": true,
+    "status": "OK",
+    "createdAt": "2026-09-14T17:20:30.234Z"
+  },
+  {
+    "id": "src-5",
+    "name": "Orientation Chabab",
+    "url": "https://www.orientation-chabab.com/",
+    "type": "HTML",
+    "isActive": true,
+    "status": "OK",
+    "createdAt": "2026-09-14T17:20:30.234Z"
+  }
+]

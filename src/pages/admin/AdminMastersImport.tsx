@@ -25,11 +25,11 @@ import { Button, Field, Input, Modal, Select, Textarea, useToast } from '../../c
 import { REAL_SCHOOLS, REAL_UNIVERSITIES } from '../../data/institutionsData';
 import {
   MasterItem,
-  getCachedMasters,
   setCachedMasters,
   addMasterToCache,
   updateMasterInCache,
-  removeMasterFromCache
+  removeMasterFromCache,
+  updateAllMastersStatus
 } from '../../lib/mastersAdapter';
 
 interface SyncSummary {
@@ -131,6 +131,7 @@ export default function AdminMastersImport() {
   const [masters, setMasters] = useState<MasterItem[]>([]);
   const [loading, setLoading] = useState(false);
   const [syncing, setSyncing] = useState(false);
+  const [updatingStatuses, setUpdatingStatuses] = useState(false);
   const [saving, setSaving] = useState(false);
 
   // Filters
@@ -156,20 +157,17 @@ export default function AdminMastersImport() {
   const fetchMasters = async () => {
     try {
       setLoading(true);
-      const res = await fetch('/api/masters', { headers: { Accept: 'application/json' } });
-      const contentType = res.headers.get('content-type') || '';
-      if (res.ok && contentType.includes('application/json')) {
+      const res = await fetch('/api/masters');
+      if (res.ok) {
         const data = await res.json();
-        if (Array.isArray(data) && data.length > 0) {
+        if (Array.isArray(data)) {
           setMasters(data);
           setCachedMasters(data);
-          return;
         }
       }
-      setMasters(getCachedMasters());
     } catch (error) {
-      console.warn('API /api/masters indisponible, utilisation des données locales', error);
-      setMasters(getCachedMasters());
+      console.error('Erreur lors du chargement des masters', error);
+      toast('Impossible de joindre le serveur pour les masters', 'error');
     } finally {
       setLoading(false);
     }
@@ -177,11 +175,11 @@ export default function AdminMastersImport() {
 
   const fetchLogs = async () => {
     try {
-      const res = await fetch('/api/masters/sync-logs', { headers: { Accept: 'application/json' } });
-      const contentType = res.headers.get('content-type') || '';
-      if (!res.ok || !contentType.includes('application/json')) return;
-      const data = await res.json();
-      if (Array.isArray(data)) setLogs(data);
+      const res = await fetch('/api/masters/sync-logs');
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data)) setLogs(data);
+      }
     } catch (error) {
       console.error('Erreur lors du chargement des logs', error);
     }
@@ -191,13 +189,7 @@ export default function AdminMastersImport() {
     setSyncing(true);
     setSyncMessage(null);
     try {
-      const res = await fetch('/api/masters/sync', { method: 'POST', headers: { Accept: 'application/json' } });
-      const contentType = res.headers.get('content-type') || '';
-      if (!res.ok || !contentType.includes('application/json')) {
-        setSyncMessage('Synchronisation indisponible sur cet environnement (backend requis).');
-        toast('Synchronisation indisponible ici (serveur non déployé)', 'error');
-        return;
-      }
+      const res = await fetch('/api/masters/sync', { method: 'POST' });
       const data = await res.json();
       if (data.summary) {
         setLogs(prev => [data.summary, ...prev.filter(l => l.id !== data.summary.id)]);
@@ -212,6 +204,26 @@ export default function AdminMastersImport() {
       toast('Échec de la synchronisation', 'error');
     } finally {
       setSyncing(false);
+    }
+  };
+
+  const handleUpdateStatuses = async () => {
+    setUpdatingStatuses(true);
+    setSyncMessage(null);
+    try {
+      const result = await updateAllMastersStatus();
+      if (result.success) {
+        setSyncMessage(result.message);
+        toast(result.message, 'success');
+        await fetchMasters();
+      } else {
+        toast('Erreur lors de la mise à jour des statuts', 'error');
+      }
+    } catch (error: any) {
+      console.error('Status update failed', error);
+      toast('Échec de la mise à jour des statuts', 'error');
+    } finally {
+      setUpdatingStatuses(false);
     }
   };
 
@@ -453,8 +465,19 @@ export default function AdminMastersImport() {
 
           <Button
             variant="outline"
+            onClick={handleUpdateStatuses}
+            disabled={updatingStatuses || syncing}
+            className="flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 px-4 py-2.5 rounded-xl font-medium border-slate-200 shadow-sm"
+            title="Mettre à jour automatiquement le statut (OUVERT, À VENIR, CLÔTURÉ) de tous les masters en comparant la date limite avec la date du jour"
+          >
+            <Clock className={`w-4 h-4 ${updatingStatuses ? 'animate-spin text-amber-600' : 'text-slate-500'}`} />
+            {updatingStatuses ? 'Mise à jour...' : 'Actualiser statuts'}
+          </Button>
+
+          <Button
+            variant="outline"
             onClick={handleSync}
-            disabled={syncing}
+            disabled={syncing || updatingStatuses}
             className="flex items-center gap-2 bg-slate-50 hover:bg-slate-100 text-slate-700 px-4 py-2.5 rounded-xl font-medium border-slate-200 shadow-sm"
             title="Mettre à jour les données depuis le système de veille"
           >

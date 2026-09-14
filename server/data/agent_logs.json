@@ -1,0 +1,34 @@
+[
+  {
+    "id": "log-1789406453807-xial",
+    "sourceId": "src-1",
+    "action": "UPSERT",
+    "message": "(DRY RUN) Mode simulation. Action évitée: UPSERT de \"Concours Test Généré par IA\"",
+    "level": "INFO",
+    "createdAt": "2026-09-14T17:20:53.807Z"
+  },
+  {
+    "id": "log-1789406453599-7u6i",
+    "sourceId": "src-1",
+    "action": "DETECT",
+    "message": "Analyse IA en cours (256 liens suspects trouvés)...",
+    "level": "INFO",
+    "createdAt": "2026-09-14T17:20:53.599Z"
+  },
+  {
+    "id": "log-1789406453478-1ua5",
+    "sourceId": "src-1",
+    "action": "DETECT",
+    "message": "Nouveau contenu détecté. Analyse en cours...",
+    "level": "INFO",
+    "createdAt": "2026-09-14T17:20:53.478Z"
+  },
+  {
+    "id": "log-1789406453074-4bop",
+    "sourceId": "src-1",
+    "action": "SCAN_START",
+    "message": "Début du scan de Almaster Maroc (https://www.almaster-maroc.com/)",
+    "level": "INFO",
+    "createdAt": "2026-09-14T17:20:53.074Z"
+  }
+]

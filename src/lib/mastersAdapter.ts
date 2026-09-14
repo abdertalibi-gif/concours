@@ -5,7 +5,7 @@
 // ============================================================
 
 import type { Competition, CompetitionCategory, OrgType } from './types';
-import { SEED_MASTERS_FALLBACK } from '../../api/_mastersData';
+import { parseDateSafe } from './utils';
 
 export interface MasterItem {
   id: string;
@@ -34,8 +34,202 @@ export interface MasterItem {
   schoolSlug?: string;
   schoolWebsite?: string;
   universityWebsite?: string;
-}export { SEED_MASTERS_FALLBACK };
+}
 
+// Données initiales de secours (concours de masters réels 2026-2027 avec liens écoles)
+export const SEED_MASTERS_FALLBACK: MasterItem[] = [
+  {
+    id: "mst-um5-fsr-ia-2026",
+    uniqueKey: "universite-mohammed-v-rabat-faculte-des-sciences-rabat-master-intelligence-artificielle-et-sciences-des-donnees-2026-2027",
+    name: "Master Intelligence Artificielle et Sciences des Données (IASD)",
+    university: "Université Mohammed V de Rabat",
+    establishment: "Faculté des Sciences de Rabat (FSR)",
+    city: "Rabat",
+    domain: "Informatique & Technologies",
+    level: "Master Spécialisé / MST",
+    academicYear: "2026-2027",
+    openingDate: "2026-06-15T00:00:00.000Z",
+    deadlineDate: "2026-09-25T23:59:59.000Z",
+    examDate: "2026-10-05T09:00:00.000Z",
+    publicationDate: "2026-06-01T10:00:00.000Z",
+    resultsDate: "2026-10-12T14:00:00.000Z",
+    conditions: "Licence en Informatique, Mathématiques ou diplôme équivalent. Mention Assez Bien minimum. Présélection sur dossier puis épreuve écrite.",
+    documents: "CV détaillé, Lettre de motivation, Copies certifiées des diplômes, Relevés de notes S1 à S6, Copie CIN.",
+    seats: 35,
+    officialUrl: "http://preinscription.um5.ac.ma",
+    sourceUrl: "https://www.almaster-maroc.com/master-fsr-rabat-ia-2026/",
+    schoolSlug: "fs-rabat",
+    schoolWebsite: "http://www.fsr.ac.ma",
+    universityWebsite: "https://www.um5.ac.ma",
+    status: "OUVERT",
+    createdAt: "2026-09-13T19:18:16.761Z",
+    updatedAt: "2026-09-13T19:18:16.761Z"
+  },
+  {
+    id: "mst-uh2c-encg-cca-2026",
+    uniqueKey: "universite-hassan-ii-casablanca-encg-casablanca-master-comptabilite-controle-audit-2026-2027",
+    name: "Master Comptabilité, Contrôle et Audit (CCA)",
+    university: "Université Hassan II de Casablanca",
+    establishment: "ENCG Casablanca",
+    city: "Casablanca",
+    domain: "Économie & Gestion",
+    level: "Master Spécialisé",
+    academicYear: "2026-2027",
+    openingDate: "2026-07-01T00:00:00.000Z",
+    deadlineDate: "2026-09-30T23:59:59.000Z",
+    examDate: "2026-10-10T08:30:00.000Z",
+    publicationDate: "2026-06-10T00:00:00.000Z",
+    resultsDate: null,
+    conditions: "Licence fondamentale ou professionnelle en Économie et Gestion. Test écrit en comptabilité approfondie et entretien oral.",
+    documents: "Relevés de notes universitaires, Diplôme du Baccalauréat, Attestation de réussite en Licence, Copie CIN.",
+    seats: 40,
+    officialUrl: "https://encgcasa.ac.ma/candidatures-master/",
+    sourceUrl: "https://www.almaster-maroc.com/master-encg-casablanca-cca/",
+    schoolId: "ec-encg-casablanca",
+    schoolSlug: "encg-casablanca",
+    schoolWebsite: "https://encgcasa.ac.ma",
+    universityWebsite: "http://www.univh2c.ma",
+    status: "OUVERT",
+    createdAt: "2026-09-13T19:18:16.761Z",
+    updatedAt: "2026-09-13T19:18:16.761Z"
+  },
+  {
+    id: "mst-uca-fssm-cyber-2026",
+    uniqueKey: "universite-cadi-ayyad-marrakech-faculte-des-sciences-semlalia-master-cybersecurite-et-systemes-embarques-2026-2027",
+    name: "Master Cybersécurité et Systèmes Embarqués Intelligents",
+    university: "Université Cadi Ayyad de Marrakech",
+    establishment: "Faculté des Sciences Semlalia (FSSM)",
+    city: "Marrakech",
+    domain: "Ingénierie & Informatique",
+    level: "Master Recherche / MST",
+    academicYear: "2026-2027",
+    openingDate: "2026-10-01T00:00:00.000Z",
+    deadlineDate: "2026-10-25T23:59:59.000Z",
+    examDate: "2026-11-02T09:00:00.000Z",
+    publicationDate: "2026-08-15T00:00:00.000Z",
+    resultsDate: null,
+    conditions: "Licence SMI, SMA ou diplôme d’ingénieur reconnu. Présélection sur dossier puis test de programmation et réseaux.",
+    documents: "Dossier académique complet, relevés de notes du S1 au S6, CIN, photo d’identité.",
+    seats: 30,
+    officialUrl: "https://candidature.uca.ma",
+    sourceUrl: "https://www.almaster-maroc.com/master-fssm-marrakech-cybersecurite/",
+    schoolSlug: "fssm-marrakech",
+    schoolWebsite: "https://www.fssm.uca.ma",
+    universityWebsite: "https://www.uca.ma",
+    status: "A_VENIR",
+    createdAt: "2026-09-13T19:18:16.761Z",
+    updatedAt: "2026-09-13T19:18:16.761Z"
+  },
+  {
+    id: "mst-usmba-fsjes-droit-2026",
+    uniqueKey: "universite-sidi-mohamed-ben-abdellah-fes-fsjes-fes-master-droit-des-affaires-et-de-lentreprise-2026-2027",
+    name: "Master Droit des Affaires et Juriste d’Entreprise",
+    university: "Université Sidi Mohamed Ben Abdellah de Fès",
+    establishment: "FSJES Fès",
+    city: "Fès",
+    domain: "Droit & Sciences Politiques",
+    level: "Master Fondamental",
+    academicYear: "2026-2027",
+    openingDate: "2026-05-10T00:00:00.000Z",
+    deadlineDate: "2026-07-20T23:59:59.000Z",
+    examDate: "2026-09-28T09:00:00.000Z",
+    publicationDate: "2026-05-01T00:00:00.000Z",
+    resultsDate: "2026-10-05T00:00:00.000Z",
+    conditions: "Licence en Droit Privé (Français). Mention minimum Assez Bien. Épreuve écrite de dissertation juridique.",
+    documents: "Copie certifiée conforme de la Licence et du Baccalauréat, relevés de notes.",
+    seats: 50,
+    officialUrl: "https://portail.usmba.ac.ma",
+    sourceUrl: "https://www.almaster-maroc.com/master-droit-affaires-fsjes-fes/",
+    schoolSlug: "fsjes-fes",
+    schoolWebsite: "http://fsjes.usmba.ac.ma",
+    universityWebsite: "http://www.usmba.ac.ma",
+    status: "CONCOURS_A_VENIR",
+    createdAt: "2026-09-13T19:18:16.761Z",
+    updatedAt: "2026-09-13T19:18:16.761Z"
+  },
+  {
+    id: "mst-uae-ensa-genie-civil-2026",
+    uniqueKey: "universite-abdelmalek-essaadi-tetouan-ensa-tetouan-master-genie-civil-et-infrastructures-durables-2026-2027",
+    name: "Master Génie Civil et Infrastructures Durables",
+    university: "Université Abdelmalek Essaâdi",
+    establishment: "ENSA Tétouan",
+    city: "Tétouan",
+    domain: "Génie Civil & BTP",
+    level: "Master Sciences et Techniques (MST)",
+    academicYear: "2026-2027",
+    openingDate: "2026-04-01T00:00:00.000Z",
+    deadlineDate: "2026-06-15T23:59:59.000Z",
+    examDate: "2026-07-02T10:00:00.000Z",
+    publicationDate: "2026-03-20T00:00:00.000Z",
+    resultsDate: "2026-07-15T12:00:00.000Z",
+    conditions: "Licence en Génie Civil, Mécanique ou Physique appliquée. Test écrit et entretien oral.",
+    documents: "CV, Lettre de motivation, Relevés de notes S1-S6, Diplômes.",
+    seats: 25,
+    officialUrl: "https://ensa-tetouan.ac.ma/masters/",
+    sourceUrl: "https://www.almaster-maroc.com/master-genie-civil-ensa-tetouan/",
+    schoolId: "ec-ensa-tetouan",
+    schoolSlug: "ensa-tetouan",
+    schoolWebsite: "https://ensa-tetouan.ac.ma",
+    universityWebsite: "https://www.uae.ac.ma",
+    status: "RESULTATS",
+    createdAt: "2026-09-13T19:18:16.761Z",
+    updatedAt: "2026-09-13T19:18:16.761Z"
+  },
+  {
+    id: "mst-uiz-fsa-energies-2026",
+    uniqueKey: "universite-ibn-zohr-agadir-faculte-des-sciences-agadir-master-energies-renouvelables-et-efficacite-energetique-2026-2027",
+    name: "Master Énergies Renouvelables et Efficacité Énergétique",
+    university: "Université Ibn Zohr d’Agadir",
+    establishment: "Faculté des Sciences d’Agadir (FSA)",
+    city: "Agadir",
+    domain: "Environnement & Énergies",
+    level: "Master Spécialisé",
+    academicYear: "2026-2027",
+    openingDate: null,
+    deadlineDate: null,
+    examDate: null,
+    publicationDate: "2026-08-01T00:00:00.000Z",
+    resultsDate: null,
+    conditions: "Licence en Physique, Chimie, Électrotechnique ou diplôme équivalent.",
+    documents: "Relevés de notes, Lettre de motivation, Diplôme de Licence.",
+    seats: 30,
+    officialUrl: "https://preinscription.uiz.ac.ma",
+    sourceUrl: "https://www.almaster-maroc.com/master-energies-renouvelables-uiz-agadir/",
+    schoolSlug: "fsa-agadir",
+    schoolWebsite: "http://fsa.uiz.ac.ma",
+    universityWebsite: "https://www.uiz.ac.ma",
+    status: "INFORMATION",
+    createdAt: "2026-09-13T19:18:16.761Z",
+    updatedAt: "2026-09-13T19:18:16.761Z"
+  },
+  {
+    id: "mst-uit-flsh-com-2026",
+    uniqueKey: "universite-ibn-tofail-kenitra-flsh-kenitra-master-communication-des-organisations-et-medias-2026-2027",
+    name: "Master Communication des Organisations et Nouveaux Médias",
+    university: "Université Ibn Tofaïl de Kénitra",
+    establishment: "FLSH Kénitra",
+    city: "Kénitra",
+    domain: "Lettres, Médias & Communication",
+    level: "Master Professionnel",
+    academicYear: "2026-2027",
+    openingDate: "2026-05-01T00:00:00.000Z",
+    deadlineDate: "2026-06-30T23:59:59.000Z",
+    examDate: "2026-07-10T09:00:00.000Z",
+    publicationDate: "2026-04-20T00:00:00.000Z",
+    resultsDate: "2026-07-25T00:00:00.000Z",
+    conditions: "Licence en Études Françaises, Information-Communication, Journalisme ou Sociologie.",
+    documents: "Dossier de candidature en ligne, relevés de notes, projet professionnel.",
+    seats: 35,
+    officialUrl: "https://ent.uit.ac.ma",
+    sourceUrl: "https://www.almaster-maroc.com/master-communication-flsh-kenitra/",
+    schoolSlug: "flsh-kenitra",
+    schoolWebsite: "https://flsh.uit.ac.ma",
+    universityWebsite: "https://uit.ac.ma",
+    status: "FERME",
+    createdAt: "2026-09-13T19:18:16.761Z",
+    updatedAt: "2026-09-13T19:18:16.761Z"
+  }
+];
 
 const MASTERS_STORAGE_KEY = 'cm_masters_cache_v2';
 
@@ -56,6 +250,132 @@ function loadInitialMasters(): MasterItem[] {
 
 // Cache mémoire
 let _mastersCache: MasterItem[] = loadInitialMasters();
+
+/**
+ * Normalise un objet Master brut provenant de l'API, de Supabase ou du cache local.
+ * Gère de manière robuste les variantes de noms de champs :
+ * - deadlineDate / deadline / applicationDeadline / dateLimite / closingDate
+ * - openingDate / startDate / dateOuverture / registrationStart
+ * - examDate / competitionDate / dateConcours / dateExamen
+ * - resultsDate / dateResultats
+ * - officialUrl / registrationUrl / urlOfficiel / lienCandidature
+ * - sourceUrl / url / link
+ * Recalcule et synchronise systématiquement le statut selon la date de référence.
+ */
+export function normalizeMaster(raw: any, referenceDate: Date = new Date()): MasterItem {
+  if (!raw || typeof raw !== 'object') {
+    return {
+      id: `mst-${Date.now()}`,
+      uniqueKey: '',
+      name: 'Master',
+      university: 'Université au Maroc',
+      establishment: 'Établissement Universitaire',
+      city: 'Maroc',
+      domain: 'Formation Universitaire',
+      level: 'Master Spécialisé / MST',
+      academicYear: '2026-2027',
+      openingDate: null,
+      deadlineDate: null,
+      examDate: null,
+      publicationDate: null,
+      resultsDate: null,
+      conditions: null,
+      documents: null,
+      seats: null,
+      officialUrl: null,
+      sourceUrl: '',
+      status: 'INFORMATION',
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    };
+  }
+
+  const now = referenceDate instanceof Date && !isNaN(referenceDate.getTime()) ? referenceDate : new Date();
+
+  // Variantes de dates
+  const rawDeadline = raw.deadlineDate ?? raw.deadline ?? raw.applicationDeadline ?? raw.dateLimite ?? raw.closingDate ?? null;
+  const rawOpening = raw.openingDate ?? raw.startDate ?? raw.dateOuverture ?? raw.registrationStart ?? null;
+  const rawExam = raw.examDate ?? raw.competitionDate ?? raw.dateConcours ?? raw.dateExamen ?? null;
+  const rawResults = raw.resultsDate ?? raw.dateResultats ?? null;
+  const rawPublication = raw.publicationDate ?? raw.datePublication ?? raw.publishedAt ?? raw.createdAt ?? null;
+
+  const deadline = parseDateSafe(rawDeadline, true);
+  const opening = parseDateSafe(rawOpening, false);
+  const exam = parseDateSafe(rawExam, false);
+  const results = parseDateSafe(rawResults, false);
+
+  // Détermination fiable du statut
+  const oldStatus = (raw.status || '').toUpperCase();
+  let status: MasterItem['status'] = 'OUVERT';
+
+  if (oldStatus === 'RESULTATS' || (results && results <= now)) {
+    status = 'RESULTATS';
+  } else if (deadline) {
+    if (now > deadline) {
+      if (exam && now < exam) {
+        status = 'CONCOURS_A_VENIR';
+      } else {
+        status = 'FERME'; // CLÔTURÉ
+      }
+    } else if (opening && now < opening) {
+      status = 'A_VENIR';
+    } else {
+      status = 'OUVERT';
+    }
+  } else if (opening) {
+    if (now < opening) {
+      status = 'A_VENIR';
+    } else {
+      status = 'OUVERT';
+    }
+  } else {
+    status = (['OUVERT', 'FERME', 'A_VENIR', 'CONCOURS_A_VENIR', 'RESULTATS', 'INFORMATION'].includes(oldStatus)
+      ? oldStatus
+      : 'INFORMATION') as MasterItem['status'];
+  }
+
+  // Variantes d'URLs
+  const officialUrl = raw.officialUrl || raw.registrationUrl || raw.urlOfficiel || raw.lienCandidature || null;
+  const sourceUrl = raw.sourceUrl || raw.url || raw.link || '';
+
+  // Variantes d'établissement et université
+  const establishment = raw.establishment || raw.schoolName || raw.faculty || raw.etablissement || raw.university || 'Établissement Universitaire';
+  const university = raw.university || raw.universityName || 'Université au Maroc';
+
+  return {
+    id: String(raw.id || raw.uniqueKey || `mst-${Date.now()}`),
+    uniqueKey: String(raw.uniqueKey || raw.id || ''),
+    name: String(raw.name || raw.title || 'Master Universitaire'),
+    university: String(university),
+    establishment: String(establishment),
+    city: String(raw.city || 'Maroc'),
+    domain: String(raw.domain || raw.category || 'Formation Universitaire'),
+    level: String(raw.level || 'Master Spécialisé / MST'),
+    academicYear: String(raw.academicYear || '2026-2027'),
+    openingDate: rawOpening ? String(rawOpening) : null,
+    deadlineDate: rawDeadline ? String(rawDeadline) : null,
+    examDate: rawExam ? String(rawExam) : null,
+    publicationDate: rawPublication ? String(rawPublication) : null,
+    resultsDate: rawResults ? String(rawResults) : null,
+    conditions: raw.conditions || null,
+    documents: raw.documents || null,
+    seats: typeof raw.seats === 'number' ? raw.seats : (raw.seats ? parseInt(raw.seats, 10) : null),
+    officialUrl: officialUrl ? String(officialUrl) : null,
+    sourceUrl: String(sourceUrl),
+    status,
+    createdAt: String(raw.createdAt || new Date().toISOString()),
+    updatedAt: String(raw.updatedAt || new Date().toISOString()),
+    schoolId: raw.schoolId,
+    schoolSlug: raw.schoolSlug,
+    schoolWebsite: raw.schoolWebsite,
+    universityWebsite: raw.universityWebsite
+  };
+}
+
+export function normalizeMasters(list: any[], referenceDate: Date = new Date()): MasterItem[] {
+  if (!Array.isArray(list)) return [];
+  return list.map(item => normalizeMaster(item, referenceDate));
+}
 
 export function setCachedMasters(list: MasterItem[]) {
   if (Array.isArray(list)) {
@@ -97,6 +417,127 @@ export function removeMasterFromCache(id: string) {
       localStorage.setItem(MASTERS_STORAGE_KEY, JSON.stringify(_mastersCache));
     }
   } catch {}
+}
+
+/**
+ * Fonction utilitaire pour mettre à jour automatiquement le statut (OUVERT, À VENIR, CLÔTURÉ)
+ * de tous les masters dans la base de données / cache local en comparant la date limite actuelle avec la date du jour.
+ */
+export function updateAllMastersStatusInCache(referenceDate: Date = new Date()) {
+  const now = referenceDate instanceof Date && !isNaN(referenceDate.getTime()) ? referenceDate : new Date();
+  const current = getCachedMasters();
+  let updatedCount = 0;
+  const changes: Array<{ id: string; name: string; oldStatus: MasterItem['status']; newStatus: MasterItem['status'] }> = [];
+  const stats = { ouvert: 0, aVenir: 0, cloture: 0, concoursAVenir: 0, resultats: 0, information: 0 };
+
+  const updatedList = current.map(m => {
+    const oldStatus = m.status;
+    const deadline = parseDateSafe(m.deadlineDate, true);
+    const opening = parseDateSafe(m.openingDate, false);
+    const exam = parseDateSafe(m.examDate, false);
+    const results = parseDateSafe(m.resultsDate, false);
+
+    let newStatus: MasterItem['status'] = 'OUVERT';
+
+    if (oldStatus === 'RESULTATS' || (results && results <= now)) {
+      newStatus = 'RESULTATS';
+    } else if (deadline) {
+      if (now > deadline) {
+        if (exam && now < exam) {
+          newStatus = 'CONCOURS_A_VENIR';
+        } else {
+          newStatus = 'FERME'; // CLÔTURÉ
+        }
+      } else if (opening && now < opening) {
+        newStatus = 'A_VENIR';
+      } else {
+        newStatus = 'OUVERT';
+      }
+    } else if (opening) {
+      if (now < opening) {
+        newStatus = 'A_VENIR';
+      } else {
+        newStatus = 'OUVERT';
+      }
+    } else {
+      newStatus = oldStatus || 'INFORMATION';
+    }
+
+    if (newStatus === 'OUVERT') stats.ouvert++;
+    else if (newStatus === 'A_VENIR') stats.aVenir++;
+    else if (newStatus === 'FERME') stats.cloture++;
+    else if (newStatus === 'CONCOURS_A_VENIR') stats.concoursAVenir++;
+    else if (newStatus === 'RESULTATS') stats.resultats++;
+    else stats.information++;
+
+    if (oldStatus !== newStatus) {
+      updatedCount++;
+      changes.push({ id: m.id, name: m.name, oldStatus, newStatus });
+      return { ...m, status: newStatus, updatedAt: now.toISOString() };
+    }
+    return m;
+  });
+
+  if (updatedCount > 0) {
+    setCachedMasters(updatedList);
+  }
+
+  return {
+    total: current.length,
+    updatedCount,
+    stats,
+    changes,
+  };
+}
+
+/**
+ * Fonction utilitaire principale pour mettre à jour automatiquement le statut
+ * (OUVERT, À VENIR, CLÔTURÉ) de tous les masters dans la base de données.
+ * Déclenche l'API serveur /api/masters/update-statuses et synchronise le cache local.
+ */
+export async function updateAllMastersStatus(referenceDate: Date = new Date()): Promise<{
+  success: boolean;
+  message: string;
+  total: number;
+  updatedCount: number;
+  stats: {
+    ouvert: number;
+    aVenir: number;
+    cloture: number;
+    concoursAVenir: number;
+    resultats: number;
+    information?: number;
+  };
+  changes: Array<any>;
+}> {
+  try {
+    const res = await fetch('/api/masters/update-statuses', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ referenceDate: referenceDate.toISOString() }),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      if (data.success) {
+        await fetchAndCacheMasters();
+        return data;
+      }
+    }
+  } catch (err) {
+    console.warn('[MastersAdapter] Appel backend /api/masters/update-statuses indisponible, bascule locale:', err);
+  }
+
+  const localRes = updateAllMastersStatusInCache(referenceDate);
+  return {
+    success: true,
+    message: localRes.updatedCount > 0
+      ? `Mise à jour effectuée : ${localRes.updatedCount} master(s) mis à jour (${localRes.stats.ouvert} OUVERT, ${localRes.stats.aVenir} À VENIR, ${localRes.stats.cloture} CLÔTURÉ).`
+      : `Tous les statuts sont déjà à jour (${localRes.stats.ouvert} OUVERT, ${localRes.stats.aVenir} À VENIR, ${localRes.stats.cloture} CLÔTURÉ).`,
+    total: localRes.total,
+    updatedCount: localRes.updatedCount,
+    stats: localRes.stats,
+    changes: localRes.changes,
+  };
 }
 
 import { REAL_SCHOOLS } from '../data/institutionsData';
