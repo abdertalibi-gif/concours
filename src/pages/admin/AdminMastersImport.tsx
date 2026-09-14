@@ -25,6 +25,7 @@ import { Button, Field, Input, Modal, Select, Textarea, useToast } from '../../c
 import { REAL_SCHOOLS, REAL_UNIVERSITIES } from '../../data/institutionsData';
 import {
   MasterItem,
+  getCachedMasters,
   setCachedMasters,
   addMasterToCache,
   updateMasterInCache,
@@ -155,17 +156,20 @@ export default function AdminMastersImport() {
   const fetchMasters = async () => {
     try {
       setLoading(true);
-      const res = await fetch('/api/masters');
-      if (res.ok) {
+      const res = await fetch('/api/masters', { headers: { Accept: 'application/json' } });
+      const contentType = res.headers.get('content-type') || '';
+      if (res.ok && contentType.includes('application/json')) {
         const data = await res.json();
-        if (Array.isArray(data)) {
+        if (Array.isArray(data) && data.length > 0) {
           setMasters(data);
           setCachedMasters(data);
+          return;
         }
       }
+      setMasters(getCachedMasters());
     } catch (error) {
-      console.error('Erreur lors du chargement des masters', error);
-      toast('Impossible de joindre le serveur pour les masters', 'error');
+      console.warn('API /api/masters indisponible, utilisation des données locales', error);
+      setMasters(getCachedMasters());
     } finally {
       setLoading(false);
     }
@@ -173,11 +177,11 @@ export default function AdminMastersImport() {
 
   const fetchLogs = async () => {
     try {
-      const res = await fetch('/api/masters/sync-logs');
-      if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data)) setLogs(data);
-      }
+      const res = await fetch('/api/masters/sync-logs', { headers: { Accept: 'application/json' } });
+      const contentType = res.headers.get('content-type') || '';
+      if (!res.ok || !contentType.includes('application/json')) return;
+      const data = await res.json();
+      if (Array.isArray(data)) setLogs(data);
     } catch (error) {
       console.error('Erreur lors du chargement des logs', error);
     }
@@ -187,7 +191,13 @@ export default function AdminMastersImport() {
     setSyncing(true);
     setSyncMessage(null);
     try {
-      const res = await fetch('/api/masters/sync', { method: 'POST' });
+      const res = await fetch('/api/masters/sync', { method: 'POST', headers: { Accept: 'application/json' } });
+      const contentType = res.headers.get('content-type') || '';
+      if (!res.ok || !contentType.includes('application/json')) {
+        setSyncMessage('Synchronisation indisponible sur cet environnement (backend requis).');
+        toast('Synchronisation indisponible ici (serveur non déployé)', 'error');
+        return;
+      }
       const data = await res.json();
       if (data.summary) {
         setLogs(prev => [data.summary, ...prev.filter(l => l.id !== data.summary.id)]);

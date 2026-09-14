@@ -58,13 +58,22 @@ export default function Masters() {
   const fetchMasters = async () => {
     try {
       setLoading(true);
-      const res = await fetch('/api/masters');
-      if (res.ok) {
+      const res = await fetch('/api/masters', { headers: { Accept: 'application/json' } });
+      const contentType = res.headers.get('content-type') || '';
+      // En production statique (Vercel), /api/masters peut renvoyer index.html :
+      // on valide le type de contenu avant de parser le JSON.
+      if (res.ok && contentType.includes('application/json')) {
         const data = await res.json();
-        if (Array.isArray(data)) setMasters(data);
+        if (Array.isArray(data) && data.length > 0) {
+          setMasters(data);
+          return;
+        }
       }
+      // API indisponible : repli sur les masters embarqués (données locales)
+      setMasters(getCachedMasters());
     } catch (error) {
-      console.error('Erreur de chargement des masters:', error);
+      console.warn('API /api/masters indisponible, utilisation des données locales:', error);
+      setMasters(getCachedMasters());
     } finally {
       setLoading(false);
     }

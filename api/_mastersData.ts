@@ -1,3 +1,10 @@
+// ============================================================
+// Données initiales de secours (concours de masters réels 2026-2027).
+// Module partagé api/_mastersData.ts : importé par le frontend
+// (src/lib/mastersAdapter.ts) et par la fonction serverless api/masters.
+// Aucune dépendance runtime (import type effacé à la compilation).
+// ============================================================
+
 import type { MasterItem } from '../src/lib/mastersAdapter';
 
 export const SEED_MASTERS_FALLBACK: MasterItem[] = [
@@ -71,8 +78,8 @@ export const SEED_MASTERS_FALLBACK: MasterItem[] = [
     examDate: "2026-11-02T09:00:00.000Z",
     publicationDate: "2026-08-15T00:00:00.000Z",
     resultsDate: null,
-    conditions: "Licence SMI, SMA ou diplôme d'ingénieur reconnu. Présélection sur dossier puis test de programmation et réseaux.",
-    documents: "Dossier académique complet, relevés de notes du S1 au S6, CIN, photo d'identité.",
+    conditions: "Licence SMI, SMA ou diplôme d’ingénieur reconnu. Présélection sur dossier puis test de programmation et réseaux.",
+    documents: "Dossier académique complet, relevés de notes du S1 au S6, CIN, photo d’identité.",
     seats: 30,
     officialUrl: "https://candidature.uca.ma",
     sourceUrl: "https://www.almaster-maroc.com/master-fssm-marrakech-cybersecurite/",
@@ -86,7 +93,7 @@ export const SEED_MASTERS_FALLBACK: MasterItem[] = [
   {
     id: "mst-usmba-fsjes-droit-2026",
     uniqueKey: "universite-sidi-mohamed-ben-abdellah-fes-fsjes-fes-master-droit-des-affaires-et-de-lentreprise-2026-2027",
-    name: "Master Droit des Affaires et Juriste d'Entreprise",
+    name: "Master Droit des Affaires et Juriste d’Entreprise",
     university: "Université Sidi Mohamed Ben Abdellah de Fès",
     establishment: "FSJES Fès",
     city: "Fès",
@@ -142,8 +149,8 @@ export const SEED_MASTERS_FALLBACK: MasterItem[] = [
     id: "mst-uiz-fsa-energies-2026",
     uniqueKey: "universite-ibn-zohr-agadir-faculte-des-sciences-agadir-master-energies-renouvelables-et-efficacite-energetique-2026-2027",
     name: "Master Énergies Renouvelables et Efficacité Énergétique",
-    university: "Université Ibn Zohr d'Agadir",
-    establishment: "Faculté des Sciences d'Agadir (FSA)",
+    university: "Université Ibn Zohr d’Agadir",
+    establishment: "Faculté des Sciences d’Agadir (FSA)",
     city: "Agadir",
     domain: "Environnement & Énergies",
     level: "Master Spécialisé",
