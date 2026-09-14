@@ -443,7 +443,7 @@ export function AdminLayout() {
   const NEW_ADMIN_NAV = [
     { to: '/admin', label: 'Tableau de bord', icon: LayoutDashboard, end: true },
     { to: '/admin/concours', label: 'Concours', icon: Trophy },
-    { to: '/admin/masters/import', label: 'Import Masters', icon: GraduationCap },
+    { to: '/admin/masters', label: 'Masters', icon: GraduationCap },
     { to: '/admin/ai-agent/sources', label: 'AI Agent', icon: Bot },
     { to: '/admin/ecoles', label: 'Écoles', icon: GraduationCap },
     { to: '/admin/universites', label: 'Universités', icon: Building2 },

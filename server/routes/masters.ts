@@ -3,6 +3,9 @@ import {
   getMastersStore,
   getSyncLogs,
   syncMastersFromAlMaster,
+  createMaster,
+  updateMaster,
+  deleteMaster,
   MasterItem
 } from '../services/mastersService.js';
 
@@ -108,6 +111,63 @@ router.get('/:id', async (req, res) => {
     res.json(item);
   } catch (error: any) {
     res.status(500).json({ error: 'Erreur interne' });
+  }
+});
+
+// POST create a new master (Admin)
+router.post('/', async (req, res) => {
+  try {
+    const { name, establishment, university, city, domain, academicYear } = req.body;
+    if (!name || !name.trim()) {
+      return res.status(400).json({ error: 'Le nom de l’intitulé du master est obligatoire.' });
+    }
+
+    const created = createMaster(req.body);
+    res.status(201).json({
+      success: true,
+      message: 'Master créé avec succès',
+      item: created
+    });
+  } catch (error: any) {
+    console.error('Error creating master:', error);
+    res.status(500).json({ error: error.message || 'Erreur lors de la création du master' });
+  }
+});
+
+// PUT update an existing master (Admin)
+router.put('/:id', async (req, res) => {
+  try {
+    const id = req.params.id;
+    const updated = updateMaster(id, req.body);
+    if (!updated) {
+      return res.status(404).json({ error: 'Master introuvable' });
+    }
+    res.json({
+      success: true,
+      message: 'Master mis à jour avec succès',
+      item: updated
+    });
+  } catch (error: any) {
+    console.error('Error updating master:', error);
+    res.status(500).json({ error: error.message || 'Erreur lors de la mise à jour du master' });
+  }
+});
+
+// DELETE remove a master (Admin)
+router.delete('/:id', async (req, res) => {
+  try {
+    const id = req.params.id;
+    const deleted = deleteMaster(id);
+    if (!deleted) {
+      return res.status(404).json({ error: 'Master introuvable ou déjà supprimé' });
+    }
+    res.json({
+      success: true,
+      message: 'Master supprimé avec succès'
+    });
+  } catch (error: any) {
+    console.error('Error deleting master:', error);
+    res.status(500).json({ error: error.message || 'Erreur lors de la suppression du master' });
   }
 });
 

@@ -230,17 +230,66 @@ export const SEED_MASTERS_FALLBACK: MasterItem[] = [
   }
 ];
 
+const MASTERS_STORAGE_KEY = 'cm_masters_cache_v2';
+
+function loadInitialMasters(): MasterItem[] {
+  try {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const raw = localStorage.getItem(MASTERS_STORAGE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed;
+        }
+      }
+    }
+  } catch {}
+  return [...SEED_MASTERS_FALLBACK];
+}
+
 // Cache mémoire
-let _mastersCache: MasterItem[] = [...SEED_MASTERS_FALLBACK];
+let _mastersCache: MasterItem[] = loadInitialMasters();
 
 export function setCachedMasters(list: MasterItem[]) {
-  if (Array.isArray(list) && list.length > 0) {
+  if (Array.isArray(list)) {
     _mastersCache = list;
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        localStorage.setItem(MASTERS_STORAGE_KEY, JSON.stringify(list));
+      }
+    } catch {}
   }
 }
 
 export function getCachedMasters(): MasterItem[] {
   return _mastersCache;
+}
+
+export function addMasterToCache(item: MasterItem) {
+  _mastersCache = [item, ..._mastersCache.filter(m => m.id !== item.id)];
+  try {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem(MASTERS_STORAGE_KEY, JSON.stringify(_mastersCache));
+    }
+  } catch {}
+}
+
+export function updateMasterInCache(item: MasterItem) {
+  _mastersCache = _mastersCache.map(m => m.id === item.id ? item : m);
+  try {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem(MASTERS_STORAGE_KEY, JSON.stringify(_mastersCache));
+    }
+  } catch {}
+}
+
+export function removeMasterFromCache(id: string) {
+  _mastersCache = _mastersCache.filter(m => m.id !== id);
+  try {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem(MASTERS_STORAGE_KEY, JSON.stringify(_mastersCache));
+    }
+  } catch {}
 }
 
 import { REAL_SCHOOLS } from '../data/institutionsData';

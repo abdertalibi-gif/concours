@@ -81,6 +81,7 @@ export default function App() {
             <Route path="admin" element={<AdminLayout />}>
               <Route index element={<AdminDashboard />} />
               <Route path="concours" element={<AdminConcours />} />
+              <Route path="masters" element={<AdminMastersImport />} />
               <Route path="masters/import" element={<AdminMastersImport />} />
               <Route path="ecoles" element={<AdminEcoles />} />
               <Route path="universites" element={<AdminUniversites />} />

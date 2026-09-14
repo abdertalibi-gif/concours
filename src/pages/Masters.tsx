@@ -13,7 +13,7 @@ import {
   Globe
 } from 'lucide-react';
 import { Button, Chip } from '../components/ui';
-import { resolveSchoolMeta } from '../lib/mastersAdapter';
+import { getCachedMasters, resolveSchoolMeta } from '../lib/mastersAdapter';
 
 interface MasterItem {
   id: string;

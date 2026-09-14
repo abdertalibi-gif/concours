@@ -70,6 +70,34 @@ export function Login() {
           <Link to="/mot-de-passe-oublie" className="text-[13px] font-bold text-[#0B63CE] hover:underline">Mot de passe oublié ?</Link>
         </div>
         <Button type="submit" loading={loading} className="w-full" size="lg">Se connecter <ArrowRight className="h-4 w-4" /></Button>
+
+        {/* Boutons d'accès rapide Démo */}
+        <div className="pt-2 border-t border-slate-100">
+          <p className="text-xs text-slate-500 font-medium text-center mb-2">Comptes de démonstration (1-clic) :</p>
+          <div className="grid grid-cols-2 gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                setEmail('admin@concoursmaroc.ma');
+                setPassword('Admin123!');
+              }}
+              className="px-2.5 py-1.5 rounded-lg border border-slate-200 bg-slate-50 hover:bg-blue-50 hover:border-[#0B63CE] text-xs font-semibold text-slate-700 hover:text-[#0B63CE] transition-colors text-center"
+            >
+              🛡️ Admin
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setEmail('user@example.ma');
+                setPassword('User1234!');
+              }}
+              className="px-2.5 py-1.5 rounded-lg border border-slate-200 bg-slate-50 hover:bg-emerald-50 hover:border-emerald-600 text-xs font-semibold text-slate-700 hover:text-emerald-700 transition-colors text-center"
+            >
+              🎓 Candidat
+            </button>
+          </div>
+        </div>
+
         <p className="text-center text-sm text-slate-500">Pas encore de compte ? <Link to="/inscription" className="font-bold text-[#0B63CE] hover:underline">Créer un compte</Link></p>
       </form>
     </AuthShell>

@@ -1,5 +1,21 @@
 [
   {
+    "id": "sync-1789404126534",
+    "createdAt": "2026-09-14T16:42:06.534Z",
+    "totalFound": 150,
+    "newCount": 144,
+    "updatedCount": 6,
+    "duplicateCount": 6,
+    "errorCount": 0,
+    "openCount": 10,
+    "upcomingCount": 1,
+    "closedCount": 6,
+    "examUpcomingCount": 3,
+    "resultsCount": 44,
+    "informationCount": 97,
+    "details": []
+  },
+  {
     "id": "sync-1789327201542",
     "createdAt": "2026-09-13T19:20:01.542Z",
     "totalFound": 10,
