@@ -19,6 +19,7 @@ import {
   resolveSchoolMeta,
   normalizeMasters,
   getCachedMasters,
+  setCachedMasters,
   MasterItem
 } from '../lib/mastersAdapter';
 
@@ -54,13 +55,29 @@ export default function Masters() {
   const fetchMasters = async () => {
     try {
       setLoading(true);
-      const res = await fetch('/api/masters');
-      if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data) && data.length > 0) {
-          setRawMasters(data);
-          return;
+      let fetched: MasterItem[] | null = null;
+      try {
+        const res = await fetch('/api/masters');
+        if (res.ok) {
+          const contentType = res.headers.get('content-type') || '';
+          if (contentType.includes('application/json')) {
+            const data = await res.json();
+            if (Array.isArray(data) && data.length > 0) {
+              fetched = data as MasterItem[];
+            }
+          }
         }
+      } catch (error) {
+        console.warn('[Masters] API indisponible, utilisation du cache local:', error);
+      }
+
+      if (fetched && fetched.length > 0) {
+        setRawMasters(fetched);
+        setCachedMasters(fetched);
+      } else {
+        // Fallback : cache localStorage / seed canonique (161 masters)
+        const cached = getCachedMasters();
+        setRawMasters(cached);
       }
     } catch (error) {
       console.error('Erreur de chargement des masters:', error);
@@ -74,6 +91,19 @@ export default function Masters() {
     const source = rawMasters.length > 0 ? rawMasters : getCachedMasters();
     return normalizeMasters(source);
   }, [rawMasters]);
+
+  useEffect(() => {
+    if (!import.meta.env.DEV) return;
+    console.log('[MASTERS]', {
+      total: allMasters.length,
+      ouverts: allMasters.filter((m) => m.status === 'OUVERT').length,
+      aVenir: allMasters.filter((m) => m.status === 'A_VENIR').length,
+      concoursAVenir: allMasters.filter((m) => m.status === 'CONCOURS_A_VENIR').length,
+      resultats: allMasters.filter((m) => m.status === 'RESULTATS').length,
+      clotures: allMasters.filter((m) => m.status === 'FERME').length,
+      aVerifier: allMasters.filter((m) => m.status === 'INFORMATION').length
+    });
+  }, [allMasters]);
 
   // 3. Extract unique filter options from the normalized master collection
   const universities = useMemo(() => {
