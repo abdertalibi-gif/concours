@@ -5,7 +5,7 @@
 // la couche d'abstraction src/lib/db.ts (storage interchangeable).
 // ============================================================
 
-export type Role = 'USER' | 'ADMIN';
+export type Role = 'USER' | 'ADMIN' | 'SUPER_ADMIN';
 
 export type AutoCompetitionStatus = 'OUVERT' | 'A_VENIR' | 'CLOTURE' | 'DATE_A_VERIFIER';
 export type CompetitionStatus =
