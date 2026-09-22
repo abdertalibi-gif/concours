@@ -11,7 +11,7 @@ import { useAuth } from '../lib/auth';
 import { createReport, getCompetitionBySlug, getRelatedCompetitions, incrementViews, isFollowing, loadDB, queryDocuments, queryExams, toggleFollow } from '../lib/db';
 import { fetchAndCacheMasters } from '../lib/mastersAdapter';
 import { CompetitionCard, FavoriteButton } from '../components/cards';
-import { Alert, Button, Chip, DemoBadge, Modal, OrgAvatar, StatusBadge, VerifiedBadge } from '../components/ui';
+import { Alert, Button, Chip, Modal, OrgAvatar, StatusBadge, VerifiedBadge } from '../components/ui';
 import { cn } from '../utils/cn';
 import { evaluateCompetitionDates, formatDateFR, formatNumber, timeAgo } from '../lib/utils';
 
@@ -80,7 +80,7 @@ export default function ConcoursDetail() {
                   <Info className="h-3.5 w-3.5" /> En cours de vérification
                 </span>
               )}
-              {c.isDemo && <DemoBadge />}
+
               <Chip>{c.year}</Chip>
               <Chip tone="blue">{c.level}</Chip>
               <Chip tone="orange">{c.city}</Chip>

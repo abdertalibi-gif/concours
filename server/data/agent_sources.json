@@ -6,7 +6,10 @@
     "type": "HTML",
     "isActive": true,
     "status": "OK",
-    "createdAt": "2026-09-14T17:20:30.234Z"
+    "createdAt": "2026-09-14T17:20:30.234Z",
+    "lastCheckAt": "2026-09-22T13:49:39.345Z",
+    "lastUpdateAt": "2026-09-22T13:49:39.345Z",
+    "contentHash": "248dc2a54596b14280fd306245b5049e"
   },
   {
     "id": "src-2",
@@ -23,8 +26,9 @@
     "url": "https://master-maroc.com/",
     "type": "HTML",
     "isActive": true,
-    "status": "OK",
-    "createdAt": "2026-09-14T17:20:30.234Z"
+    "status": "ERROR",
+    "createdAt": "2026-09-14T17:20:30.234Z",
+    "lastError": "fetch failed"
   },
   {
     "id": "src-4",
@@ -41,7 +45,8 @@
     "url": "https://www.orientation-chabab.com/",
     "type": "HTML",
     "isActive": true,
-    "status": "OK",
-    "createdAt": "2026-09-14T17:20:30.234Z"
+    "status": "ERROR",
+    "createdAt": "2026-09-14T17:20:30.234Z",
+    "lastError": "Erreur HTTP 403"
   }
 ]

@@ -1,0 +1,806 @@
+{
+  "source": {
+    "sourceId": "univ-uca",
+    "pdfUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+    "pageCount": 3,
+    "baseUrl": "https://www.uca.ma"
+  },
+  "classification": "VALID_CONCOURS_PDF",
+  "extraction": {
+    "pageCount": 3,
+    "textLength": 8290,
+    "isScanned": false,
+    "hasExploitableText": true,
+    "excerpt": "المملكة ال\tمغربية\nجامعة القاضي عياض\t-\tمراكش\nال\tرئاسة\nجامعة القاضي عياض\t-\tالرئاسة\nشارع\tعبد الكربم الخطابي\tص.ب\t:\t511\tمراكش الهاتف\t:\t0524434813/14\tفاكس :\t0524434494\nالبريد اإللك\tتروني\t:\tpresidence@ucam.ac.ma\tالموقع ا\tإللكترو\tني :\twww.ucam.ac.ma\nإعالن\tعن مبار\tيات\tتوظيف\nتعلن\tجامعة القاض ي عياض بمراكش أن\tها\tبصدد\tاجراء\tمباريات توظيف\tفي املناصب العمومية\t،\tوذلك ب\tتاريخ\n11\t/\t10\t/\t2026\t،\tحسب الجدول التالي\t:\n"
+  },
+  "fields": {
+    "organizationType": {
+      "field": "organizationType",
+      "status": "AUTO",
+      "value": "INSTITUTION",
+      "page": 1,
+      "excerpt": "المملكة ال\tمغربية\nجامعة القاضي عياض\t-\tمراكش\nال\tرئاسة\nجامعة القاضي عياض\t-\tالرئاسة",
+      "confidence": "HIGH",
+      "reason": "UCA est une université (INSTITUTION)"
+    },
+    "organizationName": {
+      "field": "organizationName",
+      "status": "AUTO",
+      "value": "Université Cadi Ayyad de Marrakech",
+      "page": 1,
+      "excerpt": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخ",
+      "confidence": "HIGH",
+      "reason": "extrait \"جامعة القاضي عياض - مراكش\" + référence UCA",
+      "referenceId": "univ-uca"
+    },
+    "title": {
+      "field": "title",
+      "status": "AUTO",
+      "value": "Avis de concours pour le recrutement",
+      "page": 1,
+      "excerpt": "Avis de concours pour le recrutement",
+      "confidence": "HIGH",
+      "reason": "titre explicite dans PDF"
+    },
+    "description": {
+      "field": "description",
+      "status": "AUTO",
+      "value": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخطابي ص.ب : 511 مراكش الهاتف : 0524434813/14 فاكس : 0524434494 البريد اإللك تروني : presidence@ucam.ac.ma الموقع ا إللكترو ني : www.ucam.ac.ma إعالن عن مبار يات توظيف تعلن جامعة القاض ي عياض بمراكش أن ها بصدد اجراء مباريات توظيف في املناصب العمومية ، وذلك ب تاريخ 11 / 10 / 2026 ، حسب الجدول التالي : المؤسسة عدد المناصب التخصص المطلوب اإلطار المطلوب كلية العلوم القانونية والسياسية مراكش 1 Gestion de",
+      "page": 1,
+      "excerpt": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخ",
+      "confidence": "HIGH",
+      "reason": "premiers paragraphes du PDF"
+    },
+    "places": {
+      "field": "places",
+      "value": null,
+      "status": "MISSING",
+      "reason": "aucune information explicite nombre de postes",
+      "page": 1,
+      "excerpt": ""
+    },
+    "conditions": {
+      "field": "conditions",
+      "status": "MISSING",
+      "value": null,
+      "page": 1,
+      "reason": "conditions non listées explicitement comme liste, mais présentes dans le tableau des spécialités"
+    },
+    "matieres": {
+      "field": "matieres",
+      "value": null,
+      "status": "MISSING",
+      "reason": "aucune mention matière/épreuve",
+      "page": 1
+    },
+    "epreuves": {
+      "field": "epreuves",
+      "value": null,
+      "status": "MISSING",
+      "reason": "aucune mention matière/épreuve",
+      "page": 1
+    },
+    "competitionDate": {
+      "field": "competitionDate",
+      "status": "AUTO",
+      "value": "2026-10-11",
+      "page": 1,
+      "excerpt": "11\t/\t10\t/\t2026",
+      "confidence": "HIGH",
+      "reason": "date explicitement associée à \"مباريات توظيف ... بتاريخ 11/10/2026\""
+    },
+    "deadline": {
+      "field": "deadline",
+      "status": "MISSING",
+      "value": null,
+      "page": 1,
+      "reason": "date limite non trouvée dans ce PDF"
+    },
+    "registrationStart": {
+      "field": "registrationStart",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    "convocationDate": {
+      "field": "convocationDate",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    "resultsDate": {
+      "field": "resultsDate",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    "documentsDemandes": {
+      "field": "documentsDemandes",
+      "status": "MISSING",
+      "value": null,
+      "reason": "pièces à fournir non listées explicitement"
+    },
+    "category": {
+      "field": "category",
+      "status": "AUTO",
+      "value": "RECRUTEMENT",
+      "page": 1,
+      "reason": "concours recrutement"
+    },
+    "year": {
+      "field": "year",
+      "status": "AUTO",
+      "value": 2026,
+      "page": 1,
+      "reason": "date 11/10/2026 → year 2026"
+    },
+    "level": {
+      "field": "level",
+      "status": "MISSING",
+      "value": null,
+      "reason": "grade non explicite (متصرف، تقني)"
+    },
+    "city": {
+      "field": "city",
+      "status": "AUTO",
+      "value": "Marrakech",
+      "page": 1,
+      "excerpt": "مراكش",
+      "confidence": "HIGH",
+      "reason": "ville explicitement dans en-tête UCA",
+      "referenceId": "Marrakech"
+    },
+    "region": {
+      "field": "region",
+      "status": "AUTO",
+      "value": "Marrakech-Safi",
+      "page": 1,
+      "reason": "région de Marrakech"
+    },
+    "domaine": {
+      "field": "domaine",
+      "status": "REVIEW",
+      "value": null,
+      "reason": "spécialités multiples (Gestion, Finance, Informatique…) — domaine ambigu"
+    },
+    "officialWebsite": {
+      "field": "officialWebsite",
+      "status": "AUTO",
+      "value": "https://www.uca.ma",
+      "page": 1,
+      "reason": "site institutionnel UCA"
+    },
+    "registrationUrl": {
+      "field": "registrationUrl",
+      "status": "MISSING",
+      "value": null,
+      "reason": "lien inscription non présent dans ce PDF"
+    },
+    "officialDocument": {
+      "field": "officialDocument",
+      "status": "AUTO",
+      "value": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "page": 1,
+      "excerpt": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "reason": "PDF officiel"
+    },
+    "sourceUrl": {
+      "field": "sourceUrl",
+      "status": "AUTO",
+      "value": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "page": 1,
+      "reason": "source PDF"
+    },
+    "sourceOrganization": {
+      "field": "sourceOrganization",
+      "status": "AUTO",
+      "value": "Université Cadi Ayyad de Marrakech",
+      "page": 1,
+      "reason": "UCA"
+    },
+    "profil": {
+      "field": "profil",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    "programme": {
+      "field": "programme",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    "procedure": {
+      "field": "procedure",
+      "status": "MISSING",
+      "value": null,
+      "reason": "procédure non détaillée"
+    },
+    "resultats": {
+      "field": "resultats",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    "frais": {
+      "field": "frais",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    }
+  },
+  "evidence": [
+    {
+      "field": "organizationType",
+      "status": "AUTO",
+      "value": "INSTITUTION",
+      "page": 1,
+      "excerpt": "المملكة ال\tمغربية\nجامعة القاضي عياض\t-\tمراكش\nال\tرئاسة\nجامعة القاضي عياض\t-\tالرئاسة",
+      "confidence": "HIGH",
+      "reason": "UCA est une université (INSTITUTION)"
+    },
+    {
+      "field": "organizationName",
+      "status": "AUTO",
+      "value": "Université Cadi Ayyad de Marrakech",
+      "page": 1,
+      "excerpt": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخ",
+      "confidence": "HIGH",
+      "reason": "extrait \"جامعة القاضي عياض - مراكش\" + référence UCA",
+      "referenceId": "univ-uca"
+    },
+    {
+      "field": "title",
+      "status": "AUTO",
+      "value": "Avis de concours pour le recrutement",
+      "page": 1,
+      "excerpt": "Avis de concours pour le recrutement",
+      "confidence": "HIGH",
+      "reason": "titre explicite dans PDF"
+    },
+    {
+      "field": "description",
+      "status": "AUTO",
+      "value": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخطابي ص.ب : 511 مراكش الهاتف : 0524434813/14 فاكس : 0524434494 البريد اإللك تروني : presidence@ucam.ac.ma الموقع ا إللكترو ني : www.ucam.ac.ma إعالن عن مبار يات توظيف تعلن جامعة القاض ي عياض بمراكش أن ها بصدد اجراء مباريات توظيف في املناصب العمومية ، وذلك ب تاريخ 11 / 10 / 2026 ، حسب الجدول التالي : المؤسسة عدد المناصب التخصص المطلوب اإلطار المطلوب كلية العلوم القانونية والسياسية مراكش 1 Gestion de",
+      "page": 1,
+      "excerpt": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخ",
+      "confidence": "HIGH",
+      "reason": "premiers paragraphes du PDF"
+    },
+    {
+      "field": "places",
+      "value": null,
+      "status": "MISSING",
+      "reason": "aucune information explicite nombre de postes",
+      "page": 1,
+      "excerpt": ""
+    },
+    {
+      "field": "conditions",
+      "status": "MISSING",
+      "value": null,
+      "page": 1,
+      "reason": "conditions non listées explicitement comme liste, mais présentes dans le tableau des spécialités"
+    },
+    {
+      "field": "matieres",
+      "value": null,
+      "status": "MISSING",
+      "reason": "aucune mention matière/épreuve",
+      "page": 1
+    },
+    {
+      "field": "epreuves",
+      "value": null,
+      "status": "MISSING",
+      "reason": "aucune mention matière/épreuve",
+      "page": 1
+    },
+    {
+      "field": "competitionDate",
+      "status": "AUTO",
+      "value": "2026-10-11",
+      "page": 1,
+      "excerpt": "11\t/\t10\t/\t2026",
+      "confidence": "HIGH",
+      "reason": "date explicitement associée à \"مباريات توظيف ... بتاريخ 11/10/2026\""
+    },
+    {
+      "field": "deadline",
+      "status": "MISSING",
+      "value": null,
+      "page": 1,
+      "reason": "date limite non trouvée dans ce PDF"
+    },
+    {
+      "field": "registrationStart",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    {
+      "field": "convocationDate",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    {
+      "field": "resultsDate",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    {
+      "field": "documentsDemandes",
+      "status": "MISSING",
+      "value": null,
+      "reason": "pièces à fournir non listées explicitement"
+    },
+    {
+      "field": "category",
+      "status": "AUTO",
+      "value": "RECRUTEMENT",
+      "page": 1,
+      "reason": "concours recrutement"
+    },
+    {
+      "field": "year",
+      "status": "AUTO",
+      "value": 2026,
+      "page": 1,
+      "reason": "date 11/10/2026 → year 2026"
+    },
+    {
+      "field": "level",
+      "status": "MISSING",
+      "value": null,
+      "reason": "grade non explicite (متصرف، تقني)"
+    },
+    {
+      "field": "city",
+      "status": "AUTO",
+      "value": "Marrakech",
+      "page": 1,
+      "excerpt": "مراكش",
+      "confidence": "HIGH",
+      "reason": "ville explicitement dans en-tête UCA",
+      "referenceId": "Marrakech"
+    },
+    {
+      "field": "region",
+      "status": "AUTO",
+      "value": "Marrakech-Safi",
+      "page": 1,
+      "reason": "région de Marrakech"
+    },
+    {
+      "field": "domaine",
+      "status": "REVIEW",
+      "value": null,
+      "reason": "spécialités multiples (Gestion, Finance, Informatique…) — domaine ambigu"
+    },
+    {
+      "field": "officialWebsite",
+      "status": "AUTO",
+      "value": "https://www.uca.ma",
+      "page": 1,
+      "reason": "site institutionnel UCA"
+    },
+    {
+      "field": "registrationUrl",
+      "status": "MISSING",
+      "value": null,
+      "reason": "lien inscription non présent dans ce PDF"
+    },
+    {
+      "field": "officialDocument",
+      "status": "AUTO",
+      "value": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "page": 1,
+      "excerpt": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "reason": "PDF officiel"
+    },
+    {
+      "field": "sourceUrl",
+      "status": "AUTO",
+      "value": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "page": 1,
+      "reason": "source PDF"
+    },
+    {
+      "field": "sourceOrganization",
+      "status": "AUTO",
+      "value": "Université Cadi Ayyad de Marrakech",
+      "page": 1,
+      "reason": "UCA"
+    },
+    {
+      "field": "profil",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    {
+      "field": "programme",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    {
+      "field": "procedure",
+      "status": "MISSING",
+      "value": null,
+      "reason": "procédure non détaillée"
+    },
+    {
+      "field": "resultats",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    },
+    {
+      "field": "frais",
+      "status": "MISSING",
+      "value": null,
+      "reason": "non trouvé"
+    }
+  ],
+  "mappedPayload": {
+    "title": "Avis de concours pour le recrutement",
+    "description": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخطابي ص.ب : 511 مراكش الهاتف : 0524434813/14 فاكس : 0524434494 البريد اإللك تروني : presidence@ucam.ac.ma الموقع ا إللكترو ني : www.ucam.ac.ma إعالن عن مبار يات توظيف تعلن جامعة القاض ي عياض بمراكش أن ها بصدد اجراء مباريات توظيف في املناصب العمومية ، وذلك ب تاريخ 11 / 10 / 2026 ، حسب الجدول التالي : المؤسسة عدد المناصب التخصص المطلوب اإلطار المطلوب كلية العلوم القانونية والسياسية مراكش 1 Gestion de",
+    "organizationType": "INSTITUTION",
+    "organizationName": "Université Cadi Ayyad de Marrakech",
+    "category": "RECRUTEMENT",
+    "year": 2026,
+    "level": "Bac+3",
+    "city": "Marrakech",
+    "region": "Marrakech-Safi",
+    "domaine": null,
+    "places": null,
+    "registrationStart": null,
+    "registrationDeadline": null,
+    "competitionDate": "2026-10-11T00:00:00.000Z",
+    "convocationDate": null,
+    "resultsDate": null,
+    "conditions": null,
+    "epreuves": null,
+    "matieres": null,
+    "documentsDemandes": null,
+    "profil": null,
+    "programme": null,
+    "procedure": null,
+    "resultats": null,
+    "frais": null,
+    "officialWebsite": "https://www.uca.ma",
+    "registrationUrl": null,
+    "officialDocument": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+    "sourceUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+    "sourceOrganization": "Université Cadi Ayyad de Marrakech",
+    "publishedAt": "2026-09-19T20:06:36.505Z",
+    "verificationStatus": "UNVERIFIED",
+    "publishStatus": "DRAFT",
+    "id": "c-pdf-1789848396505",
+    "slug": "avis-concours-uca-2026-1789848396505",
+    "views": 0,
+    "isDemo": false,
+    "createdAt": "2026-09-19T20:06:36.505Z",
+    "updatedAt": "2026-09-19T20:06:36.505Z"
+  },
+  "mappedVia": {
+    "entityType": "competition",
+    "payload": {
+      "title": "Avis de concours pour le recrutement",
+      "organizationName": "Université Cadi Ayyad de Marrakech",
+      "organizationType": "INSTITUTION",
+      "universityId": "univ-uca",
+      "city": "Marrakech",
+      "region": "Marrakech-Safi",
+      "level": "Bac+3",
+      "year": 2026,
+      "places": null,
+      "description": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخطابي ص.ب : 511 مراكش الهاتف : 0524434813/14 فاكس : 0524434494 البريد اإللك تروني : presidence@ucam.ac.ma الموقع ا إللكترو ني : www.ucam.ac.ma إعالن عن مبار يات توظيف تعلن جامعة القاض ي عياض بمراكش أن ها بصدد اجراء مباريات توظيف في املناصب العمومية ، وذلك ب تاريخ 11 / 10 / 2026 ، حسب الجدول التالي : المؤسسة عدد المناصب التخصص المطلوب اإلطار المطلوب كلية العلوم القانونية والسياسية مراكش 1 Gestion de",
+      "conditions": null,
+      "matieres": null,
+      "epreuves": null,
+      "documentsDemandes": null,
+      "sourceUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "sourceOrganization": "Université Cadi Ayyad de Marrakech",
+      "category": "UNIVERSITE",
+      "slug": "universite-cadi-ayyad-de-marrakech-avis-de-concours-pour-le-recrutement-2026",
+      "id": "c_mu8titi0_zjrmuuh",
+      "publishStatus": "DRAFT",
+      "verificationStatus": "UNVERIFIED",
+      "publishedAt": "2026-09-19T20:06:36.504Z",
+      "views": 0,
+      "isDemo": false,
+      "createdAt": "2026-09-19T20:06:36.504Z",
+      "updatedAt": "2026-09-19T20:06:36.504Z"
+    },
+    "fields": {
+      "title": {
+        "targetField": "title",
+        "value": "Avis de concours pour le recrutement",
+        "status": "AUTO",
+        "sourceField": "title"
+      },
+      "organizationName": {
+        "targetField": "organizationName",
+        "value": "Université Cadi Ayyad de Marrakech",
+        "status": "AUTO",
+        "sourceField": "establishment",
+        "reason": "préférence establishment"
+      },
+      "organizationType": {
+        "targetField": "organizationType",
+        "value": "INSTITUTION",
+        "status": "AUTO",
+        "sourceField": "organizationType",
+        "reason": "Almaster universitaire → INSTITUTION"
+      },
+      "schoolId": {
+        "targetField": "schoolId",
+        "value": null,
+        "status": "REVIEW",
+        "sourceField": "establishment",
+        "reason": "aucune correspondance fiable"
+      },
+      "universityId": {
+        "targetField": "universityId",
+        "value": "univ-uca",
+        "status": "AUTO",
+        "sourceField": "university",
+        "referenceId": "univ-uca",
+        "reason": "correspondance exacte"
+      },
+      "city": {
+        "targetField": "city",
+        "value": "Marrakech",
+        "status": "AUTO",
+        "sourceField": "city",
+        "referenceId": "Marrakech"
+      },
+      "region": {
+        "targetField": "region",
+        "value": "Marrakech-Safi",
+        "status": "AUTO",
+        "sourceField": "region",
+        "referenceId": "Marrakech-Safi"
+      },
+      "domaine": {
+        "targetField": "domaine",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "domain",
+        "reason": "60/150 vides — optional"
+      },
+      "level": {
+        "targetField": "level",
+        "value": "Bac+3",
+        "status": "AUTO",
+        "sourceField": "level"
+      },
+      "year": {
+        "targetField": "year",
+        "value": 2026,
+        "status": "AUTO",
+        "sourceField": "academicYear",
+        "reason": "parseInt YYYY-YYYY → YYYY"
+      },
+      "places": {
+        "targetField": "places",
+        "value": null,
+        "status": "BLOCKED",
+        "sourceField": "places",
+        "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+      },
+      "description": {
+        "targetField": "description",
+        "value": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخطابي ص.ب : 511 مراكش الهاتف : 0524434813/14 فاكس : 0524434494 البريد اإللك تروني : presidence@ucam.ac.ma الموقع ا إللكترو ني : www.ucam.ac.ma إعالن عن مبار يات توظيف تعلن جامعة القاض ي عياض بمراكش أن ها بصدد اجراء مباريات توظيف في املناصب العمومية ، وذلك ب تاريخ 11 / 10 / 2026 ، حسب الجدول التالي : المؤسسة عدد المناصب التخصص المطلوب اإلطار المطلوب كلية العلوم القانونية والسياسية مراكش 1 Gestion de",
+        "status": "AUTO",
+        "sourceField": "description",
+        "reason": "150/150, version clean proposée côté preview"
+      },
+      "conditions": {
+        "targetField": "conditions",
+        "value": null,
+        "status": "BLOCKED",
+        "sourceField": "conditions",
+        "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+      },
+      "matieres": {
+        "targetField": "matieres",
+        "value": null,
+        "status": "BLOCKED",
+        "sourceField": "matieres",
+        "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+      },
+      "epreuves": {
+        "targetField": "epreuves",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "examDate",
+        "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+      },
+      "documentsDemandes": {
+        "targetField": "documentsDemandes",
+        "value": null,
+        "status": "BLOCKED",
+        "sourceField": "documents",
+        "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+      },
+      "procedure": {
+        "targetField": "procedure",
+        "value": null,
+        "status": "UNSUPPORTED",
+        "sourceField": "procedure",
+        "reason": "absent flux — optional"
+      },
+      "frais": {
+        "targetField": "frais",
+        "value": null,
+        "status": "UNSUPPORTED",
+        "sourceField": "frais",
+        "reason": "absent flux — optional"
+      },
+      "resultats": {
+        "targetField": "resultats",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "resultsDate",
+        "reason": "optional"
+      },
+      "profil": {
+        "targetField": "profil",
+        "value": null,
+        "status": "UNSUPPORTED",
+        "sourceField": "profil"
+      },
+      "programme": {
+        "targetField": "programme",
+        "value": null,
+        "status": "UNSUPPORTED",
+        "sourceField": "programme"
+      },
+      "registrationStart": {
+        "targetField": "registrationStart",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "openingDate"
+      },
+      "registrationDeadline": {
+        "targetField": "registrationDeadline",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "deadlineDate"
+      },
+      "competitionDate": {
+        "targetField": "competitionDate",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "examDate"
+      },
+      "convocationDate": {
+        "targetField": "convocationDate",
+        "value": null,
+        "status": "UNSUPPORTED",
+        "sourceField": "convocationDate",
+        "reason": "absent flux — optional"
+      },
+      "resultsDate": {
+        "targetField": "resultsDate",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "resultsDate"
+      },
+      "officialWebsite": {
+        "targetField": "officialWebsite",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "officialUrl",
+        "reason": "27/150 sans official — optional"
+      },
+      "registrationUrl": {
+        "targetField": "registrationUrl",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "registrationUrl"
+      },
+      "sourceUrl": {
+        "targetField": "sourceUrl",
+        "value": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+        "status": "AUTO",
+        "sourceField": "sourceUrl"
+      },
+      "sourceOrganization": {
+        "targetField": "sourceOrganization",
+        "value": "Université Cadi Ayyad de Marrakech",
+        "status": "AUTO",
+        "sourceField": "organization"
+      },
+      "category": {
+        "targetField": "category",
+        "value": "UNIVERSITE",
+        "status": "AUTO",
+        "sourceField": "category",
+        "referenceId": "UNIVERSITE",
+        "reason": "master → UNIVERSITE"
+      },
+      "slug": {
+        "targetField": "slug",
+        "value": "universite-cadi-ayyad-de-marrakech-avis-de-concours-pour-le-recrutement-2026",
+        "status": "AUTO",
+        "reason": "slugify(organizationName-title-year) slice 80"
+      },
+      "id": {
+        "targetField": "id",
+        "value": "c_mu8titi0_rng3kv4",
+        "status": "AUTO",
+        "reason": "uid('c') — comme AdminConcours.tsx:219"
+      },
+      "publishStatus": {
+        "targetField": "publishStatus",
+        "value": "DRAFT",
+        "status": "AUTO",
+        "reason": "default DRAFT — comme emptyForm"
+      },
+      "verificationStatus": {
+        "targetField": "verificationStatus",
+        "value": "UNVERIFIED",
+        "status": "AUTO",
+        "reason": "default UNVERIFIED"
+      },
+      "publishedAt": {
+        "targetField": "publishedAt",
+        "value": "2026-09-19T20:06:36.504Z",
+        "status": "AUTO",
+        "reason": "now ISO"
+      },
+      "views": {
+        "targetField": "views",
+        "value": 0,
+        "status": "AUTO",
+        "reason": "0 par défaut"
+      },
+      "isDemo": {
+        "targetField": "isDemo",
+        "value": false,
+        "status": "AUTO"
+      },
+      "createdAt": {
+        "targetField": "createdAt",
+        "value": "2026-09-19T20:06:36.504Z",
+        "status": "AUTO"
+      },
+      "updatedAt": {
+        "targetField": "updatedAt",
+        "value": "2026-09-19T20:06:36.504Z",
+        "status": "AUTO"
+      }
+    },
+    "valid": false,
+    "errors": [
+      "places manquant",
+      "conditions manquant",
+      "matieres manquant",
+      "documentsDemandes manquant"
+    ],
+    "warnings": [
+      "schoolId REVIEW: aucune correspondance fiable"
+    ],
+    "blocked": true,
+    "blockedReasons": [
+      "places manquant (0/150)",
+      "conditions manquant (0/150)",
+      "matieres manquant",
+      "documentsDemandes manquant"
+    ]
+  },
+  "validation": {
+    "organizationType": "AUTO",
+    "organizationName": "AUTO",
+    "title": "AUTO",
+    "description": "AUTO",
+    "places": "BLOCKED"
+  },
+  "decision": "BLOCKED"
+}

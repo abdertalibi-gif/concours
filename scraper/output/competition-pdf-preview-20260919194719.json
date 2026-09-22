@@ -1,0 +1,2345 @@
+{
+  "generatedAt": "2026-09-19T19:47:19.999Z",
+  "source": {
+    "sourceId": "min-sup",
+    "baseUrl": "https://www.enssup.gov.ma",
+    "officialDomain": "enssup.gov.ma"
+  },
+  "totalPdf": 6,
+  "stats": {
+    "IMPORTABLE": 0,
+    "REVIEW": 2,
+    "BLOCKED": 4
+  },
+  "previews": [
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+      "entityType": "COMPETITION",
+      "status": "REVIEW",
+      "extraction": {
+        "pageCount": 6,
+        "hasExploitableText": false,
+        "isScanned": true,
+        "textLength": 97
+      },
+      "payload": {
+        "title": "PDF AUF%20Avril%202023.pdf",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "year": 2026,
+        "places": null,
+        "description": "-- 1 of 6 --\n\nAvril\n\n-- 2 of 6 --\n\n\n\n-- 3 of 6 --\n\n\n\n-- 4 of 6 --\n\n\n\n-- 5 of 6 --\n\n\n\n-- 6 of 6 --",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        ],
+        "officialWebsite": null,
+        "sourceUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-auf-20avril-202023-pdf-2026",
+        "id": "c_mu8stzho_ic8emdi",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:47:17.868Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:47:17.868Z",
+        "updatedAt": "2026-09-19T19:47:17.868Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF AUF%20Avril%202023.pdf",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides — optional"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "pdf places",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf page=1"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "-- 1 of 6 --\n\nAvril\n\n-- 2 of 6 --\n\n\n\n-- 3 of 6 --\n\n\n\n-- 4 of 6 --\n\n\n\n-- 5 of 6 --\n\n\n\n-- 6 of 6 --",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-auf-20avril-202023-pdf-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8stzho_zuxh9dx",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:47:17.868Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:47:17.868Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:47:17.868Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+          "status": "REVIEW",
+          "sourceField": "pdfUrl",
+          "reason": "PDF scanné",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf pages=6 scanned=true"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [
+        "PDF scanné/image — REVIEW"
+      ],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        {
+          "field": "documents",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        }
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "extraction": {
+        "pageCount": 1,
+        "hasExploitableText": true,
+        "isScanned": false,
+        "textLength": 2046
+      },
+      "payload": {
+        "title": "PDF Avis%2001_2025_AMI_R%C3%A9sidences%20Uni",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Sciences de l’Éducation",
+        "year": 2026,
+        "places": null,
+        "description": "Avis d'Appel à Manifestation d’Intérêt pour la construction et\nl’équipement de résidences universitaires dans le cadre\nd’un partenariat public-privé\nN° 01/2025/AMI/MESRSI/RESIDENCES UNIVERSITAIRES\nLe Ministère de l’Enseignement Supérieur, de la Recherche Scientifique et de\nl’Innovation (MESRI) lance le présent appel à manifestation d’intérêt à destination\ndes investisseurs intéressés par la construction et la gestion de résidences\nuniversitaires, dans différentes villes du Royaume, dans le cadre d’un partenariat\npublic-privé.\nLe MESRSI souhaite identifier et entrer en contact avec ces investisseurs intéressés\npar ce programme qui concerne les différentes villes universitaires.\nLe dossier objet du présent appel à manifestation d’intérêt peut être retiré au\nbureau n° 37- Office National des Œuvres Universitaires, Sociales et Culturelles, 65\nRue Tensift Agdal Rabat. Il peut être également téléchargé à partir du Portail\nMarocain des Marchés Publics (https://www.marchespublics.gov.ma/pmmp/) ou\ndu site Web de ce Ministère (https://www.enssup.gov.ma/en/publications/avis-\nd-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-\nresidences-universitaires-dans-le-cadre-d-un-partenariat-public-prive).\nLe contenu du dossier de réponse doit être conforme aux dispositions de l’article\n11 du règlement de l’appel à manifestation d’intérêt.\nLe dossier de réponse doit parvenir au plus tard le 14 novembre 2025 à 16h30\nsous pli fermé :\n Soit en le déposant, contre récépissé, dans le bureau précité ;\n Soit en l’envoyant, par courrier recommandé avec accusé de réception, au\nbureau précité ;\n Soit en l’envoyant par e-mail à l’adresse suivante : h.aitdads@onousc.ma\nToute demande d'information relative à cet appel à manifestation d’intérêt peut\nêtre adressée à l’Office National des Œuvres Universitaires, Sociales et Culturelles :\n Adresse: 65 Rue Tensift, Agdal, Rabat\n Bureau: N° 37, 2ème étage\n Téléphone : +212 537 68 36 12 ou +212 655 99 72 99\n Fax: +212 537 683 610\n E-mail: h.aitdads@onousc.ma\n\n-- 1 of 1 --",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "bureau n° 37- Office National des Œuvres Universitaires, Sociales et Culturelles, 65",
+          "Rue Tensift Agdal Rabat. Il peut être également téléchargé à partir du Portail",
+          "Marocain des Marchés Publics (https://www.marchespublics.gov.ma/pmmp/) ou",
+          "du site Web de ce Ministère (https://www.enssup.gov.ma/en/publications/avis-",
+          "d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-"
+        ],
+        "officialWebsite": null,
+        "sourceUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-avis-2001-2025-ami-r-c3-a9sidences-20uni-2026",
+        "id": "c_mu8stztf_eq3gjuy",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:47:18.291Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:47:18.291Z",
+        "updatedAt": "2026-09-19T19:47:18.291Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF Avis%2001_2025_AMI_R%C3%A9sidences%20Uni",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences de l’Éducation",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences de l’Éducation"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "Avis d'Appel à Manifestation d’Intérêt pour la construction et\nl’équipement de résidences universitaires dans le cadre\nd’un partenariat public-privé\nN° 01/2025/AMI/MESRSI/RESIDENCES UNIVERSITAIRES\nLe Ministère de l’Enseignement Supérieur, de la Recherche Scientifique et de\nl’Innovation (MESRI) lance le présent appel à manifestation d’intérêt à destination\ndes investisseurs intéressés par la construction et la gestion de résidences\nuniversitaires, dans différentes villes du Royaume, dans le cadre d’un partenariat\npublic-privé.\nLe MESRSI souhaite identifier et entrer en contact avec ces investisseurs intéressés\npar ce programme qui concerne les différentes villes universitaires.\nLe dossier objet du présent appel à manifestation d’intérêt peut être retiré au\nbureau n° 37- Office National des Œuvres Universitaires, Sociales et Culturelles, 65\nRue Tensift Agdal Rabat. Il peut être également téléchargé à partir du Portail\nMarocain des Marchés Publics (https://www.marchespublics.gov.ma/pmmp/) ou\ndu site Web de ce Ministère (https://www.enssup.gov.ma/en/publications/avis-\nd-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-\nresidences-universitaires-dans-le-cadre-d-un-partenariat-public-prive).\nLe contenu du dossier de réponse doit être conforme aux dispositions de l’article\n11 du règlement de l’appel à manifestation d’intérêt.\nLe dossier de réponse doit parvenir au plus tard le 14 novembre 2025 à 16h30\nsous pli fermé :\n Soit en le déposant, contre récépissé, dans le bureau précité ;\n Soit en l’envoyant, par courrier recommandé avec accusé de réception, au\nbureau précité ;\n Soit en l’envoyant par e-mail à l’adresse suivante : h.aitdads@onousc.ma\nToute demande d'information relative à cet appel à manifestation d’intérêt peut\nêtre adressée à l’Office National des Œuvres Universitaires, Sociales et Culturelles :\n Adresse: 65 Rue Tensift, Agdal, Rabat\n Bureau: N° 37, 2ème étage\n Téléphone : +212 537 68 36 12 ou +212 655 99 72 99\n Fax: +212 537 683 610\n E-mail: h.aitdads@onousc.ma\n\n-- 1 of 1 --",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "bureau n° 37- Office National des Œuvres Universitaires, Sociales et Culturelles, 65",
+            "Rue Tensift Agdal Rabat. Il peut être également téléchargé à partir du Portail",
+            "Marocain des Marchés Publics (https://www.marchespublics.gov.ma/pmmp/) ou",
+            "du site Web de ce Ministère (https://www.enssup.gov.ma/en/publications/avis-",
+            "d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-avis-2001-2025-ami-r-c3-a9sidences-20uni-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8stztf_koqvsys",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:47:18.291Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:47:18.291Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:47:18.291Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+          "status": "AUTO",
+          "sourceField": "pdfUrl",
+          "reason": "PDF officiel",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf pages=1 scanned=false"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "MISSING",
+          "reason": "aucun nombre de postes clairement associé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "MISSING",
+          "reason": "section conditions non trouvée",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "MISSING",
+          "reason": "aucune mention matière/épreuve",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "reason": "aucune mention matière/épreuve",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "MISSING",
+          "reason": "non trouvé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "reason": "non trouvé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        {
+          "field": "documents",
+          "value": [
+            "bureau n° 37- Office National des Œuvres Universitaires, Sociales et Culturelles, 65",
+            "Rue Tensift Agdal Rabat. Il peut être également téléchargé à partir du Portail",
+            "Marocain des Marchés Publics (https://www.marchespublics.gov.ma/pmmp/) ou",
+            "du site Web de ce Ministère (https://www.enssup.gov.ma/en/publications/avis-",
+            "d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-"
+          ],
+          "status": "AUTO",
+          "rawText": "dossier objet du présent appel à manifestation d’intérêt peut être retiré au\nbureau n° 37- Office National des Œuvres Un",
+          "reason": "liste pièces identifiée",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        }
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "extraction": {
+        "pageCount": 12,
+        "hasExploitableText": true,
+        "isScanned": false,
+        "textLength": 22854
+      },
+      "payload": {
+        "title": "PDF CONVENTION%20DE%20PARTENARIAT%20PUBLIC-P",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Économie, Finance & Gestion",
+        "year": 2026,
+        "places": null,
+        "description": "1\nCONVENTION DE PARTENARIAT PUBLIC-PRIVE\nPOUR LA CONSTRUCTION DE RESIDENCES UNIVERSITAIRES\nN° 01/2025/AMI/ MESRSI/RESIDENCES UNIVERSIATAIRES\n\n-- 1 of 12 --\n\n2\nCONVENTION DE PARTENARIAT\nEntre l’État Marocain représenté par le Ministre de l'Enseignement Supérieur, de la Recherche\nScientifique et de l'Innovation (MESRSI) et le Ministre de l’Économie et des Finances (MEF),\ndomiciliés en leurs sièges :\nPour le MESRSI:\nAvenue Mohamed Lyazidi - BP 4500 - Hassan - Rabat\nPour le MEF:\nAvenue Mohamed V - Quartier administratif - Chellah - Rabat\nDénommés « l’État Marocain »\nd'une part,\nEt la Société ……………………………… au capital de ………………….DHS ayant son siège social à\n…………….RC N……….. à………………. IF N° …………\nRIB N° ……………………………… Banque : - Agence ……………………\nReprésentée par …………………………… agissant en qualité de ………………….. de la société\ndénommée le « Partenaire »\nD'autre part,\nIl est préalablement exposé ce qui suit :\nL'Etat Marocain et le Partenaire décident, dans le cadre de cette convention, un partenariat pour\nla construction et l'exploitation d'une résidence universitaire sur un terrain propriété du Partenaire\nou domaine privé de l’Etat. Cette convention définit les engagements de l'Etat et du Partenaire\npour la mise en œuvre de ce partenariat.\nDans ce cadre, il est arrêté et convenu ce qui suit :\n\n-- 2 of 12 --\n\n3\nARTICLE 1 : OBJET DE LA CONVENTION\nCette convention a pour objet de définir les conditions et les modalités de partenariat entre l’Etat\net le Partenaire pour la réalisation, l’équipement et, le cas échéant, la gestion d’une ou plusieurs\nrésidence(s) universitaire(s).\nARTICLE 2 : ENGAGEMENT DE L'ETAT\nDans le cas où le Partenaire ne dispose pas de foncier propre destiné à abriter la ou les résidence(s)\nuniversitaire(s), l'Etat s’engage à mettre à sa disposition un terrain domanial dans le cadre d'un\ncontrat de location de longue durée sans avoir le droit à un bail emphytéotique.\nPar ailleurs, l'Etat accorde des avantages fiscaux au Partenaire qui agit dans un cadre conventionnel\nassorti d’un cahier de charges, en vue de réaliser, dans un délai maximum de deux ans de la date\ndu permis de construire, un programme de construction de résidence(s) universitaire(s) constituées\nd’au moins 50 chambres dont la capacité d’hébergement est au maximum de deux (2) lits par\nchambre. Les exonérations fiscales sont applicables aux conditions prévues par les articles 19 (I-\nA), 92(I-29°), 129 (IV-2°) et 130 (II-A) du Code Général des Impôts 2024.\nLe MESRSI doit s'assurer régulièrement que la résidence est effectivement exploitée pour le\nlogement des étudiants.\nLe MESRSI, à travers l'Office National des Œuvres Universitaires Sociales et Culturelles\n(ONOUSC), assure le suivi de la mise en œuvre de la présente convention (réalisation du projet,\nexploitation, respect des engagements du Partenaire…).\nLe MESRSI s’engage à prendre en charge les frais d’hébergement d’un certain nombre d’étudiants\nissus des milieux socialement défavorisés. L’identification de ces bénéficiaires se fera sur la base\ndes données fournies par le Registre Social Unifié (RSU).\nARTICLE 3 : ENGAGEMENTS DU PARTENAIRE\n1. Obligations administratives et juridiques\n1.1. Respect des clauses statutaires\nAucune modification des statuts du Partenaire concernant le projet de résidence(s) universitaire(s)\nne peut être effectuée sans l’autorisation préalable et écrite du MESRSI sous peine de résiliation\nde la présente convention.\nEn cas de toute modification éventuelle dans les statuts du Partenaire, ce dernier doit conserver\nau moins 51% du capital de la société signataire de la présente convention, sauf accord de l’État et\naprès réalisation du projet d’investissement et son démarrage.\nEn cas de décès du Partenaire, ses héritiers ou ayants droit disposent d’un délai de 30 jours pour\nnotifier leur volonté de reprendre les droits et obligations de la convention de partenariat et du\ncontrat de location. Cette reprise est soumise à l’approbation préalable des Autorités compétentes.\nÀ défaut, la convention de partenariat sera résiliée sans que les intéressés ne puissent prétendre à\nune indemnité quelconque.\n1.2. Responsabilité juridique\nLe partenaire n'est pas un mandataire de l’Etat marocain. Il n'est pas autorisé à engager celui-ci de\nquelque façon que ce soit.\nLe partenaire exerce son activité en toute indépendance.\nIl supporte seul les frais et charges liées à son activité, en retire les bénéfices et en supporte les\npertes.\nIl est seul engagé et seul responsable à l'égard des membres de son personnel et de toute personne\nmorale ou physique avec laquelle il contracte.\n\n-- 3 of 12 --\n\n4\n1.3. Obligations sociales et fiscales\nLe partenaire est tenu d'être en situation régulière en matière de paiement d'impôts.\nTous les impôts, taxes et obligations sociales de quelque nature qu’ils soient actuellement en\nvigueur, ou ceux qui seraient établis, par la suite, et afférents aux résidences universiataires objet\nde la convention sont à la charge du Partenaire.\nLe Partenaire doit être en situation rég",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "toute vérification du respect des termes de la convention.",
+          "Le Partenaire doit contracter des polices d’assurance pour les résidents et les employés pour",
+          "couvrir les risques éventuels au sein de la résidence.",
+          "ARTICLE 5 : DUREE ET MODALITES DE RENOUVELLEMENT DE LA",
+          "La convention de partenariat est conclue pour une durée initiale de trente (30) ans, à compter de"
+        ],
+        "officialWebsite": null,
+        "sourceUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-convention-20de-20partenariat-20public-p-2026",
+        "id": "c_mu8su0ao_p94s2f0",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:47:18.912Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:47:18.912Z",
+        "updatedAt": "2026-09-19T19:47:18.912Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF CONVENTION%20DE%20PARTENARIAT%20PUBLIC-P",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Économie, Finance & Gestion",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Économie, Finance & Gestion"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "1\nCONVENTION DE PARTENARIAT PUBLIC-PRIVE\nPOUR LA CONSTRUCTION DE RESIDENCES UNIVERSITAIRES\nN° 01/2025/AMI/ MESRSI/RESIDENCES UNIVERSIATAIRES\n\n-- 1 of 12 --\n\n2\nCONVENTION DE PARTENARIAT\nEntre l’État Marocain représenté par le Ministre de l'Enseignement Supérieur, de la Recherche\nScientifique et de l'Innovation (MESRSI) et le Ministre de l’Économie et des Finances (MEF),\ndomiciliés en leurs sièges :\nPour le MESRSI:\nAvenue Mohamed Lyazidi - BP 4500 - Hassan - Rabat\nPour le MEF:\nAvenue Mohamed V - Quartier administratif - Chellah - Rabat\nDénommés « l’État Marocain »\nd'une part,\nEt la Société ……………………………… au capital de ………………….DHS ayant son siège social à\n…………….RC N……….. à………………. IF N° …………\nRIB N° ……………………………… Banque : - Agence ……………………\nReprésentée par …………………………… agissant en qualité de ………………….. de la société\ndénommée le « Partenaire »\nD'autre part,\nIl est préalablement exposé ce qui suit :\nL'Etat Marocain et le Partenaire décident, dans le cadre de cette convention, un partenariat pour\nla construction et l'exploitation d'une résidence universitaire sur un terrain propriété du Partenaire\nou domaine privé de l’Etat. Cette convention définit les engagements de l'Etat et du Partenaire\npour la mise en œuvre de ce partenariat.\nDans ce cadre, il est arrêté et convenu ce qui suit :\n\n-- 2 of 12 --\n\n3\nARTICLE 1 : OBJET DE LA CONVENTION\nCette convention a pour objet de définir les conditions et les modalités de partenariat entre l’Etat\net le Partenaire pour la réalisation, l’équipement et, le cas échéant, la gestion d’une ou plusieurs\nrésidence(s) universitaire(s).\nARTICLE 2 : ENGAGEMENT DE L'ETAT\nDans le cas où le Partenaire ne dispose pas de foncier propre destiné à abriter la ou les résidence(s)\nuniversitaire(s), l'Etat s’engage à mettre à sa disposition un terrain domanial dans le cadre d'un\ncontrat de location de longue durée sans avoir le droit à un bail emphytéotique.\nPar ailleurs, l'Etat accorde des avantages fiscaux au Partenaire qui agit dans un cadre conventionnel\nassorti d’un cahier de charges, en vue de réaliser, dans un délai maximum de deux ans de la date\ndu permis de construire, un programme de construction de résidence(s) universitaire(s) constituées\nd’au moins 50 chambres dont la capacité d’hébergement est au maximum de deux (2) lits par\nchambre. Les exonérations fiscales sont applicables aux conditions prévues par les articles 19 (I-\nA), 92(I-29°), 129 (IV-2°) et 130 (II-A) du Code Général des Impôts 2024.\nLe MESRSI doit s'assurer régulièrement que la résidence est effectivement exploitée pour le\nlogement des étudiants.\nLe MESRSI, à travers l'Office National des Œuvres Universitaires Sociales et Culturelles\n(ONOUSC), assure le suivi de la mise en œuvre de la présente convention (réalisation du projet,\nexploitation, respect des engagements du Partenaire…).\nLe MESRSI s’engage à prendre en charge les frais d’hébergement d’un certain nombre d’étudiants\nissus des milieux socialement défavorisés. L’identification de ces bénéficiaires se fera sur la base\ndes données fournies par le Registre Social Unifié (RSU).\nARTICLE 3 : ENGAGEMENTS DU PARTENAIRE\n1. Obligations administratives et juridiques\n1.1. Respect des clauses statutaires\nAucune modification des statuts du Partenaire concernant le projet de résidence(s) universitaire(s)\nne peut être effectuée sans l’autorisation préalable et écrite du MESRSI sous peine de résiliation\nde la présente convention.\nEn cas de toute modification éventuelle dans les statuts du Partenaire, ce dernier doit conserver\nau moins 51% du capital de la société signataire de la présente convention, sauf accord de l’État et\naprès réalisation du projet d’investissement et son démarrage.\nEn cas de décès du Partenaire, ses héritiers ou ayants droit disposent d’un délai de 30 jours pour\nnotifier leur volonté de reprendre les droits et obligations de la convention de partenariat et du\ncontrat de location. Cette reprise est soumise à l’approbation préalable des Autorités compétentes.\nÀ défaut, la convention de partenariat sera résiliée sans que les intéressés ne puissent prétendre à\nune indemnité quelconque.\n1.2. Responsabilité juridique\nLe partenaire n'est pas un mandataire de l’Etat marocain. Il n'est pas autorisé à engager celui-ci de\nquelque façon que ce soit.\nLe partenaire exerce son activité en toute indépendance.\nIl supporte seul les frais et charges liées à son activité, en retire les bénéfices et en supporte les\npertes.\nIl est seul engagé et seul responsable à l'égard des membres de son personnel et de toute personne\nmorale ou physique avec laquelle il contracte.\n\n-- 3 of 12 --\n\n4\n1.3. Obligations sociales et fiscales\nLe partenaire est tenu d'être en situation régulière en matière de paiement d'impôts.\nTous les impôts, taxes et obligations sociales de quelque nature qu’ils soient actuellement en\nvigueur, ou ceux qui seraient établis, par la suite, et afférents aux résidences universiataires objet\nde la convention sont à la charge du Partenaire.\nLe Partenaire doit être en situation rég",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "toute vérification du respect des termes de la convention.",
+            "Le Partenaire doit contracter des polices d’assurance pour les résidents et les employés pour",
+            "couvrir les risques éventuels au sein de la résidence.",
+            "ARTICLE 5 : DUREE ET MODALITES DE RENOUVELLEMENT DE LA",
+            "La convention de partenariat est conclue pour une durée initiale de trente (30) ans, à compter de"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-convention-20de-20partenariat-20public-p-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8su0ao_2vgfeug",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:47:18.912Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:47:18.912Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:47:18.912Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+          "status": "AUTO",
+          "sourceField": "pdfUrl",
+          "reason": "PDF officiel",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf pages=12 scanned=false"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "MISSING",
+          "reason": "aucun nombre de postes clairement associé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "MISSING",
+          "reason": "section conditions non trouvée",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "épreuves/matières mentionnées sans liste fiable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "épreuves/matières mentionnées sans liste fiable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "MISSING",
+          "reason": "non trouvé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "reason": "non trouvé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        {
+          "field": "documents",
+          "value": [
+            "toute vérification du respect des termes de la convention.",
+            "Le Partenaire doit contracter des polices d’assurance pour les résidents et les employés pour",
+            "couvrir les risques éventuels au sein de la résidence.",
+            "ARTICLE 5 : DUREE ET MODALITES DE RENOUVELLEMENT DE LA",
+            "La convention de partenariat est conclue pour une durée initiale de trente (30) ans, à compter de"
+          ],
+          "status": "AUTO",
+          "rawText": "documents requis pour\ntoute vérification du respect des termes de la convention.\nLe Partenaire doit contracter des polic",
+          "reason": "liste pièces identifiée",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        }
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "extraction": {
+        "pageCount": 13,
+        "hasExploitableText": true,
+        "isScanned": false,
+        "textLength": 24771
+      },
+      "payload": {
+        "title": "PDF R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%8",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Sciences de l’Éducation",
+        "year": 2026,
+        "places": null,
+        "description": "1\nRÈGLEMENT D’APPEL À MANIFESTATION D’INTÉRÊT\nPOUR LA CONSTRUCTION DE RÉSIDENCES UNIVERSITAIRES\nN° 01/2025/AMI/ MESRSI/RESIDENCES UNIVERSIATAIRES\n\n-- 1 of 13 --\n\n2\nARTICLE 1 – CONTEXTE DU PROJET\nDans le cadre de sa vision stratégique, l’Université marocaine aspire à incarner un modèle\nd’excellence aligné sur les standards internationaux, tout en répondant aux priorités de\ndéveloppement aux niveaux national et régional. Cette ambition repose sur le développement de\ncampus et de pôles universitaires intégrés, véritables moteurs de la formation d’un capital humain\ncompétent et résilient, conformément aux Hautes Orientations de Sa Majesté le Roi Mohammed\nVI, Que Dieu L’assiste.\nCes espaces, conçus comme des lieux de vie modernes et inclusifs, visent à offrir un cadre propice à\nl’épanouissement académique, tout en enrichissant le parcours personnel des étudiants et en\nfacilitant leur intégration socio-professionnelle.\nDans cette perspective, le logement universitaire se révèle être un levier clé pour garantir l’égalité des\nchances en matière d’accès à l’enseignement supérieur, particulièrement pour les étudiants issus de\nmilieux défavorisés ou résidant loin de leurs lieux d’études. En mettant à disposition des\ninfrastructures d’hébergement accessibles et abordables, il devient possible de réduire les disparités\nsociales et géographiques, tout en assurant aux étudiants des conditions optimales pour poursuivre\nleurs études.\nCependant, la capacité actuelle des cités universitaires reste insuffisante, avec un besoin estimé à plus\nde 400.000 lits. Ce déséquilibre, amplifié par une demande croissante en enseignement supérieur,\nsouligne l’urgence de mettre en œuvre des solutions rapides et efficaces, sous peine de compromettre\nles objectifs stratégiques fixés.\nDans ce contexte, il est crucial d’accélérer l’extension et la modernisation des capacités d’accueil des\ninfrastructures universitaires. Les ressources actuelles allouées par le Ministère de l’Enseignement\nSupérieur, de la Recherche Scientifique et de l’Innovation (MESRSI) à la construction et\nl’équipement des cités universitaires restent insuffisantes pour combler le déficit existant et anticiper\nles besoins futurs.\nPour répondre à cet enjeu majeur, le MESRSI à travers l’ONOUSC s’engage à mobiliser les\npartenaires publics et privés, ainsi que les acteurs régionaux, afin de diversifier et renforcer les sources\nde financement nécessaires à la réalisation de ces infrastructures stratégiques. Cette démarche\ns’inscrit dans le cadre de l’appel à manifestation d’intérêt, qui vise à rassembler les contributions et à\ncatalyser les efforts en faveur de cet objectif essentiel.\nARTICLE 2 – OBJET DE L'APPEL À MANIFESTATION D'INTÉRÊT\nLe Ministère de l’Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation\n(MESRSI) lance un Appel à Manifestation d’Intérêt (AMI) à l’attention des investisseurs souhaitant\ns’impliquer dans la construction, l’équipement et la gestion de résidences universitaires, dans le cadre\nde partenariat public-privé.\nDeux formules sont proposées à l’investisseur :\n• Option A : Construire, équiper et gérer les résidences sur le foncier appartenant à l’investisseur.\n• Option B : Construire, équiper et gérer les résidences sur des terrains relevant du domaine privé\nde l’État, mis à disposition en fonction des disponibilités, par le biais de contrats de location de\nlongue durée (ci-joint une liste des terrains relevant du domaine privé de l’État à titre indicatif).\nDans le cadre de ces projets, les investisseurs sont encouragés à intégrer des espaces polyvalents et\nmultifonctionnels au sein des résidences, susceptibles de générer des revenus supplémentaires et\nd’améliorer la rentabilité des projets.\nEn outre, afin de promouvoir l’égalité des chances et ancrer les principes d’inclusion sociale au cœur\ndes politiques de l’enseignement supérieur, le MESRSI s’engage à encourager l’occupation effective\nde ces résidences en prenant en charge les frais d’hébergement d’un certain nombre d’étudiants issus\n\n-- 2 of 13 --\n\n3\ndes milieux socialement défavorisés. L’identification de ces bénéficiaires se fera sur la base des\ndonnées fournies par le Registre Social Unifié (RSU).\nARTICLE 3- VILLES CIBLÉES ET BESOIN ESTIME EN CAPACITE D’ACCUEIL\nADDITIONNELLE\nLes villes ciblées et les besoins estimés en capacité d’accueil additionnelle sont présentés dans le\ntableau ci-dessous :\nN° Ville Besoin estimé\n1 Agadir-Ida-Ou-Tanane 52500\n2 Marrakech 48000\n3 Tétouan 40500\n4 Kénitra 37000\n5 Fès 30000\n6 Mohammadia 27000\n7 Casablanca 25000\n8 Inezgane Aït Melloul 23500\n9 Meknès 21000\n10 Oujda 22000\n11 Béni Mellal 16000\n12 Settat 11000\n13 Tanger-Assilah 10000\n14 El Jadida 10000\n15 Rabat 8000\n16 Nador 7500\n17 Errachidia 7000\n18 Salé 2500\n19 Guelmim 2500\n20 Es-Semara 1000\n21 Safi 2500\n22 El Kelâa des Sraghna 800\n23 Essaouira 700\n24 Fquih Ben Salah 650\n25 Berrechid 600\n26 Sidi Bennour 500\n27 Khénifra 400\n28 Ouarzazate 2000\n29 Laâyoune 650\n30 Taza 1000\n31 Khouribga 500\n32 Al Hoceim",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "Chaque dossier de réponse à l’AMI devra inclure les éléments ci-après permettant une évaluation",
+          "complète des capacités et propositions du candidat :",
+          "1. Présentation du Candidat",
+          "Le candidat doit fournir une note détaillée, précisant notamment :",
+          " La Forme Juridique de l’entité candidate ;"
+        ],
+        "officialWebsite": null,
+        "sourceUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-r-c3-88glement-20d-e2-80-99appel-20-c3-8-2026",
+        "id": "c_mu8su0uq_ds0w77i",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:47:19.634Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:47:19.634Z",
+        "updatedAt": "2026-09-19T19:47:19.634Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%8",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences de l’Éducation",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences de l’Éducation"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "1\nRÈGLEMENT D’APPEL À MANIFESTATION D’INTÉRÊT\nPOUR LA CONSTRUCTION DE RÉSIDENCES UNIVERSITAIRES\nN° 01/2025/AMI/ MESRSI/RESIDENCES UNIVERSIATAIRES\n\n-- 1 of 13 --\n\n2\nARTICLE 1 – CONTEXTE DU PROJET\nDans le cadre de sa vision stratégique, l’Université marocaine aspire à incarner un modèle\nd’excellence aligné sur les standards internationaux, tout en répondant aux priorités de\ndéveloppement aux niveaux national et régional. Cette ambition repose sur le développement de\ncampus et de pôles universitaires intégrés, véritables moteurs de la formation d’un capital humain\ncompétent et résilient, conformément aux Hautes Orientations de Sa Majesté le Roi Mohammed\nVI, Que Dieu L’assiste.\nCes espaces, conçus comme des lieux de vie modernes et inclusifs, visent à offrir un cadre propice à\nl’épanouissement académique, tout en enrichissant le parcours personnel des étudiants et en\nfacilitant leur intégration socio-professionnelle.\nDans cette perspective, le logement universitaire se révèle être un levier clé pour garantir l’égalité des\nchances en matière d’accès à l’enseignement supérieur, particulièrement pour les étudiants issus de\nmilieux défavorisés ou résidant loin de leurs lieux d’études. En mettant à disposition des\ninfrastructures d’hébergement accessibles et abordables, il devient possible de réduire les disparités\nsociales et géographiques, tout en assurant aux étudiants des conditions optimales pour poursuivre\nleurs études.\nCependant, la capacité actuelle des cités universitaires reste insuffisante, avec un besoin estimé à plus\nde 400.000 lits. Ce déséquilibre, amplifié par une demande croissante en enseignement supérieur,\nsouligne l’urgence de mettre en œuvre des solutions rapides et efficaces, sous peine de compromettre\nles objectifs stratégiques fixés.\nDans ce contexte, il est crucial d’accélérer l’extension et la modernisation des capacités d’accueil des\ninfrastructures universitaires. Les ressources actuelles allouées par le Ministère de l’Enseignement\nSupérieur, de la Recherche Scientifique et de l’Innovation (MESRSI) à la construction et\nl’équipement des cités universitaires restent insuffisantes pour combler le déficit existant et anticiper\nles besoins futurs.\nPour répondre à cet enjeu majeur, le MESRSI à travers l’ONOUSC s’engage à mobiliser les\npartenaires publics et privés, ainsi que les acteurs régionaux, afin de diversifier et renforcer les sources\nde financement nécessaires à la réalisation de ces infrastructures stratégiques. Cette démarche\ns’inscrit dans le cadre de l’appel à manifestation d’intérêt, qui vise à rassembler les contributions et à\ncatalyser les efforts en faveur de cet objectif essentiel.\nARTICLE 2 – OBJET DE L'APPEL À MANIFESTATION D'INTÉRÊT\nLe Ministère de l’Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation\n(MESRSI) lance un Appel à Manifestation d’Intérêt (AMI) à l’attention des investisseurs souhaitant\ns’impliquer dans la construction, l’équipement et la gestion de résidences universitaires, dans le cadre\nde partenariat public-privé.\nDeux formules sont proposées à l’investisseur :\n• Option A : Construire, équiper et gérer les résidences sur le foncier appartenant à l’investisseur.\n• Option B : Construire, équiper et gérer les résidences sur des terrains relevant du domaine privé\nde l’État, mis à disposition en fonction des disponibilités, par le biais de contrats de location de\nlongue durée (ci-joint une liste des terrains relevant du domaine privé de l’État à titre indicatif).\nDans le cadre de ces projets, les investisseurs sont encouragés à intégrer des espaces polyvalents et\nmultifonctionnels au sein des résidences, susceptibles de générer des revenus supplémentaires et\nd’améliorer la rentabilité des projets.\nEn outre, afin de promouvoir l’égalité des chances et ancrer les principes d’inclusion sociale au cœur\ndes politiques de l’enseignement supérieur, le MESRSI s’engage à encourager l’occupation effective\nde ces résidences en prenant en charge les frais d’hébergement d’un certain nombre d’étudiants issus\n\n-- 2 of 13 --\n\n3\ndes milieux socialement défavorisés. L’identification de ces bénéficiaires se fera sur la base des\ndonnées fournies par le Registre Social Unifié (RSU).\nARTICLE 3- VILLES CIBLÉES ET BESOIN ESTIME EN CAPACITE D’ACCUEIL\nADDITIONNELLE\nLes villes ciblées et les besoins estimés en capacité d’accueil additionnelle sont présentés dans le\ntableau ci-dessous :\nN° Ville Besoin estimé\n1 Agadir-Ida-Ou-Tanane 52500\n2 Marrakech 48000\n3 Tétouan 40500\n4 Kénitra 37000\n5 Fès 30000\n6 Mohammadia 27000\n7 Casablanca 25000\n8 Inezgane Aït Melloul 23500\n9 Meknès 21000\n10 Oujda 22000\n11 Béni Mellal 16000\n12 Settat 11000\n13 Tanger-Assilah 10000\n14 El Jadida 10000\n15 Rabat 8000\n16 Nador 7500\n17 Errachidia 7000\n18 Salé 2500\n19 Guelmim 2500\n20 Es-Semara 1000\n21 Safi 2500\n22 El Kelâa des Sraghna 800\n23 Essaouira 700\n24 Fquih Ben Salah 650\n25 Berrechid 600\n26 Sidi Bennour 500\n27 Khénifra 400\n28 Ouarzazate 2000\n29 Laâyoune 650\n30 Taza 1000\n31 Khouribga 500\n32 Al Hoceim",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "Chaque dossier de réponse à l’AMI devra inclure les éléments ci-après permettant une évaluation",
+            "complète des capacités et propositions du candidat :",
+            "1. Présentation du Candidat",
+            "Le candidat doit fournir une note détaillée, précisant notamment :",
+            " La Forme Juridique de l’entité candidate ;"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-r-c3-88glement-20d-e2-80-99appel-20-c3-8-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8su0uq_evytssm",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:47:19.634Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:47:19.634Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:47:19.634Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+          "status": "AUTO",
+          "sourceField": "pdfUrl",
+          "reason": "PDF officiel",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf pages=13 scanned=false"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "MISSING",
+          "reason": "aucun nombre de postes clairement associé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "MISSING",
+          "reason": "section conditions non trouvée",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "épreuves/matières mentionnées sans liste fiable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "épreuves/matières mentionnées sans liste fiable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "MISSING",
+          "reason": "non trouvé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "reason": "non trouvé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        {
+          "field": "documents",
+          "value": [
+            "Chaque dossier de réponse à l’AMI devra inclure les éléments ci-après permettant une évaluation",
+            "complète des capacités et propositions du candidat :",
+            "1. Présentation du Candidat",
+            "Le candidat doit fournir une note détaillée, précisant notamment :",
+            " La Forme Juridique de l’entité candidate ;"
+          ],
+          "status": "AUTO",
+          "rawText": "DOSSIER À PRÉSENTER\nChaque dossier de réponse à l’AMI devra inclure les éléments ci-après permettant une évaluation\ncomp",
+          "reason": "liste pièces identifiée",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        }
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "extraction": {
+        "pageCount": 2,
+        "hasExploitableText": true,
+        "isScanned": false,
+        "textLength": 2054
+      },
+      "payload": {
+        "title": "PDF Terrains%20propos%C3%A9s_R%C3%A9sidences",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "year": 2026,
+        "places": null,
+        "description": "1\nTERRAINS PROPOSÉS POUR ABRITER LES PROJETS DE CONSTRUCTION\nDE RÉSIDENCES UNIVERSITAIRES\nVille Localisation du Terrain Titre Foncier Superficie\nMeknes Sur la route provincial\n7023-Riyad Toulal 11412/K(p2) 04ha 21a 00 ca\nTaroudant\nTerrain à proximité des\nétablissements\nuniversitaires de Taroudant\n2416/39 03ha 00a 00 ca\nOuarzazate Zaouia Sidi Othmane –\nCommune Tarmigte 45901/28 05ha 00a 00 ca\nGuelmim Commune Abayno 21744/56 05ha 00a 00 ca\nSmara Faculté Polydisciplinaire de\nSmara R17/5266 05ha 00a 00 ca\nKénitra\nÀ proximité de la cité\nuniversitaire existante de\nKénitra\n157718/13 (p2) 10ha 00a 00 ca\nNador Ville de Nador 10701/11 02ha 00a 00 ca\nTaourirt Ville de Taourirt 1965/O 04ha 00a 00 ca\nKenitra Quartier Oulad Oujih TF 7830/13 (P) 01ha 02a 07ca\nMeknès Avenue Ibn Al Walid TF 76592/05 (P) 00ha 87a 30ca\nMeknès Route régionale principale\nN°7077 TF 8801/k (P) 00ha 92a 00ca\nMeknès Rue Al Wahhabi Ali Benjilali TF 14674/k (P) 00ha 56a 64ca\n\n-- 1 of 2 --\n\n2\nVille Localisation du Terrain Titre Foncier Superficie\nTaroudant Ville de Taroudant T3345/S 01ha 13a 73ca\nBeni Mellal Ville de Beni Mellal T255/T 01ha 00a 00ca\nFquih Ben Salah Ville de Fquih Ben Salah T166/T (p) 01ha 60a 00ca\nKhouribga Ville de Khouribga T62148/C (p) et\nT276/KG (p) 01ha 74a 73ca\nEl Jadida Ville de El Jadida T9464/Z 01ha 15a 50ca\nMohammedia Ville de Mohammedia TF 27183/26 01ha 00a 56ca\nOued Ed Dahab Ville de Oued Ed Dahab T1304 /62 03ha 63a 01ca\nOuarzazate Ville de Ouarzazate R17507/M 02ha 00a 00ca\nFès Ville de Fès T3392/F (P) 01ha 00a 00ca\nEs Semara Ville d’Es Semara R5356/17 03ha 49a 93ca\nLaayoune Ville de Laayoune T8315/17 01ha 87a 73ca\nEl Kelaa des\nSraghna\nVille de El Kelaa des\nSraghna T1010/M 14ha 00a 00ca\nSafi Ville de Safi T70924/23 00ha 52a 03ca\nNador Ville de Nador TF 10701/11 08ha 93a 00ca\nOujda Angad Ville de Oujda Angad T912/O 00ha 82a 57ca\nSalé Ville de Salé T18961/R 01ha 15a 10ca\nAl Hoceima Ville de Al Hoceima T975/24 02ha 92a 59ca\nLarache Ville de Larache T14160/36 20ha 00a 00ca\nTanger Assilah Ville de Tanger T1095/G 18ha 00a 00ca\n\n-- 2 of 2 --",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        ],
+        "officialWebsite": null,
+        "sourceUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-terrains-20propos-c3-a9s-r-c3-a9sidences-2026",
+        "id": "c_mu8su12w_up33kvx",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:47:19.928Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:47:19.928Z",
+        "updatedAt": "2026-09-19T19:47:19.928Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF Terrains%20propos%C3%A9s_R%C3%A9sidences",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides — optional"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "1\nTERRAINS PROPOSÉS POUR ABRITER LES PROJETS DE CONSTRUCTION\nDE RÉSIDENCES UNIVERSITAIRES\nVille Localisation du Terrain Titre Foncier Superficie\nMeknes Sur la route provincial\n7023-Riyad Toulal 11412/K(p2) 04ha 21a 00 ca\nTaroudant\nTerrain à proximité des\nétablissements\nuniversitaires de Taroudant\n2416/39 03ha 00a 00 ca\nOuarzazate Zaouia Sidi Othmane –\nCommune Tarmigte 45901/28 05ha 00a 00 ca\nGuelmim Commune Abayno 21744/56 05ha 00a 00 ca\nSmara Faculté Polydisciplinaire de\nSmara R17/5266 05ha 00a 00 ca\nKénitra\nÀ proximité de la cité\nuniversitaire existante de\nKénitra\n157718/13 (p2) 10ha 00a 00 ca\nNador Ville de Nador 10701/11 02ha 00a 00 ca\nTaourirt Ville de Taourirt 1965/O 04ha 00a 00 ca\nKenitra Quartier Oulad Oujih TF 7830/13 (P) 01ha 02a 07ca\nMeknès Avenue Ibn Al Walid TF 76592/05 (P) 00ha 87a 30ca\nMeknès Route régionale principale\nN°7077 TF 8801/k (P) 00ha 92a 00ca\nMeknès Rue Al Wahhabi Ali Benjilali TF 14674/k (P) 00ha 56a 64ca\n\n-- 1 of 2 --\n\n2\nVille Localisation du Terrain Titre Foncier Superficie\nTaroudant Ville de Taroudant T3345/S 01ha 13a 73ca\nBeni Mellal Ville de Beni Mellal T255/T 01ha 00a 00ca\nFquih Ben Salah Ville de Fquih Ben Salah T166/T (p) 01ha 60a 00ca\nKhouribga Ville de Khouribga T62148/C (p) et\nT276/KG (p) 01ha 74a 73ca\nEl Jadida Ville de El Jadida T9464/Z 01ha 15a 50ca\nMohammedia Ville de Mohammedia TF 27183/26 01ha 00a 56ca\nOued Ed Dahab Ville de Oued Ed Dahab T1304 /62 03ha 63a 01ca\nOuarzazate Ville de Ouarzazate R17507/M 02ha 00a 00ca\nFès Ville de Fès T3392/F (P) 01ha 00a 00ca\nEs Semara Ville d’Es Semara R5356/17 03ha 49a 93ca\nLaayoune Ville de Laayoune T8315/17 01ha 87a 73ca\nEl Kelaa des\nSraghna\nVille de El Kelaa des\nSraghna T1010/M 14ha 00a 00ca\nSafi Ville de Safi T70924/23 00ha 52a 03ca\nNador Ville de Nador TF 10701/11 08ha 93a 00ca\nOujda Angad Ville de Oujda Angad T912/O 00ha 82a 57ca\nSalé Ville de Salé T18961/R 01ha 15a 10ca\nAl Hoceima Ville de Al Hoceima T975/24 02ha 92a 59ca\nLarache Ville de Larache T14160/36 20ha 00a 00ca\nTanger Assilah Ville de Tanger T1095/G 18ha 00a 00ca\n\n-- 2 of 2 --",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-terrains-20propos-c3-a9s-r-c3-a9sidences-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8su12w_ih31vrg",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:47:19.928Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:47:19.928Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:47:19.928Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+          "status": "AUTO",
+          "sourceField": "pdfUrl",
+          "reason": "PDF officiel",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf pages=2 scanned=false"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "MISSING",
+          "reason": "aucun nombre de postes clairement associé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "MISSING",
+          "reason": "section conditions non trouvée",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "MISSING",
+          "reason": "aucune mention matière/épreuve",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "reason": "aucune mention matière/épreuve",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "MISSING",
+          "reason": "non trouvé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "reason": "non trouvé",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        {
+          "field": "documents",
+          "value": null,
+          "status": "MISSING",
+          "reason": "pièces non listées explicitement",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        }
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+      "entityType": "COMPETITION",
+      "status": "REVIEW",
+      "extraction": {
+        "pageCount": 2,
+        "hasExploitableText": false,
+        "isScanned": true,
+        "textLength": 28
+      },
+      "payload": {
+        "title": "PDF appel%20ouvert%20a%20candidatures.pdf",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "year": 2026,
+        "places": null,
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        ],
+        "officialWebsite": null,
+        "registrationUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+        "sourceUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-appel-20ouvert-20a-20candidatures-pdf-2026",
+        "id": "c_mu8su14u_zqignxo",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:47:19.998Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:47:19.998Z",
+        "updatedAt": "2026-09-19T19:47:19.998Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF appel%20ouvert%20a%20candidatures.pdf",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides — optional"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "pdf places",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf page=1"
+        },
+        "description": {
+          "targetField": "description",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "description",
+          "reason": "description trop courte/manquant — obligatoire"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+          "status": "AUTO",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-appel-20ouvert-20a-20candidatures-pdf-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8su14u_jyl9cma",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:47:19.998Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:47:19.998Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:47:19.998Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+          "status": "REVIEW",
+          "sourceField": "pdfUrl",
+          "reason": "PDF scanné",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf pages=2 scanned=true"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [
+        "PDF scanné/image — REVIEW"
+      ],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "description manquante",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        {
+          "field": "documents",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        }
+      ]
+    }
+  ]
+}

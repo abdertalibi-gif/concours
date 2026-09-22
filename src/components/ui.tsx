@@ -10,7 +10,7 @@ import type { ButtonHTMLAttributes, InputHTMLAttributes, ReactNode, SelectHTMLAt
 import { Link } from 'react-router-dom';
 import {
   AlertCircle, BadgeCheck, CheckCircle2, ChevronLeft, ChevronRight,
-  FlaskConical, Info, Loader2, Search, SearchX, X, Landmark, GraduationCap, Building2
+  Info, Loader2, Search, SearchX, X, Landmark, GraduationCap, Building2
 } from 'lucide-react';
 import { cn } from '../utils/cn';
 import { STATUS_META } from '../lib/utils';
@@ -81,13 +81,7 @@ export function VerifiedBadge({ at, compact }: { at?: string; compact?: boolean 
   );
 }
 
-export function DemoBadge({ className }: { className?: string }) {
-  return (
-    <span title="Données de démonstration — ne pas considérer comme officielles" className={cn('inline-flex items-center gap-1 rounded-md bg-violet-50 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-violet-700 ring-1 ring-inset ring-violet-200', className)}>
-      <FlaskConical className="h-3 w-3" /> Démo
-    </span>
-  );
-}
+
 
 export function Chip({ children, tone = 'slate', className }: { children: ReactNode; tone?: 'slate' | 'blue' | 'orange' | 'green' | 'purple'; className?: string }) {
   const tones: Record<string, string> = {

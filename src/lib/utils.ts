@@ -312,6 +312,22 @@ export function statusFromCompetition(c: {
   return evaluateCompetitionDates(c).status;
 }
 
+/**
+ * Vérifie si un concours est actuellement ouvert aux inscriptions.
+ * Utilisable côté serveur (Node) et client.
+ * Retourne true seulement si : date actuelle >= ouverture ET date actuelle <= clôture.
+ */
+export function isCompetitionOpen(c: {
+  registrationStart?: string | Date | null;
+  registrationDeadline?: string | Date | null;
+  openingDate?: string | Date | null;
+  closingDate?: string | Date | null;
+  applicationDeadline?: string | Date | null;
+}, now: Date = new Date()): boolean {
+  const ev = evaluateCompetitionDates(c, now);
+  return ev.status === 'OUVERT';
+}
+
 export function remainingLabel(
   deadline?: string | Date | null,
   start?: string | Date | null

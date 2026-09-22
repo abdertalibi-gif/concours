@@ -20,7 +20,7 @@ function emptyForm(): Partial<Competition> {
     title: '', organizationName: '', organizationType: 'MINISTERE', category: 'MINISTERE',
     year: new Date().getFullYear(), level: 'Bac+3', city: 'Rabat', region: 'Rabat-Salé-Kénitra',
     places: 100, description: '', conditions: [], matieres: [], epreuves: [], documentsDemandes: [],
-    verificationStatus: 'UNVERIFIED', publishStatus: 'DRAFT', logoColor: COLORS[0], isDemo: false,
+    verificationStatus: 'UNVERIFIED', publishStatus: 'DRAFT', logoColor: COLORS[0],
   };
 }
 
@@ -412,10 +412,6 @@ function ConcoursForm({ initial, isEdit, onClose }: { initial: Partial<Competiti
               <option value="Suspendu">Suspendu</option><option value="Archive">Archivé</option>
             </Select></Field>
           </div>
-          <label className="mt-3 flex items-center gap-2 text-sm font-semibold text-slate-600">
-            <input type="checkbox" checked={!!f.isDemo} onChange={(e) => set('isDemo', e.target.checked)} className="h-4 w-4 accent-violet-600" />
-            Marquer comme données de démonstration (DEMO)
-          </label>
         </Group>
 
         <div className="flex justify-end gap-2 border-t border-slate-100 pt-4">

@@ -23,7 +23,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.men.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -41,7 +41,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.enssup.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -59,7 +59,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.interieur.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -77,7 +77,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.sante.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -95,7 +95,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.finances.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -113,7 +113,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.justice.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -131,7 +131,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.equipement.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -149,7 +149,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.agriculture.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -167,7 +167,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.mcinet.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -185,7 +185,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.mem.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -203,7 +203,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.mmsp.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -221,7 +221,7 @@ export const REAL_MINISTRIES: Ministry[] = [
     sourceUrl: 'https://www.mjcc.gov.ma',
     status: 'ACTIVE',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -243,7 +243,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Rabat-Salé-Kénitra',
     website: 'https://www.um5.ac.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -262,7 +262,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Casablanca-Settat',
     website: 'http://www.univh2c.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -281,7 +281,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Marrakech-Safi',
     website: 'https://www.uca.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -300,7 +300,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Fès-Meknès',
     website: 'http://www.usmba.ac.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -319,7 +319,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Tanger-Tétouan-Al Hoceïma',
     website: 'https://www.uae.ac.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -338,7 +338,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: "L'Oriental",
     website: 'https://www.ump.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -357,7 +357,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Souss-Massa',
     website: 'https://www.uiz.ac.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -376,7 +376,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Rabat-Salé-Kénitra',
     website: 'https://uit.ac.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -395,7 +395,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Fès-Meknès',
     website: 'http://www.umi.ac.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -414,7 +414,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Casablanca-Settat',
     website: 'https://www.ucd.ac.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -433,7 +433,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Casablanca-Settat',
     website: 'https://www.uh1.ac.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -452,7 +452,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Béni Mellal-Khénifra',
     website: 'https://www.usms.ac.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -471,7 +471,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Marrakech-Safi',
     website: 'https://www.um6p.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -490,7 +490,7 @@ export const REAL_UNIVERSITIES: University[] = [
     region: 'Fès-Meknès',
     website: 'http://www.aui.ma',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -519,7 +519,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -546,7 +546,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -571,7 +571,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -596,7 +596,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -621,7 +621,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -647,7 +647,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -672,7 +672,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -697,7 +697,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -722,7 +722,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -747,7 +747,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -772,7 +772,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -797,7 +797,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -822,7 +822,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -848,7 +848,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -873,7 +873,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -899,7 +899,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -924,7 +924,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -949,7 +949,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -974,7 +974,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -999,7 +999,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1024,7 +1024,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1049,7 +1049,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1074,7 +1074,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1099,7 +1099,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1124,7 +1124,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1149,7 +1149,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1174,7 +1174,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1199,7 +1199,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1224,7 +1224,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1249,7 +1249,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1274,7 +1274,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1299,7 +1299,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1324,7 +1324,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1349,7 +1349,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1374,7 +1374,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1399,7 +1399,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1424,7 +1424,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1449,7 +1449,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1474,7 +1474,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1499,7 +1499,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1524,7 +1524,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1549,7 +1549,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1574,7 +1574,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1599,7 +1599,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1624,7 +1624,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1649,7 +1649,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1674,7 +1674,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1699,7 +1699,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1724,7 +1724,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1749,7 +1749,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },
@@ -1774,7 +1774,7 @@ export const REAL_SCHOOLS: School[] = [
     founded: '',
     students: '',
     isActive: true,
-    isDemo: false,
+
     createdAt: daysAgo(365),
     updatedAt: daysAgo(5),
   },

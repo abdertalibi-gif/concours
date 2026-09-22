@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Concours Test Généré par IA",
+    "description": "Ceci est un test car la clé API Gemini est absente ou a échoué.",
+    "organization_name": "Université Test",
+    "year": 2026,
+    "places": 0,
+    "level": "",
+    "domaine": "Informatique",
+    "city": "Rabat",
+    "region": "",
+    "registration_start": null,
+    "registration_deadline": null,
+    "competition_date": null,
+    "convocation_date": null,
+    "results_date": null,
+    "published_at": "2026-09-22T13:49:39.343Z",
+    "source_url": "https://www.almaster-maroc.com/",
+    "verification_status": "VERIFIED",
+    "organization_type": "INSTITUTION",
+    "id": "comp-1790084979343",
+    "slug": "universit-test-concours-test-g-n-r-par-ia-2026",
+    "category": "AUTRE",
+    "views": 0,
+    "is_demo": false,
+    "createdAt": "2026-09-22T13:49:39.343Z"
+  }
+]

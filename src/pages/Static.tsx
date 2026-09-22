@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, CheckCircle2, ChevronDown, Send } from 'lucide-react';
 import { StaticPage } from '../components/layout';
-import { Alert, Button, Field, Input } from '../components/ui';
+import { Button, Field, Input } from '../components/ui';
 import { cn } from '../utils/cn';
 
 export function NotFound() {
@@ -32,16 +32,13 @@ export function APropos() {
         <li>Centraliser des informations utiles et structurées.</li>
         <li>Indiquer systématiquement les sources officielles.</li>
         <li>Distinguer clairement les informations vérifiées.</li>
-        <li>Ne jamais présenter des données de démonstration comme officielles.</li>
       </ul>
-      <p className="rounded-xl bg-sky-50 p-4 text-sm ring-1 ring-inset ring-sky-100">Les contenus marqués « DÉMO » sont des exemples de démonstration. Seules les informations vérifiées avec lien officiel font référence — et en cas de différence, les avis officiels priment toujours.</p>
     </StaticPage>
   );
 }
 
 const FAQS = [
   { q: "Les informations publiées sont-elles officielles ?", a: "Concours Maroc centralise et structure l'information, mais seuls les avis publiés par les organismes (ministères, écoles) font foi. Chaque fiche concours indique sa source officielle et son statut de vérification. Consultez toujours le site officiel avant de candidater." },
-  { q: "Que signifie le badge « DÉMO » ?", a: "Les contenus marqués DÉMO sont des exemples de démonstration utilisés pour présenter la plateforme. Ils ne constituent pas des informations officielles. Les administrateurs les remplacent progressivement par des données réelles vérifiées." },
   { q: "Comment suivre un concours ?", a: "Créez un compte gratuit, ouvrez la fiche du concours puis cliquez sur « Suivre ce concours ». Vous recevrez des notifications avant la date limite de clôture." },
   { q: "Comment signaler une erreur ?", a: "Sur chaque fiche concours, cliquez sur « Signaler une erreur » et décrivez le problème. Notre équipe vérifie et corrige rapidement." },
   { q: "Les anciens examens sont-ils gratuits ?", a: "Oui, tous les examens et documents publiés sur la plateforme sont accessibles gratuitement." },
@@ -79,7 +76,7 @@ export function Contact() {
           <div className="py-8 text-center">
             <CheckCircle2 className="mx-auto h-12 w-12 text-emerald-500" />
             <p className="mt-3 font-extrabold text-[#0B2A4A]">Message envoyé !</p>
-            <p className="mt-1 text-sm text-slate-500">Nous vous répondrons dans les plus brefs délais. (Démonstration)</p>
+            <p className="mt-1 text-sm text-slate-500">Nous vous répondrons dans les plus brefs délais.</p>
           </div>
         ) : (
           <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="space-y-4">
@@ -100,14 +97,13 @@ export function Contact() {
 export function Confidentialite() {
   return (
     <StaticPage title="Politique de confidentialité">
-      <p>Concours Maroc respecte votre vie privée. Cette page décrit les données collectées et leur usage (version de démonstration).</p>
+      <p>Concours Maroc respecte votre vie privée. Cette page décrit les données collectées et leur usage.</p>
       <h3 className="pt-2 text-lg font-extrabold text-[#0B2A4A]">Données collectées</h3>
       <ul className="list-disc space-y-1 pl-5"><li>Informations de compte : nom, e-mail, ville, niveau.</li><li>Activité : concours suivis, favoris, progression.</li></ul>
       <h3 className="pt-2 text-lg font-extrabold text-[#0B2A4A]">Usage</h3>
       <p>Vos données servent uniquement à personnaliser votre expérience (suivis, favoris, notifications). Elles ne sont ni vendues ni partagées.</p>
       <h3 className="pt-2 text-lg font-extrabold text-[#0B2A4A]">Sécurité</h3>
-      <p>Les mots de passe ne sont jamais stockés en clair. En production, les données sont hébergées sur une infrastructure sécurisée (PostgreSQL, chiffrement, sauvegardes).</p>
-      <Alert tone="info" message="Démonstration : dans cette version, vos données sont stockées localement dans votre navigateur." />
+      <p>Les mots de passe ne sont jamais stockés en clair. Les données sont hébergées sur une infrastructure sécurisée (PostgreSQL, chiffrement, sauvegardes).</p>
     </StaticPage>
   );
 }
@@ -115,10 +111,9 @@ export function Confidentialite() {
 export function Conditions() {
   return (
     <StaticPage title="Conditions d'utilisation">
-      <p>En utilisant Concours Maroc, vous acceptez les présentes conditions (version de démonstration).</p>
+      <p>En utilisant Concours Maroc, vous acceptez les présentes conditions.</p>
       <ul className="list-disc space-y-1 pl-5">
         <li>Les informations sont fournies à titre indicatif ; les avis officiels priment.</li>
-        <li>Les contenus « DÉMO » sont des exemples sans valeur officielle.</li>
         <li>Vous êtes responsable de vérifier les dates et conditions sur les sites officiels.</li>
         <li>Tout usage abusif (spam, signalements mensongers) peut entraîner la suspension du compte.</li>
       </ul>

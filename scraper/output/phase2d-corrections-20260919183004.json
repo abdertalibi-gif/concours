@@ -1,0 +1,1052 @@
+{
+  "generatedAt": "2026-09-19T18:30:04.864Z",
+  "sourceFile": "C:\\Users\\Abde\\Downloads\\concours (9)\\scraper\\output\\concours-almaster-20260919182148.json",
+  "count": 116,
+  "corrections": [
+    {
+      "fingerprint": "master-flsh-ben-m-sik-casablanca|faculte-des-sciences-ben-m-sik-de-casablanca-fsbm|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FLSH Ben M'Sik Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flsh-ben-msik-casablanca-2026.html"
+    },
+    {
+      "fingerprint": "preselection-master-flsh-ben-m-sik-casablanca|faculte-des-sciences-ben-m-sik-de-casablanca-fsbm|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FLSH Ben M'Sik Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FLSH-Ben-MSik-Casablanca-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fmp-rabat|faculte-de-medecine-et-de-pharmacie-de-rabat|2026",
+      "field": "city",
+      "current": "Rabat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master FMP Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/resultats-preselection-master-fmp-rabat-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fsa-ait-melloul|fsa-ait-melloul|2026",
+      "field": "city",
+      "current": "Ait Melloul",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FSA Ait Melloul",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/Resultats-Preselection-Master-FSA-Ait-Melloul-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fs-agadir|faculte-des-sciences-d-agadir-fs|2026",
+      "field": "city",
+      "current": "Agadir",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FS Agadir",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-fs-agadir-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-feg-agadir|feg-agadir|2026",
+      "field": "city",
+      "current": "Agadir",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master FEG Agadir",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/resultats-preselection-master-feg-agadir-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fsjp-agadir|fsjp-agadir|2026",
+      "field": "city",
+      "current": "Agadir",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FSJP Agadir",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/resultats-preselection-master-fsjp-Agadir-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fs-fes|faculte-des-sciences-de-fes-fs|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FS Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-fs-fes-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fs-ain-chock-casablanca|fsjes-ain-chock-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FS Ain Chock Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/Resultats-Preselection-Master-FS-Ain-Chock-Casablanca-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-ens-rabat|ecole-normale-superieure-de-rabat-ens|2026",
+      "field": "city",
+      "current": "Rabat",
+      "suggested": "Casablanca",
+      "evidence": "REAL_SCHOOLS ec-ens-casablanca",
+      "title": "Définitifs Master ENS Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-definitifs-master-ens-rabat-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fsjes-oujda|fsjes-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FSJES Oujda",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FSJES-Oujda-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-esef-beni-mellal|esef-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master ESEF Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-esef-beni-mellal-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-feg-beni-mellal|feg-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master FEG Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-beni-mellal-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjp-beni-mellal|fsjp-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSJP Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-beni-mellal-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsa-beni-mellal|fsa-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSA Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsa-beni-mellal-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fsa-safi|fsa-safi|2026",
+      "field": "city",
+      "current": "Safi",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FSA Safi",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-fsa-safi-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-esef-berrechid|esef-berrechid|2026",
+      "field": "city",
+      "current": "Berrechid",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master ESEF Berrechid",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/Resultats-Master-ESEF-Berrechid-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fs-oujda|faculte-des-sciences-d-oujda-fs|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FS Oujda",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fs-oujda-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fsjes-sale|fsjes-sale|2026",
+      "field": "city",
+      "current": "Salé",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FSJES Salé",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FSJES-Sale-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-fsjes-sale|fsjes-sale|2026",
+      "field": "city",
+      "current": "Salé",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Définitifs Master FSJES Salé",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Definitifs-Master-FSJES-Sale-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-iss-settat|institut-des-sciences-du-sport-de-settat-iss|2026",
+      "field": "city",
+      "current": "Settat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master ISS Settat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/Resultats-Preselection-Master-ISS-Settat-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-flash-ait-melloul|flsh-ait-melloul|2026",
+      "field": "city",
+      "current": "Ait Melloul",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-flsh-rabat",
+      "title": "Présélection Master FLASH Ait Melloul",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/Resultats-Preselection-Master-FLASH-Ait-Melloul-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-ens-meknes|ecole-normale-superieure-de-meknes|2026",
+      "field": "city",
+      "current": "Meknès",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master ENS Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-ENS-Meknes-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fsjp-kelaa-sraghna|fsjp-el-kelaa-des-sraghna|2026",
+      "field": "city",
+      "current": "El Kelâa des Sraghna",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FSJP Kelaa Sraghna",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/Resultats-Preselection-Master-FSJP-Kelaa-Sraghna-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjp-nador|universite-mohammed-premier-d-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FSJP Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fsjes-meknes|fsjes-meknes|2026",
+      "field": "city",
+      "current": "Meknès",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FSJES Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FSJES-Meknes-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fs-ben-m-sik-casablanca|faculte-des-sciences-ben-m-sik-de-casablanca-fsbm|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FS Ben M'Sik Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FS-Ben-MSik-Casa-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-fs-ben-m-sik-casablanca|faculte-des-sciences-ben-m-sik-de-casablanca-fsbm|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Définitifs Master FS Ben M'Sik Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FS-Ben-MSik-Casablanca-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-flsh-meknes|flsh-meknes|2026",
+      "field": "city",
+      "current": "Meknès",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-flsh-rabat",
+      "title": "Présélection Master FLSH Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FLSH-Meknes-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-ens-fes|ecole-normale-superieure-de-fes|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master ENS Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-ens-fes-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-ens-fes|ecole-normale-superieure-de-fes|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Définitifs Master ENS Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-definitifs-master-ens-fes-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-flsh-mohammedia|flsh-mohammedia|2026",
+      "field": "city",
+      "current": "Mohammedia",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-flsh-rabat",
+      "title": "Présélection Master FLSH Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FLSH-Mohammedia-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-fst-marrakech|faculte-des-sciences-et-techniques-de-marrakech-fstg|2026",
+      "field": "city",
+      "current": "Marrakech",
+      "suggested": "Settat",
+      "evidence": "REAL_SCHOOLS ec-fst-settat",
+      "title": "Définitifs Master FST Marrakech",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/Resultats-Definitifs-Master-FST-Marrakech-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-feg-nador|universite-mohammed-premier-d-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FEG Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsa-nador|fsa-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSA Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsa-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flla-nador|universite-mohammed-premier-d-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FLLA Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flla-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-chariaa-ait-melloul|faculte-chariaa-de-fes|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master Chariaa Ait Melloul",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-chariaa-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fs-kenitra|faculte-des-sciences-de-kenitra-fs|2026",
+      "field": "city",
+      "current": "Kénitra",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FS Kénitra",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FS-Kenitra-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fsjp-kenitra|fsjp-kenitra|2026",
+      "field": "city",
+      "current": "Kénitra",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FSJP Kénitra",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-fsjp-Kenitra-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-ens-rabat|ecole-normale-superieure-de-rabat-ens|2026",
+      "field": "city",
+      "current": "Rabat",
+      "suggested": "Casablanca",
+      "evidence": "REAL_SCHOOLS ec-ens-casablanca",
+      "title": "Présélection Master ENS Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-ens-rabat-2026-2027.html"
+    },
+    {
+      "fingerprint": "masters-ouverts-au-maroc|fsjp-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Masters Ouverts au Maroc",
+      "sourceUrl": "https://www.almaster-maroc.com/2024/04/Masters-Ouverts-au-Maroc.html"
+    },
+    {
+      "fingerprint": "preselection-master-fst-al-hoceima|faculte-des-sciences-et-techniques-d-al-hoceima-fstah|2026",
+      "field": "city",
+      "current": "Al Hoceima",
+      "suggested": "Settat",
+      "evidence": "REAL_SCHOOLS ec-fst-settat",
+      "title": "Présélection Master FST Al Hoceima",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FST-Al-Hoceima-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-esef-berrechid|esef-berrechid|2026",
+      "field": "city",
+      "current": "Berrechid",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master ESEF Berrechid",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-esef-berrechid-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-ensam-rabat|ensam-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-ensam-rabat",
+      "title": "Présélection Master ENSAM Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/resultats-preselection-master-ensam-rabat-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-fst-beni-mellal|faculte-des-sciences-et-techniques-de-beni-mellal-fstbm|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Settat",
+      "evidence": "REAL_SCHOOLS ec-fst-settat",
+      "title": "Définitifs Master FST Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/Resultats-Definitifs-Master-FST-Beni-Mellal-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fst-beni-mellal|faculte-des-sciences-et-techniques-de-beni-mellal-fstbm|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Settat",
+      "evidence": "REAL_SCHOOLS ec-fst-settat",
+      "title": "Présélection Master FST Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/resultats-preselection-master-FST-Beni-Mellal-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fsjes-mohammedia|fsjes-mohammedia|2026",
+      "field": "city",
+      "current": "Mohammedia",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Présélection Master FSJES Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FSJES-Mohammedia-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-fsjes-mohammedia|fsjes-mohammedia|2026",
+      "field": "city",
+      "current": "Mohammedia",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Définitifs Master FSJES Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Definitifs-Master-FSJES-Mohammedia-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-ismac-rabat|ismac-rabat|2026",
+      "field": "city",
+      "current": "Rabat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master ISMAC Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-ISMAC-Rabat-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-isem-casablanca|isem-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master ISEM Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/resultats-preselection-master-isem-casa-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-flla-kenitra|flla-kenitra|2026",
+      "field": "city",
+      "current": "Kénitra",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master FLLA Kénitra",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FLLA-Kenitra-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-encg-fes|encg-fes|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Définitifs Master ENCG Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/resultats-definitifs-master-encg-fes-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjp-settat|fsjp-settat|2026",
+      "field": "city",
+      "current": "Settat",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSJP Settat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjp-settat-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-i3s-settat|institut-des-sciences-du-sport-i3s-settat|2026",
+      "field": "city",
+      "current": "Settat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Définitifs Master I3S Settat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/resultats-definitifs-master-isss-settat-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjes-ain-sebaa-casablanca|fsjes-ain-chock-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSJES Ain Sebaâ Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjes-ain-sebaa-casablanca-2026.html"
+    },
+    {
+      "fingerprint": "preselection-master-faculte-chariaa-fes|faculte-chariaa-de-fes|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master Faculté Chariaa Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-Chariaa-Fes-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-complexe-horticole-agadir|complexe-horticole-d-agadir-cha|2026",
+      "field": "city",
+      "current": "Agadir",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master Complexe Horticole Agadir",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-complexe-horticole-agadir-2026.html"
+    },
+    {
+      "fingerprint": "master-flsh-dhar-el-mehraz-fes|faculte-des-lettres-et-des-sciences-humaines-de-fes-dhar-el-mahraz|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master FLSH Dhar El Mehraz Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flsh-dhar-el-mehraz-fes-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjes-oujda|fsjes-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSJES Oujda",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjes-oujda-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-feg-kenitra|feg-kenitra|2026",
+      "field": "city",
+      "current": "Kénitra",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master FEG Kénitra",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FEG-Kenitra-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-fst-mohammedia|faculte-des-sciences-et-techniques-de-mohammedia-fstm|2026",
+      "field": "city",
+      "current": "Mohammedia",
+      "suggested": "Settat",
+      "evidence": "REAL_SCHOOLS ec-fst-settat",
+      "title": "Définitifs Master FST Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/Resultats-Definitifs-Master-FST-Mohammedia-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjp-errachidia|fsjp-errachidia|2026",
+      "field": "city",
+      "current": "Errachidia",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSJP Errachidia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fsjp-errachidia-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flla-errachidia|universite-moulay-ismail-de-meknes|2026",
+      "field": "city",
+      "current": "Meknès",
+      "suggested": "Errachidia",
+      "evidence": "title contient Errachidia",
+      "title": "Master FLLA Errachidia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-flla-errachidia-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flsh-mohammedia|flsh-mohammedia|2026",
+      "field": "city",
+      "current": "Mohammedia",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-flsh-rabat",
+      "title": "Master FLSH Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-flsh-mohammedia-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjp-fes|fsjp-fes|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSJP Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-fes-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-ensam-casablanca|ensam-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-ensam-rabat",
+      "title": "Présélection Master ENSAM Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/03/resultats-preselection-master-ensam-casa-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-ensam-casablanca|ensam-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-ensam-rabat",
+      "title": "Définitifs Master ENSAM Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/resultats-definitifs-master-ensam-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-ens-casablanca|ecole-normale-superieure-de-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master ENS Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-ENS-Casa-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-ensa-berrechid|universite-hassan-1er-de-settat|2026",
+      "field": "city",
+      "current": "Settat",
+      "suggested": "Berrechid",
+      "evidence": "title contient Berrechid",
+      "title": "Définitifs Master ENSA Berrechid",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-definitifs-master-ensa-Berrechid-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flla-kenitra|flla-kenitra|2026",
+      "field": "city",
+      "current": "Kénitra",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master FLLA Kénitra",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-flla-kenitra-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-universite-ibn-zohr-agadir|flsh-ait-melloul|2026",
+      "field": "city",
+      "current": "Ait Melloul",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-flsh-rabat",
+      "title": "Master Université Ibn Zohr Agadir",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/10/Master-Universite-Ibn-Zohr-Agadir.html"
+    },
+    {
+      "fingerprint": "preselection-master-esef-beni-mellal|esef-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master ESEF Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-ESEF-Beni-Mellal-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-ensa-beni-mellal|fsa-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master ENSA Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ensa-beni-mellal-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fst-mohammedia|faculte-des-sciences-et-techniques-de-mohammedia-fstm|2026",
+      "field": "city",
+      "current": "Mohammedia",
+      "suggested": "Settat",
+      "evidence": "REAL_SCHOOLS ec-fst-settat",
+      "title": "Présélection Master FST Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/resultats-preselection-master-fst-Mohammedia-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-inpt-rabat|inpt-rabat|2026",
+      "field": "city",
+      "current": "Rabat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Définitifs Master INPT Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/03/resultats-definitifs-master-inpt-rabat-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-ens-meknes|ecole-normale-superieure-de-meknes|2026",
+      "field": "city",
+      "current": "Meknès",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master ENS Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-ens-meknes-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-encg-el-jadida|encg-el-jadida|2026",
+      "field": "city",
+      "current": "El Jadida",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master ENCG El Jadida",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-encg-el-jadida-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fmd-rabat|faculte-de-medecine-dentaire-de-rabat|2026",
+      "field": "city",
+      "current": "Rabat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master FMD Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fmd-rabat-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-fst-marrakech|faculte-des-sciences-et-techniques-de-marrakech-fstg|2026",
+      "field": "city",
+      "current": "Marrakech",
+      "suggested": "Settat",
+      "evidence": "REAL_SCHOOLS ec-fst-settat",
+      "title": "Présélection Master FST Marrakech",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/Resultats-Preselection-Master-FST-Marrakech-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-i3s-settat|institut-des-sciences-du-sport-i3s-settat|2026",
+      "field": "city",
+      "current": "Settat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Présélection Master I3S Settat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-isss-Settat-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjes-mohammedia|fsjes-mohammedia|2026",
+      "field": "city",
+      "current": "Mohammedia",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSJES Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fsjes-mohammedia-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-institut-mohammed-vi-des-lectures-et-etudes-coraniques|institut-mohammed-vi-des-lectures-et-etudes-coraniques|2026",
+      "field": "city",
+      "current": "Rabat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Définitifs Master Institut Mohammed VI des Lectures et Etudes Coraniques",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/resultats-definitifs-master-institut.html"
+    },
+    {
+      "fingerprint": "master-fsjes-meknes|fsjes-meknes|2026",
+      "field": "city",
+      "current": "Meknès",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSJES Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fsjes-meknes-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-universite-chouaib-doukkali-el-jadida|ensa-el-jadida|2026",
+      "field": "city",
+      "current": "El Jadida",
+      "suggested": "Casablanca",
+      "evidence": "REAL_SCHOOLS ec-ens-casablanca",
+      "title": "Master Université Chouaib Doukkali El Jadida",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-chouaib-doukkali-el.html"
+    },
+    {
+      "fingerprint": "master-universite-moulay-ismail-meknes|fsjes-meknes|2026",
+      "field": "city",
+      "current": "Meknès",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master Université Moulay Ismail Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-moulay-ismail-meknes.html"
+    },
+    {
+      "fingerprint": "master-fshs-errachidia|fsjp-errachidia|2026",
+      "field": "city",
+      "current": "Errachidia",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSHS Errachidia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fshs-errachidia-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-universite-abdelmalek-essaadi-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master Université Abdelmalek Essaâdi Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2022/08/master-universite-abdelmalek-essaadi.html"
+    },
+    {
+      "fingerprint": "master-universite-sultan-moulay-slimane-beni-mellal|fsjp-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master Université Sultan Moulay Slimane Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-sultan-moulay-slimane.html"
+    },
+    {
+      "fingerprint": "master-universite-hassan-ii-casablanca|ensam-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-ensam-rabat",
+      "title": "Master Université Hassan II Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/06/master-universite-hassan-ii-casablanca.html"
+    },
+    {
+      "fingerprint": "master-universite-mohammed-premier-oujda|fsjes-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master Université Mohammed Premier Oujda",
+      "sourceUrl": "https://www.almaster-maroc.com/2022/07/master-universite-mohammed-premier.html"
+    },
+    {
+      "fingerprint": "master-universite-ibn-tofail-kenitra|feg-kenitra|2026",
+      "field": "city",
+      "current": "Kénitra",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master Université Ibn Tofail Kénitra",
+      "sourceUrl": "https://www.almaster-maroc.com/2024/08/Master-Universite-Ibn-Tofail-Kenitra.html"
+    },
+    {
+      "fingerprint": "master-fsjp-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FSJP Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-feg-tetouan|feg-tanger|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master FEG Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fmp-tanger|faculte-de-medecine-et-de-pharmacie-de-tanger|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master FMP Tanger",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fmp-tanger-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-faculte-ossoul-eddine-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master Faculté Ossoul Eddine Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/master-faculte-ossoul-eddine-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-encg-tanger|encg-tanger|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master ENCG Tanger",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-encg-tanger-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flsh-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FLSH Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flsh-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-ens-tetouan|ecole-normale-superieure-de-tetouan|2026",
+      "field": "city",
+      "current": "Tétouan",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master ENS Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-ens-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fs-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FS Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fs-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-feg-tanger|feg-tanger|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master FEG Tanger",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-tanger-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-fs-marrakech|faculte-des-sciences-semlalia-marrakech-fssm|2026",
+      "field": "city",
+      "current": "Marrakech",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Définitifs Master FS Marrakech",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultat-Definitif-Master-FS-Marrakech-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-ens-fes|ecole-normale-superieure-de-fes|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master ENS Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-ens-fes-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjp-kenitra|fsjp-kenitra|2026",
+      "field": "city",
+      "current": "Kénitra",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSJP Kénitra",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjp-kenitra-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flsh-meknes|flsh-meknes|2026",
+      "field": "city",
+      "current": "Meknès",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-flsh-rabat",
+      "title": "Master FLSH Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-flsh-meknes-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-ismac-rabat|ismac-rabat|2026",
+      "field": "city",
+      "current": "Rabat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master ISMAC Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ismac-rabat-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjes-ain-chock-casablanca|fsjes-ain-chock-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FSJES Ain Chock Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjes-ain-chock-casablanca-2026.html"
+    },
+    {
+      "fingerprint": "master-flsh-ain-chock-casablanca|fsjes-ain-chock-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FLSH Ain Chock Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-flsh-ain-chock-casablanca-2026.html"
+    },
+    {
+      "fingerprint": "master-ensa-el-jadida|ensa-el-jadida|2026",
+      "field": "city",
+      "current": "El Jadida",
+      "suggested": "Casablanca",
+      "evidence": "REAL_SCHOOLS ec-ens-casablanca",
+      "title": "Master ENSA El Jadida",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ensa-el-jadida-2026.html"
+    },
+    {
+      "fingerprint": "master-ensam-casablanca|ensam-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-ensam-rabat",
+      "title": "Master ENSAM Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ensam-casablanca-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-isem-casablanca|isem-casablanca|2026",
+      "field": "city",
+      "current": "Casablanca",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master ISEM Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-isem-casablanca-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fs-kenitra|faculte-des-sciences-de-kenitra-fs|2026",
+      "field": "city",
+      "current": "Kénitra",
+      "suggested": "Rabat",
+      "evidence": "REAL_SCHOOLS ec-fs-rabat",
+      "title": "Master FS Kénitra",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fs-kenitra-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-feg-settat|feg-settat|2026",
+      "field": "city",
+      "current": "Settat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master FEG Settat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-settat-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-ensiasd-taroudant|ensias-rabat|2026",
+      "field": "city",
+      "current": "Rabat",
+      "suggested": "Casablanca",
+      "evidence": "REAL_SCHOOLS ec-ens-casablanca",
+      "title": "Master ENSIASD Taroudant",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ensiasd-taroudant-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-encg-settat|encg-settat|2026",
+      "field": "city",
+      "current": "Settat",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master ENCG Settat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-encg-settat-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsjp-el-jadida|feg-el-jadida|2026",
+      "field": "city",
+      "current": "El Jadida",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master FSJP El Jadida",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjp-el-jadida-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-feg-el-jadida|feg-el-jadida|2026",
+      "field": "city",
+      "current": "El Jadida",
+      "suggested": "Marrakech",
+      "evidence": "REAL_SCHOOLS ec-ensa-marrakech",
+      "title": "Master FEG El Jadida",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-el-jadida-2026-2027.html"
+    }
+  ],
+  "note": "Corrections justifiées par preuve explicite uniquement — ne pas appliquer automatiquement sans validation humaine"
+}

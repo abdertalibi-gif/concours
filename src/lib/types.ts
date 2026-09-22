@@ -69,7 +69,8 @@ export interface School {
   levels: string[];
   founded?: string;
   students?: string;
-  isDemo: boolean;
+  isDemo?: boolean;
+
   createdAt: string;
   updatedAt: string;
 }
@@ -91,7 +92,7 @@ export interface University {
   region: string;
   website?: string;
   isActive?: boolean;
-  isDemo: boolean;
+
   createdAt: string;
   updatedAt: string;
 }
@@ -112,7 +113,7 @@ export interface Ministry {
   address?: string;
   status: 'ACTIVE' | 'INACTIVE';
   isActive?: boolean;
-  isDemo: boolean;
+
   createdAt: string;
   updatedAt: string;
 }
@@ -165,7 +166,8 @@ export interface Competition {
   publishStatus: PublishStatus;
   manualStatus?: CompetitionStatus;
   views: number;
-  isDemo: boolean;
+  isDemo?: boolean;
+
   createdAt: string;
   updatedAt: string;
 }
@@ -184,6 +186,7 @@ export interface Exam {
   type: string;
   description?: string;
   pdfUrl?: string;
+  correctionPdfUrl?: string;
   pages?: number;
   duration?: string;
   downloads: number;
@@ -191,7 +194,8 @@ export interface Exam {
   source?: string;
   verificationStatus: VerificationStatus;
   publishStatus: PublishStatus;
-  isDemo: boolean;
+  isDemo?: boolean;
+
   createdAt: string;
   updatedAt: string;
 }
@@ -222,11 +226,16 @@ export interface DocItem {
   year: number;
   description?: string;
   fileUrl?: string;
+  filePath?: string;
+  fileName?: string;
+  fileType?: string;
+  mimeType?: string;
   fileSize?: string;
   sourceUrl?: string;
   downloads: number;
   publishStatus: PublishStatus;
-  isDemo: boolean;
+  isDemo?: boolean;
+
   createdAt: string;
   updatedAt: string;
 }
@@ -261,7 +270,7 @@ export interface Course {
   difficulty: 'Débutant' | 'Intermédiaire' | 'Avancé';
   chapters: Chapter[];
   publishStatus: PublishStatus;
-  isDemo: boolean;
+
   createdAt: string;
   updatedAt: string;
 }

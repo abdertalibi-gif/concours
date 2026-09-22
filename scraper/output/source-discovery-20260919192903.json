@@ -1,0 +1,1938 @@
+{
+  "generatedAt": "2026-09-19T19:29:03.526Z",
+  "total": 21,
+  "sources": [
+    {
+      "sourceId": "univ-um5",
+      "name": "Université Mohammed V de Rabat",
+      "organization": "Université Mohammed V de Rabat",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "https://www.um5.ac.ma",
+      "officialDomain": "um5.ac.ma",
+      "discoveryUrl": "https://www.um5.ac.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.um5.ac.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.um5.ac.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.um5.ac.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.um5.ac.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.um5.ac.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.um5.ac.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.um5.ac.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.um5.ac.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "Portail officiel UM5 — annonces concours masters / résultats facultés (FSR, FSJES Agdal/Souissi, ENS, FMP)."
+    },
+    {
+      "sourceId": "univ-uh2c",
+      "name": "Université Hassan II de Casablanca",
+      "organization": "Université Hassan II de Casablanca",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "http://www.univh2c.ma",
+      "officialDomain": "univh2c.ma",
+      "discoveryUrl": "http://www.univh2c.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "http://www.univh2c.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "http://www.univh2c.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "http://www.univh2c.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "http://www.univh2c.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "http://www.univh2c.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "http://www.univh2c.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "http://www.univh2c.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "http://www.univh2c.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "UH2C — ENCG Casa, ENSAM, ENSET Mohammedia, FST Mohammedia, FS Ben M'Sik/Ain Chock."
+    },
+    {
+      "sourceId": "univ-uca",
+      "name": "Université Cadi Ayyad de Marrakech",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "https://www.uca.ma",
+      "officialDomain": "uca.ma",
+      "discoveryUrl": "https://www.uca.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.uca.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.uca.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.uca.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.uca.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.uca.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.uca.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.uca.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.uca.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "UCA — ENSA Marrakech/Safi, ENCG Marrakech, FST Marrakech, EST Safi/Essaouira."
+    },
+    {
+      "sourceId": "univ-usmba",
+      "name": "Université Sidi Mohamed Ben Abdellah de Fès",
+      "organization": "Université Sidi Mohamed Ben Abdellah de Fès",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "http://www.usmba.ac.ma",
+      "officialDomain": "usmba.ac.ma",
+      "discoveryUrl": "http://www.usmba.ac.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "http://www.usmba.ac.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "http://www.usmba.ac.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "http://www.usmba.ac.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "http://www.usmba.ac.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "http://www.usmba.ac.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "http://www.usmba.ac.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "http://www.usmba.ac.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "http://www.usmba.ac.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "USMBA — ENSA Fès, ENCG Fès, FST Fès, ENS Fès."
+    },
+    {
+      "sourceId": "univ-uae",
+      "name": "Université Abdelmalek Essaâdi",
+      "organization": "Université Abdelmalek Essaâdi",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "https://www.uae.ac.ma",
+      "officialDomain": "uae.ac.ma",
+      "discoveryUrl": "https://www.uae.ac.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.uae.ac.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.uae.ac.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.uae.ac.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.uae.ac.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.uae.ac.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.uae.ac.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.uae.ac.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.uae.ac.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "UAE — ENSA Tanger/Hoceima, ENCG Tanger, FST Tanger, ENS Tétouan."
+    },
+    {
+      "sourceId": "univ-ump",
+      "name": "Université Mohammed Premier d'Oujda",
+      "organization": "Université Mohammed Premier d'Oujda",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "https://www.ump.ma",
+      "officialDomain": "ump.ma",
+      "discoveryUrl": "https://www.ump.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.ump.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.ump.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.ump.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.ump.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.ump.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.ump.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.ump.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.ump.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "UMP — ENSA Oujda, ENCG Oujda, EST Oujda, FMP Oujda."
+    },
+    {
+      "sourceId": "univ-uiz",
+      "name": "Université Ibn Zohr d'Agadir",
+      "organization": "Université Ibn Zohr d'Agadir",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "https://www.uiz.ac.ma",
+      "officialDomain": "uiz.ac.ma",
+      "discoveryUrl": "https://www.uiz.ac.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.uiz.ac.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.uiz.ac.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.uiz.ac.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.uiz.ac.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.uiz.ac.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.uiz.ac.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.uiz.ac.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.uiz.ac.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "UIZ — ENSA Agadir, ENCG Agadir/Dakhla, EST Agadir/Guelmim."
+    },
+    {
+      "sourceId": "univ-uit",
+      "name": "Université Ibn Tofail de Kénitra",
+      "organization": "Université Ibn Tofail de Kénitra",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "https://uit.ac.ma",
+      "officialDomain": "uit.ac.ma",
+      "discoveryUrl": "https://uit.ac.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://uit.ac.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://uit.ac.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://uit.ac.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://uit.ac.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://uit.ac.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://uit.ac.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://uit.ac.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://uit.ac.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "UIT — ENSA Kénitra, ENCG Kénitra, EST Kénitra, FLSH Kénitra."
+    },
+    {
+      "sourceId": "univ-umi",
+      "name": "Université Moulay Ismaïl de Meknès",
+      "organization": "Université Moulay Ismaïl de Meknès",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "http://www.umi.ac.ma",
+      "officialDomain": "umi.ac.ma",
+      "discoveryUrl": "http://www.umi.ac.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "http://www.umi.ac.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "http://www.umi.ac.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "http://www.umi.ac.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "http://www.umi.ac.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "http://www.umi.ac.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "http://www.umi.ac.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "http://www.umi.ac.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "http://www.umi.ac.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "UMI — ENSAM Meknès, ENCG Meknès, FST Errachidia, EST Meknès."
+    },
+    {
+      "sourceId": "univ-ucd",
+      "name": "Université Chouaib Doukkali d'El Jadida",
+      "organization": "Université Chouaib Doukkali d'El Jadida",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "https://www.ucd.ac.ma",
+      "officialDomain": "ucd.ac.ma",
+      "discoveryUrl": "https://www.ucd.ac.ma",
+      "official": true,
+      "active": true,
+      "priority": "medium",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.ucd.ac.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.ucd.ac.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.ucd.ac.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.ucd.ac.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.ucd.ac.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.ucd.ac.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.ucd.ac.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.ucd.ac.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "UCD — ENSA El Jadida, ENCG El Jadida, FS El Jadida."
+    },
+    {
+      "sourceId": "univ-uh1",
+      "name": "Université Hassan 1er de Settat",
+      "organization": "Université Hassan 1er de Settat",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "https://www.uh1.ac.ma",
+      "officialDomain": "uh1.ac.ma",
+      "discoveryUrl": "https://www.uh1.ac.ma",
+      "official": true,
+      "active": true,
+      "priority": "medium",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.uh1.ac.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.uh1.ac.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.uh1.ac.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.uh1.ac.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.uh1.ac.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.uh1.ac.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.uh1.ac.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.uh1.ac.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "UH1 — ENCG Settat, FST Settat, ENSA Berrechid, EST Berrechid."
+    },
+    {
+      "sourceId": "univ-usms",
+      "name": "Université Sultan Moulay Slimane de Béni Mellal",
+      "organization": "Université Sultan Moulay Slimane de Béni Mellal",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "https://www.usms.ac.ma",
+      "officialDomain": "usms.ac.ma",
+      "discoveryUrl": "https://www.usms.ac.ma",
+      "official": true,
+      "active": true,
+      "priority": "medium",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.usms.ac.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.usms.ac.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.usms.ac.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.usms.ac.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.usms.ac.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.usms.ac.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.usms.ac.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.usms.ac.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "USMS — ENSA Khouribga/Béni Mellal, ENCG Béni Mellal, FST Béni Mellal."
+    },
+    {
+      "sourceId": "univ-um6p",
+      "name": "Université Mohammed VI Polytechnique",
+      "organization": "Université Mohammed VI Polytechnique",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "https://www.um6p.ma",
+      "officialDomain": "um6p.ma",
+      "discoveryUrl": "https://www.um6p.ma",
+      "official": true,
+      "active": true,
+      "priority": "medium",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": true,
+        "stable": true,
+        "requiresJS": true,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": true
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.um6p.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.um6p.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.um6p.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.um6p.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.um6p.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.um6p.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.um6p.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.um6p.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "AUTO",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "AUTO",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "UM6P — Benguerir/Rabat, portail candidature structuré, places annoncées."
+    },
+    {
+      "sourceId": "univ-aui",
+      "name": "Al Akhawayn University in Ifrane",
+      "organization": "Al Akhawayn University in Ifrane",
+      "entityTypes": [
+        "MASTER",
+        "COMPETITION"
+      ],
+      "baseUrl": "http://www.aui.ma",
+      "officialDomain": "aui.ma",
+      "discoveryUrl": "http://www.aui.ma",
+      "official": true,
+      "active": true,
+      "priority": "low",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": true,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "http://www.aui.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "http://www.aui.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "http://www.aui.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "http://www.aui.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "http://www.aui.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "http://www.aui.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "http://www.aui.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "http://www.aui.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "AUTO",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "REVIEW",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "AUI — Ifrane, enseignement anglophone, site officiel."
+    },
+    {
+      "sourceId": "min-education",
+      "name": "Ministère de l'Éducation Nationale",
+      "organization": "Ministère de l'Éducation Nationale",
+      "entityTypes": [
+        "COMPETITION",
+        "DOCUMENT"
+      ],
+      "baseUrl": "https://www.men.gov.ma",
+      "officialDomain": "men.gov.ma",
+      "discoveryUrl": "https://www.men.gov.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": false,
+        "hasPlaces": true
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.men.gov.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.men.gov.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.men.gov.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.men.gov.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.men.gov.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.men.gov.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.men.gov.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.men.gov.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": null,
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": "DocForm → documents"
+      },
+      "capacity": {
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "AUTO",
+        "COMPETITION.conditions": "MISSING",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "MENPS — concours enseignement, agrégation."
+    },
+    {
+      "sourceId": "min-sup",
+      "name": "Ministère de l'Enseignement Supérieur",
+      "organization": "Ministère de l'Enseignement Supérieur",
+      "entityTypes": [
+        "COMPETITION",
+        "DOCUMENT",
+        "MASTER"
+      ],
+      "baseUrl": "https://www.enssup.gov.ma",
+      "officialDomain": "enssup.gov.ma",
+      "discoveryUrl": "https://www.enssup.gov.ma",
+      "official": true,
+      "active": true,
+      "priority": "high",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": false,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.enssup.gov.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.enssup.gov.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.enssup.gov.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.enssup.gov.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.enssup.gov.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.enssup.gov.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.enssup.gov.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.enssup.gov.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": "DocForm → documents"
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "AUTO",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "MISSING",
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "REVIEW",
+        "COMPETITION.conditions": "MISSING",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "MESRSI — tutelle universités, circulaires masters."
+    },
+    {
+      "sourceId": "min-interieur",
+      "name": "Ministère de l'Intérieur",
+      "organization": "Ministère de l'Intérieur",
+      "entityTypes": [
+        "COMPETITION",
+        "DOCUMENT"
+      ],
+      "baseUrl": "https://www.interieur.gov.ma",
+      "officialDomain": "interieur.gov.ma",
+      "discoveryUrl": "https://www.interieur.gov.ma",
+      "official": true,
+      "active": true,
+      "priority": "medium",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": false,
+        "hasPlaces": true
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.interieur.gov.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.interieur.gov.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.interieur.gov.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.interieur.gov.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.interieur.gov.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.interieur.gov.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.interieur.gov.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.interieur.gov.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": null,
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": "DocForm → documents"
+      },
+      "capacity": {
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "AUTO",
+        "COMPETITION.conditions": "MISSING",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "Collectivités territoriales."
+    },
+    {
+      "sourceId": "min-sante",
+      "name": "Ministère de la Santé",
+      "organization": "Ministère de la Santé",
+      "entityTypes": [
+        "COMPETITION",
+        "DOCUMENT"
+      ],
+      "baseUrl": "https://www.sante.gov.ma",
+      "officialDomain": "sante.gov.ma",
+      "discoveryUrl": "https://www.sante.gov.ma",
+      "official": true,
+      "active": true,
+      "priority": "medium",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": false,
+        "hasPlaces": true
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.sante.gov.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.sante.gov.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.sante.gov.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.sante.gov.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.sante.gov.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.sante.gov.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.sante.gov.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.sante.gov.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": null,
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": "DocForm → documents"
+      },
+      "capacity": {
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "AUTO",
+        "COMPETITION.conditions": "MISSING",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "ISPITS, CHU."
+    },
+    {
+      "sourceId": "min-finances",
+      "name": "Ministère de l'Économie et des Finances",
+      "organization": "Ministère de l'Économie et des Finances",
+      "entityTypes": [
+        "COMPETITION",
+        "DOCUMENT"
+      ],
+      "baseUrl": "https://www.finances.gov.ma",
+      "officialDomain": "finances.gov.ma",
+      "discoveryUrl": "https://www.finances.gov.ma",
+      "official": true,
+      "active": true,
+      "priority": "medium",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": false,
+        "hasPlaces": true
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.finances.gov.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.finances.gov.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.finances.gov.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.finances.gov.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.finances.gov.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.finances.gov.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.finances.gov.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.finances.gov.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": null,
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": "DocForm → documents"
+      },
+      "capacity": {
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "AUTO",
+        "COMPETITION.conditions": "MISSING",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "DGI, Douanes."
+    },
+    {
+      "sourceId": "min-justice",
+      "name": "Ministère de la Justice",
+      "organization": "Ministère de la Justice",
+      "entityTypes": [
+        "COMPETITION",
+        "DOCUMENT"
+      ],
+      "baseUrl": "https://www.justice.gov.ma",
+      "officialDomain": "justice.gov.ma",
+      "discoveryUrl": "https://www.justice.gov.ma",
+      "official": true,
+      "active": true,
+      "priority": "medium",
+      "supportedFormats": [
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": true,
+        "structured": false,
+        "stable": true,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": false,
+        "hasPlaces": true
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.justice.gov.ma/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.justice.gov.ma/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.justice.gov.ma/feed",
+          "ok": false,
+          "note": "RSS/Atom à vérifier manuellement"
+        },
+        "api": {
+          "url": "https://www.justice.gov.ma/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.justice.gov.ma",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.justice.gov.ma/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.justice.gov.ma/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.justice.gov.ma/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "HTML pagination à vérifier",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": null,
+        "COMPETITION": "ConcoursForm → competitions",
+        "EXAM": null,
+        "DOCUMENT": "DocForm → documents"
+      },
+      "capacity": {
+        "COMPETITION.title": "AUTO",
+        "COMPETITION.places": "AUTO",
+        "COMPETITION.conditions": "MISSING",
+        "COMPETITION.deadlineDate": "AUTO"
+      },
+      "notes": "Greffe, magistrature."
+    },
+    {
+      "sourceId": "almaster",
+      "name": "Almaster Maroc (agrégateur)",
+      "organization": "Almaster Maroc",
+      "entityTypes": [
+        "MASTER"
+      ],
+      "baseUrl": "https://www.almaster-maroc.com",
+      "officialDomain": "almaster-maroc.com",
+      "discoveryUrl": "https://www.almaster-maroc.com/feeds/posts/default?alt=json",
+      "official": false,
+      "active": true,
+      "priority": "low",
+      "supportedFormats": [
+        "JSON",
+        "HTML",
+        "PDF"
+      ],
+      "quality": {
+        "official": false,
+        "structured": true,
+        "stable": false,
+        "requiresJS": false,
+        "hasPDF": true,
+        "hasDates": true,
+        "hasConditions": false,
+        "hasPlaces": false
+      },
+      "discovery": {
+        "robots": {
+          "url": "https://www.almaster-maroc.com/robots.txt",
+          "ok": false,
+          "note": "à vérifier manuellement (respect robots.txt)"
+        },
+        "sitemap": {
+          "url": "https://www.almaster-maroc.com/sitemap.xml",
+          "ok": false,
+          "note": "à vérifier — sitemap non détecté automatiquement"
+        },
+        "rssAtom": {
+          "url": "https://www.almaster-maroc.com/feeds/posts/default?alt=json",
+          "ok": true,
+          "contentType": "application/json",
+          "note": "Feed JSON Blogger vérifié en Phase 1"
+        },
+        "api": {
+          "url": "https://www.almaster-maroc.com/api",
+          "ok": false,
+          "note": "API publique non documentée"
+        },
+        "pages": {
+          "annonces": {
+            "url": "https://www.almaster-maroc.com",
+            "ok": true,
+            "note": "Portail officiel — HTML annonces"
+          },
+          "concours": {
+            "url": "https://www.almaster-maroc.com/concours",
+            "ok": false,
+            "note": "À vérifier manuellement"
+          },
+          "masters": {
+            "url": "https://www.almaster-maroc.com/masters",
+            "ok": false
+          },
+          "resultats": {
+            "url": "https://www.almaster-maroc.com/resultats",
+            "ok": false
+          }
+        },
+        "pagination": "JSON feed max-results",
+        "archives": "À vérifier"
+      },
+      "mapping": {
+        "MASTER": "MasterForm → masters",
+        "COMPETITION": null,
+        "EXAM": null,
+        "DOCUMENT": null
+      },
+      "capacity": {
+        "MASTER.title": "AUTO",
+        "MASTER.university": "REVIEW",
+        "MASTER.city": "AUTO",
+        "MASTER.domain": "REVIEW",
+        "MASTER.deadlineDate": "AUTO",
+        "MASTER.officialUrl": "AUTO (PDF)",
+        "MASTER.places": "MISSING",
+        "MASTER.conditions": "MISSING"
+      },
+      "notes": "Agrégateur non officiel — JSON feed Blogger (150 annonces), HTML, PDF. Ne pas considérer comme source officielle."
+    }
+  ]
+}

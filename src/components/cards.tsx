@@ -10,7 +10,7 @@ import { cn } from '../utils/cn';
 import type { Competition, Course, DocItem, Exam, School } from '../lib/types';
 import { courseLessonsCount, followersCount, isFavorite, isFollowing, toggleFavorite, toggleFollow, resolveOrgLogo } from '../lib/db';
 import { useAuth } from '../lib/auth';
-import { CardCTA, Chip, DemoBadge, OrgAvatar, StatusBadge, VerifiedBadge } from './ui';
+import { CardCTA, Chip, OrgAvatar, StatusBadge, VerifiedBadge } from './ui';
 import { formatDateFR, formatNumber, remainingLabel, statusFromCompetition } from '../lib/utils';
 
 /** Base partagée — NE PAS modifier par carte */
@@ -53,7 +53,6 @@ export function CompetitionCard({ c }: { c: Competition }) {
           {isMaster ? 'Master Universitaire' : c.category === 'MINISTERE' ? 'Concours' : c.category === 'ECOLE' ? 'École' : c.category === 'UNIVERSITE' ? 'Université' : 'Concours'}
         </Chip>
         {c.verificationStatus === 'VERIFIED' && <VerifiedBadge at={c.verifiedAt} compact />}
-        {c.isDemo && <DemoBadge />}
       </div>
 
       <div className="mt-3 space-y-1.5">
@@ -83,7 +82,6 @@ export function SchoolCard({ s, stats }: { s: School; stats?: { concours: number
         <div className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-2">
             <h3 className="truncate text-[13px] font-extrabold text-[#0B2A4A]">{s.shortName}</h3>
-            {s.isDemo && <DemoBadge />}
           </div>
           <p className="mt-0.5 line-clamp-2 text-[13px] leading-snug text-slate-600">{s.type}</p>
         </div>
@@ -138,7 +136,6 @@ export function ExamCard({ e }: { e: Exam }) {
         <Chip tone="blue">{e.subject}</Chip>
         <Chip tone="orange">{e.level}</Chip>
         {e.verificationStatus === 'VERIFIED' && <VerifiedBadge compact />}
-        {e.isDemo && <DemoBadge />}
       </div>
       <div className="mt-3 space-y-1.5">
         <p className={INFO_ROW}><Download className={INFO_ICON} />{formatNumber(e.downloads)} téléchargements{e.hasCorrection ? ' • Corrigé inclus' : ''}</p>
@@ -146,26 +143,13 @@ export function ExamCard({ e }: { e: Exam }) {
           <p className={INFO_ROW}><FileText className={INFO_ICON} />{[e.pages ? `${e.pages} pages` : '', e.duration ?? ''].filter(Boolean).join(' • ')}</p>
         )}
       </div>
-      <div className={cn(CARD_FOOTER, 'grid grid-cols-2 gap-2')}>
-        <CardCTA to={`/examens/${e.slug}`}><span className="mx-auto flex items-center gap-1.5"><Eye className="h-3.5 w-3.5" /> Voir</span></CardCTA>
-        <button onClick={() => downloadDemo(e.title)} className="inline-flex h-9 items-center justify-center gap-1.5 rounded-lg text-[13px] font-bold text-[#0B2A4A] ring-1 ring-inset ring-slate-200 transition-colors hover:bg-slate-50">
-          <Download className="h-3.5 w-3.5" /> PDF
-        </button>
+      <div className={cn(CARD_FOOTER, 'flex')}>
+        <Link to={`/examens/${e.slug}`} className="flex-1 inline-flex h-9 items-center justify-center gap-1.5 rounded-lg bg-[#0B63CE] text-[13px] font-bold text-white transition-colors hover:bg-[#0956B4]">
+          <Eye className="h-3.5 w-3.5" /> Voir le sujet
+        </Link>
       </div>
     </article>
   );
-}
-
-/** Téléchargement de démonstration : génère un fichier texte structuré. */
-export function downloadDemo(title: string) {
-  const content = `CONCOURS MAROC — Document de démonstration\n==========================================\n\nTitre : ${title}\n\nCeci est un fichier de démonstration généré par la plateforme.\nEn production, les PDF officiels seraient stockés via un service\nde stockage (S3 / Vercel Blob) et servis ici.\n\nConsultez toujours les sites officiels des organismes.\n`;
-  const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').slice(0, 50) + '-demo.txt';
-  a.click();
-  URL.revokeObjectURL(url);
 }
 
 // ---------------- Document (même base + même footer) ----------------
@@ -192,7 +176,6 @@ export function DocumentCard({ d }: { d: DocItem }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-2">
             <p className="truncate text-[13px] font-extrabold text-[#0B2A4A]">{d.category}</p>
-            {d.isDemo && <DemoBadge />}
           </div>
           <p className="mt-0.5 line-clamp-2 text-[13px] leading-snug text-slate-600">{d.title}</p>
         </div>
@@ -206,13 +189,10 @@ export function DocumentCard({ d }: { d: DocItem }) {
         <p className={INFO_ROW}><BookOpen className={INFO_ICON} /><span className="truncate">{d.organizationName}</span></p>
         <p className={INFO_ROW}><Download className={INFO_ICON} />{formatNumber(d.downloads)} téléchargements</p>
       </div>
-      <div className={cn(CARD_FOOTER, 'grid grid-cols-2 gap-2')}>
-        <button onClick={() => downloadDemo(d.title)} className="inline-flex h-9 items-center justify-center gap-1.5 rounded-lg bg-[#0B63CE] text-[13px] font-bold text-white transition-colors hover:bg-[#0956B4]">
+      <div className={cn(CARD_FOOTER, 'flex')}>
+        <Link to={`/documents/viewer/${d.slug}`} className="flex-1 inline-flex h-9 items-center justify-center gap-1.5 rounded-lg bg-[#0B63CE] text-[13px] font-bold text-white transition-colors hover:bg-[#0956B4]">
           <Eye className="h-3.5 w-3.5" /> Voir
-        </button>
-        <button onClick={() => downloadDemo(d.title)} className="inline-flex h-9 items-center justify-center gap-1.5 rounded-lg text-[13px] font-bold text-[#0B2A4A] ring-1 ring-inset ring-slate-200 transition-colors hover:bg-slate-50">
-          <Download className="h-3.5 w-3.5" /> Télécharger
-        </button>
+        </Link>
       </div>
     </article>
   );
@@ -225,7 +205,6 @@ export function CourseCard({ c, progress }: { c: Course; progress?: number }) {
     <article className={cn(CARD_BASE, 'overflow-hidden !p-0')}>
       <div className="relative flex h-24 items-center justify-center" style={{ background: `linear-gradient(135deg, ${c.color}, ${c.color}99)` }}>
         <BookOpen className="h-9 w-9 text-white/90" />
-        {c.isDemo && <span className="absolute right-3 top-3"><DemoBadge /></span>}
         <span className="absolute left-3 top-3 rounded-md bg-black/25 px-2 py-0.5 text-[11px] font-bold text-white backdrop-blur">{c.subject}</span>
       </div>
       <div className="flex flex-1 flex-col p-4">

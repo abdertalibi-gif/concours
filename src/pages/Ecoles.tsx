@@ -290,10 +290,20 @@ export function EcolesList() {
         {/* SECTION 1: ÉCOLES & INSTITUTS */}
         {currentTab === 'ecoles' && (
           <div>
+            {selectedUniversityId && (
+              <div className="mb-6 flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4">
+                <h2 className="text-xl font-black text-[#0B2A4A]">
+                  Établissements de {getUniversityById(selectedUniversityId)?.name || 'l\'Université'}
+                </h2>
+                <span className="rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-[#0B63CE]">
+                  {schoolsResult.total} établissements trouvés
+                </span>
+              </div>
+            )}
             {schoolsResult.items.length === 0 ? (
               <EmptyState
                 icon={<GraduationCap className="h-6 w-6" />}
-                title="Aucun établissement trouvé"
+                title={selectedUniversityId ? "Aucun établissement trouvé pour cette université." : "Aucun établissement trouvé"}
                 message="Essayez d'ajuster les filtres de ministère, d'université ou de ville."
               />
             ) : (
@@ -471,8 +481,12 @@ export function EcolesList() {
                         )}
                         <button
                           onClick={() => {
-                            setTab('ecoles');
-                            setFilter('universite', u.id);
+                            const next = new URLSearchParams(params);
+                            next.delete('section');
+                            next.set('universite', u.id);
+                            next.delete('page');
+                            setParams(next);
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
                           }}
                           className="flex-1 inline-flex h-9 items-center justify-center gap-1.5 rounded-xl bg-[#0B63CE] px-3 text-xs font-bold text-white hover:bg-[#0956B4]"
                         >

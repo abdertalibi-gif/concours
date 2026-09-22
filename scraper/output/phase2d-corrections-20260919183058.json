@@ -1,0 +1,134 @@
+{
+  "generatedAt": "2026-09-19T18:30:58.521Z",
+  "sourceFile": "C:\\Users\\Abde\\Downloads\\concours (9)\\scraper\\output\\concours-almaster-20260919182148.json",
+  "count": 14,
+  "corrections": [
+    {
+      "fingerprint": "master-fsjp-nador|universite-mohammed-premier-d-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FSJP Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-feg-nador|universite-mohammed-premier-d-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FEG Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsa-nador|fsa-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FSA Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsa-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flla-nador|universite-mohammed-premier-d-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FLLA Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flla-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-chariaa-ait-melloul|faculte-chariaa-de-fes|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Ait Melloul",
+      "evidence": "title contient Ait Melloul",
+      "title": "Présélection Master Chariaa Ait Melloul",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-chariaa-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flla-errachidia|universite-moulay-ismail-de-meknes|2026",
+      "field": "city",
+      "current": "Meknès",
+      "suggested": "Errachidia",
+      "evidence": "title contient Errachidia",
+      "title": "Master FLLA Errachidia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-flla-errachidia-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-ensa-berrechid|universite-hassan-1er-de-settat|2026",
+      "field": "city",
+      "current": "Settat",
+      "suggested": "Berrechid",
+      "evidence": "title contient Berrechid",
+      "title": "Définitifs Master ENSA Berrechid",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-definitifs-master-ensa-Berrechid-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-universite-ibn-zohr-agadir|flsh-ait-melloul|2026",
+      "field": "city",
+      "current": "Ait Melloul",
+      "suggested": "Agadir",
+      "evidence": "title contient Agadir",
+      "title": "Master Université Ibn Zohr Agadir",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/10/Master-Universite-Ibn-Zohr-Agadir.html"
+    },
+    {
+      "fingerprint": "master-universite-abdelmalek-essaadi-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master Université Abdelmalek Essaâdi Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2022/08/master-universite-abdelmalek-essaadi.html"
+    },
+    {
+      "fingerprint": "master-fsjp-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FSJP Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-feg-tetouan|feg-tanger|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FEG Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-faculte-ossoul-eddine-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master Faculté Ossoul Eddine Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/master-faculte-ossoul-eddine-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flsh-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FLSH Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flsh-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fs-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FS Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fs-tetouan-2026-2027.html"
+    }
+  ],
+  "note": "Corrections justifiées par preuve explicite uniquement — ne pas appliquer automatiquement sans validation humaine"
+}

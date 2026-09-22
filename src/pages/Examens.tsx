@@ -5,12 +5,11 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ArrowLeft, CalendarDays, ChevronRight, Clock, Download, Eye, FileText, Heart } from 'lucide-react';
 import { useAuth } from '../lib/auth';
-import type { Exam } from '../lib/types';
-import { adminUpdate, getExamBySlug, isFavorite, loadDB, queryExams, toggleFavorite } from '../lib/db';
+import { getExamBySlug, isFavorite, loadDB, queryExams, toggleFavorite } from '../lib/db';
 import { LEVELS, SUBJECTS, formatNumber } from '../lib/utils';
-import { downloadDemo, ExamCard } from '../components/cards';
+import { ExamCard } from '../components/cards';
 import { Container, InfoBar, PageHero } from '../components/layout';
-import { Button, Chip, DemoBadge, EmptyState, FilterPanel, FilterSelect, Pagination, SearchInput, VerifiedBadge } from '../components/ui';
+import { Chip, EmptyState, FilterPanel, FilterSelect, LinkButton, Pagination, SearchInput, VerifiedBadge } from '../components/ui';
 import { cn } from '../utils/cn';
 
 // ==================== LISTE ====================
@@ -107,10 +106,7 @@ export function ExamenDetail() {
   const fav = user ? isFavorite(user.id, 'EXAMEN', e.id) : false;
   const related = loadDB().exams.filter((x) => x.id !== e.id && x.publishStatus === 'PUBLISHED' && (x.schoolId === e.schoolId || x.subject === e.subject)).slice(0, 4);
 
-  const download = () => {
-    adminUpdate<Exam>('exams', e.id, { downloads: e.downloads + 1 });
-    downloadDemo(e.title);
-  };
+  const viewerUrl = `/examens/viewer/${e.slug}`;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
@@ -129,7 +125,7 @@ export function ExamenDetail() {
               </span>
               <div className="flex items-center gap-2">
                 {e.verificationStatus === 'VERIFIED' && <VerifiedBadge />}
-                {e.isDemo && <DemoBadge />}
+
               </div>
             </div>
             <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-[#0B2A4A] sm:text-3xl">{e.title}</h1>
@@ -147,8 +143,7 @@ export function ExamenDetail() {
             {e.description && <p className="mt-4 rounded-xl bg-slate-50 p-4 text-[15px] leading-relaxed text-slate-600 ring-1 ring-inset ring-slate-100">{e.description}</p>}
 
             <div className="mt-5 flex flex-wrap gap-2.5">
-              <Button onClick={download}><Eye className="h-4 w-4" /> Voir le PDF</Button>
-              <Button variant="dark" onClick={download}><Download className="h-4 w-4" /> Télécharger</Button>
+              <LinkButton to={viewerUrl}><Eye className="h-4 w-4" /> Consulter le sujet</LinkButton>
               <button onClick={() => { if (!user) return nav('/connexion'); toggleFavorite(user.id, 'EXAMEN', e.id); }}
                 className={cn('inline-flex h-10 items-center gap-2 rounded-xl px-4 text-sm font-bold ring-1 ring-inset', fav ? 'bg-red-50 text-red-600 ring-red-200' : 'bg-white text-[#0B2A4A] ring-slate-200 hover:bg-slate-50')}>
                 <Heart className={cn('h-4 w-4', fav && 'fill-current')} />{fav ? 'Sauvegardé' : 'Ajouter aux favoris'}
@@ -161,17 +156,16 @@ export function ExamenDetail() {
             <h2 className="text-lg font-extrabold text-[#0B2A4A]">Aperçu du sujet</h2>
             <div className="mt-4 rounded-2xl border border-slate-200 bg-slate-50/60 p-6 sm:p-10">
               <div className="mx-auto max-w-xl rounded-xl bg-white p-8 shadow-md ring-1 ring-slate-200">
-                <p className="text-center text-xs font-bold uppercase tracking-widest text-slate-400">{e.schoolName} — {e.year} (DÉMO)</p>
+                <p className="text-center text-xs font-bold uppercase tracking-widest text-slate-400">{e.schoolName} — {e.year}</p>
                 <p className="mt-2 text-center text-lg font-extrabold text-[#0B2A4A]">{e.title}</p>
                 <p className="mt-1 text-center text-sm text-slate-500">Épreuve de {e.subject} — Durée : {e.duration ?? '2h'}</p>
                 <div className="mt-6 space-y-3">
-                  <div className="rounded-lg bg-slate-100 p-3 text-sm text-slate-500"><strong className="text-slate-700">Exercice 1.</strong> Énoncé de démonstration : montrez que… (le PDF complet serait affiché ici en production).</div>
-                  <div className="rounded-lg bg-slate-100 p-3 text-sm text-slate-500"><strong className="text-slate-700">Exercice 2.</strong> Énoncé de démonstration : calculez…</div>
-                  <div className="rounded-lg bg-slate-100 p-3 text-sm text-slate-500"><strong className="text-slate-700">Exercice 3.</strong> QCM de démonstration (10 questions).</div>
+                  <div className="rounded-lg bg-slate-100 p-3 text-sm text-slate-500"><strong className="text-slate-700">Partie 1.</strong> Questions et exercices d'évaluation.</div>
+                  <div className="rounded-lg bg-slate-100 p-3 text-sm text-slate-500"><strong className="text-slate-700">Partie 2.</strong> Problème d'application et analyse.</div>
                 </div>
-                <button onClick={download} className="mt-6 flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-[#0B63CE] text-sm font-bold text-white hover:bg-[#0956B4]">
-                  <Download className="h-4 w-4" /> Télécharger le sujet complet (PDF)
-                </button>
+                <Link to={viewerUrl} className="mt-6 flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-[#0B63CE] text-sm font-bold text-white hover:bg-[#0956B4]">
+                  <Eye className="h-4 w-4" /> Voir le sujet en lecteur intégré
+                </Link>
               </div>
             </div>
           </div>

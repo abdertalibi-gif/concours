@@ -12,7 +12,7 @@ interface AutoOrganismeFieldProps {
   description?: string;
   sourceUrl?: string;
   selectedId?: string;
-  onChange: (org: { organismeId?: string; schoolId?: string; ministryId?: string; organizationName: string; organizationType: string; logoUrl?: string }) => void;
+  onChange: (org: { organismeId?: string; schoolId?: string; ministryId?: string; universityId?: string; organizationName: string; organizationType: string; logoUrl?: string }) => void;
 }
 
 export function AutoOrganismeField({ title, description, sourceUrl, selectedId, onChange }: AutoOrganismeFieldProps) {
@@ -31,9 +31,9 @@ export function AutoOrganismeField({ title, description, sourceUrl, selectedId, 
   }, [selectedId, title, description, sourceUrl]);
 
   const allOrgs = useMemo(() => {
-    const list: Array<{ id: string; name: string; type: string; category: string; logoUrl?: string; ministryId?: string }> = [];
+    const list: Array<{ id: string; name: string; type: string; category: string; logoUrl?: string; ministryId?: string; universityId?: string }> = [];
     (db.schools || []).forEach((s: { id: string; name: string; logoUrl?: string; ministryId?: string }) => list.push({ id: s.id, name: s.name, type: 'École / Établissement', category: 'ECOLE', logoUrl: s.logoUrl, ministryId: s.ministryId }));
-    (db.universities || []).forEach((u: { id: string; name: string; logoUrl?: string; ministryId?: string }) => list.push({ id: u.id, name: u.name, type: 'Université', category: 'ECOLE', logoUrl: u.logoUrl, ministryId: u.ministryId }));
+    (db.universities || []).forEach((u: { id: string; name: string; logoUrl?: string; ministryId?: string }) => list.push({ id: u.id, name: u.name, type: 'Université', category: 'UNIVERSITE', logoUrl: u.logoUrl, ministryId: u.ministryId, universityId: u.id }));
     (db.ministries || []).forEach((m: { id: string; name: string; logoUrl?: string }) => list.push({ id: m.id, name: m.name, type: 'Ministère', category: 'MINISTERE', logoUrl: m.logoUrl }));
     return list;
   }, [db]);
@@ -48,9 +48,10 @@ export function AutoOrganismeField({ title, description, sourceUrl, selectedId, 
     onChange({
       organismeId: org.id,
       schoolId: org.category === 'ECOLE' ? org.id : undefined,
+      universityId: org.category === 'UNIVERSITE' ? org.id : undefined,
       ministryId: org.category === 'MINISTERE' ? org.id : org.ministryId,
       organizationName: org.name,
-      organizationType: org.category === 'MINISTERE' ? 'MINISTERE' : 'ECOLE',
+      organizationType: org.category === 'UNIVERSITE' ? 'UNIVERSITE' : org.category === 'MINISTERE' ? 'MINISTERE' : 'ECOLE',
       logoUrl: org.logoUrl,
     });
     setManualModalOpen(false);

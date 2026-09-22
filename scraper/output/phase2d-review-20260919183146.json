@@ -1,0 +1,2781 @@
+{
+  "generatedAt": "2026-09-19T18:31:46.810Z",
+  "sourceFile": "C:\\Users\\Abde\\Downloads\\concours (9)\\scraper\\output\\concours-almaster-20260919182148.json",
+  "total": 150,
+  "flshAnalysis": "FLSH Ben M'Sik: title=\"Master FLSH Ben M'Sik Casablanca\" | establishment scraper=\"Faculté des Sciences Ben M’Sik de Casablanca (FSBM)\" | city scraper=\"Casablanca\" | cities in title/desc=[\"Casablanca\"] | uniRes=REVIEW | establishment lookup via REAL_SCHOOLS: FS Ben M'Sik — Faculté des Sciences",
+  "stats": {
+    "AUTO": 4795,
+    "REVIEW": 562,
+    "MISSING": 2037,
+    "UNSUPPORTED": 900,
+    "BLOCKED": 556
+  },
+  "conflicts": {
+    "cityConflicts": 40,
+    "universityConflicts": 11,
+    "establishmentConflicts": 3,
+    "domainConflicts": 0,
+    "dateConflicts": 10,
+    "urlConflicts": 42
+  },
+  "reviews": [
+    {
+      "fingerprint": "master-flsh-ben-m-sik-casablanca|faculte-des-sciences-ben-m-sik-de-casablanca-fsbm|2026",
+      "title": "Master FLSH Ben M'Sik Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flsh-ben-msik-casablanca-2026.html",
+      "scraped": {
+        "city": "Casablanca",
+        "establishment": "Faculté des Sciences Ben M’Sik de Casablanca (FSBM)",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://flbenmsik.ma/",
+          "registrationUrl": "https://forms.gle/ADnt5eMUgmpo8JLy6Préinscription"
+        }
+      },
+      "issues": [
+        {
+          "field": "establishment",
+          "currentValue": "Faculté des Sciences Ben M’Sik de Casablanca (FSBM)",
+          "status": "REVIEW",
+          "reason": "title contient FLSH mais establishment résolu = Faculté des Sciences Ben M’Sik de Casablanca (FSBM) (FS) — mismatch Lettres vs Sciences",
+          "evidence": "title=\"Master FLSH Ben M'Sik Casablanca\" | establishment=\"Faculté des Sciences Ben M’Sik de Casablanca (FSBM)\"",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-flsh-ben-m-sik-casablanca|faculte-des-sciences-ben-m-sik-de-casablanca-fsbm|2026",
+      "title": "Présélection Master FLSH Ben M'Sik Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FLSH-Ben-MSik-Casablanca-2026-2027.html",
+      "scraped": {
+        "city": "Casablanca",
+        "establishment": "Faculté des Sciences Ben M’Sik de Casablanca (FSBM)",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://flbenmsik.ma/listes-des-etudiants-convoques-a-passer-lepreuve-ecrite-des-concours-des-masterstemps-normal-2027-2026-%d9%84%d9%88%d8%a7%d8%a6%d8%ad-%d8%a7%d9%84%d8%b7%d9%84%d8%a8%d8%a9-%d8%a7%d9%84%d9%85%d8%af/"
+        }
+      },
+      "issues": [
+        {
+          "field": "establishment",
+          "currentValue": "Faculté des Sciences Ben M’Sik de Casablanca (FSBM)",
+          "status": "REVIEW",
+          "reason": "title contient FLSH mais establishment résolu = Faculté des Sciences Ben M’Sik de Casablanca (FSBM) (FS) — mismatch Lettres vs Sciences",
+          "evidence": "title=\"Présélection Master FLSH Ben M'Sik Casablanca\" | establishment=\"Faculté des Sciences Ben M’Sik de Casablanca (FSBM)\"",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fmp-rabat|faculte-de-medecine-et-de-pharmacie-de-rabat|2026",
+      "title": "Présélection Master FMP Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/resultats-preselection-master-fmp-rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "university": "Université Mohammed V de Rabat",
+        "establishment": "Faculté de Médecine et de Pharmacie de Rabat",
+        "domain": "Biologie, Chimie & Santé",
+        "dates": {
+          "resultsDate": "2026-09-23"
+        },
+        "urls": {
+          "officialUrl": "https://fmp.um5.ac.ma/sites/default/files/2026-09/Master%20en%20Computational%20Biology%2CBioinformatics%20and%20Data%20Analysis%20Liste%20candidats%20Test%20%C3%A9crit.pdf",
+          "registrationUrl": "https://fmp.um5.ac.ma/sites/default/files/2026-09/Master%20en%20Computational%20Biology%2CBioinformatics%20and%20Data%20Analysis%20Liste%20candidats%20Test%20%C3%A9crit.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fmp.um5.ac.ma/sites/default/files/2026-09/Master%20e",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fmp.um5.ac.ma/sites/default/files/2026-09/Master%20en%20Computational%20 | documents=[\"https://fmp.um5.ac.ma/sites/default/files/2026-09/Master%20en%20Computational%20Biology%2CBioinformatics%20and%20Data%20Analysis%20Liste%20candidats%20Test%20%C3%A9crit.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fsa-ait-melloul|fsa-ait-melloul|2026",
+      "title": "Présélection Master FSA Ait Melloul",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/Resultats-Preselection-Master-FSA-Ait-Melloul-2026-2027.html",
+      "scraped": {
+        "city": "Ait Melloul",
+        "university": "Université Ibn Zohr d’Agadir",
+        "establishment": "FSA Ait Melloul",
+        "dates": {
+          "resultsDate": "2026-09-28"
+        },
+        "urls": {
+          "officialUrl": "http://fsa-am.uiz.ac.ma/storage/announcements/attachments/D0XfdhalgSLxhFSBghcWH8YQJb4CMhzTSHJ8cZLJ.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Ait Melloul",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Ait Melloul\",\"Agadir\"] — ambigu",
+          "evidence": "titleCities=[\"Ait Melloul\"] descCities=[\"Agadir\",\"Ait Melloul\"]",
+          "suggestedResolution": null
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "http://fsa-am.uiz.ac.ma/storage/announcements/attachments/D0",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=http://fsa-am.uiz.ac.ma/storage/announcements/attachments/D0XfdhalgSLxhFSBghcWH8 | documents=[\"http://fsa-am.uiz.ac.ma/storage/announcements/attachments/1C8gCdUeIOmu4PJ1qvWhBuAOEth3LWRgSuIIcVrf.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fs-agadir|faculte-des-sciences-d-agadir-fs|2026",
+      "title": "Présélection Master FS Agadir",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-fs-agadir-2026-2027.html",
+      "scraped": {
+        "city": "Agadir",
+        "establishment": "Faculté des Sciences d’Agadir (FS)",
+        "domain": "Biologie, Chimie & Santé",
+        "dates": {},
+        "urls": {
+          "officialUrl": "http://www.fsa.ac.ma/file/concours/Master/Convoques_Master_RMEM_26-27.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "http://www.fsa.ac.ma/file/concours/Master/Convoques_Master_R",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=http://www.fsa.ac.ma/file/concours/Master/Convoques_Master_RMEM_26-27.pdf | documents=[\"http://www.fsa.ac.ma/file/concours/Master/Convoques_Master_RMEM_26-27.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fs-fes|faculte-des-sciences-de-fes-fs|2026",
+      "title": "Présélection Master FS Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-fs-fes-2026-2027.html",
+      "scraped": {
+        "city": "Fès",
+        "university": "Université Sidi Mohamed Ben Abdellah de Fès",
+        "establishment": "Faculté des Sciences de Fès (FS)",
+        "dates": {
+          "examDate": "2026-10-13",
+          "resultsDate": "2026-09-21"
+        },
+        "urls": {
+          "officialUrl": "https://www.fsdm.usmba.ac.ma/uploads/Docs/Files/2026-09-19-10-03-31_395c41d18777e108bc63e58b26a7f4b782bfcbe0.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www.fsdm.usmba.ac.ma/uploads/Docs/Files/2026-09-19-1",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www.fsdm.usmba.ac.ma/uploads/Docs/Files/2026-09-19-10-03-31_395c41d18777 | documents=[\"https://www.fsdm.usmba.ac.ma/uploads/Docs/Files/2026-09-18-11-57-37_9a49c7301142222889e80d8ccfb5228718af41dc.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-fsjes-agdal-rabat|fsjes-rabat-agdal|2026",
+      "title": "Définitifs Master FSJES Agdal Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Definitifs-Master-FSJES-Agdal-Rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "university": "Université Mohammed V de Rabat",
+        "establishment": "FSJES Rabat-Agdal",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fsjes-agdal.um5.ac.ma/sites/default/files/2026-09/Avis%20d%E2%80%99inscription%20des%20candidats%20admis%20aux%20Masters%20%282%29%20%281%29.pdf",
+          "registrationUrl": "https://fsjes-agdal.um5.ac.ma/sites/default/files/2026-09/liste%20candidats%20admis%20definitivement%20MSDG%20TN%2017SEPT2026.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fsjes-agdal.um5.ac.ma/sites/default/files/2026-09/Av",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fsjes-agdal.um5.ac.ma/sites/default/files/2026-09/Avis%20d%E2%80%99inscr | documents=[\"https://fsjes-agdal.um5.ac.ma/sites/default/files/2026-09/%D9%84%D8%A7%20%D8%A7%D9%94%D8%AD%D8%AF.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fs-ain-chock-casablanca|fsjes-ain-chock-casablanca|2026",
+      "title": "Présélection Master FS Ain Chock Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/Resultats-Preselection-Master-FS-Ain-Chock-Casablanca-2026-2027.html",
+      "scraped": {
+        "city": "Casablanca",
+        "university": "Université Hassan II de Casablanca",
+        "establishment": "FSJES Aïn Chock (Casablanca)",
+        "dates": {
+          "resultsDate": "2026-09-14"
+        },
+        "urls": {
+          "officialUrl": "https://fsac.univh2c.ma/Docs/attachments/1229/PHEI-Liste-candidats-dossiers-2026-2027_OK.pdf",
+          "registrationUrl": "https://fsac.univh2c.ma/Docs/attachments/1247/Liste%20des%20candidats_Master%20ANOC_%20invit%C3%A9s%20%C3%A0%20se%20pr%C3%A9senter_leur%20dossier%20physique_pour%20v%C3%A9rification_compressed.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fsac.univh2c.ma/Docs/attachments/1229/PHEI-Liste-can",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fsac.univh2c.ma/Docs/attachments/1229/PHEI-Liste-candidats-dossiers-2026 | documents=[\"https://fsac.univh2c.ma/Docs/attachments/1247/Liste%20des%20candidats_Master%20ANOC_%20invit%C3%A9s%20%C3%A0%20se%20pr%C3%A9senter_leur%20dossier%20physique_pour%20v%C3%A9rification_compressed.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-ens-rabat|ecole-normale-superieure-de-rabat-ens|2026",
+      "title": "Définitifs Master ENS Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-definitifs-master-ens-rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "university": "Université Mohammed V de Rabat",
+        "establishment": "École Normale Supérieure de Rabat (ENS)",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://ens.um5.ac.ma/sites/default/files/listes%20finale%202026%202027/Master%20Gouvernance%20et%20gestion%20du%20syst%C3%A8me%20tam_0.pdf",
+          "registrationUrl": "https://ens.um5.ac.ma/sites/default/files/listes%20finale%202026%202027/Liste%20Principale%20des%20candidats%20retenus%20Master%20MI2NER%202026.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://ens.um5.ac.ma/sites/default/files/listes%20finale%20",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://ens.um5.ac.ma/sites/default/files/listes%20finale%202026%202027/Master%2 | documents=[\"https://ens.um5.ac.ma/sites/default/files/listes%20finale%202026%202027/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%A7%D9%84%D9%86%D8%A7%D8%AC%D8%AD%D9%8A%D9%86%20%D8%A8%D9%85%D8%A7%D8%B3%D8%AA%D8%B1%20%D8%A7%D9%84%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%20%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%AC%D9%8A%D9%87%20%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%88%D9%8A.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fsjes-oujda|fsjes-oujda|2026",
+      "title": "Présélection Master FSJES Oujda",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FSJES-Oujda-2026-2027.html",
+      "scraped": {
+        "city": "Oujda",
+        "university": "Université Mohammed Premier d’Oujda",
+        "establishment": "FSJES Oujda",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {},
+        "urls": {
+          "officialUrl": "http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Management%20des%20organisations,%20%C3%A9conomie%20sociale%20et%20solidaire%20et%20innovation%20sociale/temps%20normal/6aad002a18c2f.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitai",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Maste | documents=[\"http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A/temps%20normal/6aa9891aa4931.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fla-marrakech|fla-marrakech|2026",
+      "title": "Présélection Master FLA Marrakech",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FLA-Marrakech-2026-2027.html",
+      "scraped": {
+        "city": "Marrakech",
+        "university": "Université Cadi Ayyad de Marrakech",
+        "establishment": "FLA Marrakech",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://www.uca.ma/public/files/docs/site-768-30c3c3dc59fd17589edc8b459fb173e7-1438881494.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www.uca.ma/public/files/docs/site-768-30c3c3dc59fd17",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www.uca.ma/public/files/docs/site-768-30c3c3dc59fd17589edc8b459fb173e7-1 | documents=[\"https://www.uca.ma/public/files/docs/site-768-44dc9297160de0a0738010e01f1426ae-1320459611.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-esef-beni-mellal|esef-beni-mellal|2026",
+      "title": "Master ESEF Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-esef-beni-mellal-2026-2027.html",
+      "scraped": {
+        "city": "Béni Mellal",
+        "university": "Université Sultan Moulay Slimane de Béni Mellal",
+        "establishment": "ESEF Béni Mellal",
+        "domain": "Sciences de l’Éducation",
+        "dates": {
+          "deadlineDate": "2026-09-23",
+          "examDate": "2026-09-20",
+          "resultsDate": "2026-09-28"
+        },
+        "urls": {
+          "officialUrl": "https://esefbm.usms.ac.ma/e-candidature-master/",
+          "registrationUrl": "https://esefbm.usms.ac.ma/e-candidature-master/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Béni Mellal",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Béni Mellal\",\"Fès\",\"Berrechid\"] — ambigu",
+          "evidence": "titleCities=[\"Béni Mellal\"] descCities=[\"Fès\",\"Béni Mellal\",\"Berrechid\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fsjp-beni-mellal|fsjp-beni-mellal|2026",
+      "title": "Master FSJP Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-beni-mellal-2026-2027.html",
+      "scraped": {
+        "city": "Béni Mellal",
+        "establishment": "FSJP Béni Mellal",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {
+          "openingDate": "2026-09-12",
+          "deadlineDate": "2026-09-27"
+        },
+        "urls": {
+          "officialUrl": "https://www.fpbm.ma/fsjpbm/indexملف",
+          "registrationUrl": "https://www.fpbm.ma/fsjpbm/indexDossier"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Béni Mellal",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Béni Mellal\",\"Fès\"] — ambigu",
+          "evidence": "titleCities=[\"Béni Mellal\"] descCities=[\"Fès\",\"Béni Mellal\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fsa-safi|fsa-safi|2026",
+      "title": "Présélection Master FSA Safi",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-fsa-safi-2026-2027.html",
+      "scraped": {
+        "city": "Safi",
+        "university": "Université Cadi Ayyad de Marrakech",
+        "establishment": "FSA Safi",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fsas.uca.ma/wp-content/uploads/2026/09/liste-des-candidats-convoqueis_eipreuve-eicrite_Master-CDE-2026-27-VF.pdf",
+          "registrationUrl": "https://fsas.uca.ma/2026/09/18/liste-des-candidats-convoques-pour-passer-lepreuve-orale-du-concours-dacces-au-master-chimie-durable-et-environnement-cde/"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fsas.uca.ma/wp-content/uploads/2026/09/liste-des-can",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fsas.uca.ma/wp-content/uploads/2026/09/liste-des-candidats-convoqueis_ei | documents=[\"https://fsas.uca.ma/wp-content/uploads/2026/09/locaux_concours_SDA_26_27.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-esef-berrechid|esef-berrechid|2026",
+      "title": "Présélection Master ESEF Berrechid",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/Resultats-Master-ESEF-Berrechid-2026-2027.html",
+      "scraped": {
+        "city": "Berrechid",
+        "university": "Université Hassan 1er de Settat",
+        "establishment": "ESEF Berrechid",
+        "domain": "Sciences & Technologies de l’Ingénieur",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://www-esef.uh1.ac.ma/wp-content/uploads/2026/09/Liste-des-CONVOQUES-A-LECRIT-M-IFDL-TA-2027.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www-esef.uh1.ac.ma/wp-content/uploads/2026/09/Liste-",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www-esef.uh1.ac.ma/wp-content/uploads/2026/09/Liste-des-CONVOQUES-A-LECR | documents=[\"https://www-esef.uh1.ac.ma/wp-content/uploads/2026/09/Liste-MIFDL-CONVOQUE-A-L-ECRIT-2027-TN-1-1.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fs-oujda|faculte-des-sciences-d-oujda-fs|2026",
+      "title": "Master FS Oujda",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fs-oujda-2026-2027.html",
+      "scraped": {
+        "city": "Oujda",
+        "university": "Université Mohammed Premier d’Oujda",
+        "establishment": "Faculté des Sciences d’Oujda (FS)",
+        "dates": {
+          "openingDate": "2026-09-16",
+          "deadlineDate": "2026-09-22",
+          "examDate": "2026-09-22"
+        },
+        "urls": {
+          "officialUrl": "https://students.ump.ma/preinscription/ump/fsoMaster",
+          "registrationUrl": "https://students.ump.ma/preinscription/ump/FSO"
+        }
+      },
+      "issues": [
+        {
+          "field": "dates",
+          "currentValue": "2026-09-16, 2026-09-22, 2026-09-22",
+          "status": "REVIEW",
+          "reason": "dates dupliquées",
+          "evidence": "opening=2026-09-16 deadline=2026-09-22 exam=2026-09-22 results=undefined",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fsjes-sale|fsjes-sale|2026",
+      "title": "Présélection Master FSJES Salé",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FSJES-Sale-2026-2027.html",
+      "scraped": {
+        "city": "Salé",
+        "university": "Université Mohammed V de Rabat",
+        "establishment": "FSJES Salé",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fsjes-sale.um5.ac.ma/sites/default/files/MANAR%20AFFICHAGE.pdf",
+          "registrationUrl": "https://fsjes-sale.um5.ac.ma/sites/default/files/Master%20MBFI-TN%20-Liste%20des%20candidats%20admis%20a%CC%80%20passer%20l%E2%80%99entretien%20oral%20-%2017-18%20sept%20%20(1).pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fsjes-sale.um5.ac.ma/sites/default/files/MANAR%20AFF",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fsjes-sale.um5.ac.ma/sites/default/files/MANAR%20AFFICHAGE.pdf | documents=[\"https://fsjes-sale.um5.ac.ma/sites/default/files/LISTE%20ORALE%20TN%20SEFIANI%201%20(1).pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-fsjes-sale|fsjes-sale|2026",
+      "title": "Définitifs Master FSJES Salé",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Definitifs-Master-FSJES-Sale-2026-2027.html",
+      "scraped": {
+        "city": "Salé",
+        "university": "Université Mohammed V de Rabat",
+        "establishment": "FSJES Salé",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fsjes-sale.um5.ac.ma/sites/default/files/Liste%20de%CC%81finitive%20MMBA%26Consulting_20262027%20(1)_0.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fsjes-sale.um5.ac.ma/sites/default/files/Liste%20de%",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fsjes-sale.um5.ac.ma/sites/default/files/Liste%20de%CC%81finitive%20MMBA | documents=[\"https://fsjes-sale.um5.ac.ma/sites/default/files/Liste%20de%CC%81finitive%20MMBA%26Consulting_20262027%20(1)_0.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fse-rabat|faculte-des-sciences-de-l-education-de-rabat-fse|2026",
+      "title": "Présélection Master FSE Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-fse-rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "university": "Université Mohammed V de Rabat",
+        "establishment": "Faculté des Sciences de l’Éducation de Rabat (FSE)",
+        "domain": "Sciences de l’Éducation",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fse.um5.ac.ma/sites/default/files/CPLAT_TA_Oral_26-27.pdf",
+          "registrationUrl": "https://fse.um5.ac.ma/sites/default/files/ALTRP_TS_Pr%C3%A9inscrits_26-27.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fse.um5.ac.ma/sites/default/files/CPLAT_TA_Oral_26-2",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fse.um5.ac.ma/sites/default/files/CPLAT_TA_Oral_26-27.pdf | documents=[\"https://fse.um5.ac.ma/sites/default/files/ALTRP_TS_Pr%C3%A9inscrits_26-27.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-flash-ait-melloul|flsh-ait-melloul|2026",
+      "title": "Présélection Master FLASH Ait Melloul",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/Resultats-Preselection-Master-FLASH-Ait-Melloul-2026-2027.html",
+      "scraped": {
+        "city": "Ait Melloul",
+        "university": "Université Ibn Zohr d’Agadir",
+        "establishment": "FLSH Ait Melloul",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://flash.uiz.ac.ma/wp-content/uploads/2026/09/TMS-2026_Temps-Amenage_Preselection-3-1.pdf",
+          "registrationUrl": "https://flash.uiz.ac.ma/wp-content/uploads/2026/09/liste-des-candidats-admis-pour-passer-lepreuve-ecrite-MTSS-TA.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://flash.uiz.ac.ma/wp-content/uploads/2026/09/TMS-2026_",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://flash.uiz.ac.ma/wp-content/uploads/2026/09/TMS-2026_Temps-Amenage_Presel | documents=[\"https://flash.uiz.ac.ma/wp-content/uploads/2026/09/liste-des-candidats-admis-pour-passer-lepreuve-ecrite-MTSS-TA.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-ens-meknes|ecole-normale-superieure-de-meknes|2026",
+      "title": "Présélection Master ENS Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-ENS-Meknes-2026-2027.html",
+      "scraped": {
+        "city": "Meknès",
+        "university": "Université Moulay Ismaïl de Meknès",
+        "establishment": "École Normale Supérieure de Meknès",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://www.ens.umi.ac.ma/wp-content/uploads/2026/09/ArabTA.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www.ens.umi.ac.ma/wp-content/uploads/2026/09/ArabTA.",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www.ens.umi.ac.ma/wp-content/uploads/2026/09/ArabTA.pdf | documents=[\"https://www.ens.umi.ac.ma/wp-content/uploads/2026/09/MASTER-MDFEF.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fsjp-kelaa-sraghna|fsjp-el-kelaa-des-sraghna|2026",
+      "title": "Présélection Master FSJP Kelaa Sraghna",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/Resultats-Preselection-Master-FSJP-Kelaa-Sraghna-2026-2027.html",
+      "scraped": {
+        "city": "El Kelâa des Sraghna",
+        "university": "Université Cadi Ayyad de Marrakech",
+        "establishment": "FSJP El Kelâa des Sraghna",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {
+          "examDate": "2026-09-19",
+          "resultsDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "https://e-candidature.uca.ma/master.fsjpk/testecrit/GAFPM/%D8%A7%D9%84%D8%AA%D8%AF%D8%A8%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D9%8A%20%D9%88%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%20%D8%A7%D9%84%D8%B9%D9%85%D9%88%D9%85%D9%8A%20%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB--AA-Pre-selection-1.pdf",
+          "registrationUrl": "https://e-candidature.uca.ma/master.fsjpk/testecrit/GJNPD/%D8%A7%D9%84%D8%AD%D9%83%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9%20%D9%88%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D8%B7%D9%8A%D8%A7%D8%AA%20%20(1)%20(1)%20%20%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D9%8A.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "dates",
+          "currentValue": "2026-09-19, 2026-09-19",
+          "status": "REVIEW",
+          "reason": "dates dupliquées",
+          "evidence": "opening=undefined deadline=undefined exam=2026-09-19 results=2026-09-19",
+          "suggestedResolution": null
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "https://e-candidature.uca.ma/master.fsjpk/testecrit/GAFPM/%D",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://e-candidature.uca.ma/master.fsjpk/testecrit/GAFPM/%D8%A7%D9%84%D8%AA%D8% | documents=[\"https://e-candidature.uca.ma/master.fsjpk/testecrit/GJNPD/%D8%A7%D9%84%D8%AD%D9%83%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9%20%D9%88%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D8%B7%D9%8A%D8%A7%D8%AA%20%20(1)%20(1)%20%20%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D9%8A.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fs-rabat|faculte-des-sciences-de-rabat-fsr|2026",
+      "title": "Présélection Master FS Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/resultats-preselection-master-fs-rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "establishment": "Faculté des Sciences de Rabat (FSR)",
+        "domain": "Sciences de l’Éducation",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://www.fsr.ac.ma/DOC/Preselections/Cycle_Masters/LISTES_CONCOURS_ECRIT/Master_SMGP_TN.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www.fsr.ac.ma/DOC/Preselections/Cycle_Masters/LISTES",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www.fsr.ac.ma/DOC/Preselections/Cycle_Masters/LISTES_CONCOURS_ECRIT/Mast | documents=[\"https://www.fsr.ac.ma/DOC/Preselections/Cycle_Masters/LISTES_CONCOURS_ECRIT/Master_IPS_TAM.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-flsh-rabat|faculte-des-lettres-et-des-sciences-humaines-de-rabat-flsh|2026",
+      "title": "Définitifs Master FLSH Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Definitifs-Master-FLSH-Rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "establishment": "Faculté des Lettres et des Sciences Humaines de Rabat (FLSH)",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://flshr-um5.ac.ma/sites/default/files/2026-09/%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%87%D8%A7%D8%AF%20%D9%85%D8%A3%D8%AC%D9%88%D8%B1%D9%8A%D9%86.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://flshr-um5.ac.ma/sites/default/files/2026-09/%D8%A7%D",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://flshr-um5.ac.ma/sites/default/files/2026-09/%D8%A7%D9%84%D8%A7%D8%AC%D8% | documents=[\"https://flshr-um5.ac.ma/sites/default/files/2026-09/histo_TN.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fsjp-nador|universite-mohammed-premier-d-oujda|2026",
+      "title": "Master FSJP Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-nador-2026-2027.html",
+      "scraped": {
+        "city": "Oujda",
+        "university": "Université Mohammed Premier d’Oujda",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {},
+        "urls": {
+          "officialUrl": "http://students.ump.ma/preinscription/ump/FSJPN",
+          "registrationUrl": "http://students.ump.ma/preinscription/ump/FSJPN"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Oujda",
+          "status": "REVIEW",
+          "reason": "title contient \"Nador\" mais city=Oujda",
+          "evidence": "title=\"Master FSJP Nador\" | titleCities=[\"Nador\"]",
+          "suggestedResolution": "Nador"
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-fsjes-souissi-rabat|fsjes-rabat-souissi|2026",
+      "title": "Définitifs Master FSJES Souissi Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Definitifs-Master-FSJES-Souissi-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "university": "Université Mohammed V de Rabat",
+        "establishment": "FSJES Rabat-Souissi",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {
+          "openingDate": "2026-09-24",
+          "examDate": "2026-09-15",
+          "resultsDate": "2026-09-18"
+        },
+        "urls": {
+          "officialUrl": "https://ins.fsjes-souissi.um5.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Rabat",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Rabat\",\"Fès\"] — ambigu",
+          "evidence": "titleCities=[\"Rabat\"] descCities=[\"Rabat\",\"Fès\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fsjes-meknes|fsjes-meknes|2026",
+      "title": "Présélection Master FSJES Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FSJES-Meknes-2026-2027.html",
+      "scraped": {
+        "city": "Meknès",
+        "establishment": "FSJES Meknès",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://www.fsjes-umi.ac.ma/avis/283?heroKey=avis&hero_title=Num%C3%A9ros+d%E2%80%99examen+du+test+%C3%A9crit+pour+l%E2%80%99acc%C3%A8s+au+Masters+Temps+Am%C3%A9nag%C3%A9+2026-2027"
+        }
+      },
+      "issues": [
+        {
+          "field": "university",
+          "currentValue": null,
+          "status": "REVIEW",
+          "reason": "university manquante mais établissement ec-fsjes-meknes rattaché à univ-umi",
+          "evidence": "REAL_SCHOOLS ec-fsjes-meknes.universityId=univ-umi | title=\"Présélection Master FSJES Meknès\"",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-feg-marrakech|feg-marrakech|2026",
+      "title": "Présélection Master FEG Marrakech",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-feg-Marrakech-2026-2027.html",
+      "scraped": {
+        "city": "Marrakech",
+        "university": "Université Cadi Ayyad de Marrakech",
+        "establishment": "FEG Marrakech",
+        "domain": "Économie, Finance & Gestion",
+        "dates": {
+          "examDate": "2026-09-19",
+          "resultsDate": "2026-09-22"
+        },
+        "urls": {
+          "officialUrl": "https://e-candidature.uca.ma/master.fegm/testecrit/ESDD/Pr%C3%A9s%C3%A9lection%20candidats%20sans%20activit%C3%A9%20MESDD%202627.pdf",
+          "registrationUrl": "https://e-candidature.uca.ma/master.fegm/oral/CCA/Liste%201%20des%20convoque%CC%81s%20au%20test%20oral%20tempsnormal%20%20Master%20CCA%202026.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://e-candidature.uca.ma/master.fegm/testecrit/ESDD/Pr%C",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://e-candidature.uca.ma/master.fegm/testecrit/ESDD/Pr%C3%A9s%C3%A9lection%2 | documents=[\"https://e-candidature.uca.ma/master.fegm/oral/CCA/Liste%201%20des%20convoque%CC%81s%20au%20test%20oral%20tempsnormal%20%20Master%20CCA%202026.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-fs-ben-m-sik-casablanca|faculte-des-sciences-ben-m-sik-de-casablanca-fsbm|2026",
+      "title": "Définitifs Master FS Ben M'Sik Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FS-Ben-MSik-Casablanca-2026-2027.html",
+      "scraped": {
+        "city": "Casablanca",
+        "establishment": "Faculté des Sciences Ben M’Sik de Casablanca (FSBM)",
+        "domain": "Sciences & Technologies de l’Ingénieur",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://suiniklbpgfiiyiwiywb.supabase.co/storage/v1/object/public/fsbm/hero-slides/e4285099-6c40-4ef7-be6b-1cf7ad7c620a.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://suiniklbpgfiiyiwiywb.supabase.co/storage/v1/object/p",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://suiniklbpgfiiyiwiywb.supabase.co/storage/v1/object/public/fsbm/hero-slid | documents=[\"https://suiniklbpgfiiyiwiywb.supabase.co/storage/v1/object/public/fsbm/hero-slides/e4285099-6c40-4ef7-be6b-1cf7ad7c620a.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-flsh-meknes|flsh-meknes|2026",
+      "title": "Présélection Master FLSH Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FLSH-Meknes-2026-2027.html",
+      "scraped": {
+        "city": "Meknès",
+        "university": "Université Moulay Ismaïl de Meknès",
+        "establishment": "FLSH Meknès",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://www.flsh.umi.ac.ma/wp-content/uploads/2026/09/%D8%A7%D9%84%D9%84%D8%B3%D8%A7%D9%86%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www.flsh.umi.ac.ma/wp-content/uploads/2026/09/%D8%A7",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www.flsh.umi.ac.ma/wp-content/uploads/2026/09/%D8%A7%D9%84%D9%84%D8%B3%D | documents=[\"https://www.flsh.umi.ac.ma/wp-content/uploads/2026/09/%D8%A7%D9%84%D8%B7%D9%84%D8%A8%D8%A9-%D8%A7%D9%84%D9%85%D8%AF%D8%B9%D9%88%D9%88%D9%86-%D9%84%D8%A5%D8%AC%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8%D9%8A-ESP.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-ens-fes|ecole-normale-superieure-de-fes|2026",
+      "title": "Présélection Master ENS Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-ens-fes-2026-2027.html",
+      "scraped": {
+        "city": "Fès",
+        "university": "Université Sidi Mohamed Ben Abdellah de Fès",
+        "establishment": "École Normale Supérieure de Fès",
+        "dates": {
+          "examDate": "2026-09-17",
+          "resultsDate": "2026-09-17"
+        },
+        "urls": {
+          "officialUrl": "https://ens.usmba.ac.ma/concours2026/Masters/%C3%A9preuves-%C3%A9crites/Liste%20Master%20EFIP.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "dates",
+          "currentValue": "2026-09-17, 2026-09-17",
+          "status": "REVIEW",
+          "reason": "dates dupliquées",
+          "evidence": "opening=undefined deadline=undefined exam=2026-09-17 results=2026-09-17",
+          "suggestedResolution": null
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "https://ens.usmba.ac.ma/concours2026/Masters/%C3%A9preuves-%",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://ens.usmba.ac.ma/concours2026/Masters/%C3%A9preuves-%C3%A9crites/Liste%20 | documents=[\"https://ens.usmba.ac.ma/annonces/1789663259_Note%20%D9%85%D8%A7%D8%B3%D8%AA%D8%B1%20%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9%2026-27.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fsjes-agdal-rabat|fsjes-rabat-agdal|2026",
+      "title": "Présélection Master FSJES Agdal Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FSJES-Agdal-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "university": "Université Mohammed V de Rabat",
+        "establishment": "FSJES Rabat-Agdal",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fsjes-agdal.um5.ac.ma/sites/default/files/2026-09/Liste%20des%20candidats%20du%20MASTER%20ECONOMIE%20APPLIQEE%20A%20LA%20MIGRATION%20.pdf",
+          "registrationUrl": "https://fsjes-agdal.um5.ac.ma/sites/default/files/2026-09/LISTE%20CANDIDATS%20RETENUS%20POUR%20EPREUVE%20ORALE%20Master%20SE%20Economie%20AppliquA%CC%83%C2%A9e%20-%202026-2027.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fsjes-agdal.um5.ac.ma/sites/default/files/2026-09/Li",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fsjes-agdal.um5.ac.ma/sites/default/files/2026-09/Liste%20des%20candidat | documents=[\"https://fsjes-agdal.um5.ac.ma/sites/default/files/2026-09/AVIS.%20ORAL%20%2021%20MAP%20IFP%20%2026%2027.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-flsh-mohammedia|flsh-mohammedia|2026",
+      "title": "Présélection Master FLSH Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FLSH-Mohammedia-2026-2027.html",
+      "scraped": {
+        "city": "Mohammedia",
+        "establishment": "FLSH Mohammedia",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://data.flshm.ma/masters2027/ls_geo_tn_27_preselec.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "university",
+          "currentValue": null,
+          "status": "REVIEW",
+          "reason": "university manquante mais établissement ec-flsh-mohammedia rattaché à univ-uh2c",
+          "evidence": "REAL_SCHOOLS ec-flsh-mohammedia.universityId=univ-uh2c | title=\"Présélection Master FLSH Mohammedia\"",
+          "suggestedResolution": null
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "https://data.flshm.ma/masters2027/ls_geo_tn_27_preselec.pdf",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://data.flshm.ma/masters2027/ls_geo_tn_27_preselec.pdf | documents=[\"https://data.flshm.ma/masters2027/o_dida_n.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-feg-nador|universite-mohammed-premier-d-oujda|2026",
+      "title": "Master FEG Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-nador-2026-2027.html",
+      "scraped": {
+        "city": "Oujda",
+        "university": "Université Mohammed Premier d’Oujda",
+        "domain": "Économie, Finance & Gestion",
+        "dates": {
+          "deadlineDate": "2026-09-16",
+          "examDate": "2026-09-25"
+        },
+        "urls": {
+          "officialUrl": "https://fegn.ump.ma/.Lien"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Oujda",
+          "status": "REVIEW",
+          "reason": "title contient \"Nador\" mais city=Oujda",
+          "evidence": "title=\"Master FEG Nador\" | titleCities=[\"Nador\"]",
+          "suggestedResolution": "Nador"
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fsa-nador|fsa-beni-mellal|2026",
+      "title": "Master FSA Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsa-nador-2026-2027.html",
+      "scraped": {
+        "city": "Béni Mellal",
+        "university": "Université Mohammed Premier d’Oujda",
+        "establishment": "FSA Béni Mellal",
+        "dates": {
+          "deadlineDate": "2026-09-27"
+        },
+        "urls": {
+          "officialUrl": "https://fsan.ump.ma/formationFilières"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Béni Mellal",
+          "status": "REVIEW",
+          "reason": "title contient \"Nador\" mais city=Béni Mellal",
+          "evidence": "title=\"Master FSA Nador\" | titleCities=[\"Nador\"]",
+          "suggestedResolution": "Nador"
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-flla-nador|universite-mohammed-premier-d-oujda|2026",
+      "title": "Master FLLA Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flla-nador-2026-2027.html",
+      "scraped": {
+        "city": "Oujda",
+        "university": "Université Mohammed Premier d’Oujda",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fllan.ump.ma/formationتنبيه:يتوقّف"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Oujda",
+          "status": "REVIEW",
+          "reason": "title contient \"Nador\" mais city=Oujda",
+          "evidence": "title=\"Master FLLA Nador\" | titleCities=[\"Nador\"]",
+          "suggestedResolution": "Nador"
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-chariaa-ait-melloul|faculte-chariaa-de-fes|2026",
+      "title": "Présélection Master Chariaa Ait Melloul",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-chariaa-2026-2027.html",
+      "scraped": {
+        "city": "Fès",
+        "establishment": "Faculté Chariaa de Fès",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://chariaa-agadir.ac.ma/impression/liste10.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Fès",
+          "status": "REVIEW",
+          "reason": "title contient \"Ait Melloul\" mais city=Fès",
+          "evidence": "title=\"Présélection Master Chariaa Ait Melloul\" | titleCities=[\"Ait Melloul\"]",
+          "suggestedResolution": "Ait Melloul"
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "https://chariaa-agadir.ac.ma/impression/liste10.pdf",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://chariaa-agadir.ac.ma/impression/liste10.pdf | documents=[\"https://chariaa-agadir.ac.ma/impression/results1.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-flsh-rabat|faculte-des-lettres-et-des-sciences-humaines-de-rabat-flsh|2026",
+      "title": "Présélection Master FLSH Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Preselection-Master-FLSH-Rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "establishment": "Faculté des Lettres et des Sciences Humaines de Rabat (FLSH)",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://flshr-um5.ac.ma/sites/default/files/2026-09/%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%87%D8%A7%D8%AF.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://flshr-um5.ac.ma/sites/default/files/2026-09/%D8%A7%D",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://flshr-um5.ac.ma/sites/default/files/2026-09/%D8%A7%D9%84%D8%A7%D8%AC%D8% | documents=[\"https://flshr-um5.ac.ma/sites/default/files/2026-09/MASC%20liste%20TAM%20Oral.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-enset-mohammedia||2026",
+      "title": "Présélection Master ENSET Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/resultats-preselection-master-enset-Mohammedia-2026-2027.html",
+      "scraped": {
+        "city": "Mohammedia",
+        "domain": "Sciences de l’Éducation",
+        "dates": {
+          "deadlineDate": "2026-09-25",
+          "examDate": "2026-09-26",
+          "resultsDate": "2026-09-26"
+        },
+        "urls": {
+          "officialUrl": "https://www.enset-media.ac.ma/sites/default/files/artilces_pieces_jointes/liste_master_gesii-temps_normal.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "dates",
+          "currentValue": "2026-09-25, 2026-09-26, 2026-09-26",
+          "status": "REVIEW",
+          "reason": "dates dupliquées",
+          "evidence": "opening=undefined deadline=2026-09-25 exam=2026-09-26 results=2026-09-26",
+          "suggestedResolution": null
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www.enset-media.ac.ma/sites/default/files/artilces_p",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www.enset-media.ac.ma/sites/default/files/artilces_pieces_jointes/liste_ | documents=[\"https://www.enset-media.ac.ma/sites/default/files/artilces_pieces_jointes/liste_master_mrmi-temps_normal.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-ens-rabat|ecole-normale-superieure-de-rabat-ens|2026",
+      "title": "Présélection Master ENS Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-ens-rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "university": "Université Mohammed V de Rabat",
+        "establishment": "École Normale Supérieure de Rabat (ENS)",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://ens.um5.ac.ma/sites/default/files/master2026%20les%20listes/R%C3%A9sultats%20de%20pr%C3%A9s%C3%A9lection%20TN_2026_S.pdf",
+          "registrationUrl": "https://ens.um5.ac.ma/sites/default/files/master2026%20les%20listes/R%C3%A9sultats%20de%20la%20pr%C3%A9s%C3%A9lection%20des%20candidats%20%C3%A0%20la%20formation%20de%20la%20fili%C3%A8re%20Master%20Teaching%20English%20to%20Speakers%20of%20Other%20LanguagesTAM.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://ens.um5.ac.ma/sites/default/files/master2026%20les%2",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://ens.um5.ac.ma/sites/default/files/master2026%20les%20listes/R%C3%A9sulta | documents=[\"https://ens.um5.ac.ma/sites/default/files/master2026%20les%20listes/R%C3%A9sultats%20de%20la%20pr%C3%A9s%C3%A9lection%20des%20candidats%20%C3%A0%20la%20formation%20de%20la%20fili%C3%A8re%20Master%20Teaching%20English%20to%20Speakers%20of%20Other%20LanguagesTAM.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "masters-ouverts-au-maroc|fsjp-beni-mellal|2026",
+      "title": "Masters Ouverts au Maroc",
+      "sourceUrl": "https://www.almaster-maroc.com/2024/04/Masters-Ouverts-au-Maroc.html",
+      "scraped": {
+        "city": "Béni Mellal",
+        "establishment": "FSJP Béni Mellal",
+        "dates": {},
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Béni Mellal",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Rabat\",\"Fès\",\"Tanger\",\"Tétouan\",\"Agadir\",\"Oujda\",\"El Jadida\",\"Béni Mellal\",\"Nador\",\"Berrechid\"] — ambigu",
+          "evidence": "titleCities=[] descCities=[\"Rabat\",\"Fès\",\"Tanger\",\"Tétouan\",\"Agadir\",\"Oujda\",\"El Jadida\",\"Béni Mellal\",\"Nador\",\"Berrechid\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-esef-berrechid|esef-berrechid|2026",
+      "title": "Master ESEF Berrechid",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-esef-berrechid-2026-2027.html",
+      "scraped": {
+        "city": "Berrechid",
+        "university": "Université Hassan 1er de Settat",
+        "establishment": "ESEF Berrechid",
+        "domain": "Sciences de l’Éducation",
+        "dates": {
+          "deadlineDate": "2026-09-23"
+        },
+        "urls": {
+          "officialUrl": "https://temps-amenage.uh1.ac.ma/nos-formation/7/masterEn",
+          "registrationUrl": "https://pre-inscription.uh1.ac.ma/master/7"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Berrechid",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Berrechid\",\"Fès\",\"Settat\"] — ambigu",
+          "evidence": "titleCities=[\"Berrechid\"] descCities=[\"Fès\",\"Settat\",\"Berrechid\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-ensam-rabat|ensam-casablanca|2026",
+      "title": "Présélection Master ENSAM Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/resultats-preselection-master-ensam-rabat-2026-2027.html",
+      "scraped": {
+        "city": "Casablanca",
+        "establishment": "ENSAM Casablanca",
+        "domain": "Sciences & Technologies de l’Ingénieur",
+        "dates": {},
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Casablanca",
+          "status": "REVIEW",
+          "reason": "title contient \"Rabat\" mais city=Casablanca",
+          "evidence": "title=\"Présélection Master ENSAM Rabat\" | titleCities=[\"Rabat\"]",
+          "suggestedResolution": "Rabat"
+        },
+        {
+          "field": "university",
+          "currentValue": null,
+          "status": "REVIEW",
+          "reason": "university manquante mais établissement ec-ensam-casablanca rattaché à univ-uh2c",
+          "evidence": "REAL_SCHOOLS ec-ensam-casablanca.universityId=univ-uh2c | title=\"Présélection Master ENSAM Rabat\"",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-fst-beni-mellal|faculte-des-sciences-et-techniques-de-beni-mellal-fstbm|2026",
+      "title": "Définitifs Master FST Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/Resultats-Definitifs-Master-FST-Beni-Mellal-2026-2027.html",
+      "scraped": {
+        "city": "Béni Mellal",
+        "establishment": "Faculté des Sciences et Techniques de Beni Mellal (FSTBM)",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fstbm.ac.ma/web/content/1495729/MST_TACQI_admis_2026.pdf",
+          "registrationUrl": "https://fstbm.ac.ma/web/content/1495618/MST-DossierInscription.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fstbm.ac.ma/web/content/1495729/MST_TACQI_admis_2026",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fstbm.ac.ma/web/content/1495729/MST_TACQI_admis_2026.pdf | documents=[\"https://fstbm.ac.ma/web/content/1495624/MST_NB_Admis_2026.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fst-beni-mellal|faculte-des-sciences-et-techniques-de-beni-mellal-fstbm|2026",
+      "title": "Présélection Master FST Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/resultats-preselection-master-FST-Beni-Mellal-2026-2027.html",
+      "scraped": {
+        "city": "Béni Mellal",
+        "establishment": "Faculté des Sciences et Techniques de Beni Mellal (FSTBM)",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fstbm.ac.ma/web/content/1495548/MST_GE_examen_2026.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fstbm.ac.ma/web/content/1495548/MST_GE_examen_2026.p",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fstbm.ac.ma/web/content/1495548/MST_GE_examen_2026.pdf | documents=[\"https://fstbm.ac.ma/web/content/1495736/MST_SE_Oral_2026.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fsjes-mohammedia|fsjes-mohammedia|2026",
+      "title": "Présélection Master FSJES Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FSJES-Mohammedia-2026-2027.html",
+      "scraped": {
+        "city": "Mohammedia",
+        "establishment": "FSJES Mohammedia",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fsjesm.ma/wp-content/uploads/2026/09/TN-BAE.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "university",
+          "currentValue": null,
+          "status": "REVIEW",
+          "reason": "university manquante mais établissement ec-fsjes-mohammedia rattaché à univ-uh2c",
+          "evidence": "REAL_SCHOOLS ec-fsjes-mohammedia.universityId=univ-uh2c | title=\"Présélection Master FSJES Mohammedia\"",
+          "suggestedResolution": null
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fsjesm.ma/wp-content/uploads/2026/09/TN-BAE.pdf",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fsjesm.ma/wp-content/uploads/2026/09/TN-BAE.pdf | documents=[\"https://fsjesm.ma/wp-content/uploads/2026/09/%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D9%88-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9%D8%8C-%D9%85%D8%B3%D8%A7%D8%B1-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-TN.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-fsjes-mohammedia|fsjes-mohammedia|2026",
+      "title": "Définitifs Master FSJES Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Definitifs-Master-FSJES-Mohammedia-2026-2027.html",
+      "scraped": {
+        "city": "Mohammedia",
+        "establishment": "FSJES Mohammedia",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://fsjesm.ma/wp-content/uploads/2026/09/%D8%A7%D9%84%D9%88%D8%AB%D8%A7%D8%A6%D9%82-%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%D8%A9-%D9%84%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%A8%D8%B3%D9%84%D9%83-%D8%A7%D9%84%D9%85%D8%A7%D8%B3%D8%AA%D8%B1-%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D8%AF%D9%8A.pdf",
+          "registrationUrl": "https://fsjesm.ma/wp-content/uploads/2026/09/inscription-master-temps-am-26-27.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "university",
+          "currentValue": null,
+          "status": "REVIEW",
+          "reason": "university manquante mais établissement ec-fsjes-mohammedia rattaché à univ-uh2c",
+          "evidence": "REAL_SCHOOLS ec-fsjes-mohammedia.universityId=univ-uh2c | title=\"Définitifs Master FSJES Mohammedia\"",
+          "suggestedResolution": null
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "https://fsjesm.ma/wp-content/uploads/2026/09/%D8%A7%D9%84%D9",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://fsjesm.ma/wp-content/uploads/2026/09/%D8%A7%D9%84%D9%88%D8%AB%D8%A7%D8%A | documents=[\"https://fsjesm.ma/wp-content/uploads/2026/09/Liste-Principale-Droit-des-affaires-TA-1.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-ismac-rabat|ismac-rabat|2026",
+      "title": "Présélection Master ISMAC Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/resultats-preselection-master-ISMAC-Rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "establishment": "ISMAC Rabat",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Rabat",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Rabat\",\"Dakhla\"] — ambigu",
+          "evidence": "titleCities=[\"Rabat\"] descCities=[\"Rabat\",\"Dakhla\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-encg-fes|encg-fes|2026",
+      "title": "Définitifs Master ENCG Fès",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/resultats-definitifs-master-encg-fes-2026-2027.html",
+      "scraped": {
+        "city": "Fès",
+        "establishment": "ENCG Fès",
+        "domain": "Économie, Finance & Gestion",
+        "dates": {},
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "university",
+          "currentValue": null,
+          "status": "REVIEW",
+          "reason": "university manquante mais établissement ec-encg-fes rattaché à univ-usmba",
+          "evidence": "REAL_SCHOOLS ec-encg-fes.universityId=univ-usmba | title=\"Définitifs Master ENCG Fès\"",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fsjes-ain-sebaa-casablanca|fsjes-ain-chock-casablanca|2026",
+      "title": "Master FSJES Ain Sebaâ Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-fsjes-ain-sebaa-casablanca-2026.html",
+      "scraped": {
+        "city": "Casablanca",
+        "university": "Université Hassan II de Casablanca",
+        "establishment": "FSJES Aïn Chock (Casablanca)",
+        "dates": {
+          "deadlineDate": "2026-09-18"
+        },
+        "urls": {
+          "officialUrl": "https://fdainscriptions.univh2c.ma/Insc/Master/Start/index2.php",
+          "registrationUrl": "https://fdainscriptions.univh2c.ma/Insc/Master/Start/index2.php"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Casablanca",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Casablanca\",\"Fès\"] — ambigu",
+          "evidence": "titleCities=[\"Casablanca\"] descCities=[\"Casablanca\",\"Fès\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-complexe-horticole-agadir|complexe-horticole-d-agadir-cha|2026",
+      "title": "Master Complexe Horticole Agadir",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-complexe-horticole-agadir-2026.html",
+      "scraped": {
+        "city": "Agadir",
+        "establishment": "Complexe Horticole d’Agadir (CHA)",
+        "dates": {
+          "openingDate": "2026-09-14",
+          "deadlineDate": "2026-09-27",
+          "examDate": "2026-09-29",
+          "resultsDate": "2026-10-05"
+        },
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Agadir",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Agadir\",\"Fès\"] — ambigu",
+          "evidence": "titleCities=[\"Agadir\"] descCities=[\"Fès\",\"Agadir\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fsjes-oujda|fsjes-oujda|2026",
+      "title": "Master FSJES Oujda",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjes-oujda-2026-2027.html",
+      "scraped": {
+        "city": "Oujda",
+        "university": "Université Mohammed Premier d’Oujda",
+        "establishment": "FSJES Oujda",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {
+          "openingDate": "2026-09-05",
+          "deadlineDate": "2026-09-13"
+        },
+        "urls": {
+          "officialUrl": "https://students.ump.ma/preinscription/ump/FSJESO",
+          "registrationUrl": "https://students.ump.ma/preinscription/ump/FSJESO"
+        }
+      },
+      "issues": [
+        {
+          "field": "deadlineDate",
+          "currentValue": "2026-09-13",
+          "status": "REVIEW",
+          "reason": "deadline égale à publishedAt — possible erreur parsing",
+          "evidence": "deadline=2026-09-13 publishedAt=2026-09-13T10:35:51.754+01:00",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-fst-settat|faculte-des-sciences-et-techniques-de-settat-fsts|2026",
+      "title": "Définitifs Master FST Settat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/resultats-definitifs-master-fst-settat-2026-2027.html",
+      "scraped": {
+        "city": "Settat",
+        "establishment": "Faculté des Sciences et Techniques de Settat (FSTS)",
+        "domain": "Sciences Mathématiques & Données",
+        "dates": {
+          "resultsDate": "2026-07-31"
+        },
+        "urls": {
+          "officialUrl": "https://www.fsts.ac.ma/storage/76/mst-mcda-liste-attente.pdf",
+          "registrationUrl": "https://www.fsts.ac.ma/storage/86/inscription-mst-2026vf.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www.fsts.ac.ma/storage/76/mst-mcda-liste-attente.pdf",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www.fsts.ac.ma/storage/76/mst-mcda-liste-attente.pdf | documents=[\"https://www.fsts.ac.ma/storage/85/liste-admis-mst-mte-26-27.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fsjp-errachidia|fsjp-errachidia|2026",
+      "title": "Master FSJP Errachidia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fsjp-errachidia-2026-2027.html",
+      "scraped": {
+        "city": "Errachidia",
+        "university": "Université Moulay Ismaïl de Meknès",
+        "establishment": "FSJP Errachidia",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {
+          "deadlineDate": "2026-09-14"
+        },
+        "urls": {
+          "officialUrl": "https://candidature.umi.ac.ma/",
+          "registrationUrl": "https://candidature.umi.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Errachidia",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Errachidia\",\"Meknès\"] — ambigu",
+          "evidence": "titleCities=[\"Errachidia\"] descCities=[\"Meknès\",\"Errachidia\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-flla-errachidia|universite-moulay-ismail-de-meknes|2026",
+      "title": "Master FLLA Errachidia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-flla-errachidia-2026-2027.html",
+      "scraped": {
+        "city": "Meknès",
+        "university": "Université Moulay Ismaïl de Meknès",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {
+          "deadlineDate": "2026-09-14"
+        },
+        "urls": {
+          "officialUrl": "https://candidature.umi.ac.ma/",
+          "registrationUrl": "https://candidature.umi.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Meknès",
+          "status": "REVIEW",
+          "reason": "title contient \"Errachidia\" mais city=Meknès",
+          "evidence": "title=\"Master FLLA Errachidia\" | titleCities=[\"Errachidia\"]",
+          "suggestedResolution": "Errachidia"
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-flsh-mohammedia|flsh-mohammedia|2026",
+      "title": "Master FLSH Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-flsh-mohammedia-2026-2027.html",
+      "scraped": {
+        "city": "Mohammedia",
+        "establishment": "FLSH Mohammedia",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://flshm.ma/licmas26/",
+          "registrationUrl": "https://candidature.flshm.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Mohammedia",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Mohammedia\",\"Casablanca\"] — ambigu",
+          "evidence": "titleCities=[\"Mohammedia\"] descCities=[\"Casablanca\",\"Mohammedia\"]",
+          "suggestedResolution": null
+        },
+        {
+          "field": "university",
+          "currentValue": null,
+          "status": "REVIEW",
+          "reason": "university manquante mais établissement ec-flsh-mohammedia rattaché à univ-uh2c",
+          "evidence": "REAL_SCHOOLS ec-flsh-mohammedia.universityId=univ-uh2c | title=\"Master FLSH Mohammedia\"",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-ensam-casablanca|ensam-casablanca|2026",
+      "title": "Présélection Master ENSAM Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/03/resultats-preselection-master-ensam-casa-2026-2027.html",
+      "scraped": {
+        "city": "Casablanca",
+        "establishment": "ENSAM Casablanca",
+        "dates": {
+          "resultsDate": "2026-09-17"
+        },
+        "urls": {
+          "officialUrl": "https://ensam-casa.ma/storage/pj/1789140969_lISTE_DES_CONVOQUES_POUR_LE_CONCOURS_IDMS.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "university",
+          "currentValue": null,
+          "status": "REVIEW",
+          "reason": "university manquante mais établissement ec-ensam-casablanca rattaché à univ-uh2c",
+          "evidence": "REAL_SCHOOLS ec-ensam-casablanca.universityId=univ-uh2c | title=\"Présélection Master ENSAM Casablanca\"",
+          "suggestedResolution": null
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "https://ensam-casa.ma/storage/pj/1789140969_lISTE_DES_CONVOQ",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://ensam-casa.ma/storage/pj/1789140969_lISTE_DES_CONVOQUES_POUR_LE_CONCOURS | documents=[\"https://ensam-casa.ma/storage/pj/1789140969_lISTE_DES_CONVOQUES_POUR_LE_CONCOURS_IDMS.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fsjp-marrakech|universite-cadi-ayyad-de-marrakech|2026",
+      "title": "Présélection Master FSJP Marrakech",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-fsjp-Marrakech-2026-2027.html",
+      "scraped": {
+        "city": "Marrakech",
+        "university": "Université Cadi Ayyad de Marrakech",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {
+          "examDate": "2026-09-17",
+          "resultsDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "https://e-candidature.uca.ma/master.fsjpm/testecrit/LEE/%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D8%B9%D9%88%D9%8A%D9%86%20%D9%84%D8%A7%D8%AC%D8%AA%D9%8A%D8%A7%D8%B2%20%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B4%D9%81%D9%88%D9%8A%2017-09-2026.pdf",
+          "registrationUrl": "https://e-candidature.uca.ma/master.fsjpm/testecrit/SCS/%D9%82%D8%A7%D9%8A%D9%94%D9%85%D8%A9%20%D8%A8%D8%A7%D8%B3%D9%85%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D9%82%D8%A8%D9%88%D9%84%D9%8A%D9%86%20%D9%84%D8%A7%D8%AC%D8%AA%D9%8A%D8%A7%D8%B2%20%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1%20%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8%D9%8A%20%D9%84%D9%88%D9%84%D9%88%D8%AC%20%D9%85%D8%A7%D8%B3%D8%AA%D8%B1%20%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D9%8A%D9%94%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D9%94%D9%85%D9%86%D9%8A%D8%A9.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://e-candidature.uca.ma/master.fsjpm/testecrit/LEE/%D9%",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://e-candidature.uca.ma/master.fsjpm/testecrit/LEE/%D9%84%D8%A7%D9%8A%D9%94 | documents=[\"https://e-candidature.uca.ma/master.fsjpm/testecrit/SCS/%D9%82%D8%A7%D9%8A%D9%94%D9%85%D8%A9%20%D8%A8%D8%A7%D8%B3%D9%85%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D9%82%D8%A8%D9%88%D9%84%D9%8A%D9%86%20%D9%84%D8%A7%D8%AC%D8%AA%D9%8A%D8%A7%D8%B2%20%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1%20%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8%D9%8A%20%D9%84%D9%88%D9%84%D9%88%D8%AC%20%D9%85%D8%A7%D8%B3%D8%AA%D8%B1%20%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D9%8A%D9%94%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D9%94%D9%85%D9%86%D9%8A%D8%A9.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-ensa-berrechid|universite-hassan-1er-de-settat|2026",
+      "title": "Définitifs Master ENSA Berrechid",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-definitifs-master-ensa-Berrechid-2026-2027.html",
+      "scraped": {
+        "city": "Settat",
+        "university": "Université Hassan 1er de Settat",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://www-ensab.uh1.ac.ma/Site/assets/pdf/actualites/declaration_honneur.pdf",
+          "registrationUrl": "https://www-ensab.uh1.ac.ma/actuality/avis-dinscription-des-candidats-retenus-pour-acces-en-1ere-annee-master-temps-normal-2026-2027"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Settat",
+          "status": "REVIEW",
+          "reason": "title contient \"Berrechid\" mais city=Settat",
+          "evidence": "title=\"Définitifs Master ENSA Berrechid\" | titleCities=[\"Berrechid\"]",
+          "suggestedResolution": "Berrechid"
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www-ensab.uh1.ac.ma/Site/assets/pdf/actualites/decla",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www-ensab.uh1.ac.ma/Site/assets/pdf/actualites/declaration_honneur.pdf | documents=[\"https://www-ensab.uh1.ac.ma/Site/assets/pdf/actualites/liste_principale_master_iesi.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-inas-tanger||2026",
+      "title": "Master INAS Tanger",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-inas-tanger-2026-2027.html",
+      "scraped": {
+        "city": "Tanger",
+        "dates": {
+          "openingDate": "2026-09-10",
+          "deadlineDate": "2026-09-25",
+          "examDate": "2026-10-03",
+          "resultsDate": "2026-09-25"
+        },
+        "urls": {
+          "officialUrl": "https://inastanger.ma/preinscription2026Important",
+          "registrationUrl": "https://inastanger.ma/preinscription2026"
+        }
+      },
+      "issues": [
+        {
+          "field": "dates",
+          "currentValue": "2026-09-10, 2026-09-25, 2026-10-03, 2026-09-25",
+          "status": "REVIEW",
+          "reason": "dates dupliquées",
+          "evidence": "opening=2026-09-10 deadline=2026-09-25 exam=2026-10-03 results=2026-09-25",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-universite-ibn-zohr-agadir|flsh-ait-melloul|2026",
+      "title": "Master Université Ibn Zohr Agadir",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/10/Master-Universite-Ibn-Zohr-Agadir.html",
+      "scraped": {
+        "city": "Ait Melloul",
+        "university": "Université Ibn Zohr d’Agadir",
+        "establishment": "FLSH Ait Melloul",
+        "dates": {
+          "examDate": "2026-09-10",
+          "resultsDate": "2026-09-26"
+        },
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Ait Melloul",
+          "status": "REVIEW",
+          "reason": "title contient \"Agadir\" mais city=Ait Melloul",
+          "evidence": "title=\"Master Université Ibn Zohr Agadir\" | titleCities=[\"Agadir\"]",
+          "suggestedResolution": "Agadir"
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-ensa-beni-mellal|fsa-beni-mellal|2026",
+      "title": "Master ENSA Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ensa-beni-mellal-2026-2027.html",
+      "scraped": {
+        "city": "Béni Mellal",
+        "university": "Université Sultan Moulay Slimane de Béni Mellal",
+        "establishment": "FSA Béni Mellal",
+        "dates": {
+          "deadlineDate": "2026-09-10",
+          "examDate": "2026-09-25"
+        },
+        "urls": {
+          "officialUrl": "https://ensabm.usms.ac.ma/preinscription-master/Dates",
+          "registrationUrl": "https://ensabm.usms.ac.ma/preinscription-master/"
+        }
+      },
+      "issues": [
+        {
+          "field": "deadlineDate",
+          "currentValue": "2026-09-10",
+          "status": "REVIEW",
+          "reason": "deadline égale à publishedAt — possible erreur parsing",
+          "evidence": "deadline=2026-09-10 publishedAt=2026-09-10T00:30:16.457+01:00",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fst-mohammedia|faculte-des-sciences-et-techniques-de-mohammedia-fstm|2026",
+      "title": "Présélection Master FST Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/resultats-preselection-master-fst-Mohammedia-2026-2027.html",
+      "scraped": {
+        "city": "Mohammedia",
+        "establishment": "Faculté des Sciences et Techniques de Mohammedia (FSTM)",
+        "dates": {
+          "examDate": "2026-09-11",
+          "resultsDate": "2026-09-10"
+        },
+        "urls": {
+          "officialUrl": "https://www.fstm.ac.ma/formation_initiale/files/mst/concours_2026_2027/ecrit/PCAM26.pdf",
+          "registrationUrl": "https://www.fstm.ac.ma/formation_initiale/files/master_ta/concours_2026_2027/ecrit/listeCandidats_AISC_TempsAmenage.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www.fstm.ac.ma/formation_initiale/files/mst/concours",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www.fstm.ac.ma/formation_initiale/files/mst/concours_2026_2027/ecrit/PCA | documents=[\"https://www.fstm.ac.ma/formation_initiale/files/mst/concours_2026_2027/oral/Oral_MST_MIE_%2026_27.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "definitifs-master-inpt-rabat|inpt-rabat|2026",
+      "title": "Définitifs Master INPT Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/03/resultats-definitifs-master-inpt-rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "establishment": "INPT Rabat",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://www.inpt.ac.ma/sites/default/files/DocSite/scolarite/Liste-Admis-Master-Data-IA-2026-2027.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www.inpt.ac.ma/sites/default/files/DocSite/scolarite",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www.inpt.ac.ma/sites/default/files/DocSite/scolarite/Liste-Admis-Master- | documents=[\"https://www.inpt.ac.ma/sites/default/files/DocSite/scolarite/Liste-Admis-Master-Data-IA-2026-2027.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-isic-rabat||2026",
+      "title": "Présélection Master ISIC Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/05/Resultats-Preselection-Master-ISIC-Rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://isic.ac.ma/wp-content/uploads/2026/09/Liste-candidats-preselectionnes-PROCAN-2026-2027.pdf",
+          "registrationUrl": "https://isic.ac.ma/wp-content/uploads/2026/09/Liste-candidats-preselectionnes-%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9-2026-2027.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://isic.ac.ma/wp-content/uploads/2026/09/Liste-candidat",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://isic.ac.ma/wp-content/uploads/2026/09/Liste-candidats-preselectionnes-PR | documents=[\"https://isic.ac.ma/wp-content/uploads/2026/09/Liste-candidats-preselectionnes-%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9-2026-2027.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-encg-el-jadida|encg-el-jadida|2026",
+      "title": "Master ENCG El Jadida",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-encg-el-jadida-2026-2027.html",
+      "scraped": {
+        "city": "El Jadida",
+        "university": "Université Chouaïb Doukkali d’El Jadida",
+        "establishment": "ENCG El Jadida",
+        "domain": "Économie, Finance & Gestion",
+        "dates": {
+          "openingDate": "2026-09-08",
+          "deadlineDate": "2026-09-20",
+          "examDate": "2026-09-20",
+          "resultsDate": "2026-09-07"
+        },
+        "urls": {
+          "officialUrl": "https://e-candidature.ucd.ac.ma/Master/register",
+          "registrationUrl": "https://e-candidature.ucd.ac.ma/Master/register"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "El Jadida",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"El Jadida\",\"Fès\"] — ambigu",
+          "evidence": "titleCities=[\"El Jadida\"] descCities=[\"Fès\",\"El Jadida\"]",
+          "suggestedResolution": null
+        },
+        {
+          "field": "dates",
+          "currentValue": "2026-09-08, 2026-09-20, 2026-09-20, 2026-09-07",
+          "status": "REVIEW",
+          "reason": "dates dupliquées",
+          "evidence": "opening=2026-09-08 deadline=2026-09-20 exam=2026-09-20 results=2026-09-07",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fst-marrakech|faculte-des-sciences-et-techniques-de-marrakech-fstg|2026",
+      "title": "Présélection Master FST Marrakech",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/Resultats-Preselection-Master-FST-Marrakech-2026-2027.html",
+      "scraped": {
+        "city": "Marrakech",
+        "university": "Université Cadi Ayyad de Marrakech",
+        "establishment": "Faculté des Sciences et Techniques de Marrakech (FSTG)",
+        "dates": {
+          "examDate": "2026-09-12",
+          "resultsDate": "2026-09-12"
+        },
+        "urls": {
+          "officialUrl": "https://e-candidature.uca.ma/master.fst/testecrit/AICE_Affichage_AA.pdf",
+          "registrationUrl": "https://e-candidature.uca.ma/master.fst/testecrit/liste-candidats-concours-MODASIM-12-09-26.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "dates",
+          "currentValue": "2026-09-12, 2026-09-12",
+          "status": "REVIEW",
+          "reason": "dates dupliquées",
+          "evidence": "opening=undefined deadline=undefined exam=2026-09-12 results=2026-09-12",
+          "suggestedResolution": null
+        },
+        {
+          "field": "officialUrl",
+          "currentValue": "https://e-candidature.uca.ma/master.fst/testecrit/AICE_Affic",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://e-candidature.uca.ma/master.fst/testecrit/AICE_Affichage_AA.pdf | documents=[\"https://e-candidature.uca.ma/master.fst/testecrit/liste-candidats-concours-MODASIM-12-09-26.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fsjes-souissi-rabat|fsjes-rabat-souissi|2026",
+      "title": "Présélection Master FSJES Souissi Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FSJES-Souissi-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "establishment": "FSJES Rabat-Souissi",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {},
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Rabat",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Rabat\",\"Fès\"] — ambigu",
+          "evidence": "titleCities=[\"Rabat\"] descCities=[\"Rabat\",\"Fès\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fsjes-mohammedia|fsjes-mohammedia|2026",
+      "title": "Master FSJES Mohammedia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fsjes-mohammedia-2026-2027.html",
+      "scraped": {
+        "city": "Mohammedia",
+        "establishment": "FSJES Mohammedia",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {
+          "deadlineDate": "2026-09-07"
+        },
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Mohammedia",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Mohammedia\",\"Casablanca\",\"Fès\"] — ambigu",
+          "evidence": "titleCities=[\"Mohammedia\"] descCities=[\"Casablanca\",\"Fès\",\"Mohammedia\"]",
+          "suggestedResolution": null
+        },
+        {
+          "field": "university",
+          "currentValue": null,
+          "status": "REVIEW",
+          "reason": "university manquante mais établissement ec-fsjes-mohammedia rattaché à univ-uh2c",
+          "evidence": "REAL_SCHOOLS ec-fsjes-mohammedia.universityId=univ-uh2c | title=\"Master FSJES Mohammedia\"",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-universite-moulay-ismail-meknes|fsjes-meknes|2026",
+      "title": "Master Université Moulay Ismail Meknès",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-moulay-ismail-meknes.html",
+      "scraped": {
+        "city": "Meknès",
+        "university": "Université Moulay Ismaïl de Meknès",
+        "establishment": "FSJES Meknès",
+        "dates": {},
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Meknès",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Meknès\",\"Errachidia\"] — ambigu",
+          "evidence": "titleCities=[\"Meknès\"] descCities=[\"Meknès\",\"Errachidia\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fshs-errachidia|fsjp-errachidia|2026",
+      "title": "Master FSHS Errachidia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fshs-errachidia-2026-2027.html",
+      "scraped": {
+        "city": "Errachidia",
+        "university": "Université Moulay Ismaïl de Meknès",
+        "establishment": "FSJP Errachidia",
+        "dates": {
+          "deadlineDate": "2026-09-08"
+        },
+        "urls": {
+          "officialUrl": "https://candidature.umi.ac.ma/",
+          "registrationUrl": "https://candidature.umi.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Errachidia",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Errachidia\",\"Meknès\"] — ambigu",
+          "evidence": "titleCities=[\"Errachidia\"] descCities=[\"Meknès\",\"Errachidia\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-universite-abdelmalek-essaadi-tetouan|universite-abdelmalek-essaadi|2026",
+      "title": "Master Université Abdelmalek Essaâdi Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2022/08/master-universite-abdelmalek-essaadi.html",
+      "scraped": {
+        "city": "Tanger",
+        "university": "Université Abdelmalek Essaâdi",
+        "dates": {},
+        "urls": {
+          "officialUrl": "http://inscriptionmaster-ta.uae.ac.ma",
+          "registrationUrl": "http://inscriptionmaster.uae.ac.ma"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Tanger",
+          "status": "REVIEW",
+          "reason": "title contient \"Tétouan\" mais city=Tanger",
+          "evidence": "title=\"Master Université Abdelmalek Essaâdi Tétouan\" | titleCities=[\"Tétouan\"]",
+          "suggestedResolution": "Tétouan"
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-universite-sultan-moulay-slimane-beni-mellal|fsjp-beni-mellal|2026",
+      "title": "Master Université Sultan Moulay Slimane Béni Mellal",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-sultan-moulay-slimane.html",
+      "scraped": {
+        "city": "Béni Mellal",
+        "university": "Université Sultan Moulay Slimane de Béni Mellal",
+        "establishment": "FSJP Béni Mellal",
+        "dates": {},
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Béni Mellal",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Béni Mellal\",\"Khouribga\"] — ambigu",
+          "evidence": "titleCities=[\"Béni Mellal\"] descCities=[\"Béni Mellal\",\"Khouribga\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-universite-hassan-ii-casablanca|ensam-casablanca|2026",
+      "title": "Master Université Hassan II Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/06/master-universite-hassan-ii-casablanca.html",
+      "scraped": {
+        "city": "Casablanca",
+        "university": "Université Hassan II de Casablanca",
+        "establishment": "ENSAM Casablanca",
+        "dates": {},
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Casablanca",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Casablanca\",\"Mohammedia\"] — ambigu",
+          "evidence": "titleCities=[\"Casablanca\"] descCities=[\"Casablanca\",\"Mohammedia\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-universite-mohammed-premier-oujda|fsjes-oujda|2026",
+      "title": "Master Université Mohammed Premier Oujda",
+      "sourceUrl": "https://www.almaster-maroc.com/2022/07/master-universite-mohammed-premier.html",
+      "scraped": {
+        "city": "Oujda",
+        "university": "Université Mohammed Premier d’Oujda",
+        "establishment": "FSJES Oujda",
+        "dates": {},
+        "urls": {}
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Oujda",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Oujda\",\"Nador\"] — ambigu",
+          "evidence": "titleCities=[\"Oujda\"] descCities=[\"Oujda\",\"Nador\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fsjp-tetouan|universite-abdelmalek-essaadi|2026",
+      "title": "Master FSJP Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-tetouan-2026-2027.html",
+      "scraped": {
+        "city": "Tanger",
+        "university": "Université Abdelmalek Essaâdi",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {
+          "openingDate": "2026-09-04",
+          "deadlineDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "http://inscriptionmaster-ta.uae.ac.ma/",
+          "registrationUrl": "http://inscriptionmaster.uae.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Tanger",
+          "status": "REVIEW",
+          "reason": "title contient \"Tétouan\" mais city=Tanger",
+          "evidence": "title=\"Master FSJP Tétouan\" | titleCities=[\"Tétouan\"]",
+          "suggestedResolution": "Tétouan"
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-feg-tetouan|feg-tanger|2026",
+      "title": "Master FEG Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-tetouan-2026-2027.html",
+      "scraped": {
+        "city": "Tanger",
+        "university": "Université Abdelmalek Essaâdi",
+        "establishment": "FEG Tanger",
+        "domain": "Économie, Finance & Gestion",
+        "dates": {
+          "openingDate": "2026-09-04",
+          "deadlineDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "http://inscriptionmaster-ta.uae.ac.ma/",
+          "registrationUrl": "http://inscriptionmaster.uae.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Tanger",
+          "status": "REVIEW",
+          "reason": "title contient \"Tétouan\" mais city=Tanger",
+          "evidence": "title=\"Master FEG Tétouan\" | titleCities=[\"Tétouan\"]",
+          "suggestedResolution": "Tétouan"
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-faculte-ossoul-eddine-tetouan|universite-abdelmalek-essaadi|2026",
+      "title": "Master Faculté Ossoul Eddine Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/master-faculte-ossoul-eddine-tetouan-2026-2027.html",
+      "scraped": {
+        "city": "Tanger",
+        "university": "Université Abdelmalek Essaâdi",
+        "dates": {
+          "openingDate": "2026-09-04",
+          "deadlineDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "http://inscriptionmaster-ta.uae.ac.ma/",
+          "registrationUrl": "http://inscriptionmaster.uae.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Tanger",
+          "status": "REVIEW",
+          "reason": "title contient \"Tétouan\" mais city=Tanger",
+          "evidence": "title=\"Master Faculté Ossoul Eddine Tétouan\" | titleCities=[\"Tétouan\"]",
+          "suggestedResolution": "Tétouan"
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-esrft-tanger|universite-abdelmalek-essaadi|2026",
+      "title": "Master ESRFT Tanger",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-esrft-tanger-2026-2027.html",
+      "scraped": {
+        "city": "Tanger",
+        "university": "Université Abdelmalek Essaâdi",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {
+          "openingDate": "2026-09-04",
+          "deadlineDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "http://inscriptionmaster-ta.uae.ac.ma/",
+          "registrationUrl": "http://inscriptionmaster.uae.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Tanger",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Tanger\",\"Tétouan\"] — ambigu",
+          "evidence": "titleCities=[\"Tanger\"] descCities=[\"Tanger\",\"Tétouan\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-encg-tanger|encg-tanger|2026",
+      "title": "Master ENCG Tanger",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-encg-tanger-2026-2027.html",
+      "scraped": {
+        "city": "Tanger",
+        "university": "Université Abdelmalek Essaâdi",
+        "establishment": "ENCG Tanger",
+        "domain": "Informatique & Intelligence Artificielle",
+        "dates": {
+          "openingDate": "2026-09-04",
+          "deadlineDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "http://inscriptionmaster-ta.uae.ac.ma/",
+          "registrationUrl": "http://inscriptionmaster.uae.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Tanger",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Tanger\",\"Fès\"] — ambigu",
+          "evidence": "titleCities=[\"Tanger\"] descCities=[\"Fès\",\"Tanger\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-flsh-tetouan|universite-abdelmalek-essaadi|2026",
+      "title": "Master FLSH Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flsh-tetouan-2026-2027.html",
+      "scraped": {
+        "city": "Tanger",
+        "university": "Université Abdelmalek Essaâdi",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {
+          "openingDate": "2026-09-04",
+          "deadlineDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "http://inscriptionmaster-ta.uae.ac.ma/",
+          "registrationUrl": "http://inscriptionmaster.uae.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Tanger",
+          "status": "REVIEW",
+          "reason": "title contient \"Tétouan\" mais city=Tanger",
+          "evidence": "title=\"Master FLSH Tétouan\" | titleCities=[\"Tétouan\"]",
+          "suggestedResolution": "Tétouan"
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fs-tetouan|universite-abdelmalek-essaadi|2026",
+      "title": "Master FS Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fs-tetouan-2026-2027.html",
+      "scraped": {
+        "city": "Tanger",
+        "university": "Université Abdelmalek Essaâdi",
+        "dates": {
+          "openingDate": "2026-09-04",
+          "deadlineDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "http://inscriptionmaster-ta.uae.ac.ma/",
+          "registrationUrl": "http://inscriptionmaster.uae.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Tanger",
+          "status": "REVIEW",
+          "reason": "title contient \"Tétouan\" mais city=Tanger",
+          "evidence": "title=\"Master FS Tétouan\" | titleCities=[\"Tétouan\"]",
+          "suggestedResolution": "Tétouan"
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-feg-tanger|feg-tanger|2026",
+      "title": "Master FEG Tanger",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-tanger-2026-2027.html",
+      "scraped": {
+        "city": "Tanger",
+        "university": "Université Abdelmalek Essaâdi",
+        "establishment": "FEG Tanger",
+        "domain": "Économie, Finance & Gestion",
+        "dates": {
+          "openingDate": "2026-09-04",
+          "deadlineDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "http://inscriptionmaster-ta.uae.ac.ma/",
+          "registrationUrl": "http://inscriptionmaster.uae.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Tanger",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Tanger\",\"Tétouan\"] — ambigu",
+          "evidence": "titleCities=[\"Tanger\"] descCities=[\"Tanger\",\"Tétouan\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fsjp-tanger|universite-abdelmalek-essaadi|2026",
+      "title": "Master FSJP Tanger",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-tanger-2026-2027.html",
+      "scraped": {
+        "city": "Tanger",
+        "university": "Université Abdelmalek Essaâdi",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {
+          "openingDate": "2026-09-04",
+          "deadlineDate": "2026-09-19"
+        },
+        "urls": {
+          "officialUrl": "http://inscriptionmaster-ta.uae.ac.ma/",
+          "registrationUrl": "http://inscriptionmaster.uae.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Tanger",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Tanger\",\"Tétouan\"] — ambigu",
+          "evidence": "titleCities=[\"Tanger\"] descCities=[\"Tanger\",\"Tétouan\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": false,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "preselection-master-fst-settat|faculte-des-sciences-et-techniques-de-settat-fsts|2026",
+      "title": "Présélection Master FST Settat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/resultats-preselection-Master-FST-Settat-2026-2027.html",
+      "scraped": {
+        "city": "Settat",
+        "establishment": "Faculté des Sciences et Techniques de Settat (FSTS)",
+        "dates": {
+          "resultsDate": "2026-09-08"
+        },
+        "urls": {
+          "officialUrl": "https://www.fsts.ac.ma/storage/21/liste-mst-agqshe-convoques-ecrit-2026-2027-affichage.pdf",
+          "registrationUrl": "https://www.fsts.ac.ma/storage/22/liste-candidats-convoques-ecrit-2026-2027-mgcbpc.pdf"
+        }
+      },
+      "issues": [
+        {
+          "field": "officialUrl",
+          "currentValue": "https://www.fsts.ac.ma/storage/21/liste-mst-agqshe-convoques",
+          "status": "REVIEW",
+          "reason": "officialUrl est un PDF — devrait être officialDocument, pas officialWebsite",
+          "evidence": "officialUrl=https://www.fsts.ac.ma/storage/21/liste-mst-agqshe-convoques-ecrit-2026-2027-aff | documents=[\"https://www.fsts.ac.ma/storage/83/mst-mte-liste-convoques-ecrit-2026-2027.pdf\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-fsjes-souissi-rabat|fsjes-rabat-souissi|2026",
+      "title": "Master FSJES Souissi Rabat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fsjes-souissi-rabat-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "university": "Université Mohammed V de Rabat",
+        "establishment": "FSJES Rabat-Souissi",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "dates": {
+          "deadlineDate": "2026-09-04"
+        },
+        "urls": {
+          "officialUrl": "https://preins.um5.ac.ma/تفتح"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Rabat",
+          "status": "REVIEW",
+          "reason": "plusieurs villes détectées [\"Rabat\",\"Fès\"] — ambigu",
+          "evidence": "titleCities=[\"Rabat\"] descCities=[\"Rabat\",\"Fès\"]",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-flsh-ain-chock-casablanca|fsjes-ain-chock-casablanca|2026",
+      "title": "Master FLSH Ain Chock Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-flsh-ain-chock-casablanca-2026.html",
+      "scraped": {
+        "city": "Casablanca",
+        "establishment": "FSJES Aïn Chock (Casablanca)",
+        "domain": "Lettres, Langues & Sciences Humaines",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://www.flshac-candidature-master.com/login",
+          "registrationUrl": "https://www.flshac-candidature-master.com/login"
+        }
+      },
+      "issues": [
+        {
+          "field": "establishment",
+          "currentValue": "FSJES Aïn Chock (Casablanca)",
+          "status": "REVIEW",
+          "reason": "title contient FLSH mais establishment résolu = FSJES Aïn Chock (Casablanca) (FS) — mismatch Lettres vs Sciences",
+          "evidence": "title=\"Master FLSH Ain Chock Casablanca\" | establishment=\"FSJES Aïn Chock (Casablanca)\"",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-ensam-casablanca|ensam-casablanca|2026",
+      "title": "Master ENSAM Casablanca",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ensam-casablanca-2026-2027.html",
+      "scraped": {
+        "city": "Casablanca",
+        "establishment": "ENSAM Casablanca",
+        "dates": {},
+        "urls": {
+          "officialUrl": "https://www.ensam-casa.ma/pre-condidature/cycles/inscrire?id=2",
+          "registrationUrl": "https://www.ensam-casa.ma/pre-condidature/cycles/inscrire?id=2"
+        }
+      },
+      "issues": [
+        {
+          "field": "university",
+          "currentValue": null,
+          "status": "REVIEW",
+          "reason": "university manquante mais établissement ec-ensam-casablanca rattaché à univ-uh2c",
+          "evidence": "REAL_SCHOOLS ec-ensam-casablanca.universityId=univ-uh2c | title=\"Master ENSAM Casablanca\"",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-feg-settat|feg-settat|2026",
+      "title": "Master FEG Settat",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-settat-2026-2027.html",
+      "scraped": {
+        "city": "Settat",
+        "university": "Université Hassan 1er de Settat",
+        "establishment": "FEG Settat",
+        "domain": "Économie, Finance & Gestion",
+        "dates": {
+          "deadlineDate": "2026-09-11",
+          "examDate": "2026-09-11"
+        },
+        "urls": {
+          "officialUrl": "https://temps-amenage.uh1.ac.ma/nos-formation/9/master",
+          "registrationUrl": "https://pre-inscription.uh1.ac.ma/master/9"
+        }
+      },
+      "issues": [
+        {
+          "field": "dates",
+          "currentValue": "2026-09-11, 2026-09-11",
+          "status": "REVIEW",
+          "reason": "dates dupliquées",
+          "evidence": "opening=undefined deadline=2026-09-11 exam=2026-09-11 results=undefined",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    },
+    {
+      "fingerprint": "master-ensiasd-taroudant|ensias-rabat|2026",
+      "title": "Master ENSIASD Taroudant",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ensiasd-taroudant-2026-2027.html",
+      "scraped": {
+        "city": "Rabat",
+        "university": "Université Ibn Zohr d’Agadir",
+        "establishment": "ENSIAS Rabat",
+        "domain": "Informatique & Intelligence Artificielle",
+        "dates": {
+          "examDate": "2026-09-10",
+          "resultsDate": "2026-09-26"
+        },
+        "urls": {
+          "officialUrl": "http://preinscription.uiz.ac.ma/",
+          "registrationUrl": "http://preinscription.uiz.ac.ma/"
+        }
+      },
+      "issues": [
+        {
+          "field": "city",
+          "currentValue": "Rabat",
+          "status": "REVIEW",
+          "reason": "title contient \"Taroudant\" mais city=Rabat",
+          "evidence": "title=\"Master ENSIASD Taroudant\" | titleCities=[\"Taroudant\"]",
+          "suggestedResolution": "Taroudant"
+        },
+        {
+          "field": "university",
+          "currentValue": "Université Ibn Zohr d’Agadir",
+          "status": "REVIEW",
+          "reason": "établissement ec-ensias appartient à univ-um5 mais university scraper=univ-uiz",
+          "evidence": "REAL_SCHOOLS ec-ensias.universityId=univ-um5 vs scraped university Université Ibn Zohr d’Agadir → univ-uiz",
+          "suggestedResolution": null
+        }
+      ],
+      "masterValid": true,
+      "competitionBlocked": true
+    }
+  ],
+  "reviewsCount": 90,
+  "corrections": [
+    {
+      "fingerprint": "master-fsjp-nador|universite-mohammed-premier-d-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FSJP Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-feg-nador|universite-mohammed-premier-d-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FEG Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fsa-nador|fsa-beni-mellal|2026",
+      "field": "city",
+      "current": "Béni Mellal",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FSA Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsa-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flla-nador|universite-mohammed-premier-d-oujda|2026",
+      "field": "city",
+      "current": "Oujda",
+      "suggested": "Nador",
+      "evidence": "title contient Nador",
+      "title": "Master FLLA Nador",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flla-nador-2026-2027.html"
+    },
+    {
+      "fingerprint": "preselection-master-chariaa-ait-melloul|faculte-chariaa-de-fes|2026",
+      "field": "city",
+      "current": "Fès",
+      "suggested": "Ait Melloul",
+      "evidence": "title contient Ait Melloul",
+      "title": "Présélection Master Chariaa Ait Melloul",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-preselection-master-chariaa-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flla-errachidia|universite-moulay-ismail-de-meknes|2026",
+      "field": "city",
+      "current": "Meknès",
+      "suggested": "Errachidia",
+      "evidence": "title contient Errachidia",
+      "title": "Master FLLA Errachidia",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-flla-errachidia-2026-2027.html"
+    },
+    {
+      "fingerprint": "definitifs-master-ensa-berrechid|universite-hassan-1er-de-settat|2026",
+      "field": "city",
+      "current": "Settat",
+      "suggested": "Berrechid",
+      "evidence": "title contient Berrechid",
+      "title": "Définitifs Master ENSA Berrechid",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/resultats-definitifs-master-ensa-Berrechid-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-universite-ibn-zohr-agadir|flsh-ait-melloul|2026",
+      "field": "city",
+      "current": "Ait Melloul",
+      "suggested": "Agadir",
+      "evidence": "title contient Agadir",
+      "title": "Master Université Ibn Zohr Agadir",
+      "sourceUrl": "https://www.almaster-maroc.com/2023/10/Master-Universite-Ibn-Zohr-Agadir.html"
+    },
+    {
+      "fingerprint": "master-universite-abdelmalek-essaadi-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master Université Abdelmalek Essaâdi Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2022/08/master-universite-abdelmalek-essaadi.html"
+    },
+    {
+      "fingerprint": "master-fsjp-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FSJP Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjp-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-feg-tetouan|feg-tanger|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FEG Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-feg-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-faculte-ossoul-eddine-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master Faculté Ossoul Eddine Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/master-faculte-ossoul-eddine-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-flsh-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FLSH Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-flsh-tetouan-2026-2027.html"
+    },
+    {
+      "fingerprint": "master-fs-tetouan|universite-abdelmalek-essaadi|2026",
+      "field": "city",
+      "current": "Tanger",
+      "suggested": "Tétouan",
+      "evidence": "title contient Tétouan",
+      "title": "Master FS Tétouan",
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fs-tetouan-2026-2027.html"
+    }
+  ]
+}

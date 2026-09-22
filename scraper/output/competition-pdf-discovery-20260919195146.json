@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-19T19:51:46.897Z",
+  "sourcesConsulted": 8,
+  "pagesCandidates": 8,
+  "pdfCandidates": 8,
+  "stats": {
+    "VALID_CONCOURS_PDF": 0,
+    "NOT_CONCOURS": 5,
+    "SCANNED_REVIEW": 2,
+    "UNKNOWN": 1
+  },
+  "allCandidates": [
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "baseUrl": "https://www.uca.ma",
+      "pageUrl": "https://www.uca.ma",
+      "pageTitle": "",
+      "pageCount": 3,
+      "textLength": 8290,
+      "isScanned": false,
+      "hasExploitableText": true,
+      "excerpt": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخطابي ص.ب : 511 مراكش الهاتف : 0524434813/14 فاكس : 0524434494 البريد اإللك تروني : presidence@ucam.ac.ma الموقع ا إللكترو ني : www.ucam.ac.ma إعالن عن مبار يات توظيف تعلن جامعة القاض ي عياض بمراكش أن",
+      "matchedKeywords": [
+        "recrutement",
+        "مباراة",
+        "توظيف",
+        "concours"
+      ],
+      "classification": "UNKNOWN",
+      "reason": "partiellement concours (recrutement, مباراة, توظيف, concours) mais insuffisant (score 1/5)"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "baseUrl": "https://www.uca.ma",
+      "pageUrl": "https://www.uca.ma",
+      "pageTitle": "",
+      "pageCount": 2,
+      "textLength": 28,
+      "isScanned": true,
+      "hasExploitableText": false,
+      "excerpt": "-- 1 of 2 -- -- 2 of 2 --",
+      "matchedKeywords": [
+        "concours"
+      ],
+      "classification": "SCANNED_REVIEW",
+      "reason": "PDF scanné/image (28c, 2p) — pas de texte exploitable"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "baseUrl": "https://www.uca.ma",
+      "pageUrl": "https://www.uca.ma",
+      "pageTitle": "",
+      "pageCount": 2,
+      "textLength": 28,
+      "isScanned": true,
+      "hasExploitableText": false,
+      "excerpt": "-- 1 of 2 -- -- 2 of 2 --",
+      "matchedKeywords": [
+        "concours"
+      ],
+      "classification": "SCANNED_REVIEW",
+      "reason": "PDF scanné/image (28c, 2p) — pas de texte exploitable"
+    },
+    {
+      "pdfUrl": "https://www.uiz.ac.ma/sites/default/files/Liste%20Attente%20N%C2%B02%20ENTA%20LAAYOUNE%20%202026-2027.pdf.pdf",
+      "sourceId": "univ-uiz",
+      "organization": "Université Ibn Zohr d'Agadir",
+      "baseUrl": "https://www.uiz.ac.ma",
+      "pageUrl": "https://www.uiz.ac.ma",
+      "pageTitle": "",
+      "pageCount": 1,
+      "textLength": 2221,
+      "isScanned": false,
+      "hasExploitableText": true,
+      "excerpt": "Code CNE Nom Prénom École attribuée 256 D13*****39 AFSAHI SALAH-EDDINE Laayoune 6410 C14*****18 OU BAMMOU MARWANE Laayoune 10000251 B14*****29 OUASIF SALMA Laayoune 87 D14*****50 ABDOUNE LAMIA Laayoune 528 G14*****11 AITOMAR ABDELHAKAM Laayoune 1183 D14*****58 BALLALI FATI",
+      "matchedKeywords": [],
+      "classification": "NOT_CONCOURS",
+      "reason": "pas de keywords concours suffisants (aucun) — document administratif générique"
+    },
+    {
+      "pdfUrl": "https://www.uiz.ac.ma/sites/default/files/Liste%20Attente%20N%C2%B02%20ENTA%20DAKHLA%20%202026-2027.pdf.pdf",
+      "sourceId": "univ-uiz",
+      "organization": "Université Ibn Zohr d'Agadir",
+      "baseUrl": "https://www.uiz.ac.ma",
+      "pageUrl": "https://www.uiz.ac.ma",
+      "pageTitle": "",
+      "pageCount": 2,
+      "textLength": 3669,
+      "isScanned": false,
+      "hasExploitableText": true,
+      "excerpt": "Code CNE Nom Prénom École attribuée 381 R14*****43 AIT BIHI ADAM Dakhla 1714 D14*****14 BOUARIF ABDELHAMID Dakhla 2127 M14*****43 BOUZZINE BTISSAM Dakhla 2833 P14*****52 EL AYADI HOSSAM Dakhla 2913 G14*****33 EL BOUANANI ALAE Dakhla 4025 G14*****69 ET-TAYAR OUADIA Dakhla",
+      "matchedKeywords": [],
+      "classification": "NOT_CONCOURS",
+      "reason": "pas de keywords concours suffisants (aucun) — document administratif générique"
+    },
+    {
+      "pdfUrl": "https://www.uiz.ac.ma/sites/default/files/2%C3%A8me%20liste%20attente%20admis_ENSIAB%201sept26b.pdf.pdf",
+      "sourceId": "univ-uiz",
+      "organization": "Université Ibn Zohr d'Agadir",
+      "baseUrl": "https://www.uiz.ac.ma",
+      "pageUrl": "https://www.uiz.ac.ma",
+      "pageTitle": "",
+      "pageCount": 1,
+      "textLength": 1685,
+      "isScanned": false,
+      "hasExploitableText": true,
+      "excerpt": "Page 1/1 2ème liste d'attente des candidats admis en 1ère Année des deux Années Préparatoires aux Ecoles d'Ingénieurs- ENSIAB (Par ordre de mérite) Année Universitaire 2026-2027 N° examen Cne Cin Nom Prénom 662 D1*****13 JK*****58 ATYQ FARID 2282 D1*****11 JB*****57 LEBHAIH AMINE 2330 G1",
+      "matchedKeywords": [],
+      "classification": "NOT_CONCOURS",
+      "reason": "pas de keywords concours suffisants (aucun) — document administratif générique"
+    },
+    {
+      "pdfUrl": "https://fmpd.uit.ac.ma/wp-content/uploads/2026/07/Liste-principales-des-admis-au-concours-de-Medecine-FMPD-Kenitra.pdf",
+      "sourceId": "univ-uit",
+      "organization": "Université Ibn Tofail de Kénitra",
+      "baseUrl": "https://uit.ac.ma",
+      "pageUrl": "https://uit.ac.ma",
+      "pageTitle": "",
+      "pageCount": 6,
+      "textLength": 14060,
+      "isScanned": false,
+      "hasExploitableText": true,
+      "excerpt": "Université Ibn Tofail Faculté de Médecine, de Pharmacie et de Médecine Dentaire KENITRA inscription des candidats de la liste principale 2026 Filière de Médecine Code Nom Prénom N° Inscription Date inscription E146227796 AABIDI MARYAM 1 mardi 28/07/2026 E139083774 ABBI MAROUA 2 mardi 28/07/2",
+      "matchedKeywords": [
+        "concours"
+      ],
+      "classification": "NOT_CONCOURS",
+      "reason": "pas de keywords concours suffisants (concours) — document administratif générique"
+    },
+    {
+      "pdfUrl": "https://fmpd.uit.ac.ma/wp-content/uploads/2026/07/formulaire-inscription-medecine-2026.pdf",
+      "sourceId": "univ-uit",
+      "organization": "Université Ibn Tofail de Kénitra",
+      "baseUrl": "https://uit.ac.ma",
+      "pageUrl": "https://uit.ac.ma",
+      "pageTitle": "",
+      "pageCount": 1,
+      "textLength": 1058,
+      "isScanned": false,
+      "hasExploitableText": true,
+      "excerpt": "FICHE DE RENSEIGNEMENTS Année universitaire : 2026/2027 Inscription en première année : Filière Médecine ETAT CIVIL Nom :……………………………………………………………..………….. ..: االســم العـائـلـــي Prénom :……………………………………………………………….............. : االســم الشخصـ ي CIN :………………………… Date de naissance :…………………………………….. Lieu",
+      "matchedKeywords": [],
+      "classification": "NOT_CONCOURS",
+      "reason": "pas de keywords concours suffisants (aucun) — document administratif générique"
+    }
+  ],
+  "top5": []
+}

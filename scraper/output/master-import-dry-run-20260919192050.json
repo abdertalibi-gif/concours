@@ -1,0 +1,1154 @@
+{
+  "generatedAt": "2026-09-19T19:20:50.352Z",
+  "previewFile": "C:\\Users\\Abde\\Downloads\\concours (9)\\scraper\\output\\master-import-preview-20260919191313.json",
+  "totalPreview": 150,
+  "importable": 12,
+  "reviewSkipped": 138,
+  "blockedSkipped": 0,
+  "duplicate": 6,
+  "wouldInsert": 6,
+  "failed": 0,
+  "dbWrites": 0,
+  "supabaseWrites": 0,
+  "results": [
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FSJES-Oujda-2026-2027.html",
+      "name": "Présélection Master FSJES Oujda",
+      "uniqueKey": "universite-mohammed-premier-d-oujda-fsjes-oujda-faculte-des-sciences-juridiques-economiques-et-sociales-preselection-master-fsjes-oujda-2026-2027",
+      "status": "WOULD_INSERT",
+      "action": "DRY_RUN_WOULD_INSERT",
+      "insertedId": "mst-1789845650350-pfpr",
+      "payload": {
+        "id": "mst-1789845650350-pfpr",
+        "uniqueKey": "universite-mohammed-premier-d-oujda-fsjes-oujda-faculte-des-sciences-juridiques-economiques-et-sociales-preselection-master-fsjes-oujda-2026-2027",
+        "name": "Présélection Master FSJES Oujda",
+        "university": "Université Mohammed Premier d’Oujda",
+        "establishment": "FSJES Oujda — Faculté des Sciences Juridiques, Économiques et Sociales",
+        "city": "Oujda",
+        "domain": "Droit, Sciences Juridiques & Politiques",
+        "level": "Master (Bac+5)",
+        "academicYear": "2026-2027",
+        "status": "INFORMATION",
+        "seats": null,
+        "deadlineDate": null,
+        "examDate": null,
+        "openingDate": null,
+        "resultsDate": null,
+        "publicationDate": "2026-09-19T16:41:28.189+01:00",
+        "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FSJES-Oujda-2026-2027.html",
+        "officialUrl": "http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Management%20des%20organisations,%20%C3%A9conomie%20sociale%20et%20solidaire%20et%20innovation%20sociale/temps%20normal/6aad002a18c2f.pdf",
+        "schoolWebsite": null,
+        "conditions": null,
+        "documents": "http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A/temps%20normal/6aa9891aa4931.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A/temps%20am%C3%A9nag%C3%A9/6aa9893c19fa3.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%8C%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%20%D9%88%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D8%B7%D9%8A%D8%A7%D8%AA/TEMPS%20NORMAL/6aac5968edbdf.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%8C%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%20%D9%88%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D8%B7%D9%8A%D8%A7%D8%AA/temps%20am%C3%A9nag%C3%A9/6aae790568250.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D9%87%D9%86%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%20%D9%81%D9%8A%20%D8%B3%D9%8A%D8%A7%D9%82%20%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A/temps%20normal/6aac57090d4e9.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D9%87%D9%86%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%20%D9%81%D9%8A%20%D8%B3%D9%8A%D8%A7%D9%82%20%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A/temps%20am%C3%A9nag%C3%A9/6aac5730e107a.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%AC%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9/Temps%20normal/6aaa952e1f169.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D8%B3%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2%20:%20%D8%A7%D9%84%D8%AA%D8%AF%D8%A8%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%20%D9%88%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A/temps%20normal/6aab2d89a8cbc.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D8%B3%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2%20:%20%D8%A7%D9%84%D8%AA%D8%AF%D8%A8%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%20%D9%88%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A/temps%20am%C3%A9nag%C3%A9/6aac59191fcfd.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%A3%D9%85%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF/temps%20normal/6aaa5bceee233.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%A3%D9%85%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF/temps%20am%C3%A9nag%C3%A9/6aaa5be37d95e.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%20%D9%88%20%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84/Temps%20normal/6aa98a883ba56.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%20%D9%88%20%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84/Temps%20am%C3%A9nag%C3%A9/6aa98aaa3d08c.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF%20%D9%88%D8%A7%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/temps%20normal/6aae79679f7b6.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF%20%D9%88%D8%A7%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/temps%20am%C3%A9nag%C3%A9/6aac5808effe2.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D8%A7%D8%B3%D8%AA%D8%B1%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9%20%D9%88%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B1%D9%8A%D8%A9/temps%20normal/6aab2cfbb5fc8.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D8%A7%D8%B3%D8%AA%D8%B1%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9%20%D9%88%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B1%D9%8A%D8%A9/temps%20am%C3%A9nag%C3%A9/6aab2d24660d2.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/liste%20des%20convoqu%C3%A9s%20%C3%A0%20passer%20l'examen%20%C3%A9crit/Droit%20et%20Contentieux%20des%20Affaires/Temps%20normal/6aa987f4a9f3d.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Droit%20et%20Contentieux%20des%20Affaires/Temps%20am%C3%A9nag%C3%A9/6aaa53503a3b2.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%C3%89tudes%20des%20Migrations%20et%20de%20l'Asile/Temps%20normal/6aa98b37e2801.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Transformation%20Num%C3%A9rique%20des%20Finances%20Publiques/temps%20normal/6aaba89342dc1.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Transformation%20Num%C3%A9rique%20des%20Finances%20Publiques/temps%20am%C3%A9nag%C3%A9/6aaba8af9c686.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Gestion%20financi%C3%A8re%20et%20fiscale/temps%20normal/6aae7874b5e9c.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Gestion%20financi%C3%A8re%20et%20fiscale/temps%20am%C3%A9nag%C3%A9/6aae7898bc1e6.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Management%20des%20organisations,%20%C3%A9conomie%20sociale%20et%20solidaire%20et%20innovation%20sociale/temps%20normal/6aad002a18c2f.pdf",
+        "createdAt": "2026-09-19T19:20:50.350Z",
+        "updatedAt": "2026-09-19T19:20:50.350Z"
+      },
+      "fields": {
+        "name": {
+          "targetField": "name",
+          "value": "Présélection Master FSJES Oujda",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "university": {
+          "targetField": "university",
+          "value": "Université Mohammed Premier d’Oujda",
+          "status": "AUTO",
+          "sourceField": "university",
+          "referenceId": "univ-ump",
+          "referenceLabel": "Université Mohammed Premier d’Oujda",
+          "reason": "correspondance exacte",
+          "transformedFrom": "Université Mohammed Premier d’Oujda"
+        },
+        "establishment": {
+          "targetField": "establishment",
+          "value": "FSJES Oujda — Faculté des Sciences Juridiques, Économiques et Sociales",
+          "status": "AUTO",
+          "sourceField": "establishment",
+          "referenceId": "ec-fsjes-oujda",
+          "referenceLabel": "FSJES Oujda — Faculté des Sciences Juridiques, Économiques et Sociales",
+          "reason": "correspondance exacte",
+          "transformedFrom": "FSJES Oujda"
+        },
+        "city": {
+          "targetField": "city",
+          "value": "Oujda",
+          "status": "AUTO",
+          "sourceField": "city",
+          "referenceId": "Oujda",
+          "reason": "exacte"
+        },
+        "domain": {
+          "targetField": "domain",
+          "value": "Droit, Sciences Juridiques & Politiques",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Droit, Sciences Juridiques & Politiques",
+          "reason": "exacte"
+        },
+        "level": {
+          "targetField": "level",
+          "value": "Master (Bac+5)",
+          "status": "REVIEW",
+          "sourceField": "level",
+          "reason": "hors référentiel"
+        },
+        "academicYear": {
+          "targetField": "academicYear",
+          "value": "2026-2027",
+          "status": "AUTO",
+          "sourceField": "academicYear"
+        },
+        "status": {
+          "targetField": "status",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate/openingDate",
+          "reason": "aucune date source → INFORMATION"
+        },
+        "seats": {
+          "targetField": "seats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "places",
+          "reason": "0/150 — jamais annoncé, default 35 du formulaire NON appliqué"
+        },
+        "deadlineDate": {
+          "targetField": "deadlineDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate",
+          "reason": "101/150 vides"
+        },
+        "examDate": {
+          "targetField": "examDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides"
+        },
+        "openingDate": {
+          "targetField": "openingDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate",
+          "reason": "123/150 vides"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "publicationDate": {
+          "targetField": "publicationDate",
+          "value": "2026-09-19T16:41:28.189+01:00",
+          "status": "AUTO",
+          "sourceField": "publishedAt"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.almaster-maroc.com/2026/06/Resultats-Preselection-Master-FSJES-Oujda-2026-2027.html",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "officialUrl": {
+          "targetField": "officialUrl",
+          "value": "http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Management%20des%20organisations,%20%C3%A9conomie%20sociale%20et%20solidaire%20et%20innovation%20sociale/temps%20normal/6aad002a18c2f.pdf",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "schoolWebsite": {
+          "targetField": "schoolWebsite",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl",
+          "reason": "72/150 sans registration"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "conditions",
+          "reason": "0/150 — jamais structuré, formulaire default NON appliqué"
+        },
+        "documents": {
+          "targetField": "documents",
+          "value": "http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A/temps%20normal/6aa9891aa4931.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A/temps%20am%C3%A9nag%C3%A9/6aa9893c19fa3.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%8C%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%20%D9%88%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D8%B7%D9%8A%D8%A7%D8%AA/TEMPS%20NORMAL/6aac5968edbdf.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%8C%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%20%D9%88%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D8%B7%D9%8A%D8%A7%D8%AA/temps%20am%C3%A9nag%C3%A9/6aae790568250.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D9%87%D9%86%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%20%D9%81%D9%8A%20%D8%B3%D9%8A%D8%A7%D9%82%20%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A/temps%20normal/6aac57090d4e9.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D9%87%D9%86%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%20%D9%81%D9%8A%20%D8%B3%D9%8A%D8%A7%D9%82%20%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A/temps%20am%C3%A9nag%C3%A9/6aac5730e107a.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%AC%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9/Temps%20normal/6aaa952e1f169.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D8%B3%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2%20:%20%D8%A7%D9%84%D8%AA%D8%AF%D8%A8%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%20%D9%88%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A/temps%20normal/6aab2d89a8cbc.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D8%B3%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2%20:%20%D8%A7%D9%84%D8%AA%D8%AF%D8%A8%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%20%D9%88%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A/temps%20am%C3%A9nag%C3%A9/6aac59191fcfd.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%A3%D9%85%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF/temps%20normal/6aaa5bceee233.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D8%A7%D9%84%D8%A3%D9%85%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF/temps%20am%C3%A9nag%C3%A9/6aaa5be37d95e.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%20%D9%88%20%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84/Temps%20normal/6aa98a883ba56.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%20%D9%88%20%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84/Temps%20am%C3%A9nag%C3%A9/6aa98aaa3d08c.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF%20%D9%88%D8%A7%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/temps%20normal/6aae79679f7b6.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF%20%D9%88%D8%A7%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/temps%20am%C3%A9nag%C3%A9/6aac5808effe2.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D8%A7%D8%B3%D8%AA%D8%B1%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9%20%D9%88%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B1%D9%8A%D8%A9/temps%20normal/6aab2cfbb5fc8.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%D9%85%D8%A7%D8%B3%D8%AA%D8%B1%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9%20%D9%88%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B1%D9%8A%D8%A9/temps%20am%C3%A9nag%C3%A9/6aab2d24660d2.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/liste%20des%20convoqu%C3%A9s%20%C3%A0%20passer%20l'examen%20%C3%A9crit/Droit%20et%20Contentieux%20des%20Affaires/Temps%20normal/6aa987f4a9f3d.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Droit%20et%20Contentieux%20des%20Affaires/Temps%20am%C3%A9nag%C3%A9/6aaa53503a3b2.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/%C3%89tudes%20des%20Migrations%20et%20de%20l'Asile/Temps%20normal/6aa98b37e2801.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Transformation%20Num%C3%A9rique%20des%20Finances%20Publiques/temps%20normal/6aaba89342dc1.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Transformation%20Num%C3%A9rique%20des%20Finances%20Publiques/temps%20am%C3%A9nag%C3%A9/6aaba8af9c686.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Gestion%20financi%C3%A8re%20et%20fiscale/temps%20normal/6aae7874b5e9c.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Gestion%20financi%C3%A8re%20et%20fiscale/temps%20am%C3%A9nag%C3%A9/6aae7898bc1e6.pdf, http://droit.ump.ma/uploads/files/1/Ann%C3%A9e%20universitaire%202026-2027/Master/liste%20des%20admis%20pour%20passe%20l'examen%20%C3%A9crit/Management%20des%20organisations,%20%C3%A9conomie%20sociale%20et%20solidaire%20et%20innovation%20sociale/temps%20normal/6aad002a18c2f.pdf",
+          "status": "AUTO",
+          "sourceField": "documents",
+          "reason": "join(\", \") — split côté masterToCompetition"
+        }
+      },
+      "references": {
+        "university": "univ-ump",
+        "school": "ec-fsjes-oujda",
+        "city": "Oujda"
+      },
+      "evidence": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2026/06/Resultats-Master-FLSH-Meknes-2026-2027.html",
+      "name": "Présélection Master FLSH Meknès",
+      "uniqueKey": "universite-moulay-ismail-de-meknes-flsh-meknes-faculte-des-lettres-et-des-sciences-humaines-preselection-master-flsh-meknes-2026-2027",
+      "status": "DUPLICATE",
+      "action": "SKIPPED_DUPLICATE",
+      "existingId": "mst-import-1789404127420-l3z0x",
+      "existingUniqueKey": "universite-moulay-ismail-de-meknes-flsh-meknes-faculte-des-lettres-et-des-sciences-humaines-preselection-master-flsh-meknes-2026-2027",
+      "reason": "Doublon détecté via uniqueKey ou combo university+establishment+name+year",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-fsjes-oujda-2026-2027.html",
+      "name": "Master FSJES Oujda",
+      "uniqueKey": "universite-mohammed-premier-d-oujda-fsjes-oujda-faculte-des-sciences-juridiques-economiques-et-sociales-master-fsjes-oujda-2026-2027",
+      "status": "DUPLICATE",
+      "action": "SKIPPED_DUPLICATE",
+      "existingId": "mst-import-1789404127331-edmm1",
+      "existingUniqueKey": "universite-mohammed-premier-d-oujda-fsjes-oujda-faculte-des-sciences-juridiques-economiques-et-sociales-master-fsjes-oujda-2026-2027",
+      "reason": "Doublon détecté via uniqueKey ou combo university+establishment+name+year",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2026/04/resultats-definitifs-master-ensam-2026-2027.html",
+      "name": "Définitifs Master ENSAM Casablanca",
+      "uniqueKey": "universite-hassan-ii-de-casablanca-ensam-casablanca-ecole-nationale-superieure-d-arts-et-metiers-definitifs-master-ensam-casablanca-2026-2027",
+      "status": "WOULD_INSERT",
+      "action": "DRY_RUN_WOULD_INSERT",
+      "insertedId": "mst-1789845650351-khy0",
+      "payload": {
+        "id": "mst-1789845650351-khy0",
+        "uniqueKey": "universite-hassan-ii-de-casablanca-ensam-casablanca-ecole-nationale-superieure-d-arts-et-metiers-definitifs-master-ensam-casablanca-2026-2027",
+        "name": "Définitifs Master ENSAM Casablanca",
+        "university": "Université Hassan II de Casablanca",
+        "establishment": "ENSAM Casablanca — École Nationale Supérieure d’Arts et Métiers",
+        "city": "Casablanca",
+        "domain": "Sciences & Technologies",
+        "level": "Master (Bac+5)",
+        "academicYear": "2026-2027",
+        "status": "OUVERT",
+        "seats": null,
+        "deadlineDate": "2026-09-21",
+        "examDate": null,
+        "openingDate": null,
+        "resultsDate": "2026-09-18",
+        "publicationDate": "2026-09-11T23:51:59.438+01:00",
+        "sourceUrl": "https://www.almaster-maroc.com/2026/04/resultats-definitifs-master-ensam-2026-2027.html",
+        "officialUrl": "https://assurance-etudiant.prevas.ma/3",
+        "schoolWebsite": null,
+        "conditions": null,
+        "documents": "https://ensam-casa.ma/storage/pj/1789144153_LP__BDIO.pdf, https://ensam-casa.ma/storage/pj/1789144153_LP_TI.pdf",
+        "createdAt": "2026-09-19T19:20:50.351Z",
+        "updatedAt": "2026-09-19T19:20:50.351Z"
+      },
+      "fields": {
+        "name": {
+          "targetField": "name",
+          "value": "Définitifs Master ENSAM Casablanca",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "university": {
+          "targetField": "university",
+          "value": "Université Hassan II de Casablanca",
+          "status": "AUTO",
+          "sourceField": "university",
+          "referenceId": "univ-uh2c",
+          "referenceLabel": "Université Hassan II de Casablanca",
+          "reason": "correspondance exacte",
+          "transformedFrom": "Université Hassan II de Casablanca"
+        },
+        "establishment": {
+          "targetField": "establishment",
+          "value": "ENSAM Casablanca — École Nationale Supérieure d’Arts et Métiers",
+          "status": "AUTO",
+          "sourceField": "establishment",
+          "referenceId": "ec-ensam-casablanca",
+          "referenceLabel": "ENSAM Casablanca — École Nationale Supérieure d’Arts et Métiers",
+          "reason": "correspondance exacte",
+          "transformedFrom": "ENSAM Casablanca"
+        },
+        "city": {
+          "targetField": "city",
+          "value": "Casablanca",
+          "status": "AUTO",
+          "sourceField": "city",
+          "referenceId": "Casablanca",
+          "reason": "exacte"
+        },
+        "domain": {
+          "targetField": "domain",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides"
+        },
+        "level": {
+          "targetField": "level",
+          "value": "Master (Bac+5)",
+          "status": "REVIEW",
+          "sourceField": "level",
+          "reason": "hors référentiel"
+        },
+        "academicYear": {
+          "targetField": "academicYear",
+          "value": "2026-2027",
+          "status": "AUTO",
+          "sourceField": "academicYear"
+        },
+        "status": {
+          "targetField": "status",
+          "value": "OUVERT",
+          "status": "AUTO",
+          "sourceField": "deadlineDate/resultsDate",
+          "reason": "calculé côté serveur normalizeMaster"
+        },
+        "seats": {
+          "targetField": "seats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "places",
+          "reason": "0/150 — jamais annoncé, default 35 du formulaire NON appliqué"
+        },
+        "deadlineDate": {
+          "targetField": "deadlineDate",
+          "value": "2026-09-21",
+          "status": "AUTO",
+          "sourceField": "deadlineDate",
+          "reason": "ISO YYYY-MM-DD, plausibilité vs publishedAt déjà vérifiée"
+        },
+        "examDate": {
+          "targetField": "examDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides"
+        },
+        "openingDate": {
+          "targetField": "openingDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate",
+          "reason": "123/150 vides"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": "2026-09-18",
+          "status": "AUTO",
+          "sourceField": "resultsDate"
+        },
+        "publicationDate": {
+          "targetField": "publicationDate",
+          "value": "2026-09-11T23:51:59.438+01:00",
+          "status": "AUTO",
+          "sourceField": "publishedAt"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.almaster-maroc.com/2026/04/resultats-definitifs-master-ensam-2026-2027.html",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "officialUrl": {
+          "targetField": "officialUrl",
+          "value": "https://assurance-etudiant.prevas.ma/3",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "schoolWebsite": {
+          "targetField": "schoolWebsite",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl",
+          "reason": "72/150 sans registration"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "conditions",
+          "reason": "0/150 — jamais structuré, formulaire default NON appliqué"
+        },
+        "documents": {
+          "targetField": "documents",
+          "value": "https://ensam-casa.ma/storage/pj/1789144153_LP__BDIO.pdf, https://ensam-casa.ma/storage/pj/1789144153_LP_TI.pdf",
+          "status": "AUTO",
+          "sourceField": "documents",
+          "reason": "join(\", \") — split côté masterToCompetition"
+        }
+      },
+      "references": {
+        "university": "univ-uh2c",
+        "school": "ec-ensam-casablanca",
+        "city": "Casablanca"
+      },
+      "evidence": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-encg-el-jadida-2026-2027.html",
+      "name": "Master ENCG El Jadida",
+      "uniqueKey": "universite-chouaib-doukkali-d-el-jadida-encg-el-jadida-ecole-nationale-de-commerce-et-de-gestion-master-encg-el-jadida-2026-2027",
+      "status": "DUPLICATE",
+      "action": "SKIPPED_DUPLICATE",
+      "existingId": "mst-import-1789404127493-b56oz",
+      "existingUniqueKey": "universite-chouaib-doukkali-d-el-jadida-encg-el-jadida-ecole-nationale-de-commerce-et-de-gestion-master-encg-el-jadida-2026-2027",
+      "reason": "Doublon détecté via uniqueKey ou combo university+establishment+name+year",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fsjes-meknes-2026-2027.html",
+      "name": "Master FSJES Meknès",
+      "uniqueKey": "universite-moulay-ismail-de-meknes-fsjes-meknes-faculte-des-sciences-juridiques-economiques-et-sociales-master-fsjes-meknes-2026-2027",
+      "status": "DUPLICATE",
+      "action": "SKIPPED_DUPLICATE",
+      "existingId": "mst-import-1789404127545-dduo0",
+      "existingUniqueKey": "universite-moulay-ismail-de-meknes-fsjes-meknes-faculte-des-sciences-juridiques-economiques-et-sociales-master-fsjes-meknes-2026-2027",
+      "reason": "Doublon détecté via uniqueKey ou combo university+establishment+name+year",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-chouaib-doukkali-el.html",
+      "name": "Master Université Chouaib Doukkali El Jadida",
+      "uniqueKey": "universite-chouaib-doukkali-d-el-jadida-ensa-el-jadida-ecole-nationale-des-sciences-appliquees-master-universite-chouaib-doukkali-el-jadida-2026-2027",
+      "status": "WOULD_INSERT",
+      "action": "DRY_RUN_WOULD_INSERT",
+      "insertedId": "mst-1789845650351-gpwi",
+      "payload": {
+        "id": "mst-1789845650351-gpwi",
+        "uniqueKey": "universite-chouaib-doukkali-d-el-jadida-ensa-el-jadida-ecole-nationale-des-sciences-appliquees-master-universite-chouaib-doukkali-el-jadida-2026-2027",
+        "name": "Master Université Chouaib Doukkali El Jadida",
+        "university": "Université Chouaib Doukkali d’El Jadida",
+        "establishment": "ENSA El Jadida — École Nationale des Sciences Appliquées",
+        "city": "El Jadida",
+        "domain": "Sciences & Technologies",
+        "level": "Master (Bac+5)",
+        "academicYear": "2026-2027",
+        "status": "INFORMATION",
+        "seats": null,
+        "deadlineDate": null,
+        "examDate": null,
+        "openingDate": null,
+        "resultsDate": null,
+        "publicationDate": "2026-09-06T13:00:28.015+01:00",
+        "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-chouaib-doukkali-el.html",
+        "officialUrl": null,
+        "schoolWebsite": null,
+        "conditions": null,
+        "documents": null,
+        "createdAt": "2026-09-19T19:20:50.351Z",
+        "updatedAt": "2026-09-19T19:20:50.351Z"
+      },
+      "fields": {
+        "name": {
+          "targetField": "name",
+          "value": "Master Université Chouaib Doukkali El Jadida",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "university": {
+          "targetField": "university",
+          "value": "Université Chouaib Doukkali d’El Jadida",
+          "status": "AUTO",
+          "sourceField": "university",
+          "referenceId": "univ-ucd",
+          "referenceLabel": "Université Chouaib Doukkali d’El Jadida",
+          "reason": "correspondance normalisée",
+          "transformedFrom": "Université Chouaïb Doukkali d’El Jadida"
+        },
+        "establishment": {
+          "targetField": "establishment",
+          "value": "ENSA El Jadida — École Nationale des Sciences Appliquées",
+          "status": "AUTO",
+          "sourceField": "establishment",
+          "referenceId": "ec-ensa-eljadida",
+          "referenceLabel": "ENSA El Jadida — École Nationale des Sciences Appliquées",
+          "reason": "correspondance exacte",
+          "transformedFrom": "ENSA El Jadida"
+        },
+        "city": {
+          "targetField": "city",
+          "value": "El Jadida",
+          "status": "AUTO",
+          "sourceField": "city",
+          "referenceId": "El Jadida",
+          "reason": "exacte"
+        },
+        "domain": {
+          "targetField": "domain",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides"
+        },
+        "level": {
+          "targetField": "level",
+          "value": "Master (Bac+5)",
+          "status": "REVIEW",
+          "sourceField": "level",
+          "reason": "hors référentiel"
+        },
+        "academicYear": {
+          "targetField": "academicYear",
+          "value": "2026-2027",
+          "status": "AUTO",
+          "sourceField": "academicYear"
+        },
+        "status": {
+          "targetField": "status",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate/openingDate",
+          "reason": "aucune date source → INFORMATION"
+        },
+        "seats": {
+          "targetField": "seats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "places",
+          "reason": "0/150 — jamais annoncé, default 35 du formulaire NON appliqué"
+        },
+        "deadlineDate": {
+          "targetField": "deadlineDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate",
+          "reason": "101/150 vides"
+        },
+        "examDate": {
+          "targetField": "examDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides"
+        },
+        "openingDate": {
+          "targetField": "openingDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate",
+          "reason": "123/150 vides"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "publicationDate": {
+          "targetField": "publicationDate",
+          "value": "2026-09-06T13:00:28.015+01:00",
+          "status": "AUTO",
+          "sourceField": "publishedAt"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.almaster-maroc.com/2023/07/master-universite-chouaib-doukkali-el.html",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "officialUrl": {
+          "targetField": "officialUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "officialUrl",
+          "reason": "27/150 sans official"
+        },
+        "schoolWebsite": {
+          "targetField": "schoolWebsite",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl",
+          "reason": "72/150 sans registration"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "conditions",
+          "reason": "0/150 — jamais structuré, formulaire default NON appliqué"
+        },
+        "documents": {
+          "targetField": "documents",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "documents",
+          "reason": "98/150 sans PDF"
+        }
+      },
+      "references": {
+        "university": "univ-ucd",
+        "school": "ec-ensa-eljadida",
+        "city": "El Jadida"
+      },
+      "evidence": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-moulay-ismail-meknes.html",
+      "name": "Master Université Moulay Ismail Meknès",
+      "uniqueKey": "universite-moulay-ismail-de-meknes-fsjes-meknes-faculte-des-sciences-juridiques-economiques-et-sociales-master-universite-moulay-ismail-meknes-2026-2027",
+      "status": "WOULD_INSERT",
+      "action": "DRY_RUN_WOULD_INSERT",
+      "insertedId": "mst-1789845650351-qed4",
+      "payload": {
+        "id": "mst-1789845650351-qed4",
+        "uniqueKey": "universite-moulay-ismail-de-meknes-fsjes-meknes-faculte-des-sciences-juridiques-economiques-et-sociales-master-universite-moulay-ismail-meknes-2026-2027",
+        "name": "Master Université Moulay Ismail Meknès",
+        "university": "Université Moulay Ismaïl de Meknès",
+        "establishment": "FSJES Meknès — Faculté des Sciences Juridiques, Économiques et Sociales",
+        "city": "Meknès",
+        "domain": "Sciences & Technologies",
+        "level": "Master (Bac+5)",
+        "academicYear": "2026-2027",
+        "status": "INFORMATION",
+        "seats": null,
+        "deadlineDate": null,
+        "examDate": null,
+        "openingDate": null,
+        "resultsDate": null,
+        "publicationDate": "2026-09-06T12:11:21.001+01:00",
+        "sourceUrl": "https://www.almaster-maroc.com/2023/07/master-universite-moulay-ismail-meknes.html",
+        "officialUrl": null,
+        "schoolWebsite": null,
+        "conditions": null,
+        "documents": null,
+        "createdAt": "2026-09-19T19:20:50.351Z",
+        "updatedAt": "2026-09-19T19:20:50.351Z"
+      },
+      "fields": {
+        "name": {
+          "targetField": "name",
+          "value": "Master Université Moulay Ismail Meknès",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "university": {
+          "targetField": "university",
+          "value": "Université Moulay Ismaïl de Meknès",
+          "status": "AUTO",
+          "sourceField": "university",
+          "referenceId": "univ-umi",
+          "referenceLabel": "Université Moulay Ismaïl de Meknès",
+          "reason": "correspondance exacte",
+          "transformedFrom": "Université Moulay Ismaïl de Meknès"
+        },
+        "establishment": {
+          "targetField": "establishment",
+          "value": "FSJES Meknès — Faculté des Sciences Juridiques, Économiques et Sociales",
+          "status": "AUTO",
+          "sourceField": "establishment",
+          "referenceId": "ec-fsjes-meknes",
+          "referenceLabel": "FSJES Meknès — Faculté des Sciences Juridiques, Économiques et Sociales",
+          "reason": "correspondance exacte",
+          "transformedFrom": "FSJES Meknès"
+        },
+        "city": {
+          "targetField": "city",
+          "value": "Meknès",
+          "status": "AUTO",
+          "sourceField": "city",
+          "referenceId": "Meknès",
+          "reason": "exacte"
+        },
+        "domain": {
+          "targetField": "domain",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides"
+        },
+        "level": {
+          "targetField": "level",
+          "value": "Master (Bac+5)",
+          "status": "REVIEW",
+          "sourceField": "level",
+          "reason": "hors référentiel"
+        },
+        "academicYear": {
+          "targetField": "academicYear",
+          "value": "2026-2027",
+          "status": "AUTO",
+          "sourceField": "academicYear"
+        },
+        "status": {
+          "targetField": "status",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate/openingDate",
+          "reason": "aucune date source → INFORMATION"
+        },
+        "seats": {
+          "targetField": "seats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "places",
+          "reason": "0/150 — jamais annoncé, default 35 du formulaire NON appliqué"
+        },
+        "deadlineDate": {
+          "targetField": "deadlineDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate",
+          "reason": "101/150 vides"
+        },
+        "examDate": {
+          "targetField": "examDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides"
+        },
+        "openingDate": {
+          "targetField": "openingDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate",
+          "reason": "123/150 vides"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "publicationDate": {
+          "targetField": "publicationDate",
+          "value": "2026-09-06T12:11:21.001+01:00",
+          "status": "AUTO",
+          "sourceField": "publishedAt"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.almaster-maroc.com/2023/07/master-universite-moulay-ismail-meknes.html",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "officialUrl": {
+          "targetField": "officialUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "officialUrl",
+          "reason": "27/150 sans official"
+        },
+        "schoolWebsite": {
+          "targetField": "schoolWebsite",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl",
+          "reason": "72/150 sans registration"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "conditions",
+          "reason": "0/150 — jamais structuré, formulaire default NON appliqué"
+        },
+        "documents": {
+          "targetField": "documents",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "documents",
+          "reason": "98/150 sans PDF"
+        }
+      },
+      "references": {
+        "university": "univ-umi",
+        "school": "ec-fsjes-meknes",
+        "city": "Meknès"
+      },
+      "evidence": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2023/06/master-universite-hassan-ii-casablanca.html",
+      "name": "Master Université Hassan II Casablanca",
+      "uniqueKey": "universite-hassan-ii-de-casablanca-ensam-casablanca-ecole-nationale-superieure-d-arts-et-metiers-master-universite-hassan-ii-casablanca-2026-2027",
+      "status": "WOULD_INSERT",
+      "action": "DRY_RUN_WOULD_INSERT",
+      "insertedId": "mst-1789845650351-e2de",
+      "payload": {
+        "id": "mst-1789845650351-e2de",
+        "uniqueKey": "universite-hassan-ii-de-casablanca-ensam-casablanca-ecole-nationale-superieure-d-arts-et-metiers-master-universite-hassan-ii-casablanca-2026-2027",
+        "name": "Master Université Hassan II Casablanca",
+        "university": "Université Hassan II de Casablanca",
+        "establishment": "ENSAM Casablanca — École Nationale Supérieure d’Arts et Métiers",
+        "city": "Casablanca",
+        "domain": "Sciences & Technologies",
+        "level": "Master (Bac+5)",
+        "academicYear": "2026-2027",
+        "status": "INFORMATION",
+        "seats": null,
+        "deadlineDate": null,
+        "examDate": null,
+        "openingDate": null,
+        "resultsDate": null,
+        "publicationDate": "2026-09-05T14:07:13.116+01:00",
+        "sourceUrl": "https://www.almaster-maroc.com/2023/06/master-universite-hassan-ii-casablanca.html",
+        "officialUrl": null,
+        "schoolWebsite": null,
+        "conditions": null,
+        "documents": null,
+        "createdAt": "2026-09-19T19:20:50.351Z",
+        "updatedAt": "2026-09-19T19:20:50.351Z"
+      },
+      "fields": {
+        "name": {
+          "targetField": "name",
+          "value": "Master Université Hassan II Casablanca",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "university": {
+          "targetField": "university",
+          "value": "Université Hassan II de Casablanca",
+          "status": "AUTO",
+          "sourceField": "university",
+          "referenceId": "univ-uh2c",
+          "referenceLabel": "Université Hassan II de Casablanca",
+          "reason": "correspondance exacte",
+          "transformedFrom": "Université Hassan II de Casablanca"
+        },
+        "establishment": {
+          "targetField": "establishment",
+          "value": "ENSAM Casablanca — École Nationale Supérieure d’Arts et Métiers",
+          "status": "AUTO",
+          "sourceField": "establishment",
+          "referenceId": "ec-ensam-casablanca",
+          "referenceLabel": "ENSAM Casablanca — École Nationale Supérieure d’Arts et Métiers",
+          "reason": "correspondance exacte",
+          "transformedFrom": "ENSAM Casablanca"
+        },
+        "city": {
+          "targetField": "city",
+          "value": "Casablanca",
+          "status": "AUTO",
+          "sourceField": "city",
+          "referenceId": "Casablanca",
+          "reason": "exacte"
+        },
+        "domain": {
+          "targetField": "domain",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides"
+        },
+        "level": {
+          "targetField": "level",
+          "value": "Master (Bac+5)",
+          "status": "REVIEW",
+          "sourceField": "level",
+          "reason": "hors référentiel"
+        },
+        "academicYear": {
+          "targetField": "academicYear",
+          "value": "2026-2027",
+          "status": "AUTO",
+          "sourceField": "academicYear"
+        },
+        "status": {
+          "targetField": "status",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate/openingDate",
+          "reason": "aucune date source → INFORMATION"
+        },
+        "seats": {
+          "targetField": "seats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "places",
+          "reason": "0/150 — jamais annoncé, default 35 du formulaire NON appliqué"
+        },
+        "deadlineDate": {
+          "targetField": "deadlineDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate",
+          "reason": "101/150 vides"
+        },
+        "examDate": {
+          "targetField": "examDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides"
+        },
+        "openingDate": {
+          "targetField": "openingDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate",
+          "reason": "123/150 vides"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "publicationDate": {
+          "targetField": "publicationDate",
+          "value": "2026-09-05T14:07:13.116+01:00",
+          "status": "AUTO",
+          "sourceField": "publishedAt"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.almaster-maroc.com/2023/06/master-universite-hassan-ii-casablanca.html",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "officialUrl": {
+          "targetField": "officialUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "officialUrl",
+          "reason": "27/150 sans official"
+        },
+        "schoolWebsite": {
+          "targetField": "schoolWebsite",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl",
+          "reason": "72/150 sans registration"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "conditions",
+          "reason": "0/150 — jamais structuré, formulaire default NON appliqué"
+        },
+        "documents": {
+          "targetField": "documents",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "documents",
+          "reason": "98/150 sans PDF"
+        }
+      },
+      "references": {
+        "university": "univ-uh2c",
+        "school": "ec-ensam-casablanca",
+        "city": "Casablanca"
+      },
+      "evidence": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2022/07/master-universite-mohammed-premier.html",
+      "name": "Master Université Mohammed Premier Oujda",
+      "uniqueKey": "universite-mohammed-premier-d-oujda-fsjes-oujda-faculte-des-sciences-juridiques-economiques-et-sociales-master-universite-mohammed-premier-oujda-2026-2027",
+      "status": "WOULD_INSERT",
+      "action": "DRY_RUN_WOULD_INSERT",
+      "insertedId": "mst-1789845650351-7122",
+      "payload": {
+        "id": "mst-1789845650351-7122",
+        "uniqueKey": "universite-mohammed-premier-d-oujda-fsjes-oujda-faculte-des-sciences-juridiques-economiques-et-sociales-master-universite-mohammed-premier-oujda-2026-2027",
+        "name": "Master Université Mohammed Premier Oujda",
+        "university": "Université Mohammed Premier d’Oujda",
+        "establishment": "FSJES Oujda — Faculté des Sciences Juridiques, Économiques et Sociales",
+        "city": "Oujda",
+        "domain": "Sciences & Technologies",
+        "level": "Master (Bac+5)",
+        "academicYear": "2026-2027",
+        "status": "INFORMATION",
+        "seats": null,
+        "deadlineDate": null,
+        "examDate": null,
+        "openingDate": null,
+        "resultsDate": null,
+        "publicationDate": "2026-09-05T13:46:15.589+01:00",
+        "sourceUrl": "https://www.almaster-maroc.com/2022/07/master-universite-mohammed-premier.html",
+        "officialUrl": null,
+        "schoolWebsite": null,
+        "conditions": null,
+        "documents": null,
+        "createdAt": "2026-09-19T19:20:50.351Z",
+        "updatedAt": "2026-09-19T19:20:50.351Z"
+      },
+      "fields": {
+        "name": {
+          "targetField": "name",
+          "value": "Master Université Mohammed Premier Oujda",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "university": {
+          "targetField": "university",
+          "value": "Université Mohammed Premier d’Oujda",
+          "status": "AUTO",
+          "sourceField": "university",
+          "referenceId": "univ-ump",
+          "referenceLabel": "Université Mohammed Premier d’Oujda",
+          "reason": "correspondance exacte",
+          "transformedFrom": "Université Mohammed Premier d’Oujda"
+        },
+        "establishment": {
+          "targetField": "establishment",
+          "value": "FSJES Oujda — Faculté des Sciences Juridiques, Économiques et Sociales",
+          "status": "AUTO",
+          "sourceField": "establishment",
+          "referenceId": "ec-fsjes-oujda",
+          "referenceLabel": "FSJES Oujda — Faculté des Sciences Juridiques, Économiques et Sociales",
+          "reason": "correspondance exacte",
+          "transformedFrom": "FSJES Oujda"
+        },
+        "city": {
+          "targetField": "city",
+          "value": "Oujda",
+          "status": "AUTO",
+          "sourceField": "city",
+          "referenceId": "Oujda",
+          "reason": "exacte"
+        },
+        "domain": {
+          "targetField": "domain",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides"
+        },
+        "level": {
+          "targetField": "level",
+          "value": "Master (Bac+5)",
+          "status": "REVIEW",
+          "sourceField": "level",
+          "reason": "hors référentiel"
+        },
+        "academicYear": {
+          "targetField": "academicYear",
+          "value": "2026-2027",
+          "status": "AUTO",
+          "sourceField": "academicYear"
+        },
+        "status": {
+          "targetField": "status",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate/openingDate",
+          "reason": "aucune date source → INFORMATION"
+        },
+        "seats": {
+          "targetField": "seats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "places",
+          "reason": "0/150 — jamais annoncé, default 35 du formulaire NON appliqué"
+        },
+        "deadlineDate": {
+          "targetField": "deadlineDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate",
+          "reason": "101/150 vides"
+        },
+        "examDate": {
+          "targetField": "examDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides"
+        },
+        "openingDate": {
+          "targetField": "openingDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate",
+          "reason": "123/150 vides"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "publicationDate": {
+          "targetField": "publicationDate",
+          "value": "2026-09-05T13:46:15.589+01:00",
+          "status": "AUTO",
+          "sourceField": "publishedAt"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.almaster-maroc.com/2022/07/master-universite-mohammed-premier.html",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "officialUrl": {
+          "targetField": "officialUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "officialUrl",
+          "reason": "27/150 sans official"
+        },
+        "schoolWebsite": {
+          "targetField": "schoolWebsite",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl",
+          "reason": "72/150 sans registration"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "conditions",
+          "reason": "0/150 — jamais structuré, formulaire default NON appliqué"
+        },
+        "documents": {
+          "targetField": "documents",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "documents",
+          "reason": "98/150 sans PDF"
+        }
+      },
+      "references": {
+        "university": "univ-ump",
+        "school": "ec-fsjes-oujda",
+        "city": "Oujda"
+      },
+      "evidence": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-flsh-meknes-2026-2027.html",
+      "name": "Master FLSH Meknès",
+      "uniqueKey": "universite-moulay-ismail-de-meknes-flsh-meknes-faculte-des-lettres-et-des-sciences-humaines-master-flsh-meknes-2026-2027",
+      "status": "DUPLICATE",
+      "action": "SKIPPED_DUPLICATE",
+      "existingId": "mst-import-1789404127595-7dt4y",
+      "existingUniqueKey": "universite-moulay-ismail-de-meknes-flsh-meknes-faculte-des-lettres-et-des-sciences-humaines-master-flsh-meknes-2026-2027",
+      "reason": "Doublon détecté via uniqueKey ou combo university+establishment+name+year",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-ensa-el-jadida-2026.html",
+      "name": "Master ENSA El Jadida",
+      "uniqueKey": "universite-chouaib-doukkali-d-el-jadida-ensa-el-jadida-ecole-nationale-des-sciences-appliquees-master-ensa-el-jadida-2026-2027",
+      "status": "DUPLICATE",
+      "action": "SKIPPED_DUPLICATE",
+      "existingId": "mst-import-1789404127627-drtas",
+      "existingUniqueKey": "universite-chouaib-doukkali-d-el-jadida-ensa-el-jadida-ecole-nationale-des-sciences-appliquees-master-ensa-el-jadida-2026-2027",
+      "reason": "Doublon détecté via uniqueKey ou combo university+establishment+name+year",
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

@@ -795,7 +795,7 @@ export function masterToCompetition(m: MasterItem): Competition {
     publishStatus: 'PUBLISHED',
     manualStatus,
     views: 184,
-    isDemo: false,
+
     createdAt: m.createdAt || '2026-06-01T00:00:00.000Z',
     updatedAt: m.updatedAt || '2026-09-13T00:00:00.000Z',
   };

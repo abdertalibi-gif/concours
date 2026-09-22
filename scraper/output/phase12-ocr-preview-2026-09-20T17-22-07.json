@@ -1,0 +1,857 @@
+{
+  "generatedAt": "2026-09-20T17:22:07.764Z",
+  "phase": "12 - OCR preview for SCANNED_REVIEW (PREVIEW ONLY, NO DB WRITE)",
+  "notes": [
+    "No database. No Supabase. No localStorage. No import. No mutation.",
+    "Existing SCANNED_REVIEW PDF -> OCR -> PdfExtraction-compatible -> extractCompetitionTable -> preview",
+    "OCR engine unavailable -> OCR_ENGINE_UNAVAILABLE documented, never faked",
+    "Generic parser remains single source of truth",
+    "UCA regression 29 rows 33 total REVIEW preserved"
+  ],
+  "ocrDiagnostics": {
+    "engine": "none",
+    "available": false,
+    "reason": "OCR_ENGINE_UNAVAILABLE - no OCR engine/package/binary available. Need tesseract.js or tesseract binary or ocrmypdf. Checked: npm:tesseract.js, npm:node-tesseract-ocr, npm:tesseract, npm:ocrmypdf, resolve:tesseract.js, resolve:node-tesseract-ocr, bin:tesseract, bin:ocrmypdf, bin:magick, bin:gs. Missing: tesseract.js not in package.json; node-tesseract-ocr not in package.json; tesseract not in package.json; ocrmypdf not in package.json; tesseract.js not resolvable; node-tesseract-ocr not resolvable; system binary tesseract not found via where; ocrmypdf not found; no OCR executable in PATH",
+    "checked": [
+      "npm:tesseract.js",
+      "npm:node-tesseract-ocr",
+      "npm:tesseract",
+      "npm:ocrmypdf",
+      "resolve:tesseract.js",
+      "resolve:node-tesseract-ocr",
+      "bin:tesseract",
+      "bin:ocrmypdf",
+      "bin:magick",
+      "bin:gs"
+    ]
+  },
+  "candidates": [
+    {
+      "pdfUrl": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-069.pdf",
+      "sourceId": "min-education",
+      "organization": "Ministere de l'Education Nationale",
+      "classification": "SCANNED_REVIEW"
+    },
+    {
+      "pdfUrl": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-066.pdf",
+      "sourceId": "min-education",
+      "organization": "Ministere de l'Education Nationale",
+      "classification": "SCANNED_REVIEW"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Universite Cadi Ayyad de Marrakech",
+      "classification": "SCANNED_REVIEW"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Universite Cadi Ayyad de Marrakech",
+      "classification": "SCANNED_REVIEW"
+    }
+  ],
+  "previews": [
+    {
+      "pdfUrl": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-069.pdf",
+      "sourceId": "min-education",
+      "organization": "Ministere de l'Education Nationale",
+      "classification": "SCANNED_REVIEW",
+      "ocr": {
+        "status": "OCR_ENGINE_UNAVAILABLE",
+        "engine": "none",
+        "reason": "OCR_ENGINE_UNAVAILABLE - no OCR engine/package/binary available. Need tesseract.js or tesseract binary or ocrmypdf. Checked: npm:tesseract.js, npm:node-tesseract-ocr, npm:tesseract, npm:ocrmypdf, resolve:tesseract.js, resolve:node-tesseract-ocr, bin:tesseract, bin:ocrmypdf, bin:magick, bin:gs. Missing: tesseract.js not in package.json; node-tesseract-ocr not in package.json; tesseract not in package.json; ocrmypdf not in package.json; tesseract.js not resolvable; node-tesseract-ocr not resolvable; system binary tesseract not found via where; ocrmypdf not found; no OCR executable in PATH"
+      },
+      "extraction": {
+        "url": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-069.pdf",
+        "pageCount": 16,
+        "text": "-- 1 of 16 --\n\n\n\n-- 2 of 16 --\n\n\n\n-- 3 of 16 --\n\n\n\n-- 4 of 16 --\n\n\n\n-- 5 of 16 --\n\n\n\n-- 6 of 16 --\n\n\n\n-- 7 of 16 --\n\n\n\n-- 8 of 16 --\n\n\n\n-- 9 of 16 --\n\n\n\n-- 10 of 16 --\n\n\n\n-- 11 of 16 --\n\n\n\n-- 12 of 16 --\n\n\n\n-- 13 of 16 --\n\n\n\n-- 14 of 16 --\n\n\n\n-- 15 of 16 --\n\n\n\n-- 16 of 16 --",
+        "isScanned": true,
+        "hasExploitableText": false
+      },
+      "table": {
+        "detected": false,
+        "rows": [],
+        "places": {
+          "status": "MISSING",
+          "values": [],
+          "total": null,
+          "evidence": []
+        },
+        "warnings": [
+          "no OCR engine - SCANNED_REVIEW preserved"
+        ]
+      },
+      "previewStatus": "OCR_ENGINE_UNAVAILABLE",
+      "warnings": []
+    },
+    {
+      "pdfUrl": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-066.pdf",
+      "sourceId": "min-education",
+      "organization": "Ministere de l'Education Nationale",
+      "classification": "SCANNED_REVIEW",
+      "ocr": {
+        "status": "OCR_ENGINE_UNAVAILABLE",
+        "engine": "none",
+        "reason": "OCR_ENGINE_UNAVAILABLE - no OCR engine/package/binary available. Need tesseract.js or tesseract binary or ocrmypdf. Checked: npm:tesseract.js, npm:node-tesseract-ocr, npm:tesseract, npm:ocrmypdf, resolve:tesseract.js, resolve:node-tesseract-ocr, bin:tesseract, bin:ocrmypdf, bin:magick, bin:gs. Missing: tesseract.js not in package.json; node-tesseract-ocr not in package.json; tesseract not in package.json; ocrmypdf not in package.json; tesseract.js not resolvable; node-tesseract-ocr not resolvable; system binary tesseract not found via where; ocrmypdf not found; no OCR executable in PATH"
+      },
+      "extraction": {
+        "url": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-066.pdf",
+        "pageCount": 10,
+        "text": "-- 1 of 10 --\n\n\n\n-- 2 of 10 --\n\n\n\n-- 3 of 10 --\n\n\n\n-- 4 of 10 --\n\n\n\n-- 5 of 10 --\n\n\n\n-- 6 of 10 --\n\n\n\n-- 7 of 10 --\n\n\n\n-- 8 of 10 --\n\n\n\n-- 9 of 10 --\n\n\n\n-- 10 of 10 --",
+        "isScanned": true,
+        "hasExploitableText": false
+      },
+      "table": {
+        "detected": false,
+        "rows": [],
+        "places": {
+          "status": "MISSING",
+          "values": [],
+          "total": null,
+          "evidence": []
+        },
+        "warnings": [
+          "no OCR engine - SCANNED_REVIEW preserved"
+        ]
+      },
+      "previewStatus": "OCR_ENGINE_UNAVAILABLE",
+      "warnings": []
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Universite Cadi Ayyad de Marrakech",
+      "classification": "SCANNED_REVIEW",
+      "ocr": {
+        "status": "OCR_ENGINE_UNAVAILABLE",
+        "engine": "none",
+        "reason": "OCR_ENGINE_UNAVAILABLE - no OCR engine/package/binary available. Need tesseract.js or tesseract binary or ocrmypdf. Checked: npm:tesseract.js, npm:node-tesseract-ocr, npm:tesseract, npm:ocrmypdf, resolve:tesseract.js, resolve:node-tesseract-ocr, bin:tesseract, bin:ocrmypdf, bin:magick, bin:gs. Missing: tesseract.js not in package.json; node-tesseract-ocr not in package.json; tesseract not in package.json; ocrmypdf not in package.json; tesseract.js not resolvable; node-tesseract-ocr not resolvable; system binary tesseract not found via where; ocrmypdf not found; no OCR executable in PATH"
+      },
+      "extraction": {
+        "url": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+        "pageCount": 2,
+        "text": "-- 1 of 2 --\n\n\n\n-- 2 of 2 --",
+        "isScanned": true,
+        "hasExploitableText": false
+      },
+      "table": {
+        "detected": false,
+        "rows": [],
+        "places": {
+          "status": "MISSING",
+          "values": [],
+          "total": null,
+          "evidence": []
+        },
+        "warnings": [
+          "no OCR engine - SCANNED_REVIEW preserved"
+        ]
+      },
+      "previewStatus": "OCR_ENGINE_UNAVAILABLE",
+      "warnings": []
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Universite Cadi Ayyad de Marrakech",
+      "classification": "SCANNED_REVIEW",
+      "ocr": {
+        "status": "OCR_ENGINE_UNAVAILABLE",
+        "engine": "none",
+        "reason": "OCR_ENGINE_UNAVAILABLE - no OCR engine/package/binary available. Need tesseract.js or tesseract binary or ocrmypdf. Checked: npm:tesseract.js, npm:node-tesseract-ocr, npm:tesseract, npm:ocrmypdf, resolve:tesseract.js, resolve:node-tesseract-ocr, bin:tesseract, bin:ocrmypdf, bin:magick, bin:gs. Missing: tesseract.js not in package.json; node-tesseract-ocr not in package.json; tesseract not in package.json; ocrmypdf not in package.json; tesseract.js not resolvable; node-tesseract-ocr not resolvable; system binary tesseract not found via where; ocrmypdf not found; no OCR executable in PATH"
+      },
+      "extraction": {
+        "url": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+        "pageCount": 2,
+        "text": "-- 1 of 2 --\n\n\n\n-- 2 of 2 --",
+        "isScanned": true,
+        "hasExploitableText": false
+      },
+      "table": {
+        "detected": false,
+        "rows": [],
+        "places": {
+          "status": "MISSING",
+          "values": [],
+          "total": null,
+          "evidence": []
+        },
+        "warnings": [
+          "no OCR engine - SCANNED_REVIEW preserved"
+        ]
+      },
+      "previewStatus": "OCR_ENGINE_UNAVAILABLE",
+      "warnings": []
+    }
+  ],
+  "ucaRegression": {
+    "ok": true,
+    "detail": "rows=29 total=33 status=REVIEW OK",
+    "table": {
+      "detected": true,
+      "page": 1,
+      "header": [
+        "المؤسسة عدد"
+      ],
+      "rows": [
+        {
+          "institution": "كلية العلوم القانونية والسياسية مراكش",
+          "places": 1,
+          "speciality": "Gestion des Ressources Humaines",
+          "grade": "متصرف من الدرجة الثانية",
+          "page": 1,
+          "raw": "1\tGestion des Ressources Humaines\tمتصرف من الدرجة الثانية",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم القانونية والسياسية مراكش",
+          "places": 1,
+          "speciality": "Finance",
+          "grade": "متصرف من الدرجة الثانية",
+          "page": 1,
+          "raw": "1\tFinance\tمتصرف من الدرجة الثانية",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية االقتصاد والتدبير مراكش",
+          "places": 1,
+          "speciality": "Finance",
+          "grade": "متصرف من الدرجة الثانية",
+          "page": 1,
+          "raw": "1\tFinance\tمتصرف من الدرجة الثانية",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية االقتصاد والتدبير مراكش",
+          "places": 1,
+          "speciality": "Comptabilité et Finance",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tComptabilité et Finance\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية االقتصاد والتدبير مراكش",
+          "places": 3,
+          "speciality": "Secrétariat de Direction",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "3\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم القانونية والسياسية قلعة السراغنة",
+          "places": 2,
+          "speciality": "القانون العام",
+          "grade": "متصرف من الدرجة الثانية",
+          "page": 1,
+          "raw": "2\tالقانون العام\tمتصرف من الدرجة الثانية",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم القانونية والسياسية قلعة السراغنة",
+          "places": 1,
+          "speciality": "Développement Informatique",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tDéveloppement Informatique\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+          "places": 1,
+          "speciality": "Finance",
+          "grade": "متصرف من الدرجة الثانية",
+          "page": 1,
+          "raw": "1\tFinance\tمتصرف من الدرجة الثانية",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+          "places": 1,
+          "speciality": "Secrétariat de Direction",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tSecrétariat de Direction\tتقني من\tالدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+          "places": 1,
+          "speciality": "Gestion des entreprises",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tGestion des entreprises\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم التطبيقية اسفي",
+          "places": 1,
+          "speciality": "Secrétariat de Direction",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم التطبيقية اسفي",
+          "places": 1,
+          "speciality": "Développement Informatique",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tDéveloppement Informatique\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم التطبيقية اسفي",
+          "places": 2,
+          "speciality": "Sciences Economiques et Gestion",
+          "grade": "متصرف من الدرجة الثالثة",
+          "page": 1,
+          "raw": "2\tSciences Economiques et Gestion\tمتصرف من الدرجة\tالثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+          "places": 1,
+          "speciality": "Gestion des entreprises",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tGestion des entreprises\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+          "places": 1,
+          "speciality": "Secrétariat de Direction",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+          "places": 1,
+          "speciality": "Informatique",
+          "grade": "متصرف من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tInformatique\tمتصرف من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+          "places": 1,
+          "speciality": "Comptabilité et Finance",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tComptabilité et Finance\tتقني من\tالدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية اللغات واالداب والفنون اسفي",
+          "places": 1,
+          "speciality": "Gestion des entreprises",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tGestion des entreprises\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية اللغات واالداب والفنون اسفي",
+          "places": 1,
+          "speciality": "Secrétariat de Direction",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية اللغات واالداب والفنون اسفي",
+          "places": 1,
+          "speciality": "Développement Informatique",
+          "grade": "متصرف من الدرجة الثانية",
+          "page": 1,
+          "raw": "1\tDéveloppement Informatique\tمتصرف من الدرجة الثانية",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية اللغات واالداب والفنون اسفي",
+          "places": 1,
+          "speciality": "Sciences Economiques et Gestion",
+          "grade": "متصرف من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tSciences Economiques et Gestion\tمتصرف من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم القانونية والسياسية اسفي",
+          "places": 1,
+          "speciality": "Gestion des entreprises",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tGestion des entreprises\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم القانونية والسياسية اسفي",
+          "places": 1,
+          "speciality": "Secrétariat de Direction",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم القانونية والسياسية اسفي",
+          "places": 1,
+          "speciality": "Informatique",
+          "grade": "متصرف من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tInformatique\tمتصرف من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية العلوم القانونية والسياسية اسفي",
+          "places": 1,
+          "speciality": "Sciences Economiques et Gestion",
+          "grade": "متصرف من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tSciences Economiques et Gestion\tمتصرف من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية االقتصاد والتدبير اسفي",
+          "places": 1,
+          "speciality": "Gestion des entreprises",
+          "grade": "تقني م ن الدر جة الثالثة",
+          "page": 1,
+          "raw": "1\tGestion des entreprises\tتقني م\tن الدر\tجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية االقتصاد والتدبير اسفي",
+          "places": 1,
+          "speciality": "Secrétariat de Direction",
+          "grade": "تقني من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية االقتصاد والتدبير اسفي",
+          "places": 1,
+          "speciality": "Informatique",
+          "grade": "متصرف من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tInformatique\tمتصرف من الدرجة الثالثة",
+          "confidence": "HIGH"
+        },
+        {
+          "institution": "كلية االقتصاد والتدبير اسفي",
+          "places": 1,
+          "speciality": "Sciences Economiques et Gestion",
+          "grade": "متصرف من الدرجة الثالثة",
+          "page": 1,
+          "raw": "1\tSciences Economiques et Gestion\tمتصرف من الدرجة الثالثة",
+          "confidence": "HIGH"
+        }
+      ],
+      "places": {
+        "status": "REVIEW",
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "total": 33,
+        "evidence": [
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tGestion des Ressources Humaines\tمتصرف من الدرجة الثانية",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم القانونية والسياسية مراكش",
+            "speciality": "Gestion des Ressources Humaines",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tFinance\tمتصرف من الدرجة الثانية",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم القانونية والسياسية مراكش",
+            "speciality": "Finance",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tFinance\tمتصرف من الدرجة الثانية",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية االقتصاد والتدبير مراكش",
+            "speciality": "Finance",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tComptabilité et Finance\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية االقتصاد والتدبير مراكش",
+            "speciality": "Comptabilité et Finance",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 3,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "3\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية االقتصاد والتدبير مراكش",
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 2,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "2\tالقانون العام\tمتصرف من الدرجة الثانية",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم القانونية والسياسية قلعة السراغنة",
+            "speciality": "القانون العام",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tDéveloppement Informatique\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم القانونية والسياسية قلعة السراغنة",
+            "speciality": "Développement Informatique",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tFinance\tمتصرف من الدرجة الثانية",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+            "speciality": "Finance",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tSecrétariat de Direction\tتقني من\tالدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tGestion des entreprises\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+            "speciality": "Gestion des entreprises",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم التطبيقية اسفي",
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tDéveloppement Informatique\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم التطبيقية اسفي",
+            "speciality": "Développement Informatique",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 2,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "2\tSciences Economiques et Gestion\tمتصرف من الدرجة\tالثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم التطبيقية اسفي",
+            "speciality": "Sciences Economiques et Gestion",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tGestion des entreprises\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+            "speciality": "Gestion des entreprises",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tInformatique\tمتصرف من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+            "speciality": "Informatique",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tComptabilité et Finance\tتقني من\tالدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+            "speciality": "Comptabilité et Finance",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tGestion des entreprises\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية اللغات واالداب والفنون اسفي",
+            "speciality": "Gestion des entreprises",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية اللغات واالداب والفنون اسفي",
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tDéveloppement Informatique\tمتصرف من الدرجة الثانية",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية اللغات واالداب والفنون اسفي",
+            "speciality": "Développement Informatique",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tSciences Economiques et Gestion\tمتصرف من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية اللغات واالداب والفنون اسفي",
+            "speciality": "Sciences Economiques et Gestion",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tGestion des entreprises\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم القانونية والسياسية اسفي",
+            "speciality": "Gestion des entreprises",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم القانونية والسياسية اسفي",
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tInformatique\tمتصرف من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم القانونية والسياسية اسفي",
+            "speciality": "Informatique",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tSciences Economiques et Gestion\tمتصرف من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية العلوم القانونية والسياسية اسفي",
+            "speciality": "Sciences Economiques et Gestion",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tGestion des entreprises\tتقني م\tن الدر\tجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية االقتصاد والتدبير اسفي",
+            "speciality": "Gestion des entreprises",
+            "grade": "تقني م ن الدر جة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tSecrétariat de Direction\tتقني من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية االقتصاد والتدبير اسفي",
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tInformatique\tمتصرف من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية االقتصاد والتدبير اسفي",
+            "speciality": "Informatique",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "field": "places",
+            "value": 1,
+            "status": "REVIEW",
+            "page": 1,
+            "raw": "1\tSciences Economiques et Gestion\tمتصرف من الدرجة الثالثة",
+            "reason": "Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne",
+            "institution": "كلية االقتصاد والتدبير اسفي",
+            "speciality": "Sciences Economiques et Gestion",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          }
+        ]
+      },
+      "warnings": [
+        "faux positifs exclus: contexte date/référence/code après '11' → '/' | contexte date/référence/code après '1' → '-' | contexte date/référence/code après '2' → '-' | contexte date/référence/code après '3' → '-' | contexte date/référence/code après '1' → '-' | contexte date/référence/code après '2' → '-' | contexte date/référence/code après '3' → '-' | contexte date/référence/code après '1' → '-'",
+        "extraction texte heuristique sans corroboration native (table non restituée par pdf-parse)"
+      ]
+    }
+  },
+  "stats": {
+    "scanned": 4,
+    "ocrUnavailable": 4,
+    "review": 0,
+    "missing": 0
+  }
+}

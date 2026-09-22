@@ -3,6 +3,9 @@
 // La page /concours (capture de référence) est la référence visuelle.
 // TOUTE l'application (public, dashboard, admin) DOIT utiliser
 // ces tokens. Ne pas introduire de couleurs/rayons/ombres ad hoc.
+// Les valeurs ci-dessous sont le thème CLAIR par défaut ; le mode
+// sombre est appliqué globalement par la couche CSS de src/index.css
+// via la classe "dark" sur <html> (voir ThemeProvider).
 // ============================================================
 
 /** Palette officielle */

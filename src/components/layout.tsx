@@ -9,9 +9,10 @@ import type { ReactNode } from 'react';
 import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import {
   Bell, BookOpen, Building2, ChevronDown, Contact, FileText, GraduationCap,
-  HelpCircle, Home, Landmark, LayoutDashboard, LogOut, Menu, Search, Settings,
-  Star, Trophy, User as UserIcon, Users, X, Bot
+  HelpCircle, Home, Landmark, LayoutDashboard, LogOut, Menu, Moon, Search, Settings,
+  Star, Sun, Trophy, User as UserIcon, Users, X, Bot
 } from 'lucide-react';
+import { useTheme } from './ThemeProvider';
 import { cn } from '../utils/cn';
 import { useAuth } from '../lib/auth';
 import { globalSearch, markAllRead, markNotificationRead, unreadCount, userNotifications } from '../lib/db';
@@ -46,6 +47,22 @@ export function Logo({ compact }: { compact?: boolean }) {
         </span>
       )}
     </Link>
+  );
+}
+
+// ---------------- Toggle thème (visible mais discret) ----------------
+export function ThemeToggle() {
+  const { resolvedTheme, toggleTheme } = useTheme();
+  const isDark = resolvedTheme === 'dark';
+  return (
+    <button
+      onClick={toggleTheme}
+      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800 transition-colors"
+      aria-label={isDark ? 'Passer au mode clair' : 'Passer au mode sombre'}
+      title={isDark ? 'Mode sombre — cliquer pour le mode clair' : 'Mode clair — cliquer pour le mode sombre'}
+    >
+      {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+    </button>
   );
 }
 
@@ -233,7 +250,7 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-[60] border-b border-[#E6ECF3] bg-white/95 backdrop-blur shadow-sm">
+    <header className="sticky top-0 z-[60] border-b border-[#E6ECF3] dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur shadow-sm">
       <Container className="flex h-16 items-center justify-between gap-3 md:gap-4">
         {/* Logo */}
         <Logo compact />
@@ -248,7 +265,7 @@ export function Header() {
                 const active = isActive(n.to);
                 return (
                   <Link key={n.to + n.label} to={n.to}
-                    className={cn('relative whitespace-nowrap rounded-lg px-2.5 py-2 text-[14px] font-semibold transition-colors', active ? 'text-[#0B63CE]' : 'text-[#0B2A4A] hover:text-[#0B63CE] hover:bg-slate-50')}>
+                    className={cn('relative whitespace-nowrap rounded-lg px-2.5 py-2 text-[14px] font-semibold transition-colors', active ? 'text-[#0B63CE] dark:text-sky-400' : 'text-[#0B2A4A] dark:text-slate-300 hover:text-[#0B63CE] dark:hover:text-sky-400 hover:bg-slate-50 dark:hover:bg-slate-800')}>
                     {n.label}
                     {active && <span className="absolute inset-x-2.5 -bottom-[17px] h-[3px] rounded-t-full bg-[#0B63CE]" />}
                   </Link>
@@ -261,7 +278,7 @@ export function Header() {
           <div className="flex items-center gap-2 shrink-0 pl-2 lg:pl-4">
             {!user ? (
               <>
-                <Link to="/connexion" className="flex h-10 items-center justify-center rounded-xl px-4 text-[14px] font-bold text-[#0B2A4A] ring-1 ring-inset ring-slate-200 hover:bg-slate-50 transition-colors">Connexion</Link>
+                <Link to="/connexion" className="flex h-10 items-center justify-center rounded-xl px-4 text-[14px] font-bold text-[#0B2A4A] dark:text-slate-300 ring-1 ring-inset ring-slate-200 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">Connexion</Link>
                 <Link to="/inscription" className="flex h-10 items-center justify-center rounded-xl bg-[#0B63CE] px-4 text-[14px] font-bold text-white hover:bg-[#0956B4] transition-colors shadow-sm">S'inscrire</Link>
               </>
             ) : (
@@ -269,6 +286,9 @@ export function Header() {
             )}
           </div>
         </div>
+
+        {/* Toggle thème — toujours visible (desktop + mobile) */}
+        <ThemeToggle />
 
         {/* Mobile Toggle */}
         <button onClick={() => setMobileOpen(!mobileOpen)} className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-[#0B2A4A] hover:bg-slate-100 md:hidden" aria-label="Ouvrir le menu" aria-expanded={mobileOpen}>
@@ -278,7 +298,7 @@ export function Header() {
 
       {/* Mobile Menu Dropdown */}
       {mobileOpen && (
-        <div className="border-t border-slate-100 bg-white px-4 py-4 md:hidden shadow-lg absolute w-full left-0">
+        <div className="border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 py-4 md:hidden shadow-lg absolute w-full left-0">
           <nav className="grid gap-2" aria-label="Navigation secondaire mobile">
             {NAV.map((n) => {
               const active = isActive(n.to);
@@ -331,7 +351,6 @@ export function Footer() {
       <div className="border-t border-white/10">
         <Container className="flex flex-col items-center justify-between gap-2 py-5 text-xs text-slate-400 sm:flex-row">
           <p>© {new Date().getFullYear()} Concours Maroc — Tous droits réservés.</p>
-          <p>Données de démonstration marquées « DÉMO » — vérifiez les sources officielles.</p>
         </Container>
       </div>
     </footer>
@@ -535,6 +554,7 @@ export function AdminLayout() {
           </div>
           <div className="flex items-center gap-4 sm:gap-6">
             <div className="flex items-center gap-2 sm:gap-4">
+              <ThemeToggle />
               <button onClick={handleFullscreen} className="text-slate-400 hover:text-slate-600 hidden sm:block" title="Plein écran">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" /></svg>
               </button>

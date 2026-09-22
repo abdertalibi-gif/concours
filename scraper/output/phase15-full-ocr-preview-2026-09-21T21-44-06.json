@@ -1,0 +1,511 @@
+{
+  "phase": 15,
+  "status": "FULL_OCR_COMPLETE",
+  "engine": "tesseract.js",
+  "notes": [
+    "No database. No Supabase. No localStorage. No Forms. No import. No mutation.",
+    "Full-document OCR (ALL pages @150dpi) + page targeting + extractCompetitionTable (existing, only parser). No parallel parser.",
+    "UCA regression preserved."
+  ],
+  "documents": [
+    {
+      "pdfUrl": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-069.pdf",
+      "sourceId": "min-education",
+      "organization": "Ministere de l'Education Nationale",
+      "pageTarget": 3,
+      "previewStatus": "SCANNED_REVIEW",
+      "pages": [
+        {
+          "page": 1,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": true,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 2,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": true,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 3,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 4,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 5,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 6,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": true,
+          "speciality": true,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 7,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": true,
+          "speciality": true,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 8,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 9,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 10,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": true,
+          "speciality": true,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 11,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 12,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 13,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 14,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 15,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": true,
+          "speciality": true,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 16,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        }
+      ],
+      "table": null,
+      "evidence": [],
+      "warnings": [
+        "page 5 low confidence: 42",
+        "page 5 low confidence: 42"
+      ]
+    },
+    {
+      "pdfUrl": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-066.pdf",
+      "sourceId": "min-education",
+      "organization": "Ministere de l'Education Nationale",
+      "pageTarget": 3,
+      "previewStatus": "SCANNED_REVIEW",
+      "pages": [
+        {
+          "page": 1,
+          "classification": "WEAK_KEYWORD",
+          "strong": false,
+          "weak": true,
+          "numeric": true,
+          "institution": true,
+          "speciality": true,
+          "grade": false,
+          "keywords": [
+            {
+              "keyword": "منصب",
+              "strength": "WEAK",
+              "context": "ا العمل. وقد خُصِبَص ‎sid‏ المباراة 600 منصب موزعة حسب التخصصبات ومؤسسات تكوين الأطر العليا السالف ذكرهاء كما "
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "classification": "WEAK_KEYWORD",
+          "strong": false,
+          "weak": true,
+          "numeric": true,
+          "institution": true,
+          "speciality": true,
+          "grade": false,
+          "keywords": [
+            {
+              "keyword": "المناصب",
+              "strength": "WEAK",
+              "context": "مجال البحث؛ ® يقوم المترشح بترتيب جميع المناصب المرغوب ‎Led‏ )5 مناصب على الأكثر) من لدنه حسب درجة أفضليتها عن"
+            },
+            {
+              "keyword": "مناصب",
+              "strength": "WEAK",
+              "context": "وز2026؛ 1 يمكن لكل مترشح أن يترشح لخمسة مناصب على الأكثر في التخصص الملائم لشهاداته ومؤهلاته وأنشطته في مجال ا"
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "classification": "WEAK_KEYWORD",
+          "strong": false,
+          "weak": true,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": [
+            {
+              "keyword": "المناصب",
+              "strength": "WEAK",
+              "context": "النتائج النهائية للمباراة وذلك في حدود المناصب المتبارى في ‎(Lela‏ وتتول نشرها بكل الوسائل المتاحة. ملاإحظات ع"
+            },
+            {
+              "keyword": "مناصب",
+              "strength": "WEAK",
+              "context": "لنتائج النهائية للمباراة وذلك في حدود المناصب المتبارى في ‎(Lela‏ وتتول نشرها بكل الوسائل المتاحة. ملاإحظات عا"
+            }
+          ]
+        },
+        {
+          "page": 4,
+          "classification": "WEAK_KEYWORD",
+          "strong": false,
+          "weak": true,
+          "numeric": true,
+          "institution": true,
+          "speciality": true,
+          "grade": false,
+          "keywords": [
+            {
+              "keyword": "المناصب",
+              "strength": "WEAK",
+              "context": "لمكلفة بالثربية ‎gh‏ ‏+ دورة 2026 توزيع المناصب المتبارى في شأنبا حسب التخصصات ومفرات النعيين بمؤسسات تكوين ال"
+            },
+            {
+              "keyword": "مناصب",
+              "strength": "WEAK",
+              "context": "كلفة بالثربية ‎gh‏ ‏+ دورة 2026 توزيع المناصب المتبارى في شأنبا حسب التخصصات ومفرات النعيين بمؤسسات تكوين الأط"
+            }
+          ]
+        },
+        {
+          "page": 5,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 6,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 7,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 8,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 9,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        },
+        {
+          "page": 10,
+          "classification": "NO_RELEVANT_KEYWORD",
+          "strong": false,
+          "weak": false,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": []
+        }
+      ],
+      "table": null,
+      "evidence": [],
+      "warnings": [
+        "page 4 low confidence: 37",
+        "page 5 low confidence: 34",
+        "page 6 low confidence: 41"
+      ]
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Universite Cadi Ayyad de Marrakech",
+      "pageTarget": 1,
+      "previewStatus": "SCANNED_REVIEW",
+      "pages": [
+        {
+          "page": 1,
+          "classification": "WEAK_KEYWORD",
+          "strong": false,
+          "weak": true,
+          "numeric": true,
+          "institution": true,
+          "speciality": false,
+          "grade": true,
+          "keywords": [
+            {
+              "keyword": "المناصب",
+              "strength": "WEAK",
+              "context": "من هذا الشرط. كا مكن أن يترثح لأحد هاته المناصب الموظفون المرسمون والأعوان المتعاقدون المزاولون» في تاريخ الإع"
+            },
+            {
+              "keyword": "مناصب",
+              "strength": "WEAK",
+              "context": "CADI AYYAD‏ إعلان عن @ باب الترشيح لشغل مناصب رؤساء الأقسام الشاغرة برئاسة جامعة التاضي عياض تعلن جامعة القاضي"
+            },
+            {
+              "keyword": "منصب",
+              "strength": "WEAK",
+              "context": "دون المزاولون» في تاريخ الإعلان عن شغور منصب رئيس قسم» لهام ئيس قسم. \" ملف الرشيح يتكون ملف الترشيح من ‎SN‏ ال"
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "classification": "WEAK_KEYWORD",
+          "strong": false,
+          "weak": true,
+          "numeric": true,
+          "institution": false,
+          "speciality": false,
+          "grade": false,
+          "keywords": [
+            {
+              "keyword": "وظيفة",
+              "strength": "WEAK",
+              "context": "ونة لملف الترشيح من الموقع الالكتروني للوظيفة ‎pal‏ ‏وذلك ابتداء من يوم ‎gud‏ 17 شتنبر 2026. | ويتم إيداع ملفا"
+            }
+          ]
+        }
+      ],
+      "table": null,
+      "evidence": [],
+      "warnings": []
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Universite Cadi Ayyad de Marrakech",
+      "pageTarget": 1,
+      "previewStatus": "SCANNED_REVIEW",
+      "pages": [
+        {
+          "page": 1,
+          "classification": "WEAK_KEYWORD",
+          "strong": false,
+          "weak": true,
+          "numeric": true,
+          "institution": true,
+          "speciality": false,
+          "grade": true,
+          "keywords": [
+            {
+              "keyword": "المناصب",
+              "strength": "WEAK",
+              "context": "‎all‏ ‏يجب على ‎Gé;‏ الراغب في ‎is‏ أحد المناصب المشار اليها في المادة الأولى أعلاه ان يكون: - مرتبا على الأقل"
+            },
+            {
+              "keyword": "مناصب",
+              "strength": "WEAK",
+              "context": "ADI AYYAD‏ لمتعلق يفتح باب الترشيح لشغل مناصب رؤساء الاقسام الشاغرة برئاسة الجامعة رئيس جامعة القاضي عياض 7 بن"
+            },
+            {
+              "keyword": "منصب",
+              "strength": "WEAK",
+              "context": "إعفاء من هذا الشرط. هذا ومكن أن ‎À à‏ للمنصب ‎HSA)‏ الموظفون المرسمون والأعوان المتعاقدون المزاولون في تاريخ ا"
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "classification": "WEAK_KEYWORD",
+          "strong": false,
+          "weak": true,
+          "numeric": true,
+          "institution": true,
+          "speciality": false,
+          "grade": true,
+          "keywords": [
+            {
+              "keyword": "منصب",
+              "strength": "WEAK",
+              "context": "المادة الرابعة: يتكون ملف الترشيح لشغل منصب رئيس قسم من الونائق التالية: - طلب خطي للترشيح موجه إلى السيد رئيس"
+            },
+            {
+              "keyword": "الوظائف",
+              "strength": "WEAK",
+              "context": "اته ونبذة عن مساره المهني» وكذا المهام والوظائف التي زاولها وذلك وفق النموذج الملحق بهذا القرار؛ © فسخة من قرا"
+            },
+            {
+              "keyword": "وظائف",
+              "strength": "WEAK",
+              "context": "ه ونبذة عن مساره المهني» وكذا المهام والوظائف التي زاولها وذلك وفق النموذج الملحق بهذا القرار؛ © فسخة من قرار "
+            }
+          ]
+        }
+      ],
+      "table": null,
+      "evidence": [],
+      "warnings": []
+    }
+  ],
+  "summary": {
+    "documentsAnalyzed": 4,
+    "pagesOcr": 30,
+    "strongKeywordPages": 0,
+    "possibleTablePages": 0,
+    "tablesDetected": 0,
+    "reviewDocuments": 0,
+    "missingDocuments": 4
+  },
+  "regression": {
+    "ucaRows": 29,
+    "ucaPlaces": 33,
+    "ucaStatus": "REVIEW",
+    "ucaDetail": "rows=29 places=33 status=REVIEW OK"
+  },
+  "writes": {
+    "database": 0,
+    "supabase": 0,
+    "localStorage": 0,
+    "forms": 0
+  }
+}

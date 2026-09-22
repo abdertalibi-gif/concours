@@ -4,6 +4,7 @@
 // ============================================================
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { AuthProvider, useAuth } from './lib/auth';
+import { ThemeProvider } from './components/ThemeProvider';
 import { ToastProvider } from './components/ui';
 import { AdminLayout, DashboardLayout, PublicLayout } from './components/layout';
 import Home from './pages/Home';
@@ -13,8 +14,9 @@ import ConcoursDetail from './pages/ConcoursDetail';
 import { EcoleDetail, EcolesList } from './pages/Ecoles';
 import { ExamenDetail, ExamensList } from './pages/Examens';
 import Documents from './pages/Documents';
+import PdfViewer from './pages/PdfViewer';
 import { CourseDetail, PreparationList } from './pages/Preparation';
-import { ForgotPassword, Login, Register } from './pages/Auth';
+import { ForgotPassword, Login, Register, ResetPassword } from './pages/Auth';
 import { DashConcours, DashCours, DashFavoris, DashHome, DashNotifications, DashParametres, DashProfil } from './pages/Dashboard';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminConcours from './pages/admin/AdminConcours';
@@ -37,70 +39,77 @@ function GuestOnly({ children }: { children: JSX.Element }) {
 
 export default function App() {
   return (
-    <AuthProvider>
-      <ToastProvider>
-        <BrowserRouter>
-          <Routes>
-            {/* ---------- Public ---------- */}
-            <Route element={<PublicLayout />}>
-              <Route index element={<Home />} />
-              <Route path="masters" element={<Masters />} />
-              <Route path="concours" element={<ConcoursList />} />
-              <Route path="concours/:slug" element={<ConcoursDetail />} />
-              <Route path="ecoles" element={<EcolesList />} />
-              <Route path="ecoles/:slug" element={<EcoleDetail />} />
-              <Route path="examens" element={<ExamensList />} />
-              <Route path="examens/:slug" element={<ExamenDetail />} />
-              <Route path="documents" element={<Documents />} />
-              <Route path="preparation" element={<PreparationList />} />
-              <Route path="preparation/cours/:slug" element={<CourseDetail />} />
-              <Route path="connexion" element={<GuestOnly><Login /></GuestOnly>} />
-              <Route path="inscription" element={<GuestOnly><Register /></GuestOnly>} />
-              <Route path="mot-de-passe-oublie" element={<GuestOnly><ForgotPassword /></GuestOnly>} />
-              <Route path="a-propos" element={<APropos />} />
-              <Route path="faq" element={<FAQ />} />
-              <Route path="contact" element={<Contact />} />
-              <Route path="confidentialite" element={<Confidentialite />} />
-              <Route path="conditions" element={<Conditions />} />
-              <Route path="*" element={<NotFound />} />
-            </Route>
+    <ThemeProvider defaultTheme="system" storageKey="cm-theme">
+      <AuthProvider>
+        <ToastProvider>
+          <BrowserRouter>
+            <Routes>
+              {/* ---------- Public ---------- */}
+              <Route element={<PublicLayout />}>
+                <Route index element={<Home />} />
+                <Route path="masters" element={<Masters />} />
+                <Route path="concours" element={<ConcoursList />} />
+                <Route path="concours/:slug" element={<ConcoursDetail />} />
+                <Route path="ecoles" element={<EcolesList />} />
+                <Route path="ecoles/:slug" element={<EcoleDetail />} />
+                <Route path="examens" element={<ExamensList />} />
+                <Route path="examens/:slug" element={<ExamenDetail />} />
+                <Route path="examens/viewer/:slug" element={<PdfViewer />} />
+                <Route path="documents" element={<Documents />} />
+                <Route path="preparation" element={<PreparationList />} />
+                <Route path="preparation/cours/:slug" element={<CourseDetail />} />
+                <Route path="connexion" element={<GuestOnly><Login /></GuestOnly>} />
+                <Route path="inscription" element={<GuestOnly><Register /></GuestOnly>} />
+                <Route path="mot-de-passe-oublie" element={<GuestOnly><ForgotPassword /></GuestOnly>} />
+                <Route path="mot-de-passe-reinitialisation" element={<ResetPassword />} />
+                <Route path="a-propos" element={<APropos />} />
+                <Route path="faq" element={<FAQ />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="confidentialite" element={<Confidentialite />} />
+                <Route path="conditions" element={<Conditions />} />
+                <Route path="*" element={<NotFound />} />
+              </Route>
 
-            {/* ---------- Espace utilisateur ---------- */}
-            <Route path="dashboard" element={<DashboardLayout />}>
-              <Route index element={<DashHome />} />
-              <Route path="concours" element={<DashConcours />} />
-              <Route path="cours" element={<DashCours />} />
-              <Route path="favoris" element={<DashFavoris />} />
-              <Route path="notifications" element={<DashNotifications />} />
-              <Route path="profil" element={<DashProfil />} />
-              <Route path="parametres" element={<DashParametres />} />
-              <Route path="*" element={<NotFound />} />
-            </Route>
+              {/* ---------- PDF Viewer pleine hauteur (sans header/footer) ---------- */}
+              <Route path="documents/viewer/:slug" element={<PdfViewer />} />
 
-            {/* ---------- Administration ---------- */}
-            <Route path="admin" element={<AdminLayout />}>
-              <Route index element={<AdminDashboard />} />
-              <Route path="concours" element={<AdminConcours />} />
-              <Route path="masters" element={<AdminMastersImport />} />
-              <Route path="masters/import" element={<AdminMastersImport />} />
-              <Route path="ecoles" element={<AdminEcoles />} />
-              <Route path="universites" element={<AdminUniversites />} />
-              <Route path="ministeres" element={<AdminMinisteres />} />
-              <Route path="examens" element={<AdminExamens />} />
-              <Route path="documents" element={<AdminDocuments />} />
-              <Route path="cours" element={<AdminCours />} />
-              <Route path="utilisateurs" element={<AdminUsers />} />
-              <Route path="rapports" element={<AdminRapports />} />
-              <Route path="parametres" element={<AdminParametres />} />
-              <Route path="ai-agent/sources" element={<AdminAIAgent />} />
-              <Route path="ai-agent" element={<AdminAIAgent />} />
-              <Route path="notifications" element={<AdminNotifications />} />
-              <Route path="signalements" element={<AdminSignalements />} />
-              <Route path="*" element={<NotFound />} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
-      </ToastProvider>
-    </AuthProvider>
+              {/* ---------- Espace utilisateur ---------- */}
+              <Route path="dashboard" element={<DashboardLayout />}>
+                <Route index element={<DashHome />} />
+                <Route path="concours" element={<DashConcours />} />
+                <Route path="cours" element={<DashCours />} />
+                <Route path="favoris" element={<DashFavoris />} />
+                <Route path="notifications" element={<DashNotifications />} />
+                <Route path="profil" element={<DashProfil />} />
+                <Route path="parametres" element={<DashParametres />} />
+                <Route path="*" element={<NotFound />} />
+              </Route>
+
+              {/* ---------- Administration ---------- */}
+              <Route path="admin" element={<AdminLayout />}>
+                <Route index element={<AdminDashboard />} />
+                <Route path="concours" element={<AdminConcours />} />
+                <Route path="masters" element={<AdminMastersImport />} />
+                <Route path="masters/import" element={<AdminMastersImport />} />
+                <Route path="ecoles" element={<AdminEcoles />} />
+                <Route path="universites" element={<AdminUniversites />} />
+                <Route path="ministeres" element={<AdminMinisteres />} />
+                <Route path="examens" element={<AdminExamens />} />
+                <Route path="documents" element={<AdminDocuments />} />
+                <Route path="cours" element={<AdminCours />} />
+                <Route path="utilisateurs" element={<AdminUsers />} />
+                <Route path="rapports" element={<AdminRapports />} />
+                <Route path="parametres" element={<AdminParametres />} />
+                <Route path="ai-agent/sources" element={<AdminAIAgent />} />
+                <Route path="ai-agent" element={<AdminAIAgent />} />
+                <Route path="notifications" element={<AdminNotifications />} />
+                <Route path="signalements" element={<AdminSignalements />} />
+                <Route path="*" element={<NotFound />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </ToastProvider>
+      </AuthProvider>
+    </ThemeProvider>
   );
 }

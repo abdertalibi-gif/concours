@@ -16,6 +16,7 @@
   --color-card-border: #E6ECF3;
 }
 
+/* ---------- Tokens par thème (source de vérité CSS) ---------- */
 :root {
   --cm-navy: #0B2A4A;
   --cm-primary: #0B63CE;
@@ -28,7 +29,36 @@
   --cm-radius-control: 12px;
   --cm-shadow-card: 0 1px 3px rgba(11, 42, 74, 0.06);
   --cm-shadow-hover: 0 8px 24px rgba(11, 99, 206, 0.12);
+  --cm-scrollbar: #CBD5E1;
+  --cm-scrollbar-hover: #94A3B8;
 }
+
+.dark {
+  --cm-navy: #E8EEF8;
+  --cm-primary: #0B63CE;
+  --cm-primary-hover: #0956B4;
+  --cm-accent: #F59E0B;
+  --cm-bg: #0B1220;
+  --cm-border: #223452;
+  --cm-muted: #8CA0BC;
+  --cm-radius-card: 16px;
+  --cm-radius-control: 12px;
+  --cm-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --cm-shadow-hover: 0 8px 24px rgba(11, 99, 206, 0.22);
+  --cm-scrollbar: #2E4164;
+  --cm-scrollbar-hover: #3D5270;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+html.dark *,
+html.dark *::before,
+html.dark *::after {
+  --tw-ring-offset-color: #0B1220;
+}
+
+@custom-variant dark (&:is(.dark *));
 
 html { scroll-behavior: smooth; }
 
@@ -47,8 +77,8 @@ body {
 
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 8px; border: 2px solid var(--cm-bg); }
-::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+::-webkit-scrollbar-thumb { background: var(--cm-scrollbar); border-radius: 8px; border: 2px solid var(--cm-bg); }
+::-webkit-scrollbar-thumb:hover { background: var(--cm-scrollbar-hover); }
 
 .line-clamp-2 {
   display: -webkit-box;
@@ -59,6 +89,14 @@ body {
 
 /* Transition standard du design system (subtile, pro) */
 .cm-transition { transition: all 0.2s ease; }
+
+/* Transition légère lors du basculement de thème (ajoutée par ThemeProvider) */
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease,
+    fill 0.25s ease, stroke 0.25s ease, box-shadow 0.25s ease !important;
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -81,4 +119,199 @@ body {
 
 .animate-fade-in-up {
   animation: fadeInUp 0.4s ease-out forwards;
+}
+
+/* ============================================================
+   MODE SOMBRE — remap global des utilitaires clairs
+   Actif uniquement quand <html> porte la classe "dark" (gérée
+   par ThemeProvider). Le mode clair garde les valeurs Tailwind
+   d'origine. Les surfaces volontairement sombres (slate-800/900
+   /950 du lecteur PDF, panneau IA, sidebar #0B2A4A) ne sont
+   pas touchées.
+   Palette : page #0B1220 · surface #111A2E · surface2 #18243C
+   bordures #223452/#2E4164 · textes #E8EEF8/#B8C7DC/#8CA0BC.
+   ============================================================ */
+@layer utilities {
+  /* ---------- Surfaces / fonds ---------- */
+  html.dark .bg-white { background-color: #111A2E; }
+  html.dark .bg-white\/40 { background-color: rgb(17 26 46 / 0.4); }
+  html.dark .bg-white\/70 { background-color: rgb(17 26 46 / 0.7); }
+  html.dark .bg-white\/80 { background-color: rgb(17 26 46 / 0.8); }
+  html.dark .bg-white\/90 { background-color: rgb(17 26 46 / 0.9); }
+  html.dark .bg-white\/95 { background-color: rgb(17 26 46 / 0.95); }
+  html.dark .focus\:bg-white:focus { background-color: #18243C; }
+  html.dark .bg-\[\#F4F7FB\] { background-color: #0B1220; }
+  html.dark .bg-\[\#F8FAFC\] { background-color: #0B1220; }
+  html.dark .bg-\[\#E9F1FB\] { background-color: #0F1826; }
+  html.dark .bg-\[\#FFF3E6\] { background-color: #2A1D0E; }
+  html.dark .hover\:bg-\[\#FFE8D1\]:hover { background-color: #36250F; }
+
+  /* ---------- Slate : surfaces / bordures / divisions ---------- */
+  html.dark .bg-slate-50 { background-color: #111A2E; }
+  html.dark .bg-slate-50\/50 { background-color: rgb(17 26 46 / 0.5); }
+  html.dark .bg-slate-50\/60 { background-color: rgb(17 26 46 / 0.6); }
+  html.dark .bg-slate-50\/80 { background-color: rgb(17 26 46 / 0.8); }
+  html.dark .disabled\:bg-slate-50:disabled { background-color: #0F1826; }
+  html.dark .hover\:bg-slate-50:hover { background-color: #18243C; }
+  html.dark .hover\:bg-slate-50\/50:hover { background-color: rgb(24 36 60 / 0.5); }
+  html.dark .hover\:bg-slate-50\/60:hover { background-color: rgb(24 36 60 / 0.6); }
+  html.dark .hover\:bg-slate-50\/70:hover { background-color: rgb(24 36 60 / 0.7); }
+  html.dark .hover\:bg-slate-50\/80:hover { background-color: rgb(24 36 60 / 0.8); }
+  html.dark .bg-slate-100 { background-color: #18243C; }
+  html.dark .bg-slate-100\/80 { background-color: rgb(24 36 60 / 0.8); }
+  html.dark .hover\:bg-slate-100:hover { background-color: #1E2C47; }
+  html.dark .before\:bg-slate-100::before { background-color: #18243C; }
+  html.dark .bg-slate-200 { background-color: #223452; }
+  html.dark .hover\:bg-slate-200:hover { background-color: #2E4164; }
+  html.dark .bg-slate-400 { background-color: #4A5A76; }
+  html.dark .border-slate-50 { border-color: #1A2338; }
+  html.dark .border-slate-100 { border-color: #1E2C47; }
+  html.dark .border-slate-200 { border-color: #223452; }
+  html.dark .border-slate-200\/60 { border-color: rgb(34 52 82 / 0.6); }
+  html.dark .border-slate-200\/70 { border-color: rgb(34 52 82 / 0.7); }
+  html.dark .border-slate-200\/80 { border-color: rgb(34 52 82 / 0.8); }
+  html.dark .hover\:border-slate-300:hover { border-color: #2E4164; }
+  html.dark .border-slate-300 { border-color: #2E4164; }
+  html.dark .border-slate-400 { border-color: #3D5270; }
+  html.dark .sm\:border-slate-200 { border-color: #223452; }
+  html.dark .divide-slate-100 > :not(:last-child) { border-color: #1E2C47; }
+  html.dark .ring-slate-100 { --tw-ring-color: #1E2C47; }
+  html.dark .ring-slate-200 { --tw-ring-color: #223452; }
+  html.dark .ring-slate-200\/60 { --tw-ring-color: rgb(34 52 82 / 0.6); }
+  html.dark .ring-slate-300 { --tw-ring-color: #2E4164; }
+  html.dark .ring-slate-400\/20 { --tw-ring-color: rgb(74 90 118 / 0.2); }
+
+  /* ---------- Slate : textes ---------- */
+  html.dark .text-slate-200 { color: #8CA0BC; }
+  html.dark .text-slate-300 { color: #B8C7DC; }
+  html.dark .text-slate-400 { color: #8CA0BC; }
+  html.dark .text-slate-500 { color: #B8C7DC; }
+  html.dark .text-slate-600 { color: #C9D6E8; }
+  html.dark .text-slate-700 { color: #D8E2EF; }
+  html.dark .text-slate-800 { color: #E2EAF5; }
+  html.dark .text-slate-900 { color: #E8EEF8; }
+  html.dark .hover\:text-slate-600:hover { color: #C9D6E8; }
+  html.dark .hover\:text-slate-800:hover { color: #E2EAF5; }
+  html.dark .placeholder-slate-400::placeholder { color: #8CA0BC; }
+  html.dark .placeholder\:text-slate-400::placeholder { color: #8CA0BC; }
+
+  /* ---------- Noir / texte principal (ex #0B2A4A) ---------- */
+  html.dark .text-\[\#0B2A4A\] { color: #E8EEF8; }
+  html.dark .hover\:text-\[\#0B2A4A\]:hover { color: #E8EEF8; }
+  html.dark .text-\[\#C25E00\] { color: #F2A65A; }
+
+  /* ---------- Sky ---------- */
+  html.dark .bg-sky-50 { background-color: #0E2236; }
+  html.dark .bg-sky-50\/50 { background-color: rgb(14 34 54 / 0.5); }
+  html.dark .bg-sky-50\/60 { background-color: rgb(14 34 54 / 0.6); }
+  html.dark .bg-sky-50\/70 { background-color: rgb(14 34 54 / 0.7); }
+  html.dark .hover\:bg-sky-50:hover { background-color: #10263C; }
+  html.dark .bg-sky-100 { background-color: #12304B; }
+  html.dark .bg-sky-100\/70 { background-color: rgb(18 48 75 / 0.7); }
+  html.dark .hover\:bg-sky-100:hover { background-color: #132F49; }
+  html.dark .peer-checked\:bg-sky-100:is(:checked ~ *) { background-color: #12304B; }
+  html.dark .border-sky-100 { border-color: #1C3A5A; }
+  html.dark .border-sky-200 { border-color: #26507A; }
+  html.dark .ring-sky-100 { --tw-ring-color: #1C3A5A; }
+  html.dark .ring-sky-200 { --tw-ring-color: #26507A; }
+  html.dark .ring-sky-300 { --tw-ring-color: #2F6394; }
+  html.dark .text-sky-600 { color: #7CC2F5; }
+  html.dark .text-sky-700 { color: #8FCDF7; }
+  html.dark .text-sky-800 { color: #A3D8F9; }
+  html.dark .text-sky-900 { color: #B7E2FB; }
+  html.dark .text-sky-950 { color: #CAEBFC; }
+
+  /* ---------- Emerald ---------- */
+  html.dark .bg-emerald-50 { background-color: #0D241B; }
+  html.dark .bg-emerald-50\/70 { background-color: rgb(13 36 27 / 0.7); }
+  html.dark .hover\:bg-emerald-50:hover { background-color: #0F2B1F; }
+  html.dark .bg-emerald-100 { background-color: #12301F; }
+  html.dark .bg-emerald-100\/80 { background-color: rgb(18 48 31 / 0.8); }
+  html.dark .hover\:bg-emerald-100:hover { background-color: #142E23; }
+  html.dark .border-emerald-100 { border-color: #16452D; }
+  html.dark .border-emerald-200 { border-color: #1F5C3A; }
+  html.dark .ring-emerald-200 { --tw-ring-color: #1F5C3A; }
+  html.dark .ring-emerald-300 { --tw-ring-color: #2A7350; }
+  html.dark .text-emerald-500 { color: #34D399; }
+  html.dark .text-emerald-600 { color: #4ADE80; }
+  html.dark .text-emerald-700 { color: #6EE7A0; }
+  html.dark .text-emerald-800 { color: #96F0BC; }
+  html.dark .text-emerald-900 { color: #B8F5D0; }
+  html.dark .text-emerald-950 { color: #D4FAE3; }
+  html.dark .hover\:text-emerald-600:hover { color: #4ADE80; }
+  html.dark .hover\:text-emerald-700:hover { color: #6EE7A0; }
+  html.dark .hover\:text-emerald-900:hover { color: #B8F5D0; }
+
+  /* ---------- Red ---------- */
+  html.dark .bg-red-50 { background-color: #2B0E12; }
+  html.dark .hover\:bg-red-50:hover { background-color: #301013; }
+  html.dark .bg-red-100 { background-color: #3B1218; }
+  html.dark .hover\:bg-red-100:hover { background-color: #3E161C; }
+  html.dark .ring-red-100 { --tw-ring-color: #4A1B22; }
+  html.dark .ring-red-200 { --tw-ring-color: #5C232B; }
+  html.dark .ring-red-300 { --tw-ring-color: #6E2B34; }
+  html.dark .text-red-400 { color: #F0A2A8; }
+  html.dark .text-red-400\/80 { color: rgb(240 162 168 / 0.8); }
+  html.dark .text-red-500 { color: #F4848C; }
+  html.dark .text-red-600 { color: #F97E87; }
+  html.dark .text-red-700 { color: #FB9AA1; }
+  html.dark .text-red-900 { color: #FCC2C7; }
+  html.dark .hover\:text-red-600:hover { color: #F97E87; }
+  html.dark .hover\:text-red-700:hover { color: #FB9AA1; }
+
+  /* ---------- Amber / Orange ---------- */
+  html.dark .bg-amber-50 { background-color: #2B1F0B; }
+  html.dark .bg-amber-50\/70 { background-color: rgb(43 31 11 / 0.7); }
+  html.dark .bg-amber-50\/80 { background-color: rgb(43 31 11 / 0.8); }
+  html.dark .hover\:bg-amber-50:hover { background-color: #30240F; }
+  html.dark .bg-amber-100 { background-color: #3B2B10; }
+  html.dark .bg-amber-100\/70 { background-color: rgb(59 43 16 / 0.7); }
+  html.dark .border-amber-200 { border-color: #5C4A1E; }
+  html.dark .border-amber-300 { border-color: #6E5A26; }
+  html.dark .ring-amber-200 { --tw-ring-color: #5C4A1E; }
+  html.dark .ring-amber-300 { --tw-ring-color: #6E5A26; }
+  html.dark .text-amber-600 { color: #F2B44C; }
+  html.dark .text-amber-700 { color: #F5C469; }
+  html.dark .text-amber-800 { color: #F8D486; }
+  html.dark .text-amber-900 { color: #FBE3A6; }
+  html.dark .text-amber-950 { color: #FCF1C8; }
+  html.dark .hover\:text-amber-600:hover { color: #F2B44C; }
+  html.dark .bg-orange-50 { background-color: #2D1D0B; }
+  html.dark .bg-orange-100 { background-color: #3D2912; }
+  html.dark .border-orange-100 { border-color: #4E3518; }
+  html.dark .text-orange-600 { color: #F0A35A; }
+  html.dark .text-orange-700 { color: #F3B57A; }
+
+  /* ---------- Indigo / Blue / Purple ---------- */
+  html.dark .bg-indigo-50 { background-color: #171A38; }
+  html.dark .bg-indigo-50\/70 { background-color: rgb(23 26 56 / 0.7); }
+  html.dark .bg-indigo-100 { background-color: #212454; }
+  html.dark .border-indigo-200 { border-color: #34377F; }
+  html.dark .ring-indigo-200 { --tw-ring-color: #34377F; }
+  html.dark .text-indigo-600 { color: #9AA4F7; }
+  html.dark .text-indigo-700 { color: #ADB5FA; }
+  html.dark .bg-blue-50 { background-color: #0E1C3E; }
+  html.dark .bg-blue-50\/70 { background-color: rgb(14 28 62 / 0.7); }
+  html.dark .bg-blue-100 { background-color: #14264F; }
+  html.dark .border-blue-200 { border-color: #23417C; }
+  html.dark .ring-blue-100 { --tw-ring-color: #1B3466; }
+  html.dark .ring-blue-200 { --tw-ring-color: #23417C; }
+  html.dark .text-blue-400 { color: #7FA6F5; }
+  html.dark .text-blue-600 { color: #7FA6F5; }
+  html.dark .text-blue-700 { color: #93B4F8; }
+  html.dark .text-blue-800 { color: #A7C3FA; }
+  html.dark .bg-purple-50 { background-color: #170F33; }
+  html.dark .bg-purple-100 { background-color: #1E1338; }
+  html.dark .text-purple-700 { color: #C2B0FA; }
+
+  /* ---------- Héro : dégradés sur fond clair ---------- */
+  html.dark .from-\[\#F4F7FB\] { --tw-gradient-from: #0B1220; }
+  html.dark .from-\[\#F4F7FB\]\/90 { --tw-gradient-from: rgb(11 18 32 / 0.9); }
+  html.dark .from-\[\#F4F7FB\]\/95 { --tw-gradient-from: rgb(11 18 32 / 0.95); }
+  html.dark .via-\[\#F4F7FB\]\/90 { --tw-gradient-via: rgb(11 18 32 / 0.9); }
+  html.dark .via-\[\#F4F7FB\]\/95 { --tw-gradient-via: rgb(11 18 32 / 0.95); }
+  html.dark .to-\[\#F4F7FB\]\/10 { --tw-gradient-to: rgb(11 18 32 / 0.1); }
+
+  /* ---------- Bordures fines de cartes ---------- */
+  html.dark .border-\[\#E6ECF3\] { border-color: #223452; }
 }

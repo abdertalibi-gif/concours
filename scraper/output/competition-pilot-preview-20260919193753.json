@@ -1,0 +1,3211 @@
+{
+  "generatedAt": "2026-09-19T19:37:53.803Z",
+  "source": {
+    "sourceId": "min-sup",
+    "organization": "Ministère de l'Enseignement Supérieur",
+    "baseUrl": "https://www.enssup.gov.ma",
+    "page": "https://www.enssup.gov.ma",
+    "dateTest": "2026-09-19T19:37:53.803Z"
+  },
+  "totalFound": 10,
+  "parsed": 10,
+  "valid": 10,
+  "stats": {
+    "IMPORTABLE": 0,
+    "REVIEW": 0,
+    "BLOCKED": 10
+  },
+  "coverage": {
+    "places": 0,
+    "conditions": 0,
+    "matieres": 0,
+    "epreuves": 0,
+    "deadline": 0,
+    "competitionDate": 0,
+    "registrationUrl": 6,
+    "officialDocument": 0,
+    "officialWebsite": 10
+  },
+  "previews": [
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "organization": "Ministère de l'Enseignement Supérieur",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "page": "https://www.enssup.gov.ma/en/publications/categories/Appels à candidatures à l'international",
+        "dateTest": "2026-09-19T19:37:53.797Z"
+      },
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "payload": {
+        "title": "Nos publications - ENSSUP",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Sciences de l’Éducation",
+        "year": 2026,
+        "places": null,
+        "description": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Nos publications - ENSSUP Organisation Internationale de la Francophonie | Appel à candidatures au poste de Coordonnateur(trice) du projet « La langue française, langue d’enseignement et... 19 août 2026 | Appels à candidatures à l'international Organisation de la Coopération Islamique | Avis de recrutement de professeurs associés à l’Université Islamique de Technologie (UIT) 18 août 2026 | Appels à candidatures à l'international UNESCO | Appel à candidatures pour le poste de Secrétaire exécutif de la Commission Océanographique Intergouvernementale de l’UNESCO 24 juillet 2026 | Appels à candidatures à l'international Organisation de la Coopération Islamique (OCI) | Appel à candidatures pour des postes à l'Université Islamique de Technologie. 14 juillet 2026 | Appels à candidatures à l'international UNESCO | Appel à candidatures pour le poste de Conseiller/Conseillère spécial(e) auprès du Directeur Général de l’UNESCO 1 juillet 2026 | Appels à candidatures à l'international UNESCO | APPEL A CANDIDATURES POUR LE POSTE DE DIRECTEUR/DIRECTRICE DE L’UNITE DE COORDINATION DE LA DECENNIE DES NATIONS UNIES POUR LES SCIENCES OCEANIQUES 25 juin 2026 | Appels à candidatures à l'international UNESCO | Appel à candidatures pour le poste de Sous-Directeur Général pour les sciences 13 mai 2026 | Appels à candidatures à l'international Union Africaine (UA) | Appel à candidatures pour le poste de Directeur de la Gestion des Ressources Humaines 26 mars 2026 | Appels à candidatures à l'international UNESCO | Appel à candidatures pour le poste de Sous-Directeur / Directrice Général(e) pour la Culture (Réaffichage) 20 février 2026 | Appels à candidatures à l'international UNESCO | Appel à candidatures pour le poste de Sous-Directeur / Directrice Général(e) pour l’Education (Réaffichage) 20 février 2026 | Appels à candidatures à l'international « Previous Next » Showing 1 to 10 of 29 results 1 2 3 Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": null,
+        "officialWebsite": "https://www.enssup.gov.ma/en/publications/categories/Appels à candidatures à l'international",
+        "registrationUrl": "https://www.enssup.gov.ma/en/publications/categories/Appels à candidatures à l'international",
+        "sourceUrl": "https://www.enssup.gov.ma/en/publications/categories/Appels à candidatures à l'international",
+        "category": "UNIVERSITE",
+        "slug": "null-nos-publications-enssup-2026",
+        "id": "c_mu8shw91_g6bowit",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:37:53.797Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:37:53.797Z",
+        "updatedAt": "2026-09-19T19:37:53.797Z"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "Nos publications - ENSSUP",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences de l’Éducation",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences de l’Éducation"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Nos publications - ENSSUP Organisation Internationale de la Francophonie | Appel à candidatures au poste de Coordonnateur(trice) du projet « La langue française, langue d’enseignement et... 19 août 2026 | Appels à candidatures à l'international Organisation de la Coopération Islamique | Avis de recrutement de professeurs associés à l’Université Islamique de Technologie (UIT) 18 août 2026 | Appels à candidatures à l'international UNESCO | Appel à candidatures pour le poste de Secrétaire exécutif de la Commission Océanographique Intergouvernementale de l’UNESCO 24 juillet 2026 | Appels à candidatures à l'international Organisation de la Coopération Islamique (OCI) | Appel à candidatures pour des postes à l'Université Islamique de Technologie. 14 juillet 2026 | Appels à candidatures à l'international UNESCO | Appel à candidatures pour le poste de Conseiller/Conseillère spécial(e) auprès du Directeur Général de l’UNESCO 1 juillet 2026 | Appels à candidatures à l'international UNESCO | APPEL A CANDIDATURES POUR LE POSTE DE DIRECTEUR/DIRECTRICE DE L’UNITE DE COORDINATION DE LA DECENNIE DES NATIONS UNIES POUR LES SCIENCES OCEANIQUES 25 juin 2026 | Appels à candidatures à l'international UNESCO | Appel à candidatures pour le poste de Sous-Directeur Général pour les sciences 13 mai 2026 | Appels à candidatures à l'international Union Africaine (UA) | Appel à candidatures pour le poste de Directeur de la Gestion des Ressources Humaines 26 mars 2026 | Appels à candidatures à l'international UNESCO | Appel à candidatures pour le poste de Sous-Directeur / Directrice Général(e) pour la Culture (Réaffichage) 20 février 2026 | Appels à candidatures à l'international UNESCO | Appel à candidatures pour le poste de Sous-Directeur / Directrice Général(e) pour l’Education (Réaffichage) 20 février 2026 | Appels à candidatures à l'international « Previous Next » Showing 1 to 10 of 29 results 1 2 3 Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "documents",
+          "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": "https://www.enssup.gov.ma/en/publications/categories/Appels à candidatures à l'international",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/categories/Appels à candidatures à l'international",
+          "status": "AUTO",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/categories/Appels à candidatures à l'international",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-nos-publications-enssup-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8shw91_xtv9fpq",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:37:53.797Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:37:53.797Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:37:53.797Z",
+          "status": "AUTO"
+        }
+      },
+      "references": {
+        "schoolId": null,
+        "universityId": null,
+        "city": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant",
+        "documentsDemandes manquant"
+      ],
+      "evidence": [
+        "sourceUrl=https://www.enssup.gov.ma/en/publications/categories/Appels à candidatures à l'international",
+        "title=\"Nos publications - ENSSUP\"",
+        "establishment=—",
+        "city=—"
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "organization": "Ministère de l'Enseignement Supérieur",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "page": "https://www.enssup.gov.ma/en/concours-de-recrutement",
+        "dateTest": "2026-09-19T19:37:53.798Z"
+      },
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "payload": {
+        "title": "recrutement",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Sciences de l’Éducation",
+        "year": 2026,
+        "places": null,
+        "description": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Concours de recrutement Concours de recrutement Avis de concours : Concours des cadres Administratifs et Techniques Concours des Enseignants Chercheurs Concours des Enseignants Médecins Résultats de concours: Résultats des Concours Administratifs et techniques Concours des Enseignants Chercheurs Concours des Enseignants Médecins Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur var eventData = []; $(document).ready(function() { $(\"#gallery1\").unitegallery({ tiles_type: \"nested\", }); // $('#share-bar').share(); $(\"#my-calendar\").zabuto_calendar({ language: \"fr\", data: eventData, action: function () { return myDateFunction(this.id, false); } }); function myDateFunction(id, fromModal) { var title = $(\"#\" + id).closest(\"td\").attr(\"lien\"); if(title != undefined) { window.location.replace(window.location.origin+\"/evenements/\"+title); }; } }); $(function(){ $(\".toggle\").click(function(){ $(this).toggleClass(\"active\"); $(this).next(\".content\").stop(true,true).slideToggle(400); }); });",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": null,
+        "officialWebsite": "https://www.enssup.gov.ma/en/concours-de-recrutement",
+        "sourceUrl": "https://www.enssup.gov.ma/en/concours-de-recrutement",
+        "category": "UNIVERSITE",
+        "slug": "null-recrutement-2026",
+        "id": "c_mu8shw92_8vwsrrh",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:37:53.798Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:37:53.798Z",
+        "updatedAt": "2026-09-19T19:37:53.798Z"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "recrutement",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences de l’Éducation",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences de l’Éducation"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Concours de recrutement Concours de recrutement Avis de concours : Concours des cadres Administratifs et Techniques Concours des Enseignants Chercheurs Concours des Enseignants Médecins Résultats de concours: Résultats des Concours Administratifs et techniques Concours des Enseignants Chercheurs Concours des Enseignants Médecins Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur var eventData = []; $(document).ready(function() { $(\"#gallery1\").unitegallery({ tiles_type: \"nested\", }); // $('#share-bar').share(); $(\"#my-calendar\").zabuto_calendar({ language: \"fr\", data: eventData, action: function () { return myDateFunction(this.id, false); } }); function myDateFunction(id, fromModal) { var title = $(\"#\" + id).closest(\"td\").attr(\"lien\"); if(title != undefined) { window.location.replace(window.location.origin+\"/evenements/\"+title); }; } }); $(function(){ $(\".toggle\").click(function(){ $(this).toggleClass(\"active\"); $(this).next(\".content\").stop(true,true).slideToggle(400); }); });",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "documents",
+          "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": "https://www.enssup.gov.ma/en/concours-de-recrutement",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/en/concours-de-recrutement",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-recrutement-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8shw92_xzpz8k9",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:37:53.798Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:37:53.798Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:37:53.798Z",
+          "status": "AUTO"
+        }
+      },
+      "references": {
+        "schoolId": null,
+        "universityId": null,
+        "city": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant",
+        "documentsDemandes manquant"
+      ],
+      "evidence": [
+        "sourceUrl=https://www.enssup.gov.ma/en/concours-de-recrutement",
+        "title=\"recrutement\"",
+        "establishment=—",
+        "city=—"
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "organization": "Ministère de l'Enseignement Supérieur",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "page": "https://www.enssup.gov.ma/en/appel-a-candidature",
+        "dateTest": "2026-09-19T19:37:53.798Z"
+      },
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "payload": {
+        "title": "Appel à Candidature",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Sciences de l’Éducation",
+        "year": 2026,
+        "places": null,
+        "description": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Appel à Candidature Appel à Candidature Appel à candidatures Académie internationale de la francophonie scientifique Chef de division Avis Résultats Chef de service Avis Résultats Expert Avis Résultats Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur var eventData = []; $(document).ready(function() { $(\"#gallery1\").unitegallery({ tiles_type: \"nested\", }); // $('#share-bar').share(); $(\"#my-calendar\").zabuto_calendar({ language: \"fr\", data: eventData, action: function () { return myDateFunction(this.id, false); } }); function myDateFunction(id, fromModal) { var title = $(\"#\" + id).closest(\"td\").attr(\"lien\"); if(title != undefined) { window.location.replace(window.location.origin+\"/evenements/\"+title); }; } }); $(function(){ $(\".toggle\").click(function(){ $(this).toggleClass(\"active\"); $(this).next(\".content\").stop(true,true).slideToggle(400); }); });",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": null,
+        "resultsDate": "2026-09-04T00:00:00.000Z",
+        "officialWebsite": "https://www.enssup.gov.ma/en/appel-a-candidature",
+        "registrationUrl": "https://www.enssup.gov.ma/en/appel-a-candidature",
+        "sourceUrl": "https://www.enssup.gov.ma/en/appel-a-candidature",
+        "category": "UNIVERSITE",
+        "slug": "null-appel-a-candidature-2026",
+        "id": "c_mu8shw92_5sjnw0b",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:37:53.798Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:37:53.798Z",
+        "updatedAt": "2026-09-19T19:37:53.798Z"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "Appel à Candidature",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences de l’Éducation",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences de l’Éducation"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Appel à Candidature Appel à Candidature Appel à candidatures Académie internationale de la francophonie scientifique Chef de division Avis Résultats Chef de service Avis Résultats Expert Avis Résultats Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur var eventData = []; $(document).ready(function() { $(\"#gallery1\").unitegallery({ tiles_type: \"nested\", }); // $('#share-bar').share(); $(\"#my-calendar\").zabuto_calendar({ language: \"fr\", data: eventData, action: function () { return myDateFunction(this.id, false); } }); function myDateFunction(id, fromModal) { var title = $(\"#\" + id).closest(\"td\").attr(\"lien\"); if(title != undefined) { window.location.replace(window.location.origin+\"/evenements/\"+title); }; } }); $(function(){ $(\".toggle\").click(function(){ $(this).toggleClass(\"active\"); $(this).next(\".content\").stop(true,true).slideToggle(400); }); });",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "documents",
+          "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": "2026-09-04T00:00:00.000Z",
+          "status": "AUTO",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": "https://www.enssup.gov.ma/en/appel-a-candidature",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": "https://www.enssup.gov.ma/en/appel-a-candidature",
+          "status": "AUTO",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/en/appel-a-candidature",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-appel-a-candidature-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8shw92_cb89lmq",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:37:53.798Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:37:53.798Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:37:53.798Z",
+          "status": "AUTO"
+        }
+      },
+      "references": {
+        "schoolId": null,
+        "universityId": null,
+        "city": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant",
+        "documentsDemandes manquant"
+      ],
+      "evidence": [
+        "sourceUrl=https://www.enssup.gov.ma/en/appel-a-candidature",
+        "title=\"Appel à Candidature\"",
+        "establishment=—",
+        "city=—"
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "organization": "Ministère de l'Enseignement Supérieur",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "page": "https://www.enssup.gov.ma/en/publications/categories/concours des cadres administratifs et techniques",
+        "dateTest": "2026-09-19T19:37:53.798Z"
+      },
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "payload": {
+        "title": "Nos publications - ENSSUP",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Sciences de l’Éducation",
+        "year": 2026,
+        "places": null,
+        "description": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Nos publications - ENSSUP Les Listes Des Candidats Convoqués Pour Passer L'Épreuve Orale - Session 25/01/2026. 27 mars 2026 | Concours des cadres Administratifs et Techniques Les Listes Des Candidats Convoqués Pour Passer L'Épreuve Orale - Session 18/01/2026 19 février 2026 | Concours des cadres Administratifs et Techniques Les Listes Des Candidats Convoqués Pour Passer Les Épreuves Écrites - Session 25/01/2026. 20 janvier 2026 | Concours des cadres Administratifs et Techniques Les Listes Des Candidats Convoqués Pour Passer Les Épreuves Écrites - Session 18/01/2026 12 janvier 2026 | Concours des cadres Administratifs et Techniques Avis de concours de recrutement de cadres administratifs et techniques à l'Administration Centrale 29 novembre 2025 | Concours des cadres Administratifs et Techniques listes Des Candidats Convoqués Pour Passer L'épreuve Orale Session 03.11.2024 Au Profit De L'administration Centrale 13 décembre 2024 | Concours des cadres Administratifs et Techniques Liste Des Candidats Convoqués Pour Passer L'Épreuve Orale Le 10.12.2024 pour les universités 13 décembre 2024 | Concours des cadres Administratifs et Techniques Liste Des Candidats Convoqués Pour Passer Les Épreuves Écrites 4 novembre 2024 | Concours des cadres Administratifs et Techniques Concours de Recrutement des Cadres Administratifs et Techniques, réservés aux Postes Budgétaires au titre de l'année 2024 8 octobre 2024 | Concours des cadres Administratifs et Techniques la liste des Candidats Convoquées pour L'entretien Oral (Session 10/12/2023) 19 décembre 2023 | Concours des cadres Administratifs et Techniques « Previous Next » Showing 1 to 10 of 83 results 1 2 3 4 5 6 7 8 9 Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": null,
+        "officialWebsite": "https://www.enssup.gov.ma/en/publications/categories/concours des cadres administratifs et techniques",
+        "sourceUrl": "https://www.enssup.gov.ma/en/publications/categories/concours des cadres administratifs et techniques",
+        "category": "UNIVERSITE",
+        "slug": "null-nos-publications-enssup-2026",
+        "id": "c_mu8shw92_l4o2qx2",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:37:53.798Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:37:53.798Z",
+        "updatedAt": "2026-09-19T19:37:53.798Z"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "Nos publications - ENSSUP",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences de l’Éducation",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences de l’Éducation"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Nos publications - ENSSUP Les Listes Des Candidats Convoqués Pour Passer L'Épreuve Orale - Session 25/01/2026. 27 mars 2026 | Concours des cadres Administratifs et Techniques Les Listes Des Candidats Convoqués Pour Passer L'Épreuve Orale - Session 18/01/2026 19 février 2026 | Concours des cadres Administratifs et Techniques Les Listes Des Candidats Convoqués Pour Passer Les Épreuves Écrites - Session 25/01/2026. 20 janvier 2026 | Concours des cadres Administratifs et Techniques Les Listes Des Candidats Convoqués Pour Passer Les Épreuves Écrites - Session 18/01/2026 12 janvier 2026 | Concours des cadres Administratifs et Techniques Avis de concours de recrutement de cadres administratifs et techniques à l'Administration Centrale 29 novembre 2025 | Concours des cadres Administratifs et Techniques listes Des Candidats Convoqués Pour Passer L'épreuve Orale Session 03.11.2024 Au Profit De L'administration Centrale 13 décembre 2024 | Concours des cadres Administratifs et Techniques Liste Des Candidats Convoqués Pour Passer L'Épreuve Orale Le 10.12.2024 pour les universités 13 décembre 2024 | Concours des cadres Administratifs et Techniques Liste Des Candidats Convoqués Pour Passer Les Épreuves Écrites 4 novembre 2024 | Concours des cadres Administratifs et Techniques Concours de Recrutement des Cadres Administratifs et Techniques, réservés aux Postes Budgétaires au titre de l'année 2024 8 octobre 2024 | Concours des cadres Administratifs et Techniques la liste des Candidats Convoquées pour L'entretien Oral (Session 10/12/2023) 19 décembre 2023 | Concours des cadres Administratifs et Techniques « Previous Next » Showing 1 to 10 of 83 results 1 2 3 4 5 6 7 8 9 Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "documents",
+          "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": "https://www.enssup.gov.ma/en/publications/categories/concours des cadres administratifs et techniques",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/categories/concours des cadres administratifs et techniques",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-nos-publications-enssup-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8shw92_yqz1ovm",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:37:53.798Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:37:53.798Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:37:53.798Z",
+          "status": "AUTO"
+        }
+      },
+      "references": {
+        "schoolId": null,
+        "universityId": null,
+        "city": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant",
+        "documentsDemandes manquant"
+      ],
+      "evidence": [
+        "sourceUrl=https://www.enssup.gov.ma/en/publications/categories/concours des cadres administratifs et techniques",
+        "title=\"Nos publications - ENSSUP\"",
+        "establishment=—",
+        "city=—"
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "organization": "Ministère de l'Enseignement Supérieur",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "page": "https://www.enssup.gov.ma/en/publications/avis-d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-residences-universitaires-dans-le-cadre-d-un-partenariat-public-prive",
+        "dateTest": "2026-09-19T19:37:53.799Z"
+      },
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "payload": {
+        "title": "Avis d'Appel à Manifestation d’Intérêt pour la construction  et l’équipement de résidences universitaires dans le cadre d’un partenariat public-privé",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Sciences de l’Éducation",
+        "year": 2026,
+        "places": null,
+        "description": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Avis d'Appel à Manifestation d’Intérêt pour la construction et l’équipement de résidences universitaires dans le cadre d’un partenariat public-privé Publié le 30 septembre 2025 - 11 months ago Communiqué de presse Avis d'Appel à Manifestation d’Intérêt pour la construction et l’équipement de résidences universitaires dans le cadre d’un partenariat public-privé 1) Avis d'appel à manifestation d'intérêt 2) CONVENTION DE PARTENARIAT PUBLIC-PRIVE 3) RÈGLEMENT D’APPEL À MANIFESTATION D’INTÉRÊT 4) TERRAINS PROPOSÉS POUR ABRITER LES PROJETS DE CONSTRUCTION DE RÉSIDENCES UNIVERSITAIRES Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur $(document).ready(function() { $('#share-bar').share(); });",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": null,
+        "officialWebsite": "https://www.enssup.gov.ma/en/publications/avis-d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-residences-universitaires-dans-le-cadre-d-un-partenariat-public-prive",
+        "sourceUrl": "https://www.enssup.gov.ma/en/publications/avis-d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-residences-universitaires-dans-le-cadre-d-un-partenariat-public-prive",
+        "category": "UNIVERSITE",
+        "slug": "null-avis-d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement",
+        "id": "c_mu8shw93_n8qjlk0",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:37:53.799Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:37:53.799Z",
+        "updatedAt": "2026-09-19T19:37:53.799Z"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "Avis d'Appel à Manifestation d’Intérêt pour la construction  et l’équipement de résidences universitaires dans le cadre d’un partenariat public-privé",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences de l’Éducation",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences de l’Éducation"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Avis d'Appel à Manifestation d’Intérêt pour la construction et l’équipement de résidences universitaires dans le cadre d’un partenariat public-privé Publié le 30 septembre 2025 - 11 months ago Communiqué de presse Avis d'Appel à Manifestation d’Intérêt pour la construction et l’équipement de résidences universitaires dans le cadre d’un partenariat public-privé 1) Avis d'appel à manifestation d'intérêt 2) CONVENTION DE PARTENARIAT PUBLIC-PRIVE 3) RÈGLEMENT D’APPEL À MANIFESTATION D’INTÉRÊT 4) TERRAINS PROPOSÉS POUR ABRITER LES PROJETS DE CONSTRUCTION DE RÉSIDENCES UNIVERSITAIRES Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur $(document).ready(function() { $('#share-bar').share(); });",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "documents",
+          "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": "https://www.enssup.gov.ma/en/publications/avis-d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-residences-universitaires-dans-le-cadre-d-un-partenariat-public-prive",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/avis-d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-residences-universitaires-dans-le-cadre-d-un-partenariat-public-prive",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-avis-d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8shw92_nk9u3m4",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:37:53.799Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:37:53.799Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:37:53.799Z",
+          "status": "AUTO"
+        }
+      },
+      "references": {
+        "schoolId": null,
+        "universityId": null,
+        "city": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant",
+        "documentsDemandes manquant"
+      ],
+      "evidence": [
+        "sourceUrl=https://www.enssup.gov.ma/en/publications/avis-d-appel-a-manifestation-d-interet-pour-la-construction-et-l-equipement-de-residences-universitaires-dans-le-cadre-d-un-partenariat-public-prive",
+        "title=\"Avis d'Appel à Manifestation d’Intérêt pour la construction \"",
+        "establishment=—",
+        "city=—"
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "organization": "Ministère de l'Enseignement Supérieur",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "page": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-des-ressources-humaines-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+        "dateTest": "2026-09-19T19:37:53.799Z"
+      },
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "payload": {
+        "title": "pour Occuper le poste de Directeur (ce) des Ressources Humaines  du Ministère de l’Enseignement Supérieur de la Recherche Scientif",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Sciences de l’Éducation",
+        "level": "Master de Recherche (Bac+5)",
+        "year": 2026,
+        "places": null,
+        "description": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Appel à Candidature pour Occuper le poste de Directeur (ce) des Ressources Humaines du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de l’Innovation Publié le 2 juin 2026 - 3 months ago APPEL A CANDIDATURE Appel à Candidature pour Occuper le poste de Directeur (ce) des Ressources Humaines du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de l’Innovation Poste Directeur (ce) des Ressources Humaines Arrêté N° 07/0551 Date 1 juin 2026 Date limite de dépôt Mardi 16 juin 2026 à 16h30 Documents à télécharger Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur $(document).ready(function() { $('#share-bar').share(); });",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": null,
+        "officialWebsite": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-des-ressources-humaines-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+        "registrationUrl": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-des-ressources-humaines-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+        "sourceUrl": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-des-ressources-humaines-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+        "category": "UNIVERSITE",
+        "slug": "null-pour-occuper-le-poste-de-directeur-ce-des-ressources-humaines-du-ministere-",
+        "id": "c_mu8shw93_tk5dmkr",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:37:53.799Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:37:53.799Z",
+        "updatedAt": "2026-09-19T19:37:53.799Z"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "pour Occuper le poste de Directeur (ce) des Ressources Humaines  du Ministère de l’Enseignement Supérieur de la Recherche Scientif",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences de l’Éducation",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences de l’Éducation"
+        },
+        "level": {
+          "targetField": "level",
+          "value": "Master de Recherche (Bac+5)",
+          "status": "AUTO",
+          "sourceField": "level"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Appel à Candidature pour Occuper le poste de Directeur (ce) des Ressources Humaines du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de l’Innovation Publié le 2 juin 2026 - 3 months ago APPEL A CANDIDATURE Appel à Candidature pour Occuper le poste de Directeur (ce) des Ressources Humaines du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de l’Innovation Poste Directeur (ce) des Ressources Humaines Arrêté N° 07/0551 Date 1 juin 2026 Date limite de dépôt Mardi 16 juin 2026 à 16h30 Documents à télécharger Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur $(document).ready(function() { $('#share-bar').share(); });",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "documents",
+          "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-des-ressources-humaines-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-des-ressources-humaines-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+          "status": "AUTO",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-des-ressources-humaines-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pour-occuper-le-poste-de-directeur-ce-des-ressources-humaines-du-ministere-",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8shw93_tg6jv33",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:37:53.799Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:37:53.799Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:37:53.799Z",
+          "status": "AUTO"
+        }
+      },
+      "references": {
+        "schoolId": null,
+        "universityId": null,
+        "city": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant",
+        "documentsDemandes manquant"
+      ],
+      "evidence": [
+        "sourceUrl=https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-des-ressources-humaines-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+        "title=\"pour Occuper le poste de Directeur (ce) des Ressources Humai\"",
+        "establishment=—",
+        "city=—"
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "organization": "Ministère de l'Enseignement Supérieur",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "page": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-de-la-cooperation-et-du-partenariat-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+        "dateTest": "2026-09-19T19:37:53.799Z"
+      },
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "payload": {
+        "title": "pour Occuper le poste de Directeur (ce) de la Coopération  et du Partenariat du Ministère de l’Enseignement Supérieur  de la Reche",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Sciences de l’Éducation",
+        "year": 2026,
+        "places": null,
+        "description": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Appel à Candidature pour Occuper le poste de Directeur (ce) de la Coopération et du Partenariat du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de l’Innovation Publié le 2 juin 2026 - 3 months ago APPEL A CANDIDATURE Appel à Candidature pour Occuper le poste de Directeur (ce) de la Coopération et du Partenariat du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de l’Innovation Poste Directeur (ce) de de la Coopération et du Partenariat Arrêté N° 07/0549 Date 1 juin 2026 Date limite de dépôt Mardi 16 juin 2026 à 16h30 Documents à télécharger Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur $(document).ready(function() { $('#share-bar').share(); });",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": null,
+        "officialWebsite": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-de-la-cooperation-et-du-partenariat-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+        "registrationUrl": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-de-la-cooperation-et-du-partenariat-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+        "sourceUrl": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-de-la-cooperation-et-du-partenariat-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+        "category": "UNIVERSITE",
+        "slug": "null-pour-occuper-le-poste-de-directeur-ce-de-la-cooperation-et-du-partenariat-d",
+        "id": "c_mu8shw93_ox68r9a",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:37:53.799Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:37:53.799Z",
+        "updatedAt": "2026-09-19T19:37:53.799Z"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "pour Occuper le poste de Directeur (ce) de la Coopération  et du Partenariat du Ministère de l’Enseignement Supérieur  de la Reche",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences de l’Éducation",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences de l’Éducation"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Appel à Candidature pour Occuper le poste de Directeur (ce) de la Coopération et du Partenariat du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de l’Innovation Publié le 2 juin 2026 - 3 months ago APPEL A CANDIDATURE Appel à Candidature pour Occuper le poste de Directeur (ce) de la Coopération et du Partenariat du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de l’Innovation Poste Directeur (ce) de de la Coopération et du Partenariat Arrêté N° 07/0549 Date 1 juin 2026 Date limite de dépôt Mardi 16 juin 2026 à 16h30 Documents à télécharger Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur $(document).ready(function() { $('#share-bar').share(); });",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "documents",
+          "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-de-la-cooperation-et-du-partenariat-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-de-la-cooperation-et-du-partenariat-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+          "status": "AUTO",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-de-la-cooperation-et-du-partenariat-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pour-occuper-le-poste-de-directeur-ce-de-la-cooperation-et-du-partenariat-d",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8shw93_scw9ty5",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:37:53.799Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:37:53.799Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:37:53.799Z",
+          "status": "AUTO"
+        }
+      },
+      "references": {
+        "schoolId": null,
+        "universityId": null,
+        "city": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant",
+        "documentsDemandes manquant"
+      ],
+      "evidence": [
+        "sourceUrl=https://www.enssup.gov.ma/en/publications/appel-a-candidature-pour-occuper-le-poste-de-directeur-ce-de-la-cooperation-et-du-partenariat-du-ministere-de-l-enseignement-superieur-de-la-recherche-scientifique-et-de-l-innovation",
+        "title=\"pour Occuper le poste de Directeur (ce) de la Coopération  e\"",
+        "establishment=—",
+        "city=—"
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "organization": "Ministère de l'Enseignement Supérieur",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "page": "https://www.enssup.gov.ma/en/publications/appel-ouvert-aux-candidatures-pour-occuper-le-poste-de-directeur-de-l-ecole-mohammadia-des-ingenieurs-rabat-relevant-de-l-universite-mohammed-v-rabat",
+        "dateTest": "2026-09-19T19:37:53.801Z"
+      },
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "payload": {
+        "title": "Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Mohammadia des Ingénieurs, Rabat relevant de l'Université Mohammed V, Raba",
+        "organizationName": "École Mohammadia d’Ingénieurs (EMI)",
+        "organizationType": "INSTITUTION",
+        "universityId": "univ-um5",
+        "city": "Rabat",
+        "region": "Rabat-Salé-Kénitra",
+        "domaine": "Sciences & Technologies de l’Ingénieur",
+        "year": 2026,
+        "places": null,
+        "description": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Mohammadia des Ingénieurs, Rabat relevant de l'Université Mohammed V, Rabat Publié le 29 avril 2026 - 4 months ago APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Mohammadia des Ingénieurs, Rabat relevant de l'Université Mohammed V, Rabat appel ouvert a candidatures.pdf Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur $(document).ready(function() { $('#share-bar').share(); });",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": null,
+        "officialWebsite": "https://www.enssup.gov.ma/en/publications/appel-ouvert-aux-candidatures-pour-occuper-le-poste-de-directeur-de-l-ecole-mohammadia-des-ingenieurs-rabat-relevant-de-l-universite-mohammed-v-rabat",
+        "registrationUrl": "https://www.enssup.gov.ma/en/publications/appel-ouvert-aux-candidatures-pour-occuper-le-poste-de-directeur-de-l-ecole-mohammadia-des-ingenieurs-rabat-relevant-de-l-universite-mohammed-v-rabat",
+        "sourceUrl": "https://www.enssup.gov.ma/en/publications/appel-ouvert-aux-candidatures-pour-occuper-le-poste-de-directeur-de-l-ecole-mohammadia-des-ingenieurs-rabat-relevant-de-l-universite-mohammed-v-rabat",
+        "sourceOrganization": "École Mohammadia d’Ingénieurs (EMI)",
+        "category": "UNIVERSITE",
+        "slug": "ecole-mohammadia-d-ingenieurs-emi-appel-ouvert-aux-candidatures-pour-occuper-le-",
+        "id": "c_mu8shw95_y3npdq2",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:37:53.801Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:37:53.801Z",
+        "updatedAt": "2026-09-19T19:37:53.801Z"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Mohammadia des Ingénieurs, Rabat relevant de l'Université Mohammed V, Raba",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": "École Mohammadia d’Ingénieurs (EMI)",
+          "status": "AUTO",
+          "sourceField": "establishment",
+          "reason": "préférence establishment"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "establishment",
+          "reason": "aucune correspondance fiable"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": "univ-um5",
+          "status": "AUTO",
+          "sourceField": "university",
+          "referenceId": "univ-um5",
+          "reason": "correspondance exacte"
+        },
+        "city": {
+          "targetField": "city",
+          "value": "Rabat",
+          "status": "AUTO",
+          "sourceField": "city",
+          "referenceId": "Rabat"
+        },
+        "region": {
+          "targetField": "region",
+          "value": "Rabat-Salé-Kénitra",
+          "status": "AUTO",
+          "sourceField": "region",
+          "referenceId": "Rabat-Salé-Kénitra"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences & Technologies de l’Ingénieur",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences & Technologies de l’Ingénieur"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Mohammadia des Ingénieurs, Rabat relevant de l'Université Mohammed V, Rabat Publié le 29 avril 2026 - 4 months ago APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Mohammadia des Ingénieurs, Rabat relevant de l'Université Mohammed V, Rabat appel ouvert a candidatures.pdf Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur $(document).ready(function() { $('#share-bar').share(); });",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "documents",
+          "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": "https://www.enssup.gov.ma/en/publications/appel-ouvert-aux-candidatures-pour-occuper-le-poste-de-directeur-de-l-ecole-mohammadia-des-ingenieurs-rabat-relevant-de-l-universite-mohammed-v-rabat",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/appel-ouvert-aux-candidatures-pour-occuper-le-poste-de-directeur-de-l-ecole-mohammadia-des-ingenieurs-rabat-relevant-de-l-universite-mohammed-v-rabat",
+          "status": "AUTO",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/appel-ouvert-aux-candidatures-pour-occuper-le-poste-de-directeur-de-l-ecole-mohammadia-des-ingenieurs-rabat-relevant-de-l-universite-mohammed-v-rabat",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": "École Mohammadia d’Ingénieurs (EMI)",
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "ecole-mohammadia-d-ingenieurs-emi-appel-ouvert-aux-candidatures-pour-occuper-le-",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8shw95_4k2i3ek",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:37:53.801Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:37:53.801Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:37:53.801Z",
+          "status": "AUTO"
+        }
+      },
+      "references": {
+        "schoolId": null,
+        "universityId": "univ-um5",
+        "city": "Rabat"
+      },
+      "warnings": [
+        "schoolId REVIEW: aucune correspondance fiable"
+      ],
+      "errors": [
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant",
+        "documentsDemandes manquant"
+      ],
+      "evidence": [
+        "sourceUrl=https://www.enssup.gov.ma/en/publications/appel-ouvert-aux-candidatures-pour-occuper-le-poste-de-directeur-de-l-ecole-mohammadia-des-ingenieurs-rabat-relevant-de-l-universite-mohammed-v-rabat",
+        "title=\"Appel Ouvert aux candidatures pour occuper le poste de Direc\"",
+        "establishment=École Mohammadia d’Ingénieurs (EMI)",
+        "city=Rabat"
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "organization": "Ministère de l'Enseignement Supérieur",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "page": "https://www.enssup.gov.ma/en/publications/categories/appel a candidature",
+        "dateTest": "2026-09-19T19:37:53.802Z"
+      },
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "payload": {
+        "title": "Nos publications - ENSSUP",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "domaine": "Sciences de l’Éducation",
+        "year": 2026,
+        "places": null,
+        "description": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Nos publications - ENSSUP Appel à Candidature pour Occuper le poste de Directeur (ce) des Ressources Humaines du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de... 2 juin 2026 | APPEL A CANDIDATURE Appel à Candidature pour Occuper le poste de Directeur (ce) de la Coopération et du Partenariat du Ministère de l’Enseignement Supérieur de la Recherche Scien... 2 juin 2026 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Mohammadia des Ingénieurs, Rabat relevant de l'Université Mohammed V, Rabat 29 avril 2026 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Doyen de la Faculté de Médecine et de Pharmacie, Rabat relevant de l'Université Mohammed V, Rabat 29 avril 2026 | APPEL A CANDIDATURE Appel à Candidature pour Occuper le poste de Directeur (ce) de l’Enseignement Supérieur et du Développement Pédagogique du Ministère de l’Enseignement Supérieur... 28 avril 2026 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Supérieure de Technologie à Nador relevant de l'Université Mohammed Premier, Oujda 5 mars 2026 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Supérieure de Technologie à Oujda relevant de l'Université Mohammed Premier, Oujda 5 mars 2026 | APPEL A CANDIDATURE Appel à Candidature pour Occuper le poste d'Inspecteur Général du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de l’Innovation 20 janvier 2026 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Doyen de la Faculté de Médecine et de Pharmacie à Laâyoune relevant de l'Université Ibnou Zohr, Agadir 31 décembre 2025 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Doyen de la Faculté Polydisciplinaire à Es-semara relevant de l'Université Ibnou Zohr, Agadir 31 décembre 2025 | APPEL A CANDIDATURE « Previous Next » Showing 1 to 10 of 249 results 1 2 3 4 5 6 7 8 9 10 ... 24 25 Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": null,
+        "officialWebsite": "https://www.enssup.gov.ma/en/publications/categories/appel a candidature",
+        "registrationUrl": "https://www.enssup.gov.ma/en/publications/categories/appel a candidature",
+        "sourceUrl": "https://www.enssup.gov.ma/en/publications/categories/appel a candidature",
+        "category": "UNIVERSITE",
+        "slug": "null-nos-publications-enssup-2026",
+        "id": "c_mu8shw95_xvj5jny",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:37:53.801Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:37:53.801Z",
+        "updatedAt": "2026-09-19T19:37:53.801Z"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "Nos publications - ENSSUP",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": "Sciences de l’Éducation",
+          "status": "AUTO",
+          "sourceField": "domain",
+          "referenceId": "Sciences de l’Éducation"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "FR AR Ministère Biographie de Monsieur le Ministre Organigramme du Ministère Annuaire des Responsables de l'Administration Centrale Annuaire des Universites Attributions et Organisation du Ministère Directions Plan d'action du Ministère 2017-2021 BILAN D’ACTIVITÉ DU MINISTÈRE 2017-2021 Enseignement supérieur Enseignement Supérieur Public Enseignement Supérieur Privé Recherche & Innovation Système National de Recherche et d'Innovation (SNRI) Acteurs de la Recherche Appui à la Recherche Scientifique et Technologique Valorisation des Résultats de la Recherche et Innovation Coopération et partenariat dans le domaine de la Recherche Coopération La mobilité étudiante Coopération institutionnelle et socio-économique Coopération multilatérale et bilatérale Appels à candidatures à l'international Espace RH Concours De Recrutement Promotion Œuvres Sociales e-services Appel à Candidature Commissions Administratives Paritaires Réalisations & statistiques Statistiques Bilans et réalisations Études Espace Juridique Textes fondamentaux de l’enseignement supérieur Gouvernance du système de l’enseignement supérieur Enseignement Supérieur Recherche Scientifique Et Innovation Services Sociaux aux Etudiants Statuts Particuliers des Enseignants chercheures Equivalence de Diplômes Universités Espace Presse Communiqués Actualités Dossiers de Presse Notes FR AR accueil Nos publications - ENSSUP Appel à Candidature pour Occuper le poste de Directeur (ce) des Ressources Humaines du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de... 2 juin 2026 | APPEL A CANDIDATURE Appel à Candidature pour Occuper le poste de Directeur (ce) de la Coopération et du Partenariat du Ministère de l’Enseignement Supérieur de la Recherche Scien... 2 juin 2026 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Mohammadia des Ingénieurs, Rabat relevant de l'Université Mohammed V, Rabat 29 avril 2026 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Doyen de la Faculté de Médecine et de Pharmacie, Rabat relevant de l'Université Mohammed V, Rabat 29 avril 2026 | APPEL A CANDIDATURE Appel à Candidature pour Occuper le poste de Directeur (ce) de l’Enseignement Supérieur et du Développement Pédagogique du Ministère de l’Enseignement Supérieur... 28 avril 2026 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Supérieure de Technologie à Nador relevant de l'Université Mohammed Premier, Oujda 5 mars 2026 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Directeur de l'Ecole Supérieure de Technologie à Oujda relevant de l'Université Mohammed Premier, Oujda 5 mars 2026 | APPEL A CANDIDATURE Appel à Candidature pour Occuper le poste d'Inspecteur Général du Ministère de l’Enseignement Supérieur de la Recherche Scientifique et de l’Innovation 20 janvier 2026 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Doyen de la Faculté de Médecine et de Pharmacie à Laâyoune relevant de l'Université Ibnou Zohr, Agadir 31 décembre 2025 | APPEL A CANDIDATURE Appel Ouvert aux candidatures pour occuper le poste de Doyen de la Faculté Polydisciplinaire à Es-semara relevant de l'Université Ibnou Zohr, Agadir 31 décembre 2025 | APPEL A CANDIDATURE « Previous Next » Showing 1 to 10 of 249 results 1 2 3 4 5 6 7 8 9 10 ... 24 25 Dernières Publications 4 septembre 2026 Notes ministérielles relatives aux Dossier Etudiants 4 septembre 2026 Nouveau Dernières Actualités 29 juillet 2026 Monsieur le Ministre préside une réunion de la Commission Na... 29 juillet 2026 Monsieur le Ministre s’entretient avec Monsieur le Ministre... Equivalence des diplômes ENSSUP: DÉPARTEMENT DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE Liens Rapides Centre National pour la Recherche Scientifique et Technique (CNRST) Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) Agence Nationale d’Evaluation et d’Assurance Qualité de l'Enseignement Supérieur (ANEAQ) Agence nationale des Plantes Médicinales et Aromatiques - Taounate (ANPMA) plateforme Sahara Marocain Conseil Supérieur de l'Education, de la Formation et de la Recherche Scientifique (CSEFRS) Ministère de l'Education Nationale (MEN) Fondation Mohammed VI de Promotion des Œuvres Sociales de l'Education-Formation (FM6) Les Assemblées Annuelles 2023 du Groupe de la Banque Mondiale et du Fonds Monétaire International Mabourse Contact Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation Tel. 05-37-21-75/01/02/03 FAX. 05-37-21-75-47 contact@enssup.gov.ma Adresse. Boulevard Mohamed Lyazidi - Hassan, BP : 4500 - RABAT @ 2022 - © MINISTERE DE L'ENSEIGNEMENT SUPÉRIEUR, DE LA RECHERCHE SCIENTIFIQUE ET DE L'INNOVATION Suivez-nous sur",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "documents",
+          "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": "https://www.enssup.gov.ma/en/publications/categories/appel a candidature",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/categories/appel a candidature",
+          "status": "AUTO",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/en/publications/categories/appel a candidature",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-nos-publications-enssup-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8shw95_lmjyw6w",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:37:53.801Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:37:53.801Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:37:53.801Z",
+          "status": "AUTO"
+        }
+      },
+      "references": {
+        "schoolId": null,
+        "universityId": null,
+        "city": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant",
+        "documentsDemandes manquant"
+      ],
+      "evidence": [
+        "sourceUrl=https://www.enssup.gov.ma/en/publications/categories/appel a candidature",
+        "title=\"Nos publications - ENSSUP\"",
+        "establishment=—",
+        "city=—"
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "organization": "Ministère de l'Enseignement Supérieur",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "page": "https://recrutement.enssup.gov.ma/accueil",
+        "dateTest": "2026-09-19T19:37:53.802Z"
+      },
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "payload": {
+        "title": "Recrutement",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "year": 2026,
+        "places": null,
+        "description": "Recrutement @charset \"UTF-8\";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-body-color-rgb:33,37,41;--bs-body-bg-rgb:255,255,255;--bs-font-sans-serif:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",\"Liberation Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-bg:#fff}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}@font-face{font-family:Roboto;src:url(roboto.0009e73fa0755b18.woff2) format(\"woff2\");font-weight:400;font-style:normal}:root{--mainColor:#00bdd6ff;--dangerColor:#d20c13ff;--borderRaduis:4px;--vPadding:5px;--vMargin:10px;--hPadding:35px;--headingFont:\"Inter\";--bodyFont:\"Roboto\";--bodyFontSize:12px;--vp1-maxWidth:310px;--vp1-maxWidth-2:1550px;--vp2-maxWidth:460px}*{margin:0;padding:0;box-sizing:border-box;font-family:var(--bodyFont)}html{font-size:var(--bodyFontSize);font-family:var(--bodyFont)}body{background-color:#f8f9fa}<link rel=\"stylesheet\" href=\"styles.e41d69ddcc31b6fe.css\">",
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": null,
+        "officialWebsite": "https://recrutement.enssup.gov.ma/accueil",
+        "sourceUrl": "https://recrutement.enssup.gov.ma/accueil",
+        "category": "UNIVERSITE",
+        "slug": "null-recrutement-2026",
+        "id": "c_mu8shw96_nzagmlk",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:37:53.802Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:37:53.802Z",
+        "updatedAt": "2026-09-19T19:37:53.802Z"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "Recrutement",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides — optional"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "places",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais inventer 35/100"
+        },
+        "description": {
+          "targetField": "description",
+          "value": "Recrutement @charset \"UTF-8\";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-body-color-rgb:33,37,41;--bs-body-bg-rgb:255,255,255;--bs-font-sans-serif:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",\"Liberation Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-bg:#fff}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}@font-face{font-family:Roboto;src:url(roboto.0009e73fa0755b18.woff2) format(\"woff2\");font-weight:400;font-style:normal}:root{--mainColor:#00bdd6ff;--dangerColor:#d20c13ff;--borderRaduis:4px;--vPadding:5px;--vMargin:10px;--hPadding:35px;--headingFont:\"Inter\";--bodyFont:\"Roboto\";--bodyFontSize:12px;--vp1-maxWidth:310px;--vp1-maxWidth-2:1550px;--vp2-maxWidth:460px}*{margin:0;padding:0;box-sizing:border-box;font-family:var(--bodyFont)}html{font-size:var(--bodyFontSize);font-family:var(--bodyFont)}body{background-color:#f8f9fa}<link rel=\"stylesheet\" href=\"styles.e41d69ddcc31b6fe.css\">",
+          "status": "AUTO",
+          "sourceField": "description",
+          "reason": "150/150, version clean proposée côté preview"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "documents",
+          "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": "https://recrutement.enssup.gov.ma/accueil",
+          "status": "AUTO",
+          "sourceField": "officialUrl"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://recrutement.enssup.gov.ma/accueil",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-recrutement-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8shw96_y2essuk",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:37:53.802Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:37:53.802Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:37:53.802Z",
+          "status": "AUTO"
+        }
+      },
+      "references": {
+        "schoolId": null,
+        "universityId": null,
+        "city": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "conditions manquant",
+        "matieres manquant",
+        "documentsDemandes manquant"
+      ],
+      "evidence": [
+        "sourceUrl=https://recrutement.enssup.gov.ma/accueil",
+        "title=\"Recrutement\"",
+        "establishment=—",
+        "city=—"
+      ]
+    }
+  ]
+}

@@ -17,7 +17,6 @@ import { createClient } from '@supabase/supabase-js';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -46,7 +45,6 @@ function loadEnv() {
   }
   return env;
 }
-
 const env = loadEnv();
 const supabaseUrl = env.VITE_SUPABASE_URL || env.SUPABASE_URL;
 const supabaseKey = env.SUPABASE_SERVICE_ROLE_KEY || env.VITE_SUPABASE_ANON_KEY || env.SUPABASE_ANON_KEY;
@@ -59,18 +57,15 @@ if (!supabaseUrl || !supabaseKey) {
   console.error('  VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1...\n');
   process.exit(1);
 }
-
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 console.log('🚀 Connexion à Supabase :', supabaseUrl);
-
 async function runSeed() {
   try {
     // 1. Charger les données de seed depuis les fichiers du projet
     // Note: Pour une compatibilité maximale sans transpilation TS complexe,
     // nous lisons directement les données structurées des institutions
     console.log('📦 Préparation des données existantes...');
-
     // Données des Ministères réels
     const ministries = [
       { id: 'min-education', name: "Ministère de l'Éducation Nationale, du Préscolaire et des Sports", short_name: 'MENPS', slug: 'ministere-education-nationale', aliases: ['MEN', 'Éducation Nationale', 'وزارة التربية الوطنية'], logo_url: '/assets/logos/ministries/education.png', official_logo: '/assets/logos/ministries/education.png', logo_color: '#1B5E20', description: "Ministère chargé de l'enseignement préscolaire, primaire, secondaire et des sports.", website: 'https://www.men.gov.ma', status: 'ACTIVE', is_active: true, is_demo: false },

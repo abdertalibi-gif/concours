@@ -1,0 +1,35 @@
+{
+  "phase": "16",
+  "phaseLabel": "Découverte ciblée PDFs concours + validation de bout en bout (préview)",
+  "runType": "PREVIEW_ONLY",
+  "runDate": "2026-09-22T17:50:01.320Z",
+  "status": "NO_SUITABLE_CONCOURS_PDF_FOUND",
+  "statusReason": "aucun candidat PDF exploitable découvert lors de la découverte ciblée (aucun PDF concours trouvé sur les endpoints officiels testés)",
+  "discovery": {
+    "probesAttempted": 12,
+    "probesOk": 0,
+    "pdfUrlsDiscovered": [],
+    "candidatesClassified": []
+  },
+  "candidatesAnalyzed": [],
+  "regression": {
+    "ucaRows": 29,
+    "ucaPlaces": 33,
+    "ucaStatus": "REVIEW"
+  },
+  "writes": {
+    "database": 0,
+    "supabase": 0,
+    "forms": 0,
+    "localStorage": 0
+  },
+  "summary": {
+    "candidatesDiscovered": 0,
+    "candidatesSelected": 0,
+    "documentsAnalyzed": 0,
+    "validConcoursPdf": 0,
+    "possibleConcoursPdf": 0,
+    "notConcoursPdf": 0,
+    "scannedReview": 0
+  }
+}

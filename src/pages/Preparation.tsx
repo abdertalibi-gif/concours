@@ -12,7 +12,7 @@ import { courseLessonsCount, getCourseBySlug, getProgress, loadDB, queryCourses,
 import type { Course, Lesson } from '../lib/types';
 import { CourseCard } from '../components/cards';
 import { Container, InfoBar, PageHero } from '../components/layout';
-import { Card, Chip, DemoBadge, EmptyState, FilterPanel, FilterSelect, ProgressBar, SearchInput } from '../components/ui';
+import { Card, Chip, EmptyState, FilterPanel, FilterSelect, ProgressBar, SearchInput } from '../components/ui';
 import { cn } from '../utils/cn';
 
 // ==================== LISTE ====================
@@ -134,7 +134,7 @@ export function CourseDetail() {
           <Chip className="!bg-white/15 !text-white">{course.level}</Chip>
           <Chip className="!bg-white/15 !text-white">{courseLessonsCount(course)} leçons</Chip>
           <Chip className="!bg-white/15 !text-white">{course.duration}</Chip>
-          {course.isDemo && <DemoBadge />}
+
         </div>
         <h1 className="mt-3 max-w-3xl text-2xl font-extrabold tracking-tight sm:text-3xl">{course.title}</h1>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-white/80">{course.description}</p>

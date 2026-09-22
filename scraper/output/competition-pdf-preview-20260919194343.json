@@ -1,0 +1,2303 @@
+{
+  "generatedAt": "2026-09-19T19:43:43.484Z",
+  "source": {
+    "sourceId": "min-sup",
+    "baseUrl": "https://www.enssup.gov.ma",
+    "officialDomain": "enssup.gov.ma"
+  },
+  "totalPdf": 6,
+  "stats": {
+    "IMPORTABLE": 0,
+    "REVIEW": 0,
+    "BLOCKED": 6
+  },
+  "previews": [
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "extraction": {
+        "pageCount": 0,
+        "hasExploitableText": false,
+        "isScanned": false,
+        "textLength": 0,
+        "error": "pdf-parse load fail: pdfParse is object"
+      },
+      "payload": {
+        "title": "PDF AUF%20Avril%202023.pdf",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "year": 2026,
+        "places": null,
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        ],
+        "officialWebsite": null,
+        "sourceUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-auf-20avril-202023-pdf-2026",
+        "id": "c_mu8spd6d_tu8y1yl",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:43:42.325Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:43:42.325Z",
+        "updatedAt": "2026-09-19T19:43:42.325Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF AUF%20Avril%202023.pdf",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides — optional"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "pdf places",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf page=1"
+        },
+        "description": {
+          "targetField": "description",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "description",
+          "reason": "description trop courte/manquant — obligatoire"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-auf-20avril-202023-pdf-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8spd6d_0skcpmy",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:43:42.325Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:43:42.325Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:43:42.325Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+          "status": "REVIEW",
+          "sourceField": "pdfUrl",
+          "reason": "pdf-parse load fail: pdfParse is object",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf pages=0 scanned=false"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "description manquante",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        },
+        {
+          "field": "documents",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/RH/AUF%20Avril%202023.pdf"
+        }
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "extraction": {
+        "pageCount": 0,
+        "hasExploitableText": false,
+        "isScanned": false,
+        "textLength": 0,
+        "error": "pdf-parse load fail: pdfParse is object"
+      },
+      "payload": {
+        "title": "PDF Avis%2001_2025_AMI_R%C3%A9sidences%20Uni",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "year": 2026,
+        "places": null,
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        ],
+        "officialWebsite": null,
+        "sourceUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-avis-2001-2025-ami-r-c3-a9sidences-20uni-2026",
+        "id": "c_mu8spdnq_cxjibqh",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:43:42.950Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:43:42.950Z",
+        "updatedAt": "2026-09-19T19:43:42.950Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF Avis%2001_2025_AMI_R%C3%A9sidences%20Uni",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides — optional"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "pdf places",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf page=1"
+        },
+        "description": {
+          "targetField": "description",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "description",
+          "reason": "description trop courte/manquant — obligatoire"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-avis-2001-2025-ami-r-c3-a9sidences-20uni-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8spdnq_nt7tpog",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:43:42.950Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:43:42.950Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:43:42.950Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+          "status": "REVIEW",
+          "sourceField": "pdfUrl",
+          "reason": "pdf-parse load fail: pdfParse is object",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf pages=0 scanned=false"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "description manquante",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        },
+        {
+          "field": "documents",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Avis%2001_2025_AMI_R%C3%A9sidences%20Universitaires_Fr%201.pdf"
+        }
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "extraction": {
+        "pageCount": 0,
+        "hasExploitableText": false,
+        "isScanned": false,
+        "textLength": 0,
+        "error": "pdf-parse load fail: pdfParse is object"
+      },
+      "payload": {
+        "title": "PDF CONVENTION%20DE%20PARTENARIAT%20PUBLIC-P",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "year": 2026,
+        "places": null,
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        ],
+        "officialWebsite": null,
+        "sourceUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-convention-20de-20partenariat-20public-p-2026",
+        "id": "c_mu8spdt0_2djwof1",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:43:43.140Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:43:43.140Z",
+        "updatedAt": "2026-09-19T19:43:43.140Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF CONVENTION%20DE%20PARTENARIAT%20PUBLIC-P",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides — optional"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "pdf places",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf page=1"
+        },
+        "description": {
+          "targetField": "description",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "description",
+          "reason": "description trop courte/manquant — obligatoire"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-convention-20de-20partenariat-20public-p-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8spdt0_c5k44ci",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:43:43.140Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:43:43.140Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:43:43.140Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+          "status": "REVIEW",
+          "sourceField": "pdfUrl",
+          "reason": "pdf-parse load fail: pdfParse is object",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf pages=0 scanned=false"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "description manquante",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        },
+        {
+          "field": "documents",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/CONVENTION%20DE%20PARTENARIAT%20PUBLIC-PRIVE%202025_1.pdf"
+        }
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "extraction": {
+        "pageCount": 0,
+        "hasExploitableText": false,
+        "isScanned": false,
+        "textLength": 0,
+        "error": "pdf-parse load fail: pdfParse is object"
+      },
+      "payload": {
+        "title": "PDF R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%8",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "year": 2026,
+        "places": null,
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        ],
+        "officialWebsite": null,
+        "sourceUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-r-c3-88glement-20d-e2-80-99appel-20-c3-8-2026",
+        "id": "c_mu8spdym_fzkpzcj",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:43:43.342Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:43:43.342Z",
+        "updatedAt": "2026-09-19T19:43:43.342Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%8",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides — optional"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "pdf places",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf page=1"
+        },
+        "description": {
+          "targetField": "description",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "description",
+          "reason": "description trop courte/manquant — obligatoire"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-r-c3-88glement-20d-e2-80-99appel-20-c3-8-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8spdym_cqrxfe3",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:43:43.342Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:43:43.342Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:43:43.342Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+          "status": "REVIEW",
+          "sourceField": "pdfUrl",
+          "reason": "pdf-parse load fail: pdfParse is object",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf pages=0 scanned=false"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "description manquante",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        },
+        {
+          "field": "documents",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/R%C3%88GLEMENT%20D%E2%80%99APPEL%20%C3%80%20MANIFESTATION%20D%E2%80%99INT%C3%89R%C3%8AT%20%20%202025_Modifi%C3%A9.pdf"
+        }
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "extraction": {
+        "pageCount": 0,
+        "hasExploitableText": false,
+        "isScanned": false,
+        "textLength": 0,
+        "error": "pdf-parse load fail: pdfParse is object"
+      },
+      "payload": {
+        "title": "PDF Terrains%20propos%C3%A9s_R%C3%A9sidences",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "year": 2026,
+        "places": null,
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        ],
+        "officialWebsite": null,
+        "sourceUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-terrains-20propos-c3-a9s-r-c3-a9sidences-2026",
+        "id": "c_mu8spe1d_wpw3d4g",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:43:43.441Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:43:43.441Z",
+        "updatedAt": "2026-09-19T19:43:43.441Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF Terrains%20propos%C3%A9s_R%C3%A9sidences",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides — optional"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "pdf places",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf page=1"
+        },
+        "description": {
+          "targetField": "description",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "description",
+          "reason": "description trop courte/manquant — obligatoire"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-terrains-20propos-c3-a9s-r-c3-a9sidences-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8spe1d_k93ow9d",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:43:43.441Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:43:43.441Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:43:43.441Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+          "status": "REVIEW",
+          "sourceField": "pdfUrl",
+          "reason": "pdf-parse load fail: pdfParse is object",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf pages=0 scanned=false"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "description manquante",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        },
+        {
+          "field": "documents",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/avis%20manifestation/avis/Terrains%20propos%C3%A9s_R%C3%A9sidences%20Cit%C3%A9s%20Universitaires.pdf"
+        }
+      ]
+    },
+    {
+      "source": {
+        "sourceId": "min-sup",
+        "baseUrl": "https://www.enssup.gov.ma",
+        "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+        "page": 1
+      },
+      "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+      "entityType": "COMPETITION",
+      "status": "BLOCKED",
+      "extraction": {
+        "pageCount": 0,
+        "hasExploitableText": false,
+        "isScanned": false,
+        "textLength": 0,
+        "error": "pdf-parse load fail: pdfParse is object"
+      },
+      "payload": {
+        "title": "PDF appel%20ouvert%20a%20candidatures.pdf",
+        "organizationName": null,
+        "organizationType": "INSTITUTION",
+        "year": 2026,
+        "places": null,
+        "conditions": null,
+        "matieres": null,
+        "epreuves": null,
+        "documentsDemandes": [
+          "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        ],
+        "officialWebsite": null,
+        "registrationUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+        "sourceUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+        "category": "UNIVERSITE",
+        "slug": "null-pdf-appel-20ouvert-20a-20candidatures-pdf-2026",
+        "id": "c_mu8spe2j_lcgehe9",
+        "publishStatus": "DRAFT",
+        "verificationStatus": "UNVERIFIED",
+        "publishedAt": "2026-09-19T19:43:43.483Z",
+        "views": 0,
+        "isDemo": false,
+        "createdAt": "2026-09-19T19:43:43.483Z",
+        "updatedAt": "2026-09-19T19:43:43.483Z",
+        "officialDocument": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+      },
+      "fields": {
+        "title": {
+          "targetField": "title",
+          "value": "PDF appel%20ouvert%20a%20candidatures.pdf",
+          "status": "AUTO",
+          "sourceField": "title"
+        },
+        "organizationName": {
+          "targetField": "organizationName",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "establishment/university/organization",
+          "reason": "8/150 vides — obligatoire, REQUIRES_REVIEW"
+        },
+        "organizationType": {
+          "targetField": "organizationType",
+          "value": "INSTITUTION",
+          "status": "AUTO",
+          "sourceField": "organizationType",
+          "reason": "Almaster universitaire → INSTITUTION"
+        },
+        "schoolId": {
+          "targetField": "schoolId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "establishment",
+          "reason": "pas d’établissement source"
+        },
+        "universityId": {
+          "targetField": "universityId",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "university"
+        },
+        "city": {
+          "targetField": "city",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "city",
+          "reason": "ville manquante — obligatoire Competition"
+        },
+        "region": {
+          "targetField": "region",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "region",
+          "reason": "région manquante — obligatoire"
+        },
+        "domaine": {
+          "targetField": "domaine",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "domain",
+          "reason": "60/150 vides — optional"
+        },
+        "level": {
+          "targetField": "level",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "level",
+          "reason": "level manquant — obligatoire"
+        },
+        "year": {
+          "targetField": "year",
+          "value": 2026,
+          "status": "AUTO",
+          "sourceField": "academicYear",
+          "reason": "parseInt YYYY-YYYY → YYYY"
+        },
+        "places": {
+          "targetField": "places",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "pdf places",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf page=1"
+        },
+        "description": {
+          "targetField": "description",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "description",
+          "reason": "description trop courte/manquant — obligatoire"
+        },
+        "conditions": {
+          "targetField": "conditions",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "conditions",
+          "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+        },
+        "matieres": {
+          "targetField": "matieres",
+          "value": null,
+          "status": "BLOCKED",
+          "sourceField": "matieres",
+          "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "targetField": "epreuves",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate",
+          "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+        },
+        "documentsDemandes": {
+          "targetField": "documentsDemandes",
+          "value": [
+            "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+          ],
+          "status": "AUTO",
+          "sourceField": "documents"
+        },
+        "procedure": {
+          "targetField": "procedure",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "procedure",
+          "reason": "absent flux — optional"
+        },
+        "frais": {
+          "targetField": "frais",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "frais",
+          "reason": "absent flux — optional"
+        },
+        "resultats": {
+          "targetField": "resultats",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate",
+          "reason": "optional"
+        },
+        "profil": {
+          "targetField": "profil",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "profil"
+        },
+        "programme": {
+          "targetField": "programme",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "programme"
+        },
+        "registrationStart": {
+          "targetField": "registrationStart",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "openingDate"
+        },
+        "registrationDeadline": {
+          "targetField": "registrationDeadline",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "deadlineDate"
+        },
+        "competitionDate": {
+          "targetField": "competitionDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "examDate"
+        },
+        "convocationDate": {
+          "targetField": "convocationDate",
+          "value": null,
+          "status": "UNSUPPORTED",
+          "sourceField": "convocationDate",
+          "reason": "absent flux — optional"
+        },
+        "resultsDate": {
+          "targetField": "resultsDate",
+          "value": null,
+          "status": "MISSING",
+          "sourceField": "resultsDate"
+        },
+        "officialWebsite": {
+          "targetField": "officialWebsite",
+          "value": null,
+          "status": "REVIEW",
+          "sourceField": "officialWebsite",
+          "reason": "PDF officiel → officialDocument, pas officialWebsite",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        "registrationUrl": {
+          "targetField": "registrationUrl",
+          "value": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+          "status": "AUTO",
+          "sourceField": "registrationUrl"
+        },
+        "sourceUrl": {
+          "targetField": "sourceUrl",
+          "value": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+          "status": "AUTO",
+          "sourceField": "sourceUrl"
+        },
+        "sourceOrganization": {
+          "targetField": "sourceOrganization",
+          "value": null,
+          "status": "AUTO",
+          "sourceField": "organization"
+        },
+        "category": {
+          "targetField": "category",
+          "value": "UNIVERSITE",
+          "status": "AUTO",
+          "sourceField": "category",
+          "referenceId": "UNIVERSITE",
+          "reason": "master → UNIVERSITE"
+        },
+        "slug": {
+          "targetField": "slug",
+          "value": "null-pdf-appel-20ouvert-20a-20candidatures-pdf-2026",
+          "status": "AUTO",
+          "reason": "slugify(organizationName-title-year) slice 80"
+        },
+        "id": {
+          "targetField": "id",
+          "value": "c_mu8spe2j_gaywect",
+          "status": "AUTO",
+          "reason": "uid('c') — comme AdminConcours.tsx:219"
+        },
+        "publishStatus": {
+          "targetField": "publishStatus",
+          "value": "DRAFT",
+          "status": "AUTO",
+          "reason": "default DRAFT — comme emptyForm"
+        },
+        "verificationStatus": {
+          "targetField": "verificationStatus",
+          "value": "UNVERIFIED",
+          "status": "AUTO",
+          "reason": "default UNVERIFIED"
+        },
+        "publishedAt": {
+          "targetField": "publishedAt",
+          "value": "2026-09-19T19:43:43.483Z",
+          "status": "AUTO",
+          "reason": "now ISO"
+        },
+        "views": {
+          "targetField": "views",
+          "value": 0,
+          "status": "AUTO",
+          "reason": "0 par défaut"
+        },
+        "isDemo": {
+          "targetField": "isDemo",
+          "value": false,
+          "status": "AUTO"
+        },
+        "createdAt": {
+          "targetField": "createdAt",
+          "value": "2026-09-19T19:43:43.483Z",
+          "status": "AUTO"
+        },
+        "updatedAt": {
+          "targetField": "updatedAt",
+          "value": "2026-09-19T19:43:43.483Z",
+          "status": "AUTO"
+        },
+        "officialDocument": {
+          "targetField": "officialDocument",
+          "value": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+          "status": "REVIEW",
+          "sourceField": "pdfUrl",
+          "reason": "pdf-parse load fail: pdfParse is object",
+          "evidence": "pdfUrl=https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf pages=0 scanned=false"
+        }
+      },
+      "references": {
+        "schoolId": null
+      },
+      "warnings": [],
+      "errors": [
+        "organizationName manquant",
+        "city manquant",
+        "region manquant",
+        "level manquant",
+        "places manquant",
+        "description manquante",
+        "conditions manquant",
+        "matieres manquant"
+      ],
+      "evidence": [
+        {
+          "field": "places",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné/image — pas de texte exploitable",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf",
+          "page": 1
+        },
+        {
+          "field": "conditions",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        {
+          "field": "matieres",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        {
+          "field": "epreuves",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        {
+          "field": "deadline",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        {
+          "field": "competitionDate",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        },
+        {
+          "field": "documents",
+          "value": null,
+          "status": "REVIEW",
+          "reason": "PDF scanné",
+          "pdfUrl": "https://www.enssup.gov.ma/storage/publications/Appel%20candidature/2026/um5/appel%20ouvert%20a%20candidatures.pdf"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "generatedAt": "2026-09-19T18:00:00.000Z",
+  "source": "READ-ONLY analysis of src/pages/admin/* + src/pages/Auth.tsx + src/components/AutoOrganismeField.tsx",
+  "registry": {
+    "competition": {
+      "form": "ConcoursForm",
+      "file": "src/pages/admin/AdminConcours.tsx:175",
+      "route": "/admin/concours",
+      "entity": "Competition",
+      "dbTable": "competitions",
+      "submitHandler": "save() -> adminCreate/adminUpdate('competitions')",
+      "modes": ["create", "edit", "duplicate", "bulkImport"],
+      "fields": {
+        "organizationType": { "label": "Type d'organisme *", "htmlType": "select", "component": "Select", "required": true, "defaultValue": "MINISTERE", "allowedValues": ["MINISTERE", "ECOLE", "INSTITUTION"], "source": "static", "dbField": "organizationType", "dbColumn": "organization_type", "validation": "none", "transform": "direct", "conditional": "always" },
+        "organizationName": { "label": "Nom de l'organisme *", "htmlType": "input text", "component": "Input", "required": true, "defaultValue": "", "placeholder": "Ex : ENSA Marrakech", "validation": "required trim", "source": "free text", "dbField": "organizationName", "dbColumn": "organization_name", "transform": "trim()" },
+        "schoolId": { "label": "École liée", "htmlType": "select", "component": "Select", "required": false, "defaultValue": null, "placeholder": "— Aucune —", "allowedValues": "db.schools[].id", "source": "db.schools", "dbRelation": "FK schools.id", "dbField": "schoolId", "dbColumn": "school_id", "transform": "value||undefined", "conditional": "IF organizationType==='ECOLE'" },
+        "ministryId": { "label": "Ministère lié", "htmlType": "select", "component": "Select", "required": false, "defaultValue": null, "placeholder": "— Aucune —", "allowedValues": "db.ministries[].id", "source": "db.ministries", "dbRelation": "FK ministries.id", "dbField": "ministryId", "dbColumn": "ministry_id", "transform": "value||undefined", "conditional": "IF organizationType==='MINISTERE'" },
+        "logoColor": { "label": "Couleur du logo", "htmlType": "button color picker", "component": "button", "required": false, "defaultValue": "#0D47A1", "allowedValues": ["#0D47A1","#C62828","#2E7D32","#4A148C","#E65100","#00695C","#B71C1C","#01579B","#5D4037","#37474F"], "source": "static COLORS", "dbField": "logoColor", "dbColumn": "logo_color", "transform": "direct" },
+        "title": { "label": "Titre du concours *", "htmlType": "input text", "component": "Input", "required": true, "defaultValue": "", "placeholder": "Ex : Concours d'accès en 1ère année", "validation": "required trim", "source": "free", "dbField": "title", "dbColumn": "title", "transform": "trim()" },
+        "description": { "label": "Description *", "htmlType": "textarea rows=3", "component": "Textarea", "required": true, "defaultValue": "", "placeholder": "Présentation du concours...", "validation": "required trim", "source": "free", "dbField": "description", "dbColumn": "description", "transform": "none" },
+        "category": { "label": "Catégorie", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "MINISTERE", "allowedValues": ["MINISTERE","ECOLE","UNIVERSITE","INSTITUTION","RECRUTEMENT","AUTRE"], "source": "static CompetitionCategory", "dbField": "category", "dbColumn": "category", "transform": "direct" },
+        "year": { "label": "Année", "htmlType": "input number", "component": "Input type=number", "required": false, "defaultValue": "now.getFullYear()", "validation": "none", "source": "free number", "dbField": "year", "dbColumn": "year", "transform": "parseInt||nowYear" },
+        "places": { "label": "Places *", "htmlType": "input number min=1", "component": "Input type=number", "required": true, "defaultValue": 100, "validation": "required places>=1", "source": "free int", "dbField": "places", "dbColumn": "places", "transform": "parseInt||0" },
+        "level": { "label": "Niveau", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Bac+3", "allowedValues": "LEVELS (utils.ts:444) Bac,Bac+0..Bac+6,Doctorat,Tous niveaux", "source": "static LEVELS", "dbField": "level", "dbColumn": "level", "transform": "direct" },
+        "city": { "label": "Ville", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Rabat", "allowedValues": "CITIES (utils.ts:460) 17 villes", "source": "static CITIES", "dbField": "city", "dbColumn": "city", "transform": "direct" },
+        "domaine": { "label": "Domaine", "htmlType": "select", "component": "Select", "required": false, "defaultValue": null, "allowedValues": "DOMAINS (utils.ts:479) 11 + empty", "source": "static DOMAINS", "dbField": "domaine", "dbColumn": "domaine", "transform": "value||undefined" },
+        "region": { "label": "Région", "htmlType": "input text", "component": "Input", "required": false, "defaultValue": "Rabat-Salé-Kénitra", "allowedValues": "REGIONS (utils.ts:492) 12 free", "source": "static REGIONS (suggest)", "dbField": "region", "dbColumn": "region", "transform": "direct" },
+        "registrationStart": { "label": "Ouverture des inscriptions", "htmlType": "input date", "component": "Input type=date", "required": false, "defaultValue": null, "validation": "cross-field deadline>=start", "source": "date ISO", "dbField": "registrationStart", "dbColumn": "registration_start", "transform": "toDateInput display / new Date(v).toISOString() save" },
+        "registrationDeadline": { "label": "Clôture des inscriptions", "htmlType": "input date", "component": "Input type=date", "required": false, "defaultValue": null, "validation": "cross-field deadline>=start", "source": "date ISO", "dbField": "registrationDeadline", "dbColumn": "registration_deadline", "transform": "new Date(v).toISOString()" },
+        "competitionDate": { "label": "Date du concours", "htmlType": "input date", "component": "Input type=date", "required": false, "defaultValue": null, "source": "date ISO", "dbField": "competitionDate", "dbColumn": "competition_date", "transform": "new Date(v).toISOString()" },
+        "convocationDate": { "label": "Date de convocation", "htmlType": "input date", "component": "Input type=date", "required": false, "defaultValue": null, "source": "date ISO", "dbField": "convocationDate", "dbColumn": "convocation_date", "transform": "new Date(v).toISOString()" },
+        "resultsDate": { "label": "Date des résultats", "htmlType": "input date", "component": "Input type=date", "required": false, "defaultValue": null, "source": "date ISO", "dbField": "resultsDate", "dbColumn": "results_date", "transform": "new Date(v).toISOString()" },
+        "conditions": { "label": "Conditions d'accès (une par ligne)", "htmlType": "textarea rows=3", "component": "Textarea", "required": false, "defaultValue": "[]", "source": "free lines", "dbField": "conditions", "dbColumn": "conditions (text[])", "transform": "split('\\n').map(trim).filter(Boolean)" },
+        "epreuves": { "label": "Épreuves (une par ligne)", "htmlType": "textarea rows=3", "component": "Textarea", "required": false, "defaultValue": "[]", "source": "free lines", "dbField": "epreuves", "dbColumn": "epreuves (text[])", "transform": "split('\\n')" },
+        "matieres": { "label": "Matières (séparées par des virgules)", "htmlType": "input text", "component": "Input", "required": false, "defaultValue": "[]", "placeholder": "Mathématiques, Physique", "source": "free comma", "dbField": "matieres", "dbColumn": "matieres (text[])", "transform": "split(',').map(trim).filter(Boolean)" },
+        "documentsDemandes": { "label": "Documents demandés (un par ligne)", "htmlType": "textarea rows=3", "component": "Textarea", "required": false, "defaultValue": "[]", "source": "free lines", "dbField": "documentsDemandes", "dbColumn": "documents_demandes (text[])", "transform": "split('\\n')" },
+        "profil": { "label": "Profil demandé", "htmlType": "textarea rows=2", "component": "Textarea", "required": false, "defaultValue": "", "source": "free", "dbField": "profil", "dbColumn": "profil", "transform": "direct" },
+        "programme": { "label": "Programme", "htmlType": "textarea rows=2", "component": "Textarea", "required": false, "defaultValue": "", "source": "free", "dbField": "programme", "dbColumn": "programme", "transform": "direct" },
+        "procedure": { "label": "Procédure d'inscription", "htmlType": "textarea rows=2", "component": "Textarea", "required": false, "defaultValue": "", "source": "free", "dbField": "procedure", "dbColumn": "procedure", "transform": "direct" },
+        "frais": { "label": "Frais éventuels", "htmlType": "input text", "component": "Input", "required": false, "defaultValue": "", "source": "free", "dbField": "frais", "dbColumn": "frais", "transform": "direct" },
+        "resultats": { "label": "Résultats", "htmlType": "textarea rows=2", "component": "Textarea", "required": false, "defaultValue": "", "source": "free", "dbField": "resultats", "dbColumn": "resultats", "transform": "direct" },
+        "officialWebsite": { "label": "Site officiel", "htmlType": "input text (url)", "component": "Input", "required": false, "defaultValue": null, "placeholder": "https://…", "validation": "regex ^https?:\\/\\/.+", "source": "url", "dbField": "officialWebsite", "dbColumn": "official_website", "transform": "value||undefined" },
+        "registrationUrl": { "label": "Inscription officielle", "htmlType": "input text (url)", "component": "Input", "required": false, "defaultValue": null, "placeholder": "https://…", "validation": "regex ^https?:\\/\\/.+", "source": "url", "dbField": "registrationUrl", "dbColumn": "registration_url", "transform": "value||undefined" },
+        "sourceUrl": { "label": "URL source", "htmlType": "input text (url)", "component": "Input", "required": false, "defaultValue": null, "placeholder": "https://…", "source": "url", "dbField": "sourceUrl", "dbColumn": "source_url", "transform": "value||undefined" },
+        "sourceOrganization": { "label": "Organisme source", "htmlType": "input text", "component": "Input", "required": false, "defaultValue": null, "source": "free", "dbField": "sourceOrganization", "dbColumn": "source_organization", "transform": "value||undefined" },
+        "publishStatus": { "label": "Statut de publication", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "DRAFT", "allowedValues": ["DRAFT","PENDING_REVIEW","PUBLISHED","ARCHIVED"], "source": "static PublishStatus", "dbField": "publishStatus", "dbColumn": "publish_status", "transform": "direct" },
+        "verificationStatus": { "label": "Vérification", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "UNVERIFIED", "allowedValues": ["UNVERIFIED","PENDING","VERIFIED","EXPIRED"], "source": "static VerificationStatus", "dbField": "verificationStatus", "dbColumn": "verification_status", "transform": "direct" },
+        "manualStatus": { "label": "Forcer le statut", "htmlType": "select", "component": "Select", "required": false, "defaultValue": null, "allowedValues": ["", "Ouvert","Bientot","Ferme","Suspendu","Archive"], "source": "static CompetitionStatus", "dbField": "manualStatus", "dbColumn": "manual_status", "transform": "value||undefined" },
+        "isDemo": { "label": "Marquer comme DEMO", "htmlType": "checkbox", "component": "input type=checkbox", "required": false, "defaultValue": false, "source": "bool", "dbField": "isDemo", "dbColumn": "is_demo", "transform": "checked" }
+      },
+      "hiddenFields": {
+        "id": { "generated": "uid('c')", "dbField": "id", "dbColumn": "id" },
+        "slug": { "generated": "slugify(organizationName-title-year) slice 80", "dbField": "slug", "dbColumn": "slug" },
+        "createdAt": { "generated": "now ISO", "dbField": "createdAt", "dbColumn": "created_at" },
+        "updatedAt": { "generated": "now ISO", "dbField": "updatedAt", "dbColumn": "updated_at" },
+        "publishedAt": { "generated": "now ISO", "dbField": "publishedAt", "dbColumn": "published_at" },
+        "views": { "generated": "0", "dbField": "views", "dbColumn": "views" },
+        "logoUrl": { "generated": "AutoOrganismeField resolveOrganisme", "dbField": "logoUrl", "dbColumn": "logo_url" }
+      },
+      "conditionalFields": [
+        { "if": "organizationType==='ECOLE'", "then": "show schoolId" },
+        { "if": "organizationType==='MINISTERE'", "then": "show ministryId" }
+      ],
+      "buttons": [
+        { "label": "Annuler", "type": "button", "variant": "outline", "handler": "onClose", "operation": "close modal" },
+        { "label": "Créer le concours / Enregistrer", "type": "submit", "variant": "primary", "handler": "save() -> adminCreate/adminUpdate + pushNotification if PUBLISHED", "loading": "saving" }
+      ],
+      "validation": ["title required", "organizationName required", "description required", "places>=1", "deadline>=start", "URL regex for officialWebsite/registrationUrl"]
+    },
+    "master": {
+      "form": "MasterForm",
+      "file": "src/pages/admin/AdminMastersImport.tsx:802",
+      "route": "/admin/masters + /admin/masters/import",
+      "entity": "MasterItem",
+      "dbTable": "masters",
+      "submitHandler": "handleSave -> POST /api/masters / PUT /api/masters/:id",
+      "modes": ["create", "edit", "duplicate"],
+      "fields": {
+        "name": { "label": "Intitulé officiel du Master", "htmlType": "input text", "component": "Input", "required": true, "defaultValue": "", "placeholder": "Ex: Master Intelligence Artificielle…", "validation": "required trim", "source": "free", "dbField": "name", "dbColumn": "name", "transform": "none" },
+        "establishment": { "label": "Établissement / Faculté", "htmlType": "input text + datalist", "component": "Input + datalist#schools-list", "required": true, "defaultValue": "", "placeholder": "Ex: FSR ou ENCG Casablanca", "validation": "required trim", "allowedValues": "modalFilteredSchools (REAL_SCHOOLS filtré par universityId)", "source": "db REAL_SCHOOLS", "dbField": "establishment", "dbColumn": "establishment", "transform": "none" },
+        "university": { "label": "Université de rattachement", "htmlType": "select", "component": "Select", "required": true, "defaultValue": "Université Mohammed V de Rabat", "allowedValues": "MOROCCAN_UNIVERSITIES 12 + Autre université", "source": "static MOROCCAN_UNIVERSITIES", "dbField": "university", "dbColumn": "university", "transform": "none", "conditional": "pilote filtre datalist establishment" },
+        "city": { "label": "Ville", "htmlType": "select", "component": "Select", "required": true, "defaultValue": "Rabat", "allowedValues": "MOROCCAN_CITIES 16", "source": "static MOROCCAN_CITIES", "dbField": "city", "dbColumn": "city", "transform": "none" },
+        "domain": { "label": "Domaine / Filière", "htmlType": "input text + datalist", "component": "Input + datalist#domains-list", "required": false, "defaultValue": "", "placeholder": "Ex: Informatique & IA", "allowedValues": "MASTER_DOMAINS 9 suggestions", "source": "static MASTER_DOMAINS", "dbField": "domain", "dbColumn": "domain", "transform": "none" },
+        "level": { "label": "Type de Diplôme / Niveau", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Master Spécialisé (Bac+5)", "allowedValues": "MASTER_LEVELS 5", "source": "static MASTER_LEVELS", "dbField": "level", "dbColumn": "level", "transform": "none" },
+        "academicYear": { "label": "Année Universitaire", "htmlType": "input text", "component": "Input", "required": false, "defaultValue": "2026-2027", "placeholder": "2026-2027", "source": "free YYYY-YYYY", "dbField": "academicYear", "dbColumn": "academic_year", "transform": "none" },
+        "status": { "label": "Statut du concours", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "OUVERT", "allowedValues": ["OUVERT","A_VENIR","CONCOURS_A_VENIR","RESULTATS","FERME","INFORMATION"], "source": "enum MasterItem status", "dbField": "status", "dbColumn": "status", "transform": "auto-muté par deadlineDate/examDate onChange" },
+        "seats": { "label": "Nombre de places", "htmlType": "input number", "component": "Input type=number", "required": false, "defaultValue": 35, "placeholder": "Ex: 35", "source": "int", "dbField": "seats", "dbColumn": "seats", "transform": "parseInt||null" },
+        "deadlineDate": { "label": "Date limite de candidature", "htmlType": "input date", "component": "Input type=date", "required": false, "defaultValue": "", "source": "date ISO YYYY-MM-DD", "dbField": "deadlineDate", "dbColumn": "deadline_date", "transform": "YYYY-MM-DD, auto status FERME<->OUVERT" },
+        "examDate": { "label": "Date du concours (écrit/oral)", "htmlType": "input date", "component": "Input type=date", "required": false, "defaultValue": "", "source": "date ISO", "dbField": "examDate", "dbColumn": "exam_date", "transform": "YYYY-MM-DD, auto status CONCOURS_A_VENIR" },
+        "officialUrl": { "label": "Lien officiel portail", "htmlType": "input url", "component": "Input type=url", "required": false, "defaultValue": "", "placeholder": "https://…", "validation": "HTML5 type=url", "source": "url", "dbField": "officialUrl", "dbColumn": "official_url", "transform": "none" },
+        "schoolWebsite": { "label": "Site web établissement", "htmlType": "input url", "component": "Input type=url", "required": false, "defaultValue": "", "placeholder": "https://…", "validation": "HTML5 type=url", "source": "url", "dbField": "schoolWebsite", "dbColumn": "school_website", "transform": "none" },
+        "conditions": { "label": "Conditions d'accès", "htmlType": "textarea rows=3", "component": "Textarea", "required": false, "defaultValue": "Licence requise…", "placeholder": "Critères…", "source": "free", "dbField": "conditions", "dbColumn": "conditions", "transform": "none (string, not split)" },
+        "documents": { "label": "Dossier & Documents", "htmlType": "textarea rows=3", "component": "Textarea", "required": false, "defaultValue": "CV, CIN, Relevés…", "placeholder": "Pièces à fournir…", "source": "free comma", "dbField": "documents", "dbColumn": "documents", "transform": "none (split in masterToCompetition)" }
+      },
+      "hiddenFields": {
+        "openingDate": { "defaultValue": "", "dbField": "openingDate", "dbColumn": "opening_date", "note": "pas d'Input, conservé via JSON.stringify(formData)" },
+        "publicationDate": { "defaultValue": "today ISO split T[0]", "dbField": "publicationDate", "dbColumn": "publication_date", "note": "auto today on create/duplicate" },
+        "resultsDate": { "defaultValue": "", "dbField": "resultsDate", "dbColumn": "results_date" },
+        "sourceUrl": { "defaultValue": "", "dbField": "sourceUrl", "dbColumn": "source_url" },
+        "id": { "generated": "server mst-*", "dbField": "id" },
+        "uniqueKey": { "generated": "server", "dbField": "uniqueKey" },
+        "createdAt": { "generated": "now ISO", "dbField": "createdAt" },
+        "updatedAt": { "generated": "now ISO", "dbField": "updatedAt" }
+      },
+      "buttons": [
+        { "label": "Ajouter un Master", "handler": "openCreateModal" },
+        { "label": "Actualiser statuts", "handler": "POST /api/masters/update-statuses" },
+        { "label": "Synchroniser", "handler": "POST /api/masters/sync" },
+        { "label": "Annuler", "type": "button outline", "handler": "setModalOpen(false)" },
+        { "label": "Créer le Master / Sauvegarder", "type": "submit", "handler": "handleSave" }
+      ]
+    },
+    "exam": {
+      "form": "ExamForm",
+      "file": "src/pages/admin/AdminContent.tsx:51",
+      "route": "/admin/examens",
+      "entity": "Exam",
+      "dbTable": "exams",
+      "submitHandler": "save() -> adminCreate/adminUpdate('exams')",
+      "fields": {
+        "title": { "label": "Titre *", "htmlType": "input text", "component": "Input", "required": true, "dbField": "title", "transform": "trim()" },
+        "schoolName": { "label": "École / organisme *", "htmlType": "input text", "component": "Input", "required": true, "dbField": "schoolName", "transform": "trim() + organizationName mirror" },
+        "schoolId": { "label": "École liée", "htmlType": "select", "component": "Select", "required": false, "allowedValues": "db.schools[].id", "source": "db.schools", "dbField": "schoolId", "transform": "value||undefined" },
+        "subject": { "label": "Matière", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Mathématiques", "allowedValues": "SUBJECTS 13 (utils.ts:445)", "source": "static SUBJECTS", "dbField": "subject" },
+        "year": { "label": "Année", "htmlType": "input number", "component": "Input type=number", "required": false, "defaultValue": "nowYear", "dbField": "year", "transform": "parseInt||nowYear" },
+        "level": { "label": "Niveau", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Bac+0", "allowedValues": "LEVELS", "source": "static LEVELS", "dbField": "level" },
+        "type": { "label": "Type", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Concours", "allowedValues": ["Concours","Examen","Recrutement","Partiel"], "source": "static", "dbField": "type" },
+        "duration": { "label": "Durée", "htmlType": "input text", "component": "Input", "required": false, "defaultValue": null, "placeholder": "2h", "dbField": "duration" },
+        "pages": { "label": "Pages", "htmlType": "input number", "component": "Input type=number", "required": false, "dbField": "pages", "transform": "parseInt||undefined" },
+        "pdfUrl": { "label": "URL du PDF", "htmlType": "input text", "component": "Input", "required": false, "placeholder": "https://…", "dbField": "pdfUrl", "transform": "value||undefined" },
+        "verificationStatus": { "label": "Vérification", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "UNVERIFIED", "allowedValues": ["UNVERIFIED","PENDING","VERIFIED","EXPIRED"], "source": "static VerificationStatus", "dbField": "verificationStatus" },
+        "publishStatus": { "label": "Publication", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "DRAFT", "allowedValues": ["DRAFT","PENDING_REVIEW","PUBLISHED","ARCHIVED"], "source": "static PublishStatus", "dbField": "publishStatus" },
+        "description": { "label": "Description", "htmlType": "textarea", "component": "Textarea rows=2", "required": false, "dbField": "description" },
+        "hasCorrection": { "label": "Corrigé inclus", "htmlType": "checkbox", "component": "input type=checkbox", "required": false, "defaultValue": false, "dbField": "hasCorrection", "transform": "checked" },
+        "isDemo": { "label": "DEMO", "htmlType": "checkbox", "component": "input type=checkbox", "required": false, "defaultValue": false, "dbField": "isDemo", "transform": "checked" }
+      },
+      "hiddenFields": {
+        "id": { "generated": "uid('ex')" },
+        "slug": { "generated": "slugify(title-year)" },
+        "organizationName": { "generated": "schoolName trim mirror" },
+        "downloads": { "generated": "0" },
+        "createdAt": { "generated": "now ISO" },
+        "updatedAt": { "generated": "now ISO" }
+      }
+    },
+    "document": {
+      "form": "DocForm",
+      "file": "src/pages/admin/AdminContent.tsx:144",
+      "route": "/admin/documents",
+      "entity": "DocItem",
+      "dbTable": "documents",
+      "submitHandler": "save() -> adminCreate/adminUpdate('documents')",
+      "fields": {
+        "title": { "label": "Titre *", "htmlType": "input text", "component": "Input", "required": true, "dbField": "title", "transform": "trim()" },
+        "organizationName": { "label": "Nom de l'organisme *", "htmlType": "input text", "component": "Input", "required": true, "dbField": "organizationName", "transform": "trim() / AutoOrganismeField" },
+        "category": { "label": "Catégorie", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Avis de concours", "allowedValues": "DOC_CATS 10 (Avis de concours,Convocation,Résultats,Liste des candidats,Programme,Guide,Cours,Fiche de révision,Ancien examen,Autre)", "source": "static DOC_CATS", "dbField": "category" },
+        "year": { "label": "Année", "htmlType": "input number", "component": "Input type=number", "required": false, "defaultValue": "nowYear", "dbField": "year", "transform": "parseInt||nowYear" },
+        "fileUrl": { "label": "URL du fichier", "htmlType": "input text", "component": "Input", "required": false, "placeholder": "https://…", "dbField": "fileUrl", "transform": "value||undefined" },
+        "fileSize": { "label": "Taille", "htmlType": "input text", "component": "Input", "required": false, "placeholder": "1,2 Mo", "dbField": "fileSize", "transform": "value||undefined" },
+        "sourceUrl": { "label": "URL source", "htmlType": "input text", "component": "Input", "required": false, "placeholder": "https://…", "dbField": "sourceUrl" },
+        "publishStatus": { "label": "Publication", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "DRAFT", "allowedValues": ["DRAFT","PENDING_REVIEW","PUBLISHED","ARCHIVED"], "dbField": "publishStatus" },
+        "description": { "label": "Description", "htmlType": "textarea", "component": "Textarea", "required": false, "dbField": "description" },
+        "isDemo": { "label": "Données de démonstration", "htmlType": "checkbox", "component": "input type=checkbox", "required": false, "defaultValue": false, "dbField": "isDemo", "transform": "checked" }
+      },
+      "hiddenFields": {
+        "id": { "generated": "uid('d')" },
+        "slug": { "generated": "slugify(title-Date.now())" },
+        "schoolId": { "generated": "AutoOrganismeField", "dbField": "schoolId" },
+        "ministryId": { "generated": "AutoOrganismeField", "dbField": "ministryId" },
+        "downloads": { "generated": "0" }
+      }
+    },
+    "course": {
+      "form": "CourseForm",
+      "file": "src/pages/admin/AdminContent.tsx:235",
+      "route": "/admin/cours",
+      "entity": "Course (+Chapter+Lesson)",
+      "dbTable": "courses",
+      "submitHandler": "save() -> adminCreate/adminUpdate('courses')",
+      "fields": {
+        "title": { "label": "Titre *", "htmlType": "input text", "component": "Input", "required": true, "dbField": "title", "transform": "trim()" },
+        "subject": { "label": "Matière", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Mathématiques", "allowedValues": "SUBJECTS 13", "source": "static SUBJECTS", "dbField": "subject" },
+        "level": { "label": "Niveau", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Bac+0", "allowedValues": "LEVELS", "source": "static LEVELS", "dbField": "level" },
+        "difficulty": { "label": "Difficulté", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Intermédiaire", "allowedValues": ["Débutant","Intermédiaire","Avancé"], "dbField": "difficulty" },
+        "duration": { "label": "Durée", "htmlType": "input text", "component": "Input", "required": false, "defaultValue": "10h", "dbField": "duration" },
+        "color": { "label": "Couleur", "htmlType": "input color", "component": "Input type=color", "required": false, "defaultValue": "#0B63CE", "dbField": "color" },
+        "publishStatus": { "label": "Publication", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "DRAFT", "allowedValues": ["DRAFT","PENDING_REVIEW","PUBLISHED","ARCHIVED"], "dbField": "publishStatus" },
+        "isDemo": { "label": "DEMO", "htmlType": "checkbox", "component": "input type=checkbox", "required": false, "defaultValue": false, "dbField": "isDemo", "transform": "checked" },
+        "description": { "label": "Description", "htmlType": "textarea", "component": "Textarea rows=2", "required": false, "defaultValue": "", "dbField": "description" },
+        "chapters": { "label": "Chapitres", "htmlType": "dynamic repeater", "component": "array Chapter[]", "required": false, "defaultValue": "[]", "dbField": "chapters", "nested": { "title": "input text Chapitre N", "order": "number auto", "lessons": "array Lesson[]" } },
+        "lessons": { "label": "Leçons", "htmlType": "dynamic repeater nested", "component": "array Lesson[]", "required": false, "fields": { "title": "input text Leçon N", "type": "select VIDEO,TEXT,PDF,QUIZ,EXERCISE", "duration": "input text 20 min", "content": "textarea" } }
+      },
+      "hiddenFields": {
+        "id": { "generated": "uid('course')" },
+        "slug": { "generated": "slugify(title)" },
+        "chapterId": { "generated": "uid('ch')" },
+        "lessonId": { "generated": "uid('l')" }
+      }
+    },
+    "school": {
+      "form": "SchoolForm",
+      "file": "src/pages/admin/AdminCatalog.tsx:165",
+      "route": "/admin/ecoles",
+      "entity": "School",
+      "dbTable": "schools",
+      "submitHandler": "save() -> adminCreate/adminUpdate('schools')",
+      "fields": {
+        "name": { "label": "Nom complet *", "htmlType": "input text", "component": "Input", "required": true, "placeholder": "École Nationale...", "validation": "required trim", "dbField": "name", "transform": "trim()" },
+        "shortName": { "label": "Nom court / Acronyme *", "htmlType": "input text", "component": "Input", "required": true, "placeholder": "ENSA Marrakech", "validation": "required trim", "dbField": "shortName", "transform": "trim() + slug" },
+        "universityId": { "label": "Université de rattachement", "htmlType": "select", "component": "select native", "required": false, "defaultValue": null, "allowedValues": "db.universities[].id", "source": "db.universities", "dbRelation": "FK universities.id", "dbField": "universityId", "dbColumn": "university_id", "transform": "value||undefined" },
+        "ministryId": { "label": "Ministère de tutelle", "htmlType": "select", "component": "select native", "required": false, "defaultValue": "min-enssup", "allowedValues": "db.ministries[].id", "source": "db.ministries", "dbRelation": "FK ministries.id", "dbField": "ministryId", "dbColumn": "ministry_id", "transform": "value||undefined" },
+        "city": { "label": "Ville", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Rabat", "allowedValues": "CITIES 17", "source": "static CITIES", "dbField": "city" },
+        "region": { "label": "Région", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Rabat-Salé-Kénitra", "allowedValues": "REGIONS 12", "source": "static REGIONS", "dbField": "region" },
+        "type": { "label": "Type d'école", "htmlType": "input text", "component": "Input", "required": false, "defaultValue": "École d’ingénieurs", "dbField": "type" },
+        "isActive": { "label": "Statut de publication", "htmlType": "select", "component": "select native", "required": false, "defaultValue": true, "allowedValues": ["true:Actif","false:Archivé"], "dbField": "isActive", "transform": "value==='true'" },
+        "domains": { "label": "Domaines (virgules)", "htmlType": "input text", "component": "Input", "required": false, "defaultValue": "Ingénierie, Informatique", "placeholder": "Ingénierie, Informatique...", "dbField": "domains", "dbColumn": "domains (text[])", "transform": "split(',').map(trim).filter(Boolean)" },
+        "levels": { "label": "Niveaux d'admission", "htmlType": "input text", "component": "Input", "required": false, "defaultValue": "Bac+0, Bac+2", "dbField": "levels", "dbColumn": "levels (text[])", "transform": "split(',')" },
+        "website": { "label": "Site web officiel", "htmlType": "input text", "component": "Input", "required": false, "placeholder": "https://…", "dbField": "website" },
+        "email": { "label": "E-mail", "htmlType": "input email", "component": "Input", "required": false, "placeholder": "contact@…", "dbField": "email" },
+        "phone": { "label": "Téléphone", "htmlType": "input tel", "component": "Input", "required": false, "placeholder": "+212 5...", "dbField": "phone" },
+        "description": { "label": "Description générale", "htmlType": "textarea rows=3", "component": "Textarea", "required": false, "placeholder": "Présentation...", "dbField": "description", "transform": "??''" },
+        "logoUrl": { "label": "Logo officiel", "htmlType": "input file accept=image/*", "component": "input type=file", "required": false, "validation": "size<=2Mo", "dbField": "logoUrl", "transform": "FileReader.readAsDataURL dataUrl" }
+      },
+      "hiddenFields": {
+        "id": { "generated": "uid('ec')" },
+        "slug": { "generated": "slugify(shortName)" },
+        "logoColor": { "defaultValue": "#0B63CE" },
+        "createdAt": { "generated": "now ISO" },
+        "updatedAt": { "generated": "now ISO" }
+      }
+    },
+    "university": {
+      "form": "UniversityForm",
+      "file": "src/pages/admin/AdminCatalog.tsx:538",
+      "route": "/admin/universites",
+      "entity": "University",
+      "dbTable": "universities",
+      "submitHandler": "save() -> adminCreate/adminUpdate('universities')",
+      "fields": {
+        "name": { "label": "Nom complet en français *", "htmlType": "input text", "component": "Input", "required": true, "placeholder": "Université Mohammed V...", "validation": "required trim + shortName", "dbField": "name", "transform": "trim()" },
+        "shortName": { "label": "Acronyme officiel *", "htmlType": "input text", "component": "Input", "required": true, "placeholder": "UM5", "dbField": "shortName", "transform": "trim()+slug" },
+        "nameAr": { "label": "Nom en arabe (Optionnel)", "htmlType": "input text RTL", "component": "Input dir=rtl", "required": false, "placeholder": "جامعة محمد الخامس...", "dbField": "nameAr" },
+        "city": { "label": "Ville du siège", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Rabat", "allowedValues": "CITIES 17", "source": "static CITIES", "dbField": "city" },
+        "region": { "label": "Région administrative", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "Rabat-Salé-Kénitra", "allowedValues": "REGIONS 12", "source": "static REGIONS", "dbField": "region" },
+        "website": { "label": "Site officiel", "htmlType": "input text", "component": "Input", "required": false, "placeholder": "https://…", "dbField": "website" },
+        "description": { "label": "Description historique", "htmlType": "textarea rows=3", "component": "Textarea", "required": false, "placeholder": "Historique...", "dbField": "description" },
+        "logoUrl": { "label": "Logo officiel", "htmlType": "input file accept=image/*", "component": "input type=file", "required": false, "validation": "size<=2Mo", "dbField": "logoUrl", "transform": "FileReader DataURL" }
+      },
+      "hiddenFields": {
+        "id": { "generated": "uid('univ')" },
+        "slug": { "generated": "slugify(shortName)" },
+        "ministryId": { "defaultValue": "min-enssup", "note": "non édité UI" },
+        "logoColor": { "defaultValue": "#0B63CE" },
+        "isActive": { "defaultValue": true }
+      }
+    },
+    "ministry": {
+      "form": "MinistryForm",
+      "file": "src/pages/admin/AdminCatalog.tsx:832",
+      "route": "/admin/ministeres",
+      "entity": "Ministry",
+      "dbTable": "ministries",
+      "submitHandler": "save() -> adminCreate/adminUpdate('ministries')",
+      "fields": {
+        "name": { "label": "Nom officiel complet *", "htmlType": "input text", "component": "Input", "required": true, "placeholder": "Ministère de l'Éducation...", "validation": "required trim + shortName", "dbField": "name", "transform": "trim()" },
+        "shortName": { "label": "Acronyme / Sigle *", "htmlType": "input text", "component": "Input", "required": true, "placeholder": "MENPS", "dbField": "shortName", "transform": "trim()+slug" },
+        "website": { "label": "Portail web officiel", "htmlType": "input text", "component": "Input", "required": false, "placeholder": "https://…", "dbField": "website" },
+        "isActive": { "label": "Statut", "htmlType": "select", "component": "select native", "required": false, "defaultValue": true, "allowedValues": ["true:Actif","false:Archivé"], "dbField": "isActive", "transform": "value==='true'" },
+        "description": { "label": "Description des compétences", "htmlType": "textarea rows=3", "component": "Textarea", "required": false, "placeholder": "Compétences...", "dbField": "description" },
+        "logoUrl": { "label": "Logo officiel", "htmlType": "input file accept=image/*", "component": "input type=file", "required": false, "validation": "size<=2Mo", "dbField": "logoUrl", "transform": "FileReader DataURL" }
+      },
+      "hiddenFields": {
+        "id": { "generated": "uid('min')" },
+        "slug": { "generated": "slugify(shortName)" }
+      }
+    },
+    "notification": {
+      "form": "NotifForm",
+      "file": "src/pages/admin/AdminUsers.tsx:127",
+      "route": "/admin/notifications",
+      "entity": "AppNotification",
+      "dbTable": "notifications",
+      "submitHandler": "save() -> pushNotification({title,message,type,link})",
+      "fields": {
+        "title": { "label": "Titre *", "htmlType": "input text", "component": "Input", "required": true, "placeholder": "Ex : Nouveau concours publié", "validation": "required trim", "dbField": "title", "transform": "trim()" },
+        "message": { "label": "Message *", "htmlType": "textarea rows=3", "component": "Textarea", "required": true, "dbField": "message", "transform": "trim()" },
+        "type": { "label": "Type", "htmlType": "select", "component": "Select", "required": false, "defaultValue": "info", "allowedValues": ["info","success","warning","deadline","result"], "source": "static", "dbField": "type" },
+        "link": { "label": "Lien (optionnel)", "htmlType": "input text", "component": "Input", "required": false, "placeholder": "/concours/…", "dbField": "link", "transform": "trim()||undefined" }
+      },
+      "hiddenFields": {
+        "id": { "generated": "pushNotification auto" },
+        "userId": { "generated": "'all' hardcoded" },
+        "readBy": { "generated": "[]" },
+        "createdAt": { "generated": "now ISO" }
+      }
+    },
+    "agentSource": {
+      "form": "AddSourceForm",
+      "file": "src/pages/admin/AdminAIAgent.tsx:202",
+      "route": "/admin/ai-agent + /admin/ai-agent/sources",
+      "entity": "AgentSource",
+      "dbTable": "api/agent/sources",
+      "submitHandler": "handleAddSource -> POST /api/agent/sources",
+      "fields": {
+        "newSourceName": { "label": "Nom de la source *", "htmlType": "input text", "component": "Input required", "required": true, "placeholder": "ex: FSJES Agdal", "validation": "required trim", "dbField": "name", "transform": "JSON.stringify" },
+        "newSourceUrl": { "label": "URL (Page annonces) *", "htmlType": "input url", "component": "Input type=url required", "required": true, "placeholder": "https://…", "validation": "required + type=url", "dbField": "url" },
+        "isDryRun": { "label": "Mode DRY RUN", "htmlType": "checkbox", "component": "input type=checkbox", "required": false, "defaultValue": true, "dbField": "query ?dryRun=" }
+      },
+      "hiddenFields": {
+        "type": { "generated": "'HTML' hardcoded" },
+        "isActive": { "generated": "true" },
+        "status": { "generated": "'OK'" }
+      }
+    },
+    "auth": {
+      "login": { "file": "src/pages/Auth.tsx:31", "route": "/connexion", "fields": { "email": { "htmlType": "input email", "required": true, "placeholder": "vous@example.ma" }, "password": { "htmlType": "input password", "required": true, "placeholder": "••••••••" } } },
+      "register": { "file": "src/pages/Auth.tsx:80", "route": "/inscription", "fields": { "firstName": { "htmlType": "input text", "required": true }, "lastName": { "htmlType": "input text", "required": true }, "email": { "htmlType": "input email", "required": true }, "city": { "htmlType": "select", "required": false, "allowedValues": "CITIES" }, "level": { "htmlType": "select", "required": false, "allowedValues": "LEVELS" }, "password": { "htmlType": "input password", "required": true, "validation": "minLength 8" }, "confirm": { "htmlType": "input password", "required": true, "validation": "password===confirm" } } },
+      "forgotPassword": { "file": "src/pages/Auth.tsx:143", "route": "/mot-de-passe-oublie", "fields": { "email": { "htmlType": "input email", "required": true } } }
+    },
+    "parametres": {
+      "form": "ParametresForm",
+      "file": "src/pages/admin/AdminParametres.tsx:9",
+      "route": "/admin/parametres",
+      "entity": "User partial",
+      "dbTable": "users",
+      "submitHandler": "handleSave -> adminUpdate('users', user.id, {firstName,lastName,email})",
+      "fields": {
+        "firstName": { "label": "Prénom", "htmlType": "input text", "required": false, "defaultValue": "user.firstName", "dbField": "firstName" },
+        "lastName": { "label": "Nom", "htmlType": "input text", "required": false, "defaultValue": "user.lastName", "dbField": "lastName" },
+        "email": { "label": "Adresse email", "htmlType": "input email", "required": false, "defaultValue": "user.email", "dbField": "email" },
+        "notifications": { "label": "Notifications de rapport", "htmlType": "checkbox toggle", "required": false, "defaultValue": true, "note": "NOT persisted local only" },
+        "maintenanceMode": { "label": "Mode Maintenance", "htmlType": "checkbox toggle", "required": false, "defaultValue": false, "note": "NOT persisted" }
+      }
+    }
+  },
+  "referentials": {
+    "LEVELS": { "file": "src/lib/utils.ts:444", "values": ["Bac","Bac+0","Bac+1","Bac+2","Bac+3","Bac+4","Bac+5","Bac+6","Doctorat","Tous niveaux"] },
+    "CITIES": { "file": "src/lib/utils.ts:460", "values": ["Rabat","Casablanca","Marrakech","Fès","Meknès","Tanger","Agadir","Oujda","Kénitra","Tétouan","Mohammedia","El Jadida","Béni Mellal","Nador","Laâyoune","Dakhla","Tout le Maroc"] },
+    "REGIONS": { "file": "src/lib/utils.ts:492", "values": ["Rabat-Salé-Kénitra","Casablanca-Settat","Marrakech-Safi","Fès-Meknès","Tanger-Tétouan-Al Hoceïma","Souss-Massa","Oriental","Béni Mellal-Khénifra","Drâa-Tafilalet","Guelmim-Oued Noun","Laâyoune-Sakia El Hamra","Dakhla-Oued Ed-Dahab"] },
+    "DOMAINS": { "file": "src/lib/utils.ts:479", "values": ["Ingénierie","Informatique","Sciences","Santé","Droit","Économie","Lettres","Éducation","Architecture","Art","Commerce"] },
+    "SUBJECTS": { "file": "src/lib/utils.ts:445", "values": ["Mathématiques","Physique","Chimie","SVT","Informatique","Français","Anglais","Arabe","Logique","Culture générale","Économie","Droit","Médecine"] },
+    "MOROCCAN_UNIVERSITIES": { "file": "src/pages/admin/AdminMastersImport.tsx:52", "values": ["Université Mohammed V de Rabat","Université Hassan II de Casablanca","Université Cadi Ayyad de Marrakech","Université Sidi Mohamed Ben Abdellah de Fès","Université Abdelmalek Essaâdi","Université Ibn Tofaïl de Kénitra","Université Ibn Zohr d’Agadir","Université Moulay Ismaïl de Meknès","Université Mohammed Premier d’Oujda","Université Chouaïb Doukkali d’El Jadida","Université Sultan Moulay Slimane de Béni Mellal","Université Hassan 1er de Settat"] },
+    "MOROCCAN_CITIES_MASTER": { "file": "src/pages/admin/AdminMastersImport.tsx:67", "values": ["Rabat","Casablanca","Marrakech","Fès","Tanger","Tétouan","Agadir","Kénitra","Meknès","Oujda","El Jadida","Settat","Béni Mellal","Safi","Nador","Mohammedia"] },
+    "MASTER_DOMAINS": { "file": "src/pages/admin/AdminMastersImport.tsx:86", "values": ["Informatique & Intelligence Artificielle","Sciences & Technologies de l’Ingénieur","Économie, Finance & Gestion","Sciences Mathématiques & Données","Droit, Sciences Juridiques & Politiques","Lettres, Langues & Sciences Humaines","Biologie, Chimie & Santé","Management & Commerce International","Sciences de l’Éducation"] },
+    "MASTER_LEVELS": { "file": "src/pages/admin/AdminMastersImport.tsx:98", "values": ["Master Spécialisé (Bac+5)","Master de Recherche (Bac+5)","Master des Sciences et Techniques (MST)","Master Professionnel (Bac+5)","Master Fondamental (Bac+5)"] }
+  }
+}

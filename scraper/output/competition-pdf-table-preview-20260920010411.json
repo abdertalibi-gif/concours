@@ -1,0 +1,824 @@
+{
+  "generatedAt": "2026-09-20T01:04:11.642Z",
+  "sourceId": "univ-uca",
+  "pdfUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+  "page": 1,
+  "tableDetected": true,
+  "header": [
+    "المؤسسة",
+    "عدد المناصب",
+    "التخصص المطلوب",
+    "الإطار المطلوب"
+  ],
+  "rows": [
+    {
+      "institution": "كلية العلوم القانونية والسياسية مراكش",
+      "places": 1,
+      "specialty": "Gestion des Ressources Humaines",
+      "raw": "1\tGestion des Ressources Humaines\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم القانونية والسياسية مراكش",
+      "places": 1,
+      "specialty": "Finance",
+      "raw": "1\tFinance\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية االقتصاد والتدبير مراكش",
+      "places": 1,
+      "specialty": "Finance",
+      "raw": "1\tFinance\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية االقتصاد والتدبير مراكش",
+      "places": 1,
+      "specialty": "Comptabilité et Finance",
+      "raw": "1\tComptabilité et Finance\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية االقتصاد والتدبير مراكش",
+      "places": 3,
+      "specialty": "Secrétariat de Direction",
+      "raw": "3\tSecrétariat de Direction\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم القانونية والسياسية قلعة السراغنة",
+      "places": 2,
+      "specialty": "القانون العام",
+      "raw": "2\tالقانون العام\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم القانونية والسياسية قلعة السراغنة",
+      "places": 1,
+      "specialty": "Développement Informatique",
+      "raw": "1\tDéveloppement Informatique\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+      "places": 1,
+      "specialty": "Finance",
+      "raw": "1\tFinance\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+      "places": 1,
+      "specialty": "Secrétariat de Direction",
+      "raw": "1\tSecrétariat de Direction\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+      "places": 1,
+      "specialty": "Gestion des entreprises",
+      "raw": "1\tGestion des entreprises\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم التطبيقية اسفي",
+      "places": 1,
+      "specialty": "Secrétariat de Direction",
+      "raw": "1\tSecrétariat de Direction\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم التطبيقية اسفي",
+      "places": 1,
+      "specialty": "Développement Informatique",
+      "raw": "1\tDéveloppement Informatique\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم التطبيقية اسفي",
+      "places": 2,
+      "specialty": "Sciences Economiques et Gestion",
+      "raw": "2\tSciences Economiques et Gestion\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+      "places": 1,
+      "specialty": "Gestion des entreprises",
+      "raw": "1\tGestion des entreprises\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+      "places": 1,
+      "specialty": "Secrétariat de Direction",
+      "raw": "1\tSecrétariat de Direction\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+      "places": 1,
+      "specialty": "Informatique",
+      "raw": "1\tInformatique\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+      "places": 1,
+      "specialty": "Comptabilité et Finance",
+      "raw": "1\tComptabilité et Finance\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية اللغات واالداب والفنون اسفي",
+      "places": 1,
+      "specialty": "Gestion des entreprises",
+      "raw": "1\tGestion des entreprises\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية اللغات واالداب والفنون اسفي",
+      "places": 1,
+      "specialty": "Secrétariat de Direction",
+      "raw": "1\tSecrétariat de Direction\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية اللغات واالداب والفنون اسفي",
+      "places": 1,
+      "specialty": "Développement Informatique",
+      "raw": "1\tDéveloppement Informatique\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية اللغات واالداب والفنون اسفي",
+      "places": 1,
+      "specialty": "Sciences Economiques et Gestion",
+      "raw": "1\tSciences Economiques et Gestion\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم القانونية والسياسية اسفي",
+      "places": 1,
+      "specialty": "Gestion des entreprises",
+      "raw": "1\tGestion des entreprises\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم القانونية والسياسية اسفي",
+      "places": 1,
+      "specialty": "Secrétariat de Direction",
+      "raw": "1\tSecrétariat de Direction\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم القانونية والسياسية اسفي",
+      "places": 1,
+      "specialty": "Informatique",
+      "raw": "1\tInformatique\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية العلوم القانونية والسياسية اسفي",
+      "places": 1,
+      "specialty": "Sciences Economiques et Gestion",
+      "raw": "1\tSciences Economiques et Gestion\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية االقتصاد والتدبير اسفي",
+      "places": 1,
+      "specialty": "Gestion des entreprises",
+      "raw": "1\tGestion des entreprises\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية االقتصاد والتدبير اسفي",
+      "places": 1,
+      "specialty": "Secrétariat de Direction",
+      "raw": "1\tSecrétariat de Direction\tتقني",
+      "page": 1
+    },
+    {
+      "institution": "كلية االقتصاد والتدبير اسفي",
+      "places": 1,
+      "specialty": "Informatique",
+      "raw": "1\tInformatique\tمتصرف",
+      "page": 1
+    },
+    {
+      "institution": "كلية االقتصاد والتدبير اسفي",
+      "places": 1,
+      "specialty": "Sciences Economiques et Gestion",
+      "raw": "1\tSciences Economiques et Gestion\tمتصرف",
+      "page": 1
+    }
+  ],
+  "places": {
+    "status": "REVIEW",
+    "values": [
+      1,
+      1,
+      1,
+      1,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "total": 33,
+    "evidence": [
+      {
+        "page": 1,
+        "row": "كلية العلوم القانونية والسياسية مراكش — Gestion des Ressources Humaines",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم القانونية والسياسية مراكش — Finance",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية االقتصاد والتدبير مراكش — Finance",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية االقتصاد والتدبير مراكش — Comptabilité et Finance",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية االقتصاد والتدبير مراكش — Secrétariat de Direction",
+        "column": "عدد المناصب",
+        "rawValue": "3",
+        "value": 3,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم القانونية والسياسية قلعة السراغنة — القانون العام",
+        "column": "عدد المناصب",
+        "rawValue": "2",
+        "value": 2,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم القانونية والسياسية قلعة السراغنة — Développement Informatique",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية االقتصاد والتدبير قلعة السراغنة — Finance",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية االقتصاد والتدبير قلعة السراغنة — Secrétariat de Direction",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية االقتصاد والتدبير قلعة السراغنة — Gestion des entreprises",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم التطبيقية اسفي — Secrétariat de Direction",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم التطبيقية اسفي — Développement Informatique",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم التطبيقية اسفي — Sciences Economiques et Gestion",
+        "column": "عدد المناصب",
+        "rawValue": "2",
+        "value": 2,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم اإلن سانية واالجتماعية اسفي — Gestion des entreprises",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم اإلن سانية واالجتماعية اسفي — Secrétariat de Direction",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم اإلن سانية واالجتماعية اسفي — Informatique",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم اإلن سانية واالجتماعية اسفي — Comptabilité et Finance",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية اللغات واالداب والفنون اسفي — Gestion des entreprises",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية اللغات واالداب والفنون اسفي — Secrétariat de Direction",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية اللغات واالداب والفنون اسفي — Développement Informatique",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية اللغات واالداب والفنون اسفي — Sciences Economiques et Gestion",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم القانونية والسياسية اسفي — Gestion des entreprises",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم القانونية والسياسية اسفي — Secrétariat de Direction",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم القانونية والسياسية اسفي — Informatique",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية العلوم القانونية والسياسية اسفي — Sciences Economiques et Gestion",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية االقتصاد والتدبير اسفي — Gestion des entreprises",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية االقتصاد والتدبير اسفي — Secrétariat de Direction",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية االقتصاد والتدبير اسفي — Informatique",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      },
+      {
+        "page": 1,
+        "row": "كلية االقتصاد والتدبير اسفي — Sciences Economiques et Gestion",
+        "column": "عدد المناصب",
+        "rawValue": "1",
+        "value": 1,
+        "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+      }
+    ],
+    "reason": "table reconstruite: 29 lignes, total 33 — valeurs confirmées dans colonne عدد المناصب"
+  },
+  "decision": "REVIEW",
+  "competitionPreview": {
+    "entityType": "competition",
+    "payload": {
+      "title": "Avis de concours pour le recrutement - Université Cadi Ayyad",
+      "organizationName": "Université Cadi Ayyad de Marrakech",
+      "organizationType": "INSTITUTION",
+      "universityId": "univ-uca",
+      "city": "Marrakech",
+      "region": "Marrakech-Safi",
+      "level": "Bac+3",
+      "year": 2026,
+      "places": null,
+      "description": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخطابي ص.ب : 511 مراكش الهاتف : 0524434813/14 فاكس : 0524434494 البريد اإللك تروني : presidence@ucam.ac.ma الموقع ا إللكترو ني : www.ucam.ac.ma إعالن عن مبار يات توظيف تعلن جامعة القاض ي عياض بمراكش أن ها بصدد اجراء مباريات توظيف في املناصب العمومية ، وذلك ب تاريخ 11 / 10 / 2026 ، حسب الجدول التالي : المؤسسة عدد المناصب التخصص المطلوب اإلطار المطلوب كلية العلوم القانونية والسياسية مراكش 1 Gestion des Ressources Humaines متصرف من الدرجة الثانية 1 Finance متصرف من الدرجة الثانية كلية االقتصاد والتدب",
+      "conditions": null,
+      "matieres": null,
+      "epreuves": null,
+      "documentsDemandes": null,
+      "sourceUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "sourceOrganization": "Université Cadi Ayyad de Marrakech",
+      "category": "UNIVERSITE",
+      "slug": "universite-cadi-ayyad-de-marrakech-avis-de-concours-pour-le-recrutement-universi",
+      "id": "c_mu945im1_03syu9e",
+      "publishStatus": "DRAFT",
+      "verificationStatus": "UNVERIFIED",
+      "publishedAt": "2026-09-20T01:04:11.641Z",
+      "views": 0,
+      "isDemo": false,
+      "createdAt": "2026-09-20T01:04:11.641Z",
+      "updatedAt": "2026-09-20T01:04:11.641Z"
+    },
+    "fields": {
+      "title": {
+        "targetField": "title",
+        "value": "Avis de concours pour le recrutement - Université Cadi Ayyad",
+        "status": "AUTO",
+        "sourceField": "title"
+      },
+      "organizationName": {
+        "targetField": "organizationName",
+        "value": "Université Cadi Ayyad de Marrakech",
+        "status": "AUTO",
+        "sourceField": "establishment",
+        "reason": "préférence establishment"
+      },
+      "organizationType": {
+        "targetField": "organizationType",
+        "value": "INSTITUTION",
+        "status": "AUTO",
+        "sourceField": "organizationType",
+        "reason": "Almaster universitaire → INSTITUTION"
+      },
+      "schoolId": {
+        "targetField": "schoolId",
+        "value": null,
+        "status": "REVIEW",
+        "sourceField": "establishment",
+        "reason": "aucune correspondance fiable"
+      },
+      "universityId": {
+        "targetField": "universityId",
+        "value": "univ-uca",
+        "status": "AUTO",
+        "sourceField": "university",
+        "referenceId": "univ-uca",
+        "reason": "correspondance exacte"
+      },
+      "city": {
+        "targetField": "city",
+        "value": "Marrakech",
+        "status": "AUTO",
+        "sourceField": "city",
+        "referenceId": "Marrakech"
+      },
+      "region": {
+        "targetField": "region",
+        "value": "Marrakech-Safi",
+        "status": "AUTO",
+        "sourceField": "region",
+        "referenceId": "Marrakech-Safi"
+      },
+      "domaine": {
+        "targetField": "domaine",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "domain",
+        "reason": "60/150 vides — optional"
+      },
+      "level": {
+        "targetField": "level",
+        "value": "Bac+3",
+        "status": "AUTO",
+        "sourceField": "level"
+      },
+      "year": {
+        "targetField": "year",
+        "value": 2026,
+        "status": "AUTO",
+        "sourceField": "academicYear",
+        "reason": "parseInt YYYY-YYYY → YYYY"
+      },
+      "places": {
+        "targetField": "places",
+        "value": 33,
+        "status": "REVIEW",
+        "sourceField": "pdf table عدد المناصب",
+        "reason": "table reconstruite: 29 lignes, total 33 — valeurs confirmées dans colonne عدد المناصب",
+        "evidence": [
+          {
+            "page": 1,
+            "row": "كلية العلوم القانونية والسياسية مراكش — Gestion des Ressources Humaines",
+            "column": "عدد المناصب",
+            "rawValue": "1",
+            "value": 1,
+            "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+          },
+          {
+            "page": 1,
+            "row": "كلية العلوم القانونية والسياسية مراكش — Finance",
+            "column": "عدد المناصب",
+            "rawValue": "1",
+            "value": 1,
+            "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+          },
+          {
+            "page": 1,
+            "row": "كلية االقتصاد والتدبير مراكش — Finance",
+            "column": "عدد المناصب",
+            "rawValue": "1",
+            "value": 1,
+            "reason": "Valeur située explicitement dans la colonne du nombre de postes"
+          }
+        ]
+      },
+      "description": {
+        "targetField": "description",
+        "value": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخطابي ص.ب : 511 مراكش الهاتف : 0524434813/14 فاكس : 0524434494 البريد اإللك تروني : presidence@ucam.ac.ma الموقع ا إللكترو ني : www.ucam.ac.ma إعالن عن مبار يات توظيف تعلن جامعة القاض ي عياض بمراكش أن ها بصدد اجراء مباريات توظيف في املناصب العمومية ، وذلك ب تاريخ 11 / 10 / 2026 ، حسب الجدول التالي : المؤسسة عدد المناصب التخصص المطلوب اإلطار المطلوب كلية العلوم القانونية والسياسية مراكش 1 Gestion des Ressources Humaines متصرف من الدرجة الثانية 1 Finance متصرف من الدرجة الثانية كلية االقتصاد والتدب",
+        "status": "AUTO",
+        "sourceField": "description",
+        "reason": "150/150, version clean proposée côté preview"
+      },
+      "conditions": {
+        "targetField": "conditions",
+        "value": null,
+        "status": "BLOCKED",
+        "sourceField": "conditions",
+        "reason": "0/150 — obligatoire, REQUIRES_REVIEW, jamais conditions génériques"
+      },
+      "matieres": {
+        "targetField": "matieres",
+        "value": null,
+        "status": "BLOCKED",
+        "sourceField": "matieres",
+        "reason": "jamais fourni — obligatoire, REQUIRES_REVIEW"
+      },
+      "epreuves": {
+        "targetField": "epreuves",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "examDate",
+        "reason": "128/150 vides — générique 3 phases si via Master, sinon MISSING"
+      },
+      "documentsDemandes": {
+        "targetField": "documentsDemandes",
+        "value": null,
+        "status": "BLOCKED",
+        "sourceField": "documents",
+        "reason": "98/150 vides — obligatoire, REQUIRES_REVIEW"
+      },
+      "procedure": {
+        "targetField": "procedure",
+        "value": null,
+        "status": "UNSUPPORTED",
+        "sourceField": "procedure",
+        "reason": "absent flux — optional"
+      },
+      "frais": {
+        "targetField": "frais",
+        "value": null,
+        "status": "UNSUPPORTED",
+        "sourceField": "frais",
+        "reason": "absent flux — optional"
+      },
+      "resultats": {
+        "targetField": "resultats",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "resultsDate",
+        "reason": "optional"
+      },
+      "profil": {
+        "targetField": "profil",
+        "value": null,
+        "status": "UNSUPPORTED",
+        "sourceField": "profil"
+      },
+      "programme": {
+        "targetField": "programme",
+        "value": null,
+        "status": "UNSUPPORTED",
+        "sourceField": "programme"
+      },
+      "registrationStart": {
+        "targetField": "registrationStart",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "openingDate"
+      },
+      "registrationDeadline": {
+        "targetField": "registrationDeadline",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "deadlineDate"
+      },
+      "competitionDate": {
+        "targetField": "competitionDate",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "examDate"
+      },
+      "convocationDate": {
+        "targetField": "convocationDate",
+        "value": null,
+        "status": "UNSUPPORTED",
+        "sourceField": "convocationDate",
+        "reason": "absent flux — optional"
+      },
+      "resultsDate": {
+        "targetField": "resultsDate",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "resultsDate"
+      },
+      "officialWebsite": {
+        "targetField": "officialWebsite",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "officialUrl",
+        "reason": "27/150 sans official — optional"
+      },
+      "registrationUrl": {
+        "targetField": "registrationUrl",
+        "value": null,
+        "status": "MISSING",
+        "sourceField": "registrationUrl"
+      },
+      "sourceUrl": {
+        "targetField": "sourceUrl",
+        "value": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+        "status": "AUTO",
+        "sourceField": "sourceUrl"
+      },
+      "sourceOrganization": {
+        "targetField": "sourceOrganization",
+        "value": "Université Cadi Ayyad de Marrakech",
+        "status": "AUTO",
+        "sourceField": "organization"
+      },
+      "category": {
+        "targetField": "category",
+        "value": "UNIVERSITE",
+        "status": "AUTO",
+        "sourceField": "category",
+        "referenceId": "UNIVERSITE",
+        "reason": "master → UNIVERSITE"
+      },
+      "slug": {
+        "targetField": "slug",
+        "value": "universite-cadi-ayyad-de-marrakech-avis-de-concours-pour-le-recrutement-universi",
+        "status": "AUTO",
+        "reason": "slugify(organizationName-title-year) slice 80"
+      },
+      "id": {
+        "targetField": "id",
+        "value": "c_mu945im1_3mcr4co",
+        "status": "AUTO",
+        "reason": "uid('c') — comme AdminConcours.tsx:219"
+      },
+      "publishStatus": {
+        "targetField": "publishStatus",
+        "value": "DRAFT",
+        "status": "AUTO",
+        "reason": "default DRAFT — comme emptyForm"
+      },
+      "verificationStatus": {
+        "targetField": "verificationStatus",
+        "value": "UNVERIFIED",
+        "status": "AUTO",
+        "reason": "default UNVERIFIED"
+      },
+      "publishedAt": {
+        "targetField": "publishedAt",
+        "value": "2026-09-20T01:04:11.641Z",
+        "status": "AUTO",
+        "reason": "now ISO"
+      },
+      "views": {
+        "targetField": "views",
+        "value": 0,
+        "status": "AUTO",
+        "reason": "0 par défaut"
+      },
+      "isDemo": {
+        "targetField": "isDemo",
+        "value": false,
+        "status": "AUTO"
+      },
+      "createdAt": {
+        "targetField": "createdAt",
+        "value": "2026-09-20T01:04:11.641Z",
+        "status": "AUTO"
+      },
+      "updatedAt": {
+        "targetField": "updatedAt",
+        "value": "2026-09-20T01:04:11.641Z",
+        "status": "AUTO"
+      }
+    },
+    "valid": false,
+    "errors": [
+      "places manquant",
+      "conditions manquant",
+      "matieres manquant",
+      "documentsDemandes manquant"
+    ],
+    "warnings": [
+      "schoolId REVIEW: aucune correspondance fiable"
+    ],
+    "blocked": true,
+    "blockedReasons": [
+      "places manquant (0/150)",
+      "conditions manquant (0/150)",
+      "matieres manquant",
+      "documentsDemandes manquant"
+    ]
+  }
+}

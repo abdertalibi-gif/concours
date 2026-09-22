@@ -20,7 +20,7 @@ import {
   SEED_NOTIFICATIONS, SEED_SCHOOLS, SEED_UNIVERSITIES, SEED_USERS, buildCompetitions
 } from './seed';
 import { resolveInstitutionLogo, OFFICIAL_INSTITUTION_LOGOS } from '../data/institutionLogos';
-import { evaluateCompetitionDates, statusFromCompetition, uid } from './utils';
+import { evaluateCompetitionDates, statusFromCompetition, isCompetitionOpen, uid } from './utils';
 import { initSupabaseSync, pushToSupabase, deleteFromSupabase } from './supabase-db';
 import { getAllMastersAsCompetitions, getMasterAsCompetitionBySlug } from './mastersAdapter';
 
@@ -727,5 +727,5 @@ export function getUserByEmail(email: string): User | undefined {
   return loadDB().users.find((u) => u.email.toLowerCase() === email.trim().toLowerCase());
 }
 
-export { statusFromCompetition };
+export { statusFromCompetition, isCompetitionOpen };
 export type { Ministry, School, University, User };

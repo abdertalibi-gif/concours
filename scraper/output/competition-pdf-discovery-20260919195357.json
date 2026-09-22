@@ -1,0 +1,126 @@
+{
+  "generatedAt": "2026-09-19T19:53:57.729Z",
+  "sourcesConsulted": 12,
+  "pagesCandidates": 12,
+  "pdfCandidates": 5,
+  "stats": {
+    "VALID_CONCOURS_PDF": 1,
+    "NOT_CONCOURS": 0,
+    "SCANNED_REVIEW": 4,
+    "UNKNOWN": 0
+  },
+  "allCandidates": [
+    {
+      "pdfUrl": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-069.pdf",
+      "sourceId": "min-education",
+      "organization": "Ministère de l'Éducation Nationale",
+      "baseUrl": "https://www.men.gov.ma",
+      "pageUrl": "https://www.men.gov.ma",
+      "pageTitle": "",
+      "pageCount": 16,
+      "textLength": 275,
+      "isScanned": true,
+      "hasExploitableText": false,
+      "excerpt": "-- 1 of 16 -- -- 2 of 16 -- -- 3 of 16 -- -- 4 of 16 -- -- 5 of 16 -- -- 6 of 16 -- -- 7 of 16 -- -- 8 of 16 -- -- 9 of 16 -- -- 10 of 16 -- -- 11 of 16 -- -- 12 of 16 -- -- 13 of 16 -- -- 14 of 16 -- -- 15 of 16 -- -- 16 of 16 --",
+      "matchedKeywords": [],
+      "classification": "SCANNED_REVIEW",
+      "reason": "PDF scanné/image (275c, 16p) — pas de texte exploitable"
+    },
+    {
+      "pdfUrl": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-066.pdf",
+      "sourceId": "min-education",
+      "organization": "Ministère de l'Éducation Nationale",
+      "baseUrl": "https://www.men.gov.ma",
+      "pageUrl": "https://www.men.gov.ma",
+      "pageTitle": "",
+      "pageCount": 10,
+      "textLength": 167,
+      "isScanned": true,
+      "hasExploitableText": false,
+      "excerpt": "-- 1 of 10 -- -- 2 of 10 -- -- 3 of 10 -- -- 4 of 10 -- -- 5 of 10 -- -- 6 of 10 -- -- 7 of 10 -- -- 8 of 10 -- -- 9 of 10 -- -- 10 of 10 --",
+      "matchedKeywords": [],
+      "classification": "SCANNED_REVIEW",
+      "reason": "PDF scanné/image (167c, 10p) — pas de texte exploitable"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "baseUrl": "https://www.uca.ma",
+      "pageUrl": "https://www.uca.ma",
+      "pageTitle": "",
+      "pageCount": 3,
+      "textLength": 8290,
+      "isScanned": false,
+      "hasExploitableText": true,
+      "excerpt": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخطابي ص.ب : 511 مراكش الهاتف : 0524434813/14 فاكس : 0524434494 البريد اإللك تروني : presidence@ucam.ac.ma الموقع ا إللكترو ني : www.ucam.ac.ma إعالن عن مبار يات توظيف تعلن جامعة القاض ي عياض بمراكش أن",
+      "matchedKeywords": [
+        "recrutement",
+        "مباراة",
+        "توظيف",
+        "concours"
+      ],
+      "classification": "VALID_CONCOURS_PDF",
+      "reason": "preuve textuelle: recrutement, مباراة, توظيف, concours (score 2/5)"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "baseUrl": "https://www.uca.ma",
+      "pageUrl": "https://www.uca.ma",
+      "pageTitle": "",
+      "pageCount": 2,
+      "textLength": 28,
+      "isScanned": true,
+      "hasExploitableText": false,
+      "excerpt": "-- 1 of 2 -- -- 2 of 2 --",
+      "matchedKeywords": [
+        "concours"
+      ],
+      "classification": "SCANNED_REVIEW",
+      "reason": "PDF scanné/image (28c, 2p) — pas de texte exploitable"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "baseUrl": "https://www.uca.ma",
+      "pageUrl": "https://www.uca.ma",
+      "pageTitle": "",
+      "pageCount": 2,
+      "textLength": 28,
+      "isScanned": true,
+      "hasExploitableText": false,
+      "excerpt": "-- 1 of 2 -- -- 2 of 2 --",
+      "matchedKeywords": [
+        "concours"
+      ],
+      "classification": "SCANNED_REVIEW",
+      "reason": "PDF scanné/image (28c, 2p) — pas de texte exploitable"
+    }
+  ],
+  "top5": [
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "baseUrl": "https://www.uca.ma",
+      "pageUrl": "https://www.uca.ma",
+      "pageTitle": "",
+      "pageCount": 3,
+      "textLength": 8290,
+      "isScanned": false,
+      "hasExploitableText": true,
+      "excerpt": "المملكة ال مغربية جامعة القاضي عياض - مراكش ال رئاسة جامعة القاضي عياض - الرئاسة شارع عبد الكربم الخطابي ص.ب : 511 مراكش الهاتف : 0524434813/14 فاكس : 0524434494 البريد اإللك تروني : presidence@ucam.ac.ma الموقع ا إللكترو ني : www.ucam.ac.ma إعالن عن مبار يات توظيف تعلن جامعة القاض ي عياض بمراكش أن",
+      "matchedKeywords": [
+        "recrutement",
+        "مباراة",
+        "توظيف",
+        "concours"
+      ],
+      "classification": "VALID_CONCOURS_PDF",
+      "reason": "preuve textuelle: recrutement, مباراة, توظيف, concours (score 2/5)"
+    }
+  ]
+}

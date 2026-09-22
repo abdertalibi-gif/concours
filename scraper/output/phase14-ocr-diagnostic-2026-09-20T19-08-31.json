@@ -1,0 +1,125 @@
+{
+  "phase": 14,
+  "status": "DIAGNOSTIC_COMPLETE",
+  "engine": "tesseract.js",
+  "documents": [
+    {
+      "pdfUrl": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-069.pdf",
+      "sourceId": "min-education",
+      "ocrPages": 1,
+      "ocrStatus": "SUCCESS",
+      "avgConfidence": 84,
+      "textLength": 0,
+      "keywordsFound": [],
+      "classification": {
+        "keywordDetected": false,
+        "headerDetected": false,
+        "placesColumnDetected": false,
+        "diagnosticReason": "NO_TABLE_KEYWORD"
+      },
+      "originalResult": null,
+      "normalizedResult": null,
+      "diagnosticReason": "NO_TABLE_KEYWORD",
+      "warnings": [
+        "aucun en-tête nombre de postes détecté (عدد المناصب / nombre de postes / …)"
+      ]
+    },
+    {
+      "pdfUrl": "https://www.men.gov.ma/sites/default/files/2026-07/%D9%85%D8%B0%D9%83%D8%B1%D8%A9%20%D8%B1%D9%82%D9%85%2026-066.pdf",
+      "sourceId": "min-education",
+      "ocrPages": 1,
+      "ocrStatus": "SUCCESS",
+      "avgConfidence": 84,
+      "textLength": 0,
+      "keywordsFound": [],
+      "classification": {
+        "keywordDetected": false,
+        "headerDetected": false,
+        "placesColumnDetected": false,
+        "diagnosticReason": "NO_TABLE_KEYWORD"
+      },
+      "originalResult": null,
+      "normalizedResult": null,
+      "diagnosticReason": "NO_TABLE_KEYWORD",
+      "warnings": [
+        "aucun en-tête nombre de postes détecté (عدد المناصب / nombre de postes / …)"
+      ]
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+      "sourceId": "univ-uca",
+      "ocrPages": 1,
+      "ocrStatus": "SUCCESS",
+      "avgConfidence": 80,
+      "textLength": 0,
+      "keywordsFound": [],
+      "classification": {
+        "keywordDetected": false,
+        "headerDetected": false,
+        "placesColumnDetected": false,
+        "diagnosticReason": "UNKNOWN"
+      },
+      "originalResult": null,
+      "normalizedResult": null,
+      "diagnosticReason": "UNKNOWN",
+      "warnings": [
+        "faux positifs exclus: nombre '7' sans cadre/grade dans: أن يكونوا مارسوا مام رئيس مصلحة. غير أنه | nombre '1' sans cadre/grade dans: طلب خط للترشيح موجه إلى السيد رئيس الجام | nombre '2' sans cadre/grade dans: رسالة ‎pi‏ حول دوافع الترشيح للمنصب المط | nombre '7' sans cadre/grade dans: برنامج العمل والنهجية التي يقترما المتزش"
+      ]
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+      "sourceId": "univ-uca",
+      "ocrPages": 1,
+      "ocrStatus": "SUCCESS",
+      "avgConfidence": 80,
+      "textLength": 0,
+      "keywordsFound": [],
+      "classification": {
+        "keywordDetected": false,
+        "headerDetected": false,
+        "placesColumnDetected": false,
+        "diagnosticReason": "UNKNOWN"
+      },
+      "originalResult": null,
+      "normalizedResult": null,
+      "diagnosticReason": "UNKNOWN",
+      "warnings": [
+        "faux positifs exclus: nombre '7' sans cadre/grade dans: أن يكونوا مارسوا مام رئيس مصلحة. غير أنه | nombre '1' sans cadre/grade dans: طلب خط للترشيح موجه إلى السيد رئيس الجام | nombre '2' sans cadre/grade dans: رسالة ‎pi‏ حول دوافع الترشيح للمنصب المط | nombre '7' sans cadre/grade dans: برنامج العمل والنهجية التي يقترما المتزش"
+      ]
+    }
+  ],
+  "stats": {
+    "ocrDocuments": 4,
+    "keywordDetections": 0,
+    "headersDetected": 0,
+    "candidateRows": 0,
+    "confirmedRows": 0,
+    "tablesDetected": 0,
+    "tablesReview": 0,
+    "tablesMissing": 0
+  },
+  "regression": {
+    "ucaRows": 29,
+    "ucaPlaces": 33,
+    "ucaStatus": "REVIEW"
+  },
+  "rootCause": {
+    "issue": "STRONG_PHRASES not matching OCR text",
+    "detail": "OCR text contains \"مناصب\" in context of department-head position announcements, but NOT \"عدد المناصب\" or \"nombre de postes\". The STRONG_PHRASES in competitionTable.ts require exact match.",
+    "keywordsExpected": [
+      "عدد المناصب",
+      "عدد المناصب المالية",
+      "nombre de postes",
+      "nombre de places"
+    ],
+    "keywordsFoundInOCR": [],
+    "phase13PagesPerPdf": 1,
+    "recommendation": "Increase pages per PDF in OCR adapter; verify document type matches competition-table format."
+  },
+  "writes": {
+    "database": 0,
+    "supabase": 0,
+    "localStorage": 0,
+    "forms": 0
+  }
+}

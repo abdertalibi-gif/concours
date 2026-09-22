@@ -1,5 +1,197 @@
 [
   {
+    "id": "log-1790084979349-ngw7",
+    "sourceId": "src-1",
+    "action": "UPSERT",
+    "message": "Concours \"Concours Test Généré par IA\" enregistré (CREATE).",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:39.349Z"
+  },
+  {
+    "id": "log-1790084979340-g67n",
+    "sourceId": "src-1",
+    "action": "DETECT",
+    "message": "Analyse IA en cours (255 liens suspects trouvés)...",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:39.340Z"
+  },
+  {
+    "id": "log-1790084979298-licq",
+    "sourceId": "src-1",
+    "action": "DETECT",
+    "message": "Nouveau contenu détecté. Analyse en cours...",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:39.298Z"
+  },
+  {
+    "id": "log-1790084978575-9inr",
+    "sourceId": "src-1",
+    "action": "SCAN_START",
+    "message": "Début du scan de Almaster Maroc (https://www.almaster-maroc.com/)",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:38.575Z"
+  },
+  {
+    "id": "log-1790084960279-i9ws",
+    "sourceId": "src-5",
+    "action": "ERROR",
+    "message": "Erreur HTTP 403",
+    "level": "ERROR",
+    "createdAt": "2026-09-22T13:49:20.279Z"
+  },
+  {
+    "id": "log-1790084959819-owc3",
+    "sourceId": "src-5",
+    "action": "SCAN_START",
+    "message": "Début du scan de Orientation Chabab (https://www.orientation-chabab.com/)",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:19.819Z"
+  },
+  {
+    "id": "log-1790084959776-qcab",
+    "sourceId": "src-4",
+    "action": "UPSERT",
+    "message": "(DRY RUN) Mode simulation. Action évitée: UPSERT de \"Concours Test Généré par IA\"",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:19.776Z"
+  },
+  {
+    "id": "log-1790084959772-quvl",
+    "sourceId": "src-4",
+    "action": "DETECT",
+    "message": "Analyse IA en cours (25 liens suspects trouvés)...",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:19.772Z"
+  },
+  {
+    "id": "log-1790084959711-n64i",
+    "sourceId": "src-4",
+    "action": "DETECT",
+    "message": "Nouveau contenu détecté. Analyse en cours...",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:19.711Z"
+  },
+  {
+    "id": "log-1790084958976-lzqr",
+    "sourceId": "src-4",
+    "action": "SCAN_START",
+    "message": "Début du scan de 9rayti (https://www.9rayti.com/)",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:18.976Z"
+  },
+  {
+    "id": "log-1790084958926-1a5f",
+    "sourceId": "src-3",
+    "action": "ERROR",
+    "message": "Serveur inaccessible ou délai dépassé (Timeout). Le site de l'université est peut-être hors ligne.",
+    "level": "ERROR",
+    "createdAt": "2026-09-22T13:49:18.926Z"
+  },
+  {
+    "id": "log-1790084958016-qil8",
+    "sourceId": "src-3",
+    "action": "SCAN_START",
+    "message": "Début du scan de Master Maroc (https://master-maroc.com/)",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:18.016Z"
+  },
+  {
+    "id": "log-1790084957986-idew",
+    "sourceId": "src-2",
+    "action": "UPSERT",
+    "message": "(DRY RUN) Mode simulation. Action évitée: UPSERT de \"Concours Test Généré par IA\"",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:17.986Z"
+  },
+  {
+    "id": "log-1790084957983-nc8d",
+    "sourceId": "src-2",
+    "action": "DETECT",
+    "message": "Analyse IA en cours (35 liens suspects trouvés)...",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:17.983Z"
+  },
+  {
+    "id": "log-1790084957887-l7gn",
+    "sourceId": "src-2",
+    "action": "DETECT",
+    "message": "Nouveau contenu détecté. Analyse en cours...",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:17.888Z"
+  },
+  {
+    "id": "log-1790084957191-nts3",
+    "sourceId": "src-2",
+    "action": "SCAN_START",
+    "message": "Début du scan de Supmaroc (https://www.supmaroc.com/)",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:17.191Z"
+  },
+  {
+    "id": "log-1790084957147-mo5g",
+    "sourceId": "src-1",
+    "action": "UPSERT",
+    "message": "(DRY RUN) Mode simulation. Action évitée: UPSERT de \"Concours Test Généré par IA\"",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:17.147Z"
+  },
+  {
+    "id": "log-1790084957144-7bsa",
+    "sourceId": "src-1",
+    "action": "DETECT",
+    "message": "Analyse IA en cours (255 liens suspects trouvés)...",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:17.144Z"
+  },
+  {
+    "id": "log-1790084957064-y21r",
+    "sourceId": "src-1",
+    "action": "DETECT",
+    "message": "Nouveau contenu détecté. Analyse en cours...",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:17.064Z"
+  },
+  {
+    "id": "log-1790084956211-hqy9",
+    "sourceId": "src-1",
+    "action": "SCAN_START",
+    "message": "Début du scan de Almaster Maroc (https://www.almaster-maroc.com/)",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:49:16.211Z"
+  },
+  {
+    "id": "log-1790084516935-jr4o",
+    "sourceId": "src-1",
+    "action": "UPSERT",
+    "message": "(DRY RUN) Mode simulation. Action évitée: UPSERT de \"Concours Test Généré par IA\"",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:41:56.935Z"
+  },
+  {
+    "id": "log-1790084516931-cr0k",
+    "sourceId": "src-1",
+    "action": "DETECT",
+    "message": "Analyse IA en cours (255 liens suspects trouvés)...",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:41:56.931Z"
+  },
+  {
+    "id": "log-1790084516747-1y2f",
+    "sourceId": "src-1",
+    "action": "DETECT",
+    "message": "Nouveau contenu détecté. Analyse en cours...",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:41:56.747Z"
+  },
+  {
+    "id": "log-1790084515639-m8ok",
+    "sourceId": "src-1",
+    "action": "SCAN_START",
+    "message": "Début du scan de Almaster Maroc (https://www.almaster-maroc.com/)",
+    "level": "INFO",
+    "createdAt": "2026-09-22T13:41:55.639Z"
+  },
+  {
     "id": "log-1789406453807-xial",
     "sourceId": "src-1",
     "action": "UPSERT",
