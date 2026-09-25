@@ -8,10 +8,10 @@ import {
 
 const router = express.Router();
 
-const ai = new GoogleGenAI({ 
-    apiKey: process.env.GEMINI_API_KEY || 'dummy-key',
+const ai = process.env.GEMINI_API_KEY ? new GoogleGenAI({ 
+    apiKey: process.env.GEMINI_API_KEY,
     httpOptions: { headers: { 'User-Agent': 'aistudio-build' } }
-});
+}) : null;
 
 // GET /sources
 router.get('/sources', async (req, res) => {
@@ -250,6 +250,9 @@ router.get('/logs', async (req, res) => {
 
 // Extraction logic with Gemini
 async function extractWithGemini(aiInstance: any, pageText: string, linksText: string) {
+    if (!aiInstance) {
+        throw new Error('Gemini AI instance not configured. Set GEMINI_API_KEY.');
+    }
     const prompt = `Voici le texte d'une page web d'un établissement marocain et des liens détectés.\n\nTEXTE:\n${pageText}\n\nLIENS:\n${linksText}\n\nExtrais les détails de la publication de concours (s'il y en a une). Retourne STRICTEMENT un objet JSON. Si rien n'est trouvé, mets "isRelevant": false.`;
     
     const responseSchema: Schema = {

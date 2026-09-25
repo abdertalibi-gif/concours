@@ -111,7 +111,7 @@ export async function pullFromSupabase(): Promise<DatabaseShape | null> {
       fetchTable<Exam>('exams'),
       fetchTable<DocItem>('documents'),
       fetchTable<Course>('courses'),
-      fetchTable<User>('app_users'),
+      fetchTable<User>('profiles'),
       fetchTable<Favorite>('favorites'),
       fetchTable<Follow>('follows'),
       fetchTable<AppNotification>('notifications'),

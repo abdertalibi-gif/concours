@@ -5,7 +5,11 @@ import { hashPassword } from '../../src/lib/utils.js';
 import crypto from 'crypto';
 
 const router = express.Router();
-const JWT_SECRET = process.env.JWT_SECRET || 'fallback_secret_for_dev_only_concours_maroc';
+const JWT_SECRET = process.env.JWT_SECRET || '';
+
+if (!JWT_SECRET) {
+  console.warn('[Auth] JWT_SECRET not configured. Password reset links will not work.');
+}
 
 // Utilitaire pour signer un token (remplace jwt.sign pour éviter une dépendance supplémentaire)
 function signToken(email: string) {

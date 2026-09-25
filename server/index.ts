@@ -15,7 +15,7 @@ dotenv.config();
 
 // Guard DATABASE_URL to prevent Prisma datasource validation errors (P1012)
 if (!process.env.DATABASE_URL || (!process.env.DATABASE_URL.startsWith('postgresql://') && !process.env.DATABASE_URL.startsWith('postgres://'))) {
-  process.env.DATABASE_URL = 'postgresql://postgres:postgres@localhost:5432/concoursmaroc?schema=public';
+  console.warn('[Server] DATABASE_URL not configured. Server will use Prisma default connection.');
 }
 
 export const prisma = new PrismaClient();
