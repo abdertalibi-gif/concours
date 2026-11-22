@@ -1,0 +1,3408 @@
+{
+  "phase": "17",
+  "phaseLabel": "Deep Official Competition PDF Discovery — découverte profonde bornée (préview)",
+  "runType": "PREVIEW_ONLY",
+  "runDate": "2026-09-23T17:35:02.427Z",
+  "status": "COMPLETE",
+  "statusReason": null,
+  "discovery": {
+    "sourcesSelected": 8,
+    "pagesVisited": 18,
+    "pagesOk": 16,
+    "internalLinks": 1932,
+    "relevantPages": 32,
+    "pdfsDiscovered": 273,
+    "pdfsSelected": 5,
+    "candidatesScored": 273
+  },
+  "candidates": [
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/Gr5xTI77MDHaVSrKpzNUKhudmg5Fpifv8OjaL0s3.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-18102026",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-11102026",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/KwvWlo7cahgqfmMgqjldEDAC6kgQ9OSHvspvILAl.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/pages/9QgR6bkXYRtqQdI3Sy8VydgxtjRKkh1zdqqTLHFq.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/page/appels-a-projets-finances-par-luniversite",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/pages/D5HKUmnVhFPDR2wJYMPGx9P7Vl2jYUjVHmf4G9py.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/page/appels-a-projets-finances-par-luniversite",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/pages/1P1sh2RdIh3hSLHrUlRelgJUoHaaUGMmXc6H80qu.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/page/appels-a-projets-finances-par-luniversite",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/pages/f30yLZyRjHM10VeEshWnzZxaGQYBjnqtAOAFyRig.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/page/appels-a-projets-finances-par-luniversite",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/pages/8eNtxkldLB9bRPuWU4dExzIqRMJ8yOtt9oGdra46.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/page/appels-a-projets-finances-par-luniversite",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/pages/NrYP8C22UWv4yQLPIPau4qkk5M1EDIntQesZ9XUf.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/page/appels-a-projets-finances-par-luniversite",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/pages/0iZzeDQN5vkA2SNbQb43GTplm5MO4rFwjxaNIS8Y.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/page/appels-a-projets-finances-par-luniversite",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/pages/vduDOTNZn8QUJ4f8H3OwoKNyhPYoi5gDIpuLfmiZ.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/page/appels-a-projets-finances-par-luniversite",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/OVG2ncHjxAvjbeCjQZG9k00bK5bU9LNs6RvQbRyf.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidature-pour-le-recrutement-dune-chercheure-postdoctorale-dans-le-cadre-du-projet-prima-synthcrop",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/Wz4H8IkbuAGzm8eaXyIqtbrGDDGp5PTE9tvdBEqK.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidature-pour-le-recrutement-dune-post-doctorante-en-instrumentation-et-hydrologie-operationnelle-appliquee-au-pilotage-de-lirrigation",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/2026-09/alan-bshan-aadt-fth-mnst-altsjyl-alqbly-llmwsm-aljamy-2026-2027.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/actualites/annonces-concours/alan-bshan-aadt-fth-mnst-altsjyl-alqbly-llmwsm-aljamy-2026-2027",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/2026-07/alan-n-fth-bab-altrshyh-lwlwj-almdrst-allya-lltknwlwjya-balhsymt-brsm-alsnt-aljamyt-2026-2027.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/actualites/annonces-concours/alan-n-fth-bab-altrshyh-lwlwj-almdrst-allya-lltknwlwjya-balhsymt-brsm",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/2025-04/cps-1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/appels-offres",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_et-takaouy-chaimaa.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_assafi-abdeslam.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_tabarnoust-essaadia.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/scan_20260915_102916.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/1-avis-de-soutenance-shadyt-alazrq.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/1-avis-de-soutenance-amymt-aldswqy.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/st-mme-taibi-soumaya-dt-pr-mahrach-mohamed-.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/scan_20260915_102504.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "UNKNOWN",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_touzani-abdelaziz.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_ben-salah-amina.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_boudaa-samira.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ouazri-chaimae.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-madou-kaoutar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_assiouan-kamal.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ezzerrifi-amrani-ismail.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_jadouli-ayoub.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_bouchikhi-ahmed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_taia-halima.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_mhamedi-abdelilah-1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_khachani-raoya.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_assawab-rachida.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_atchike-akossiwa-paula.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_bouali-rime.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_gaha-anouar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_bouchikhi-abdelmonaim.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bouzini-ghizlan.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-ouahabi-sara.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_m.-jaouad-safia.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_ach-chakhar-manal.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_askam-abdelhakim.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-hachhach-jihad.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_jellal-nadia.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ait-dada-alla-said.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_abouhssous-khadija.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-karkraoui-mohammed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_ohamouddou-mohamed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_slimani-khadija.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_sayyouri-adil.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_lakhal-mohamed-el-amine.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_el-habti-fatima-ezzahraa.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_lakchouch-noaman.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_kaddouri-samira.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_mars-naima.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_el-hankouri-yousra.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_taib-chaymae.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_badri-maroua.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-barraa-ayoub.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_khammal-salim-1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_nor-mohammed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_rouibaa-hajar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-miski-younes-1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bouafia-mohammed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-kouffi-abdelaaziz.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_abdelouahabi-fahd.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_lyarfi-hanane.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_hamiche-fatima-zahra.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_hadouachi-maryam.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_aasoum-nouhaila.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_arbai-kenza.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_raissouni-jaber.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_zeroual-imane.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-asri-fadoua.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bakhadda-mouhssin-1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_ahaik-islam.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_charkaoui-achraf.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_amri-soumaya.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_makan-mustapha.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bailoul-youssef.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_chidoud-hassan.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_qalmoun-abderrahmane_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_touaf-mounia.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_qalmoun-abderrahmane.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_hassani-allaf-abdelhay.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bentayeb-youness.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_chihi-hasnae.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_rhziel-fatima-zahrae.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_bakhada-mohamed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_bouifden-rafik.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_nom_tribak-ferdaous.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-miski-younes.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_admeur-smail.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_mechnine-abdelilah.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_sadoq-badr-edine.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_yahyaoui-mohammed_vf.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_ziani-hanan.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bouzrarf-khadija.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_zantar-yousra.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_idiri-soulaimane.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_laakel-hemdanou-abderrafik.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_hiri-mustafa.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_kabbadj-kaoutar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_dardabi-chaimae.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_arinate-mohamed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_sekkat-salma.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_boudajbir-chaimaa.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/_avis-soutenance_these_fr_el-nouino-houda.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_abibou-rachid.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-madany-monsif.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_hourmate-allah-maria.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-yessefi-abderrahim.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ez-zari-ayoub.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_abouabdallah-amina.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_raiss-inssaf.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_hayoun-iman.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_bel-hajjam-rafia.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_hraich-abdellatif.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_yatim-fatima-ezzahra.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_zakaria-mouhssine.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_lahyani-houda.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_khrouch-sarah.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-haddade-oualid.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_jabri-fatima-ezzahrae.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_english_mariam-el-ghazi.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_aoulalay-ayoub.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_taidi-yousra.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bais-abdellah.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_el-janathi-aymane.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bais-abdellah_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_english_jihad-ben-yamoun.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_felloul-zakaria.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_kerouich-abdelilah.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_hafidi-hani.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_felloul-zakaria_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_kerouich-abdelilah_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_elqabli-zineb.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-mernissi-yahya.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-idrissi-sofyan_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-hammaji-mohamed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ennasar-samya.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-hamri-ahmed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_masmoudi-wissal.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-de-soutenance_achache-mohamed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_belahsen-abdelhadi.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_daoud-mohamed-amine.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-mahroussi-mohamed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_charif-omar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_errezgouny-abderrachid.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_belaid-hassan.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bekkour-fouad.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-baji-otman.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_m.-bougrine-omar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_rachidi-fatine.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_dore-pascal.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_hammouti-marwane.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_loukili-soumaya.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ouhtit-abdelkader.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_es-smairi-abderrazzak.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_kaddouri-hicham.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_mme.-cheker-zineb.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ahidar-naoufal.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_khaddor-yasser.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_el-karmoudi-yahya.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_abroun-soundouss.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_bekkay-haouari-khadija.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_jamous-kaoutar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_doukale-daief-mourad.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_hadek-ali.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ez-zahouani-badia.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-boudammoussi-mustapha.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_maataoui-yassir_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_yerrou-randa.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_oulad-belayachi-soumaya.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_ahnouch-mohammed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_baroud-soumia_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_baroud-soumia.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ed-dakiri-soukaina.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_mdarhri-yousra.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_en-nhili-larbi.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_abdel-wedoud-mohamed-el-emine.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_allouch-ali-1_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_allouch-ali-1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-ammouri-abdessamad.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_el-kouari-oumaima.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_chakri-said.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bouhsaien-loubna.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_raissouni-fatima-zahra.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_outiskt-mohamed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_oussouaddi-mustapha_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_drissi-el-bouzaidi-mohamed_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-oihabi-maryem_1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_marrakchi-nisrine.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_satti-hicham.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_rghioui-hamza.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ndama-oussama.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_korodowou-ilyace.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_bazza-houssam_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fakih-lanjri-hajar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_jeniah-hajar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_aghziel-sadfa-ferdaous.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_hasna-bouazzati.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_oumaima-nayat-ali.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_hamdi-abdeljalil.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_mohammed-ahmed-moqbel-sale.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_nait-hamou-yousra.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_moutahir-fatima-ezzahrae.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_aghanim-amina.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_obbadi-anouar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_abbassi-kaoutar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_m.-diallo-mamadou-aliou-ii.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_el-abbadi_badr-eddine.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_english_mariam-ramdi.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_mniai-ayoub_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ettakifi-hajar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_abdennour-omar_vf.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_kemouss-hassane.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_abdennour-omar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_english_omar-bouazizi.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ahsissene-safae.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_chelliq-ikram.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ahdia-achabbak.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_briache-ayoub.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_zerrouk-zohra_vf-1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_zerrouk-zohra_vf.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_dnaya-fatima-ezzahra.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_english_mohamed-el-aabbas.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/ens_avis-soutenance_these_fr_-nadir-zaibout.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ousman-brahim-mhamet.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_kayouh-nabil.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_rhylane-hajar.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/ensa-tanger_avis-soutenance_these_eng_moullamri-mouna.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_en-nagre-khalid_vf.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-moumen-hamid.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_mfedal-akdi_0.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_boubekraoui-hamid.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_el-bakkioui-khalid.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_fatima-zahra-yamani.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_jebrane-walid-1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/fs_avis-soutenance_these_eng_bouazzati-hasna.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_nayat-ali-oumaima.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_zerouali-rajae.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_mokhtari-narjisse.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/fst-tanger_avis-soutenance_these_fr_mokhtari-narjisse.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_laroui-sara.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_belhaj-fatima.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_bousla-mohamed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/fst-tanger_avis-soutenance_these_fr_khaddor-ranya.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_kadi-chaimae.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_ammaz-aziz.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_jariri-nouhaila.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_reklaoui-laila.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_belhaj-fatima-1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_yahya-mohammed-ali-mohammed.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_english_brahim-oubahaouali.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_benmasaoud-bilal.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_salhi-mouna.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_chentouf-sanae-1.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_ouzakar-sanaa.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_berriban-iman.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_nnouayti-abdelhamid.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_el-haddadi-oumaima.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_el-wahabi-abdelhamid.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_elmahraoui-rachid.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_belaatar-mohjat.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_eng_talimi-hasnaa.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    },
+    {
+      "pdfUrl": "https://www.uae.ac.ma/sites/default/files/inline-files/avis-soutenance_these_fr_youssef-el-moussati.pdf",
+      "sourceId": "univ-uae",
+      "organization": "Université Abdelmalek Essaâdi",
+      "official": true,
+      "discoveryPath": "/concours",
+      "discoveryPage": "https://www.uae.ac.ma/avis-de-soutenance",
+      "classification": "NOT_CONCOURS",
+      "reason": "classification URL"
+    }
+  ],
+  "analyzed": [
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/Gr5xTI77MDHaVSrKpzNUKhudmg5Fpifv8OjaL0s3.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-18102026",
+      "score": 0,
+      "scoreReasons": [],
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "pageCount": 3,
+      "isScanned": false,
+      "textLength": 7396,
+      "extracted": true,
+      "status": "POSSIBLE_CONCOURS_PDF",
+      "table": {
+        "detected": true,
+        "page": 1,
+        "rowsLength": 15,
+        "rows": [
+          {
+            "institution": "كلية االقتصاد والتدبري مراكش",
+            "places": 1,
+            "speciality": "Logistique",
+            "grade": "متصرف من الدر جة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري مراكش",
+            "places": 1,
+            "speciality": "Sport",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري مراكش",
+            "places": 1,
+            "speciality": "Culture",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري قلعة السراغنة",
+            "places": 1,
+            "speciality": "Statistique",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري قلعة السراغنة",
+            "places": 1,
+            "speciality": "Génie Civil تقين من",
+            "grade": "الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري قلعة السراغنة",
+            "places": 1,
+            "speciality": "Développement Informatique تقين من",
+            "grade": "الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم اإلنسانية واالجتماعية اسفي",
+            "places": 1,
+            "speciality": "Sciences de l’éducation",
+            "grade": "متصرف",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري قلعة السراغنة",
+            "places": 1,
+            "speciality": "Réseaux informatiques تقين من",
+            "grade": "الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري قلعة السراغنة",
+            "places": 1,
+            "speciality": "Génie Civil",
+            "grade": "مهندس دولة من الدرجة االول",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري قلعة السراغنة",
+            "places": 1,
+            "speciality": "Droit privé",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري قلعة السراغنة",
+            "places": 1,
+            "speciality": "Sport",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري قلعة السراغنة",
+            "places": 1,
+            "speciality": "Culture",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبري قلعة السراغنة",
+            "places": 1,
+            "speciality": "Statistique",
+            "grade": "مهندس دولة من الدرجة االول",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم التطبيقية اسفي",
+            "places": 1,
+            "speciality": "Biologie",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم التطبيقية اسفي",
+            "places": 1,
+            "speciality": "Chimie",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          }
+        ]
+      },
+      "places": {
+        "status": "REVIEW",
+        "total": 15,
+        "evidence": [
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tLogistique\\tمتصرف من الدر\\tجة الثانية\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري مراكش\",\"speciality\":\"Logistique\",\"grade\":\"متصرف من الدر جة الثانية\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSport\\tمتصرف من الدرجة\\tالثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري مراكش\",\"speciality\":\"Sport\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tCulture\\tمتصرف من الدرجة\\tالثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري مراكش\",\"speciality\":\"Culture\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tStatistique\\tمتصرف من الدرجة الثانية\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري قلعة السراغنة\",\"speciality\":\"Statistique\",\"grade\":\"متصرف من الدرجة الثانية\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tGénie Civil\\tتقين من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري قلعة السراغنة\",\"speciality\":\"Génie Civil تقين من\",\"grade\":\"الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tDéveloppement Informatique\\tتقين من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري قلعة السراغنة\",\"speciality\":\"Développement Informatique تقين من\",\"grade\":\"الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"كلية العلوم اإلنسانية واالجتماعية اسفي\\t1\\tSciences de l’éducation\\tمتصرف من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم اإلنسانية واالجتماعية اسفي\",\"speciality\":\"Sciences de l’éducation\",\"grade\":\"متصرف\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tRéseaux informatiques\\tتقين من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري قلعة السراغنة\",\"speciality\":\"Réseaux informatiques تقين من\",\"grade\":\"الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tGénie Civil\\tمهندس دولة من الدرجة\\tاالول\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري قلعة السراغنة\",\"speciality\":\"Génie Civil\",\"grade\":\"مهندس دولة من الدرجة االول\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tDroit privé\\tمتصرف من الدرجة الثانية\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري قلعة السراغنة\",\"speciality\":\"Droit privé\",\"grade\":\"متصرف من الدرجة الثانية\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSport\\tمتصرف من الدرجة الثانية\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري قلعة السراغنة\",\"speciality\":\"Sport\",\"grade\":\"متصرف من الدرجة الثانية\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tCulture\\tمتصرف من الدرجة\\tالثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري قلعة السراغنة\",\"speciality\":\"Culture\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tStatistique\\tمهندس دولة من الدرجة االول\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبري قلعة السراغنة\",\"speciality\":\"Statistique\",\"grade\":\"مهندس دولة من الدرجة االول\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tBiologie\\tمتصرف من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم التطبيقية اسفي\",\"speciality\":\"Biologie\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tChimie\\tمتصرف من\\tالدرجة\\tالثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم التطبيقية اسفي\",\"speciality\":\"Chimie\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}"
+        ],
+        "confidence": "MISSING",
+        "page": 1,
+        "raw": "15"
+      },
+      "evidence": {
+        "institution": {
+          "value": "كلية االقتصاد والتدبري مراكش",
+          "page": 1,
+          "raw": "1\tLogistique\tمتصرف من الدر\tجة الثانية",
+          "confidence": "MISSING"
+        },
+        "speciality": {
+          "value": "Logistique",
+          "page": 1,
+          "raw": "1\tLogistique\tمتصرف من الدر\tجة الثانية",
+          "confidence": "MISSING"
+        },
+        "grade": {
+          "value": "متصرف من الدر جة الثانية",
+          "page": 1,
+          "raw": "1\tLogistique\tمتصرف من الدر\tجة الثانية",
+          "confidence": "MISSING"
+        },
+        "places": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        }
+      },
+      "decision": "REVIEW",
+      "decisionReasons": [
+        "table détectée mais places REVIEW — preuve à vérifier"
+      ],
+      "warnings": []
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-11102026",
+      "score": 0,
+      "scoreReasons": [],
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "pageCount": 3,
+      "isScanned": false,
+      "textLength": 8290,
+      "extracted": true,
+      "status": "POSSIBLE_CONCOURS_PDF",
+      "table": {
+        "detected": true,
+        "page": 1,
+        "rowsLength": 29,
+        "rows": [
+          {
+            "institution": "كلية العلوم القانونية والسياسية مراكش",
+            "places": 1,
+            "speciality": "Gestion des Ressources Humaines",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم القانونية والسياسية مراكش",
+            "places": 1,
+            "speciality": "Finance",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبير مراكش",
+            "places": 1,
+            "speciality": "Finance",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبير مراكش",
+            "places": 1,
+            "speciality": "Comptabilité et Finance",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبير مراكش",
+            "places": 3,
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم القانونية والسياسية قلعة السراغنة",
+            "places": 2,
+            "speciality": "القانون العام",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم القانونية والسياسية قلعة السراغنة",
+            "places": 1,
+            "speciality": "Développement Informatique",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+            "places": 1,
+            "speciality": "Finance",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+            "places": 1,
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبير قلعة السراغنة",
+            "places": 1,
+            "speciality": "Gestion des entreprises",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم التطبيقية اسفي",
+            "places": 1,
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم التطبيقية اسفي",
+            "places": 1,
+            "speciality": "Développement Informatique",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم التطبيقية اسفي",
+            "places": 2,
+            "speciality": "Sciences Economiques et Gestion",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+            "places": 1,
+            "speciality": "Gestion des entreprises",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+            "places": 1,
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+            "places": 1,
+            "speciality": "Informatique",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم اإلن سانية واالجتماعية اسفي",
+            "places": 1,
+            "speciality": "Comptabilité et Finance",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية اللغات واالداب والفنون اسفي",
+            "places": 1,
+            "speciality": "Gestion des entreprises",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية اللغات واالداب والفنون اسفي",
+            "places": 1,
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية اللغات واالداب والفنون اسفي",
+            "places": 1,
+            "speciality": "Développement Informatique",
+            "grade": "متصرف من الدرجة الثانية",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية اللغات واالداب والفنون اسفي",
+            "places": 1,
+            "speciality": "Sciences Economiques et Gestion",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم القانونية والسياسية اسفي",
+            "places": 1,
+            "speciality": "Gestion des entreprises",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم القانونية والسياسية اسفي",
+            "places": 1,
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم القانونية والسياسية اسفي",
+            "places": 1,
+            "speciality": "Informatique",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية العلوم القانونية والسياسية اسفي",
+            "places": 1,
+            "speciality": "Sciences Economiques et Gestion",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبير اسفي",
+            "places": 1,
+            "speciality": "Gestion des entreprises",
+            "grade": "تقني م ن الدر جة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبير اسفي",
+            "places": 1,
+            "speciality": "Secrétariat de Direction",
+            "grade": "تقني من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبير اسفي",
+            "places": 1,
+            "speciality": "Informatique",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          },
+          {
+            "institution": "كلية االقتصاد والتدبير اسفي",
+            "places": 1,
+            "speciality": "Sciences Economiques et Gestion",
+            "grade": "متصرف من الدرجة الثالثة",
+            "confidence": "HIGH"
+          }
+        ]
+      },
+      "places": {
+        "status": "REVIEW",
+        "total": 33,
+        "evidence": [
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tGestion des Ressources Humaines\\tمتصرف من الدرجة الثانية\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم القانونية والسياسية مراكش\",\"speciality\":\"Gestion des Ressources Humaines\",\"grade\":\"متصرف من الدرجة الثانية\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tFinance\\tمتصرف من الدرجة الثانية\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم القانونية والسياسية مراكش\",\"speciality\":\"Finance\",\"grade\":\"متصرف من الدرجة الثانية\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tFinance\\tمتصرف من الدرجة الثانية\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبير مراكش\",\"speciality\":\"Finance\",\"grade\":\"متصرف من الدرجة الثانية\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tComptabilité et Finance\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبير مراكش\",\"speciality\":\"Comptabilité et Finance\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":3,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"3\\tSecrétariat de Direction\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبير مراكش\",\"speciality\":\"Secrétariat de Direction\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":2,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"2\\tالقانون العام\\tمتصرف من الدرجة الثانية\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم القانونية والسياسية قلعة السراغنة\",\"speciality\":\"القانون العام\",\"grade\":\"متصرف من الدرجة الثانية\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tDéveloppement Informatique\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم القانونية والسياسية قلعة السراغنة\",\"speciality\":\"Développement Informatique\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tFinance\\tمتصرف من الدرجة الثانية\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبير قلعة السراغنة\",\"speciality\":\"Finance\",\"grade\":\"متصرف من الدرجة الثانية\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSecrétariat de Direction\\tتقني من\\tالدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبير قلعة السراغنة\",\"speciality\":\"Secrétariat de Direction\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tGestion des entreprises\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبير قلعة السراغنة\",\"speciality\":\"Gestion des entreprises\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSecrétariat de Direction\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم التطبيقية اسفي\",\"speciality\":\"Secrétariat de Direction\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tDéveloppement Informatique\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم التطبيقية اسفي\",\"speciality\":\"Développement Informatique\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":2,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"2\\tSciences Economiques et Gestion\\tمتصرف من الدرجة\\tالثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم التطبيقية اسفي\",\"speciality\":\"Sciences Economiques et Gestion\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tGestion des entreprises\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم اإلن سانية واالجتماعية اسفي\",\"speciality\":\"Gestion des entreprises\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSecrétariat de Direction\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم اإلن سانية واالجتماعية اسفي\",\"speciality\":\"Secrétariat de Direction\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tInformatique\\tمتصرف من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم اإلن سانية واالجتماعية اسفي\",\"speciality\":\"Informatique\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tComptabilité et Finance\\tتقني من\\tالدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم اإلن سانية واالجتماعية اسفي\",\"speciality\":\"Comptabilité et Finance\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tGestion des entreprises\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية اللغات واالداب والفنون اسفي\",\"speciality\":\"Gestion des entreprises\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSecrétariat de Direction\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية اللغات واالداب والفنون اسفي\",\"speciality\":\"Secrétariat de Direction\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tDéveloppement Informatique\\tمتصرف من الدرجة الثانية\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية اللغات واالداب والفنون اسفي\",\"speciality\":\"Développement Informatique\",\"grade\":\"متصرف من الدرجة الثانية\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSciences Economiques et Gestion\\tمتصرف من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية اللغات واالداب والفنون اسفي\",\"speciality\":\"Sciences Economiques et Gestion\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tGestion des entreprises\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم القانونية والسياسية اسفي\",\"speciality\":\"Gestion des entreprises\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSecrétariat de Direction\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم القانونية والسياسية اسفي\",\"speciality\":\"Secrétariat de Direction\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tInformatique\\tمتصرف من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم القانونية والسياسية اسفي\",\"speciality\":\"Informatique\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSciences Economiques et Gestion\\tمتصرف من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية العلوم القانونية والسياسية اسفي\",\"speciality\":\"Sciences Economiques et Gestion\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tGestion des entreprises\\tتقني م\\tن الدر\\tجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبير اسفي\",\"speciality\":\"Gestion des entreprises\",\"grade\":\"تقني م ن الدر جة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSecrétariat de Direction\\tتقني من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبير اسفي\",\"speciality\":\"Secrétariat de Direction\",\"grade\":\"تقني من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tInformatique\\tمتصرف من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبير اسفي\",\"speciality\":\"Informatique\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}",
+          "{\"field\":\"places\",\"value\":1,\"status\":\"REVIEW\",\"page\":1,\"raw\":\"1\\tSciences Economiques et Gestion\\tمتصرف من الدرجة الثالثة\",\"reason\":\"Valeur détectée dans la colonne/context du nombre de postes (عدد المناصب / nombre de postes) — rattachée à un grade ligne par ligne\",\"institution\":\"كلية االقتصاد والتدبير اسفي\",\"speciality\":\"Sciences Economiques et Gestion\",\"grade\":\"متصرف من الدرجة الثالثة\",\"confidence\":\"HIGH\"}"
+        ],
+        "confidence": "MISSING",
+        "page": 1,
+        "raw": "33"
+      },
+      "evidence": {
+        "institution": {
+          "value": "كلية العلوم القانونية والسياسية مراكش",
+          "page": 1,
+          "raw": "1\tGestion des Ressources Humaines\tمتصرف من الدرجة الثانية",
+          "confidence": "MISSING"
+        },
+        "speciality": {
+          "value": "Gestion des Ressources Humaines",
+          "page": 1,
+          "raw": "1\tGestion des Ressources Humaines\tمتصرف من الدرجة الثانية",
+          "confidence": "MISSING"
+        },
+        "grade": {
+          "value": "متصرف من الدرجة الثانية",
+          "page": 1,
+          "raw": "1\tGestion des Ressources Humaines\tمتصرف من الدرجة الثانية",
+          "confidence": "MISSING"
+        },
+        "places": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        }
+      },
+      "decision": "REVIEW",
+      "decisionReasons": [
+        "table détectée mais places REVIEW — preuve à vérifier"
+      ],
+      "warnings": []
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "score": 0,
+      "scoreReasons": [],
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "pageCount": 2,
+      "isScanned": true,
+      "textLength": 28,
+      "extracted": true,
+      "status": "SCANNED_REVIEW",
+      "table": null,
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidence": [],
+        "confidence": "MISSING",
+        "page": null,
+        "raw": ""
+      },
+      "evidence": {
+        "institution": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        },
+        "speciality": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        },
+        "grade": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        },
+        "places": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        }
+      },
+      "decision": "REVIEW",
+      "decisionReasons": [
+        "PDF scanné — OCR non concluant, à relire manuellement",
+        "OCR non exploitable — à relire manuellement (SCANNED_REVIEW)"
+      ],
+      "warnings": [
+        "OCR non exploitable — à relire manuellement (SCANNED_REVIEW)"
+      ]
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "score": 0,
+      "scoreReasons": [],
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "pageCount": 2,
+      "isScanned": true,
+      "textLength": 28,
+      "extracted": true,
+      "status": "SCANNED_REVIEW",
+      "table": null,
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidence": [],
+        "confidence": "MISSING",
+        "page": null,
+        "raw": ""
+      },
+      "evidence": {
+        "institution": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        },
+        "speciality": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        },
+        "grade": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        },
+        "places": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        }
+      },
+      "decision": "REVIEW",
+      "decisionReasons": [
+        "PDF scanné — OCR non concluant, à relire manuellement",
+        "OCR non exploitable — à relire manuellement (SCANNED_REVIEW)"
+      ],
+      "warnings": [
+        "OCR non exploitable — à relire manuellement (SCANNED_REVIEW)"
+      ]
+    },
+    {
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/KwvWlo7cahgqfmMgqjldEDAC6kgQ9OSHvspvILAl.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "score": 0,
+      "scoreReasons": [],
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "pageCount": 2,
+      "isScanned": true,
+      "textLength": 28,
+      "extracted": true,
+      "status": "SCANNED_REVIEW",
+      "table": null,
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidence": [],
+        "confidence": "MISSING",
+        "page": null,
+        "raw": ""
+      },
+      "evidence": {
+        "institution": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        },
+        "speciality": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        },
+        "grade": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        },
+        "places": {
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING"
+        }
+      },
+      "decision": "REVIEW",
+      "decisionReasons": [
+        "PDF scanné — OCR non concluant, à relire manuellement",
+        "OCR non exploitable — à relire manuellement (SCANNED_REVIEW)"
+      ],
+      "warnings": [
+        "OCR non exploitable — à relire manuellement (SCANNED_REVIEW)"
+      ]
+    }
+  ],
+  "regression": {
+    "ucaRows": 29,
+    "ucaPlaces": 33,
+    "ucaStatus": "REVIEW"
+  },
+  "writes": {
+    "database": 0,
+    "supabase": 0,
+    "forms": 0,
+    "localStorage": 0
+  }
+}

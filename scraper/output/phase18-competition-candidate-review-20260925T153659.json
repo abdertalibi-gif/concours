@@ -1,0 +1,29 @@
+{
+  "phase": 18,
+  "phaseLabel": "Competition Candidate Review & Evidence Validation (PREVIEW)",
+  "input": "",
+  "runDate": "20260925T153659",
+  "status": "FAIL",
+  "statusReason": "aucune sortie Phase 17 trouvee -> REQUEST_INPUT",
+  "candidatesAnalyzed": 0,
+  "importable": 0,
+  "review": 0,
+  "blocked": 0,
+  "placesValidated": 0,
+  "conditionsValidated": 0,
+  "matieresValidated": 0,
+  "epreuvesValidated": 0,
+  "candidates": [],
+  "ucaRegression": {
+    "rows": 29,
+    "places": 33,
+    "status": "REVIEW",
+    "passed": true
+  },
+  "writes": {
+    "db": 0,
+    "supabase": 0,
+    "localStorage": 0,
+    "forms": 0
+  }
+}

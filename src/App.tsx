@@ -24,6 +24,7 @@ import AdminRapports from './pages/admin/AdminRapports';
 import AdminParametres from './pages/admin/AdminParametres';
 import AdminAIAgent from './pages/admin/AdminAIAgent';
 import AdminMastersImport from './pages/admin/AdminMastersImport';
+import AdminDirectImport from './pages/admin/AdminDirectImport';
 import { AdminEcoles, AdminMinisteres, AdminUniversites } from './pages/admin/AdminCatalog';
 import { AdminCours, AdminDocuments, AdminExamens } from './pages/admin/AdminContent';
 import { AdminNotifications, AdminSignalements, AdminUsers } from './pages/admin/AdminUsers';
@@ -89,6 +90,7 @@ export default function App() {
               <Route path="admin" element={<AdminLayout />}>
                 <Route index element={<AdminDashboard />} />
                 <Route path="concours" element={<AdminConcours />} />
+                <Route path="import" element={<AdminDirectImport />} />
                 <Route path="masters" element={<AdminMastersImport />} />
                 <Route path="masters/import" element={<AdminMastersImport />} />
                 <Route path="ecoles" element={<AdminEcoles />} />

@@ -88,7 +88,6 @@ export default function ConcoursList() {
       total: all.length,
       ouvert: all.filter(c => statusFromCompetition(c) === 'OUVERT').length,
       bientot: all.filter(c => statusFromCompetition(c) === 'A_VENIR').length,
-      ferme: all.filter(c => statusFromCompetition(c) === 'CLOTURE').length,
       masters: all.filter(c => c.id.startsWith('mst-') || c.category === 'UNIVERSITE' || c.level.toLowerCase().includes('master')).length,
       stateComps: all.filter(c => !c.id.startsWith('mst-') && c.category !== 'UNIVERSITE').length,
     };
@@ -198,9 +197,6 @@ export default function ConcoursList() {
           <span className="inline-flex items-center gap-1.5 rounded-lg bg-amber-50 px-3 py-1.5 text-sm font-semibold text-amber-700 ring-1 ring-inset ring-amber-200">
             <span className="h-2 w-2 rounded-full bg-amber-500" /> {stats.bientot} bientôt
           </span>
-          <span className="inline-flex items-center gap-1.5 rounded-lg bg-slate-100 px-3 py-1.5 text-sm font-semibold text-slate-700 ring-1 ring-inset ring-slate-200">
-            <span className="h-2 w-2 rounded-full bg-slate-400" /> {stats.ferme} fermés
-          </span>
           <button
             type="button"
             onClick={() => set('categorie', filters.category === 'MASTER' ? '' : 'MASTER')}
@@ -234,7 +230,7 @@ export default function ConcoursList() {
               <FilterSelect label="Ministère" value={filters.ministry ?? ''} onChange={(v) => set('ministere', v)} options={[{ v: '', l: 'Tous les ministères' }, ...db.ministries.map((m) => ({ v: m.id, l: m.name }))]} />
               <FilterSelect label="Année" value={filters.year ?? ''} onChange={(v) => set('annee', v)} options={[{ v: '', l: 'Toutes' }, ...years.map((y) => ({ v: String(y), l: String(y) }))]} />
               <FilterSelect label="Niveau" value={filters.level ?? ''} onChange={(v) => set('niveau', v)} options={[{ v: '', l: 'Tous les niveaux' }, { v: 'Master', l: 'Master / MST' }, ...LEVELS.map((l) => ({ v: l, l }))]} />
-              <FilterSelect label="Statut" value={filters.status ?? ''} onChange={(v) => set('statut', v)} options={[{ v: '', l: 'Tous les statuts' }, { v: 'Ouvert', l: 'Ouvert' }, { v: 'Bientot', l: 'Bientôt' }, { v: 'Ferme', l: 'Fermé' }, { v: 'Suspendu', l: 'Suspendu' }]} />
+              <FilterSelect label="Statut" value={filters.status ?? ''} onChange={(v) => set('statut', v)} options={[{ v: '', l: 'Tous les statuts' }, { v: 'Ouvert', l: 'Ouvert' }, { v: 'Bientot', l: 'Bientôt' }, { v: 'Suspendu', l: 'Suspendu' }]} />
             </div>
             <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr_1fr_auto]">
               <FilterSelect label="École" value={filters.school ?? ''} onChange={(v) => set('ecole', v)} options={[{ v: '', l: 'Toutes les écoles' }, ...db.schools.map((s) => ({ v: s.id, l: s.shortName }))]} />
@@ -269,11 +265,11 @@ export default function ConcoursList() {
           <h2 className="flex items-center gap-2 text-lg font-extrabold text-[#0B2A4A]">
             {filters.category === 'MASTER' ? (
               <>
-                <GraduationCap className="h-5 w-5 text-purple-600" /> Concours de Masters Universitaires
+                <GraduationCap className="h-5 w-5 text-purple-600" /> Concours de Masters disponibles
               </>
             ) : (
               <>
-                <Landmark className="h-5 w-5 text-[#0B63CE]" /> Tous les concours et masters
+                <Landmark className="h-5 w-5 text-[#0B63CE]" /> Concours disponibles
               </>
             )}
             <span className="rounded-lg bg-sky-50 px-2 py-0.5 text-xs font-bold text-[#0B63CE] ring-1 ring-inset ring-sky-100">
@@ -296,8 +292,8 @@ export default function ConcoursList() {
         {/* Grille des concours et masters */}
         {result.items.length === 0 ? (
           <div className="mt-4">
-            <EmptyState icon={<Trophy className="h-6 w-6" />} title="Aucun concours trouvé"
-              message="Essayez d'ajuster vos filtres ou votre recherche. De nouveaux concours et masters sont ajoutés régulièrement."
+            <EmptyState icon={<Trophy className="h-6 w-6" />} title={hasFilters ? "Aucun concours trouvé" : "Aucun concours disponible actuellement."}
+              message={hasFilters ? "Essayez d'ajuster vos filtres ou votre recherche. De nouveaux concours et masters sont ajoutés régulièrement." : "Il n'y a actuellement aucun concours actif. Les concours expirés sont automatiquement masqués de cette liste."}
               action={<button onClick={reset} className="rounded-xl bg-[#0B63CE] px-5 py-2.5 text-sm font-bold text-white">Réinitialiser les filtres</button>} />
           </div>
         ) : (

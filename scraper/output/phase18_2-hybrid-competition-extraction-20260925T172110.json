@@ -1,0 +1,1059 @@
+{
+  "phase": "18.2-B",
+  "phaseLabel": "Hybrid Competition Extraction — HTML First, PDF Secondary (PREVIEW ONLY)",
+  "input": "scraper\\output\\phase17-deep-competition-discovery-20260923T173343.json",
+  "runDate": "20260925T172110",
+  "status": "PASS",
+  "statusReason": "Regression UCA intacte (29/33/REVIEW) ; hybrid HTML→PDF → décisions honnêtes (aucune promotion forcée)",
+  "htmlAnalyzed": 5,
+  "pdfAnalyzed": 5,
+  "candidatesAnalyzed": 5,
+  "auto": 0,
+  "review": 5,
+  "blocked": 0,
+  "places": {
+    "auto": 2,
+    "review": 0,
+    "missing": 3
+  },
+  "conditions": {
+    "auto": 0,
+    "review": 0,
+    "missing": 5
+  },
+  "matieres": {
+    "auto": 0,
+    "review": 0,
+    "missing": 5
+  },
+  "epreuves": {
+    "auto": 0,
+    "review": 0,
+    "missing": 5
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/Gr5xTI77MDHaVSrKpzNUKhudmg5Fpifv8OjaL0s3.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-18102026",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "htmlUrl": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-18102026",
+      "htmlEvidence": {
+        "title": null,
+        "description": null,
+        "organization": null,
+        "university": null,
+        "ministry": null,
+        "city": null,
+        "region": null,
+        "date": null,
+        "deadline": null,
+        "domain": null,
+        "specialty": null,
+        "places": null,
+        "conditions": null,
+        "subjects": null,
+        "exams": null,
+        "documents": null,
+        "registrationUrl": null,
+        "officialUrl": null,
+        "pdfLinks": [],
+        "sourceHtmlUrl": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-18102026"
+      },
+      "pageCount": null,
+      "isScanned": false,
+      "textLength": 7396,
+      "fields": {
+        "title": {
+          "field": "title",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "organization": {
+          "field": "organization",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": "كلية االقتصاد والتدبري مراكش",
+          "finalValue": "كلية االقتصاد والتدبري مراكش",
+          "status": "REVIEW",
+          "confidence": "LOW",
+          "reason": "Phase 17 metadata uniquement — nécessite validation",
+          "page": null,
+          "raw": "كلية االقتصاد والتدبري مراكش"
+        },
+        "date": {
+          "field": "date",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "deadline": {
+          "field": "deadline",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "places": {
+          "field": "places",
+          "htmlValue": null,
+          "pdfValue": "15",
+          "phase17Value": "15",
+          "finalValue": "15",
+          "status": "AUTO",
+          "confidence": "MEDIUM",
+          "reason": "PDF complète le champ: 15",
+          "page": null,
+          "raw": "15"
+        },
+        "domain": {
+          "field": "domain",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "specialty": {
+          "field": "specialty",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": "Logistique",
+          "finalValue": "Logistique",
+          "status": "REVIEW",
+          "confidence": "LOW",
+          "reason": "Phase 17 metadata uniquement — nécessite validation",
+          "page": null,
+          "raw": "Logistique"
+        },
+        "conditions": {
+          "field": "conditions",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "subjects": {
+          "field": "subjects",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "exams": {
+          "field": "exams",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        }
+      },
+      "references": {
+        "university": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "ambiguïté normalisée: univ-um5, univ-uh2c, univ-uca, univ-usmba, univ-uae, univ-ump, univ-uiz, univ-uit, univ-umi, univ-ucd, univ-uh1, univ-usms, univ-um6p, univ-aui"
+        },
+        "city": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "domain": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        }
+      },
+      "places": {
+        "status": "AUTO",
+        "total": 15,
+        "evidenceCount": 1,
+        "source": "pdf"
+      },
+      "conditions": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "matieres": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "epreuves": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "decision": "REVIEW",
+      "decisionReasons": [
+        "données partielles → nécessite validation humaine"
+      ],
+      "warnings": []
+    },
+    {
+      "index": 1,
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-11102026",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "htmlUrl": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-11102026",
+      "htmlEvidence": {
+        "title": null,
+        "description": null,
+        "organization": null,
+        "university": null,
+        "ministry": null,
+        "city": null,
+        "region": null,
+        "date": null,
+        "deadline": null,
+        "domain": null,
+        "specialty": null,
+        "places": null,
+        "conditions": null,
+        "subjects": null,
+        "exams": null,
+        "documents": null,
+        "registrationUrl": null,
+        "officialUrl": null,
+        "pdfLinks": [],
+        "sourceHtmlUrl": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-11102026"
+      },
+      "pageCount": null,
+      "isScanned": false,
+      "textLength": 8290,
+      "fields": {
+        "title": {
+          "field": "title",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "organization": {
+          "field": "organization",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": "كلية العلوم القانونية والسياسية مراكش",
+          "finalValue": "كلية العلوم القانونية والسياسية مراكش",
+          "status": "REVIEW",
+          "confidence": "LOW",
+          "reason": "Phase 17 metadata uniquement — nécessite validation",
+          "page": null,
+          "raw": "كلية العلوم القانونية والسياسية مراكش"
+        },
+        "date": {
+          "field": "date",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "deadline": {
+          "field": "deadline",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "places": {
+          "field": "places",
+          "htmlValue": null,
+          "pdfValue": "33",
+          "phase17Value": "33",
+          "finalValue": "33",
+          "status": "AUTO",
+          "confidence": "MEDIUM",
+          "reason": "PDF complète le champ: 33",
+          "page": null,
+          "raw": "33"
+        },
+        "domain": {
+          "field": "domain",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "specialty": {
+          "field": "specialty",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": "Gestion des Ressources Humaines",
+          "finalValue": "Gestion des Ressources Humaines",
+          "status": "REVIEW",
+          "confidence": "LOW",
+          "reason": "Phase 17 metadata uniquement — nécessite validation",
+          "page": null,
+          "raw": "Gestion des Ressources Humaines"
+        },
+        "conditions": {
+          "field": "conditions",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "subjects": {
+          "field": "subjects",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "exams": {
+          "field": "exams",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        }
+      },
+      "references": {
+        "university": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "ambiguïté normalisée: univ-um5, univ-uh2c, univ-uca, univ-usmba, univ-uae, univ-ump, univ-uiz, univ-uit, univ-umi, univ-ucd, univ-uh1, univ-usms, univ-um6p, univ-aui"
+        },
+        "city": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "domain": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        }
+      },
+      "places": {
+        "status": "AUTO",
+        "total": 33,
+        "evidenceCount": 1,
+        "source": "pdf"
+      },
+      "conditions": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "matieres": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "epreuves": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "decision": "REVIEW",
+      "decisionReasons": [
+        "données partielles → nécessite validation humaine"
+      ],
+      "warnings": []
+    },
+    {
+      "index": 2,
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "htmlUrl": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "htmlEvidence": {
+        "title": null,
+        "description": null,
+        "organization": null,
+        "university": null,
+        "ministry": null,
+        "city": null,
+        "region": null,
+        "date": null,
+        "deadline": null,
+        "domain": null,
+        "specialty": null,
+        "places": null,
+        "conditions": null,
+        "subjects": null,
+        "exams": null,
+        "documents": null,
+        "registrationUrl": null,
+        "officialUrl": null,
+        "pdfLinks": [],
+        "sourceHtmlUrl": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad"
+      },
+      "pageCount": null,
+      "isScanned": true,
+      "textLength": 28,
+      "fields": {
+        "title": {
+          "field": "title",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "organization": {
+          "field": "organization",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "date": {
+          "field": "date",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "deadline": {
+          "field": "deadline",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "places": {
+          "field": "places",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "domain": {
+          "field": "domain",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "specialty": {
+          "field": "specialty",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "conditions": {
+          "field": "conditions",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "subjects": {
+          "field": "subjects",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "exams": {
+          "field": "exams",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        }
+      },
+      "references": {
+        "university": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "organization manquante"
+        },
+        "city": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "city manquante"
+        },
+        "domain": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "domain manquant"
+        }
+      },
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 0,
+        "source": "none"
+      },
+      "conditions": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "matieres": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "epreuves": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "decision": "REVIEW",
+      "decisionReasons": [
+        "données partielles → nécessite validation humaine"
+      ],
+      "warnings": []
+    },
+    {
+      "index": 3,
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "htmlUrl": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "htmlEvidence": {
+        "title": null,
+        "description": null,
+        "organization": null,
+        "university": null,
+        "ministry": null,
+        "city": null,
+        "region": null,
+        "date": null,
+        "deadline": null,
+        "domain": null,
+        "specialty": null,
+        "places": null,
+        "conditions": null,
+        "subjects": null,
+        "exams": null,
+        "documents": null,
+        "registrationUrl": null,
+        "officialUrl": null,
+        "pdfLinks": [],
+        "sourceHtmlUrl": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad"
+      },
+      "pageCount": null,
+      "isScanned": true,
+      "textLength": 28,
+      "fields": {
+        "title": {
+          "field": "title",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "organization": {
+          "field": "organization",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "date": {
+          "field": "date",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "deadline": {
+          "field": "deadline",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "places": {
+          "field": "places",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "domain": {
+          "field": "domain",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "specialty": {
+          "field": "specialty",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "conditions": {
+          "field": "conditions",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "subjects": {
+          "field": "subjects",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "exams": {
+          "field": "exams",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        }
+      },
+      "references": {
+        "university": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "organization manquante"
+        },
+        "city": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "city manquante"
+        },
+        "domain": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "domain manquant"
+        }
+      },
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 0,
+        "source": "none"
+      },
+      "conditions": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "matieres": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "epreuves": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "decision": "REVIEW",
+      "decisionReasons": [
+        "données partielles → nécessite validation humaine"
+      ],
+      "warnings": []
+    },
+    {
+      "index": 4,
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/KwvWlo7cahgqfmMgqjldEDAC6kgQ9OSHvspvILAl.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "htmlUrl": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "htmlEvidence": {
+        "title": null,
+        "description": null,
+        "organization": null,
+        "university": null,
+        "ministry": null,
+        "city": null,
+        "region": null,
+        "date": null,
+        "deadline": null,
+        "domain": null,
+        "specialty": null,
+        "places": null,
+        "conditions": null,
+        "subjects": null,
+        "exams": null,
+        "documents": null,
+        "registrationUrl": null,
+        "officialUrl": null,
+        "pdfLinks": [],
+        "sourceHtmlUrl": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad"
+      },
+      "pageCount": null,
+      "isScanned": true,
+      "textLength": 28,
+      "fields": {
+        "title": {
+          "field": "title",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "organization": {
+          "field": "organization",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "date": {
+          "field": "date",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "deadline": {
+          "field": "deadline",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "places": {
+          "field": "places",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "domain": {
+          "field": "domain",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "specialty": {
+          "field": "specialty",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "conditions": {
+          "field": "conditions",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "subjects": {
+          "field": "subjects",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        },
+        "exams": {
+          "field": "exams",
+          "htmlValue": null,
+          "pdfValue": null,
+          "phase17Value": null,
+          "finalValue": null,
+          "status": "MISSING",
+          "confidence": "MISSING",
+          "reason": "Aucune source fiable trouvée",
+          "page": null,
+          "raw": ""
+        }
+      },
+      "references": {
+        "university": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "organization manquante"
+        },
+        "city": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "city manquante"
+        },
+        "domain": {
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "domain manquant"
+        }
+      },
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 0,
+        "source": "none"
+      },
+      "conditions": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "matieres": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "epreuves": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 1
+      },
+      "decision": "REVIEW",
+      "decisionReasons": [
+        "données partielles → nécessite validation humaine"
+      ],
+      "warnings": []
+    }
+  ],
+  "ucaRegression": {
+    "rows": 29,
+    "places": 33,
+    "status": "REVIEW",
+    "passed": true
+  },
+  "writes": {
+    "db": 0,
+    "supabase": 0,
+    "forms": 0,
+    "localStorage": 0,
+    "imports": 0
+  }
+}

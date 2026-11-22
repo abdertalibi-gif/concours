@@ -20,8 +20,8 @@ import {
   SEED_NOTIFICATIONS, SEED_SCHOOLS, SEED_UNIVERSITIES, SEED_USERS, buildCompetitions
 } from './seed';
 import { resolveInstitutionLogo, OFFICIAL_INSTITUTION_LOGOS } from '../data/institutionLogos';
-import { evaluateCompetitionDates, statusFromCompetition, isCompetitionOpen, uid } from './utils';
-import { initSupabaseSync, pushToSupabase, deleteFromSupabase } from './supabase-db';
+import { evaluateCompetitionDates, statusFromCompetition, isCompetitionOpen, isCompetitionExpired, uid } from './utils';
+import { initSupabaseSync, pushToSupabase, pushBatchToSupabase, deleteFromSupabase } from './supabase-db';
 import { getAllMastersAsCompetitions, getMasterAsCompetitionBySlug } from './mastersAdapter';
 
 const KEY = 'cm_db_v4';
@@ -307,14 +307,22 @@ export interface CompetitionFilters {
   q?: string; ministry?: string; school?: string; university?: string; year?: string; level?: string;
   city?: string; domaine?: string; status?: string; category?: string; sort?: string;
   includeMasters?: boolean;
+  /** Inclure les concours expirés (date limite dépassée). Par défaut : false = liste publique (actifs uniquement). */
+  includeExpired?: boolean;
 }
 
 export function queryCompetitions(f: CompetitionFilters, page = 1, perPage = 12, includeDrafts = false): PageResult<Competition> {
   const dbComps = loadDB().competitions.filter((c) => (includeDrafts ? true : c.publishStatus === 'PUBLISHED'));
   const mastersComps = f.includeMasters !== false ? getAllMastersAsCompetitions() : [];
-  
+
   // Fusionner les concours d'État / écoles avec les concours de masters universitaires
   let arr = [...dbComps, ...mastersComps];
+
+  // Expiration automatique : par défaut, seuls les concours actifs (non expirés) sont retournés.
+  // Les concours expirés restent en base et restent visibles pour l'admin (includeExpired: true).
+  if (f.includeExpired !== true) {
+    arr = arr.filter((c) => !isCompetitionExpired(c));
+  }
   
   const q = (f.q ?? '').trim().toLowerCase();
   if (q) arr = arr.filter((c) => [c.title, c.organizationName, c.city, c.level, String(c.year), c.domaine ?? ''].join(' ').toLowerCase().includes(q));
@@ -374,7 +382,7 @@ export function incrementViews(id: string) {
 export function getRelatedCompetitions(c: Competition, n = 3): Competition[] {
   const all = [...loadDB().competitions, ...getAllMastersAsCompetitions()];
   return all
-    .filter((x) => x.id !== c.id && x.publishStatus === 'PUBLISHED' && (
+    .filter((x) => x.id !== c.id && x.publishStatus === 'PUBLISHED' && !isCompetitionExpired(x) && (
       x.schoolId === c.schoolId ||
       x.ministryId === c.ministryId ||
       x.domaine === c.domaine ||
@@ -537,7 +545,7 @@ export function globalSearch(q: string): GlobalResults {
   if (s.length < 2) return { competitions: [], schools: [], universities: [], ministries: [], exams: [], documents: [], courses: [] };
   const match = (txt: string) => txt.toLowerCase().includes(s);
   return {
-    competitions: db.competitions.filter((c) => c.publishStatus === 'PUBLISHED' && match(`${c.title} ${c.organizationName} ${c.city}`)).slice(0, 5),
+    competitions: db.competitions.filter((c) => c.publishStatus === 'PUBLISHED' && !isCompetitionExpired(c) && match(`${c.title} ${c.organizationName} ${c.city}`)).slice(0, 5),
     schools: db.schools.filter((x) => x.isActive !== false && match(`${x.name} ${x.shortName} ${x.city} ${(x.aliases || []).join(' ')}`)).slice(0, 4),
     universities: (db.universities || []).filter((u) => u.isActive !== false && match(`${u.name} ${u.shortName} ${u.city} ${(u.aliases || []).join(' ')}`)).slice(0, 3),
     ministries: db.ministries.filter((m) => m.isActive !== false && match(`${m.name} ${m.shortName} ${(m.aliases || []).join(' ')}`)).slice(0, 3),
@@ -662,6 +670,182 @@ export function adminDelete(col: Collection, id: string) {
   saveDB(db);
   // ⬢ Sync vers Supabase en arrière-plan
   deleteFromSupabase(col, id);
+}
+
+// ---------------- Import en masse (Admin Direct File Import) ----------------
+
+/**
+ * Taille d'un chunk de synchronisation Supabase.
+ * L'import reste UNE opération logique (un seul load, un seul
+ * save, un seul flux pushBatch) ; au-delà de 100 lignes le flux
+ * est découpé en chunks de 100 pour rester sous les limites
+ * usuelles des API en batch. En dessous, un seul appel.
+ */
+const BULK_SYNC_CHUNK_SIZE = 100;
+
+export class BulkImportValidationError extends Error {
+  readonly details: string[];
+  constructor(details: string[]) {
+    super(`Import annulé : ${details.length} ligne(s) invalide(s). Aucune écriture effectuée.`);
+    this.name = 'BulkImportValidationError';
+    this.details = details;
+  }
+}
+
+export interface BulkConcoursResult {
+  imported: number;
+  duplicates: number;
+  details: string[];
+}
+
+export interface BulkConcoursDeps {
+  load: () => DatabaseShape;
+  save: (db: DatabaseShape) => void;
+  pushBatch: (collection: string, items: Record<string, unknown>[]) => void;
+}
+
+/**
+ * Revalidation déterministe d'un concours confirmé.
+ * Miroir strict de la validation de l'aperçu et du formulaire
+ * Admin : c'est la garantie finale, exécutée au moment du commit.
+ */
+function validateConcoursForCommit(c: Competition): string[] {
+  const errors: string[] = [];
+  if (!c.title || !c.title.trim()) errors.push('title: titre manquant');
+  if (!c.organizationName || !c.organizationName.trim()) errors.push('organizationName: organisme manquant');
+  if (!c.description || !c.description.trim()) errors.push('description: description manquante');
+  if (!Number.isFinite(c.places) || c.places < 1) errors.push('places: nombre de places invalide');
+  if (!Number.isFinite(c.year)) errors.push('year: année invalide');
+  if (!c.slug || !c.slug.trim()) errors.push('slug: slug manquant');
+
+  for (const [field, value] of [
+    ['officialWebsite', c.officialWebsite],
+    ['registrationUrl', c.registrationUrl],
+    ['sourceUrl', c.sourceUrl],
+  ] as const) {
+    if (value && !/^https?:\/\/.+/.test(value)) errors.push(`${field}: URL invalide (${value})`);
+  }
+
+  if (c.registrationStart && c.registrationDeadline) {
+    const start = Date.parse(c.registrationStart);
+    const deadline = Date.parse(c.registrationDeadline);
+    if (!Number.isNaN(start) && !Number.isNaN(deadline) && deadline < start) {
+      errors.push('registrationDeadline: clôture antérieure à l\'ouverture');
+    }
+  }
+
+  return errors;
+}
+
+/** Clés de déduplication d'un concours (même logique que l'aperçu). */
+function competitionKeys(c: Pick<Competition, 'slug' | 'sourceUrl' | 'schoolId' | 'title' | 'year'>): string[] {
+  const keys: string[] = [];
+  if (c.slug) keys.push(`slug:${c.slug}`);
+  const src = (c.sourceUrl ?? '').trim().replace(/^https?:\/\//i, '').replace(/\/+$/, '').toLowerCase();
+  if (src) keys.push(`src:${src}`);
+  if (c.schoolId && c.title && c.year) {
+    const title = c.title
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/(^-|-$)/g, '');
+    if (title) keys.push(`combo:${c.schoolId}|${title}|${c.year}`);
+  }
+  return keys;
+}
+
+/**
+ * Import en masse de concours confirmé par l'administrateur.
+ *
+ * Garanti contractuelles :
+ *  - UN SEUL loadDB() (via deps.load)
+ *  - validation + déduplication AVANT toute écriture
+ *  - si une seule ligne confirmée est invalide => ZERO écriture
+ *  - UN SEUL saveDB() (via deps.save)
+ *  - synchronisation Supabase en un seul flux bulk (pushBatch),
+ *    découpé en chunks de 100 lignes au-delà de 100 éléments
+ *  - les doublons existants sont IGNORÉS, jamais écrasés
+ *
+ * `adminCreate()` reste inchangé et continue de servir la création
+ * unitaire depuis le formulaire Admin.
+ */
+export function adminBulkCreateConcours(
+  rows: Competition[],
+  deps: BulkConcoursDeps = {
+    load: loadDB,
+    save: saveDB,
+    pushBatch: (collection, items) => { void pushBatchToSupabase(collection, items); },
+  },
+): BulkConcoursResult {
+  const details: string[] = [];
+  const seen = new Set<string>();
+  const accepted: Competition[] = [];
+  let duplicates = 0;
+
+  const db = deps.load();
+
+  // Phase 1 : validation. Aucune écriture tant qu'une ligne échoue.
+  const invalid: string[] = [];
+  rows.forEach((row, idx) => {
+    const errors = validateConcoursForCommit(row);
+    if (errors.length > 0) {
+      invalid.push(`Ligne ${idx + 1} (« ${row.title ?? 'sans titre'} ») : ${errors.join(', ')}`);
+    }
+  });
+  if (invalid.length > 0) {
+    throw new BulkImportValidationError(invalid);
+  }
+
+  // Phase 2 : déduplication contre l'existant puis dans le fichier.
+  // Les clés de la base existante sont indexées AVANT le parcours :
+  // un concours déjà présent ne doit jamais être réimporté, même si
+  // l'appelant contourne l'aperçu.
+  for (const existing of db.competitions || []) {
+    for (const key of competitionKeys(existing)) {
+      if (!seen.has(key)) seen.add(key);
+    }
+  }
+
+  for (const row of rows) {
+    const keys = competitionKeys(row);
+    const keysToCheck = keys.length > 0 ? keys : [`id:${row.id}`];
+
+    const existingHit = keysToCheck.find((k) => seen.has(k));
+    if (existingHit !== undefined) {
+      duplicates += 1;
+      details.push(`« ${row.title} » ignoré : clé déjà présente (« ${existingHit} »).`);
+      continue;
+    }
+
+    accepted.push(row);
+    for (const key of keysToCheck) {
+      if (!seen.has(key)) seen.add(key);
+    }
+  }
+
+  if (accepted.length === 0) {
+    details.push('Aucune ligne nouvelle à importer.');
+    return { imported: 0, duplicates, details };
+  }
+
+  // Phase 3 : une seule écriture, puis une seule synchronisation Supabase.
+  for (let i = accepted.length - 1; i >= 0; i -= 1) {
+    db.competitions.unshift(accepted[i]);
+  }
+  deps.save(db);
+
+  const records = accepted as unknown as Record<string, unknown>[];
+  if (records.length <= BULK_SYNC_CHUNK_SIZE) {
+    deps.pushBatch('competitions', records);
+  } else {
+    for (let i = 0; i < records.length; i += BULK_SYNC_CHUNK_SIZE) {
+      deps.pushBatch('competitions', records.slice(i, i + BULK_SYNC_CHUNK_SIZE));
+    }
+  }
+
+  details.push(`${accepted.length} concours importé(s) en une seule écriture.`);
+  return { imported: accepted.length, duplicates, details };
 }
 
 /** Archive logique : marque isActive = false sans supprimer les liens de concours associés */

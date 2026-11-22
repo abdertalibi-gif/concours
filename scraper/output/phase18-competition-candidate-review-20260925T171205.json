@@ -1,0 +1,633 @@
+{
+  "phase": 18,
+  "phaseLabel": "Competition Candidate Review & Evidence Validation (PREVIEW)",
+  "input": "scraper\\output\\phase17-deep-competition-discovery-20260923T173343.json",
+  "runDate": "20260925T171205",
+  "status": "PASS",
+  "statusReason": "Regression UCA intacte (29/33/REVIEW) ; decisions honnetes (aucune promotion forcee)",
+  "candidatesAnalyzed": 5,
+  "importable": 0,
+  "review": 0,
+  "blocked": 5,
+  "placesValidated": 0,
+  "conditionsValidated": 0,
+  "matieresValidated": 0,
+  "epreuvesValidated": 0,
+  "candidates": [
+    {
+      "index": 0,
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/Gr5xTI77MDHaVSrKpzNUKhudmg5Fpifv8OjaL0s3.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-18102026",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "pageCount": 3,
+      "isScanned": false,
+      "textLength": 7396,
+      "status": "POSSIBLE_CONCOURS_PDF",
+      "tableDetected": true,
+      "rowsLength": 15,
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 0
+      },
+      "fields": {
+        "places": {
+          "field": "places",
+          "value": null,
+          "page": 1,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "aucun tableau exploitable de places"
+        },
+        "conditions": {
+          "field": "conditions",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "conditions non extraites de facon fiable -> REQUIRES_REVIEW"
+        },
+        "matieres": {
+          "field": "matieres",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "matieres non corroborees -> REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "field": "epreuves",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "epreuves non extraites de facon fiable -> REQUIRES_REVIEW"
+        }
+      },
+      "references": {
+        "institution": {
+          "field": "institution",
+          "input": "كلية االقتصاد والتدبري مراكش",
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "ambiguïté normalisée: univ-um5, univ-uh2c, univ-uca, univ-usmba, univ-uae, univ-ump, univ-uiz, univ-uit, univ-umi, univ-ucd, univ-uh1, univ-usms, univ-um6p, univ-aui"
+        },
+        "speciality": {
+          "field": "speciality",
+          "input": "Logistique",
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "hors référentiel"
+        },
+        "grade": {
+          "field": "grade",
+          "input": "متصرف من الدر جة الثانية",
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "hors référentiel"
+        },
+        "domain": {
+          "field": "domain",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "city": {
+          "field": "city",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "region": {
+          "field": "region",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        }
+      },
+      "importableFlashPoints": [],
+      "missingRequired": [
+        "places"
+      ],
+      "decision": "BLOCKED",
+      "decisionReasons": [
+        "aucune preuve exploitable (places + institution manquantes) -> BLOCKED, jamais forcer",
+        "places MISSING"
+      ],
+      "warnings": []
+    },
+    {
+      "index": 1,
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/LjvjOfcYuTcvZ7G3y9PoHeVbPH9UOGBwubhCwGF1.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/avis-de-concours-de-recrutement-a-luniversite-cadi-ayyad-session-11102026",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "pageCount": 3,
+      "isScanned": false,
+      "textLength": 8290,
+      "status": "POSSIBLE_CONCOURS_PDF",
+      "tableDetected": true,
+      "rowsLength": 29,
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 0
+      },
+      "fields": {
+        "places": {
+          "field": "places",
+          "value": null,
+          "page": 1,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "aucun tableau exploitable de places"
+        },
+        "conditions": {
+          "field": "conditions",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "conditions non extraites de facon fiable -> REQUIRES_REVIEW"
+        },
+        "matieres": {
+          "field": "matieres",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "matieres non corroborees -> REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "field": "epreuves",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "epreuves non extraites de facon fiable -> REQUIRES_REVIEW"
+        }
+      },
+      "references": {
+        "institution": {
+          "field": "institution",
+          "input": "كلية العلوم القانونية والسياسية مراكش",
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "ambiguïté normalisée: univ-um5, univ-uh2c, univ-uca, univ-usmba, univ-uae, univ-ump, univ-uiz, univ-uit, univ-umi, univ-ucd, univ-uh1, univ-usms, univ-um6p, univ-aui"
+        },
+        "speciality": {
+          "field": "speciality",
+          "input": "Gestion des Ressources Humaines",
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "hors référentiel"
+        },
+        "grade": {
+          "field": "grade",
+          "input": "متصرف من الدرجة الثانية",
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "hors référentiel"
+        },
+        "domain": {
+          "field": "domain",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "city": {
+          "field": "city",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "region": {
+          "field": "region",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        }
+      },
+      "importableFlashPoints": [],
+      "missingRequired": [
+        "places"
+      ],
+      "decision": "BLOCKED",
+      "decisionReasons": [
+        "aucune preuve exploitable (places + institution manquantes) -> BLOCKED, jamais forcer",
+        "places MISSING"
+      ],
+      "warnings": []
+    },
+    {
+      "index": 2,
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/RNJfZ8rGBq7TaeS0hx3KZNBElHSp5GpRGMas2O4J.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "pageCount": 2,
+      "isScanned": true,
+      "textLength": 28,
+      "status": "SCANNED_REVIEW",
+      "tableDetected": false,
+      "rowsLength": 0,
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 0
+      },
+      "fields": {
+        "places": {
+          "field": "places",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "aucun tableau exploitable de places"
+        },
+        "conditions": {
+          "field": "conditions",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "conditions non extraites de facon fiable -> REQUIRES_REVIEW"
+        },
+        "matieres": {
+          "field": "matieres",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "matieres non corroborees -> REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "field": "epreuves",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "epreuves non extraites de facon fiable -> REQUIRES_REVIEW"
+        }
+      },
+      "references": {
+        "institution": {
+          "field": "institution",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "institution manquante"
+        },
+        "speciality": {
+          "field": "speciality",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "grade": {
+          "field": "grade",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "domain": {
+          "field": "domain",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "city": {
+          "field": "city",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "region": {
+          "field": "region",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        }
+      },
+      "importableFlashPoints": [
+        "document scanne -> OCR necessaire (REVIEW)"
+      ],
+      "missingRequired": [
+        "places",
+        "institution"
+      ],
+      "decision": "BLOCKED",
+      "decisionReasons": [
+        "aucune preuve exploitable (places + institution manquantes) -> BLOCKED, jamais forcer",
+        "places MISSING",
+        "institution manquante"
+      ],
+      "warnings": [
+        "scanned : relire manuellement"
+      ]
+    },
+    {
+      "index": 3,
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/szv1FbM6I8ZfmRd0yZZAxa6PshFFPn0r0YD4vbeG.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "pageCount": 2,
+      "isScanned": true,
+      "textLength": 28,
+      "status": "SCANNED_REVIEW",
+      "tableDetected": false,
+      "rowsLength": 0,
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 0
+      },
+      "fields": {
+        "places": {
+          "field": "places",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "aucun tableau exploitable de places"
+        },
+        "conditions": {
+          "field": "conditions",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "conditions non extraites de facon fiable -> REQUIRES_REVIEW"
+        },
+        "matieres": {
+          "field": "matieres",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "matieres non corroborees -> REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "field": "epreuves",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "epreuves non extraites de facon fiable -> REQUIRES_REVIEW"
+        }
+      },
+      "references": {
+        "institution": {
+          "field": "institution",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "institution manquante"
+        },
+        "speciality": {
+          "field": "speciality",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "grade": {
+          "field": "grade",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "domain": {
+          "field": "domain",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "city": {
+          "field": "city",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "region": {
+          "field": "region",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        }
+      },
+      "importableFlashPoints": [
+        "document scanne -> OCR necessaire (REVIEW)"
+      ],
+      "missingRequired": [
+        "places",
+        "institution"
+      ],
+      "decision": "BLOCKED",
+      "decisionReasons": [
+        "aucune preuve exploitable (places + institution manquantes) -> BLOCKED, jamais forcer",
+        "places MISSING",
+        "institution manquante"
+      ],
+      "warnings": [
+        "scanned : relire manuellement"
+      ]
+    },
+    {
+      "index": 4,
+      "pdfUrl": "https://www.uca.ma/uploads/documents/concours/KwvWlo7cahgqfmMgqjldEDAC6kgQ9OSHvspvILAl.pdf",
+      "sourceId": "univ-uca",
+      "organization": "Université Cadi Ayyad de Marrakech",
+      "discoveryPage": "https://www.uca.ma/fr/concours/appel-a-candidatures-pour-les-postes-vacants-de-chefs-de-divisions-a-la-presidence-de-luniversite-cadi-ayyad",
+      "classification": "POSSIBLE_CONCOURS_PDF",
+      "pageCount": 2,
+      "isScanned": true,
+      "textLength": 28,
+      "status": "SCANNED_REVIEW",
+      "tableDetected": false,
+      "rowsLength": 0,
+      "places": {
+        "status": "MISSING",
+        "total": null,
+        "evidenceCount": 0
+      },
+      "fields": {
+        "places": {
+          "field": "places",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "aucun tableau exploitable de places"
+        },
+        "conditions": {
+          "field": "conditions",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "conditions non extraites de facon fiable -> REQUIRES_REVIEW"
+        },
+        "matieres": {
+          "field": "matieres",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "matieres non corroborees -> REQUIRES_REVIEW"
+        },
+        "epreuves": {
+          "field": "epreuves",
+          "value": null,
+          "page": null,
+          "raw": "",
+          "confidence": "MISSING",
+          "status": "MISSING",
+          "reason": "epreuves non extraites de facon fiable -> REQUIRES_REVIEW"
+        }
+      },
+      "references": {
+        "institution": {
+          "field": "institution",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "institution manquante"
+        },
+        "speciality": {
+          "field": "speciality",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "grade": {
+          "field": "grade",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "domain": {
+          "field": "domain",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "city": {
+          "field": "city",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        },
+        "region": {
+          "field": "region",
+          "input": null,
+          "status": "REVIEW",
+          "referenceId": null,
+          "referenceLabel": null,
+          "reason": "valeur vide"
+        }
+      },
+      "importableFlashPoints": [
+        "document scanne -> OCR necessaire (REVIEW)"
+      ],
+      "missingRequired": [
+        "places",
+        "institution"
+      ],
+      "decision": "BLOCKED",
+      "decisionReasons": [
+        "aucune preuve exploitable (places + institution manquantes) -> BLOCKED, jamais forcer",
+        "places MISSING",
+        "institution manquante"
+      ],
+      "warnings": [
+        "scanned : relire manuellement"
+      ]
+    }
+  ],
+  "ucaRegression": {
+    "rows": 29,
+    "places": 33,
+    "status": "REVIEW",
+    "passed": true
+  },
+  "writes": {
+    "db": 0,
+    "supabase": 0,
+    "localStorage": 0,
+    "forms": 0
+  }
+}

@@ -7,6 +7,8 @@ import {
   updateMaster,
   deleteMaster,
   updateAllMastersStatus,
+  bulkCreateMasters,
+  BulkMastersValidationError,
   MasterItem
 } from '../services/mastersService.js';
 
@@ -158,6 +160,49 @@ router.post('/', async (req, res) => {
   } catch (error: any) {
     console.error('Error creating master:', error);
     res.status(500).json({ error: error.message || 'Erreur lors de la création du master' });
+  }
+});
+
+// POST bulk import (Admin Direct File Import)
+// Une seule lecture + une seule écriture atomique de masters.json.
+// Le corps ne doit contenir QUE des lignes déjà validées, mappées et
+// confirmées par l'administrateur dans l'aperçu.
+router.post('/bulk', async (req, res) => {
+  try {
+    const items = req.body?.items;
+    if (!Array.isArray(items)) {
+      return res.status(400).json({ error: 'Corps invalide : un tableau "items" est attendu.' });
+    }
+    if (items.length === 0) {
+      return res.status(400).json({ error: 'Aucun élément à importer.' });
+    }
+    if (items.length > 5000) {
+      return res.status(413).json({ error: 'Lot trop volumineux : maximum 5000 éléments par requête.' });
+    }
+
+    const result = bulkCreateMasters(items as MasterItem[]);
+
+    res.json({
+      success: true,
+      message: `Import terminé : ${result.imported} importé(s), ${result.duplicates} doublon(s) ignoré(s).`,
+      imported: result.imported,
+      duplicates: result.duplicates,
+      review: 0,
+      errors: 0,
+      details: result.details,
+    });
+  } catch (error: any) {
+    if (error instanceof BulkMastersValidationError) {
+      // Aucune écriture n'a eu lieu : l'échec est signalé explicitement.
+      return res.status(422).json({
+        success: false,
+        error: error.message,
+        details: error.details,
+        written: false,
+      });
+    }
+    console.error('Error bulk importing masters:', error);
+    res.status(500).json({ error: error.message || 'Erreur lors de l\'import en masse des masters' });
   }
 });
 

@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import {
-  Bell, BookOpen, Building2, ChevronDown, Contact, FileText, GraduationCap,
+  Bell, BookOpen, Building2, ChevronDown, Contact, FileText, FileUp, GraduationCap,
   HelpCircle, Home, Landmark, LayoutDashboard, LogOut, Menu, Moon, Search, Settings,
   Star, Sun, Trophy, User as UserIcon, Users, X, Bot
 } from 'lucide-react';
@@ -463,6 +463,7 @@ export function AdminLayout() {
     { to: '/admin', label: 'Tableau de bord', icon: LayoutDashboard, end: true },
     { to: '/admin/concours', label: 'Concours', icon: Trophy },
     { to: '/admin/masters', label: 'Masters', icon: GraduationCap },
+    { to: '/admin/import', label: 'Import fichier', icon: FileUp },
     { to: '/admin/ai-agent/sources', label: 'AI Agent', icon: Bot },
     { to: '/admin/ecoles', label: 'Écoles', icon: GraduationCap },
     { to: '/admin/universites', label: 'Universités', icon: Building2 },

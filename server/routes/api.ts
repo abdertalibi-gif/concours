@@ -101,7 +101,11 @@ router.post('/documents/upload', async (req, res) => {
 // ==========================================
 router.get('/competitions', async (req, res) => {
   try {
-    const competitions = await prisma.competition.findMany();
+    const includeExpired = req.query.includeExpired === 'true';
+    let competitions = await prisma.competition.findMany();
+    if (!includeExpired) {
+      competitions = competitions.filter((comp) => evaluateCompetitionStatus(comp).status !== 'CLOTURE');
+    }
     res.json(competitions);
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch competitions' });

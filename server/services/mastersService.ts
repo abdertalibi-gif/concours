@@ -1,7 +1,6 @@
 import { runAlmasterImport } from './almasterImporter.js';
 import fs from 'fs';
 import path from 'path';
-import * as cheerio from 'cheerio';
 
 export interface MasterItem {
   id: string;
@@ -369,6 +368,28 @@ export function saveMastersStore(masters: MasterItem[]) {
   }
 }
 
+/**
+ * Écriture atomique : on écrit un fichier temporaire puis on le
+ * renomme. Ainsi le lecteur (getMastersStore) ne voit jamais un
+ * masters.json tronqué, et une écriture échouée ne laisse pas de
+ * fichier partiel. Utilisée par l'import en masse.
+ *
+ * `targetFile` n'est surchargeable que pour les tests unitaires
+ * (ils écrivent dans un répertoire temporaire) : le comportement
+ * par défaut reste inchangé.
+ */
+export function saveMastersStoreAtomic(masters: MasterItem[], targetFile: string = MASTERS_FILE) {
+  if (targetFile === MASTERS_FILE) ensureDataDir();
+  const tmp = `${targetFile}.tmp`;
+  try {
+    fs.writeFileSync(tmp, JSON.stringify(masters, null, 2), 'utf-8');
+    fs.renameSync(tmp, targetFile);
+  } catch (err) {
+    try { if (fs.existsSync(tmp)) fs.unlinkSync(tmp); } catch { /* noop */ }
+    throw err;
+  }
+}
+
 export function getSyncLogs(): SyncSummaryData[] {
   ensureDataDir();
   try {
@@ -685,4 +706,149 @@ export function deleteMaster(id: string): boolean {
   if (filtered.length === store.length) return false;
   saveMastersStore(filtered);
   return true;
+}
+
+// ---------------- Import en masse (Admin Direct File Import) ----------------
+
+export class BulkMastersValidationError extends Error {
+  readonly details: string[];
+  constructor(details: string[]) {
+    super(`Import annulé : ${details.length} master(s) invalide(s). Aucune écriture effectuée.`);
+    this.name = 'BulkMastersValidationError';
+    this.details = details;
+  }
+}
+
+export interface BulkMastersResult {
+  imported: number;
+  duplicates: number;
+  details: string[];
+}
+
+export interface BulkMastersDeps {
+  read: () => MasterItem[];
+  write: (masters: MasterItem[]) => void;
+  now: () => string;
+}
+
+/**
+ * Revalidation déterministe d'un master confirmé.
+ * Le statut est recalculé à partir des dates (computeMasterStatus) :
+ * le fichier ne dictate jamais le statut final.
+ */
+function validateMasterForCommit(m: MasterItem): string[] {
+  const errors: string[] = [];
+  if (!m.name || !m.name.trim()) errors.push('name: intitulé manquant');
+  if (!m.university || !m.university.trim()) errors.push('university: université manquante');
+  if (!m.establishment || !m.establishment.trim()) errors.push('establishment: établissement manquant');
+  if (!m.uniqueKey || !m.uniqueKey.trim()) errors.push('uniqueKey: clé unique manquante');
+  if (m.seats !== null && (!Number.isFinite(m.seats) || m.seats < 0)) {
+    errors.push('seats: nombre de places invalide');
+  }
+  for (const [field, value] of [
+    ['officialUrl', m.officialUrl],
+    ['sourceUrl', m.sourceUrl],
+    ['schoolWebsite', m.schoolWebsite],
+  ] as const) {
+    if (value && !/^https?:\/\/.+/.test(value)) errors.push(`${field}: URL invalide (${value})`);
+  }
+  if (m.openingDate && m.deadlineDate) {
+    const open = Date.parse(m.openingDate);
+    const deadline = Date.parse(m.deadlineDate);
+    if (!Number.isNaN(open) && !Number.isNaN(deadline) && deadline < open) {
+      errors.push('deadlineDate: date limite antérieure à la date d\'ouverture');
+    }
+  }
+  return errors;
+}
+
+/** Clés de déduplication d'un master : uniqueKey et id déterministe. */
+function masterKeys(m: MasterItem): string[] {
+  const keys: string[] = [];
+  if (m.uniqueKey) keys.push(`uk:${m.uniqueKey}`);
+  if (m.id) keys.push(`id:${m.id}`);
+  return keys;
+}
+
+/**
+ * Import en masse de masters confirmés par l'administrateur.
+ *
+ * Garanti contractuelles :
+ *  - UNE SEULE lecture de masters.json (deps.read)
+ *  - validation + déduplication AVANT toute écriture
+ *  - si un seul master confirmé est invalide => ZERO écriture
+ *  - UNE SEULE écriture, atomique (temp-file + rename)
+ *  - createMaster() n'est JAMAIS appelé : ses identifiants sont
+ *    derivés de Date.now() et ne seraient donc pas idempotents.
+ *    Les ids et uniqueKey arrivent déjà déterministes depuis
+ *    l'aperçu (voir src/lib/import/dedupe.ts).
+ *  - les masters existants sont IGNORÉS, jamais écrasés
+ */
+export function bulkCreateMasters(
+  items: MasterItem[],
+  deps: BulkMastersDeps = {
+    read: getMastersStore,
+    write: saveMastersStoreAtomic,
+    now: () => new Date().toISOString(),
+  },
+): BulkMastersResult {
+  const details: string[] = [];
+
+  // Phase 1 : validation. Aucune écriture tant qu'une ligne échoue.
+  const invalid: string[] = [];
+  items.forEach((item, idx) => {
+    const errors = validateMasterForCommit(item);
+    if (errors.length > 0) {
+      invalid.push(`Ligne ${idx + 1} (« ${item.name ?? 'sans nom'} ») : ${errors.join(', ')}`);
+    }
+  });
+  if (invalid.length > 0) {
+    throw new BulkMastersValidationError(invalid);
+  }
+
+  // Phase 2 : lecture unique + déduplication.
+  const store = deps.read();
+  const seen = new Set<string>();
+  for (const m of store) {
+    for (const key of masterKeys(m)) seen.add(key);
+  }
+
+  const nowIso = deps.now();
+  const accepted: MasterItem[] = [];
+  let duplicates = 0;
+
+  for (const item of items) {
+    const keys = masterKeys(item);
+    const hit = keys.find((k) => seen.has(k));
+    if (hit !== undefined) {
+      duplicates += 1;
+      details.push(`« ${item.name} » ignoré : clé déjà présente (« ${hit} »).`);
+      continue;
+    }
+    accepted.push(item);
+    for (const key of keys) seen.add(key);
+  }
+
+  if (accepted.length === 0) {
+    details.push('Aucun master nouveau à importer.');
+    return { imported: 0, duplicates, details };
+  }
+
+  // Phase 3 : recalcul du statut puis UNE SEULE écriture atomique.
+  const prepared: MasterItem[] = accepted.map((item) => {
+    const status = computeMasterStatus({
+      openingDate: parseDateSafe(item.openingDate, false),
+      deadlineDate: parseDateSafe(item.deadlineDate, true),
+      examDate: parseDateSafe(item.examDate, false),
+      resultsDate: parseDateSafe(item.resultsDate, false),
+      hasResultsPublished: item.status === 'RESULTATS',
+      referenceDate: new Date(nowIso),
+    });
+    return enrichMasterWithSchoolInfo({ ...item, status, updatedAt: nowIso });
+  });
+
+  deps.write([...prepared, ...store]);
+
+  details.push(`${prepared.length} master(s) importé(s) en une seule écriture atomique.`);
+  return { imported: prepared.length, duplicates, details };
 }

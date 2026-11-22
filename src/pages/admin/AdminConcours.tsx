@@ -3,15 +3,17 @@
 // ============================================================
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { BadgeCheck, Copy, Eye, EyeOff, UploadCloud } from 'lucide-react';
+import { BadgeCheck, Copy, Eye, EyeOff, UploadCloud, FileUp } from 'lucide-react';
 import { useAuth } from '../../lib/auth';
 import { adminCreate, adminDelete, adminUpdate, loadDB, pushNotification } from '../../lib/db';
 import type { Competition } from '../../lib/types';
-import { CITIES, DOMAINS, LEVELS, evaluateCompetitionDates, formatDateShort, slugify, statusFromCompetition, uid } from '../../lib/utils';
+import { CITIES, DOMAINS, LEVELS, evaluateCompetitionDates, formatDateShort, isCompetitionExpired, slugify, statusFromCompetition, uid } from '../../lib/utils';
 import { Button, Field, Input, Modal, OrgAvatar, Select, StatusBadge, Textarea } from '../../components/ui';
 import { AutoOrganismeField } from '../../components/AutoOrganismeField';
+import AdminDirectImportModal from '../../components/AdminDirectImportModal';
 import { resolveOrganisme } from '../../lib/organismeResolver';
 import { AdminHeader, AdminTableShell, AddButton, ConfirmDelete, PublishPill, RowActions, Td, Th, VerifyPill } from './shared';
+import { cn } from '../../utils/cn';
 
 const COLORS = ['#0D47A1', '#C62828', '#2E7D32', '#4A148C', '#E65100', '#00695C', '#B71C1C', '#01579B', '#5D4037', '#37474F'];
 
@@ -30,10 +32,12 @@ export default function AdminConcours() {
   const [searchParams] = useSearchParams();
   const [q, setQ] = useState('');
   const [statusFilter, setStatusFilter] = useState(searchParams.get('status') || '');
+  const [expiryFilter, setExpiryFilter] = useState<'all' | 'active' | 'expired'>('all');
   const [editing, setEditing] = useState<Competition | null>(null);
   const [creating, setCreating] = useState(false);
   const [deleting, setDeleting] = useState<Competition | null>(null);
   const [importing, setImporting] = useState(false);
+  const [directImport, setDirectImport] = useState(false);
 
   useEffect(() => {
     const editId = searchParams.get('edit');
@@ -52,8 +56,10 @@ export default function AdminConcours() {
     const s = q.trim().toLowerCase();
     if (s) arr = arr.filter((c) => `${c.title} ${c.organizationName} ${c.city}`.toLowerCase().includes(s));
     if (statusFilter) arr = arr.filter((c) => statusFromCompetition(c) === statusFilter);
+    if (expiryFilter === 'active') arr = arr.filter((c) => !isCompetitionExpired(c));
+    if (expiryFilter === 'expired') arr = arr.filter((c) => isCompetitionExpired(c));
     return arr;
-  }, [db, q, statusFilter]);
+  }, [db, q, statusFilter, expiryFilter]);
 
   const duplicate = (c: Competition) => {
     const copy: Competition = {
@@ -91,21 +97,32 @@ export default function AdminConcours() {
       <AdminHeader title="Concours" subtitle={`${db.competitions.length} concours au total — ajoutez les nouveaux concours sans toucher au code.`}
         action={
           <div className="flex items-center gap-2">
-            <Button variant="outline" onClick={() => setImporting(true)} className="bg-white"><UploadCloud className="mr-2 h-4 w-4" /> Importer</Button>
+            <Button onClick={() => setDirectImport(true)}><FileUp className="mr-2 h-4 w-4" /> Importer un fichier</Button>
+            <Button variant="outline" onClick={() => setImporting(true)} className="bg-white" title="Workflow secondaire : collage d'un tableau JSON">
+              <UploadCloud className="mr-2 h-4 w-4" /> Import JSON
+            </Button>
             <AddButton label="Ajouter un concours" onClick={() => setCreating(true)} />
           </div>
         } />
 
       <AdminTableShell search={q} onSearch={setQ} searchPh="Rechercher un concours, un organisme..."
         actions={
-          <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)} aria-label="Filtrer par statut"
-            className="h-10 rounded-xl bg-white px-3 text-sm ring-1 ring-inset ring-slate-200">
-            <option value="">Tous les statuts</option>
-            <option value="OUVERT">🟢 Ouvert</option>
-            <option value="A_VENIR">🔵 À venir</option>
-            <option value="CLOTURE">⚪ Clôturé</option>
-            <option value="DATE_A_VERIFIER">🟡 Date à vérifier / Incohérente</option>
-          </select>
+          <>
+            <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)} aria-label="Filtrer par statut"
+              className="h-10 rounded-xl bg-white px-3 text-sm ring-1 ring-inset ring-slate-200">
+              <option value="">Tous les statuts</option>
+              <option value="OUVERT">🟢 Ouvert</option>
+              <option value="A_VENIR">🔵 À venir</option>
+              <option value="CLOTURE">⚪ Clôturé</option>
+              <option value="DATE_A_VERIFIER">🟡 Date à vérifier / Incohérente</option>
+            </select>
+            <select value={expiryFilter} onChange={(e) => setExpiryFilter(e.target.value as 'all' | 'active' | 'expired')} aria-label="Filtrer par expiration"
+              className="h-10 rounded-xl bg-white px-3 text-sm ring-1 ring-inset ring-slate-200">
+              <option value="all">Actifs + Expirés</option>
+              <option value="active">🟢 Actifs</option>
+              <option value="expired">🔴 Expirés</option>
+            </select>
+          </>
         }>
         <table className="w-full min-w-[1000px]">
           <thead><tr>
@@ -124,7 +141,15 @@ export default function AdminConcours() {
                 <Td>{c.level}</Td>
                 <Td>{c.city}</Td>
                 <Td>{formatDateShort(c.registrationDeadline)}</Td>
-                <Td><StatusBadge status={statusFromCompetition(c)} /></Td>
+                <Td>
+                  <div className="flex flex-col items-start gap-1">
+                    <span className={cn('inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-bold ring-1 ring-inset',
+                      isCompetitionExpired(c) ? 'bg-red-50 text-red-700 ring-red-200' : 'bg-emerald-50 text-emerald-700 ring-emerald-200')}>
+                      {isCompetitionExpired(c) ? 'EXPIRÉ' : 'ACTIF'}
+                    </span>
+                    <StatusBadge status={statusFromCompetition(c)} />
+                  </div>
+                </Td>
                 <Td><VerifyPill status={c.verificationStatus} /></Td>
                 <Td><PublishPill status={c.publishStatus} /></Td>
                 <Td>
@@ -154,6 +179,15 @@ export default function AdminConcours() {
       
       {importing && (
         <BulkImportModal onClose={() => setImporting(false)} />
+      )}
+
+      {directImport && (
+        <AdminDirectImportModal
+          open
+          onClose={() => setDirectImport(false)}
+          defaultEntity="CONCOURS"
+          allowEntitySwitch={false}
+        />
       )}
 
       <ConfirmDelete open={!!deleting} label={deleting ? `${deleting.title}` : ''} onClose={() => setDeleting(null)}

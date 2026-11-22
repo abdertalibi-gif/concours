@@ -2,7 +2,14 @@
 // CONCOURS MAROC — Système centralisé de résolution d'organisme (Auto Organisme / Auto-Select)
 // ============================================================
 import { loadDB } from './db';
-import type { OrgType } from './types';
+import type { Ministry, OrgType, School, University } from './types';
+
+/** Référentiels d'organismes nécessaires à la résolution. */
+export interface OrganismeRefs {
+  schools: School[];
+  universities: University[];
+  ministries: Ministry[];
+}
 
 export interface ResolvedOrganisme {
   organismeId?: string;
@@ -29,9 +36,38 @@ export function resolveOrganisme(input: {
   officialWebsite?: string;
 }): ResolvedOrganisme {
   const db = loadDB();
-  const schools = db.schools || [];
-  const universities = db.universities || [];
-  const ministries = db.ministries || [];
+  return resolveOrganismeWithRefs(
+    {
+      schools: db.schools || [],
+      universities: db.universities || [],
+      ministries: db.ministries || [],
+    },
+    input,
+  );
+}
+
+/**
+ * Variante pure : mêmes règles de résolution, mais les référentiels
+ * sont fournis par l'appelant. Utilisée par l'import Admin direct,
+ * dont le preview doit rester strictement read-only (pas de
+ * localStorage, pas de loadDB()).
+ */
+export function resolveOrganismeWithRefs(
+  refs: OrganismeRefs,
+  input: {
+    organismeId?: string;
+    schoolId?: string;
+    ministryId?: string;
+    organizationName?: string;
+    title?: string;
+    description?: string;
+    sourceUrl?: string;
+    officialWebsite?: string;
+  },
+): ResolvedOrganisme {
+  const schools = refs.schools || [];
+  const universities = refs.universities || [];
+  const ministries = refs.ministries || [];
 
   // 1. Direct ID match
   if (input.schoolId) {

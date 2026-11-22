@@ -169,9 +169,9 @@
     "seats": 35,
     "officialUrl": "http://preinscription.um5.ac.ma",
     "sourceUrl": "https://www.almaster-maroc.com/master-fsr-rabat-ia-2026/",
-    "status": "OUVERT",
+    "status": "RESULTATS",
     "createdAt": "2026-09-13T19:18:16.761Z",
-    "updatedAt": "2026-09-13T19:18:16.761Z",
+    "updatedAt": "2026-11-22T16:04:55.059Z",
     "schoolSlug": "fs-rabat",
     "schoolWebsite": "http://www.fsr.ac.ma"
   },
@@ -195,9 +195,9 @@
     "seats": 40,
     "officialUrl": "https://encgcasa.ac.ma/candidatures-master/",
     "sourceUrl": "https://www.almaster-maroc.com/master-encg-casablanca-cca/",
-    "status": "OUVERT",
+    "status": "FERME",
     "createdAt": "2026-09-13T19:18:16.761Z",
-    "updatedAt": "2026-09-13T19:18:16.761Z",
+    "updatedAt": "2026-11-22T16:04:55.059Z",
     "schoolId": "ec-encg-casablanca",
     "schoolSlug": "encg-casablanca",
     "schoolWebsite": "https://encgcasa.ac.ma"
@@ -222,9 +222,9 @@
     "seats": 30,
     "officialUrl": "https://candidature.uca.ma",
     "sourceUrl": "https://www.almaster-maroc.com/master-fssm-marrakech-cybersecurite/",
-    "status": "A_VENIR",
+    "status": "FERME",
     "createdAt": "2026-09-13T19:18:16.761Z",
-    "updatedAt": "2026-09-13T19:18:16.761Z",
+    "updatedAt": "2026-11-22T16:04:55.059Z",
     "schoolSlug": "fssm-marrakech",
     "schoolWebsite": "https://www.fssm.uca.ma"
   },
@@ -248,9 +248,9 @@
     "seats": 50,
     "officialUrl": "https://portail.usmba.ac.ma",
     "sourceUrl": "https://www.almaster-maroc.com/master-droit-affaires-fsjes-fes/",
-    "status": "CONCOURS_A_VENIR",
+    "status": "RESULTATS",
     "createdAt": "2026-09-13T19:18:16.761Z",
-    "updatedAt": "2026-09-13T19:18:16.761Z",
+    "updatedAt": "2026-10-05T12:51:39.224Z",
     "schoolSlug": "fsjes-fes",
     "schoolWebsite": "http://fsjes.usmba.ac.ma"
   },
@@ -795,9 +795,9 @@
     "seats": null,
     "officialUrl": null,
     "sourceUrl": "https://www.almaster-maroc.com/2026/09/master-complexe-horticole-agadir-2026.html",
-    "status": "OUVERT",
+    "status": "FERME",
     "createdAt": "2026-09-14T16:42:07.273Z",
-    "updatedAt": "2026-09-14T17:39:09.458Z"
+    "updatedAt": "2026-10-06T10:52:10.081Z"
   },
   {
     "id": "mst-import-1789404127281-babb1",
@@ -1723,9 +1723,9 @@
     "seats": null,
     "officialUrl": "https://apps-fegbm.usms.ac.ma/pre_candidature/",
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-beni-mellal-2026-2027.html",
-    "status": "OUVERT",
+    "status": "FERME",
     "createdAt": "2026-09-14T16:42:07.444Z",
-    "updatedAt": "2026-09-14T17:39:09.600Z"
+    "updatedAt": "2026-11-22T16:04:55.059Z"
   },
   {
     "id": "mst-import-1789404127447-95b5d",
@@ -2077,11 +2077,11 @@
     "seats": null,
     "officialUrl": "https://preins.um5.ac.ma/",
     "sourceUrl": "https://www.almaster-maroc.com/2026/07/master-fmd-rabat-2026-2027.html",
-    "status": "CONCOURS_A_VENIR",
+    "status": "FERME",
     "schoolId": "ec-fmd-rabat",
     "schoolSlug": "fmd-rabat",
     "createdAt": "2026-09-14T16:42:07.513Z",
-    "updatedAt": "2026-09-14T17:39:09.664Z"
+    "updatedAt": "2026-09-26T14:11:57.837Z"
   },
   {
     "id": "mst-import-1789404127521-i6k4o",
@@ -3130,9 +3130,9 @@
     "seats": null,
     "officialUrl": "https://temps-amenage.uh1.ac.ma/nos-formation/9/master",
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-feg-settat-2026-2027.html",
-    "status": "OUVERT",
+    "status": "FERME",
     "createdAt": "2026-09-14T16:42:07.633Z",
-    "updatedAt": "2026-09-14T17:39:09.769Z"
+    "updatedAt": "2026-10-05T12:51:39.224Z"
   },
   {
     "id": "mst-import-1789404127635-8k9oh",
@@ -3506,9 +3506,9 @@
     "seats": null,
     "officialUrl": "https://iss.usmba.ac.ma/?q=node/423",
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-iss-fes-2026-2027.html",
-    "status": "OUVERT",
+    "status": "FERME",
     "createdAt": "2026-09-14T16:42:07.660Z",
-    "updatedAt": "2026-09-14T17:39:09.792Z"
+    "updatedAt": "2026-10-05T12:51:39.224Z"
   },
   {
     "id": "mst-import-1789404127661-ccyc2",
@@ -3874,11 +3874,11 @@
     "seats": null,
     "officialUrl": "https://encgo-master.ump.ma/",
     "sourceUrl": "https://www.almaster-maroc.com/2026/08/master-encg-oujda-2026-2027.html",
-    "status": "OUVERT",
+    "status": "FERME",
     "schoolId": "ec-encg-oujda",
     "schoolSlug": "encg-oujda",
     "createdAt": "2026-09-14T16:42:07.684Z",
-    "updatedAt": "2026-09-14T17:39:09.821Z"
+    "updatedAt": "2026-11-22T16:04:55.059Z"
   },
   {
     "id": "mst-import-1789404127686-2z5yx",

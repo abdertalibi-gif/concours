@@ -1,7 +1,13 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
-const rawUrl = import.meta.env.VITE_SUPABASE_URL;
-const rawKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+// `import.meta.env` n'existe que sous Vite. Les tests unitaires
+// (tsx/Node) importent ce module via db.ts : on lit donc l'env de
+// façon défensive, sans changer le comportement dans le navigateur.
+const env: Record<string, string | undefined> =
+  (import.meta as unknown as { env?: Record<string, string | undefined> }).env ?? {};
+
+const rawUrl = env.VITE_SUPABASE_URL;
+const rawKey = env.VITE_SUPABASE_ANON_KEY;
 
 // Ensure URL is always a valid HTTP/HTTPS url
 function resolveSupabaseUrl(): string {

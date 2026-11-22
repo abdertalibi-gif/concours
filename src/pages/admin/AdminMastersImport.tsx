@@ -18,9 +18,11 @@ import {
   GraduationCap,
   Calendar,
   Eye,
+  FileUp,
   X,
   MapPin
 } from 'lucide-react';
+import AdminDirectImportModal from '../../components/AdminDirectImportModal';
 import { Button, Field, Input, Modal, Select, Textarea, useToast } from '../../components/ui';
 import { REAL_SCHOOLS, REAL_UNIVERSITIES } from '../../data/institutionsData';
 import {
@@ -133,6 +135,7 @@ export default function AdminMastersImport() {
   const [syncing, setSyncing] = useState(false);
   const [updatingStatuses, setUpdatingStatuses] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [directImport, setDirectImport] = useState(false);
 
   // Filters
   const [filter, setFilter] = useState('ALL');
@@ -454,7 +457,16 @@ export default function AdminMastersImport() {
           )}
         </div>
 
-        <div className="flex items-center gap-2.5 shrink-0">
+        <div className="flex items-center gap-2.5 shrink-0 flex-wrap">
+          <Button
+            onClick={() => setDirectImport(true)}
+            className="flex items-center gap-2 bg-[#0B63CE] hover:bg-[#0952ab] text-white px-4 py-2.5 rounded-xl font-medium shadow-sm"
+            title="Workflow recommandé : import direct d'un fichier (JSON / CSV / XLSX)"
+          >
+            <FileUp className="w-4 h-4" />
+            Importer un fichier
+          </Button>
+
           <Button
             onClick={openCreateModal}
             className="flex items-center gap-2 bg-[#0B63CE] hover:bg-[#0952ab] text-white px-4 py-2.5 rounded-xl font-medium shadow-sm"
@@ -1138,6 +1150,17 @@ export default function AdminMastersImport() {
           )}
         </div>
       </Modal>
+
+      {/* Import direct de fichier (workflow recommandé) */}
+      {directImport && (
+        <AdminDirectImportModal
+          open
+          onClose={() => setDirectImport(false)}
+          defaultEntity="MASTERS"
+          allowEntitySwitch={false}
+          onCommitted={fetchMasters}
+        />
+      )}
 </div>
   );
 }

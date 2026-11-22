@@ -1,0 +1,43 @@
+﻿{
+    "phaseLabel":  "Competition Candidate Review",
+    "candidateDecisions":  [
+
+                           ],
+    "decisions":  {
+                      "BLOCKED":  0,
+                      "IMPORTABLE":  0,
+                      "REVIEW":  5
+                  },
+    "artifacts":  {
+                      "json":  "phase18-competition-candidate-review-20260924T105038.json",
+                      "log":  "phase18-competition-candidate-review-20260924T105038.txt"
+                  },
+    "statusReason":  "TSC gate failed: byte-glue corruption at phase18CompetitionCandidateReview.ts (391,445,447,494) — template backtick glued by tool channel; same corruption class as Phase 17. No REVIEW executed. Same-channel channel verified via esbuild transform (local esbuild) inside node: ESBUILD_ERR line=391 col=14 Expected \")\" but found \"Candidats\", line=445..., line=494 unterminated template literal.",
+    "writes":  {
+                   "imports":  0,
+                   "database":  0,
+                   "forms":  0,
+                   "localStorage":  0,
+                   "supabase":  0
+               },
+    "status":  "FAILED",
+    "input":  "phase17-deep-competition-discovery-20260923T173343.json",
+    "place":  {
+                  "status":  "REVIEW",
+                  "confidence":  "n/a (gate failed)"
+              },
+    "phase":  "Phase 18",
+    "runType":  "PREVIEW",
+    "regression":  {
+                       "places":  33,
+                       "status":  "REVIEW",
+                       "rows":  29,
+                       "passed":  true
+                   },
+    "runDate":  "2026-09-24T10:50:38",
+    "discovery":  {
+                      "candidatesTotal":  273,
+                      "analyzed":  5,
+                      "allStatus":  "REVIEW"
+                  }
+}

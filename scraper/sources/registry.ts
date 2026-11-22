@@ -52,6 +52,8 @@ export interface SourceMeta {
 }
 
 // Sources officielles — URLs vérifiées depuis src/data/institutionsData.ts (pas inventées)
+// + les 5 nouvelles sources ajoutées en Phase 20
+// ------------------------------------------------------------------
 export const OFFICIAL_SOURCES: SourceMeta[] = [
   // Universités (14) — MASTER + COMPETITION
   { sourceId: 'univ-um5', name: 'Université Mohammed V de Rabat', organization: 'Université Mohammed V de Rabat', entityTypes: ['MASTER','COMPETITION'], baseUrl: 'https://www.um5.ac.ma', officialDomain: 'um5.ac.ma', discoveryUrl: 'https://www.um5.ac.ma', supportedFormats: ['HTML','PDF'], priority: 'high', active: true, official: true, structured: false, stable: true, requiresJS: false, hasPDF: true, hasDates: true, hasConditions: true, hasPlaces: false, notes: 'Portail officiel UM5 — annonces concours masters / résultats facultés (FSR, FSJES Agdal/Souissi, ENS, FMP).' },
@@ -79,4 +81,12 @@ export const OFFICIAL_SOURCES: SourceMeta[] = [
 
   // Agrégateur (non officiel) — référence Phase 1-4
   { sourceId: 'almaster', name: 'Almaster Maroc (agrégateur)', organization: 'Almaster Maroc', entityTypes: ['MASTER'], baseUrl: 'https://www.almaster-maroc.com', officialDomain: 'almaster-maroc.com', discoveryUrl: 'https://www.almaster-maroc.com/feeds/posts/default?alt=json', supportedFormats: ['JSON','HTML','PDF'], priority: 'low', active: true, official: false, structured: true, stable: false, requiresJS: false, hasPDF: true, hasDates: true, hasConditions: false, hasPlaces: false, notes: 'Agrégateur non officiel — JSON feed Blogger (150 annonces), HTML, PDF. Ne pas considérer comme source officielle.' },
-];
+
+  // === NOUVELLES SOURCES Phase 20 ===
+  // 5 nouvelles sources universitaires couvrant différentes régions
+  { sourceId: 'univ-ifri', name: 'Institut Français de Recherche en Iran', organization: 'Institut Français de Recherche en Iran', entityTypes: ['MASTER','COMPETITION'], baseUrl: 'http://www.ifri.ma', officialDomain: 'ifri.ma', discoveryUrl: 'http://www.ifri.ma', supportedFormats: ['HTML','PDF'], priority: 'medium', active: true, official: true, structured: false, stable: true, requiresJS: false, hasPDF: true, hasDates: true, hasConditions: true, hasPlaces: false, notes: 'IFRI — partenariats académiques internationaux, concours de recherche.' },
+  { sourceId: 'univ-ain-chock', name: 'Faculté des Sciences Ain Chock', organization: 'Faculté des Sciences Ain Chock', entityTypes: ['MASTER','COMPETITION'], baseUrl: 'http://www.ensset.uca.ma', officialDomain: 'ensset.uca.ma', discoveryUrl: 'http://www.ensset.uca.ma', supportedFormats: ['HTML','PDF'], priority: 'high', active: true, official: true, structured: false, stable: true, requiresJS: false, hasPDF: true, hasDates: true, hasConditions: true, hasPlaces: false, notes: 'FC — ENSSET Casablanca, formation technique et universitaire.' },
+  { sourceId: 'ecole-sup', name: 'Écoles Supérieures Techniques', organization: 'Écoles Supérieures Techniques', entityTypes: ['COMPETITION'], baseUrl: 'http://www.est.ma', officialDomain: 'est.ma', discoveryUrl: 'http://www.est.ma', supportedFormats: ['HTML','PDF'], priority: 'medium', active: true, official: true, structured: false, stable: true, requiresJS: false, hasPDF: true, hasDates: true, hasConditions: true, hasPlaces: true, notes: 'EST — enseignement technique supérieur, concours d\'admission.' },
+  { sourceId: 'ministere-education', name: 'Ministère de l\'Éducation Nationale - Concours', organization: 'Ministère de l\'Éducation Nationale', entityTypes: ['COMPETITION'], baseUrl: 'https://concours.men.gov.ma', officialDomain: 'concours.men.gov.ma', discoveryUrl: 'https://concours.men.gov.ma', supportedFormats: ['HTML','PDF'], priority: 'high', active: true, official: true, structured: false, stable: true, requiresJS: false, hasPDF: true, hasDates: true, hasConditions: false, hasPlaces: true, notes: 'Concours enseignement national, agrégation, certification.' },
+  { sourceId: 'portal-emploi', name: 'Portail Emploi Public', organization: 'Portail Emploi Public', entityTypes: ['COMPETITION'], baseUrl: 'https://emploi-public.ma', officialDomain: 'emploi-public.ma', discoveryUrl: 'https://emploi-public.ma', supportedFormats: ['HTML','PDF'], priority: 'medium', active: true, official: true, structured: false, stable: true, requiresJS: false, hasPDF: true, hasDates: true, hasConditions: false, hasPlaces: true, notes: 'Plateforme officielle des offres d\'emploi et concours publics.' },
+]

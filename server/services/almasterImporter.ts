@@ -188,7 +188,7 @@ export async function runAlmasterImport(): Promise<SyncSummaryData> {
         const key = generateUniqueKey(univ, estab, name, year);
 
         // Determine Status
-        let forcedStatus = null;
+        let forcedStatus: MasterItem['status'] | null = null;
         if (normalizeStr(title).includes('resultat')) forcedStatus = 'RESULTATS';
         
         const computedStatus = forcedStatus || computeMasterStatus({

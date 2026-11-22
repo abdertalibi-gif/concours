@@ -328,6 +328,49 @@ export function isCompetitionOpen(c: {
   return ev.status === 'OUVERT';
 }
 
+/**
+ * Détermine si un concours est expiré (date limite dépassée).
+ * Règle : maintenant >= date limite ⇒ EXPIRE.
+ * Un concours sans date limite n'est jamais expiré.
+ */
+export function isCompetitionExpired(c: {
+  registrationStart?: string | Date | null;
+  registrationDeadline?: string | Date | null;
+  openingDate?: string | Date | null;
+  closingDate?: string | Date | null;
+  applicationDeadline?: string | Date | null;
+}, now: Date = new Date()): boolean {
+  return evaluateCompetitionDates(c, now).status === 'CLOTURE';
+}
+
+/**
+ * Détermine si un concours est actif (non expiré).
+ * Utilisé pour filtrer la liste publique : seuls les concours actifs sont affichés.
+ */
+export function isCompetitionActive(c: {
+  registrationStart?: string | Date | null;
+  registrationDeadline?: string | Date | null;
+  openingDate?: string | Date | null;
+  closingDate?: string | Date | null;
+  applicationDeadline?: string | Date | null;
+}, now: Date = new Date()): boolean {
+  return !isCompetitionExpired(c, now);
+}
+
+/**
+ * Libellé binaire clair pour l'administration : ACTIF / EXPIRÉ.
+ */
+export function expirationLabel(c: {
+  registrationStart?: string | Date | null;
+  registrationDeadline?: string | Date | null;
+  openingDate?: string | Date | null;
+  closingDate?: string | Date | null;
+  applicationDeadline?: string | Date | null;
+}, now: Date = new Date()): { label: 'ACTIF' | 'EXPIRE'; expired: boolean } {
+  const expired = isCompetitionExpired(c, now);
+  return { label: expired ? 'EXPIRE' : 'ACTIF', expired };
+}
+
 export function remainingLabel(
   deadline?: string | Date | null,
   start?: string | Date | null
